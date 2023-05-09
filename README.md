@@ -5,7 +5,7 @@
 
 
 <div align="center">
-    <img src="./images/AppIcon.png" width="100" align="left">(https://apps.apple.com/app/id1618148240)
+    [<img src="./images/AppIcon.png" width="100" align="left">](https://apps.apple.com/app/id1618148240)
     <img src="./images/AppIcon.png" width="100">
     <img src="./images/AppIcon.png" width="100" align="right">
 </div>
