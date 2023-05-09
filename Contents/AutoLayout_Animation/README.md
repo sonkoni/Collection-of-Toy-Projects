@@ -20,6 +20,7 @@ layoutIfNeeded 메서드는 현재 뷰 계층 구조에 대해 변경 사항이 
 
 ## Documentation
 
+- 문서는 아래 링크를 참고하세요.
 [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
 
 ## Author
