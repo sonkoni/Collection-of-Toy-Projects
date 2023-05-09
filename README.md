@@ -8,7 +8,7 @@
 [![텍스트](./AA.jpg)](https://apps.apple.com/app/id1574452904)
 
 
-[![텍스트](<./AA.jpg>)](https://apps.apple.com/app/id1574452904)
+[![텍스트](<img src="./AA.jpg">)](https://apps.apple.com/app/id1574452904)
 
 ///<img src="./Document/ScreenShot/Designer.gif" width="30%">   <- 이렇게 하면 GIF가 보인다.
 
