@@ -28,14 +28,18 @@
 ```
 
 ## Bug
+### System Bug
 - `UISwitch` 토글 시 XCode 콘솔 상에서 발생하는 다음과 같은 메시지는 `UIKit` 버그에 해당한다.
 ```
 invalid mode 'kCFRunLoopCommonModes' provided to CFRunLoopRunSpecific - break on _CFRunLoopError_RunCalledWithInvalidMode to debug. This message will only appear once per execution.
 ```
 - [Apple Developer Forums](https://developer.apple.com/forums/thread/132035?answerId=416935022#416935022)
 > Wow, that was depressingly easy to reproduce. I did a little digging and this is definitely a bug in UIKit, one that we’re tracking as (r. 57322394). The good news is that, AFAICT, it’s not actively toxic. CF is coping with this misbehaviour in a reasonable way.
-> Share and Enjoy 
-— 
+
+> Share and Enjoy
+ 
+—
+ 
 > Quinn “The Eskimo!” 
 > Apple Developer Relations, Developer Technical Support, Core OS/Hardware
 ``` let myEmail = "eskimo" + "1" + "@apple.com" ```
