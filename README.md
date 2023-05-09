@@ -16,4 +16,4 @@
 
 [![텍스트](./images/AppIcon.png){: width="100px" height="100px"}]
 
-![텍스트](./images/AppIcon.png){: width="100" height="100"}
+![텍스트](./images/AppIcon.png){: width="10%" height="10%"}
