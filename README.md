@@ -6,6 +6,7 @@
 
 
 [![텍스트](./AA.jpg)](https://apps.apple.com/app/id1574452904)
+[![텍스트](./images/AA.jpg)](https://apps.apple.com/app/id1574452904)
 
 
 [![텍스트](<img src="./AA.jpg">)](https://apps.apple.com/app/id1574452904)
