@@ -10,3 +10,6 @@
 
 
 [![텍스트](./images/AppIcon.png){: width="100" height="100"}](https://apps.apple.com/app/id1574452904)
+
+
+[![텍스트](./images/AppIcon.png){: width="100px" height="100px"}](https://apps.apple.com/app/id1574452904)
