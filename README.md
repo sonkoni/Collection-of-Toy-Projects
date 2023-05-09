@@ -4,10 +4,12 @@
 
 
 <div align="center">
-    <img src="./images/AppIcon.png" width="100" align="left">
     <img src="./images/AppIcon.png" width="100">
-    <img src="./images/AppIcon.png" width="100" align="right">
+    <img src="./images/AppIcon.png" width="100">
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <img src="./images/AppIcon.png" width="100">
 </div>
+
 
 <!--<p align="center">-->
 <!--      <img src="..." align="left">-->
