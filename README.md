@@ -19,7 +19,7 @@
 ![텍스트](./images/AppIcon.png){: width="10%" height="10%"}
 
 <!--<img src="./images/AppIcon.png" width="10%">-->
-[<img src="./images/AppIcon.png" width="100">](https://apps.apple.com/app/id1574452904)
+[<img src="./images/AppIcon.png" width="100%">](https://apps.apple.com/app/id1574452904)
 
 <!--[Stormotion-Mobile](https://github.com/Stormotion-Mobile/ExpandableCollectionViewCell)-->
 <!--![Animation](./animation.gif)   <- 이렇게 하면 GIF가 보인다.-->
