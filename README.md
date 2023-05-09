@@ -6,6 +6,5 @@
 <div align="center">
 <img src="./images/AppIcon.png" width="100">
 <img src="./images/miniTimer.png" width="100">
-[<img src="./images/free-matrix-air-mini.png" width="200">](https://unity3d.com/kr)
+[![텍스트]<img src="./images/free-matrix-air-mini.png" width="200">](https://unity3d.com/kr)
 </div>
-
