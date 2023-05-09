@@ -28,11 +28,13 @@
 ```
 
 ## Bug
-- `UISwitch` 토글 시 발생하는 다음과 같은 메시지는 `UIKit` 버그에 해당한다.
+- `UISwitch` 토글 시 XCode 콘솔 상에서 발생하는 다음과 같은 메시지는 `UIKit` 버그에 해당한다.
 ```
 invalid mode 'kCFRunLoopCommonModes' provided to CFRunLoopRunSpecific - break on _CFRunLoopError_RunCalledWithInvalidMode to debug. This message will only appear once per execution.
 ```
-- 출처
+- [출처](https://developer.apple.com/forums/thread/132035?answerId=416935022#416935022)
+
+
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com 
