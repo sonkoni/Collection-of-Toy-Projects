@@ -18,5 +18,6 @@
 
 ![텍스트](./images/AppIcon.png){: width="10%" height="10%"}
 
-<img src="./images/AppIcon.png" width="10%">
+<!--<img src="./images/AppIcon.png" width="10%">-->
+<img src="./images/AppIcon.png" width="10">
 
