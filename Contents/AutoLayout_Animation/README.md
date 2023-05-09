@@ -7,7 +7,7 @@
 
 ## Documentation
 
-[Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
+- [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
 ```objective-c
 - (IBAction)buttonPush:(UIButton *)sender {
     [self.littleView removeFromSuperview];
