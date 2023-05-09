@@ -18,8 +18,7 @@
 - [AutoLayout](#autoLayout)
 
 ## AutoLayout
- *Frameworks that help to support accessibility features and enable people with disabilities to use your app*
- 
+*Auto Layout과 관련된 토이 프로젝트*
  - [Capable](https://github.com/chrs1885/Capable) - Track accessibility features to improve your app for people with certain disabilities.
  
 **[back to top](#contents)**
