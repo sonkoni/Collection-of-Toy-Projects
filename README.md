@@ -10,4 +10,4 @@
     <img src="./images/AppIcon.png" width="100">
     <img src="./images/AppIcon.png" width="100">
     <img src="./images/AppIcon.png" width="100">
-figure>
+<figure>
