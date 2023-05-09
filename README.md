@@ -5,7 +5,7 @@
 
 <div align="center">
     <img src="./images/AppIcon.png" width="100">
-    <img src="./images/AppIcon.png" width="100" margin-right="100">
+    <img src="./images/AppIcon.png" width="100" margin-right="100px">
     <img src="./images/AppIcon.png" width="100">
 </div>
 
