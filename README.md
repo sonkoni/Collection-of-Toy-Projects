@@ -3,11 +3,11 @@
 
 
 
-<div align="center">
+<div align="center" display="flex">
     <img src="./images/AppIcon.png" width="100">
-    <img src="./images/AppIcon.png" width="100" margin-right="100px">
+    <img src="./images/AppIcon.png" width="100">
     <img src="./images/AppIcon.png" width="100">
 </div>
 
-
+<!--<div style="display:flex; justify-content:center;">-->
 <!--///<div style="display:flex; justify-content:center;">-->
