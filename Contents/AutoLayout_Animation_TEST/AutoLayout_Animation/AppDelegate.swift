@@ -1,13 +1,13 @@
 //
 //  AppDelegate.swift
-//  EmptyProject
+//  AutoLayout_Animation
 //
 //  Created by Kwan Hyun Son on 2022/10/08.
 //
 
 import UIKit
 
-@main
+// @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,

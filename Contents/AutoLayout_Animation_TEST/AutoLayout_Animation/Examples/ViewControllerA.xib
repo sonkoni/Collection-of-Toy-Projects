@@ -23,12 +23,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="P6u-9K-dbD">
-                    <rect key="frame" x="315" y="50" width="51" height="31"/>
-                    <connections>
-                        <action selector="buttonClicked:" destination="-1" eventType="valueChanged" id="jJa-49-Kb1"/>
-                    </connections>
-                </switch>
                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIy-Nm-sXy" userLabel="Horizontal Line">
                     <rect key="frame" x="0.0" y="401.5" width="414" height="1"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -67,9 +61,7 @@
                 <constraint firstItem="wLE-zr-7Ls" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fmg-VD-TRb"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="fdJ-0m-vGJ" secondAttribute="centerY" constant="50" id="Pyc-U2-Wvh"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Ubn-OC-tRR" secondAttribute="bottom" constant="50" id="Qqe-kD-EWo"/>
-                <constraint firstItem="P6u-9K-dbD" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="brv-Gd-Nnn"/>
                 <constraint firstItem="HIy-Nm-sXy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="brz-hK-3eh"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="P6u-9K-dbD" secondAttribute="trailing" constant="50" id="e9j-2H-dIQ"/>
                 <constraint firstAttribute="trailing" secondItem="HIy-Nm-sXy" secondAttribute="trailing" id="jMk-qH-u5j"/>
                 <constraint firstAttribute="trailing" secondItem="Ubn-OC-tRR" secondAttribute="trailing" id="lii-tX-UaA"/>
                 <constraint firstItem="Ubn-OC-tRR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lzC-xi-MXl"/>

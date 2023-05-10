@@ -11,35 +11,40 @@ final class ViewControllerA: UIViewController {
     
     // MARK: - Property
     @IBOutlet private weak var targetView: UIView!
-    @IBOutlet private var centerXConstraint: NSLayoutConstraint!
+    @IBOutlet private var centerXConstraint: NSLayoutConstraint! // strong으로 잡아야 active 전환에서 문제를 방지한다.
     @IBOutlet private var centerYConstraint: NSLayoutConstraint!
     @IBOutlet private var widthConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.targetView.translatesAutoresizingMaskIntoConstraints = false
-        self.targetView.layer.cornerRadius = 25.0
+        
+        targetView.translatesAutoresizingMaskIntoConstraints = false
+        targetView.layer.cornerRadius = 25.0
+        
+        let mySwitch = UISwitch()
+        mySwitch.onTintColor = .tintColor
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: mySwitch)
+        mySwitch.addTarget(self, action:#selector(switchToggled(_:)), for: .valueChanged)
     }
     
-
+    
     // MARK: - Action
-    @IBAction func buttonClicked(_ sender: UISwitch) {
+    @objc private func switchToggled(_ sender: UISwitch) {
         sender.isEnabled = false
-        
-        self.centerYConstraint.isActive = false
+        centerYConstraint.isActive = false
         if sender.isOn == true {
-            self.centerYConstraint = self.targetView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-            self.widthConstraint.constant = 100.0
+            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            widthConstraint.constant = 100.0
         } else {
-            self.centerYConstraint = self.targetView.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
-            self.widthConstraint.constant = 50.0
+            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
+            widthConstraint.constant = 50.0
         }
-        self.centerYConstraint.isActive = true
-        
+        centerYConstraint.isActive = true
+            
         let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
             self.view.layoutIfNeeded()
         }
-        animator.addCompletion {_ in
+        animator.addCompletion { _ in
             sender.isEnabled = true
         }
         animator.startAnimation()

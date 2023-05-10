@@ -8,23 +8,27 @@
 ## Documentation
 
 - [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
-```objective-c
-- (IBAction)buttonPush:(UIButton *)sender {
-    [self.littleView removeFromSuperview];
-    [self.testView addSubview:self.littleView];
-    
-    self.littleView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.littleView.topAnchor constraintEqualToAnchor:self.testView.topAnchor].active = YES;
-    [self.littleView.leadingAnchor constraintEqualToAnchor:self.testView.leadingAnchor].active = YES;
-    
-    UIViewPropertyAnimator * animator = [[UIViewPropertyAnimator alloc] initWithDuration:1.0
-                                                                            dampingRatio:0.4
-                                                                              animations:^{
-        [self.testView layoutIfNeeded];
-    }];
-
-    [animator startAnimation];
-}
+```swift
+    @objc private func switchToggled(_ sender: UISwitch) {
+        sender.isEnabled = false
+        centerYConstraint.isActive = false
+        if sender.isOn == true {
+            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            widthConstraint.constant = 100.0
+        } else {
+            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
+            widthConstraint.constant = 50.0
+        }
+        centerYConstraint.isActive = true
+            
+        let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
+            self.view.layoutIfNeeded()
+        }
+        animator.addCompletion { _ in
+            sender.isEnabled = true
+        }
+        animator.startAnimation()
+    }
 ```
 
 ## Bug

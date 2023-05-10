@@ -15,6 +15,7 @@
 		84A836362A0AD774008F3D25 /* ViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A836342A0AD774008F3D25 /* ViewControllerA.xib */; };
 		84A8363F2A0AD983008F3D25 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8363D2A0AD983008F3D25 /* ViewControllerB.m */; };
 		84A836402A0AD983008F3D25 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A8363E2A0AD983008F3D25 /* ViewControllerB.xib */; };
+		84A836422A0B1735008F3D25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A836412A0B1735008F3D25 /* main.swift */; };
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
 		84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */; };
@@ -35,6 +36,7 @@
 		84A8363C2A0AD983008F3D25 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		84A8363D2A0AD983008F3D25 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		84A8363E2A0AD983008F3D25 /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
+		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		84AF26D628F372BA00C4E0A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsForTableView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		845902F828F0D71600E50B56 /* AutoLayout_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				84A836412A0B1735008F3D25 /* main.swift */,
 				845902F928F0D71600E50B56 /* AppDelegate.swift */,
 				845902FB28F0D71600E50B56 /* SceneDelegate.swift */,
 				84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */,
@@ -198,6 +201,7 @@
 			files = (
 				84A836352A0AD774008F3D25 /* ViewControllerA.swift in Sources */,
 				84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */,
+				84A836422A0B1735008F3D25 /* main.swift in Sources */,
 				84D9F33B28F73ABF00700EF0 /* UIView+AutoLayout.swift in Sources */,
 				84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */,
 				845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */,
@@ -356,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mulgrim.EmptyProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mulgrim.AutoLayout-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -390,7 +394,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mulgrim.EmptyProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mulgrim.AutoLayout-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
