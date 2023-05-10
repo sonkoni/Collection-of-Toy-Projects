@@ -9,7 +9,7 @@
 >
 > - Objective-C Sample
 
-`Parallax`|```ZoomInOut```
+`Swift`|```Objective-C```
 ---|---
 <img src="http://i.imgur.com/v8JuRYj.gif" width="300">|<img src="http://i.imgur.com/v8JuRYj.gif" width="300">
 
