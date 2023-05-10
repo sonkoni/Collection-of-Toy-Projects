@@ -8,7 +8,9 @@
 ## Documentation
 
 - [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
+
 ```swift
+
 @objc private func switchToggled(_ sender: UISwitch) {
     sender.isEnabled = false
     centerYConstraint.isActive = false
@@ -29,6 +31,7 @@
     }
     animator.startAnimation()
 }
+
 ```
 
 ## Bug
