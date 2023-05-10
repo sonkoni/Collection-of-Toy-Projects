@@ -5,9 +5,7 @@
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
 
 ## Examples
-
-> 시뮬레이터: iPhone13ProMax, iOS15.5 로 진행하였습니다.<br>
-> 네트워크 연결 확인을 위해 실제 디바이스(iphone 12pro, iOS15.6)을 사용했습니다.
+> Swift Sample 1개, Objective-C Sample 1개
 
 <div align="left">
 
