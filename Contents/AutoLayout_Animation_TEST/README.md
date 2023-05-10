@@ -11,7 +11,7 @@
 
 `Swift`|```Objective-C```
 ---|---
-<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.16.800px.gif" width="300">|<img src="http://i.imgur.com/v8JuRYj.gif" width="300">
+<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.16.800px.gif" width="250">|<img src="http://i.imgur.com/v8JuRYj.gif" width="250">
 
 
 ## Documentation
