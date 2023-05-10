@@ -22,6 +22,10 @@
 </tr>
 </table>
 
+Parallax|ZoomInOut
+---|---
+<img src="http://i.imgur.com/v8JuRYj.gif" width="300">|<img src="http://i.imgur.com/v8JuRYj.gif" width="300">
+
 
 ## Documentation
 
