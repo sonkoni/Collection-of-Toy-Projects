@@ -1,7 +1,8 @@
 # AutoLayout Animation 
 
 ## AutoLayout 변경을 애니메이션화하는 샘플
-* AutoLayout의 변경 + `layoutIfNeeded` + UIView animation으로 작동한다.
+- AutoLayout의 변경 + `layoutIfNeeded` + UIView animation으로 작동한다.
+    - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
 
 ## Examples
 
