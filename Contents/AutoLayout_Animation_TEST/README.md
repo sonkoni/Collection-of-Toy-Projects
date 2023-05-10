@@ -7,21 +7,6 @@
 ## Examples
 > Swift Sample 1개, Objective-C Sample 1개
 
-
-|<img width=240 src="https://user-images.githubusercontent.com/46439995/185067434-c71f35dd-3db5-41c9-ad73-39c3301043b1.gif">|<img width=240 src="https://user-images.githubusercontent.com/46439995/185071000-b96ddd72-52df-45b8-858f-3a065a438708.gif">|
-|`네트워크 없을때 설정으로`|`검색버튼 입력시 활성`| 
-
-<table>
-<tr>
-<th>```Parallax```</th>
-<th>`ZoomInOut`</th>
-</tr>
-<tr>
-<td><img src="http://i.imgur.com/v8JuRYj.gif" width="300"></td>
-<td><img src="http://i.imgur.com/lLooXQ7.gif" width="300"></td>
-</tr>
-</table>
-
 `Parallax`|```ZoomInOut```
 ---|---
 <img src="http://i.imgur.com/v8JuRYj.gif" width="300">|<img src="http://i.imgur.com/v8JuRYj.gif" width="300">
