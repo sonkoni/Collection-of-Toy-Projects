@@ -17,10 +17,11 @@
 <th>ZoomInOut</th>
 </tr>
 <tr>
-<td><img src="http://i.imgur.com/v8JuRYj.gif"/></td>
+<td><img src="http://i.imgur.com/v8JuRYj.gif" width="300"></td>
 <td><img src="http://i.imgur.com/lLooXQ7.gif"/></td>
 </tr>
 </table>
+
 
 ## Documentation
 
