@@ -15,26 +15,10 @@
 <tr>
 <th>Parallax</th>
 <th>ZoomInOut</th>
-<th>RotateInOut</th>
-<th>Cards</th>
 </tr>
 <tr>
 <td><img src="http://i.imgur.com/v8JuRYj.gif"/></td>
 <td><img src="http://i.imgur.com/lLooXQ7.gif"/></td>
-<td><img src="http://i.imgur.com/lCNh5mg.gif"/></td>
-<td><img src="http://i.imgur.com/joA1emB.gif"/></td>
-</tr>
-<tr>
-<th>CrossFade</th>
-<th>Cube</th>
-<th>Page</th>
-<th></th>
-</tr>
-<tr>
-<td><img src="http://i.imgur.com/U1hOKYo.gif"/></td>
-<td><img src="http://i.imgur.com/897mcdm.gif"/></td>
-<td><img src="http://i.imgur.com/HRcvRIV.gif"/></td>
-<td></td>
 </tr>
 </table>
 
