@@ -9,26 +9,26 @@
 
 - [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
 ```swift
-    @objc private func switchToggled(_ sender: UISwitch) {
-        sender.isEnabled = false
-        centerYConstraint.isActive = false
-        if sender.isOn == true {
-            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-            widthConstraint.constant = 100.0
-        } else {
-            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
-            widthConstraint.constant = 50.0
-        }
-        centerYConstraint.isActive = true
-            
-        let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
-            self.view.layoutIfNeeded()
-        }
-        animator.addCompletion { _ in
-            sender.isEnabled = true
-        }
-        animator.startAnimation()
+@objc private func switchToggled(_ sender: UISwitch) {
+    sender.isEnabled = false
+    centerYConstraint.isActive = false
+    if sender.isOn == true {
+        centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        widthConstraint.constant = 100.0
+    } else {
+        centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
+        widthConstraint.constant = 50.0
     }
+    centerYConstraint.isActive = true
+        
+    let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
+        self.view.layoutIfNeeded()
+    }
+    animator.addCompletion { _ in
+        sender.isEnabled = true
+    }
+    animator.startAnimation()
+}
 ```
 
 ## Bug
