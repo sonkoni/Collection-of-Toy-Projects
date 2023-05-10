@@ -13,7 +13,7 @@
 
 <table>
 <tr>
-<th>|`Parallax`|</th>
+<th>```Parallax```</th>
 <th>`ZoomInOut`</th>
 </tr>
 <tr>
