@@ -13,12 +13,12 @@
 
 <table>
 <tr>
-<th>Parallax</th>
-<th>ZoomInOut</th>
+<th>`Parallax`</th>
+<th>`ZoomInOut`</th>
 </tr>
 <tr>
 <td><img src="http://i.imgur.com/v8JuRYj.gif" width="300"></td>
-<td><img src="http://i.imgur.com/lLooXQ7.gif"/></td>
+<td><img src="http://i.imgur.com/lLooXQ7.gif" width="300"></td>
 </tr>
 </table>
 
