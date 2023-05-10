@@ -42,7 +42,7 @@ final class ViewControllerA: UIViewController {
         centerYConstraint.isActive = true
             
         let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
-            self.view.layoutIfNeeded()
+            self.view.layoutIfNeeded() // 애니메이션 블락 안에서 layoutIfNeeded 메서드를 호출해야한다.
         }
         animator.addCompletion { _ in
             sender.isEnabled = true
