@@ -5,7 +5,8 @@
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
 
 ## Examples
-> Swift Sample 1개, Objective-C Sample 1개
+> Swift Sample
+> Objective-C Sample
 
 `Parallax`|```ZoomInOut```
 ---|---
