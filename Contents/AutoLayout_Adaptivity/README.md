@@ -5,7 +5,8 @@
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
     
 ## 현재 테스트
-![](https://img.shields.io/badge/Swift-5.1-blue.svg?style=flat)    
+![](https://img.shields.io/badge/Swift-5.1-blue.svg?style=flat)
+![](https://img.shields.io/badge/Swift-5.1-red.svg?style=flat)    
 
 ## Examples
 > - Swift Sample
