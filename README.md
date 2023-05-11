@@ -16,6 +16,33 @@
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](http://mit-license.org)
 
+# 테스트1
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
+![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
+![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
+![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=flat-square&logo=github&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](http://mit-license.org)
+![Sketch](https://img.shields.io/badge/Sketch-F7B500?style=flat-square&logo=sketch&logoColor=black)
+
+# 테스트2
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat&logo=Swift&logoColor=white)
+![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat&logo=apple&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![iOS](https://img.shields.io/badge/IOS-000000?style=flat&logo=ios&logoColor=white)
+![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat&logo=macos&logoColor=F0F0F0)
+![Git](https://img.shields.io/badge/Git-F05033?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=flat&logo=github&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
+![Sketch](https://img.shields.io/badge/Sketch-F7B500?style=flat&logo=sketch&logoColor=black)
+
+
 ## About
 **토이 프로젝트** 모음   
 - 앱을 출시하면서 필요한 부품들을 작성했던 개인 프로젝트입니다.
