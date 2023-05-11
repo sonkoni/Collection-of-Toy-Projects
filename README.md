@@ -17,6 +17,9 @@
 ## Contents
 - [AutoLayout](#autoLayout)
 
+- [License](#license)
+
+
 ## AutoLayout
 *Auto Layout을 프로그래머틱한 방식과 interface builder(xib, storyboard) 방식으로 보여주는 프로젝트*
 - [AutoLayout **Adaptivity**](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity) - Device Size Classes 및 Orientation 에 따른 AutoLayout Adaptivity **테스트**
@@ -26,3 +29,8 @@
 **[back to top](#contents)**
 
 
+
+## License
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
+This project is released under the MIT License. See LICENSE for more information.
+**[back to top](#contents)**
