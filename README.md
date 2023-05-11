@@ -32,5 +32,7 @@
 
 ## License
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
-This project is released under the MIT License. See LICENSE for more information.
+
+* This project is released under the MIT License. See LICENSE for more information.
+
 **[back to top](#contents)**
