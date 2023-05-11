@@ -7,9 +7,10 @@
 ## 현재 테스트
 ## 💻 STACK
 
-![](https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)
-![](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=Swift&logoColor=white)
-![](https://img.shields.io/badge/SXXX-FA7343?style=flat-square&logo=Swift&logoColor=white)
+![Javascript](https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=Swift&logoColor=white)
+![Objective-C](https://img.shields.io/badge/Objective-C-3A95E3?style=flat-square&logo=apple&logoColor=white)
+![Objective-C](https://img.shields.io/badge/Objective-C-3A95E3?style=flat&logo=apple&logoColor=white)
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/OBJECTIVE--C-%233A95E3.svg?style=for-the-badge&logo=apple&logoColor=white)
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
