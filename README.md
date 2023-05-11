@@ -5,6 +5,16 @@
 [<img src="./images/free-matrix-air-mini.png" width="200">](https://mulgrim.com/free/)
 
 # Collection-of-Toy-Projects
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
+![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
+![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
+![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=flat-square&logo=github&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](http://mit-license.org)
 
 ## About
 **토이 프로젝트** 모음   
@@ -31,7 +41,6 @@
 
 
 ## License
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](http://mit-license.org)
 
 * This project is released under the MIT License. See LICENSE for more information.
 
