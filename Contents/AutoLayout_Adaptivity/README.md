@@ -5,12 +5,10 @@
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
     
 ## 현재 테스트
-![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
-)
+![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)
 [![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
-)](http://mit-license.org)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
 ![Swift](https://img.shields.io/badge/swift-5.0-orange.svg)
 ![pod](https://img.shields.io/badge/pod-v1.4.0-red.svg)   
 
