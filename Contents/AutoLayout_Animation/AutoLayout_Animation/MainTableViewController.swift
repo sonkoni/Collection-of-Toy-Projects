@@ -23,7 +23,7 @@ final class MainTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "AutoLayout Animation"
+        title = "AutoLayout Animation"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -32,8 +32,8 @@ final class MainTableViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //! 현재 컨트롤러가 UITableViewController 가 아니므로, clearsSelectionOnViewWillAppear가 없다.
-        if let indexPath = self.tableView.indexPathForSelectedRow {
-            self.tableView.deselectRow(at:indexPath, animated:true)  // 원래 뷰로 돌아 올때, 셀렉션을 해제시킨다. 이게 더 멋지다.
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at:indexPath, animated:true)  // 원래 뷰로 돌아 올때, 셀렉션을 해제시킨다. 이게 더 멋지다.
         }
     }
 }
@@ -55,8 +55,8 @@ extension MainTableViewController {
     
     func configureDataSource() {
         
-        self.dataSource =
-        TableViewDiffableDataSource (tableView: self.tableView) {
+        dataSource =
+        TableViewDiffableDataSource (tableView: tableView) {
              (tableView: UITableView, indexPath: IndexPath, item: Item) -> UITableViewCell? in
             
             let cell = tableView.dequeueReusableCell(
@@ -75,7 +75,7 @@ extension MainTableViewController {
             return cell
         }
 
-        self.dataSource?.defaultRowAnimation = .fade
+        dataSource?.defaultRowAnimation = .fade
     }
     
     func updateUI(animated: Bool = true) {
@@ -86,11 +86,11 @@ extension MainTableViewController {
             let sectionTitle = section.sectionTitle
             let items = section.items
             
-            self.currentSnapshot?.appendSections([sectionTitle])
-            self.currentSnapshot?.appendItems(items, toSection:sectionTitle)
+            currentSnapshot?.appendSections([sectionTitle])
+            currentSnapshot?.appendItems(items, toSection:sectionTitle)
         }
         
-        self.dataSource?.apply(self.currentSnapshot!, animatingDifferences: animated)
+        dataSource?.apply(currentSnapshot!, animatingDifferences: animated)
     }
 }
 
@@ -111,7 +111,7 @@ extension MainTableViewController: UITableViewDelegate {
         }
         
         if let viewController = viewController {
-            self.navigationController?.pushViewController(viewController, animated:true)
+            navigationController?.pushViewController(viewController, animated:true)
         }
     }
 }

@@ -19,16 +19,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = scene as? UIWindowScene else { return }
-        self.setupAppearanceProxy() // 기본 환경설정.
-        if (UIDevice.current.userInterfaceIdiom == .pad) { print("아이패드") } else { print("아이폰!!") }
+        setupAppearanceProxy() // 기본 환경설정.
+        if (UIDevice.current.userInterfaceIdiom == .pad) { print("아이패드") } else { print("아이폰") }
         
-        self.window = UIWindow.init(windowScene:scene)
-        self.window?.backgroundColor = UIColor.cyan
+        window = UIWindow.init(windowScene:scene)
+        window?.backgroundColor = UIColor.cyan
         let mainViewController = MainTableViewController()
         self.mainViewController = mainViewController
         let nav = UINavigationController.init(rootViewController:mainViewController)
-        self.window?.rootViewController = nav
-        self.window?.makeKeyAndVisible()
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}

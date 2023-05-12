@@ -23,7 +23,7 @@ final class MainTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "AutoLayout Adaptivity"
+        title = "AutoLayout Adaptivity"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -55,7 +55,7 @@ extension MainTableViewController {
     func configureDataSource() {
         
         dataSource =
-        TableViewDiffableDataSource (tableView: self.tableView) {
+        TableViewDiffableDataSource (tableView: tableView) {
              (tableView: UITableView, indexPath: IndexPath, item: Item) -> UITableViewCell? in
             
             let cell = tableView.dequeueReusableCell(
