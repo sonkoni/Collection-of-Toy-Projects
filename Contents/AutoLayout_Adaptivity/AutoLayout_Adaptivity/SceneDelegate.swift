@@ -7,6 +7,18 @@
 
 import UIKit
 
+final class NavigationController: UINavigationController {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        guard let topViewController = topViewController else {
+            return super.supportedInterfaceOrientations
+        }
+        if let presentedViewController = presentedViewController {
+            return presentedViewController.supportedInterfaceOrientations
+        }
+        return topViewController.supportedInterfaceOrientations // topViewController 에게 회전 권한을 이관한다.
+    }
+}
+
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // MARK: - Property
@@ -19,16 +31,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = scene as? UIWindowScene else { return }
-        self.setupAppearanceProxy() // 기본 환경설정.
-        if (UIDevice.current.userInterfaceIdiom == .pad) { print("아이패드") } else { print("아이폰!!") }
+        setupAppearanceProxy() // 기본 환경설정.
+        if (UIDevice.current.userInterfaceIdiom == .pad) { print("아이패드") } else { print("아이폰") }
         
-        self.window = UIWindow.init(windowScene:scene)
-        self.window?.backgroundColor = UIColor.cyan
+        window = UIWindow.init(windowScene:scene)
+        window?.backgroundColor = UIColor.cyan
         let mainViewController = MainTableViewController()
         self.mainViewController = mainViewController
-        let nav = UINavigationController.init(rootViewController:mainViewController)
-        self.window?.rootViewController = nav
-        self.window?.makeKeyAndVisible()
+        let nav = NavigationController.init(rootViewController:mainViewController)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}

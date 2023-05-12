@@ -3,43 +3,8 @@
 ## Device Size Classes 및 Orientation 에 따른 AutoLayout Adaptivity **테스트** 샘플
 - AutoLayout의 변경 + `layoutIfNeeded` + UIView animation으로 작동한다.
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
+        
     
-## 현재 테스트
-## 💻 STACK
-
-![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
-![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-<br>
-![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
-![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
-<br>
-![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=flat-square&logo=github&logoColor=white)
-<br>
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-<br>
-![Sketch](https://img.shields.io/badge/Sketch-F7B500?style=flat-square&logo=sketch&logoColor=black)
-<br>
-![Javascript](https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)
-![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat&logo=apple&logoColor=white)
-![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
-![Objective-C](https://img.shields.io/badge/OBJECTIVE--C-%233A95E3.svg?style=for-the-badge&logo=apple&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-<br>
-![](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white)
-![](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white)
-![](https://img.shields.io/badge/PostCSS-DD3A0A?style=flat-square&logo=PostCSS&logoColor=white)
-<br>
-![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black)
-![](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white)
-![](https://img.shields.io/badge/ReduxSaga-999999?style=flat-square&logo=Redux-Saga&logoColor=white)
-![](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=GraphQL&logoColor=white)
-<br>
-![](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=Netlify&logoColor=white)
-![](https://img.shields.io/badge/MSAzure-0078D4?style=flat-square&logo=MicrosoftAzure&logoColor=white)
-
 ## Examples
 > - Swift Sample
 >
@@ -50,7 +15,12 @@
 <img src="./screenshot/Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.16.800px.gif" width="250">|<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.27.mp4.gif" width="250">
 
 
+## 버그
+* https://stackoverflow.com/questions/74050444/have-anyone-experienced-same-error-log-in-related-with-view-controller-orientati
+
 ## Documentation
+
+* http://wiki.mulgrim.net/page/Project:IOs-ObjC/자동회전
 
 - [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
 

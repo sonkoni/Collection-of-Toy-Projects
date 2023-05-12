@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerA">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="U8C-La-MPQ"/>
+                <outlet property="viewA" destination="ujZ-S7-YXw" id="zmy-Dg-4Mf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,7 +27,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                             <color key="backgroundColor" systemColor="systemPurpleColor"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="ujZ-S7-YXw" secondAttribute="height" id="HYW-P4-RVf"/>
+                                <constraint firstAttribute="width" secondItem="ujZ-S7-YXw" secondAttribute="height" priority="999" id="HYW-P4-RVf"/>
                             </constraints>
                             <variation key="heightClass=compact">
                                 <mask key="constraints">
@@ -39,15 +40,38 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qas-sy-jwS">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUm-Hc-VtR">
+                                            <rect key="frame" x="160" y="12" width="94.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     <constraints>
+                                        <constraint firstItem="lUm-Hc-VtR" firstAttribute="centerX" secondItem="qas-sy-jwS" secondAttribute="centerX" id="k21-E5-UaR"/>
+                                        <constraint firstItem="lUm-Hc-VtR" firstAttribute="centerY" secondItem="qas-sy-jwS" secondAttribute="centerY" id="vCa-Lb-6Yv"/>
                                         <constraint firstAttribute="height" constant="44" id="yq1-pv-mZq"/>
                                     </constraints>
                                     <variation key="heightClass=regular" hidden="YES"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oox-46-1pn">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portrait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyB-2w-Npu">
+                                            <rect key="frame" x="130" y="171" width="154.5" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=compact" hidden="YES"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="tintColor"/>
+                                    <constraints>
+                                        <constraint firstItem="TyB-2w-Npu" firstAttribute="centerX" secondItem="oox-46-1pn" secondAttribute="centerX" id="3Rp-Vr-Yoa"/>
+                                        <constraint firstItem="TyB-2w-Npu" firstAttribute="centerY" secondItem="oox-46-1pn" secondAttribute="centerY" id="tRQ-sQ-Zlr"/>
+                                    </constraints>
                                 </view>
                             </subviews>
                         </stackView>
