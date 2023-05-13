@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerA">
             <connections>
+                <outlet property="orangeView" destination="qas-sy-jwS" id="zw8-AL-tHW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="U8C-La-MPQ"/>
                 <outlet property="viewA" destination="ujZ-S7-YXw" id="zmy-Dg-4Mf"/>
             </connections>
@@ -54,13 +55,12 @@
                                         <constraint firstItem="lUm-Hc-VtR" firstAttribute="centerY" secondItem="qas-sy-jwS" secondAttribute="centerY" id="vCa-Lb-6Yv"/>
                                         <constraint firstAttribute="height" constant="44" id="yq1-pv-mZq"/>
                                     </constraints>
-                                    <variation key="heightClass=regular" hidden="YES"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oox-46-1pn">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+                                    <rect key="frame" x="0.0" y="44" width="414" height="346"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portrait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyB-2w-Npu">
-                                            <rect key="frame" x="130" y="171" width="154.5" height="48"/>
+                                            <rect key="frame" x="130" y="149" width="154.5" height="48"/>
                                             <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -74,6 +74,9 @@
                                     </constraints>
                                 </view>
                             </subviews>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
                         </stackView>
                     </subviews>
                     <variation key="heightClass=compact" axis="horizontal" distribution="fillEqually"/>
