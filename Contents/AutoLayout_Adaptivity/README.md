@@ -15,6 +15,10 @@
 <img src="./screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="250">|<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.27.mp4.gif" width="250">
 
 
+// Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05
+// Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.16.800px
+// Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.27
+
 ## 버그
 * https://stackoverflow.com/questions/74050444/have-anyone-experienced-same-error-log-in-related-with-view-controller-orientati
 
