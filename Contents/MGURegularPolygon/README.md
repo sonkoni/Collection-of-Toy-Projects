@@ -4,7 +4,7 @@
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
-## 애니메이팅 가능한 hexagonal tiling Wallpaper View
+## 애니메이팅 가능한 Hexagonal Tiling Wallpaper View
 - 앱의 배경을 꾸며줄 수 있는 애니메이팅 가능한 6각형 조각으로 빈틈없이 채우는(hexagonal tiling) Wallpaper View
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Wallpaper의 요구사항이 있어서 제작함. 
 
@@ -13,7 +13,7 @@
 >
 > - Objective-C Sample
 
-`Swift`|```Objective-C```
+n각형 생성 및 회전 | 크기 조절 및 커팅
 ---|---
 <img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif" width="450">|<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif" width="450">
 
