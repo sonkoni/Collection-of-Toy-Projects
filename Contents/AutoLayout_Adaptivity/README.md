@@ -7,8 +7,10 @@
     
 ## Examples
 > - Swift Sample
+>   - Interface Builder
 >
 > - Objective-C Sample
+>   - Programmatically
 
 `Swift` - Interface Builder |`Objective-C` - Programmatically
 ---|---
