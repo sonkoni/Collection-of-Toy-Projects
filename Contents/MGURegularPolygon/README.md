@@ -24,7 +24,6 @@ n각형 생성 및 회전 | 크기 조절 및 커팅
 ---|---
 <img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif" width="450">|<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif" width="450">
 n각형 생성 및 회전 | 크기 조절 및 커팅
----|---
 <img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif" width="450">|<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif" width="450">
 
 
