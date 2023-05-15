@@ -11,7 +11,7 @@
 > - Objective-C Sample
 
 
-<img src="./screenshot/small.gif" width="200">
+<img src="./screenshot/output-onlinegiftools.gif" width="200">
 
 
 // small
