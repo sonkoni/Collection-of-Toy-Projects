@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import BaseKit
+import IosKit
 
 final class TableViewDiffableDataSource: UITableViewDiffableDataSource<String, Item> {
     // MARK: header/footer titles support
@@ -22,6 +24,9 @@ final class MainTableViewController: UIViewController {
     let tableView = UITableView(frame: .zero, style: .insetGrouped)
 
     override func viewDidLoad() {
+//        let k = MGRInt(value: 3)
+//        print(k)
+        
         super.viewDidLoad()
         title = "AutoLayout Adaptivity"
         configureTableView()
