@@ -28,8 +28,8 @@
     - [intrinsicContentSize](http://wiki.mulgrim.net/page/Api:UIKit/UIView/intrinsicContentSize)
     - [뷰 전환](http://wiki.mulgrim.net/page/Project:Mac-ObjC/뷰_전환)
 
-- [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
 
+- snippets
 ```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
