@@ -28,6 +28,7 @@
 ## Contents
 - [AutoLayout](#autoLayout)
 
+- [Wallpaper](#wallpaper)
 - [License](#license)
 
 
@@ -40,6 +41,9 @@
 **[back to top](#contents)**
 
 
+## Wallpaper
+*앱의 배경을 꾸며줄 수 있는 Wallpaper*
+- [MGURegularPolygon](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURegularPolygon) - 앱의 배경을 꾸며줄 수 있는 애니메이팅 가능한 6각형의 Wallpaper View
 
 ## License
 
