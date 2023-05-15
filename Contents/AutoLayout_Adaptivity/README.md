@@ -30,27 +30,26 @@
 
 - [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
 
-```swift
-
-@objc private func switchToggled(_ sender: UISwitch) {
-    sender.isEnabled = false
-    centerYConstraint.isActive = false
-    if sender.isOn == true {
-        centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        widthConstraint.constant = 100.0
-    } else {
-        centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
-        widthConstraint.constant = 50.0
-    }
-    centerYConstraint.isActive = true
-        
-    let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
-        self.view.layoutIfNeeded() // 애니메이션 블락 안에서 layoutIfNeeded 메서드를 호출해야한다. 
-    }
-    animator.addCompletion { _ in
-        sender.isEnabled = true
-    }
-    animator.startAnimation()
+```objective-c
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self configureTableView];
+    [self configureDataSource];
+    [self updateUI];
+    __weak __typeof(self) weakSelf = self;
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    self.observer = [notificationCenter addObserverForName:UIDeviceOrientationDidChangeNotification
+                                                    object:nil
+                                                     queue:[NSOperationQueue mainQueue]
+                                                usingBlock:^(NSNotification *note) {
+        if (weakSelf.presentedViewController == nil &&
+            UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation) == YES) {
+            ViewControllerX *vc = [ViewControllerX new];
+            vc.modalPresentationStyle = UIModalPresentationFullScreen;
+            vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [weakSelf presentViewController:vc animated:YES completion:^{}];
+        }
+    }];
 }
 
 ```
