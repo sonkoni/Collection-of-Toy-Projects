@@ -6,7 +6,17 @@
 
 ## 애니메이팅 가능한 Hexagonal Tiling Wallpaper View
 - 앱의 배경을 꾸며줄 수 있는 애니메이팅 가능한 6각형 조각으로 빈틈없이 채우는(hexagonal tiling) Wallpaper View
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Wallpaper의 요구사항이 있어서 제작함. 
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Wallpaper의 요구사항이 있어서 제작함.
+
+## Features
+*  ***Infinite*** scrolling.
+*  ***Automatic*** Sliding.
+*  Support ***Horizontal*** and ***Vertical*** paging.
+*  Fully customizable item, with predefined banner-style item.
+*  Fully customizable ***page control***.
+*  Rich build-in 3D transformers.
+*  ***Simple*** and ***Delightful*** api usage.
+*  Support **SWIFT** and **OBJECTIVE-C**. 
 
 ## Examples
 > - Swift Sample
