@@ -9,9 +9,10 @@
 > - Swift Sample
 >
 > - Objective-C Sample
+
 `Swift`|```Objective-C```
 ---|---
-<img src="./screenshot/output-onlinegiftools.gif" width="450">|<img src="./screenshot/output-onlinegiftools.gif" width="450">    
+<img src="./screenshot/output-onlinegiftools.gif" width="250">|<img src="./screenshot/output-onlinegiftools.gif" width="250">    
 
 
 // small
