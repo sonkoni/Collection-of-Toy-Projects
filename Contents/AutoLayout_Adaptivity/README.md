@@ -12,14 +12,8 @@
 
 `Swift`|```Objective-C```
 ---|---
-<img src="./screenshot/output-onlinegiftools.gif" width="450">|<img src="./screenshot/output-onlinegiftools.gif" width="450">    
+<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">|<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">    
 
-
-// small
-// 64618b11254a3295432348
-// Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05
-// Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.16.800px
-// Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.27
 
 ## 버그
 * https://stackoverflow.com/questions/74050444/have-anyone-experienced-same-error-log-in-related-with-view-controller-orientati
