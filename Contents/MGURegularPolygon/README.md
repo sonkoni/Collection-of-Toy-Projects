@@ -1,5 +1,9 @@
 # HexagonalWallpaper 
 
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
+![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
+![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
+
 ## AutoLayout 변경을 애니메이션화하는 **테스트** 샘플
 - AutoLayout의 변경 + `layoutIfNeeded` + UIView animation으로 작동한다.
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
