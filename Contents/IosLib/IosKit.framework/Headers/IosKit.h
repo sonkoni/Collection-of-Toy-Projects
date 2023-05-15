@@ -45,6 +45,7 @@ FOUNDATION_EXPORT const unsigned char IosKitVersionString[];
 //! Components
 #import <IosKit/MGUBioMetricAuthenticator.h>
 #import <IosKit/MGUShapeView.h>
+#import <IosKit/MGUHexagonalWallpaperView.h>
 #import <IosKit/MGUSoundStateListener.h>
 #import <IosKit/MGUNavigationController.h>
 #import <IosKit/MGUVisualEffectView.h>

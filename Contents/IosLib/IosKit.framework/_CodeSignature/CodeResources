@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IosKit.h</key>
 		<data>
-		9msGvl4uGUVmMxGPJzL9Fow8xTE=
+		w1WDHItOx/uFGrGMlxfTWURmDc8=
 		</data>
 		<key>Headers/MGUActionSheetConfiguration.h</key>
 		<data>
@@ -191,6 +191,14 @@
 		<key>Headers/MGUFlowView.h</key>
 		<data>
 		71O9/PxZuc+tLvySwRxw/MmpSxc=
+		</data>
+		<key>Headers/MGUHexagonalInfo.h</key>
+		<data>
+		mjhDbvL2jZdQbw36QpEicc0Dha4=
+		</data>
+		<key>Headers/MGUHexagonalWallpaperView.h</key>
+		<data>
+		i3K10lzr+MnM2Sy8zbM7Uvhlf30=
 		</data>
 		<key>Headers/MGUKeyboardStateListener.h</key>
 		<data>
@@ -607,11 +615,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9msGvl4uGUVmMxGPJzL9Fow8xTE=
+			w1WDHItOx/uFGrGMlxfTWURmDc8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dHrplg2pu/C7IEbgNzz4WQqk4ADboJaFzEpA+Ci6hrM=
+			H/z2GJyNTfdRRDDIiR4UYS87hMHKIPIV9FTlx9xx2r0=
 			</data>
 		</dict>
 		<key>Headers/MGUActionSheetConfiguration.h</key>
@@ -1118,6 +1126,28 @@
 			<key>hash2</key>
 			<data>
 			X9sLTt6EvrAYRvwOv6Nbs4PovnlXdq6/wKzmpgG0maU=
+			</data>
+		</dict>
+		<key>Headers/MGUHexagonalInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mjhDbvL2jZdQbw36QpEicc0Dha4=
+			</data>
+			<key>hash2</key>
+			<data>
+			mivhhuj9KKsMwAU/+wELZ62qhR5ZQQ8t4V1qbcrGL0A=
+			</data>
+		</dict>
+		<key>Headers/MGUHexagonalWallpaperView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i3K10lzr+MnM2Sy8zbM7Uvhlf30=
+			</data>
+			<key>hash2</key>
+			<data>
+			4izHh6XX6lqibyrWnL3Lfx0XtZgEQBPMR10IHkXcUH8=
 			</data>
 		</dict>
 		<key>Headers/MGUKeyboardStateListener.h</key>
