@@ -58,10 +58,10 @@
 ## Bug
 ### System Bug
 - iOS 16 이상의 Simulator부터는 `WKWebView` 이용 시 다음과 경고 로그가 발생한다.
+    - [Apple Developer Forums](https://developer.apple.com/forums/thread/714467) 에 따르면 시스템 버그로 사료된다.
 ```
 [Security] This method should not be called on the main thread as it may lead to UI unresponsiveness.
 ```
-- [Apple Developer Forums](https://developer.apple.com/forums/thread/714467) 에 따르면 시스템 버그로 사료된다.
 
 
 ## Author
