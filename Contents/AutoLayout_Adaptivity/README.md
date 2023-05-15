@@ -10,9 +10,8 @@
 >
 > - Objective-C Sample
 
-`Swift`|```Objective-C```
----|---
-<img src="./screenshot/small.gif" width="450">|<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_Pro_2023_05_10_at_15.40.27.mp4.gif" width="450">
+
+<img src="./screenshot/small.gif" width="200">
 
 
 // small
