@@ -12,7 +12,7 @@
 
 `Swift`|```Objective-C```
 ---|---
-<img src="./screenshot/output-onlinegiftools.gif" width="400">|<img src="./screenshot/output-onlinegiftools.gif" width="400">    
+<img src="./screenshot/output-onlinegiftools.gif" width="450">|<img src="./screenshot/output-onlinegiftools.gif" width="450">    
 
 
 // small
