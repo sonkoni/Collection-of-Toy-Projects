@@ -15,10 +15,6 @@
 ---|---
 <img src="./screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">|<img src="./screenshot/Screen Recording 2023-05-15 at 12.00.52.gif" width="450">    
 
-
-## 버그
-* https://stackoverflow.com/questions/74050444/have-anyone-experienced-same-error-log-in-related-with-view-controller-orientati
-
 ## Documentation
 
 - 여기에 존재하지 않는 추가적인 문서는 다음의 기술위키 문서를 참고하세요.
@@ -29,7 +25,11 @@
     - [뷰 전환](http://wiki.mulgrim.net/page/Project:Mac-ObjC/뷰_전환)
 
 
-- snippets
+
+
+<img src="./screenshot/230515a1.jpg" width="450">
+
+- snippets : Objective-C Programmatically based
 ```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,6 +73,9 @@ invalid mode 'kCFRunLoopCommonModes' provided to CFRunLoopRunSpecific - break on
 >  ```
 >  let myEmail = "eskimo" + "1" + "@apple.com"
 >  ```
+
+* https://stackoverflow.com/questions/74050444/have-anyone-experienced-same-error-log-in-related-with-view-controller-orientati
+
 
 
 ## Author

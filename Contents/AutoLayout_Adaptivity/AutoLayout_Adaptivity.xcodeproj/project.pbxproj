@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		844CD0CD2A11DA6700D7C9A7 /* Screen Recording 2023-05-15 at 12.00.52.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Screen Recording 2023-05-15 at 12.00.52.gif"; sourceTree = "<group>"; };
+		844CD0CF2A11E21000D7C9A7 /* 230515a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230515a1.jpg; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* AutoLayout_Adaptivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout_Adaptivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 			children = (
 				8498FF922A11AD9E00E3A721 /* Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif */,
 				844CD0CD2A11DA6700D7C9A7 /* Screen Recording 2023-05-15 at 12.00.52.gif */,
+				844CD0CF2A11E21000D7C9A7 /* 230515a1.jpg */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
