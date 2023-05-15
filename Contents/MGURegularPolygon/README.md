@@ -42,6 +42,7 @@ n각형 생성 및 회전 | 크기 조절 및 커팅
 
 
 - `layer` 의 `timeOffset` 프라퍼티를 이용하여, 슬라이더로 애니메이팅을 수동 조절할 수 있음
+    - [timeOffset](http://wiki.mulgrim.net/page/Api:Core_Animation/protocol_CAMediaTiming/timeOffset) : 기술 위키 문서
 ```swift
 
 @IBAction func sliderValueChanged(_ sender: UISlider) {
