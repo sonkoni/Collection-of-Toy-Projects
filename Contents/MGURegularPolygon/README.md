@@ -32,8 +32,14 @@ n각형 생성 및 회전 | 크기 조절 및 커팅
 
 ## Documentation
 
-<img src="./screenshot/FocusRandom.jpg" width="400">
-<img src="./screenshot/Hexagon.jpg" width="400">
+- 도형 배치를 위한 알고리즘 구상
+<img src="./screenshot/Hexagon.jpg" width="800">
+
+
+- 포커스 랜덤 함수 구상
+    - 예를 들어 파란색 부터 흰색을 HSB 값으로 랜덤하게 배치했을 때, 파란색에 치우치게 랜덤 색이 나오게 하기 위해서 구상함
+<img src="./screenshot/FocusRandom.jpg" width="800">
+
 
 
 - [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
