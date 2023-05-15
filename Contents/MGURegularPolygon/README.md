@@ -41,30 +41,17 @@ n각형 생성 및 회전 | 크기 조절 및 커팅
 <img src="./screenshot/FocusRandom.jpg" width="800">
 
 
-
-- [Read the full **documentation** here](http://wiki.mulgrim.net/page/Api:UIKit/UIView/-_layoutIfNeeded)
-
+- `layer` 의 `timeOffset` 프라퍼티를 이용하여, 슬라이더로 애니메이팅을 수동 조절할 수 있음
 ```swift
 
-@objc private func switchToggled(_ sender: UISwitch) {
-    sender.isEnabled = false
-    centerYConstraint.isActive = false
-    if sender.isOn == true {
-        centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        widthConstraint.constant = 100.0
-    } else {
-        centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
-        widthConstraint.constant = 50.0
-    }
-    centerYConstraint.isActive = true
-        
-    let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
-        self.view.layoutIfNeeded() // 애니메이션 블락 안에서 layoutIfNeeded 메서드를 호출해야한다. 
-    }
-    animator.addCompletion { _ in
-        sender.isEnabled = true
-    }
-    animator.startAnimation()
+@IBAction func sliderValueChanged(_ sender: UISlider) {
+    hexagonalWallpaperView.layer.timeOffset = CFTimeInterval(sender.value)
+}
+private func onboardingAnimationStart() {
+    let hexagonalProgressAnimation = self.hexagonalWallpaperView.hexagonalProgressAnimation()
+    
+    CATransaction.setCompletionBlock { }
+    self.hexagonalWallpaperView.layer.add(hexagonalProgressAnimation, forKey: "HexagonalProgressAnimationKey")
 }
 
 ```
