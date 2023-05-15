@@ -1,9 +1,8 @@
 # AutoLayout Adaptivity 
 
 ## Device Size Classes 및 Orientation 에 따른 AutoLayout Adaptivity **테스트** 샘플
-- AutoLayout의 변경 + `layoutIfNeeded` + UIView animation으로 작동한다.
-    - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
-        
+- Size classes (compact, regular)에 따른 AutoLayout Adaptivity : Swift Sample
+- Orientation (Portrait, Landscape)에 따른 AutoLayout Adaptivity : Objective-C Sample
     
 ## Examples
 > - Swift Sample
