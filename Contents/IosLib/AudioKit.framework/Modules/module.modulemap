@@ -1,0 +1,6 @@
+framework module AudioKit {
+  umbrella header "AudioKit.h"
+
+  export *
+  module * { export * }
+}
