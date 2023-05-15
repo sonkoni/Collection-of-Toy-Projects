@@ -16,16 +16,18 @@
 *  Support **SWIFT** and **OBJECTIVE-C**. 
 
 ## Examples
-> - Swift Sample
-> - Objective-C Sample
+> - n각형 생성 및 회전
+> - 크기 조절 및 커팅
+> - 애니메이팅 + 리벌스 애니메이팅
+> - [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 Wallpaper
 
 n각형 생성 및 회전 | 크기 조절 및 커팅
 ---|---
-<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif" width="450">|<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif" width="450">
+<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif" width="400">|<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif" width="400">
 
-n각형 생성 및 회전 | 크기 조절 및 커팅
+애니메이팅 + 리벌스 애니메이팅 | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 Wallpaper
 ---|---
-<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.50.56.gif" width="450">|<img src="./screenshot/Simulator Screen Shot - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.51.10.png" width="450">
+<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.50.56.gif" width="400">|<img src="./screenshot/Simulator Screen Shot - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.51.10.png" width="400">
 
 
 ## Documentation
