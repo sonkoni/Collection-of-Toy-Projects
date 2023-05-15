@@ -30,7 +30,7 @@
                         </fragment>
                         <fragment content="앱처럼">
                             <attributes>
-                                <font key="NSFont" size="30" name=".AppleSDGothicNeoI-Regular"/>
+                                <font key="NSFont" metaFont="system" size="30"/>
                                 <font key="NSOriginalFont" metaFont="system" size="30"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
@@ -45,7 +45,7 @@ Device</string>
                         </fragment>
                         <fragment content="의">
                             <attributes>
-                                <font key="NSFont" size="30" name=".AppleSDGothicNeoI-Regular"/>
+                                <font key="NSFont" metaFont="system" size="30"/>
                                 <font key="NSOriginalFont" metaFont="system" size="30"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
@@ -58,7 +58,7 @@ Device</string>
                         </fragment>
                         <fragment content="에">
                             <attributes>
-                                <font key="NSFont" size="30" name=".AppleSDGothicNeoI-Regular"/>
+                                <font key="NSFont" metaFont="system" size="30"/>
                                 <font key="NSOriginalFont" metaFont="system" size="30"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
@@ -71,7 +71,7 @@ Device</string>
                         </fragment>
                         <fragment content="따라">
                             <attributes>
-                                <font key="NSFont" size="30" name=".AppleSDGothicNeoI-Regular"/>
+                                <font key="NSFont" metaFont="system" size="30"/>
                                 <font key="NSOriginalFont" metaFont="system" size="30"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
@@ -86,7 +86,7 @@ present, dimiss </string>
                         </fragment>
                         <fragment content="실행">
                             <attributes>
-                                <font key="NSFont" size="30" name=".AppleSDGothicNeoI-Regular"/>
+                                <font key="NSFont" metaFont="system" size="30"/>
                                 <font key="NSOriginalFont" metaFont="system" size="30"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>

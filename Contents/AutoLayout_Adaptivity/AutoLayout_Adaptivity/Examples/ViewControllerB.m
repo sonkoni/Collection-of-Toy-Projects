@@ -70,8 +70,10 @@
         CGFloat rotation = 0.0;
         if (i < 4) {
             rotation = (M_PI_4 * 1.7);
+            translationX = translationX - 80.0;
         } else if (i > 4) {
             rotation = (M_PI_4 * -1.7);
+            translationX = translationX + 80.0;
         }
         
         transform3D = CATransform3DTranslate(transform3D, translationX, 0.0, translationZ);
