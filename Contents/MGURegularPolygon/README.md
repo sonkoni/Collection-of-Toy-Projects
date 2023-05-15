@@ -9,13 +9,10 @@
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Wallpaper의 요구사항이 있어서 제작함.
 
 ## Features
-*  ***Infinite*** scrolling.
-*  ***Automatic*** Sliding.
-*  Support ***Horizontal*** and ***Vertical*** paging.
-*  Fully customizable item, with predefined banner-style item.
-*  Fully customizable ***page control***.
-*  Rich build-in 3D transformers.
-*  ***Simple*** and ***Delightful*** api usage.
+*  6각형 ***크기*** 조절 가능
+*  6각형 ***보더 굵기*** 조절 가능
+*  애니메이팅 + 리벌스 애니메이팅 가능
+*  HSB 기반 랜덤 칼라(보더, 면) 가능
 *  Support **SWIFT** and **OBJECTIVE-C**. 
 
 ## Examples
