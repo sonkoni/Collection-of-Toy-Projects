@@ -57,26 +57,11 @@
 
 ## Bug
 ### System Bug
-- `UISwitch` 토글 시 XCode 콘솔 상에서 발생하는 다음과 같은 메시지는 `UIKit` 버그에 해당한다.
+- iOS 16 이상의 Simulator부터는 `WKWebView` 이용 시 다음과 경고 로그가 발생한다.
 ```
-invalid mode 'kCFRunLoopCommonModes' provided to CFRunLoopRunSpecific - break on _CFRunLoopError_RunCalledWithInvalidMode to debug. This message will only appear once per execution.
+[Security] This method should not be called on the main thread as it may lead to UI unresponsiveness.
 ```
-- [Apple Developer Forums](https://developer.apple.com/forums/thread/132035?answerId=416935022#416935022) 에서 애플의 엔지니어가 버그를 인정했다.
-> Wow, that was depressingly easy to reproduce. I did a little digging and this is definitely a bug in UIKit, one that we’re tracking as (r. 57322394). The good news is that, AFAICT, it’s not actively toxic. CF is coping with this misbehaviour in a reasonable way.
->
-> Share and Enjoy
->
->   —
->
-> Quinn "The Eskimo!"
->
-> Apple Developer Relations, Developer Technical Support, Core OS/Hardware
->  ```
->  let myEmail = "eskimo" + "1" + "@apple.com"
->  ```
-
-* https://stackoverflow.com/questions/74050444/have-anyone-experienced-same-error-log-in-related-with-view-controller-orientati
-
+- [Apple Developer Forums](https://developer.apple.com/forums/thread/714467) 에 따르면 시스템 버그로 사료된다.
 
 
 ## Author
