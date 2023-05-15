@@ -55,6 +55,7 @@
 		8459030528F0D71700E50B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8459030728F0D71700E50B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8459030D28F0D7BB00E50B56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84725F892A12B3F6004A9E7C /* 230516a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516a1.jpg; sourceTree = "<group>"; };
 		84A836332A0AD774008F3D25 /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* HexagonalWallpaper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexagonalWallpaper-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				84D6B1C02A1244010044E02D /* Simulator Screen Shot - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.51.10.png */,
 				84D6B1D32A1248C40044E02D /* FocusRandom.jpg */,
 				84D6B1D22A1248C40044E02D /* Hexagon.jpg */,
+				84725F892A12B3F6004A9E7C /* 230516a1.jpg */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
