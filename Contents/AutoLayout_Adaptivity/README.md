@@ -27,7 +27,7 @@
 
 
 
-<img src="./screenshot/230515a1.jpg" width="900">
+<img src="./screenshot/230515a1.jpg" width="1000">
 
 - snippets : Objective-C Programmatically based
 ```objective-c
