@@ -24,9 +24,9 @@
 > - 애니메이팅 + 리벌스 애니메이팅
 > - [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 Wallpaper
 
-n각형 생성 및 회전 | 크기 조절 및 커팅
----|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">
+n각형 생성 및 회전 | 크기 조절 및 커팅 | 크기 조절 및 커팅
+---|---|---
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
 
 애니메이팅 + 리벌스 애니메이팅 | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 Wallpaper
 ---|---
