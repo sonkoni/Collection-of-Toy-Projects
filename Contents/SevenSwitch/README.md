@@ -25,6 +25,10 @@
 *  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
     * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
     * macOS : `MGASevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
+*  Interface Builder에서 설정가능하다.
+    * Swift : `@IBDesignable` `@IBInspectable`
+    * Objective-C : `IB_DESIGNABLE` `IBInspectable`
+*  MGASevenSwitch(macOS) 는 마우스 hover 시에 커서 타입을 정할 수 있다.    
 *  **Swift** and **Objective-C** compatability
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
