@@ -49,6 +49,9 @@ _button = [[MGUFlatSwitch alloc] initWithFrame:CGRectZero skinView:[MMTMidButton
 
 sonkoni(손관현), isomorphic111@gmail.com 
 
+## Credits
+Inspired by Dribbble [post](https://dribbble.com/shots/1631598-On-Off)
+
 ## License
 
 This project is released under the MIT License. See [LICENSE](https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/LICENSE) for more information.

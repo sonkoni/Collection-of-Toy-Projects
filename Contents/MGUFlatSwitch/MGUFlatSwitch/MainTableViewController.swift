@@ -23,7 +23,7 @@ final class MainTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "MGUOnOffButton"
+        title = "MGUFlatSwitch"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
