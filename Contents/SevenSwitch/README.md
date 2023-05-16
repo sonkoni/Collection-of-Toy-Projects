@@ -10,7 +10,7 @@
     - MGUSevenSwitch : iOS 용 (UIControl 서브클래스)
     - MGASevenSwitch : macOS 용 (NSControl 서브클래스)
 - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
-<p align="center"><img src="./screenshot/230516a1.jpg" width="100"></p>
+<p align="center"><img src="./screenshot/230516b1.jpg" width="100"></p>
 
 
 ## Features
@@ -20,11 +20,11 @@
     * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
 *  커스텀 손잡이 가능
 *  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device(아이폰, 트랙패드 등)를 통해 전달된다.
-    * iOS : `UIImpactFeedbackGenerator` 이용하여 구현
-    * macOS : `NSHapticFeedbackManager` 이용하여 구현
+    * iOS : `UIImpactFeedbackGenerator` 이용하여 구현함
+    * macOS : `NSHapticFeedbackManager` 이용하여 구현함
 *  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
-    * iOS : `MGUSevenSwitchStateChangedNotification` 를 이용
-    * macOS : `MGASevenSwitchStateChangedNotification` 를 이용
+    * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
+    * macOS : `MGASevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
 *  **Swift** and **Objective-C** compatability
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
