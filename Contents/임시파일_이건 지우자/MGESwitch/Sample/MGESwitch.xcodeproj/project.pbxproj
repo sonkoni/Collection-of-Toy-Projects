@@ -10,13 +10,9 @@
 		4851A6892922464C00A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6832922464C00A8AF69 /* AudioKit.framework */; };
 		4851A68C2922464C00A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6852922464C00A8AF69 /* BaseKit.framework */; };
 		4851A68E2922464C00A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6862922464C00A8AF69 /* GraphicsKit.framework */; };
-		4851A6902922464C00A8AF69 /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6872922464C00A8AF69 /* IosKit.framework */; };
-		4851A6922922464C00A8AF69 /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 4851A6882922464C00A8AF69 /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4851A69B2922465600A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6952922465600A8AF69 /* AudioKit.framework */; };
 		4851A69E2922465600A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6972922465600A8AF69 /* BaseKit.framework */; };
 		4851A6A02922465600A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6982922465600A8AF69 /* GraphicsKit.framework */; };
-		4851A6A22922465600A8AF69 /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6992922465600A8AF69 /* IosKit.framework */; };
-		4851A6A42922465600A8AF69 /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 4851A69A2922465600A8AF69 /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4851A6AD2922465E00A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6A72922465E00A8AF69 /* AudioKit.framework */; };
 		4851A6B02922465F00A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6A92922465E00A8AF69 /* BaseKit.framework */; };
 		4851A6B22922465F00A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6AA2922465E00A8AF69 /* GraphicsKit.framework */; };
@@ -89,7 +85,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				4851A6922922464C00A8AF69 /* IosRes.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +95,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				4851A6A42922465600A8AF69 /* IosRes.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,25 +125,17 @@
 
 /* Begin PBXFileReference section */
 		4851A6832922464C00A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6842922464C00A8AF69 /* AudioRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = AudioRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6852922464C00A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6862922464C00A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6872922464C00A8AF69 /* IosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6882922464C00A8AF69 /* IosRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = IosRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6952922465600A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6962922465600A8AF69 /* AudioRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = AudioRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6972922465600A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6982922465600A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6992922465600A8AF69 /* IosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A69A2922465600A8AF69 /* IosRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = IosRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6A72922465E00A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6A82922465E00A8AF69 /* AudioRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = AudioRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6A92922465E00A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6AA2922465E00A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6AB2922465E00A8AF69 /* MacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6AC2922465E00A8AF69 /* MacRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MacRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6B92922466600A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6BA2922466600A8AF69 /* AudioRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = AudioRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6BB2922466600A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6BC2922466600A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851A6BD2922466600A8AF69 /* MacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,7 +259,6 @@
 				4851A68C2922464C00A8AF69 /* BaseKit.framework in Frameworks */,
 				4851A6892922464C00A8AF69 /* AudioKit.framework in Frameworks */,
 				4851A68E2922464C00A8AF69 /* GraphicsKit.framework in Frameworks */,
-				4851A6902922464C00A8AF69 /* IosKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +269,6 @@
 				4851A69E2922465600A8AF69 /* BaseKit.framework in Frameworks */,
 				4851A69B2922465600A8AF69 /* AudioKit.framework in Frameworks */,
 				4851A6A02922465600A8AF69 /* GraphicsKit.framework in Frameworks */,
-				4851A6A22922465600A8AF69 /* IosKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,29 +377,21 @@
 			isa = PBXGroup;
 			children = (
 				4851A6B92922466600A8AF69 /* AudioKit.framework */,
-				4851A6BA2922466600A8AF69 /* AudioRes.bundle */,
 				4851A6BB2922466600A8AF69 /* BaseKit.framework */,
 				4851A6BC2922466600A8AF69 /* GraphicsKit.framework */,
 				4851A6BD2922466600A8AF69 /* MacKit.framework */,
 				4851A6BE2922466600A8AF69 /* MacRes.bundle */,
 				4851A6A72922465E00A8AF69 /* AudioKit.framework */,
-				4851A6A82922465E00A8AF69 /* AudioRes.bundle */,
 				4851A6A92922465E00A8AF69 /* BaseKit.framework */,
 				4851A6AA2922465E00A8AF69 /* GraphicsKit.framework */,
 				4851A6AB2922465E00A8AF69 /* MacKit.framework */,
 				4851A6AC2922465E00A8AF69 /* MacRes.bundle */,
 				4851A6952922465600A8AF69 /* AudioKit.framework */,
-				4851A6962922465600A8AF69 /* AudioRes.bundle */,
 				4851A6972922465600A8AF69 /* BaseKit.framework */,
 				4851A6982922465600A8AF69 /* GraphicsKit.framework */,
-				4851A6992922465600A8AF69 /* IosKit.framework */,
-				4851A69A2922465600A8AF69 /* IosRes.bundle */,
 				4851A6832922464C00A8AF69 /* AudioKit.framework */,
-				4851A6842922464C00A8AF69 /* AudioRes.bundle */,
 				4851A6852922464C00A8AF69 /* BaseKit.framework */,
 				4851A6862922464C00A8AF69 /* GraphicsKit.framework */,
-				4851A6872922464C00A8AF69 /* IosKit.framework */,
-				4851A6882922464C00A8AF69 /* IosRes.bundle */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
