@@ -4,38 +4,25 @@
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
-## **MGUOnOffButton**(***iOS***)
-- `SevenSwitch`는 `UISwitch` 및 `NSSwitch` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
-    - MGUSevenSwitch : iOS 용 (UIControl 서브클래스)
-    - MGASevenSwitch : macOS 용 (NSControl 서브클래스)
-- [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
+## **MGUOnOffButton**
+- Skeuomorphism(스큐어모피즘) 스타일의 애니메이팅 가능한 온오프 버튼
+    - UIControl 서브클래스로 제작함
+- [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼을 요구하여 제작함.
 <p align="center"><img src="./screenshot/230517a2.jpg" width="400"></p>
 
 
 ## Features
-*  커스텀 사이즈 가능(`UISwitch` 및 `NSSwitch`와 동일한 `intrinsicContentSize`도 가지고 있음)
-*  ON, OFF 영역에 이미지 또는 텍스트 설정 가능
-*  커스텀 Shape 가능
-    * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
-*  커스텀 손잡이 가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device(아이폰, 트랙패드 등)를 통해 전달된다.
-    * iOS : `UIImpactFeedbackGenerator` 이용하여 구현함
-    * macOS : `NSHapticFeedbackManager` 이용하여 구현함
-*  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
-    * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
-    * macOS : `MGASevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
-*  MGASevenSwitch(macOS)는 마우스 hover 시에 커서 타입을 정할 수 있다.    
-*  MGASevenSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
-    * Swift : `@IBDesignable` `@IBInspectable`
-    * Objective-C : `IB_DESIGNABLE` `IBInspectable`
+*  커스텀 Shape 및 애니메이션 가능
+    * MGUOnOffSkinInterface 프로토콜을 따르는 뷰 객체를 제공하여 ON, OFF 상태에 따른 Shape과 애니메이션을 커스텀 가능
+    * 입체적인 효과를 위해 OFF 상태에서의 터치다운과 ON 상태에서의 터치다운을 다른 Shape으로 제공가능 
+*  Touch Area를 버튼 크기의 2배까지 설정가능
+*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
+    * `UIImpactFeedbackGenerator` 이용하여 구현함
 *  **Swift** and **Objective-C** compatability
-*  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
-
 
 ## Examples
-> - MGUSevenSwitch (iOS)
+> - MGUOnOffButton (iOS)
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
-> - MGASevenSwitch (macOS)
 
 
 MGUOnOffButton (iOS) |
