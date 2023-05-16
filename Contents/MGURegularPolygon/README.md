@@ -66,4 +66,4 @@ sonkoni(손관현), isomorphic111@gmail.com
 
 ## License
 
-This project is released under the MIT License.
+This project is released under the MIT License. See [LICENSE](https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/LICENSE) for more information.
