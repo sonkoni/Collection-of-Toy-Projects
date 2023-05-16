@@ -41,7 +41,7 @@
  
 **[back to top](#contents)**
 
-## UI
+## UI - Control
 ### Switch
 - [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
 - [MGUOnOffButton](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
