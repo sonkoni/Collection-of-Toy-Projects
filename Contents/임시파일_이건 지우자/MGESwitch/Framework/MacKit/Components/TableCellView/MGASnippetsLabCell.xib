@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="Bos-a2-te3" customClass="MGASnippetsLabCell">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i6p-80-nT8">
+                    <rect key="frame" x="2" y="53" width="37" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="O2E-pt-nFU">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-CN-Epk">
+                    <rect key="frame" x="2" y="9" width="33" height="14"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="fr8-Wq-BnI">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bnP-Kw-zdm">
+                    <rect key="frame" x="279" y="9" width="33" height="14"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Aej-FI-Cy3">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eQL-CN-Epk" firstAttribute="leading" secondItem="Bos-a2-te3" secondAttribute="leading" constant="4" id="Frk-Xm-pQF"/>
+                <constraint firstAttribute="trailing" secondItem="bnP-Kw-zdm" secondAttribute="trailing" constant="4" id="Nos-mY-k4c"/>
+                <constraint firstAttribute="bottom" secondItem="eQL-CN-Epk" secondAttribute="bottom" constant="9" id="Z7o-Tw-Hdc"/>
+                <constraint firstItem="i6p-80-nT8" firstAttribute="top" secondItem="Bos-a2-te3" secondAttribute="top" constant="9" id="era-14-GLr"/>
+                <constraint firstItem="i6p-80-nT8" firstAttribute="leading" secondItem="Bos-a2-te3" secondAttribute="leading" constant="4" id="nFr-Qb-DG2"/>
+                <constraint firstAttribute="bottom" secondItem="bnP-Kw-zdm" secondAttribute="bottom" constant="9" id="rIQ-Jz-SFg"/>
+            </constraints>
+            <connections>
+                <outlet property="label1" destination="i6p-80-nT8" id="EFV-Bp-YGM"/>
+                <outlet property="label2" destination="eQL-CN-Epk" id="xjp-ko-nrp"/>
+                <outlet property="label3" destination="bnP-Kw-zdm" id="puM-yQ-hyl"/>
+                <outlet property="textField" destination="i6p-80-nT8" id="Igs-by-ekb"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="138"/>
+        </tableCellView>
+    </objects>
+</document>

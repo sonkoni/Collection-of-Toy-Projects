@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "favourite-28-glyph-24.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "template"
+  }
+}

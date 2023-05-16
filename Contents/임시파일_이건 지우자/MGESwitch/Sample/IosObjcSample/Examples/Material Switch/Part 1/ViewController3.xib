@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController3">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="yIY-02-5uH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfV-mJ-Vef">
+                    <rect key="frame" x="264" y="318" width="120" height="30"/>
+                    <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0lL-U0-ij5"/>
+                        <constraint firstAttribute="width" constant="120" id="jmk-JD-p71"/>
+                    </constraints>
+                    <state key="normal" title="on Animated"/>
+                    <connections>
+                        <action selector="onWithAnimated:" destination="-1" eventType="touchUpInside" id="aFz-sK-2AF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edt-On-geu">
+                    <rect key="frame" x="264" y="378" width="120" height="30"/>
+                    <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <state key="normal" title="off Animated"/>
+                    <connections>
+                        <action selector="offWithAnimated:" destination="-1" eventType="touchUpInside" id="vNP-Gc-lKV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuQ-QD-wPg">
+                    <rect key="frame" x="264" y="438" width="120" height="30"/>
+                    <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <state key="normal" title="on No Animated"/>
+                    <connections>
+                        <action selector="onWithNoAnimated:" destination="-1" eventType="touchUpInside" id="OX2-qm-wTm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BA-m5-UKM">
+                    <rect key="frame" x="264" y="498" width="120" height="30"/>
+                    <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <state key="normal" title="off No Animated"/>
+                    <connections>
+                        <action selector="offWithNoAnimated:" destination="-1" eventType="touchUpInside" id="dSW-4S-HAl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfI-Vq-rxF">
+                    <rect key="frame" x="264" y="558" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.50171232876712324" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Disabled"/>
+                    <connections>
+                        <action selector="disabled:" destination="-1" eventType="touchUpInside" id="GPw-GL-Z8a"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WuQ-QD-wPg" firstAttribute="top" secondItem="edt-On-geu" secondAttribute="bottom" constant="30" id="1Jz-yu-dtL"/>
+                <constraint firstItem="WuQ-QD-wPg" firstAttribute="trailing" secondItem="kfV-mJ-Vef" secondAttribute="trailing" id="3VF-57-83C"/>
+                <constraint firstItem="LfI-Vq-rxF" firstAttribute="width" secondItem="kfV-mJ-Vef" secondAttribute="width" id="8Qz-Nv-OCS"/>
+                <constraint firstItem="LfI-Vq-rxF" firstAttribute="height" secondItem="kfV-mJ-Vef" secondAttribute="height" id="A5t-5N-Woh"/>
+                <constraint firstItem="LfI-Vq-rxF" firstAttribute="trailing" secondItem="kfV-mJ-Vef" secondAttribute="trailing" id="CTU-dN-ghg"/>
+                <constraint firstItem="1BA-m5-UKM" firstAttribute="top" secondItem="WuQ-QD-wPg" secondAttribute="bottom" constant="30" id="Dsk-OY-xv0"/>
+                <constraint firstItem="edt-On-geu" firstAttribute="top" secondItem="kfV-mJ-Vef" secondAttribute="bottom" constant="30" id="KdE-jn-HWy"/>
+                <constraint firstItem="1BA-m5-UKM" firstAttribute="trailing" secondItem="kfV-mJ-Vef" secondAttribute="trailing" id="Saq-7p-GMY"/>
+                <constraint firstItem="edt-On-geu" firstAttribute="width" secondItem="kfV-mJ-Vef" secondAttribute="width" id="TBR-qS-3kV"/>
+                <constraint firstItem="WuQ-QD-wPg" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="VD0-iL-O0p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kfV-mJ-Vef" secondAttribute="trailing" constant="30" id="Xao-yI-aYs"/>
+                <constraint firstItem="edt-On-geu" firstAttribute="trailing" secondItem="kfV-mJ-Vef" secondAttribute="trailing" id="bNt-RG-qas"/>
+                <constraint firstItem="WuQ-QD-wPg" firstAttribute="height" secondItem="kfV-mJ-Vef" secondAttribute="height" id="hjY-F1-tou"/>
+                <constraint firstItem="LfI-Vq-rxF" firstAttribute="top" secondItem="1BA-m5-UKM" secondAttribute="bottom" constant="30" id="jN2-aA-AmF"/>
+                <constraint firstItem="WuQ-QD-wPg" firstAttribute="width" secondItem="kfV-mJ-Vef" secondAttribute="width" id="jhk-yg-mO5"/>
+                <constraint firstItem="1BA-m5-UKM" firstAttribute="height" secondItem="kfV-mJ-Vef" secondAttribute="height" id="rWI-Kk-TI7"/>
+                <constraint firstItem="1BA-m5-UKM" firstAttribute="width" secondItem="kfV-mJ-Vef" secondAttribute="width" id="sfB-DQ-TSy"/>
+                <constraint firstItem="edt-On-geu" firstAttribute="height" secondItem="kfV-mJ-Vef" secondAttribute="height" id="yvX-4o-VaO"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="84"/>
+        </view>
+    </objects>
+</document>
