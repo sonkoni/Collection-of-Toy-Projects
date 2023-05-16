@@ -49,6 +49,8 @@ MGASevenSwitch (macOS) |
 
 
 ## Usage
+
+> Objective-C
 ```objective-c
 
 _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
@@ -58,7 +60,7 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 [self.sevenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
 
 ```
-
+> Swift:
 ```swift
 
 let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
