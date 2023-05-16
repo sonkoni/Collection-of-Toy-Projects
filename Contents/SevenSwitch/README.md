@@ -15,11 +15,11 @@
 
 ## Features
 *  커스텀 사이즈 가능(`UISwitch` 및 `NSSwitch`와 동일한 `intrinsicContentSize`도 가지고 있음)
-*  ON, OFF 영역에 이미지 또는 라벨 설정 가능
+*  ON, OFF 영역에 이미지 또는 텍스트 설정 가능
 *  커스텀 Shape 가능
     * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
 *  커스텀 손잡이 가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device에서 전달된다.
+*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device(아이폰, 트랙패드 등)를 통해 전달된다.
     * iOS : `UIImpactFeedbackGenerator` 이용하여 구현
     * macOS : `NSHapticFeedbackManager` 이용하여 구현
 *  **Swift** and **Objective-C** compatability
