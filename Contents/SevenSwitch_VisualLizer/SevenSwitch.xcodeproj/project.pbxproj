@@ -25,6 +25,8 @@
 		84725FC02A130963004A9E7C /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84725FB92A130962004A9E7C /* BaseKit.framework */; };
 		84725FC22A130963004A9E7C /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84725FBA2A130962004A9E7C /* GraphicsKit.framework */; };
 		84725FC82A130E0A004A9E7C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84725FC72A130E0A004A9E7C /* File.swift */; };
+		84725FDA2A131F4F004A9E7C /* LNTouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84725FD92A131F45004A9E7C /* LNTouchVisualizer.framework */; };
+		84725FDB2A131F4F004A9E7C /* LNTouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84725FD92A131F45004A9E7C /* LNTouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84A836422A0B1735008F3D25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A836412A0B1735008F3D25 /* main.swift */; };
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
@@ -39,6 +41,16 @@
 		84D6B1D02A1248720044E02D /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 84D6B1C72A1248700044E02D /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84725FD82A131F45004A9E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84725FD42A131F45004A9E7C /* LNTouchVisualizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39C38069260B783E00ACF910;
+			remoteInfo = LNTouchVisualizer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		84725FC52A130963004A9E7C /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -49,6 +61,17 @@
 				84725FBD2A130963004A9E7C /* MacRes.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84725FD22A131F07004A9E7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84725FDB2A131F4F004A9E7C /* LNTouchVisualizer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		84D6B1D12A1248720044E02D /* Embed PlugIns */ = {
@@ -72,6 +95,7 @@
 		8459030528F0D71700E50B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8459030728F0D71700E50B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8459030D28F0D7BB00E50B56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84725F892A12B3F6004A9E7C /* 230516a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516a1.jpg; sourceTree = "<group>"; };
 		84725F8A2A12BAB0004A9E7C /* ViewControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
 		84725F8B2A12BAB0004A9E7C /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
 		84725F8D2A12BAF5004A9E7C /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
@@ -94,7 +118,7 @@
 		84725FBA2A130962004A9E7C /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../macLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		84725FC62A130E0A004A9E7C /* SevenSwitch_macOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenSwitch_macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		84725FC72A130E0A004A9E7C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		84725FDC2A132089004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif"; sourceTree = "<group>"; };
+		84725FD42A131F45004A9E7C /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* SevenSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -103,11 +127,17 @@
 		84D6B1912A1208DE0044E02D /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
 		84D6B1952A120E380044E02D /* ViewControllerA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerA.xib; sourceTree = "<group>"; };
 		84D6B1972A1212240044E02D /* ViewControllerC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
+		84D6B1B72A1236800044E02D /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif"; sourceTree = "<group>"; };
+		84D6B1B82A1236800044E02D /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif"; sourceTree = "<group>"; };
+		84D6B1BE2A12435E0044E02D /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.50.56.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.50.56.gif"; sourceTree = "<group>"; };
+		84D6B1C02A1244010044E02D /* Simulator Screen Shot - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.51.10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.51.10.png"; sourceTree = "<group>"; };
 		84D6B1C32A1248700044E02D /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
 		84D6B1C42A1248700044E02D /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
 		84D6B1C52A1248700044E02D /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
 		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
+		84D6B1D22A1248C40044E02D /* Hexagon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hexagon.jpg; sourceTree = "<group>"; };
+		84D6B1D32A1248C40044E02D /* FocusRandom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FocusRandom.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +147,7 @@
 			files = (
 				84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */,
 				84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */,
+				84725FDA2A131F4F004A9E7C /* LNTouchVisualizer.framework in Frameworks */,
 				84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */,
 				84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */,
 			);
@@ -139,6 +170,7 @@
 		845902ED28F0D71600E50B56 = {
 			isa = PBXGroup;
 			children = (
+				84725FD42A131F45004A9E7C /* LNTouchVisualizer.xcodeproj */,
 				8459030D28F0D7BB00E50B56 /* README.md */,
 				8498FF452A0B754E00E3A721 /* screenshot */,
 				845902F828F0D71600E50B56 /* SevenSwitch_iOS */,
@@ -201,10 +233,24 @@
 			path = SevenSwitch_macOS;
 			sourceTree = "<group>";
 		};
+		84725FD52A131F45004A9E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84725FD92A131F45004A9E7C /* LNTouchVisualizer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8498FF452A0B754E00E3A721 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				84725FDC2A132089004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif */,
+				84D6B1B72A1236800044E02D /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.30.29.gif */,
+				84D6B1B82A1236800044E02D /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.33.45.gif */,
+				84D6B1BE2A12435E0044E02D /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.50.56.gif */,
+				84D6B1C02A1244010044E02D /* Simulator Screen Shot - iPad Pro (12.9-inch) (6th generation) - 2023-05-15 at 18.51.10.png */,
+				84D6B1D32A1248C40044E02D /* FocusRandom.jpg */,
+				84D6B1D22A1248C40044E02D /* Hexagon.jpg */,
+				84725F892A12B3F6004A9E7C /* 230516a1.jpg */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
@@ -260,6 +306,7 @@
 				845902F328F0D71600E50B56 /* Frameworks */,
 				845902F428F0D71600E50B56 /* Resources */,
 				84D6B1D12A1248720044E02D /* Embed PlugIns */,
+				84725FD22A131F07004A9E7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +366,12 @@
 			mainGroup = 845902ED28F0D71600E50B56;
 			productRefGroup = 845902F728F0D71600E50B56 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84725FD52A131F45004A9E7C /* Products */;
+					ProjectRef = 84725FD42A131F45004A9E7C /* LNTouchVisualizer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				845902F528F0D71600E50B56 /* SevenSwitch_iOS */,
@@ -326,6 +379,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84725FD92A131F45004A9E7C /* LNTouchVisualizer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LNTouchVisualizer.framework;
+			remoteRef = 84725FD82A131F45004A9E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		845902F428F0D71600E50B56 /* Resources */ = {
