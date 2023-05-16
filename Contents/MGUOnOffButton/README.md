@@ -21,8 +21,7 @@
 *  **Swift** and **Objective-C** compatability
 
 ## Examples
-> - MGUOnOffButton (iOS)
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
+> - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.  
 
 
 MGUOnOffButton (iOS) |
@@ -35,25 +34,16 @@ MGUOnOffButton (iOS) |
 > Swift
 ```swift
 
-let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
-view.addSubview(sevenSwitch)
-sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
+private var button = MGUOnOffButton(frame: .zero, skinView: MMTMidButtonSkin())
 
 ```
 
 > Objective-C
 ```objective-c
 
-_sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
-                                            switchOn:YES
-                                       configuration:[MGUSevenSwitchConfiguration yellowConfiguration]];
-[self.view addSubview:self.sevenSwitch];
-[self.sevenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+_button = [[MGUOnOffButton alloc] initWithFrame:CGRectZero skinView:[MMTMidButtonSkin new]];
 
 ```
-> Interface Builder
-
-<img src="./screenshot/230517a1.jpg" width="500">
 
 ## Author
 
