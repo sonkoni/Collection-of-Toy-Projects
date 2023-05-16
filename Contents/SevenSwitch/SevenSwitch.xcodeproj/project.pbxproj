@@ -95,6 +95,7 @@
 		84725FC62A130E0A004A9E7C /* SevenSwitch_macOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenSwitch_macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		84725FC72A130E0A004A9E7C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		84725FDC2A132089004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif"; sourceTree = "<group>"; };
+		84725FDE2A132217004A9E7C /* TEST.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TEST.gif; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* SevenSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				84725FDC2A132089004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif */,
+				84725FDE2A132217004A9E7C /* TEST.gif */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
