@@ -28,8 +28,8 @@
 ## Contents
 - [AutoLayout](#autoLayout)
 
-- [Switch](#switch)
-
+- [UI](#ui)
+    - [Switch](#switch)
 
 - [Wallpaper](#wallpaper)
 - [License](#license)
@@ -43,9 +43,10 @@
  
 **[back to top](#contents)**
 
-
-## Switch
+## UI
+### Switch
 - [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
+- [MGUOnOffButton](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
 
 ## Wallpaper
 *앱의 배경을 꾸며줄 수 있는 Wallpaper*
