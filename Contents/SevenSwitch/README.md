@@ -17,7 +17,7 @@
 *  애니메이팅 + 리벌스 애니메이팅 가능
 *  HSB 기반 랜덤 칼라(보더, 면) 가능
 *  Support **SWIFT** and **OBJECTIVE-C**.
-*  Support **iOS**(MGUSevenSwitch) and **macOS**(MGASevenSwitch).
+*  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
 ## Examples
 > - MGUSevenSwitch (iOS)
