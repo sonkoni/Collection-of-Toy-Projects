@@ -54,7 +54,7 @@
                                                     <customView horizontalCompressionResistancePriority="499" verticalCompressionResistancePriority="499" translatesAutoresizingMaskIntoConstraints="NO" id="Snw-bU-HQw">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="219"/>
                                                         <subviews>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="VYx-t3-zMY" customClass="_MGASevenSwitch">
+                                                            <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYx-t3-zMY" customClass="_MGASevenSwitch">
                                                                 <rect key="frame" x="26" y="99" width="38" height="22"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
@@ -71,7 +71,7 @@
                                                     <customView horizontalCompressionResistancePriority="499" verticalCompressionResistancePriority="499" translatesAutoresizingMaskIntoConstraints="NO" id="SWV-A6-KKO">
                                                         <rect key="frame" x="98" y="0.0" width="90" height="219"/>
                                                         <subviews>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="DpG-uH-xZL" customClass="_MGASevenSwitch">
+                                                            <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-uH-xZL" customClass="_MGASevenSwitch">
                                                                 <rect key="frame" x="26" y="99" width="38" height="22"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
@@ -190,7 +190,7 @@
                                                     <customView horizontalCompressionResistancePriority="499" verticalCompressionResistancePriority="499" translatesAutoresizingMaskIntoConstraints="NO" id="W3m-RK-e5y">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="219"/>
                                                         <subviews>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-nV-c6i" customClass="_MGADNSwitch">
+                                                            <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-nV-c6i" customClass="_MGADNSwitch">
                                                                 <rect key="frame" x="18" y="95" width="53" height="30"/>
                                                             </customView>
                                                         </subviews>
@@ -202,7 +202,7 @@
                                                     <customView horizontalCompressionResistancePriority="499" verticalCompressionResistancePriority="499" translatesAutoresizingMaskIntoConstraints="NO" id="L9I-2p-Ux4">
                                                         <rect key="frame" x="98" y="0.0" width="90" height="219"/>
                                                         <subviews>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="dhn-qM-EXH" customClass="_MGADNSwitch">
+                                                            <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhn-qM-EXH" customClass="_MGADNSwitch">
                                                                 <rect key="frame" x="18" y="95" width="53" height="30"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="switchOn" value="YES"/>
@@ -226,7 +226,7 @@
                                                     <customView horizontalCompressionResistancePriority="499" verticalCompressionResistancePriority="499" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-9U-pgC">
                                                         <rect key="frame" x="196" y="0.0" width="90" height="219"/>
                                                         <subviews>
-                                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="fCZ-KJ-1EF" customClass="_MGADNSwitch">
+                                                            <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCZ-KJ-1EF" customClass="_MGADNSwitch">
                                                                 <rect key="frame" x="18" y="95" width="53" height="30"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="switchOn" value="YES"/>
@@ -338,27 +338,4 @@
             <point key="canvasLocation" x="-2573" y="-1982.5"/>
         </window>
     </objects>
-    <designables>
-        <designable name="DpG-uH-xZL">
-            <size key="intrinsicContentSize" width="38.5" height="22"/>
-        </designable>
-        <designable name="LZN-1N-jzC">
-            <size key="intrinsicContentSize" width="38.5" height="22"/>
-        </designable>
-        <designable name="VYx-t3-zMY">
-            <size key="intrinsicContentSize" width="38.5" height="22"/>
-        </designable>
-        <designable name="Xeg-nV-c6i">
-            <size key="intrinsicContentSize" width="53" height="30"/>
-        </designable>
-        <designable name="dhn-qM-EXH">
-            <size key="intrinsicContentSize" width="53" height="30"/>
-        </designable>
-        <designable name="fCZ-KJ-1EF">
-            <size key="intrinsicContentSize" width="53" height="30"/>
-        </designable>
-        <designable name="mqp-2a-fLO">
-            <size key="intrinsicContentSize" width="53" height="30"/>
-        </designable>
-    </designables>
 </document>
