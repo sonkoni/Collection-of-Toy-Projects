@@ -25,10 +25,10 @@
 *  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
     * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
     * macOS : `MGASevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
-*  Interface Builder에서 설정가능하다. - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
+*  MGASevenSwitch(macOS)는 마우스 hover 시에 커서 타입을 정할 수 있다.    
+*  MGASevenSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
-*  MGASevenSwitch(macOS) 는 마우스 hover 시에 커서 타입을 정할 수 있다.    
 *  **Swift** and **Objective-C** compatability
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
@@ -69,36 +69,8 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 [self.sevenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
 
 ```
+> Interface Builder
 
-
-
-## Documentation
-
-- 도형 배치를 위한 알고리즘 구상
-<img src="./screenshot/Hexagon.jpg" width="800">
-
-
-- 포커스 랜덤 함수 구상
-    - 예를 들어 파란색 부터 흰색을 HSB 값으로 랜덤하게 배치했을 때, 파란색에 치우치게 랜덤 색이 나오게 하기 위해서 구상함
-<img src="./screenshot/FocusRandom.jpg" width="800">
-
-
-- `layer` 의 `timeOffset` 프라퍼티를 이용하여, 슬라이더로 애니메이팅을 수동 조절할 수 있음
-    - [**timeOffset**](http://wiki.mulgrim.net/page/Api:Core_Animation/protocol_CAMediaTiming/timeOffset) <- 기술 위키 문서
-    - [**Pausing and Resuming Animations**](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/AdvancedAnimationTricks/AdvancedAnimationTricks.html#//apple_ref/doc/uid/TP40004514-CH8-SW15)
-```swift
-
-@IBAction func sliderValueChanged(_ sender: UISlider) {
-    hexagonalWallpaperView.layer.timeOffset = CFTimeInterval(sender.value)
-}
-private func onboardingAnimationStart() {
-    let hexagonalProgressAnimation = self.hexagonalWallpaperView.hexagonalProgressAnimation()
-    
-    CATransaction.setCompletionBlock { }
-    self.hexagonalWallpaperView.layer.add(hexagonalProgressAnimation, forKey: "HexagonalProgressAnimationKey")
-}
-
-```
 
 ## Author
 
