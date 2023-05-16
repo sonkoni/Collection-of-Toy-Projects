@@ -5,7 +5,7 @@
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 ![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
-## 애니메이팅 가능한 Hexagonal Tiling Wallpaper View
+## 애니메이팅 가능한 SevenSwitch
 - 앱의 배경을 꾸며줄 수 있는 애니메이팅 가능한 6각형 조각으로 빈틈없이 채우는(hexagonal tiling) Wallpaper View
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Wallpaper의 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516a1.jpg" width="100"></p>
@@ -16,6 +16,7 @@
 *  6각형 ***보더 굵기*** 조절 가능
 *  애니메이팅 + 리벌스 애니메이팅 가능
 *  HSB 기반 랜덤 칼라(보더, 면) 가능
+*  **Swift** and **Objective-C** compatability
 *  Support **SWIFT** and **OBJECTIVE-C**.
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
