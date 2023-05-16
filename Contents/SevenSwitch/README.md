@@ -18,7 +18,9 @@
 *  6각형 ***보더 굵기*** 조절 가능
 *  애니메이팅 + 리벌스 애니메이팅 가능
 *  HSB 기반 랜덤 칼라(보더, 면) 가능
+    * ㅁㄴㄹㅁㅇㄴ
 -  Haptic Feedback 제공
+    - ㅁㄴㄹ
 *  **Swift** and **Objective-C** compatability
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
