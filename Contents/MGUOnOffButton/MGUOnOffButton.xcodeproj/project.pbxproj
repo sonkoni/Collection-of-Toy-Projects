@@ -53,9 +53,6 @@
 		84725F8B2A12BAB0004A9E7C /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
 		84725F8D2A12BAF5004A9E7C /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		84725F8E2A12BAF5004A9E7C /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
-		84725FB62A130962004A9E7C /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../macLib/AudioKit.framework; sourceTree = "<group>"; };
-		84725FB92A130962004A9E7C /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../macLib/BaseKit.framework; sourceTree = "<group>"; };
-		84725FBA2A130962004A9E7C /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../macLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		84725FDC2A132089004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif"; sourceTree = "<group>"; };
 		84725FE22A13235D004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif"; sourceTree = "<group>"; };
 		84725FE52A1323F6004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif"; sourceTree = "<group>"; };
@@ -178,9 +175,6 @@
 				84D6B1C32A1248700044E02D /* AudioKit.framework */,
 				84D6B1C62A1248700044E02D /* BaseKit.framework */,
 				84D6B1C52A1248700044E02D /* GraphicsKit.framework */,
-				84725FB62A130962004A9E7C /* AudioKit.framework */,
-				84725FB92A130962004A9E7C /* BaseKit.framework */,
-				84725FBA2A130962004A9E7C /* GraphicsKit.framework */,
 				84D6B1C42A1248700044E02D /* IosKit.framework */,
 				84D6B1C72A1248700044E02D /* IosRes.bundle */,
 			);

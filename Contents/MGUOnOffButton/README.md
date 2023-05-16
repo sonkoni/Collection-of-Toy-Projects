@@ -1,11 +1,10 @@
-# SevenSwitch 
+# MGUOnOffButton 
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
-![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
-## **MGUSevenSwitch**(***iOS***) & **MGASevenSwitch**(***macOS***)
+## **MGUOnOffButton**(***iOS***)
 - `SevenSwitch`는 `UISwitch` 및 `NSSwitch` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
     - MGUSevenSwitch : iOS 용 (UIControl 서브클래스)
     - MGASevenSwitch : macOS 용 (NSControl 서브클래스)
