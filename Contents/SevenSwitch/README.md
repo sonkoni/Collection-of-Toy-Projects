@@ -50,6 +50,15 @@ MGASevenSwitch (macOS) |
 
 ## Usage
 
+> Swift
+```swift
+
+let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
+view.addSubview(sevenSwitch)
+sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
+
+```
+
 > Objective-C
 ```objective-c
 
@@ -58,14 +67,6 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
                                        configuration:[MGUSevenSwitchConfiguration yellowConfiguration]];
 [self.view addSubview:self.sevenSwitch];
 [self.sevenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
-
-```
-> Swift:
-```swift
-
-let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
-view.addSubview(sevenSwitch)
-sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
 
 ```
 
