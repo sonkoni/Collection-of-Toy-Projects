@@ -27,7 +27,7 @@
 
 ## Contents
 - [AutoLayout](#autoLayout)
-- [UI](#ui)
+- [UI - Control](#ui - control)
     - [Switch](#switch)
 - [Wallpaper](#wallpaper)
 - [License](#license)
