@@ -17,7 +17,7 @@
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](http://mit-license.org)
 
 
-## About
+## Overview
 **토이 프로젝트** 모음   
 - 앱을 출시하면서 필요한 부품들을 작성했던 개인 프로젝트입니다.
 - 그 외로 추후에 필요할 것 같은 프로젝트
@@ -49,7 +49,6 @@
 
 ## License
 
-* This project is released under the MIT License. See LICENSE for more information.
 * This project is released under the MIT License. See [LICENSE](https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/LICENSE) for more information.
 
 **[back to top](#contents)**
