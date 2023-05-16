@@ -38,13 +38,9 @@
 > - MGASevenSwitch (macOS)
 
 
-MGUSevenSwitch (iOS) | MGUSevenSwitch (iOS) | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용한 예
----|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 02.58.59.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
-
-MGASevenSwitch (macOS) |
+MGUOnOffButton (iOS) |
 ---|
-<img src="./screenshot/Screen Recording 2023-05-16 at 12.04.22.gif" width="450">|
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 02.58.59.gif" width="250">|
 
 
 ## Usage
