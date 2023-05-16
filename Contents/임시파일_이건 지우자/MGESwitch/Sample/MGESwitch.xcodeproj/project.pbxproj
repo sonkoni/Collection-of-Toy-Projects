@@ -7,22 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4851A6892922464C00A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6832922464C00A8AF69 /* AudioKit.framework */; };
-		4851A68C2922464C00A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6852922464C00A8AF69 /* BaseKit.framework */; };
-		4851A68E2922464C00A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6862922464C00A8AF69 /* GraphicsKit.framework */; };
-		4851A69B2922465600A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6952922465600A8AF69 /* AudioKit.framework */; };
-		4851A69E2922465600A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6972922465600A8AF69 /* BaseKit.framework */; };
-		4851A6A02922465600A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6982922465600A8AF69 /* GraphicsKit.framework */; };
-		4851A6AD2922465E00A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6A72922465E00A8AF69 /* AudioKit.framework */; };
-		4851A6B02922465F00A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6A92922465E00A8AF69 /* BaseKit.framework */; };
-		4851A6B22922465F00A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6AA2922465E00A8AF69 /* GraphicsKit.framework */; };
-		4851A6B42922465F00A8AF69 /* MacKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6AB2922465E00A8AF69 /* MacKit.framework */; };
-		4851A6B62922465F00A8AF69 /* MacRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 4851A6AC2922465E00A8AF69 /* MacRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4851A6BF2922466600A8AF69 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6B92922466600A8AF69 /* AudioKit.framework */; };
-		4851A6C22922466600A8AF69 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6BB2922466600A8AF69 /* BaseKit.framework */; };
-		4851A6C42922466600A8AF69 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6BC2922466600A8AF69 /* GraphicsKit.framework */; };
-		4851A6C62922466600A8AF69 /* MacKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4851A6BD2922466600A8AF69 /* MacKit.framework */; };
-		4851A6C82922466700A8AF69 /* MacRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 4851A6BE2922466600A8AF69 /* MacRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		487F6B3729223B5300EE1427 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 487F6B3629223B5300EE1427 /* AppDelegate.m */; };
 		487F6B3929223B5500EE1427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487F6B3829223B5500EE1427 /* Assets.xcassets */; };
 		487F6B3C29223B5500EE1427 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F6B3A29223B5500EE1427 /* MainMenu.xib */; };
@@ -43,6 +27,18 @@
 		489140FC291EC96F00E3FD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489140FB291EC96F00E3FD9D /* Assets.xcassets */; };
 		489140FF291EC96F00E3FD9D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489140FD291EC96F00E3FD9D /* MainMenu.xib */; };
 		4891418B291ECF3000E3FD9D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891418A291ECF3000E3FD9D /* File.swift */; };
+		847260152A1400F9004A9E7C /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8472600E2A1400F9004A9E7C /* AudioKit.framework */; };
+		847260172A1400F9004A9E7C /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8472600F2A1400F9004A9E7C /* BaseKit.framework */; };
+		847260192A1400F9004A9E7C /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260102A1400F9004A9E7C /* GraphicsKit.framework */; };
+		8472601B2A1400F9004A9E7C /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260112A1400F9004A9E7C /* IosKit.framework */; };
+		8472601D2A1400F9004A9E7C /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 847260122A1400F9004A9E7C /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8472601E2A1400F9004A9E7C /* MacKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260132A1400F9004A9E7C /* MacKit.framework */; };
+		847260202A1400F9004A9E7C /* MacRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 847260142A1400F9004A9E7C /* MacRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8472602A2A1401CB004A9E7C /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260232A1401CB004A9E7C /* AudioKit.framework */; };
+		8472602C2A1401CC004A9E7C /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260242A1401CB004A9E7C /* BaseKit.framework */; };
+		8472602E2A1401CC004A9E7C /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260252A1401CB004A9E7C /* GraphicsKit.framework */; };
+		847260302A1401CC004A9E7C /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847260262A1401CB004A9E7C /* IosKit.framework */; };
+		847260322A1401CC004A9E7C /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 847260272A1401CB004A9E7C /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84BC9A4629235C6600CF18DE /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC9A4429235C6600CF18DE /* MainTableViewController.m */; };
 		84BC9A4A29235D3700CF18DE /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC9A4829235D3700CF18DE /* ViewController1.m */; };
 		84BC9A4B29235D3700CF18DE /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC9A4929235D3700CF18DE /* ViewController1.xib */; };
@@ -105,7 +101,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				4851A6B62922465F00A8AF69 /* MacRes.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +111,29 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				4851A6C82922466700A8AF69 /* MacRes.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847260222A1400F9004A9E7C /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				847260202A1400F9004A9E7C /* MacRes.bundle in Embed PlugIns */,
+				8472601D2A1400F9004A9E7C /* IosRes.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847260372A1401CC004A9E7C /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				847260322A1401CC004A9E7C /* IosRes.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,22 +141,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4851A6832922464C00A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6852922464C00A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6862922464C00A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6952922465600A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6972922465600A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6982922465600A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6A72922465E00A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6A92922465E00A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6AA2922465E00A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6AB2922465E00A8AF69 /* MacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6AC2922465E00A8AF69 /* MacRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MacRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6B92922466600A8AF69 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6BB2922466600A8AF69 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6BC2922466600A8AF69 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6BD2922466600A8AF69 /* MacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4851A6BE2922466600A8AF69 /* MacRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MacRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		487F6B3329223B5300EE1427 /* MacObjcMGESwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacObjcMGESwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487F6B3529223B5300EE1427 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		487F6B3629223B5300EE1427 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +174,20 @@
 		48914100291EC96F00E3FD9D /* MacSwiftSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSwiftSample.entitlements; sourceTree = "<group>"; };
 		48914189291ECF2F00E3FD9D /* IosObjcSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosObjcSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		4891418A291ECF3000E3FD9D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8472600E2A1400F9004A9E7C /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472600F2A1400F9004A9E7C /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260102A1400F9004A9E7C /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260112A1400F9004A9E7C /* IosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260122A1400F9004A9E7C /* IosRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = IosRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260132A1400F9004A9E7C /* MacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260142A1400F9004A9E7C /* MacRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MacRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260232A1401CB004A9E7C /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260242A1401CB004A9E7C /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260252A1401CB004A9E7C /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260262A1401CB004A9E7C /* IosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260272A1401CB004A9E7C /* IosRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = IosRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260282A1401CB004A9E7C /* MacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847260292A1401CB004A9E7C /* MacRes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MacRes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC9A4429235C6600CF18DE /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		84BC9A4529235C6600CF18DE /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		84BC9A4729235D3700CF18DE /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
@@ -245,10 +260,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4851A6C22922466600A8AF69 /* BaseKit.framework in Frameworks */,
-				4851A6BF2922466600A8AF69 /* AudioKit.framework in Frameworks */,
-				4851A6C42922466600A8AF69 /* GraphicsKit.framework in Frameworks */,
-				4851A6C62922466600A8AF69 /* MacKit.framework in Frameworks */,
+				8472601E2A1400F9004A9E7C /* MacKit.framework in Frameworks */,
+				847260172A1400F9004A9E7C /* BaseKit.framework in Frameworks */,
+				847260152A1400F9004A9E7C /* AudioKit.framework in Frameworks */,
+				847260192A1400F9004A9E7C /* GraphicsKit.framework in Frameworks */,
+				8472601B2A1400F9004A9E7C /* IosKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +272,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4851A68C2922464C00A8AF69 /* BaseKit.framework in Frameworks */,
-				4851A6892922464C00A8AF69 /* AudioKit.framework in Frameworks */,
-				4851A68E2922464C00A8AF69 /* GraphicsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +279,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4851A69E2922465600A8AF69 /* BaseKit.framework in Frameworks */,
-				4851A69B2922465600A8AF69 /* AudioKit.framework in Frameworks */,
-				4851A6A02922465600A8AF69 /* GraphicsKit.framework in Frameworks */,
+				8472602C2A1401CC004A9E7C /* BaseKit.framework in Frameworks */,
+				8472602A2A1401CB004A9E7C /* AudioKit.framework in Frameworks */,
+				8472602E2A1401CC004A9E7C /* GraphicsKit.framework in Frameworks */,
+				847260302A1401CC004A9E7C /* IosKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +290,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4851A6B02922465F00A8AF69 /* BaseKit.framework in Frameworks */,
-				4851A6AD2922465E00A8AF69 /* AudioKit.framework in Frameworks */,
-				4851A6B22922465F00A8AF69 /* GraphicsKit.framework in Frameworks */,
-				4851A6B42922465F00A8AF69 /* MacKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,22 +386,20 @@
 		4891418F291ECF8B00E3FD9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4851A6B92922466600A8AF69 /* AudioKit.framework */,
-				4851A6BB2922466600A8AF69 /* BaseKit.framework */,
-				4851A6BC2922466600A8AF69 /* GraphicsKit.framework */,
-				4851A6BD2922466600A8AF69 /* MacKit.framework */,
-				4851A6BE2922466600A8AF69 /* MacRes.bundle */,
-				4851A6A72922465E00A8AF69 /* AudioKit.framework */,
-				4851A6A92922465E00A8AF69 /* BaseKit.framework */,
-				4851A6AA2922465E00A8AF69 /* GraphicsKit.framework */,
-				4851A6AB2922465E00A8AF69 /* MacKit.framework */,
-				4851A6AC2922465E00A8AF69 /* MacRes.bundle */,
-				4851A6952922465600A8AF69 /* AudioKit.framework */,
-				4851A6972922465600A8AF69 /* BaseKit.framework */,
-				4851A6982922465600A8AF69 /* GraphicsKit.framework */,
-				4851A6832922464C00A8AF69 /* AudioKit.framework */,
-				4851A6852922464C00A8AF69 /* BaseKit.framework */,
-				4851A6862922464C00A8AF69 /* GraphicsKit.framework */,
+				847260232A1401CB004A9E7C /* AudioKit.framework */,
+				847260242A1401CB004A9E7C /* BaseKit.framework */,
+				847260252A1401CB004A9E7C /* GraphicsKit.framework */,
+				847260262A1401CB004A9E7C /* IosKit.framework */,
+				847260272A1401CB004A9E7C /* IosRes.bundle */,
+				847260282A1401CB004A9E7C /* MacKit.framework */,
+				847260292A1401CB004A9E7C /* MacRes.bundle */,
+				8472600E2A1400F9004A9E7C /* AudioKit.framework */,
+				8472600F2A1400F9004A9E7C /* BaseKit.framework */,
+				847260102A1400F9004A9E7C /* GraphicsKit.framework */,
+				847260112A1400F9004A9E7C /* IosKit.framework */,
+				847260122A1400F9004A9E7C /* IosRes.bundle */,
+				847260132A1400F9004A9E7C /* MacKit.framework */,
+				847260142A1400F9004A9E7C /* MacRes.bundle */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -601,6 +609,7 @@
 				487F6B3029223B5300EE1427 /* Frameworks */,
 				487F6B3129223B5300EE1427 /* Resources */,
 				4851A6CA2922466700A8AF69 /* Embed PlugIns */,
+				847260222A1400F9004A9E7C /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -637,6 +646,7 @@
 				489140D7291EC94C00E3FD9D /* Frameworks */,
 				489140D8291EC94C00E3FD9D /* Resources */,
 				4851A6A62922465600A8AF69 /* Embed PlugIns */,
+				847260372A1401CC004A9E7C /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
