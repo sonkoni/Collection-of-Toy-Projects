@@ -3950,8 +3950,8 @@
 			isa = PBXGroup;
 			children = (
 				84F4986A2925C30900C20A1A /* MGASevenSwitch.h */,
-				84F498682925C30900C20A1A /* MGASevenSwitchConfiguration.h */,
 				84F498672925C30900C20A1A /* MGASevenSwitch.m */,
+				84F498682925C30900C20A1A /* MGASevenSwitchConfiguration.h */,
 				84F498692925C30900C20A1A /* MGASevenSwitchConfiguration.m */,
 			);
 			path = SevenSwitch;

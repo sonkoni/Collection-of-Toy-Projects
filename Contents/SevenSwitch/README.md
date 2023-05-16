@@ -17,12 +17,13 @@
 *  애니메이팅 + 리벌스 애니메이팅 가능
 *  HSB 기반 랜덤 칼라(보더, 면) 가능
 *  Support **SWIFT** and **OBJECTIVE-C**.
+*  Support **iOS**(MGUSevenSwitch) and **macOS**(MGASevenSwitch).
 
 ## Examples
-> - n각형 생성 및 회전
-> - 크기 조절 및 커팅
-> - 애니메이팅 + 리벌스 애니메이팅
-> - [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 Wallpaper
+> - MGUSevenSwitch (iOS)
+>   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
+> - MGASevenSwitch (macOS)
+
 
 n각형 생성 및 회전 | 크기 조절 및 커팅 | 크기 조절 및 커팅
 ---|---|---
