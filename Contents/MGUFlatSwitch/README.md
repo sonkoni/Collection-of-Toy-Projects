@@ -8,7 +8,7 @@
 - Skeuomorphism(스큐어모피즘) 스타일의 애니메이팅 가능한 온오프 버튼
     - UIControl 서브클래스로 제작함
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼을 요구하여 제작함.
-<p align="center"><img src="./screenshot/230517a3.jpg" width="250"></p>
+<p align="center"><img src="./screenshot/230517a3.jpg" width="200"></p>
 
 
 ## Features
