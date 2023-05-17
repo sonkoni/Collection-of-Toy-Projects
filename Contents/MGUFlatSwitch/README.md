@@ -35,14 +35,24 @@ MGUFlatSwitch Samples | [IV-Drop](https://apps.apple.com/app/id1574452904)에서
 > Swift
 ```swift
 
-private var button = MGUFlatSwitch(frame: .zero, skinView: MMTMidButtonSkin())
+let flatSwitch = MGUFlatSwitch(frame: CGRectMake(0.0, 0.0, 50.0, 50.0))
+flatSwitch.lineWidth = 3.0
+flatSwitch.baseCircleStrokeColor = baseCircleStrokeColor
+flatSwitch.checkMarkNCircleStrokeColor = checkMarkNCircleStrokeColor
+flatSwitch.addTarget(self, action:#selector(switchClicked(_:)), for: .valueChanged)
+view.addSubview(flatSwitch)
 
 ```
 
 > Objective-C
 ```objective-c
 
-_button = [[MGUFlatSwitch alloc] initWithFrame:CGRectZero skinView:[MMTMidButtonSkin new]];
+self.flatSwitch = [[MGUFlatSwitch alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+self.flatSwitch.lineWidth = 3.0;
+self.flatSwitch.baseCircleStrokeColor = baseCircleStrokeColor;
+self.flatSwitch.checkMarkNCircleStrokeColor = checkMarkNCircleStrokeColor;
+[self.flatSwitch addTarget:self action:@selector(switchClicked:) forControlEvents:UIControlEventValueChanged];
+[self.view addSubview:self.flatSwitch2];
 
 ```
 

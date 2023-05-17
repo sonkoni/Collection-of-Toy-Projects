@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Flat Switch를 만들었다.";
     
-    [self.flatSwitch addTarget:self action:@selector(keke:) forControlEvents:UIControlEventValueChanged];
+    [self.flatSwitch addTarget:self action:@selector(switchClicked:) forControlEvents:UIControlEventValueChanged];
     
     self.flatSwitch2 = [[MGUFlatSwitch alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     self.flatSwitch2.lineWidth = 3.0f;
@@ -49,7 +49,7 @@
 
 // - (IBAction)flatSwitchClick:(id)sender {}  <- IB 사용할 때. 여기서는 직접 수동으로하겠다.
 
-- (void)keke:(MGUFlatSwitch *)sender {
+- (void)switchClicked:(MGUFlatSwitch *)sender {
     NSLog(@"선택됬니 %d", sender.isSelected);
 }
 
