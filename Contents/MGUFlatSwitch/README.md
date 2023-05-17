@@ -6,7 +6,7 @@
 
 ## **MGUFlatSwitch**
 - 완료 및 체크를 상징하는 애니메이팅 가능한 커스텀 스위치
-    - UIControl 서브클래스로 제작함
+    - `UIControl` 서브클래스로 제작함
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 완료를 표기하는 애니메이션 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230517a3.jpg" width="200"></p>
 
