@@ -27,11 +27,11 @@
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 
 
-MGURulerView (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예 | asdf
+스크롤 및 더블 탭 | 짧게 이동, 길게 이동 | 특정 지점으로 점프 
 ---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.32.22.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.33.35.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.35.01.gif" width="250">
 
-MGURulerView (iOS) |
+[IV-Drop](https://apps.apple.com/app/id1574452904) |
 ---|
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.36.04.gif" width="250">|
 
