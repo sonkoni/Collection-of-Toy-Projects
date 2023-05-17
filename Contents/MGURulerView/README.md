@@ -7,7 +7,7 @@
 ## **MGURulerView**
 - `MGUNeoSegControl`는 `UISegmentedControl` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 SegmentedControl
     - `UIControl` 서브클래스로 제작함
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 커스텀 SegmentedControl에 대한 요구사항이 있어서 제작함.
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 RulerView에 대한 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
@@ -54,18 +54,21 @@ segmentedControl.impactOff = false
 > Objective-C
 ```objective-c
 
-MGUNeoSegControl *segmentedControl =
-[[MGUNeoSegControl alloc] initWithTitles:[self imageModels]
-                            selecedtitle:@"chrome"
-                           configuration:[MGUNeoSegConfiguration iOS7Configuration]];
-[self.view addSubview:segmentedControl];
-[segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+self.rulerView = [[MGURulerView alloc] initWithFrame:CGRectZero
+                                        initialValue:randomDoubleValue
+                                       indicatorType:self.indicatorType
+                                              config:self.rulerViewConfig];
+self.rulerView.delegate = self;
+self.rulerView.soundOn = YES;
+self.rulerView.normalSoundPlayBlock = [self.sound playSoundTickHaptic];
+self.rulerView.skipSoundPlayBlock = [self.sound playSoundRolling];
+[self.containerView addSubview:self.rulerView];
 
 ```
 
 ## Documentation
 
-- Segment 배치를 위한 설계도
+- RulerView의 바늘의 배치를 위한 설계도
 <img src="./screenshot/230517a2.jpg" width="1000">
 
 ## Author
