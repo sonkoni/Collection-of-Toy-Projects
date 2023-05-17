@@ -1,5 +1,5 @@
 //
-//  UIColor+MMNumberKeyboardAdditions.h
+//  UIColor+MGUNumKeyboardAdditions.h
 //  keyBoard_koni
 //
 //  Created by Kwan Hyun Son on 18/10/2019.

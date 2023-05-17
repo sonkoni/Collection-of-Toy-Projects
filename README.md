@@ -28,6 +28,7 @@
 ## Contents
 - [AutoLayout](#autoLayout)
 - [UI-Control](#ui-control)
+    - [Keyboard](#keyboard)
     - [Ruler](#ruler)
     - [Segmented Control](#segmented-control)
     - [Switch](#switch)
@@ -45,10 +46,10 @@
 **[back to top](#contents)**
 
 ## UI-Control
+### Keyboard
+- [MGUNumKeyboard](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNumKeyboard) - 커스텀 숫자 키보드
 ### Ruler
 - [MGURulerView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURulerView) - 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView 
-    
-
 ### Segmented Control
 - [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - UISegmentedControl를 대체할 수 있는 커스텀 SegmentedControl. Written in Objective-C.
 
