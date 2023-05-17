@@ -68,6 +68,34 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 
 <img src="./screenshot/230517a1.jpg" width="500">
 
+## Documentation
+
+- 도형 배치를 위한 알고리즘 구상
+<img src="./screenshot/230517a2.jpg" width="800">
+
+
+- 포커스 랜덤 함수 구상
+    - 예를 들어 파란색 부터 흰색을 HSB 값으로 랜덤하게 배치했을 때, 파란색에 치우치게 랜덤 색이 나오게 하기 위해서 구상함
+<img src="./screenshot/FocusRandom.jpg" width="800">
+
+
+- `layer` 의 `timeOffset` 프라퍼티를 이용하여, 슬라이더로 애니메이팅을 수동 조절할 수 있음
+    - [**timeOffset**](http://wiki.mulgrim.net/page/Api:Core_Animation/protocol_CAMediaTiming/timeOffset) <- 기술 위키 문서
+    - [**Pausing and Resuming Animations**](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/AdvancedAnimationTricks/AdvancedAnimationTricks.html#//apple_ref/doc/uid/TP40004514-CH8-SW15)
+```swift
+
+@IBAction func sliderValueChanged(_ sender: UISlider) {
+    hexagonalWallpaperView.layer.timeOffset = CFTimeInterval(sender.value)
+}
+private func onboardingAnimationStart() {
+    let hexagonalProgressAnimation = self.hexagonalWallpaperView.hexagonalProgressAnimation()
+    
+    CATransaction.setCompletionBlock { }
+    self.hexagonalWallpaperView.layer.add(hexagonalProgressAnimation, forKey: "HexagonalProgressAnimationKey")
+}
+
+```
+
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com 
