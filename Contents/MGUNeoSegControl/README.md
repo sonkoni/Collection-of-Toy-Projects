@@ -70,8 +70,8 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 
 ## Documentation
 
-- 도형 배치를 위한 알고리즘 구상
-<img src="./screenshot/230517a2.jpg" width="800">
+- Segment 배치를 위한 설계도
+<img src="./screenshot/230517a2.jpg" width="1000">
 
 
 - 포커스 랜덤 함수 구상
