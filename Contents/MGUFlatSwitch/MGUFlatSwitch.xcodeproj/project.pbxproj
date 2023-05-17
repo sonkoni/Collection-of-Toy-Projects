@@ -47,7 +47,6 @@
 		8459030728F0D71700E50B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8459030D28F0D7BB00E50B56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84725FEE2A13F7AB004A9E7C /* ViewControllerA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerA.xib; sourceTree = "<group>"; };
-		8472600D2A13FF1B004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 02.58.59.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 02.58.59.gif"; sourceTree = "<group>"; };
 		847260382A14045E004A9E7C /* 230517a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230517a2.jpg; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* MGUFlatSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGUFlatSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
 		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
 		84E66C222A14580D001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 05.22.24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 05.22.24.gif"; sourceTree = "<group>"; };
+		84E66C2D2A1459E0001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 09.37.28.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 09.37.28.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 		8498FF452A0B754E00E3A721 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				8472600D2A13FF1B004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 02.58.59.gif */,
+				84E66C2D2A1459E0001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 09.37.28.gif */,
 				84E66C222A14580D001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 05.22.24.gif */,
 				847260382A14045E004A9E7C /* 230517a2.jpg */,
 			);

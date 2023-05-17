@@ -21,12 +21,12 @@
 *  **Swift** and **Objective-C** compatability
 
 ## Examples
-> - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 완료를 표기하는 애니메이션 요구사항이 있어서 제작함.  
+> - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.  
 
 
-MGUFlatSwitch Samples | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
----|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 09.37.28.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 05.22.24.gif" width="250">
+MGUFlatSwitch (iOS) |
+---|
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 05.22.24.gif" width="250">|
 
 
 ## Usage

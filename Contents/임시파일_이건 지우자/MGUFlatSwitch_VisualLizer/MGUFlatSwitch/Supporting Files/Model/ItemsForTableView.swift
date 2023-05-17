@@ -18,7 +18,7 @@ final class ItemsForTableView {
     // MARK: - 생성 & 소멸
     private init() {
         
-        let item1 = Item(title:"MGUOnOffButton", detailText:"기본 Examples")
+        let item1 = Item(title:"MGUFlatSwitch", detailText:"기본 Examples")
 
         allItems = [(sectionTitle: "Basic", items: [item1])]
     }
