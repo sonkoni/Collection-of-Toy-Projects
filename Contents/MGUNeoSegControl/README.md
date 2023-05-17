@@ -13,9 +13,9 @@
 
 ## Features
 *  colors, gradients, fonts 등 커스텀 가능
-*  Supports style presets
+*  Style presets 지원
 *  Supports texts and images
-*  Supports vertical and horizontal content layout
+*  Text와 Image의 배치를 vertical 또는 horizontal로 배치가능
 *  백그라운드 및 segment를 커스텀 뷰로 제공 가능
 *  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
     * `UIImpactFeedbackGenerator` 이용하여 구현함
