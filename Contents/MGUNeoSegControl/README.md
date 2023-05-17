@@ -17,11 +17,13 @@
 *  커스텀 Shape 가능
     * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
 *  커스텀 손잡이 가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device(아이폰, 트랙패드 등)를 통해 전달된다.
-    * iOS : `UIImpactFeedbackGenerator` 이용하여 구현함
+*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
+    * `UIImpactFeedbackGenerator` 이용하여 구현함
 *  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
     * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
 *  **Swift** and **Objective-C** compatability
+
+
 
 
 ## Examples

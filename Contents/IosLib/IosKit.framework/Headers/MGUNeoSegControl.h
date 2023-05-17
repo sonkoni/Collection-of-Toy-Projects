@@ -5,7 +5,6 @@
 //  VERSION_DATE    2022-11-21
 //  ----------------------------------------------------------------------
 //
-// https://github.com/sh-khashimov/RESegmentedControl
 
 
 #import <IosKit/MGUNeoSegConfiguration.h>
