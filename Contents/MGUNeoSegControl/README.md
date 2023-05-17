@@ -12,7 +12,7 @@
 
 
 ## Features
-*  colors, gradients, fonts 등 커스텀 가능
+*  Colors, Gradients, Fonts 등 커스텀 가능
 *  Style presets 지원
 *  Supports texts and images
 *  Text와 Image의 배치를 vertical 또는 horizontal로 배치가능
@@ -27,10 +27,9 @@
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 
 
-MGUNeoSegControl (iOS) | MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
+MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
 ---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
-
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
 
 ## Usage
 
