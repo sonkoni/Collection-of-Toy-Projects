@@ -5,20 +5,21 @@
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
 ## **MGUFlatSwitch**
-- Skeuomorphism(스큐어모피즘) 스타일의 애니메이팅 가능한 온오프 버튼
+- 완료 및 체크를 상징하는 애니메이팅 가능한 커스텀 스위치
     - UIControl 서브클래스로 제작함
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼을 요구하여 제작함.
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 완료를 표기하는 애니메이션 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230517a3.jpg" width="200"></p>
 
 
 ## Features
-*  커스텀 Shape 및 애니메이션 가능
-    * MGUOnOffSkinInterface 프로토콜을 따르는 뷰 객체를 제공하여 ON, OFF 상태에 따른 Shape과 애니메이션을 커스텀 가능
-    * 입체적인 효과를 위해 OFF 상태에서의 터치다운과 ON 상태에서의 터치다운을 다른 Shape으로 제공가능 
-*  Touch Area를 버튼 크기의 2배까지 설정가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
-    * `UIImpactFeedbackGenerator` 이용하여 구현함
+*  `lineWidth` 설정 가능
+*  `animationDuration` 설정 가능
+*  CompletionHandler 제공
+*  Interface Builder에서 설정가능 - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
+    * Swift : `@IBDesignable` `@IBInspectable`
+    * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability
+
 
 ## Examples
 > - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 완료를 표기하는 애니메이션 요구사항이 있어서 제작함.  
