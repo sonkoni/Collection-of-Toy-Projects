@@ -26,7 +26,7 @@
 
 MGUFlatSwitch (iOS) |
 ---|
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 02.58.59.gif" width="250">|
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 05.22.24.gif" width="250">|
 
 
 ## Usage

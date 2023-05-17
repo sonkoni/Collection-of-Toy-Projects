@@ -7,7 +7,7 @@
 		<key>IosObjcMGESwitch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 		<key>IosObjcMGRSwitch.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>IosSwiftMGESwitch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>1</integer>
 		</dict>
 		<key>IosSwiftMGRSwitch.xcscheme_^#shared#^_</key>
 		<dict>
@@ -37,7 +37,7 @@
 		<key>MacObjcMGESwitch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>7</integer>
 		</dict>
 		<key>MacObjcMGRSwitch.xcscheme_^#shared#^_</key>
 		<dict>
@@ -52,7 +52,7 @@
 		<key>MacSwiftMGESwitch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>0</integer>
 		</dict>
 		<key>MacSwiftMGRSwitch.xcscheme_^#shared#^_</key>
 		<dict>
