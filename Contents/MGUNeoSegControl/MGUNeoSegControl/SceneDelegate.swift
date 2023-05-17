@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  SevenSwitch_iOS
+//  MGUNeoSegControl
 //
 //  Created by Kwan Hyun Son on 2022/10/08.
 //

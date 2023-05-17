@@ -1,6 +1,6 @@
 //
 //  ViewControllerB.swift
-//  SevenSwitch_iOS
+//  MGUNeoSegControl
 //
 //  Created by Kwan Hyun Son on 2023/05/10.
 //
