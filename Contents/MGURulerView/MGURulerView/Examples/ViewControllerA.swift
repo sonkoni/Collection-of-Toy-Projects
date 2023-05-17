@@ -1,6 +1,6 @@
 //
-//  ViewControllerB.swift
-//  MGUNeoSegControl
+//  ViewControllerA.swift
+//  MGURulerView
 //
 //  Created by Kwan Hyun Son on 2023/05/10.
 //
