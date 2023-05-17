@@ -45,7 +45,7 @@
 
 ## UI-Control
 ### Segmented Control
-- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - Custom UISegmentedControl replacement for iOS, written in Objective-C.
+- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - UISegmentedControl를 대체할 수 있는 커스텀 SegmentedControl. Written in Objective-C.
 
 
 ### Switch
