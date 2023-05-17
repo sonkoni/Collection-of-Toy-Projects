@@ -103,7 +103,7 @@ extension MainTableViewController: UITableViewDelegate {
             if indexPath.row == 0 {
                 viewController = ViewControllerA()
                 viewController?.title = "pricklyConfig & BallHeadType"
-                viewController?.rulerViewConfig = MGURulerViewConfig.defaultConfig(with: .KG)
+                viewController?.rulerViewConfig = MGURulerViewConfig.pricklyConfig(with: .KG)
                 viewController?.indicatorType = .ballHeadType
                 viewController?.backgroundColor = .init(red: 12.0/255.0, green: 68.0/255.0, blue: 146.0/255.0, alpha: 1.0)
             }
@@ -126,10 +126,6 @@ extension MainTableViewController: UITableViewDelegate {
                     .mgrColor(withLightModeColor: UIColor.mgrColor(fromHexString: "E2E2E3"),
                               darkModeColor: UIColor.mgrColor(fromHexString: "1E1E1E"),
                               darkElevatedModeColor: nil)
-                
-//                [UIColor mgrColorWithLightModeColor:[UIColor mgrColorFromHexString:@"E2E2E3"]
-//                                      darkModeColor:[UIColor mgrColorFromHexString:@"1E1E1E"]
-//                              darkElevatedModeColor:nil];
             }
         }
         
