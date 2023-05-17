@@ -28,7 +28,9 @@
 ## Contents
 - [AutoLayout](#autoLayout)
 - [UI-Control](#ui-control)
+    - [Segmented Control](#segmented-control)
     - [Switch](#switch)
+    
 - [Wallpaper](#wallpaper)
 - [License](#license)
 
@@ -42,6 +44,10 @@
 **[back to top](#contents)**
 
 ## UI-Control
+### Segmented Control
+- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - Custom UISegmentedControl replacement for iOS, written in Objective-C.
+
+
 ### Switch
 - [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
 - [MGUOnOffButton](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUOnOffButton) - Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼.
