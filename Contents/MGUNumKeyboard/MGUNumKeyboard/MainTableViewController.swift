@@ -24,7 +24,7 @@ final class MainTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "MGURulerView"
+        title = "MGUNumKeyboard"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -98,34 +98,24 @@ extension MainTableViewController {
 // MARK: - UITableViewDelegate
 extension MainTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var viewController: ViewControllerA? = nil
+        var viewController: UIViewController? = nil
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 viewController = ViewControllerA()
-                viewController?.title = "pricklyConfig & BallHeadType"
-                viewController?.rulerViewConfig = MGURulerViewConfig.pricklyConfig(with: .KG)
-                viewController?.indicatorType = .ballHeadType
-                viewController?.backgroundColor = .init(red: 12.0/255.0, green: 68.0/255.0, blue: 146.0/255.0, alpha: 1.0)
             }
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                viewController = ViewControllerA()
-                viewController?.title = "defaultConfig & WheelHeadType"
-                viewController?.rulerViewConfig = MGURulerViewConfig.defaultConfig(with: .KG)
-                viewController?.indicatorType = .wheelHeadType
-                viewController?.backgroundColor = .init(red: 12.0/255.0, green: 68.0/255.0, blue: 146.0/255.0, alpha: 1.0)
+                viewController = ViewControllerB()
+            } else if indexPath.row == 1 {
+                viewController = ViewControllerC()
             }
         } else if indexPath.section == 2 {
             if indexPath.row == 0 {
-                viewController = ViewControllerA()
-                viewController?.title = "forgeConfig & LineType"
-                viewController?.rulerViewConfig = MGURulerViewConfig.forgeConfig(with: .LB)
-                viewController?.indicatorType = .lineType
-                
-                viewController?.backgroundColor =
-                    .mgrColor(withLightModeColor: UIColor.mgrColor(fromHexString: "E2E2E3"),
-                              darkModeColor: UIColor.mgrColor(fromHexString: "1E1E1E"),
-                              darkElevatedModeColor: nil)
+                viewController = ViewControllerD()
+            }
+        } else if indexPath.section == 3 {
+            if indexPath.row == 0 {
+                viewController = ViewControllerE()
             }
         }
         

@@ -11,7 +11,16 @@
 		845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845902FB28F0D71600E50B56 /* SceneDelegate.swift */; };
 		8459030328F0D71700E50B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8459030228F0D71700E50B56 /* Assets.xcassets */; };
 		8459030628F0D71700E50B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8459030428F0D71700E50B56 /* LaunchScreen.storyboard */; };
-		849B35B92A14BC580075F32E /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B35B82A14BC580075F32E /* ViewControllerA.swift */; };
+		849B35BF2A14EDEA0075F32E /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B35BD2A14EDEA0075F32E /* ViewControllerB.m */; };
+		849B35C02A14EDEA0075F32E /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B35BE2A14EDEA0075F32E /* ViewControllerB.xib */; };
+		849B35C42A14EDF20075F32E /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B35C22A14EDF20075F32E /* ViewControllerC.m */; };
+		849B35C52A14EDF20075F32E /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B35C32A14EDF20075F32E /* ViewControllerC.xib */; };
+		849B35C92A14EDFA0075F32E /* ViewControllerD.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B35C72A14EDFA0075F32E /* ViewControllerD.m */; };
+		849B35CA2A14EDFA0075F32E /* ViewControllerD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B35C82A14EDFA0075F32E /* ViewControllerD.xib */; };
+		849B35CE2A14EE000075F32E /* ViewControllerE.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B35CC2A14EE000075F32E /* ViewControllerE.m */; };
+		849B35CF2A14EE000075F32E /* ViewControllerE.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B35CD2A14EE000075F32E /* ViewControllerE.xib */; };
+		849B35D22A14EEFA0075F32E /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B35D12A14EEFA0075F32E /* ViewControllerA.m */; };
+		849B35D42A14F0CD0075F32E /* ViewController11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B35D32A14F0CD0075F32E /* ViewController11.swift */; };
 		84A836422A0B1735008F3D25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A836412A0B1735008F3D25 /* main.swift */; };
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
@@ -50,8 +59,22 @@
 		849B35B52A14B1950075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.33.35.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.33.35.gif"; sourceTree = "<group>"; };
 		849B35B62A14B1AE0075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.35.01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.35.01.gif"; sourceTree = "<group>"; };
 		849B35B72A14B1F00075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.36.04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.36.04.gif"; sourceTree = "<group>"; };
-		849B35B82A14BC580075F32E /* ViewControllerA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		849B35BA2A14CEA10075F32E /* 230517a3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230517a3.jpg; sourceTree = "<group>"; };
+		849B35BC2A14EDEA0075F32E /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		849B35BD2A14EDEA0075F32E /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		849B35BE2A14EDEA0075F32E /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
+		849B35C12A14EDF20075F32E /* ViewControllerC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerC.h; sourceTree = "<group>"; };
+		849B35C22A14EDF20075F32E /* ViewControllerC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerC.m; sourceTree = "<group>"; };
+		849B35C32A14EDF20075F32E /* ViewControllerC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
+		849B35C62A14EDFA0075F32E /* ViewControllerD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerD.h; sourceTree = "<group>"; };
+		849B35C72A14EDFA0075F32E /* ViewControllerD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerD.m; sourceTree = "<group>"; };
+		849B35C82A14EDFA0075F32E /* ViewControllerD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerD.xib; sourceTree = "<group>"; };
+		849B35CB2A14EE000075F32E /* ViewControllerE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerE.h; sourceTree = "<group>"; };
+		849B35CC2A14EE000075F32E /* ViewControllerE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerE.m; sourceTree = "<group>"; };
+		849B35CD2A14EE000075F32E /* ViewControllerE.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerE.xib; sourceTree = "<group>"; };
+		849B35D02A14EEFA0075F32E /* ViewControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
+		849B35D12A14EEFA0075F32E /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
+		849B35D32A14F0CD0075F32E /* ViewController11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController11.swift; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* MGUNumKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGUNumKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -152,8 +175,22 @@
 		84AF26DA28F37DD500C4E0A3 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				849B35B82A14BC580075F32E /* ViewControllerA.swift */,
+				849B35D32A14F0CD0075F32E /* ViewController11.swift */,
+				849B35D02A14EEFA0075F32E /* ViewControllerA.h */,
+				849B35D12A14EEFA0075F32E /* ViewControllerA.m */,
 				84D6B1952A120E380044E02D /* ViewControllerA.xib */,
+				849B35BC2A14EDEA0075F32E /* ViewControllerB.h */,
+				849B35BD2A14EDEA0075F32E /* ViewControllerB.m */,
+				849B35BE2A14EDEA0075F32E /* ViewControllerB.xib */,
+				849B35C12A14EDF20075F32E /* ViewControllerC.h */,
+				849B35C22A14EDF20075F32E /* ViewControllerC.m */,
+				849B35C32A14EDF20075F32E /* ViewControllerC.xib */,
+				849B35C62A14EDFA0075F32E /* ViewControllerD.h */,
+				849B35C72A14EDFA0075F32E /* ViewControllerD.m */,
+				849B35C82A14EDFA0075F32E /* ViewControllerD.xib */,
+				849B35CB2A14EE000075F32E /* ViewControllerE.h */,
+				849B35CC2A14EE000075F32E /* ViewControllerE.m */,
+				849B35CD2A14EE000075F32E /* ViewControllerE.xib */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -231,7 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D6B1962A120E380044E02D /* ViewControllerA.xib in Resources */,
+				849B35CF2A14EE000075F32E /* ViewControllerE.xib in Resources */,
+				849B35C02A14EDEA0075F32E /* ViewControllerB.xib in Resources */,
 				8459030628F0D71700E50B56 /* LaunchScreen.storyboard in Resources */,
+				849B35CA2A14EDFA0075F32E /* ViewControllerD.xib in Resources */,
+				849B35C52A14EDF20075F32E /* ViewControllerC.xib in Resources */,
 				8459030328F0D71700E50B56 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,12 +285,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */,
-				849B35B92A14BC580075F32E /* ViewControllerA.swift in Sources */,
 				84A836422A0B1735008F3D25 /* main.swift in Sources */,
+				849B35D42A14F0CD0075F32E /* ViewController11.swift in Sources */,
+				849B35C92A14EDFA0075F32E /* ViewControllerD.m in Sources */,
+				849B35CE2A14EE000075F32E /* ViewControllerE.m in Sources */,
 				84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */,
 				845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */,
+				849B35BF2A14EDEA0075F32E /* ViewControllerB.m in Sources */,
+				849B35D22A14EEFA0075F32E /* ViewControllerA.m in Sources */,
 				84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */,
 				845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */,
+				849B35C42A14EDF20075F32E /* ViewControllerC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
