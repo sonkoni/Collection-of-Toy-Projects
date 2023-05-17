@@ -42,14 +42,13 @@
 > Swift
 ```swift
 
-let config = MGUNeoSegConfiguration.forge()
-containerView.backgroundColor = config.backgroundColor
-let segmentedControl = MGUNeoSegControl.init(titles: self.dropTitleAndImageModels(),
-                                       selecedtitle: "",
-                                      configuration: config)
-view.addSubview(segmentedControl)
-segmentedControl.addTarget(self, action: #selector(valueChanged(_:)), for: .valueChanged)
-segmentedControl.impactOff = false
+rulerView = MGURulerView.init(frame: .zero, initialValue: randomDoubleValue, indicatorType: indicatorType, config: rulerViewConfig)
+guard let rulerView = rulerView else { return }
+rulerView.delegate = self
+rulerView.soundOn = true
+rulerView.normalSoundPlayBlock = sound?.playSoundTickHaptic()
+rulerView.skipSoundPlayBlock = sound?.playSoundRolling()
+containerView.addSubview(rulerView)
 
 ```
 

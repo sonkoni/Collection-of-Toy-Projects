@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IosKit
 
 final class TableViewDiffableDataSource: UITableViewDiffableDataSource<String, Item> {
     // MARK: header/footer titles support
