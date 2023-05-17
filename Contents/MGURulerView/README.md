@@ -27,9 +27,12 @@
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 
 
-MGURulerView (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
----|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif" width="250">
+MGURulerView (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예 | asdf
+---|---|---
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif" width="250">
+MGURulerView (iOS) |
+---|
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif" width="250">|
 
 ## Usage
 
