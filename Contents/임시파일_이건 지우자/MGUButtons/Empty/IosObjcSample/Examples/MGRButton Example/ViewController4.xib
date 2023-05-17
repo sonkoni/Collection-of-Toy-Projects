@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController4">
+            <connections>
+                <outlet property="backView1" destination="2xY-jI-wWO" id="GaF-JD-jDs"/>
+                <outlet property="backView2" destination="pl6-xF-BtF" id="y7j-Mg-17z"/>
+                <outlet property="backView3" destination="Xfg-wo-Hdl" id="oFa-z1-wcv"/>
+                <outlet property="backView4" destination="HfC-gF-bdF" id="YRU-yD-U6m"/>
+                <outlet property="backView5" destination="iao-7i-pSw" id="nyK-JT-V2T"/>
+                <outlet property="backView8" destination="v4Y-Zf-FD3" id="fhQ-7w-0o0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yND-v0-wxC">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-jI-wWO" userLabel="Back View1">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="95.333333333333329"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMe-JQ-dxG" customClass="MGUButton">
+                                    <rect key="frame" x="95" y="22.666666666666671" width="200" height="50"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="1" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="A8p-cT-iRt"/>
+                                        <constraint firstAttribute="height" constant="50" id="Vca-HU-Vgc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <state key="normal" title="Pulse">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                            <color key="value" red="0.94117647058823528" green="1" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                            <color key="value" red="0.94117647059999998" green="1" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="pulseButtonClick:" destination="-1" eventType="touchUpInside" id="psS-Tn-3Sd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="HMe-JQ-dxG" firstAttribute="centerY" secondItem="2xY-jI-wWO" secondAttribute="centerY" id="Aa4-uv-siO"/>
+                                <constraint firstItem="HMe-JQ-dxG" firstAttribute="centerX" secondItem="2xY-jI-wWO" secondAttribute="centerX" id="G9h-Cs-Tmy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-xF-BtF" userLabel="Back View2">
+                            <rect key="frame" x="0.0" y="95.333333333333343" width="390" height="95.333333333333343"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI9-iO-rue" customClass="MGUButton">
+                                    <rect key="frame" x="95" y="22.666666666666657" width="200" height="50"/>
+                                    <color key="backgroundColor" red="0.88235294119999996" green="0.23137254900000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="BmT-5h-I48"/>
+                                        <constraint firstAttribute="width" constant="200" id="Scg-uT-Qjp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <state key="normal" title="Flash">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                            <color key="value" red="0.88235294117647056" green="0.23137254901960785" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                            <color key="value" red="0.88235294119999996" green="0.23137254900000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="flashButtonClick:" destination="-1" eventType="touchUpInside" id="9v8-8b-OKb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="WI9-iO-rue" firstAttribute="centerY" secondItem="pl6-xF-BtF" secondAttribute="centerY" id="c4D-Yi-Qu6"/>
+                                <constraint firstItem="WI9-iO-rue" firstAttribute="centerX" secondItem="pl6-xF-BtF" secondAttribute="centerX" id="zEO-DR-lKq"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-wo-Hdl" userLabel="Back View3">
+                            <rect key="frame" x="0.0" y="190.66666666666666" width="390" height="95.333333333333343"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzP-lZ-hMt" customClass="MGUButton">
+                                    <rect key="frame" x="95" y="22.666666666666657" width="200" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="d4j-VB-9f2"/>
+                                        <constraint firstAttribute="height" constant="50" id="x8k-w1-E1I"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <state key="normal" title="Shake"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                            <color key="value" red="0.13725490200000001" green="0.40784313729999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                            <color key="value" red="0.13725490200000001" green="0.40784313729999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="shakeButtonClick:" destination="-1" eventType="touchUpInside" id="aam-jp-fGU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="LzP-lZ-hMt" firstAttribute="centerY" secondItem="Xfg-wo-Hdl" secondAttribute="centerY" id="VSm-An-dgv"/>
+                                <constraint firstItem="LzP-lZ-hMt" firstAttribute="centerX" secondItem="Xfg-wo-Hdl" secondAttribute="centerX" id="XWA-mO-dHo"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-gF-bdF" userLabel="Back View4">
+                            <rect key="frame" x="0.0" y="286" width="390" height="95.666666666666686"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i44-sT-cVg" customClass="MGUButton">
+                                    <rect key="frame" x="95" y="22.666666666666686" width="200" height="50"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0042749879466334427" blue="0.44283041581928928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0F5-V3-jP7"/>
+                                        <constraint firstAttribute="width" constant="200" id="lNB-xX-TUl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <state key="normal" title="Glow">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                            <color key="value" red="0.0" green="0.0039215686269999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                            <color key="value" red="0.0" green="0.0039215686269999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="glowButtonClick:" destination="-1" eventType="touchUpInside" id="ql6-aP-6gU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="i44-sT-cVg" firstAttribute="centerY" secondItem="HfC-gF-bdF" secondAttribute="centerY" id="Xb3-2W-ToX"/>
+                                <constraint firstItem="i44-sT-cVg" firstAttribute="centerX" secondItem="HfC-gF-bdF" secondAttribute="centerX" id="YbT-EJ-3sb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iao-7i-pSw" userLabel="Back View5">
+                            <rect key="frame" x="0.0" y="381.66666666666669" width="390" height="95.333333333333314"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-si-JU4" userLabel="Back View6">
+                            <rect key="frame" x="0.0" y="476.99999999999994" width="390" height="95.333333333333314"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jYp-Sb-pge">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="95.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="321-qB-I1u">
+                                            <rect key="frame" x="0.0" y="0.0" width="0.66666666666666663" height="95.333333333333329"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="0.5" id="QZE-Xf-zQG"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qS-Eg-Bcc" customClass="MGUButton">
+                                            <rect key="frame" x="20.666666666666671" y="22.666666666666629" width="164.33333333333331" height="50"/>
+                                            <state key="normal" image="ChevronLeft"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="breadEffect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                                    <color key="value" red="0.24313725489999999" green="0.50196078430000002" blue="0.86274509799999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRippleCircle" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVW-ff-Sz8" customClass="MGUButton">
+                                            <rect key="frame" x="205" y="22.666666666666629" width="164.66666666666663" height="50"/>
+                                            <color key="backgroundColor" red="0.63529411759999999" green="0.7725490196" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="NaB-Yk-hD2"/>
+                                            </constraints>
+                                            <state key="normal" image="ChevronRight"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="breadEffect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                                    <color key="value" red="0.24313725489999999" green="0.50196078430000002" blue="0.86274509799999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRippleCircle" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAy-ui-tVN">
+                                            <rect key="frame" x="389.66666666666669" y="0.0" width="0.33333333333331439" height="95.333333333333329"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="0.5" id="Imw-67-R3q"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RVW-ff-Sz8" firstAttribute="height" secondItem="0qS-Eg-Bcc" secondAttribute="height" id="Fst-gQ-V5u"/>
+                                        <constraint firstItem="0qS-Eg-Bcc" firstAttribute="width" secondItem="RVW-ff-Sz8" secondAttribute="width" id="rJh-PM-bBB"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.039215686274509803" green="0.23137254901960785" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="jYp-Sb-pge" secondAttribute="bottom" id="Dbz-3t-3Yy"/>
+                                <constraint firstItem="jYp-Sb-pge" firstAttribute="top" secondItem="6h8-si-JU4" secondAttribute="top" id="If9-FD-ITE"/>
+                                <constraint firstAttribute="trailing" secondItem="jYp-Sb-pge" secondAttribute="trailing" id="qwa-LZ-efQ"/>
+                                <constraint firstItem="jYp-Sb-pge" firstAttribute="leading" secondItem="6h8-si-JU4" secondAttribute="leading" id="szA-9X-uzI"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDs-3h-f04" userLabel="Back View7">
+                            <rect key="frame" x="0.0" y="572.33333333333337" width="390" height="95.333333333333371"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UrE-oX-wws">
+                                    <rect key="frame" x="10" y="10" width="370" height="75.333333333333329"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-Z8-k00" customClass="MGUButton">
+                                            <rect key="frame" x="30" y="7.6666666666666288" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="RUt-HV-iwO"/>
+                                                <constraint firstAttribute="height" constant="60" id="rFC-Kj-uTT"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="backward.fill" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="large" weight="bold"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shrinkEffect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVS-6N-qek" customClass="MGUButton">
+                                            <rect key="frame" x="155" y="7.6666666666666288" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="I0Y-Dl-Gtl"/>
+                                                <constraint firstAttribute="width" constant="60" id="THk-gd-SQV"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="play.fill" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="large" weight="bold"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shrinkEffect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwS-Dd-Dlb" customClass="MGUButton">
+                                            <rect key="frame" x="280" y="7.6666666666666288" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="4M1-K2-DqF"/>
+                                                <constraint firstAttribute="width" constant="60" id="jlb-H6-DDa"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="forward.fill" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="large" weight="bold"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shrinkEffect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonBackgroundColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="buttonContentsColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedButtonContentsColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="0.0" left="30" bottom="0.0" right="30"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="UrE-oX-wws" secondAttribute="bottom" constant="10" id="19c-F4-XoR"/>
+                                <constraint firstItem="UrE-oX-wws" firstAttribute="leading" secondItem="SDs-3h-f04" secondAttribute="leading" constant="10" id="eup-pQ-sEn"/>
+                                <constraint firstItem="UrE-oX-wws" firstAttribute="top" secondItem="SDs-3h-f04" secondAttribute="top" constant="10" id="f65-K7-OaE"/>
+                                <constraint firstAttribute="trailing" secondItem="UrE-oX-wws" secondAttribute="trailing" constant="10" id="jg9-7h-utv"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4Y-Zf-FD3" userLabel="Back View8">
+                            <rect key="frame" x="0.0" y="667.66666666666663" width="390" height="95.333333333333371"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="yND-v0-wxC" secondAttribute="bottom" id="Xyt-bd-RGO"/>
+                <constraint firstAttribute="trailing" secondItem="yND-v0-wxC" secondAttribute="trailing" id="d7n-Zi-ZnG"/>
+                <constraint firstItem="yND-v0-wxC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="del-oh-d3s"/>
+                <constraint firstItem="yND-v0-wxC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="ybX-uR-0eG"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0qS-Eg-Bcc">
+            <size key="intrinsicContentSize" width="20" height="36"/>
+        </designable>
+        <designable name="HMe-JQ-dxG">
+            <size key="intrinsicContentSize" width="69" height="51"/>
+        </designable>
+        <designable name="LzP-lZ-hMt">
+            <size key="intrinsicContentSize" width="83" height="51"/>
+        </designable>
+        <designable name="RVW-ff-Sz8">
+            <size key="intrinsicContentSize" width="20" height="36"/>
+        </designable>
+        <designable name="WI9-iO-rue">
+            <size key="intrinsicContentSize" width="70" height="51"/>
+        </designable>
+        <designable name="ZVS-6N-qek">
+            <size key="intrinsicContentSize" width="31.333333333333332" height="35.666666666666664"/>
+        </designable>
+        <designable name="i44-sT-cVg">
+            <size key="intrinsicContentSize" width="74" height="51"/>
+        </designable>
+        <designable name="pwc-Z8-k00">
+            <size key="intrinsicContentSize" width="34.333333333333336" height="22"/>
+        </designable>
+        <designable name="zwS-Dd-Dlb">
+            <size key="intrinsicContentSize" width="34.333333333333336" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ChevronLeft" width="20" height="36"/>
+        <image name="ChevronRight" width="20" height="36"/>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

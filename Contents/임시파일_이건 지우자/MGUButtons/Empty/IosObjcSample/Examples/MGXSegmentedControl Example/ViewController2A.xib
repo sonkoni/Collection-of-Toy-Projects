@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController2A">
+            <connections>
+                <outlet property="container1" destination="CGc-5G-HlX" id="Ht2-7d-bqb"/>
+                <outlet property="container2" destination="CnV-Tm-cnn" id="4h5-T5-7Za"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGc-5G-HlX" userLabel="Container 1">
+                    <rect key="frame" x="107" y="425" width="200" height="100"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="JpR-0e-DGh"/>
+                        <constraint firstAttribute="height" constant="100" id="qFE-xR-JML"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CnV-Tm-cnn" userLabel="Container 2">
+                    <rect key="frame" x="57" y="575" width="300" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Yf2-Gb-LCW"/>
+                        <constraint firstAttribute="height" constant="100" id="bhS-XZ-XSl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2b-ct-uEU" userLabel="Center Line">
+                    <rect key="frame" x="206.5" y="0.0" width="1" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="eSc-4S-oe0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONQ-dG-oXD" userLabel="Left Line">
+                    <rect key="frame" x="156.5" y="575" width="1" height="321"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="ma2-S8-UYn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm1-BE-FQH" userLabel="Right Line">
+                    <rect key="frame" x="256.5" y="575" width="1" height="321"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="J3h-IO-9XJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="fm1-BE-FQH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="50" id="2Ee-pd-vib"/>
+                <constraint firstAttribute="bottom" secondItem="fm1-BE-FQH" secondAttribute="bottom" id="Db5-sa-7eC"/>
+                <constraint firstItem="CGc-5G-HlX" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="DbS-1i-NpO"/>
+                <constraint firstItem="CnV-Tm-cnn" firstAttribute="top" secondItem="CGc-5G-HlX" secondAttribute="bottom" constant="50" id="LPw-nV-Dqd"/>
+                <constraint firstItem="CnV-Tm-cnn" firstAttribute="centerX" secondItem="CGc-5G-HlX" secondAttribute="centerX" id="cKm-4u-5ad"/>
+                <constraint firstAttribute="bottom" secondItem="e2b-ct-uEU" secondAttribute="bottom" id="dNy-pW-F3a"/>
+                <constraint firstAttribute="bottom" secondItem="ONQ-dG-oXD" secondAttribute="bottom" id="iYE-UE-5ix"/>
+                <constraint firstItem="CGc-5G-HlX" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="ifJ-5d-f87"/>
+                <constraint firstItem="ONQ-dG-oXD" firstAttribute="top" secondItem="CnV-Tm-cnn" secondAttribute="top" id="jPF-Uk-hZT"/>
+                <constraint firstItem="ONQ-dG-oXD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" constant="-50" id="k3A-Ey-2yw"/>
+                <constraint firstItem="e2b-ct-uEU" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="sLD-ep-RC8"/>
+                <constraint firstItem="fm1-BE-FQH" firstAttribute="top" secondItem="CnV-Tm-cnn" secondAttribute="top" id="wHy-Vw-JMX"/>
+                <constraint firstItem="e2b-ct-uEU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="wRy-1K-qtF"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="100" y="75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
