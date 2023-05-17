@@ -46,7 +46,7 @@
 
 ## UI-Control
 ### Ruler
-- [MGURulerView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURulerView) - ?????
+- [MGURulerView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURulerView) - 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView 
     
 
 ### Segmented Control

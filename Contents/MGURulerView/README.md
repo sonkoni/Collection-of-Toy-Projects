@@ -5,26 +5,28 @@
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
 ## **MGURulerView**
-- `MGUNeoSegControl`는 `UISegmentedControl` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 SegmentedControl
-    - `UIControl` 서브클래스로 제작함
+- 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView
+    - `UIScrollView` 를 기반으로 제작함
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 RulerView에 대한 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
 ## Features
-*  Colors, Gradients, Fonts 등 커스텀 가능
+*  더블 탭, 트리플 탭 지원
+    * 더블 탭, 트리플 탭 에 따라 이동할 길이 선택가능
 *  Style presets 지원
-*  Supports texts and images
-*  Text와 Image의 배치를 vertical 또는 horizontal로 배치가능
-*  백그라운드 및 segment를 커스텀 뷰로 제공 가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
-    * `UIImpactFeedbackGenerator` 이용하여 구현함
+    * 중앙 바늘의 모양에 대한 presets 지원
+    * RulerView의 표시된 눈금의 위치와 길이에 대한 presets 지원
+*  KG, LB 선택가능
+*  Sound 지원
+    * Driven Sound와 Scroll Sound의 소리 종류 및 간격을 각각 다르게 설정함
+*  손가락이 접촉한 상태에는 스크롤의 저항을 표현하기 위해 Easing 함수를 이용함.
 *  **Swift** and **Objective-C** compatability
 
 
 ## Examples
 > - MGURulerView (iOS)
->   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
+>   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 무게를 측정할 RulerView의 요구사항이 있어서 제작함.
 
 
 스크롤 및 더블 탭 | 짧게 이동, 길게 이동 | 특정 지점으로 점프 
