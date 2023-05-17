@@ -4,7 +4,7 @@
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
-## **MGUNeoSegControl**
+## **MGURulerView**
 - `MGUNeoSegControl`는 `UISegmentedControl` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 SegmentedControl
     - `UIControl` 서브클래스로 제작함
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 커스텀 SegmentedControl에 대한 요구사항이 있어서 제작함.
@@ -23,11 +23,11 @@
 
 
 ## Examples
-> - MGUNeoSegControl (iOS)
+> - MGURulerView (iOS)
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 
 
-MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
+MGURulerView (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
 ---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif" width="250">
 
