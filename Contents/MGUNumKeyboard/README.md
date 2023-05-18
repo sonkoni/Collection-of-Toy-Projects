@@ -29,7 +29,7 @@
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 무게를 측정할 RulerView의 요구사항이 있어서 제작함.
 
 
-Standard Style | Low Height Style | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 
+Standard Style | Low Height Style | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 예 | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 예
 ---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.42.36.gif" width="225">
 
