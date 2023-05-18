@@ -73,8 +73,8 @@
 		849B35CD2A14EE000075F32E /* ViewControllerE.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerE.xib; sourceTree = "<group>"; };
 		849B35D02A14EEFA0075F32E /* ViewControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
 		849B35D12A14EEFA0075F32E /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
-		849B35DF2A15ED240075F32E /* BBBB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BBBB.gif; sourceTree = "<group>"; };
-		849B35E02A15ED240075F32E /* AAAA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AAAA.gif; sourceTree = "<group>"; };
+		849B35E12A15EF890075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif"; sourceTree = "<group>"; };
+		849B35E22A15F0C50075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif"; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* MGUNumKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGUNumKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -153,11 +153,11 @@
 			isa = PBXGroup;
 			children = (
 				849B35B42A14B1590075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.32.22.gif */,
+				849B35E22A15F0C50075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif */,
 				849B35B52A14B1950075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.33.35.gif */,
 				849B35B62A14B1AE0075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.35.01.gif */,
 				849B35B72A14B1F00075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.36.04.gif */,
-				849B35E02A15ED240075F32E /* AAAA.gif */,
-				849B35DF2A15ED240075F32E /* BBBB.gif */,
+				849B35E12A15EF890075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif */,
 				84E66C452A149CC8001CCF28 /* 230516b1.jpg */,
 				84E66C442A14996E001CCF28 /* 230517a2.jpg */,
 				849B35BA2A14CEA10075F32E /* 230517a3.jpg */,

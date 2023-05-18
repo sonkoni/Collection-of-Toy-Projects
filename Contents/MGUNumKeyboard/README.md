@@ -31,7 +31,7 @@
 
 스크롤 및 더블 탭 | 짧게 이동, 길게 이동 | 특정 지점으로 점프 
 ---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-17 at 15.32.22.gif" width="250">|<img src="./screenshot/AAAA.gif" width="250">|<img src="./screenshot/BBBB.gif" width="250">
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="250">|<img src="./screenshot/BBBB.gif" width="250">
 
 [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 |
 ---|
