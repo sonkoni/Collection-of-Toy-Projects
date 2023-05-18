@@ -31,7 +31,7 @@
 
 Standard Style | Low Height Style | Standard Style | Low Height Style 
 ---|---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="225">
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="226">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="226">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="226">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="226">
 
 [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용
 ---|---
