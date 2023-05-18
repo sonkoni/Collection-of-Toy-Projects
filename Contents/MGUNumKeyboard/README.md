@@ -88,9 +88,6 @@ Rect   |<img src="./screenshot/Blue_Standard1_AllowDone_Rect.jpg" width="225">|<
 - RulerView의 바늘의 배치를 위한 설계도
 <img src="./screenshot/230517a2.jpg" width="1000">
 
-- Style presets 지원
-<img src="./screenshot/230517a3.jpg" width="1000">
-
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com 
