@@ -33,7 +33,7 @@ Standard Style | Low Height Style | [IV-Drop](https://apps.apple.com/app/id15744
 ---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.42.36.gif" width="225">
 
-_|헤더2|헤더3|헤더4|헤더5|헤더6
+|헤더2|헤더3|헤더4|헤더5|헤더6
 ---|---|---|---|---|---
 Rounded|셀2|셀3|셀4|셀3|셀4
 Rect   |셀6|셀7|셀8|셀3|셀4
