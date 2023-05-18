@@ -1,6 +1,6 @@
 //
-//  MGRViewController1.m
-//  shakeAnimation
+//  ViewControllerA.m
+//  MGUNumKeyboard
 //
 //  Created by Kwan Hyun Son on 15/05/2019.
 //  Copyright © 2019 Mulgrim Inc. All rights reserved.
@@ -13,7 +13,6 @@
 @interface ViewControllerA () <MGUNumKeyboardDelegate, UITextFieldDelegate>
 @property (weak) IBOutlet UIView *containerView;
 @property (weak) IBOutlet UITextField *textField;
-@property (weak) IBOutlet UITextField *testTextField;
 @property (weak) IBOutlet UILabel *textLabel;
 @property (nonatomic, strong) MGOSoundKeyboard *sound;
 @end
@@ -22,6 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIStackView *stackView = (UIStackView *)(self.textField.superview);
+    [stackView setCustomSpacing:50.0 afterView:self.textField];
+    
+    
     self.navigationItem.title = @"Layout Type - Standard1";
     _sound = [MGOSoundKeyboard keyBoardSound];
     
@@ -56,8 +60,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.textField.text = nil; // 최초에는 빈상태로 하자.
-    //[self.textField becomeFirstResponder]; // 이 메서드로 인하여, 최초에 바로 키보드가 떠오르게 된다.
-    ((MGUMorphingLabel *)self.textLabel).morphingEffect = MGUMorphingLabelEffectEvaporate;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

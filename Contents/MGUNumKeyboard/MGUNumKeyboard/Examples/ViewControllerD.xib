@@ -22,48 +22,50 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T7-mL-e8c">
-                    <rect key="frame" x="103.66666666666669" y="286" width="207" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6FK-Ne-0Kd">
+                    <rect key="frame" x="20" y="112" width="374" height="177"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard와 연결된 TextField. 앱에서는 hide함" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-LV-VCu">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1T7-mL-e8c">
+                            <rect key="frame" x="0.0" y="46" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에서 보여질 Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UhD-KI-aqI">
+                            <rect key="frame" x="0.0" y="90" width="374" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dp-Sd-0z8">
+                            <rect key="frame" x="0.0" y="136" width="374" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2on-q3-xyg" userLabel="Container View">
-                    <rect key="frame" x="0.0" y="370" width="414" height="200"/>
+                    <rect key="frame" x="0.0" y="642" width="414" height="200"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="a7k-Q1-dRh"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="private Text Field 실제 앱에서 안보임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCM-d2-eml">
-                    <rect key="frame" x="77" y="100" width="260" height="21"/>
-                    <color key="backgroundColor" red="0.9434128853" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dp-Sd-0z8">
-                    <rect key="frame" x="62" y="620" width="290" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="Eu6-nv-FLE"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="0.094117647058823528" green="0.39215686274509803" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="2on-q3-xyg" firstAttribute="top" secondItem="1T7-mL-e8c" secondAttribute="bottom" constant="50" id="24P-eI-Dw5"/>
-                <constraint firstItem="9dp-Sd-0z8" firstAttribute="top" secondItem="2on-q3-xyg" secondAttribute="bottom" constant="50" id="6en-bX-QTX"/>
-                <constraint firstItem="1T7-mL-e8c" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="7Y2-6o-XJl"/>
-                <constraint firstItem="1T7-mL-e8c" firstAttribute="centerX" secondItem="2on-q3-xyg" secondAttribute="centerX" id="9bm-4T-hEq"/>
-                <constraint firstItem="9dp-Sd-0z8" firstAttribute="centerX" secondItem="2on-q3-xyg" secondAttribute="centerX" id="FEn-vJ-ZgI"/>
-                <constraint firstItem="9dp-Sd-0z8" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="LnT-Mi-Agq"/>
-                <constraint firstItem="aCM-d2-eml" firstAttribute="centerX" secondItem="1T7-mL-e8c" secondAttribute="centerX" id="cSL-Sf-9fr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6FK-Ne-0Kd" secondAttribute="trailing" constant="20" id="EN4-Ce-DGQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="2on-q3-xyg" secondAttribute="bottom" constant="20" id="KjS-ZO-Vnz"/>
+                <constraint firstItem="6FK-Ne-0Kd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Td5-qW-0nC"/>
                 <constraint firstItem="2on-q3-xyg" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="dT3-as-JD0"/>
-                <constraint firstItem="2on-q3-xyg" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="lv8-WO-hIv"/>
-                <constraint firstItem="aCM-d2-eml" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="56" id="wHL-dB-S0h"/>
+                <constraint firstItem="6FK-Ne-0Kd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="iw7-4F-q7j"/>
                 <constraint firstItem="2on-q3-xyg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="y6X-te-5Sc"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

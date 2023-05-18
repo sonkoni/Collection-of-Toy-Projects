@@ -1,6 +1,6 @@
 //
-//  MGRViewController3.h
-//  keyBoard_koni
+//  ViewControllerD.h
+//  MGUNumKeyboard
 //
 //  Created by Kwan Hyun Son on 20/04/2020.
 //  Copyright © 2020 Mulgrim Inc. All rights reserved.

@@ -22,50 +22,52 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEk-2y-cwe">
-                    <rect key="frame" x="103.5" y="327" width="207" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AVA-c8-EHY">
+                    <rect key="frame" x="20" y="112" width="374" height="147"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard와 연결된 TextField. 앱에서는 hide함" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Ah-DI-Ch3">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEk-2y-cwe">
+                            <rect key="frame" x="0.0" y="36" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에서 보여질 Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="URJ-9q-GwY">
+                            <rect key="frame" x="0.0" y="70" width="374" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-UY-mZ2">
+                            <rect key="frame" x="0.0" y="106" width="374" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNO-7E-roG">
-                    <rect key="frame" x="0.0" y="411" width="414" height="132"/>
+                    <rect key="frame" x="0.0" y="710" width="414" height="132"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="132" id="Orh-Jh-7RY"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-UY-mZ2">
-                    <rect key="frame" x="62" y="593" width="290" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="fs8-bL-ZFr"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="private Text Field 실제 앱에서 안보임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX8-w6-6T6">
-                    <rect key="frame" x="77" y="148" width="260" height="21"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="0.094117647060000004" green="0.3921568627" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="eNO-7E-roG" firstAttribute="top" secondItem="xEk-2y-cwe" secondAttribute="bottom" constant="50" id="4Ni-xC-sM1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="AVA-c8-EHY" secondAttribute="trailing" constant="20" id="1B9-bw-Djp"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="eNO-7E-roG" secondAttribute="trailing" id="7HK-F9-K2C"/>
                 <constraint firstItem="eNO-7E-roG" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="9UG-Wk-p4f"/>
-                <constraint firstItem="xEk-2y-cwe" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="9g8-N9-Uar"/>
-                <constraint firstItem="FX8-w6-6T6" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="E98-LH-KPa"/>
-                <constraint firstItem="FX8-w6-6T6" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="56" id="MVm-EK-nP6"/>
-                <constraint firstItem="xEk-2y-cwe" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="OSB-wu-OmQ"/>
+                <constraint firstItem="AVA-c8-EHY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Jrv-eK-EeR"/>
+                <constraint firstItem="AVA-c8-EHY" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="QcJ-TK-sfd"/>
                 <constraint firstItem="eNO-7E-roG" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Rmv-sa-Wcp"/>
-                <constraint firstItem="j1s-UY-mZ2" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="WOf-42-cx4"/>
-                <constraint firstItem="j1s-UY-mZ2" firstAttribute="top" secondItem="eNO-7E-roG" secondAttribute="bottom" constant="50" id="equ-JF-Anb"/>
-                <constraint firstItem="j1s-UY-mZ2" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="lYM-k4-Aut"/>
-                <constraint firstItem="eNO-7E-roG" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="wta-uU-qE8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="eNO-7E-roG" secondAttribute="bottom" constant="20" id="dVU-ST-JGp"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="115.94202898550725" y="73.660714285714278"/>

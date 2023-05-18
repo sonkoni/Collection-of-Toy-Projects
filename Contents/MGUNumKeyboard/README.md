@@ -25,7 +25,7 @@
 
 
 ## Examples
-> - MGURulerView (iOS)
+> - MGUNumKeyboard (iOS)
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 무게를 측정할 RulerView의 요구사항이 있어서 제작함.
 
 
@@ -42,28 +42,14 @@
 > Swift
 ```swift
 
-rulerView = MGURulerView.init(frame: .zero, initialValue: randomDoubleValue, indicatorType: indicatorType, config: rulerViewConfig)
-guard let rulerView = rulerView else { return }
-rulerView.delegate = self
-rulerView.soundOn = true
-rulerView.normalSoundPlayBlock = sound?.playSoundTickHaptic()
-rulerView.skipSoundPlayBlock = sound?.playSoundRolling()
-containerView.addSubview(rulerView)
+
 
 ```
 
 > Objective-C
 ```objective-c
 
-self.rulerView = [[MGURulerView alloc] initWithFrame:CGRectZero
-                                        initialValue:randomDoubleValue
-                                       indicatorType:self.indicatorType
-                                              config:self.rulerViewConfig];
-self.rulerView.delegate = self;
-self.rulerView.soundOn = YES;
-self.rulerView.normalSoundPlayBlock = [self.sound playSoundTickHaptic];
-self.rulerView.skipSoundPlayBlock = [self.sound playSoundRolling];
-[self.containerView addSubview:self.rulerView];
+
 
 ```
 

@@ -12,7 +12,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerA">
             <connections>
                 <outlet property="containerView" destination="8t8-7z-JBp" id="bri-rp-hAo"/>
-                <outlet property="testTextField" destination="mH9-mY-vax" id="rg7-C8-gnd"/>
                 <outlet property="textField" destination="mEO-Fc-dNu" id="1eW-U8-vXU"/>
                 <outlet property="textLabel" destination="l0o-sj-qAF" id="UYv-xr-bCR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -23,67 +22,58 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EaQ-wf-cbj">
+                    <rect key="frame" x="20" y="67" width="335" height="186"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard와 연결된 TextField. 앱에서는 hide함" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vXO-rs-pS3">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-Fc-dNu" userLabel="Private Text Field">
+                            <rect key="frame" x="0.0" y="46" width="335" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에서 보여질 Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nBw-fH-2Pe">
+                            <rect key="frame" x="0.0" y="90" width="335" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0o-sj-qAF">
+                            <rect key="frame" x="0.0" y="136" width="335" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MaB-WU-I6F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8t8-7z-JBp">
-                    <rect key="frame" x="0.0" y="167.66666666666663" width="375" height="300"/>
+                    <rect key="frame" x="0.0" y="458" width="375" height="300"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="8Fm-sT-S0q"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="private Text Field 실제 앱에서 안보임" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q5-Ek-Eg2">
-                    <rect key="frame" x="77" y="79" width="260" height="21"/>
-                    <color key="backgroundColor" red="0.9434128853" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-Fc-dNu" userLabel="Private Text Field">
-                    <rect key="frame" x="139" y="110" width="136" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="그냥 모양" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mH9-mY-vax">
-                    <rect key="frame" x="0.0" y="110" width="97" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0o-sj-qAF" customClass="MGUMorphingLabel">
-                    <rect key="frame" x="56.333333333333343" y="517.66666666666663" width="262.33333333333326" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="MaB-WU-I6F"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="0.094117647058823528" green="0.39215686274509803" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EaQ-wf-cbj" secondAttribute="trailing" constant="20" id="1Iv-ZH-vcK"/>
                 <constraint firstItem="8t8-7z-JBp" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="2S1-kY-oeV"/>
-                <constraint firstItem="mEO-Fc-dNu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="63" id="DG8-5z-hUR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="8t8-7z-JBp" secondAttribute="bottom" constant="20" id="7sH-lm-64q"/>
+                <constraint firstItem="EaQ-wf-cbj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="DGX-P5-GGQ"/>
                 <constraint firstItem="8t8-7z-JBp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="DMp-vZ-Bdl"/>
-                <constraint firstItem="mH9-mY-vax" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="63" id="EiP-fO-0mq"/>
-                <constraint firstItem="mH9-mY-vax" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Kta-cn-eJ6"/>
-                <constraint firstItem="l0o-sj-qAF" firstAttribute="top" secondItem="8t8-7z-JBp" secondAttribute="bottom" constant="50" id="Mqb-21-K7p"/>
-                <constraint firstItem="mEO-Fc-dNu" firstAttribute="top" secondItem="2Q5-Ek-Eg2" secondAttribute="bottom" constant="10" id="NHt-Gr-lZ6"/>
-                <constraint firstItem="2Q5-Ek-Eg2" firstAttribute="centerX" secondItem="mEO-Fc-dNu" secondAttribute="centerX" id="Qoe-Be-oZZ"/>
-                <constraint firstItem="l0o-sj-qAF" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="ZtU-Ea-NlL"/>
-                <constraint firstItem="mEO-Fc-dNu" firstAttribute="leading" secondItem="mH9-mY-vax" secondAttribute="trailing" constant="42" id="odc-QF-TMH"/>
-                <constraint firstItem="l0o-sj-qAF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="sDh-Aq-IcO"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mEO-Fc-dNu" secondAttribute="trailing" constant="100" id="vCt-x6-1ZH"/>
-                <constraint firstItem="mEO-Fc-dNu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="139" id="vxr-BO-HSg"/>
-                <constraint firstItem="8t8-7z-JBp" firstAttribute="top" secondItem="mEO-Fc-dNu" secondAttribute="bottom" constant="23.5" id="y4o-Ht-r5F"/>
-                <constraint firstItem="8t8-7z-JBp" firstAttribute="top" secondItem="mH9-mY-vax" secondAttribute="bottom" constant="23.5" id="zYw-he-pLJ"/>
+                <constraint firstItem="EaQ-wf-cbj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="TC2-Lo-LS8"/>
             </constraints>
             <point key="canvasLocation" x="138.40000000000001" y="107.49625187406298"/>
         </view>
     </objects>
-    <designables>
-        <designable name="l0o-sj-qAF">
-            <size key="intrinsicContentSize" width="39" height="41"/>
-        </designable>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

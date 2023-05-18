@@ -1,6 +1,6 @@
 //
-//  MGRViewController1.h
-//  shakeAnimation
+//  ViewControllerA.h
+//  MGUNumKeyboard
 //
 //  Created by Kwan Hyun Son on 15/05/2019.
 //  Copyright © 2019 Mulgrim Inc. All rights reserved.

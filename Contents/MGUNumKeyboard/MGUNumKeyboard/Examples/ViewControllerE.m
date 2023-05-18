@@ -1,6 +1,6 @@
 //
-//  ViewController4.m
-//  keyBoard_koni
+//  ViewControllerD.m
+//  MGUNumKeyboard
 //
 //  Created by Kwan Hyun Son on 2020/12/18.
 //  Copyright © 2020 Mulgrim Inc. All rights reserved.
@@ -22,6 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIStackView *stackView = (UIStackView *)(self.privateTextField.superview);
+    [stackView setCustomSpacing:50.0 afterView:self.privateTextField];
+    
+    
     self.navigationItem.title = @"Layout Type - LowHeightStyle2";
     _sound = [MGOSoundKeyboard keyBoardSound];
     
