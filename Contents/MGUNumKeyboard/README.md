@@ -48,6 +48,7 @@ $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Sty
 Rounded |<img src="./screenshot/Forge_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Forge_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Forge_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle2_Rounded.jpg" width="225">
 Rect   |<img src="./screenshot/Forge_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Forge_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Forge_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle2_Rect.jpg" width="225">
 
+---
 > DarkBlue Configuration
 
 $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
