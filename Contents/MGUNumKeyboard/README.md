@@ -34,6 +34,7 @@ Standard Style | Low Height Style | [IV-Drop](https://apps.apple.com/app/id15744
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.01.42.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.42.36.gif" width="225">
 
 ### Appearance
+---
 > Default Configuration
 
 $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
@@ -41,6 +42,7 @@ $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Sty
 Rounded |<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rounded.jpg" width="225">
 Rect   |<img src="./screenshot/Default_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rect.jpg" width="225">
 
+---
 > Forge Configuration
 
 $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
@@ -48,6 +50,7 @@ $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Sty
 Rounded |<img src="./screenshot/Forge_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Forge_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Forge_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle2_Rounded.jpg" width="225">
 Rect   |<img src="./screenshot/Forge_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Forge_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Forge_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle2_Rect.jpg" width="225">
 
+---
 > DarkBlue Configuration
 
 $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
@@ -55,6 +58,7 @@ $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Sty
 Rounded |<img src="./screenshot/DarkBlue_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/DarkBlue_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/DarkBlue_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/DarkBlue_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/DarkBlue_LowHeightStyle2_Rounded.jpg" width="225">
 Rect   |<img src="./screenshot/DarkBlue_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/DarkBlue_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/DarkBlue_Standard2_Rect.jpg" width="225">|<img src="./screenshot/DarkBlue_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/DarkBlue_LowHeightStyle2_Rect.jpg" width="225">
 
+---
 > Blue Configuration
 
 $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
