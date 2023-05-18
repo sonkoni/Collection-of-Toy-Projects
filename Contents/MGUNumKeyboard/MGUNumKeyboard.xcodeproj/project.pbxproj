@@ -54,7 +54,6 @@
 		8459030528F0D71700E50B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8459030728F0D71700E50B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8459030D28F0D7BB00E50B56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		849B35BA2A14CEA10075F32E /* 230517a3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230517a3.jpg; sourceTree = "<group>"; };
 		849B35BC2A14EDEA0075F32E /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		849B35BD2A14EDEA0075F32E /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		849B35BE2A14EDEA0075F32E /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
@@ -196,7 +195,6 @@
 				849B35E42A15F3660075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif */,
 				84E66C452A149CC8001CCF28 /* 230516b1.jpg */,
 				84E66C442A14996E001CCF28 /* 230517a2.jpg */,
-				849B35BA2A14CEA10075F32E /* 230517a3.jpg */,
 				849B35E72A1637850075F32E /* Default_LowHeightStyle1_Rounded.jpg */,
 				849B35E52A1637850075F32E /* Default_LowHeightStyle2_Rounded.jpg */,
 				849B35E92A1637850075F32E /* Default_Standard1_AllowDone_Rounded.jpg */,
