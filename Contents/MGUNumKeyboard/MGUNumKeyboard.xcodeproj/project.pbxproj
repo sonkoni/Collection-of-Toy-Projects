@@ -73,6 +73,11 @@
 		849B35E22A15F0C50075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.32.10.gif"; sourceTree = "<group>"; };
 		849B35E32A15F3660075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.42.36.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.42.36.gif"; sourceTree = "<group>"; };
 		849B35E42A15F3660075F32E /* Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif"; sourceTree = "<group>"; };
+		849B35E52A1637850075F32E /* Default_LowHeightStyle2_Rounded.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default_LowHeightStyle2_Rounded.jpg; sourceTree = "<group>"; };
+		849B35E62A1637850075F32E /* Default_Standard1_NotAllowDone_Rounded.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default_Standard1_NotAllowDone_Rounded.jpg; sourceTree = "<group>"; };
+		849B35E72A1637850075F32E /* Default_LowHeightStyle1_Rounded.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default_LowHeightStyle1_Rounded.jpg; sourceTree = "<group>"; };
+		849B35E82A1637850075F32E /* Default_Standard2_Rounded.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default_Standard2_Rounded.jpg; sourceTree = "<group>"; };
+		849B35E92A1637850075F32E /* Default_Standard1_AllowDone_Rounded.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default_Standard1_AllowDone_Rounded.jpg; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* MGUNumKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGUNumKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +162,11 @@
 				84E66C452A149CC8001CCF28 /* 230516b1.jpg */,
 				84E66C442A14996E001CCF28 /* 230517a2.jpg */,
 				849B35BA2A14CEA10075F32E /* 230517a3.jpg */,
+				849B35E72A1637850075F32E /* Default_LowHeightStyle1_Rounded.jpg */,
+				849B35E52A1637850075F32E /* Default_LowHeightStyle2_Rounded.jpg */,
+				849B35E92A1637850075F32E /* Default_Standard1_AllowDone_Rounded.jpg */,
+				849B35E62A1637850075F32E /* Default_Standard1_NotAllowDone_Rounded.jpg */,
+				849B35E82A1637850075F32E /* Default_Standard2_Rounded.jpg */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
