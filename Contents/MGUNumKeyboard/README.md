@@ -35,7 +35,7 @@ Standard Style | Low Height Style | [IV-Drop](https://apps.apple.com/app/id15744
 
 $~$|헤더2|헤더3|헤더4|헤더5|헤더6
 ---|---|---|---|---|---
-<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rounded.jpg" width="225">
+Rounded |<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rounded.jpg" width="225">
 Rect   |셀6|셀7|셀8|셀3|셀4
 
 
