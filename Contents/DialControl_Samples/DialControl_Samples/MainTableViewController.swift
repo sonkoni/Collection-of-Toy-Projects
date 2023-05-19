@@ -106,16 +106,6 @@ extension MainTableViewController: UITableViewDelegate {
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 viewController = ViewControllerB()
-            } else if indexPath.row == 1 {
-                viewController = ViewControllerC()
-            }
-        } else if indexPath.section == 2 {
-            if indexPath.row == 0 {
-                viewController = ViewControllerD()
-            }
-        } else if indexPath.section == 3 {
-            if indexPath.row == 0 {
-                viewController = ViewControllerE()
             }
         }
         
