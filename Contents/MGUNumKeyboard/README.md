@@ -5,22 +5,20 @@
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
 ## **MGUNumKeyboard**
-- 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView
-    - `UIScrollView` 를 기반으로 제작함
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 RulerView에 대한 요구사항이 있어서 제작함.
+- 숫자 값을 입력받을 수 있는 Number Keyboard
+    - `UIInputView` 를 기반으로 제작함
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Number Keyboard에 대한 요구사항 이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
 ## Features
-*  더블 탭, 트리플 탭 지원
-    * 더블 탭, 트리플 탭 에 따라 이동할 길이 선택가능
 *  Style presets 지원
-    * 중앙 바늘의 모양에 대한 presets 지원
-    * RulerView의 표시된 눈금의 위치와 길이에 대한 presets 지원
-*  KG, LB 선택가능
+    * 5가지의 Layout을 제공함 
+    * 버튼의 모양 선택가능
+    * 4 종류의 Appearance 제공
 *  Sound 지원
-    * Driven Sound와 Scroll Sound의 소리 종류 및 간격을 각각 다르게 설정함
-*  손가락이 접촉한 상태에는 스크롤의 저항을 표현하기 위해 Easing 함수를 이용함.
+    * iOS의 키보드 Sound가 Delete 키와 일반 키 소리가 다른 것을 발견하여 각각 다르게 만들었음
+    * Sound Source는 Simulator에서 추출함
 *  **Swift** and **Objective-C** compatability
 
 
@@ -117,6 +115,11 @@ keyboard.soundOn = YES;
 
 - RulerView의 바늘의 배치를 위한 설계도
 <img src="./screenshot/230517a2.jpg" width="1000">
+
+- `UIInputView` 를 기반으로 제작하여, `UITextField`의 `inputView` 프라퍼티에 `MGUNumKeyboard`를 설정하면 키보드가 올라올 수도 있지만, 여기까지는 테스트하지 않았다.
+- 커스텀 input view 또는 키보드 악세사리 view에서 키보드 소리를 가져오기 위해서는 다음과 같은 설정이 필요하다.
+    1. `UIInputViewAudioFeedback` 프로토콜을 상속받고,  `enableInputClicksWhenVisible` 메서드(프라퍼티)를 true로 설정한다.    
+    2. 소리를 원하는 곳에 `[[UIDevice currentDevice] playInputClick];`를 호출하라.
 
 ## Author
 
