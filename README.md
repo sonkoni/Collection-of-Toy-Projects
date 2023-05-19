@@ -28,6 +28,7 @@
 ## Contents
 - [AutoLayout](#autoLayout)
 - [UI-Control](#ui-control)
+    - [DialControl](#dialControl)
     - [Keyboard](#keyboard)
     - [Ruler](#ruler)
     - [Segmented Control](#segmented-control)
@@ -46,6 +47,8 @@
 **[back to top](#contents)**
 
 ## UI-Control
+### DialControl
+- [DialControl Samples](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/DialControl_Samples) - 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤 테스트 샘플
 ### Keyboard
 - [MGUNumKeyboard](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNumKeyboard) - 커스텀 숫자 키보드
 ### Ruler
