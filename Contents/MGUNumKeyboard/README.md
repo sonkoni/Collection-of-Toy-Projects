@@ -19,6 +19,8 @@
 *  Sound 지원
     * iOS의 키보드 Sound가 Delete 키와 일반 키 소리가 다른 것을 발견하여 각각 다르게 만들었음
     * Sound Source는 Simulator에서 추출함
+*  Delete 버튼 long press 지원    
+    * long press 시, 일정한 간격으로 반복적으로 호출되어 실행된다. 
 *  **Swift** and **Objective-C** compatability
 
 
