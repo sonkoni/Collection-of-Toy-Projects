@@ -1,6 +1,0 @@
-framework module IosKit {
-  umbrella header "IosKit.h"
-
-  export *
-  module * { export * }
-}
