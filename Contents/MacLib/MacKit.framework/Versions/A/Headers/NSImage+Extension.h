@@ -1,0 +1,163 @@
+//
+//  NSImage+Extension.h
+//
+//  Created by Kwan Hyun Son on 2022/03/05.
+//  Copyright © 2022 Mulgrim Co. All rights reserved.
+//
+
+#ifndef NSImage_Extension_h
+#define NSImage_Extension_h
+
+#import <MacKit/NSImage+Etc.h>
+#import <MacKit/NSImage+ResizeColor.h>
+#import <MacKit/NSImage+DarkModeSupport.h>
+
+#endif /* NSImage_Extension_h */
+
+/*
+ NSImage.h
+ https://developer.apple.com/documentation/appkit/nsimagename
+ https://hetima.github.io/fucking_nsimage_syntax/
+#pragma mark - Standard images
+NSImageName NSImageNameAddTemplate;
+NSImageName NSImageNameBluetoothTemplate;
+NSImageName NSImageNameBonjour;
+NSImageName NSImageNameBookmarksTemplate;
+NSImageName NSImageNameCaution;
+NSImageName NSImageNameComputer;
+NSImageName NSImageNameEnterFullScreenTemplate;
+NSImageName NSImageNameExitFullScreenTemplate;
+NSImageName NSImageNameFolder;
+NSImageName NSImageNameFolderBurnable;
+NSImageName NSImageNameFolderSmart;
+NSImageName NSImageNameFollowLinkFreestandingTemplate;
+NSImageName NSImageNameHomeTemplate;
+NSImageName NSImageNameIChatTheaterTemplate;
+NSImageName NSImageNameLockLockedTemplate;
+NSImageName NSImageNameLockUnlockedTemplate;
+NSImageName NSImageNameNetwork;
+NSImageName NSImageNamePathTemplate;
+NSImageName NSImageNameQuickLookTemplate;
+NSImageName NSImageNameRefreshFreestandingTemplate;
+NSImageName NSImageNameRefreshTemplate;
+NSImageName NSImageNameRemoveTemplate;
+NSImageName NSImageNameRevealFreestandingTemplate;
+NSImageName NSImageNameShareTemplate;
+NSImageName NSImageNameSlideshowTemplate;
+NSImageName NSImageNameStatusAvailable;
+NSImageName NSImageNameStatusNone;
+NSImageName NSImageNameStatusPartiallyAvailable;
+NSImageName NSImageNameStatusUnavailable;
+NSImageName NSImageNameStopProgressFreestandingTemplate;
+NSImageName NSImageNameStopProgressTemplate;
+NSImageName NSImageNameTrashEmpty;
+NSImageName NSImageNameTrashFull;
+NSImageName NSImageNameActionTemplate;
+NSImageName NSImageNameSmartBadgeTemplate;
+NSImageName NSImageNameIconViewTemplate;
+NSImageName NSImageNameListViewTemplate;
+NSImageName NSImageNameColumnViewTemplate;
+NSImageName NSImageNameFlowViewTemplate;
+NSImageName NSImageNameInvalidDataFreestandingTemplate;
+NSImageName NSImageNameGoForwardTemplate;
+NSImageName NSImageNameGoBackTemplate;
+NSImageName NSImageNameGoRightTemplate;
+NSImageName NSImageNameGoLeftTemplate;
+NSImageName NSImageNameRightFacingTriangleTemplate;
+NSImageName NSImageNameLeftFacingTriangleTemplate;
+NSImageName NSImageNameDotMac;
+NSImageName NSImageNameMobileMe;
+NSImageName NSImageNameMultipleDocuments;
+NSImageName NSImageNameUserAccounts;
+NSImageName NSImageNamePreferencesGeneral;
+NSImageName NSImageNameAdvanced;
+NSImageName NSImageNameInfo;
+NSImageName NSImageNameFontPanel;
+NSImageName NSImageNameColorPanel;
+NSImageName NSImageNameUser;
+NSImageName NSImageNameUserGroup;
+NSImageName NSImageNameEveryone;
+NSImageName NSImageNameUserGuest;
+NSImageName NSImageNameMenuOnStateTemplate;
+NSImageName NSImageNameMenuMixedStateTemplate;
+NSImageName NSImageNameApplicationIcon;
+
+#pragma mark - NSTouchBar images
+NSImageName NSImageNameTouchBarAddDetailTemplate;
+NSImageName NSImageNameTouchBarAddTemplate;
+NSImageName NSImageNameTouchBarAlarmTemplate;
+NSImageName NSImageNameTouchBarAudioInputMuteTemplate;
+NSImageName NSImageNameTouchBarAudioInputTemplate;
+NSImageName NSImageNameTouchBarAudioOutputMuteTemplate;
+NSImageName NSImageNameTouchBarAudioOutputVolumeHighTemplate;
+NSImageName NSImageNameTouchBarAudioOutputVolumeLowTemplate;
+NSImageName NSImageNameTouchBarAudioOutputVolumeMediumTemplate;
+NSImageName NSImageNameTouchBarAudioOutputVolumeOffTemplate;
+NSImageName NSImageNameTouchBarBookmarksTemplate;
+NSImageName NSImageNameTouchBarColorPickerFill;
+NSImageName NSImageNameTouchBarColorPickerFont;
+NSImageName NSImageNameTouchBarColorPickerStroke;
+NSImageName NSImageNameTouchBarCommunicationAudioTemplate;
+NSImageName NSImageNameTouchBarCommunicationVideoTemplate;
+NSImageName NSImageNameTouchBarComposeTemplate;
+NSImageName NSImageNameTouchBarDeleteTemplate;
+NSImageName NSImageNameTouchBarDownloadTemplate;
+NSImageName NSImageNameTouchBarEnterFullScreenTemplate;
+NSImageName NSImageNameTouchBarExitFullScreenTemplate;
+NSImageName NSImageNameTouchBarFastForwardTemplate;
+NSImageName NSImageNameTouchBarFolderCopyToTemplate;
+NSImageName NSImageNameTouchBarFolderMoveToTemplate;
+NSImageName NSImageNameTouchBarFolderTemplate;
+NSImageName NSImageNameTouchBarGetInfoTemplate;
+NSImageName NSImageNameTouchBarGoBackTemplate;
+NSImageName NSImageNameTouchBarGoDownTemplate;
+NSImageName NSImageNameTouchBarGoForwardTemplate;
+NSImageName NSImageNameTouchBarGoUpTemplate;
+NSImageName NSImageNameTouchBarHistoryTemplate;
+NSImageName NSImageNameTouchBarIconViewTemplate;
+NSImageName NSImageNameTouchBarListViewTemplate;
+NSImageName NSImageNameTouchBarMailTemplate;
+NSImageName NSImageNameTouchBarNewFolderTemplate;
+NSImageName NSImageNameTouchBarNewMessageTemplate;
+NSImageName NSImageNameTouchBarOpenInBrowserTemplate;
+NSImageName NSImageNameTouchBarPauseTemplate;
+NSImageName NSImageNameTouchBarPlayPauseTemplate;
+NSImageName NSImageNameTouchBarPlayTemplate;
+NSImageName NSImageNameTouchBarQuickLookTemplate;
+NSImageName NSImageNameTouchBarRecordStartTemplate;
+NSImageName NSImageNameTouchBarRecordStopTemplate;
+NSImageName NSImageNameTouchBarRefreshTemplate;
+NSImageName NSImageNameTouchBarRemoveTemplate;
+NSImageName NSImageNameTouchBarRewindTemplate;
+NSImageName NSImageNameTouchBarRotateLeftTemplate;
+NSImageName NSImageNameTouchBarRotateRightTemplate;
+NSImageName NSImageNameTouchBarSearchTemplate;
+NSImageName NSImageNameTouchBarShareTemplate;
+NSImageName NSImageNameTouchBarSidebarTemplate;
+NSImageName NSImageNameTouchBarSkipAhead15SecondsTemplate;
+NSImageName NSImageNameTouchBarSkipAhead30SecondsTemplate;
+NSImageName NSImageNameTouchBarSkipAheadTemplate;
+NSImageName NSImageNameTouchBarSkipBack15SecondsTemplate;
+NSImageName NSImageNameTouchBarSkipBack30SecondsTemplate;
+NSImageName NSImageNameTouchBarSkipBackTemplate;
+NSImageName NSImageNameTouchBarSkipToEndTemplate;
+NSImageName NSImageNameTouchBarSkipToStartTemplate;
+NSImageName NSImageNameTouchBarSlideshowTemplate;
+NSImageName NSImageNameTouchBarTagIconTemplate;
+NSImageName NSImageNameTouchBarTextBoldTemplate;
+NSImageName NSImageNameTouchBarTextBoxTemplate;
+NSImageName NSImageNameTouchBarTextCenterAlignTemplate;
+NSImageName NSImageNameTouchBarTextItalicTemplate;
+NSImageName NSImageNameTouchBarTextJustifiedAlignTemplate;
+NSImageName NSImageNameTouchBarTextLeftAlignTemplate;
+NSImageName NSImageNameTouchBarTextListTemplate;
+NSImageName NSImageNameTouchBarTextRightAlignTemplate;
+NSImageName NSImageNameTouchBarTextStrikethroughTemplate;
+NSImageName NSImageNameTouchBarTextUnderlineTemplate;
+NSImageName NSImageNameTouchBarUserAddTemplate;
+NSImageName NSImageNameTouchBarUserGroupTemplate;
+NSImageName NSImageNameTouchBarUserTemplate;
+NSImageName NSImageNameTouchBarVolumeDownTemplate;
+NSImageName NSImageNameTouchBarVolumeUpTemplate;
+NSImageName NSImageNameTouchBarPlayheadTemplate;
+*/
