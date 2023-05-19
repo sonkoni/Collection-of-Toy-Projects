@@ -72,14 +72,44 @@ Rect   |<img src="./screenshot/Blue_Standard1_AllowDone_Rect.jpg" width="225">|<
 > Swift
 ```swift
 
+let keyboard = MGUNumKeyboard(frame: .zero,
+                              locale: nil,
+                              layoutType: .lowHeightStyle1,
+                              configuration: MGUNumKeyboardConfiguration.darkBlue())
+keyboard.delegate = self
+// keyboard.allowsDoneButton = true //! MGUNumKeyboardLayoutTypeStandard2에서는 아무런 효과가 없다.
+keyboard.roundedButtonShape = false
+keyboard.normalSoundPlayBlock = sound?.playSoundKeyPress
+keyboard.deleteSoundPlayBlock = sound?.playSoundKeyDelete
 
+keyboard.keyInput = privateTextField // self.textField.inputView = keyboard; 이렇게 설정 금지.
+self.privateTextField.isUserInteractionEnabled = false
+//! self.textField.alpha = 0.0f; <- 이렇게 실전에서는 처리할 것이다.
+keyboard.soundOn = true
+privateTextField.addTarget(self, action:#selector(textFieldDidChange(_:)), for: .editingChanged)
 
 ```
 
 > Objective-C
 ```objective-c
 
+MGUNumKeyboard *keyboard =
+[[MGUNumKeyboard alloc] initWithFrame:CGRectZero
+                               locale:nil
+                           layoutType:MGUNumKeyboardLayoutTypeLowHeightStyle2
+                        configuration:[MGUNumKeyboardConfiguration forgeConfiguration]];
 
+keyboard.delegate = self;
+// keyboard.allowsDoneButton = YES; //! LowHeightStyle에서는 아무런 효과가 없다.
+keyboard.roundedButtonShape = YES;
+keyboard.normalSoundPlayBlock = self.sound.playSoundKeyPress;
+keyboard.deleteSoundPlayBlock = self.sound.playSoundKeyDelete;
+
+keyboard.keyInput = self.privateTextField; // self.textField.inputView = keyboard; 이렇게 설정 금지.
+self.privateTextField.userInteractionEnabled = NO;
+//! self.textField.alpha = 0.0f; <- 이렇게 실전에서는 처리할 것이다.
+keyboard.soundOn = YES;
+[self.privateTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 
 ```
 
