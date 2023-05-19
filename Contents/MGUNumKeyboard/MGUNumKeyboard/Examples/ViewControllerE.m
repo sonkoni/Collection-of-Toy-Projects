@@ -1,5 +1,5 @@
 //
-//  ViewControllerD.m
+//  ViewControllerE.m
 //  MGUNumKeyboard
 //
 //  Created by Kwan Hyun Son on 2020/12/18.
@@ -8,8 +8,8 @@
 
 #import "ViewControllerE.h"
 @import BaseKit;
-@import IosKit;
 @import AudioKit;
+@import IosKit;
 
 @interface ViewControllerE () <MGUNumKeyboardDelegate, UITextFieldDelegate>
 @property (weak) IBOutlet UIView *containerView;
@@ -22,18 +22,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     UIStackView *stackView = (UIStackView *)(self.privateTextField.superview);
     [stackView setCustomSpacing:50.0 afterView:self.privateTextField];
     
-    
     self.navigationItem.title = @"Layout Type - LowHeightStyle2";
     _sound = [MGOSoundKeyboard keyBoardSound];
-    
     self.view.backgroundColor = [UIColor mgrColorWithLightModeColor:[UIColor mgrColorFromHexString:@"E2E2E2"]
                                                       darkModeColor:[UIColor mgrColorFromHexString:@"1E1E1E"]
                                               darkElevatedModeColor:nil];
-    
     self.containerView.backgroundColor = UIColor.clearColor;
     self.containerView.layer.borderWidth = 0.5f;
     self.containerView.layer.borderColor
@@ -45,8 +41,6 @@
     self.textLabel.layer.borderColor = UIColor.blackColor.CGColor;
     self.textLabel.layer.borderWidth = 1.0f;
 
-    //self.containerView.layer.borderColor = UIColor.redColor.CGColor;
-    //self.containerView.layer.borderWidth = 0.5f;
     MGUNumKeyboard *keyboard =
     [[MGUNumKeyboard alloc] initWithFrame:CGRectZero
                                    locale:nil
@@ -72,8 +66,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.privateTextField.text = nil; // 최초에는 빈상태로 하자.
-    //[self.textField becomeFirstResponder]; // 이 메서드로 인하여, 최초에 바로 키보드가 떠오르게 된다.
-
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -83,7 +75,6 @@
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
     [super traitCollectionDidChange:previousTraitCollection];
-    
     if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
         [self.traitCollection performAsCurrentTraitCollection:^{
             self.containerView.layer.borderColor
@@ -110,51 +101,11 @@
     sender.text = cuttingString;
     self.textLabel.text = decimaformString;
     return;
-
-    //! 위의 식으로 바꾸었다. 그게 더 나을듯하다. 카테고리를 이용해 깔끔하게 바꾸었다. 우선은 그냥 노란색 경고가 나와도 남겨둬보자.
-    NSRange subRange = [sender.text rangeOfString:@"."];
-    if(subRange.location != NSNotFound) { // 존재한다면
-        NSArray <NSString *>*strArr = [sender.text componentsSeparatedByString:@"."];
-        NSString *floatString = strArr.lastObject;
-        
-        if (floatString.length >= 3) {
-            NSNumberFormatter *formatter = NSNumberFormatter.new;
-            formatter.numberStyle = NSNumberFormatterNoStyle;
-            formatter.roundingMode = NSNumberFormatterRoundFloor;
-            formatter.maximumFractionDigits = 2;
-            formatter.minimumFractionDigits = 2;
-            NSString *cutNumString = [formatter stringFromNumber:@(sender.text.doubleValue)];
-            sender.text = cutNumString;
-        }
-    } else { // 정수에서(.가 없을 때) 맥시멈 초과가 발생할 수 있다.
-        NSInteger number = sender.text.integerValue;
-        if (number >= 100000000) { // 1억
-            number = number / 10;
-            sender.text = [NSString stringWithFormat:@"%ld", (long)number];
-        }
-    }
-    
-    self.textLabel.text = [self transformString:sender.text];
-    
-//    NSNumberFormatter *formatter = NSNumberFormatter.new;
-//    formatter.numberStyle = NSNumberFormatterNoStyle;
-//    formatter.roundingMode = NSNumberFormatterRoundFloor;
-//    formatter.maximumIntegerDigits = 8;
-//    formatter.minimumIntegerDigits = 1;
-//    formatter.maximumFractionDigits = 2;
-//    formatter.minimumFractionDigits = 2;
-//    formatter.allowsFloats = YES;
-    //formatter.alwaysShowsDecimalSeparator  = YES;
-//    NSString *cutNumString = [formatter stringFromNumber:@(sender.text.doubleValue)];
-//    NSLog(@"가공 :{%@}", cutNumString);
-//    sender.text = cutNumString;
-    
 }
 
 - (NSString *)transformString:(NSString *)str {
     NSNumberFormatter *formatter = NSNumberFormatter.new;
     formatter.numberStyle = NSNumberFormatterDecimalStyle;
-    
     NSRange subRange = [str rangeOfString:@"."];
     if(subRange.location != NSNotFound) { // 존재한다면
         formatter.alwaysShowsDecimalSeparator  = YES;
@@ -174,8 +125,8 @@
     return [formatter stringFromNumber:@(str.doubleValue)];
 }
 
-#pragma mark - <MGUNumKeyboardDelegate>
 
+#pragma mark - <MGUNumKeyboardDelegate>
 //! 구현 자체를 안하면 YES를 반환하는 것과 동일한 효과이다. 딱히 구현할 필요가 없다.
 - (BOOL)numberKeyboard:(MGUNumKeyboard *)numberKeyboard shouldInsertText:(NSString *)text {return YES;}
 - (BOOL)numberKeyboardShouldReturn:(MGUNumKeyboard *)numberKeyboard  {return YES;}
@@ -183,7 +134,6 @@
 
 
 #pragma mark - <UITextFieldDelegate> 메서드
-
 //! keyboard에서 retrun을 했을 때, 일어나는 반응을 컨트롤한다!!!
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
