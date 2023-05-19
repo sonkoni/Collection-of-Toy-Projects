@@ -30,7 +30,7 @@
 - Swift Sample : Interface Builder based
 <img src="./screenshot/230515a1.jpg" width="1000">
 
-- snippets : Objective-C Programmatically based
+- Objective-C Sample : Programmatically
 ```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
