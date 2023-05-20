@@ -4,7 +4,7 @@
 - Size classes (compact, regular)에 따른 AutoLayout Adaptivity : Swift Sample
 - Orientation (Portrait, Landscape)에 따른 AutoLayout Adaptivity : Objective-C Sample
     
-## Examples
+## Preview
 > - Swift Sample
 >   - Interface Builder based
 >
