@@ -24,7 +24,7 @@
 *  **Swift** and **Objective-C** compatability
 
 
-## Examples
+## Preview
 > - MGURulerView (iOS)
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 무게를 측정할 RulerView의 요구사항이 있어서 제작함.
 
