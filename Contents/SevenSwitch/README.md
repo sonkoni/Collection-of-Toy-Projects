@@ -33,7 +33,7 @@
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
 
 
-## Examples
+## Preview
 > - MGUSevenSwitch (iOS)
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 > - MGASevenSwitch (macOS)
