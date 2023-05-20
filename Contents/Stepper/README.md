@@ -1,20 +1,20 @@
-# SevenSwitch 
+# Stepper 
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 ![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
-## **MGUSevenSwitch**(***iOS***) & **MGASevenSwitch**(***macOS***)
-- `SevenSwitch`는 `UISwitch` 및 `NSSwitch` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
-    - MGUSevenSwitch : iOS 용 (UIControl 서브클래스)
-    - MGASevenSwitch : macOS 용 (NSControl 서브클래스)
-- [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
+## **MGUStepper**(***iOS***) & **MGAStepper**(***macOS***)
+- `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
+    - MGUStepper : iOS 용 (UIControl 서브클래스)
+    - MGAStepper : macOS 용 (NSControl 서브클래스)
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
 ## Features
-*  커스텀 사이즈 가능(`UISwitch` 및 `NSSwitch`와 동일한 `intrinsicContentSize`도 가지고 있음)
+*  커스텀 사이즈 가능(`UIStepper` 및 `NSStepper`와 동일한 `intrinsicContentSize`도 가지고 있음)
 *  ON, OFF 영역에 이미지 또는 텍스트 설정 가능
 *  커스텀 Shape 가능
     * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
@@ -35,11 +35,11 @@
 
 ## Preview
 > - MGUSevenSwitch (iOS)
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
+>   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 > - MGASevenSwitch (macOS)
 
 
-MGUSevenSwitch (iOS) | MGUSevenSwitch (iOS) | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용한 예
+MGUSevenSwitch (iOS) | MGUSevenSwitch (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
 ---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
 
