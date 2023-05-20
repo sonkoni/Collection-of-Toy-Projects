@@ -45,10 +45,10 @@ static void CommonInit(MGRDialGaugeView *self) {
 }
 
 - (void)drawDialGauge {
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, UIScreen.mainScreen.scale); //UIGraphicsBeginImageContext(self.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, UIScreen.mainScreen.scale);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
-    CGPoint center = CGPointMake(self.bounds.size.width / 2.0f, self.bounds.size.height / 2.0f);
+    CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
     CGContextTranslateCTM(currentContext, center.x, center.y); // 좌표 번역
     
     for(int i = 0; i < 12 ; i++) {
@@ -94,11 +94,11 @@ static void CommonInit(MGRDialGaugeView *self) {
     [knobPath applyTransform:CGAffineTransformMakeTranslation(0.0, [self fullRadius] - [self gaugeRadius])];
     self.orangeLampLayer.path = knobPath.CGPath;
     self.orangeLampLayer.fillColor = UIColor.whiteColor.CGColor;
-    self.orangeLampLayer.lineWidth = 0.0f;
+    self.orangeLampLayer.lineWidth = 0.0;
     self.orangeLampLayer.strokeColor = UIColor.clearColor.CGColor;
 
     self.orangeLampLayer.shadowColor   = UIColor.whiteColor.CGColor;
-    self.orangeLampLayer.shadowOpacity = 1.0f;
+    self.orangeLampLayer.shadowOpacity = 1.0;
     self.orangeLampLayer.shadowOffset  = CGSizeMake(0.0, 0.0);
     self.orangeLampLayer.shadowRadius  = 3.0; //  디폴트 3.0 블러되는 반경
 }
@@ -111,47 +111,47 @@ static void CommonInit(MGRDialGaugeView *self) {
             break;
         }
         case MGROrangeLampPosition1: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(30.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(30.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition2: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(60.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(60.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition3: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(90.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(90.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition4: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(120.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(120.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition5: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(150.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(150.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition6: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(180.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(180.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition7: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(210.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(210.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition8: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(240.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(240.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition9: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(270.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(270.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition10: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(300.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(300.0), 0.0, 0.0, 1.0);
             break;
         }
         case MGROrangeLampPosition11: {
-            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(330.0), 0.0f, 0.0f, 1.0f);
+            transform = CATransform3DRotate(CATransform3DIdentity, radianFromDegree(330.0), 0.0, 0.0, 1.0);
             break;
         }
         default: {
@@ -175,7 +175,7 @@ static void CommonInit(MGRDialGaugeView *self) {
     
     [CATransaction begin];
     [CATransaction setAnimationDuration:0.2];
-    self.orangeLampLayer.opacity = 1.0f;
+    self.orangeLampLayer.opacity = 1.0;
     [CATransaction commit];
 }
 
@@ -197,7 +197,7 @@ static void CommonInit(MGRDialGaugeView *self) {
     replicatorLayer.instanceColor  = UIColor.whiteColor.CGColor;
     replicatorLayer.instanceCount = 13;
     replicatorLayer.instanceDelay = 0.015;
-    replicatorLayer.instanceTransform   = CATransform3DMakeRotation(radianFromDegree(30.0f), 0.0, 0.0, 1.0);
+    replicatorLayer.instanceTransform   = CATransform3DMakeRotation(radianFromDegree(30.0), 0.0, 0.0, 1.0);
 
     CGFloat width =  self.layer.bounds.size.width;
     
@@ -210,10 +210,10 @@ static void CommonInit(MGRDialGaugeView *self) {
     [knobPath applyTransform:CGAffineTransformMakeTranslation(0.0, [self fullRadius] - [self gaugeRadius])];
     instanceLayer.path = knobPath.CGPath;
     instanceLayer.fillColor = UIColor.whiteColor.CGColor;
-    instanceLayer.lineWidth = 0.0f;
+    instanceLayer.lineWidth = 0.0;
     instanceLayer.strokeColor = UIColor.clearColor.CGColor;
     instanceLayer.shadowColor   = UIColor.whiteColor.CGColor;
-    instanceLayer.shadowOpacity = 1.0f;
+    instanceLayer.shadowOpacity = 1.0;
     instanceLayer.shadowOffset  = CGSizeMake(0.0, 0.0);
     instanceLayer.shadowRadius  = 3.0; //  디폴트 3.0 블러되는 반경
     
@@ -226,14 +226,14 @@ static void CommonInit(MGRDialGaugeView *self) {
     CABasicAnimation *fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fadeAnimation.fromValue   = @(1.0);
     fadeAnimation.toValue     = @(0.0);
-    fadeAnimation.repeatCount = 1; // INFINITY;
-    fadeAnimation.duration    = 0.4f;
+    fadeAnimation.repeatCount = 1;
+    fadeAnimation.duration    = 0.4;
     
     fadeAnimation.removedOnCompletion = NO;
     fadeAnimation.fillMode            = kCAFillModeForwards;
     
     [CATransaction setCompletionBlock:^{
-        instanceLayer.opacity =  0.0f;
+        instanceLayer.opacity =  0.0;
     }];
     [instanceLayer addAnimation:fadeAnimation forKey:@"FadeAnimationKey"];
     
@@ -250,11 +250,11 @@ static void CommonInit(MGRDialGaugeView *self) {
 }
 
 - (CGFloat)fullRadius { // 전체 정사각형을 내부에서 꽉 채우는 원의 반지름.
-    return MIN(self.bounds.size.width / 2.0f, self.bounds.size.height / 2.0f); // 어차피 정사각형이지만.
+    return MIN(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0); // 어차피 정사각형이지만.
 }
 
 - (CGFloat)gaugeRadius { // 짧은 선(orange knob 포함하여)들이 모여서 이루어지는 원의 반지름 - 선들의 중심과 큰 원의 중심과의 거리.
-    return [self fullRadius] * 0.92f;
+    return [self fullRadius] * 0.92;
 }
 
 CGFloat radianFromDegree(CGFloat degree) {

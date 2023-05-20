@@ -200,7 +200,7 @@ static void CommonInit(MGRDialControl *self) {
     circlePath = [UIBezierPath bezierPathWithOvalInRect:insetRect];
     maskShapeLayerForsmallCircle.path      = circlePath.CGPath;
     maskShapeLayerForsmallCircle.fillColor = UIColor.blackColor.CGColor;
-    maskShapeLayerForsmallCircle.lineWidth = 0.0f;
+    maskShapeLayerForsmallCircle.lineWidth = 0.0;
 }
 
 - (void)setupKnobLayer {
@@ -212,7 +212,7 @@ static void CommonInit(MGRDialControl *self) {
     CGFloat width =  self.layer.bounds.size.width;
     
     CGRect knobRect = {CGPointZero, [self knobStickSize]};
-    knobRect = CGRectOffset(knobRect, -([self knobStickSize].width / 2.0f), -([self knobStickSize].height / 2.0f)); // 회전축이 0,0
+    knobRect = CGRectOffset(knobRect, -([self knobStickSize].width / 2.0), -([self knobStickSize].height / 2.0)); // 회전축이 0,0
     
     UIBezierPath *knobPath = [UIBezierPath bezierPathWithRoundedRect:knobRect
                                                         cornerRadius:(knobRect.size.width / 2.0)];
@@ -227,11 +227,11 @@ static void CommonInit(MGRDialControl *self) {
     self.knobLayer.path = knobPath.CGPath;
     self.knobLayer.fillColor = self.knobNormalColor.CGColor;
     self.knobLayer.fillRule = kCAFillRuleNonZero;
-    self.knobLayer.lineWidth = 0.0f;
+    self.knobLayer.lineWidth = 0.0;
     self.knobLayer.strokeColor = UIColor.clearColor.CGColor;
     
     self.knobLayer.shadowColor   = UIColor.whiteColor.CGColor;
-    self.knobLayer.shadowOpacity = 0.0f; // 우선 끈다.
+    self.knobLayer.shadowOpacity = 0.0; // 우선 끈다.
     self.knobLayer.shadowOffset  = CGSizeMake(0.0, 0.0);
     self.knobLayer.shadowRadius  = 3.0; //  디폴트 3.0 블러되는 반경
     
@@ -245,7 +245,7 @@ static void CommonInit(MGRDialControl *self) {
     UIBezierPath *circlePath = [UIBezierPath bezierPathWithOvalInRect:insetRect];
     maskShapeLayer.path      = circlePath.CGPath;
     maskShapeLayer.fillColor = UIColor.blackColor.CGColor;
-    maskShapeLayer.lineWidth = 0.0f;
+    maskShapeLayer.lineWidth = 0.0;
     self.knobBackgroundLayer.backgroundColor = [self thirdCircleColor].CGColor;
     self.knobBackgroundLayer.strokeColor = self.mainCircleColor.CGColor;
     self.knobBackgroundLayer.lineWidth = [self thirdCircleBorderWidth] * 2.0;
@@ -255,7 +255,8 @@ static void CommonInit(MGRDialControl *self) {
     UIGraphicsBeginImageContextWithOptions(self.knobBackgroundLayer.bounds.size, NO, UIScreen.mainScreen.scale);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
-    CGPoint center = CGPointMake(self.knobBackgroundLayer.bounds.size.width / 2.0f, self.knobBackgroundLayer.bounds.size.height / 2.0f);
+    CGPoint center = CGPointMake(self.knobBackgroundLayer.bounds.size.width / 2.0,
+                                 self.knobBackgroundLayer.bounds.size.height / 2.0);
     CGContextTranslateCTM(currentContext, center.x, center.y); // 좌표 번역
     
     for(int i = 0; i < 12 ; i++) {
@@ -304,7 +305,7 @@ static void CommonInit(MGRDialControl *self) {
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     self.knobLayer.fillColor = self.knobHighlightColor.CGColor;
-    self.knobLayer.shadowOpacity = 1.0f;
+    self.knobLayer.shadowOpacity = 1.0;
     [CATransaction commit];
 }
 
@@ -312,7 +313,7 @@ static void CommonInit(MGRDialControl *self) {
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     self.knobLayer.fillColor = self.knobNormalColor.CGColor;
-    self.knobLayer.shadowOpacity = 0.0f;
+    self.knobLayer.shadowOpacity = 0.0;
     [CATransaction commit];
 }
 

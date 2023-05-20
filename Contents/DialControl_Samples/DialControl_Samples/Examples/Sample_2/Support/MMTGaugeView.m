@@ -23,8 +23,9 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect { // [super drawRect:rect]; UIView를 직접 상속 받았으므로 호출할 필요가 없다.
-// 처음에는 여기에 만들려고 했다. 그런데, background로 가면 날라가 버린다.
+- (void)drawRect:(CGRect)rect {
+    // [super drawRect:rect]; UIView를 직접 상속 받았으므로 호출할 필요가 없다.
+    // 처음에는 여기에 만들려고 했다. 그런데, background로 가면 날라가 버린다.
 }
 
 - (void)layoutSubviews {
@@ -52,7 +53,7 @@ static void CommonInit(MMTGaugeView *self) {
     UIFont *regularFont = [UIFont fontWithName:@"AvenirNextCondensed-Regular" size:[self smallTextPointSize]];
     UIFont *boldFont = [UIFont fontWithName:@"AvenirNextCondensed-Bold" size:[self largeTextPointSize]];
     
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, UIScreen.mainScreen.scale); //UIGraphicsBeginImageContext(self.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, UIScreen.mainScreen.scale);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
     CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
@@ -129,7 +130,6 @@ static void CommonInit(MMTGaugeView *self) {
 
 - (CGFloat)gaugeRadius { // 짧은 선(orange knob 포함하여)들이 모여서 이루어지는 원의 반지름 - 선들의 중심과 큰 원의 중심과의 거리.
     return [self fullRadius] * (2593.0 / 3750.0); // Gage diameter => A * (2593 / 3750) = (777.9)
-//    return [self fullRadius] * 0.92f;
 }
 
 - (CGFloat)letterRadius { // 숫자들이 원형으로 이루어지는 원의 반지름 - 각 글자의 중심과 큰 원의 중심과의 거리.

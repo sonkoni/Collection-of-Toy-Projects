@@ -76,7 +76,6 @@ static void CommonInit(MMTGageBackgroundView *self) {
     _donutContainer = [[UIView alloc] initWithFrame:frame];
     self.donutContainer.backgroundColor = [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:239.0/255.0 alpha:1.0];
     
-    
     _largeShadowContainer = [[UIView alloc] initWithFrame:self.largeCircleRect];
     _smallShadowContainer = [[UIView alloc] initWithFrame:self.smallCircleRect];
     [self.donutContainer addSubview:self.largeShadowContainer];

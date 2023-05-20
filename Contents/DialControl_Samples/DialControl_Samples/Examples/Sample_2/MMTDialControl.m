@@ -207,7 +207,7 @@ static void CommonInit(MMTDialControl *self) {
 
 #pragma mark - Helper
 - (CGFloat)calculateDistanceFromCenter:(CGPoint)point { // 터치하고 있는 손가락과 센터의 거리를 알아내기 위한 메서드이다.
-    CGPoint center = CGPointMake(self.bounds.size.width / 2.0f, self.bounds.size.height / 2.0f);
+    CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
     CGFloat dx = point.x - center.x;
     CGFloat dy = point.y - center.y;
     return hypot(dx, dy);
