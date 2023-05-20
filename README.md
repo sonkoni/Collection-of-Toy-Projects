@@ -32,6 +32,7 @@
     - [Keyboard](#keyboard)
     - [Ruler](#ruler)
     - [Segmented Control](#segmented-control)
+    - [Stepper](#stepper)
     - [Switch](#switch)
     
 - [Wallpaper](#wallpaper)
@@ -56,7 +57,9 @@
 ### Segmented Control
 - [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - UISegmentedControl를 대체할 수 있는 커스텀 SegmentedControl. Written in Objective-C.
 
-
+### Stepper
+- [MGUStepper, MGAStepper](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/Stepper) - UIStepper 및 NSStepper를 대체할 수 있는 커스텀 Stepper
+    
 ### Switch
 - [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
 - [MGUOnOffButton](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUOnOffButton) - Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼.
