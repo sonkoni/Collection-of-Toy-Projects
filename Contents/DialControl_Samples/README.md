@@ -83,13 +83,8 @@ keyboard.soundOn = YES;
 
 ## Documentation
 
-- RulerView의 바늘의 배치를 위한 설계도
+- DialControl의 Behavior를 위한 설계도
 <img src="./screenshot/230517a2.jpg" width="1000">
-
-- `UIInputView` 를 기반으로 제작하여, `UITextField`의 `inputView` 프라퍼티에 `MGUNumKeyboard`를 설정하면 text field가 퍼스트 리스폰더가 되었을 때 키보드가 올라올 수도 있지만, 여기까지는 테스트하지 않았다.
-- 커스텀 input view 또는 키보드 악세사리 view에서 키보드 소리를 가져오기 위해서는 다음과 같은 설정이 필요하다.
-    1. `UIInputViewAudioFeedback` 프로토콜을 상속받고,  `enableInputClicksWhenVisible` 메서드(프라퍼티)를 true로 설정한다.    
-    2. 소리를 원하는 곳에 `[[UIDevice currentDevice] playInputClick];`를 호출하라.
 
 ## Author
 
