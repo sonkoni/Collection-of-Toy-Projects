@@ -7,7 +7,7 @@
 ## **DialControl Samples**
 - 숫자 값을 입력받을 수 있는 Number Keyboard
     - `UIInputView` 를 기반으로 제작함
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Number Keyboard에 대한 요구사항 이 있어서 제작함.
+- [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 Number Keyboard에 대한 요구사항 이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
@@ -26,10 +26,11 @@
 
 ## Examples
 > - MGUNumKeyboard (iOS)
->   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Number Keyboard에 대한 요구사항 이 있어서 제작함.
+>   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 Number Keyboard에 대한 요구사항 이 있어서 제작함.
 
+<!--> - 을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.-->
 
-Standard Style | Low Height Style | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용 예
+Sample 1 | Sample 2 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예
 ---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.19.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.53.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-18 at 14.43.40.gif" width="225">
 
