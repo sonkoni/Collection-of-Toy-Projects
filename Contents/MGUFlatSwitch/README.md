@@ -21,7 +21,7 @@
 *  **Swift** and **Objective-C** compatability
 
 
-## Examples
+## Preview
 > - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 완료를 표기하는 애니메이션 요구사항이 있어서 제작함.  
 
 
