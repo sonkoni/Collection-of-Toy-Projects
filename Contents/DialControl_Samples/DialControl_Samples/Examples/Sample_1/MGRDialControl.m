@@ -129,6 +129,11 @@
 
 - (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
     [self turnOffKonbLight];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
+- (void)cancelTrackingWithEvent:(UIEvent *)event {
+    [self endTrackingWithTouch:nil withEvent:event];
 }
 
 

@@ -161,6 +161,7 @@
 
 - (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
     [super endTrackingWithTouch:touch withEvent:event];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (void)cancelTrackingWithEvent:(UIEvent *)event {
@@ -296,9 +297,7 @@
             return NO; //! 이 때가 중요하다. 불가능하다고 하더라도 12 시 방향까지는 움직여줘야한다.
         }
     }
-//    NSLog(@"----2 %f %f", newRadian * (180.0/M_PI),oldRadian* (180.0/M_PI));
     return YES;
-
 }
 
 

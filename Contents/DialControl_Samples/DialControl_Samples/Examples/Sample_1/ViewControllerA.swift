@@ -39,6 +39,14 @@ final class ViewControllerA: UIViewController {
 
         rightBarButtonItem.tintColor = .systemRed
         navigationItem.rightBarButtonItem = rightBarButtonItem
+        
+        dialControl.addTarget(self, action:#selector(dialValueChanged(_:)), for: .valueChanged)
+    }
+    
+    
+    // MARK: - Actions
+    @objc private func dialValueChanged(_ sender: MGRDialControl) {
+        print("손가락이 떨어지고 최종적으로 액션이 종료되었음")
     }
 }
 
