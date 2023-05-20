@@ -7,7 +7,7 @@
 ## **DialControl Samples**
 - 숫자 값을 입력받을 수 있는 Number Keyboard
     - `UIInputView` 를 기반으로 제작함
-- [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
+- [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
@@ -25,8 +25,8 @@
 
 
 ## Examples
-> - MGUNumKeyboard (iOS)
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
+> - DialControl (iOS)
+>   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
 
 
 Sample 1 | Sample 2 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예
