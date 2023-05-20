@@ -17,7 +17,7 @@
 *  HSB 기반 랜덤 칼라(보더, 면) 가능
 *  **Swift** and **Objective-C** compatability 
 
-## Examples
+## Preview
 > - n각형 생성 및 회전
 > - 크기 조절 및 커팅
 > - 애니메이팅 + 리벌스 애니메이팅
