@@ -4,7 +4,7 @@
 - AutoLayout의 변경 + `layoutIfNeeded` + UIView animation으로 작동한다.
     - 애니메이션 블락 내부에서 `layoutIfNeeded`를 호출해야한다. 
 
-## Examples
+## Preview
 > - Swift Sample
 >
 > - Objective-C Sample
