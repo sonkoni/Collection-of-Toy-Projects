@@ -20,7 +20,7 @@
 *  **Swift** and **Objective-C** compatability
 
 
-## Examples
+## Preview
 > - DialControl (iOS)
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
 
