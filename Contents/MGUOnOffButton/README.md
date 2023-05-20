@@ -20,7 +20,7 @@
     * `UIImpactFeedbackGenerator` 이용하여 구현함
 *  **Swift** and **Objective-C** compatability
 
-## Examples
+## Preview
 > - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.  
 
 
