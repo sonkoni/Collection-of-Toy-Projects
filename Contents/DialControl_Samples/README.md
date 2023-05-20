@@ -31,7 +31,7 @@
 
 Sample 1 | Sample 2 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예
 ---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.19.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.53.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 Pro - 2023-05-20 at 09.29.19.gif" width="225">
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.19.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.53.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 Pro - 2023-05-20 at 09.29.19.gif" width="250">
 
 
 ## Usage
