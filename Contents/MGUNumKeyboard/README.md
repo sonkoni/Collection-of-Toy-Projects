@@ -24,7 +24,7 @@
 *  **Swift** and **Objective-C** compatability
 
 
-## Examples
+## Preview
 > - MGUNumKeyboard (iOS)
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 Number Keyboard에 대한 요구사항 이 있어서 제작함.
 
