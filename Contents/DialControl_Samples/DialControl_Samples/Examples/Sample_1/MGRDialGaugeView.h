@@ -36,7 +36,8 @@ typedef NS_ENUM(NSInteger, MGROrangeLampPosition) { // orange lamp 및 손잡이
 - (void)rotatePositionOfOrangeLampAt:(MGROrangeLampPosition)position;
 - (void)beginningAnimation; // 그냥 쇼.
 
-//! 사용금지.
+
+#pragma mark - NS_UNAVAILABLE
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
 @end
 NS_ASSUME_NONNULL_END

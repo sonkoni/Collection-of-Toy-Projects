@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MMTGaugeView : UIImageView
 
+
 #pragma mark - NS_UNAVAILABLE
 - (instancetype)initWithCoder:(NSCoder *)aDecoder  __attribute__((unavailable("initWithCoder: 이용 불가. 다른 메서드 이용바람.")));
 @end

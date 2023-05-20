@@ -1,6 +1,6 @@
 //
 //  MMTGageBackgroundView.h
-//  MGRGradientProject
+//  DialControl_Samples
 //
 //  Created by Kwan Hyun Son on 2021/11/04.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.

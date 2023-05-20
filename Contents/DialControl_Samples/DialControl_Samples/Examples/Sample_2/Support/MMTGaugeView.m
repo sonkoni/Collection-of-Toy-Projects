@@ -18,7 +18,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -37,10 +37,11 @@
     }
 }
 
+
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
+static void CommonInit(MMTGaugeView *self) {
     self.userInteractionEnabled = NO;
-    _previousBounds = CGRectZero;
+    self->_previousBounds = CGRectZero;
 }
 
 - (void)setupDialGaugeView {

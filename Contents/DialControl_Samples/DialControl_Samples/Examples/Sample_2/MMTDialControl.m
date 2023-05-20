@@ -35,7 +35,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -53,6 +53,7 @@
 
     return [super pointInside:point withEvent:event];
 }
+
 
 #pragma mark - UIControl beginTrack, continueTrack, endTrack 삼종세트
 - (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -170,29 +171,29 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
-    _full = NO;
-    _redView = [MMTRedView new];
+static void CommonInit(MMTDialControl *self) {
+    self->_full = NO;
+    self->_redView = [MMTRedView new];
     self.redView.maskLayer.endRadian = 0.0;
     [self addSubview:self.redView];
     [self.redView mgrPinEdgesToSuperviewEdges];
     
-    _knobView = [MMTDialKnobView new];
+    self->_knobView = [MMTDialKnobView new];
     [self addSubview:self.knobView];
     [self.knobView mgrPinEdgesToSuperviewEdges];
     
-    _gageBackgroundView = [MMTGageBackgroundView new];
+    self->_gageBackgroundView = [MMTGageBackgroundView new];
     [self addSubview:self.gageBackgroundView];
     [self.gageBackgroundView mgrPinEdgesToSuperviewEdges];
     
-    _gaugeView = [MMTGaugeView new];
+    self->_gaugeView = [MMTGaugeView new];
     [self addSubview:self.gaugeView];
     [self.gaugeView mgrPinEdgesToSuperviewEdges];
-    _displayLink = [MGEDisplayLink displayLinkWithDuration:0.10
-                                        easingFunctionType:MGEEasingFunctionTypeEaseInOutSine
-                                             progressBlock:nil
-                                           completionBlock:nil];
-    _halfOver = NO;
+    self->_displayLink = [MGEDisplayLink displayLinkWithDuration:0.10
+                                              easingFunctionType:MGEEasingFunctionTypeEaseInOutSine
+                                                   progressBlock:nil
+                                                 completionBlock:nil];
+    self->_halfOver = NO;
 }
 
 

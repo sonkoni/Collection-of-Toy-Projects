@@ -12,9 +12,7 @@
 
 @interface MGRDialControl ()
 @property (nonatomic, assign) BOOL allowCreate; // bounds 생성 및 변할때. layoutSubView에서 만들자.
-
 @property (nonatomic, strong) UIView *circleBackgroundView;
-
 @property (nonatomic, strong) CAShapeLayer *knobBackgroundLayer;
 @property (nonatomic, strong) CAShapeLayer *knobLayer;
 @property (nonatomic, assign) CATransform3D transformOfKnobLayerWhenTouchBegin;
@@ -36,13 +34,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    [self commonInit];
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
-    NSAssert(false, @"- initWithCoder: 사용금지.");
+    CommonInit(self);
     return self;
 }
 
@@ -138,10 +130,10 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
+static void CommonInit(MGRDialControl *self) {
     self.userInteractionEnabled = YES;
-    _allowCreate = NO;
-    _isFirst = YES;
+    self->_allowCreate = NO;
+    self->_isFirst = YES;
     self.circleBackgroundView = [UIView new];
     self.dialGaugeView        = [MGRDialGaugeView new];
     self.knobBackgroundLayer  = [CAShapeLayer layer];
@@ -157,12 +149,13 @@
     [self.circleBackgroundView mgrPinEdgesToSuperviewEdges];
     [self.dialGaugeView mgrPinEdgesToSuperviewEdges];
     
-    _knobNormalColor    = [UIColor.blackColor colorWithAlphaComponent:0.15];
-    _knobHighlightColor = UIColor.whiteColor;
+    self->_knobNormalColor    = [UIColor.blackColor colorWithAlphaComponent:0.15];
+    self->_knobHighlightColor = UIColor.whiteColor;
     
-    _mainCircleColor = [UIColor colorWithRed:5.0/255.0 green:30.0/255.0 blue:64.0/255.0 alpha:1.0];
-    _secondCircleColor = [UIColor colorWithRed:8.0/255.0 green:48.0/255.0 blue:102.0/255.0 alpha:1.0];
-    _thirdCircleColor = [UIColor colorWithRed:12.0/255.0 green:68.0/255.0 blue:146.0/255.0 alpha:1.0];
+    self->_mainCircleColor = [UIColor colorWithRed:5.0/255.0 green:30.0/255.0 blue:64.0/255.0 alpha:1.0];
+    self->_secondCircleColor = [UIColor colorWithRed:8.0/255.0 green:48.0/255.0 blue:102.0/255.0 alpha:1.0];
+    self->_thirdCircleColor = [UIColor colorWithRed:12.0/255.0 green:68.0/255.0 blue:146.0/255.0 alpha:1.0];
+
 }
 
 - (void)makeSubItem {
@@ -220,14 +213,11 @@
     
     CGRect knobRect = {CGPointZero, [self knobStickSize]};
     knobRect = CGRectOffset(knobRect, -([self knobStickSize].width / 2.0f), -([self knobStickSize].height / 2.0f)); // 회전축이 0,0
-//    CGRect knobRect = {CGPointZero, CGSizeMake([self knobRadius] * 2.0, [self knobRadius] * 2.0)};
-//    knobRect = CGRectOffset(knobRect, -[self knobRadius], -[self knobRadius]); // 회전축이 0,0
     
     UIBezierPath *knobPath = [UIBezierPath bezierPathWithRoundedRect:knobRect
                                                         cornerRadius:(knobRect.size.width / 2.0)];
     [knobPath applyTransform:CGAffineTransformMakeTranslation(width / 2.0, 0.0)];
     [knobPath applyTransform:CGAffineTransformMakeTranslation(0.0, [self distance2])];
-    //[knobPath applyTransform:CGAffineTransformMakeTranslation(0.0, (width / 2.0) - [self knobLengthRadius])];
     
     CGRect smallRect = {CGPointZero, CGSizeMake([self forthRadius] * 2.0, [self forthRadius] * 2.0)};
     smallRect = CGRectOffset(smallRect, ([self radius] - [self forthRadius]), ([self radius] - [self forthRadius]));
@@ -302,15 +292,14 @@
 
 
 #pragma mark - 세터 & 게터
-
 - (void)setAngleFromCenterWhenTouchBegan:(CGFloat)angleFromCenterWhenTouchBegan {
     _angleFromCenterWhenTouchBegan = angleFromCenterWhenTouchBegan;
     self.standardAngleFromCenterWhenTouchBegan = [self standardAngleFromActualAngle:angleFromCenterWhenTouchBegan];
     self.standardAngleFromCenterAtCurrnetTime  = self.standardAngleFromCenterWhenTouchBegan;
 }
 
-#pragma mark - 컨트롤
 
+#pragma mark - 컨트롤
 - (void)turnOnKonbLight {
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
@@ -331,8 +320,8 @@
     [self.dialGaugeView beginningAnimation];
 }
 
-#pragma mark - Helper
 
+#pragma mark - Helper
 - (CGFloat)radius { // 정사각형 한변의 길이의 반.
     return MIN(self.bounds.size.width, self.bounds.size.height) / 2.0;
 }
@@ -376,7 +365,7 @@
 
 - (CGFloat)knobRadius { // 손잡이에 해당하는 작은 원의 반경
     CGFloat radius = [self circleRadius];
-    radius = radius / 28.0f;
+    radius = radius / 28.0;
     return radius;
 }
 
@@ -387,7 +376,7 @@
 }
 
 - (CGFloat)calculateDistanceFromCenter:(CGPoint)point { // 터치하고 있는 손가락과 센터의 거리를 알아내기 위한 메서드이다.
-    CGPoint center = CGPointMake(self.bounds.size.width / 2.0f, self.bounds.size.height / 2.0f);
+    CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
     CGFloat dx = point.x - center.x;
     CGFloat dy = point.y - center.y;
     return hypot(dx, dy);
@@ -419,7 +408,7 @@
     } else if (((-M_PI * 4.0 / 6.0) - (M_PI / 12.0) <= actualAngle) && ((-M_PI * 4.0 / 6.0) + (M_PI / 12.0) > actualAngle)) {
         return (-M_PI * 4.0 / 6.0); // 11시
     }
-    NSAssert(false, @"이 문자열이 출력되어서는 안된다.");
+    NSCAssert(false, @"이 문자열이 출력되어서는 안된다.");
     return 0.0;
 }
 
@@ -491,6 +480,9 @@
     // 또한 0.0과 -0.0이 인식될 수 있다. 이것은 큰 문제가 되지 않으나, - M_PI, M_PI가 불규칙적으로 인식되므로, 마지막으로 빼서 처리하는 것이 좋다.
 }
 
+
+#pragma mark - NS_UNAVAILABLE
+- (instancetype)initWithCoder:(NSCoder *)coder { NSCAssert(FALSE, @"- initWithCoder: 사용금지."); return nil; }
 @end
 
 /*

@@ -33,7 +33,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -41,7 +41,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -63,7 +63,7 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
+static void CommonInit(MMTDialKnobView *self) {
     self.userInteractionEnabled = NO;
     self.backgroundColor = [UIColor clearColor];
     self.clipsToBounds = NO;

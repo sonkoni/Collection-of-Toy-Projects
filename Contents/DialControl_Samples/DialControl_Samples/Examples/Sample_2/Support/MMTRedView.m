@@ -14,7 +14,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self _commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -22,7 +22,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self _commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -36,11 +36,11 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)_commonInit {
+static void CommonInit(MMTRedView *self) {
     self.userInteractionEnabled = NO;
     UIColor *startColor = [UIColor colorWithRed:214.0/255.0 green:79.0/255.0 blue:79.0/255.0 alpha:1.0];
     UIColor *endColor = [UIColor colorWithRed:171.0/255.0 green:5.0/255.0 blue:5.0/255.0 alpha:1.0];
-    self.colors = @[startColor, endColor];    
+    self.colors = @[startColor, endColor];
     self.gradientLayer.startPoint = CGPointMake(0.36, 0.82);
     self.gradientLayer.endPoint = CGPointMake(0.81, 0.20);
     self.gradientLayer.type = kCAGradientLayerAxial;
@@ -48,7 +48,7 @@
     self.gradientLayer.noiseOpacity = 0.05;
     self.gradientLayer.noiseBlendMode = kCGBlendModeNormal; // 디폴트 BlendMode kCGBlendModeScreen
     
-    _maskLayer = [MGECircularSectorMaskLayer layer];
+    self->_maskLayer = [MGECircularSectorMaskLayer layer];
     self.maskLayer.contentsScale = [UIScreen mainScreen].scale;
     self.maskLayer.clockWise = NO;
     self.maskLayer.axisDirection = MGRCircularSectorMaskAxisDirectionNorthInverse; // 0 라디안 12시. 반시계방향으로 한 바퀴 돌면 M_PI * 2.0

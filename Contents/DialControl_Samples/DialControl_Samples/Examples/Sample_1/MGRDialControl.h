@@ -20,13 +20,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark - 인터페이스
-
 @interface MGRDialControl : UIControl
 
 @property (nonatomic, weak) id <MGRDialControlDelegate> delegate;
 @property (nonatomic, copy, nullable) void (^normalSoundPlayBlock)(void);
 - (void)beginningAnimation; // 그냥 쇼
-- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE; // 사용금지.
+
+
+#pragma mark - NS_UNAVAILABLE
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
 @end
 
 NS_ASSUME_NONNULL_END

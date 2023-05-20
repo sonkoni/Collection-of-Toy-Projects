@@ -1,12 +1,10 @@
 //
 //  MMTGageBackgroundView.m
-//  MGRGradientProject
+//  DialControl_Samples
 //
 //  Created by Kwan Hyun Son on 2021/11/04.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
 //
-//! 현재 프로젝트의 목적이 아니다. 이 클래스에 대한 설명은 MGRGradientProject을 참고하라.
-//! 현재 프로젝트는 게이지를 그리는 것이 목적이다.
 
 #import "MMTGageBackgroundView.h"
 @import GraphicsKit;
@@ -38,7 +36,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -46,7 +44,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -65,7 +63,7 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
+static void CommonInit(MMTGageBackgroundView *self) {
     self.userInteractionEnabled = NO;
     self.backgroundColor = [UIColor clearColor];
     self.clipsToBounds = NO;

@@ -17,14 +17,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    NSAssert(false, @"- initWithCoder: 초기화 금지.");
     return self;
 }
 
@@ -34,8 +28,7 @@
 
 
 #pragma mark - 생성 & 소멸
-
-- (void)commonInit {
+static void CommonInit(MGRDialGaugeView *self) {
     self.orangeLampLayer = [CAShapeLayer layer];
     self.orangeLampLayer.contentsScale = UIScreen.mainScreen.scale;
     self.orangeLampLayer.frame = self.layer.bounds;
@@ -86,9 +79,6 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext(); // 하나의 이미지로 받아오기
     UIGraphicsEndImageContext(); // 이미지 컨텍스트 종류
     self.image = image;
-    //
-    // [self.balloonColor setFill]; 채우기
-    // [self.trianglePath fill];
 }
 
 - (void)setupOrangeLamp {
@@ -208,10 +198,6 @@
     replicatorLayer.instanceCount = 13;
     replicatorLayer.instanceDelay = 0.015;
     replicatorLayer.instanceTransform   = CATransform3DMakeRotation(radianFromDegree(30.0f), 0.0, 0.0, 1.0);
-//    replicatorLayer.instanceRedOffset
-//    replicatorLayer.instanceGreenOffset
-//    replicatorLayer.instanceBlueOffset
-//    replicatorLayer.instanceAlphaOffset
 
     CGFloat width =  self.layer.bounds.size.width;
     
@@ -256,7 +242,8 @@
     [CATransaction commit];
 }
 
-#pragma mark - Helper 메서드
+
+#pragma mark - Helper
 - (CGSize)orangeLampSize {
     CGSize baseSize = self.bounds.size;
     return CGSizeMake(baseSize.width / 75.0, baseSize.width / 35.0);
@@ -274,4 +261,7 @@ CGFloat radianFromDegree(CGFloat degree) {
     return (CGFloat)(degree * M_PI / 180.0);
 }
 
+
+#pragma mark - NS_UNAVAILABLE
+- (instancetype)initWithCoder:(NSCoder *)coder { NSCAssert(FALSE, @"- initWithCoder: 사용금지."); return nil; }
 @end
