@@ -13,24 +13,28 @@
 <p align="center"><img src="./screenshot/230522b1.jpg" width="400"></p>
 
 
+*  Delete 버튼 long press 지원    
+    * long press 시, 일정한 간격으로 반복적으로 호출되어 실행된다.
+
+//! 애플과 동일한 방식이다. 타이머가 가속도를 가지고 움직이는 것처럼 골라준다.
+
 ## Features
 *  커스텀 사이즈 가능(`UIStepper` 및 `NSStepper`와 동일한 `intrinsicContentSize`도 가지고 있음)
-*  ON, OFF 영역에 이미지 또는 텍스트 설정 가능
+*  Label 설정가능
+    * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
+    * 가운데 Label에 Drag 기능을 설정할 수 있다.
+    * 가운데 Label에 현재 Stepper의 값을 표기할 수도 있고, 원하는 문구를 넣을 수도 있다. 
 *  커스텀 Shape 가능
-    * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
-*  커스텀 손잡이 가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device(아이폰, 트랙패드 등)를 통해 전달된다.
-    * iOS : `UIImpactFeedbackGenerator` 이용하여 구현함
-    * macOS : `NSHapticFeedbackManager` 이용하여 구현함
-*  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
-    * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
-    * macOS : `MGASevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
-*  MGASevenSwitch(macOS)는 마우스 hover 시에 커서 타입을 정할 수 있다.    
-*  MGASevenSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
+    * VisualEffectView를 배경으로 설정할 수 있다.
+    * 버튼 및 중앙 Label에 image 또는 text를 설정할 수 있다.
+    * Stepper, 버튼, 중앙 Label에 원하는 radius를 줄 수 있다.
+*  long press 지원
+    * `UIStepper`처럼 long press 시 반복되어 버튼 press가 호출되고 일정 시간이 지나면 반복되는 간격이 빨라진다. 
+*  Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability
-*  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
+*  Support **iOS**(***MGUStepper***) and **macOS**(***MGAStepper***).
 
 
 ## Preview
@@ -65,13 +69,37 @@ if let stepper = stepper {
 ```objective-c
 
 _stepper = [[MGUStepper alloc] initWithConfiguration:[MGUStepperConfiguration forgeDropConfiguration]];
-[self.view addSubview:self.stepper];
+[self.view addSubview:self.stepper]; // intrinsicContentSize 설정됨
 [self.stepper addTarget:self action:@selector(stepperValueChanged:) forControlEvents:UIControlEventValueChanged];
 
 ```
 > Interface Builder
 
 <img src="./screenshot/230522a1.jpg" width="200">
+
+## Documentation
+
+- long press 시 일정한 간격으로 반복 호출되며 반복호출되는 간격이 일정 시간이 지나면 빨라지게 하기위해 다음의 알고리즘을 구상함.
+    - 반복 호출되다가 일정 시간이 지나면 반복 호출 간격이 5배로 빨라지고 또 일정 시간이나면 거기서 2배가 빨라진다.
+```objective-c
+
+//! 애플의 UIStepper와 유사하게 작동하게 하기 위해 만든 알고리즘. 타이머가 가속도를 가지고 움직이는 것처럼 골라준다.
+- (NSInteger)timerFireCountModulo {
+    if (self.timerFireCount > 80) { // 0.05(81) -> 0.05(82) -> 0.05(83) -> 0.05(84) -> 0.05(85)
+        return 1; // 0.05 sec * 1 = 0.05 sec : (리턴값 * 0.05)는 호출되는 간격
+    } else if (self.timerFireCount > 50) { // 0.1(52) -> 0.1(54) -> 0.1(56) -> 0.1(58) -> 0.1(60)
+        return 2; // 0.05 sec * 2 = 0.1 sec : (리턴값 * 0.05)는 호출되는 간격
+    } else { // 0.5(10) -> 0.5(20) -> 0.5(30) -> 0.5(40) -> 0.5(50)
+        return 10; // 0.05 sec * 10 = 0.5 sec : (리턴값 * 0.05)는 호출되는 간격
+    }
+    //
+    // self.timerFireCount % [self timerFireCountModulo] == 0 에 대한 호출.
+    // 1. 0.5초마다 호출된다.(2.5초 동안 = 50 * 0.05) 즉, 5회 호출된다.
+    // 2. 0.1초마다 호출된다.(1.5초 동안 = 30 * 0.05) 즉, 15회 호출된다.
+    // 3. 0.05초마다 호출된다. 계속.
+}
+
+```
 
 ## Author
 

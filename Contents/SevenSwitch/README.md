@@ -26,7 +26,7 @@
     * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
     * macOS : `MGASevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
 *  MGASevenSwitch(macOS)는 마우스 hover 시에 커서 타입을 정할 수 있다.    
-*  MGASevenSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
+*  MGASevenSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability

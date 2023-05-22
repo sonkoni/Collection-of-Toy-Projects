@@ -15,7 +15,7 @@
 *  `lineWidth` 설정 가능
 *  `animationDuration` 설정 가능
 *  CompletionHandler 제공
-*  Interface Builder에서 설정가능 - 그러나 XCode 자체 버그가 있기 때문에 추천하지 않는다.
+*  Interface Builder에서 설정가능 - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability
