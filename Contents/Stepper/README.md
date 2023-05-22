@@ -53,10 +53,9 @@ MGAStepper (macOS) |
 ## Presets and Styles
 > Default Configuration
 
-$~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
----|---|---|---|---|---
-Rounded |<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">
-Rect   |<img src="./screenshot/Default_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rect.jpg" width="225">
+Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
+---|---|---|---|---
+Rounded |<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">
 
 ---
 
