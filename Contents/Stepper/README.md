@@ -45,7 +45,7 @@ MGUSevenSwitch (iOS) | MGUSevenSwitch (iOS) | [IV-Drop](https://apps.apple.com/a
 
 MGASevenSwitch (macOS) |
 ---|
-<img src="./screenshot/Screen Recording 2023-05-16 at 12.04.22.gif" width="450">|
+<img src="./screenshot/Screen Recording 2023-05-22 at 11.40.53.gif" width="450">|
 
 
 ## Usage
