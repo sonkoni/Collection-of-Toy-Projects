@@ -1,6 +1,6 @@
 //
 //  main.m
-//  SevenSwitch_macOS
+//  MGAStepper
 //
 //  Created by Kwan Hyun Son on 2023/05/16.
 //

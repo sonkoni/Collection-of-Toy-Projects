@@ -1,6 +1,6 @@
 //
 //  ViewControllerB.swift
-//  MGUNeoSegControl
+//  Stepper
 //
 //  Created by Kwan Hyun Son on 2023/05/10.
 //
@@ -88,6 +88,6 @@ final class ViewControllerB: UIViewController {
             for case let stepper in steppers {
                 stepper.isEnabled = sender.isOn
             }
-        }        
+        }
     }
 }

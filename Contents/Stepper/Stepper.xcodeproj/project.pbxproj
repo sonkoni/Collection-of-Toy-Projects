@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		842FC1092A1AFC44001CF032 /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FC1072A1AFC44001CF032 /* ViewControllerA.m */; };
 		842FC10A2A1AFC44001CF032 /* ViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842FC1082A1AFC44001CF032 /* ViewControllerA.xib */; };
 		842FC10F2A1AFDB7001CF032 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842FC10D2A1AFDB7001CF032 /* ViewControllerB.xib */; };
 		842FC1182A1AFFF3001CF032 /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842FC1152A1AFFF3001CF032 /* ViewControllerC.xib */; };
@@ -20,6 +19,7 @@
 		842FC1402A1B2ED1001CF032 /* 230522c2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842FC13B2A1B2ED1001CF032 /* 230522c2.jpg */; };
 		842FC1412A1B2ED1001CF032 /* 230522c3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842FC13C2A1B2ED1001CF032 /* 230522c3.jpg */; };
 		842FC1422A1B2ED1001CF032 /* 230522c1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842FC13D2A1B2ED1001CF032 /* 230522c1.jpg */; };
+		842FC1452A1B3434001CF032 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FC1442A1B3434001CF032 /* ViewControllerA.swift */; };
 		845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845902F928F0D71600E50B56 /* AppDelegate.swift */; };
 		845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845902FB28F0D71600E50B56 /* SceneDelegate.swift */; };
 		8459030328F0D71700E50B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8459030228F0D71700E50B56 /* Assets.xcassets */; };
@@ -73,8 +73,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		842FC1062A1AFC44001CF032 /* ViewControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
-		842FC1072A1AFC44001CF032 /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
 		842FC1082A1AFC44001CF032 /* ViewControllerA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerA.xib; sourceTree = "<group>"; };
 		842FC10D2A1AFDB7001CF032 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
 		842FC1152A1AFFF3001CF032 /* ViewControllerC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
@@ -97,6 +95,7 @@
 		842FC13C2A1B2ED1001CF032 /* 230522c3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c3.jpg; sourceTree = "<group>"; };
 		842FC13D2A1B2ED1001CF032 /* 230522c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c1.jpg; sourceTree = "<group>"; };
 		842FC1432A1B31FF001CF032 /* 230522c6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c6.jpg; sourceTree = "<group>"; };
+		842FC1442A1B3434001CF032 /* ViewControllerA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* Stepper_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepper_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,8 +256,7 @@
 		84AF26DA28F37DD500C4E0A3 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				842FC1062A1AFC44001CF032 /* ViewControllerA.h */,
-				842FC1072A1AFC44001CF032 /* ViewControllerA.m */,
+				842FC1442A1B3434001CF032 /* ViewControllerA.swift */,
 				842FC1082A1AFC44001CF032 /* ViewControllerA.xib */,
 				842FC1322A1B1C72001CF032 /* ViewControllerB.swift */,
 				842FC10D2A1AFDB7001CF032 /* ViewControllerB.xib */,
@@ -408,9 +406,9 @@
 				84A836422A0B1735008F3D25 /* main.swift in Sources */,
 				84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */,
 				845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */,
-				842FC1092A1AFC44001CF032 /* ViewControllerA.m in Sources */,
 				842FC1192A1AFFF3001CF032 /* ViewControllerC.m in Sources */,
 				84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */,
+				842FC1452A1B3434001CF032 /* ViewControllerA.swift in Sources */,
 				845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */,
 				842FC1332A1B1C72001CF032 /* ViewControllerB.swift in Sources */,
 			);

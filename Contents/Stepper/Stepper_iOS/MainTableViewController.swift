@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SevenSwitch_iOS
+//  MGUStepper
 //
 //  Created by Kwan Hyun Son on 2022/10/08.
 //

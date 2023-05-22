@@ -15,9 +15,9 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="MacObjcSample" id="1Xt-HY-uBw">
+                <menuItem title="MGAStepper" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="MacObjcSample" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="MGAStepper" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
                             <menuItem title="About MacObjcSample" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
