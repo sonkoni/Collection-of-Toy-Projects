@@ -51,13 +51,23 @@ MGAStepper (macOS) |
 
 
 ## Presets and Styles
-> Default Configuration
+> Built-in configuration
 
 Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
 ---|---|---|---|---
 <img src="./screenshot/230522c5.jpg" width="225"> |<img src="./screenshot/230522c2.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c3.jpg" width="225">|<img src="./screenshot/230522c4.jpg" width="225">
 
 ---
+
+> More configuration
+> 다음과 같이 직접적으로 프라퍼티를 조절하여 다양한 외관을 생성할 수 있다.
+
+Default|
+---|
+<img src="./screenshot/230522c5.jpg" width="225">|
+
+
+Screenshot 2023-05-22 at 13.55.32
 
 ## Usage
 
