@@ -10,7 +10,7 @@
     - MGUStepper : iOS 용 (UIControl 서브클래스)
     - MGAStepper : macOS 용 (NSControl 서브클래스)
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
-<p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
+<p align="center"><img src="./screenshot/230522b1.jpg" width="400"></p>
 
 
 ## Features
