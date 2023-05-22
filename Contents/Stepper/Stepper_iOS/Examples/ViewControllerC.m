@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"MGUStepper";
+    self.title = @"More Custom";
     _stepper = [[MGUStepper alloc] initWithConfiguration:[self testConfiguration]];
     [self.view addSubview:self.stepper];
     [self.stepper mgrPinCenterToSuperviewCenter]; // intrinsicContentSize 설정됨
@@ -54,23 +54,17 @@
 
 - (MGUStepperConfiguration *)testConfiguration {
     MGUStepperConfiguration *result = [MGUStepperConfiguration defaultConfiguration];
-//    result.stepperLabelType = MGUStepperLabelTypeShowFixed;
-    
+    // result.stepperLabelType = MGUStepperLabelTypeShowFixed;
     CGSize size = CGSizeMake(300.0, 67.0);
     CGFloat labelWidthRatio = (size.width - (2.0 * size.height)) / size.width;
     result.stepperLabelType = MGUStepperLabelTypeShowDraggable;
     result.intrinsicContentSize = size;
     result.cornerRadius = (size.height/2.0);
-    
-    
-    
-//    UIImageSymbolConfiguration *symbolConfiguration = [UIImageSymbolConfiguration configurationWithScale:UIImageSymbolScaleLarge];
-    
+
     UIImageSymbolConfiguration *symbolConfiguration =
         [UIImageSymbolConfiguration configurationWithPointSize:22.0
                                                         weight:UIImageSymbolWeightBold
                                                          scale:UIImageSymbolScaleLarge];
-    
     
     UIColor *color = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     UIImageSymbolConfiguration *colorConfig =
@@ -86,9 +80,7 @@
     result.rightDisabledImage = [UIImage systemImageNamed:@"plus.circle" withConfiguration:colorConfig];
     
     result.buttonsContensColor = [UIColor systemRedColor];
-    
     result.labelTextColor = [UIColor labelColor];
-//    result.fullColor = [UIColor colorWithRed:251.0/255.0 green:196.0/255.0 blue:206.0/255.0 alpha:1.0];
     result.fullColor = [UIColor clearColor];
     
     result.buttonsBackgroundColor = [UIColor clearColor];
@@ -110,11 +102,6 @@
     }
     
     result.items = arr;
-        // 251 196 206
-//    limitHitAnimationColor ???
-    
-    
-        
     return result;
 }
 

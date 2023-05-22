@@ -18,8 +18,6 @@
     [super viewDidLoad];
     self.title = @"MGUStepper";
     MGUStepperConfiguration *con = [MGUStepperConfiguration forgeDropConfiguration];
-//    con.isStaticLabelTitle = YES;
-//    con.items = @[@"∙∙∙"].mutableCopy;
     _stepper1 = [[MGUStepper alloc] initWithConfiguration:con];
     [self.view addSubview:self.stepper1];
     [self.stepper1 mgrPinCenterToSuperviewCenter]; // intrinsicContentSize 설정됨
