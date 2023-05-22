@@ -1,6 +1,6 @@
 //
 //  ViewControllerD.h
-//  MGUStepperExample
+//  MGUStepper
 //
 //  Created by Kwan Hyun Son on 2021/02/03.
 //

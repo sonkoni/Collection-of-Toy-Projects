@@ -1,6 +1,6 @@
 //
 //  ViewControllerC.m
-//  MGUStepperExample
+//  MGUStepper
 //
 //  Created by Kwan Hyun Son on 2022/11/01.
 //  Copyright © 2022 Mulgrim Co. All rights reserved.

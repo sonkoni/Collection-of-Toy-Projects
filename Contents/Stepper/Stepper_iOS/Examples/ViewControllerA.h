@@ -1,6 +1,6 @@
 //
 //  ViewControllerA.h
-//  GMStepperExample
+//  MGUStepper
 //
 //  Created by Kwan Hyun Son on 2020/11/07.
 //
