@@ -53,9 +53,11 @@ MGAStepper (macOS) |
 > Swift
 ```swift
 
-let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
-view.addSubview(sevenSwitch)
-sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
+stepper = MGUStepper(configuration: MGUStepperConfiguration.forgeDrop())
+if let stepper = stepper {
+    containerView.addSubview(stepper) // intrinsicContentSize 설정됨
+    stepper.addTarget(self, action:#selector(stepperValueChanged(_:)), for: .valueChanged)
+}
 
 ```
 
