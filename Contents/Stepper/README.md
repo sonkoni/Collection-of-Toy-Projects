@@ -14,7 +14,7 @@
 
 
 ## Features
-*  커스텀 사이즈 가능(`UIStepper` 및 `NSStepper`와 동일한 `intrinsicContentSize`도 가지고 있음)
+*  커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있으므로 autolayout으로 position만으로도 설정 가능)
 *  Label 설정가능
     * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
     * 가운데 Label에 Drag 기능을 설정할 수 있다.
@@ -34,7 +34,7 @@
 
 ## Preview
 > - MGUStepper (iOS)
->   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
+>   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
 > - MGAStepper (macOS)
 
 
