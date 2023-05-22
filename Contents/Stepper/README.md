@@ -34,16 +34,16 @@
 
 
 ## Preview
-> - MGUSevenSwitch (iOS)
+> - MGUStepper (iOS)
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
-> - MGASevenSwitch (macOS)
+> - MGAStepper (macOS)
 
 
-MGUSevenSwitch (iOS) | MGUSevenSwitch (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
+MGUStepper (iOS) | MGUStepper (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
 ---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
 
-MGASevenSwitch (macOS) |
+MGAStepper (macOS) |
 ---|
 <img src="./screenshot/Screen Recording 2023-05-22 at 11.40.53.gif" width="450">|
 
