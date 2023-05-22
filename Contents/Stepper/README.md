@@ -6,7 +6,7 @@
 ![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
 ## **MGUStepper**(***iOS***) & **MGAStepper**(***macOS***)
-- `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
+- `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 Stepper
     - MGUStepper : iOS 용 (UIControl 서브클래스)
     - MGAStepper : macOS 용 (NSControl 서브클래스)
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
