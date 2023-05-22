@@ -1,9 +1,8 @@
 //
 //  ViewControllerB.h
-//  MGUSevenSwitch
+//  GMStepperExample
 //
-//  Created by Kwan Hyun Son on 29/01/2020.
-//  Copyright © 2020 Mulgrim Inc. All rights reserved.
+//  Created by Kwan Hyun Son on 2020/11/10.
 //
 
 #import <UIKit/UIKit.h>

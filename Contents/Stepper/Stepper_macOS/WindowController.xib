@@ -90,6 +90,9 @@
                         <switch key="view" horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" state="on" id="x1E-cc-ukL">
                             <rect key="frame" x="17" y="14" width="42" height="25"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <connections>
+                                <action selector="switchClicked:" target="-2" id="WnZ-5R-eHU"/>
+                            </connections>
                         </switch>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="6Cy-z3-CwS"/>

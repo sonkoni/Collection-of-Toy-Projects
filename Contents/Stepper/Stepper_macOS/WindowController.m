@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet NSView *rightContainer3;
 @property (weak, nonatomic) IBOutlet NSView *rightContainer4;
 @property (weak, nonatomic) IBOutlet NSView *rightContainer5;
+@property (nonatomic, strong) NSArray <MGAStepper *>*steppers;
 @end
 
 @implementation WindowController
@@ -30,7 +31,6 @@
     self.leftContainer.wantsLayer = YES;
     self.leftContainer.layer.contents = [NSImage imageNamed:@"smoothie-berry"];
     self.leftContainer.layer.contentsGravity = kCAGravityResizeAspectFill;
-    
     
     MGAStepper *stepper1 = [[MGAStepper alloc] initWithConfiguration:[self testConfiguration]];
     [self.leftContainer addSubview:stepper1];
@@ -80,6 +80,8 @@
     stepper6.target = self;
     stepper6.action = @selector(valueChanged:);
     [stepper6 mgrPinCenterToSuperviewCenter];
+    
+    _steppers = @[stepper1, stepper2, stepper3, stepper4, stepper5, stepper6];
 }
 
 
@@ -87,6 +89,17 @@
 - (void)valueChanged:(MGAStepper *)sender {
     NSLog(@"valueChanged!! %f", sender.value);
 }
+
+- (IBAction)switchClicked:(NSSwitch *)sender {
+    for (MGAStepper *stepper in self.steppers) {
+        if (sender.state == NSControlStateValueOn) {
+            stepper.enabled =YES;
+        } else {
+            stepper.enabled =NO;
+        }
+    }
+}
+
 
 - (MGAStepperConfiguration *)testConfiguration {
     MGAStepperConfiguration *result = [MGAStepperConfiguration defaultConfiguration];

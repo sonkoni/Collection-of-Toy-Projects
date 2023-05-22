@@ -23,7 +23,7 @@ final class MainTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "MGUSevenSwitch"
+        title = "MGUStepper"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -101,13 +101,15 @@ extension MainTableViewController: UITableViewDelegate {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 viewController = ViewControllerA.init()
+            } else if indexPath.row == 1 {
+                viewController = ViewControllerB.init()
             }
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                viewController = ViewControllerB.init()
+                viewController = ViewControllerC.init()
             }
         } else if indexPath.section == 2 {
-            viewController = ViewControllerC.init()
+            viewController = ViewControllerD.init()
         }
         
         if let viewController = viewController {
