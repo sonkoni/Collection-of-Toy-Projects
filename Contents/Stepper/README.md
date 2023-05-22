@@ -53,9 +53,9 @@ MGAStepper (macOS) |
 ## Presets and Styles
 > Default Configuration
 
-Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
+Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
 ---|---|---|---|---
-Rounded |<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">
+<img src="./screenshot/230522c5.jpg" width="225"> |<img src="./screenshot/230522c2.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c3.jpg" width="225">|<img src="./screenshot/230522c4.jpg" width="225">
 
 ---
 
