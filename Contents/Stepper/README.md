@@ -9,14 +9,9 @@
 - `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
     - MGUStepper : iOS 용 (UIControl 서브클래스)
     - MGAStepper : macOS 용 (NSControl 서브클래스)
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230522b1.jpg" width="400"></p>
 
-
-*  Delete 버튼 long press 지원    
-    * long press 시, 일정한 간격으로 반복적으로 호출되어 실행된다.
-
-//! 애플과 동일한 방식이다. 타이머가 가속도를 가지고 움직이는 것처럼 골라준다.
 
 ## Features
 *  커스텀 사이즈 가능(`UIStepper` 및 `NSStepper`와 동일한 `intrinsicContentSize`도 가지고 있음)
