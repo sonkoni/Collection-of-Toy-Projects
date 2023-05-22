@@ -18,11 +18,14 @@
 *  Label 설정가능
     * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
     * 가운데 Label에 Drag 기능을 설정할 수 있다.
-    * 가운데 Label에 현재 Stepper의 값을 표기할 수도 있고, 원하는 문구를 넣을 수도 있다. 
+    * 가운데 Label에 현재 Stepper의 값을 표기할 수도 있고, 원하는 문구를 넣을 수도 있다.
+*  Style presets 지원
+    * 5가지의 presets 
+    * presets에 추가적 커스텀 가능 
 *  커스텀 Shape 가능
     * VisualEffectView를 배경으로 설정할 수 있다.
     * 버튼 및 중앙 Label에 image 또는 text를 설정할 수 있다.
-    * Stepper, 버튼, 중앙 Label에 원하는 radius를 줄 수 있다.
+    * Stepper, 버튼, 중앙 Label에 원하는 radius를 줄 수 있다.    
 *  long press 지원
     * `UIStepper`처럼 long press 시 반복되어 버튼 press가 호출되고 일정 시간이 지나면 반복되는 간격이 빨라진다. 
 *  Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
