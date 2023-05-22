@@ -71,10 +71,10 @@
 ### Table View / Collection View
 
 #### Table View
+- [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell) - TODO: SwipeCell ????? 문구 적어라.
 
 #### Collection View
-
-- [MGUFlowView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlowView) - MGUFlowView ??????
+- [MGUFlowView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlowView) - TODO: MGUFlowView ?????? 문구 적어라.
 
 **[back to top](#contents)**
 
