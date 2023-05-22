@@ -84,6 +84,7 @@
 		842FC1222A1B0F9D001CF032 /* Screen Recording 2023-05-22 at 11.40.53.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Screen Recording 2023-05-22 at 11.40.53.gif"; sourceTree = "<group>"; };
 		842FC12D2A1B1212001CF032 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif"; sourceTree = "<group>"; };
 		842FC12E2A1B1337001CF032 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif"; sourceTree = "<group>"; };
+		842FC12F2A1B147A001CF032 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif"; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* Stepper_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepper_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 			children = (
 				842FC12D2A1B1212001CF032 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif */,
 				842FC12E2A1B1337001CF032 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif */,
+				842FC12F2A1B147A001CF032 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif */,
 				84725FE52A1323F6004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif */,
 				84725FE72A132B24004A9E7C /* Screen Recording 2023-05-16 at 12.04.22.gif */,
 				842FC1222A1B0F9D001CF032 /* Screen Recording 2023-05-22 at 11.40.53.gif */,
