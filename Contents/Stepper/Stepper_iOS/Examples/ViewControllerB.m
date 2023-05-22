@@ -46,9 +46,7 @@
     _stepper3 = [[MGUStepper alloc] initWithConfiguration:[MGUStepperConfiguration forgeDropConfiguration]];
     [self.containerView3 addSubview:self.stepper3];
     [self.stepper3 mgrPinCenterToSuperviewCenter]; // intrinsicContentSize 설정됨
-    [self.stepper3 addTarget:self
-                     action:@selector(stepperValueChanged:)
-           forControlEvents:UIControlEventValueChanged];
+    [self.stepper3 addTarget:self action:@selector(stepperValueChanged:) forControlEvents:UIControlEventValueChanged];
     
     _stepper4 = [MGUStepper new];
     [self.containerView4 addSubview:self.stepper4];

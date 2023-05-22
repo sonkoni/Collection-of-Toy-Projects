@@ -62,11 +62,9 @@ sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueCha
 > Objective-C
 ```objective-c
 
-_sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
-                                            switchOn:YES
-                                       configuration:[MGUSevenSwitchConfiguration yellowConfiguration]];
-[self.view addSubview:self.sevenSwitch];
-[self.sevenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+_stepper = [[MGUStepper alloc] initWithConfiguration:[MGUStepperConfiguration forgeDropConfiguration]];
+[self.view addSubview:self.stepper];
+[self.stepper addTarget:self action:@selector(stepperValueChanged:) forControlEvents:UIControlEventValueChanged];
 
 ```
 > Interface Builder
