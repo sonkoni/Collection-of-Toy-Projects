@@ -39,7 +39,7 @@
 > - MGAStepper (macOS)
 
 
-MGUStepper (iOS) | MGUStepper (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예 | ASDF
+MGUStepper (iOS) - xib | MGUStepper (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예 | ASDF
 ---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.12.20.gif" width="225">
 
