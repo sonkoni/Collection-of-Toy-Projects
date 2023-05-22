@@ -59,8 +59,7 @@ Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
 
 ---
 
-> More configuration
-
+> More configuration<br/>
 > 다음과 같이 직접적으로 프라퍼티를 조절하여 다양한 외관을 생성할 수 있다.
 
 더 커스텀하기|
