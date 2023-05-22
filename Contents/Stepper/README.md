@@ -60,14 +60,12 @@ Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
 ---
 
 > More configuration
+
 > 다음과 같이 직접적으로 프라퍼티를 조절하여 다양한 외관을 생성할 수 있다.
 
-Default|
+더 커스텀하기|
 ---|
-<img src="./screenshot/230522c5.jpg" width="225">|
-
-
-Screenshot 2023-05-22 at 13.55.32
+<img src="./screenshot/230522c6.jpg" width="225">|
 
 ## Usage
 

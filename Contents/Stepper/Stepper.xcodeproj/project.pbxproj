@@ -96,6 +96,7 @@
 		842FC13B2A1B2ED1001CF032 /* 230522c2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c2.jpg; sourceTree = "<group>"; };
 		842FC13C2A1B2ED1001CF032 /* 230522c3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c3.jpg; sourceTree = "<group>"; };
 		842FC13D2A1B2ED1001CF032 /* 230522c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c1.jpg; sourceTree = "<group>"; };
+		842FC1432A1B31FF001CF032 /* 230522c6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230522c6.jpg; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* Stepper_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepper_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +240,7 @@
 				842FC13C2A1B2ED1001CF032 /* 230522c3.jpg */,
 				842FC13A2A1B2ED1001CF032 /* 230522c4.jpg */,
 				842FC1392A1B2ED1001CF032 /* 230522c5.jpg */,
+				842FC1432A1B31FF001CF032 /* 230522c6.jpg */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
