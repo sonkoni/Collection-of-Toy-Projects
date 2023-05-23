@@ -16,12 +16,12 @@
     * Folding Style: 스크롤 시 종이처럼 접히는 레이아웃 
     * Vega Style: 스크롤 시 끝단에서 말리는 레이아웃 제공
         * reverse order 기능 존재함. 아이템이 아래에서부터 차오른다. - [Preview](#preview) 참고.
-*  휠의 회전으로 입력값을 설정 가능케 함
-    * 손잡이 부분이 아니라도 휠 반경 전체에서 제스처 동작이 시작될 수 있음
-*  제스처가 시작되고 중심으로부터 일정한 Radius를 벗어나면 제스처를 disable 시켜서 오작동을 방지함    
-*  Sound 지원
-    * 휠이 돌아가면서 값이 변화할 때마다 사용자에게 Feedback을 줄 수 있는 Sound 설정가능 
-    * Sound Source는 Simulator에서 추출함
+*  인디케이터 제공
+    * 스크롤이 되어 접힌 셀이 존재할 때, 유저에게 인지 시키기 위해 인디케이터(수평 바)를 표시함
+    * 인디케이터 커스텀 가능        
+*  일반적인 콜렉션뷰에서 제공하는 델리게이트(`MGUFlowViewDelegate`) 제공
+*  Diffable 기반으로 Update
+*  현재까지는 Scroll Direction은 vertical만 지원함. 필요성이 발생하면 기능 추가하겠음
 *  Interface Builder에서 설정가능 - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`         
