@@ -106,7 +106,6 @@ self.flowView.transformer = transformer;
 
 ## Documentation
 
-
 <details> 
 <summary>👇🖱️ Folding Style : Layout 알고리즘</summary>
 <hr>
@@ -171,6 +170,62 @@ self.flowView.transformer = transformer;
                 attributes.alpha = -attributes.position / 2.0;
             }
             attributes.center = CGPointMake(attributes.center.x, attributes.center.y - (attributes.position * itemSpacing) - margin);
+            attributes.zIndex = 1000;
+        }
+    }
+    return;
+}
+
+```
+
+<details> 
+<summary>👇🖱️ Vega Style : Layout 알고리즘</summary>
+<hr>
+
+> <strong>Note:</strong> `UICollectionViewLayoutAttributes` 을 서브 클래싱하여 `position` 프라퍼티를 추가하고 이를 통해 offset에 따른 현재 cell이 기준선(밑으로 잠기는 라인)에서의 거리를 디텍팅하여 `transform3D`, `alpha`를 적용하여 적절한 최종적인 layout을 결정하게한다.
+
+```objective-c
+
+- (void)applyTransformTo:(MGUFlowCellLayoutAttributes *)attributes {
+    if (self.flowView == nil) {
+        return;
+    }
+    
+    MGUFlowLayout *collectionViewLayout = (MGUFlowLayout *)(self.flowView.collectionViewLayout);
+    CGFloat itemSpacing = collectionViewLayout.itemSpacing;
+    if (attributes.representedElementCategory == UICollectionElementCategoryCell) {
+        if (attributes.position >= 0.0) {
+            attributes.alpha = 1.0;
+            attributes.transform3D = CATransform3DIdentity;
+            attributes.zIndex = 0;
+        } else {
+            CGFloat yTranslate = (self.flowView.reversed == YES) ? attributes.position * itemSpacing : -attributes.position * itemSpacing;
+            CGFloat scaleFactor = (attributes.position / 10.0) + 1.0; // 분모를 작게 하면 확 줄어든다.
+            scaleFactor = MIN(1.0, MAX(0.0, scaleFactor));
+            CGFloat alphaFactor = (attributes.position / 5.0) + 1.0;
+            alphaFactor = MIN(1.0, MAX(0.0, alphaFactor));
+            CATransform3D transform = CATransform3DTranslate(CATransform3DIdentity, 0.0, yTranslate, 0.0);
+            transform = CATransform3DScale(transform, scaleFactor, scaleFactor, 1.0);
+            attributes.transform3D = transform;
+            attributes.zIndex = (NSInteger)(floor(attributes.position) - 1.0);
+            attributes.alpha = alphaFactor;
+        }
+    } else if (attributes.representedElementCategory == UICollectionElementCategorySupplementaryView) {
+        if ([attributes.representedElementKind isEqualToString:MGUFlowElementKindVegaLeading]) {
+            CGFloat margin = (itemSpacing - self.proposedInteritemSpacing + collectionViewLayout.actualLeadingSpacing) / 2.0;
+            margin = margin + (attributes.position * itemSpacing);
+            if (self.flowView.reversed == YES) {
+                margin = margin * -1.0;
+            }
+            
+            if (attributes.position >= 0.0) {
+                attributes.alpha = 0.0;
+            } else if (attributes.position <= -1.0) {
+                attributes.alpha = 1.0;
+            } else { // - 1 < < 0.0 => 알파1.0 ~ 알파0.0
+                attributes.alpha = ABS(attributes.position);
+            }
+            attributes.center = CGPointMake(attributes.center.x, attributes.center.y - margin);
             attributes.zIndex = 1000;
         }
     }
