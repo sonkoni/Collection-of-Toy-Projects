@@ -33,6 +33,7 @@
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability
 *  Support **iOS**(***MGUStepper***) and **macOS**(***MGAStepper***).
+*  Written in Objective-C
 
 
 ## Preview

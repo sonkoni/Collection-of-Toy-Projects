@@ -20,6 +20,7 @@
 *  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
     * `UIImpactFeedbackGenerator` 이용하여 구현함
 *  **Swift** and **Objective-C** compatability
+*  Written in Objective-C
 
 
 ## Preview

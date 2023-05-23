@@ -26,6 +26,7 @@
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`         
 *  **Swift** and **Objective-C** compatability
+*  Written in Objective-C
 
 
 ## Preview

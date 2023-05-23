@@ -16,6 +16,7 @@
 *  애니메이팅 + 리벌스 애니메이팅 가능
 *  HSB 기반 랜덤 칼라(보더, 면) 가능
 *  **Swift** and **Objective-C** compatability 
+*  Written in Objective-C
 
 ## Preview
 > - n각형 생성 및 회전

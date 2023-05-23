@@ -22,6 +22,7 @@
     * Driven Sound와 Scroll Sound의 소리 종류 및 간격을 각각 다르게 설정함
 *  손가락이 접촉한 상태에는 스크롤의 저항을 표현하기 위해 Easing 함수를 이용함.
 *  **Swift** and **Objective-C** compatability
+*  Written in Objective-C
 
 
 ## Preview

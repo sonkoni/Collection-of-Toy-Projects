@@ -31,6 +31,7 @@
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability
 *  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
+*  Written in Objective-C
 
 
 ## Preview

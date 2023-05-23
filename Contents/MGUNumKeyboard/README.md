@@ -22,6 +22,7 @@
 *  Delete 버튼 long press 지원    
     * long press 시, 일정한 간격으로 반복적으로 호출되어 실행된다. 
 *  **Swift** and **Objective-C** compatability
+*  Written in Objective-C
 
 
 ## Preview
