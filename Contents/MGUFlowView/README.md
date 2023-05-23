@@ -252,7 +252,7 @@ self.flowView.transformer = transformer;
 > > 	self.tableView.layer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0.0, 0.0, 1.0);
 > > 	cell.layer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0.0, 0.0, 1.0);
 > > 	```
-> >     **Trick**으로 만들어지는 외관 | **Trick**으로 Drag & Drop에서 발생하는 문제 | **Trick**으로 스크롤에서 발생하는 문제
+> >     **Trick**으로 만들어지는 외관 | **Trick**으로 Drag & Drop에서 문제발생 | **Trick**으로 스크롤에서 문제발생
 > >     :---:|:---:|:---:
 > >     <img src="./screenshot/Simulator Screen Shot - iPhone 14 - 2023-05-24 at 00.39.06.jpg" width="220">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.41.00.gif" width="220">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.45.34.gif" width="220">
 
