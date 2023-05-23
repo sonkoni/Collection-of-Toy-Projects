@@ -8,7 +8,7 @@
 - 손가락으로 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤
     - `UIControl` 를 기반으로 제작함
 - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
-<p align="center"><img src="./screenshot/230523b1.jpg" width="400"></p>
+<p align="center"><img src="./screenshot/230523b1.jpg" width="500"></p>
 
 
 ## Features
