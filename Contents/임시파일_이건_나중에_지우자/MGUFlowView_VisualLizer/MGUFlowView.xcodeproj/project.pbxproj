@@ -38,14 +38,12 @@
 		84E5560F2A1C676D00127417 /* ViewControllerF.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5560E2A1C676D00127417 /* ViewControllerF.m */; };
 		84E556132A1C67F700127417 /* ViewControllerG.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E556102A1C67F700127417 /* ViewControllerG.xib */; };
 		84E556142A1C67F700127417 /* ViewControllerG.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556122A1C67F700127417 /* ViewControllerG.m */; };
-		84E5561C2A1C6D1500127417 /* LNTouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E5561B2A1C6D0F00127417 /* LNTouchVisualizer.framework */; };
-		84E5561D2A1C6D1500127417 /* LNTouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E5561B2A1C6D0F00127417 /* LNTouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84E5561A2A1C6D0F00127417 /* PBXContainerItemProxy */ = {
+		84E556312A1CB7DD00127417 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84E556162A1C6D0F00127417 /* LNTouchVisualizer.xcodeproj */;
+			containerPortal = 84E5562D2A1CB7DD00127417 /* LNTouchVisualizer.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 39C38069260B783E00ACF910;
 			remoteInfo = LNTouchVisualizer;
@@ -70,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84E5561D2A1C6D1500127417 /* LNTouchVisualizer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +127,7 @@
 		84E556102A1C67F700127417 /* ViewControllerG.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerG.xib; sourceTree = "<group>"; };
 		84E556112A1C67F700127417 /* ViewControllerG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerG.h; sourceTree = "<group>"; };
 		84E556122A1C67F700127417 /* ViewControllerG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerG.m; sourceTree = "<group>"; };
-		84E556162A1C6D0F00127417 /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
+		84E5562D2A1CB7DD00127417 /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
 		84E66C442A14996E001CCF28 /* 230520a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230520a2.jpg; sourceTree = "<group>"; };
 		84E66C452A149CC8001CCF28 /* 230520b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230520b1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +139,6 @@
 			files = (
 				84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */,
 				84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */,
-				84E5561C2A1C6D1500127417 /* LNTouchVisualizer.framework in Frameworks */,
 				84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */,
 				84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */,
 			);
@@ -154,7 +150,7 @@
 		845902ED28F0D71600E50B56 = {
 			isa = PBXGroup;
 			children = (
-				84E556162A1C6D0F00127417 /* LNTouchVisualizer.xcodeproj */,
+				84E5562D2A1CB7DD00127417 /* LNTouchVisualizer.xcodeproj */,
 				8459030D28F0D7BB00E50B56 /* README.md */,
 				8498FF452A0B754E00E3A721 /* screenshot */,
 				845902F828F0D71600E50B56 /* MGUFlowView */,
@@ -316,10 +312,10 @@
 			path = "SwipeCell BackgroudView";
 			sourceTree = "<group>";
 		};
-		84E556172A1C6D0F00127417 /* Products */ = {
+		84E5562E2A1CB7DD00127417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84E5561B2A1C6D0F00127417 /* LNTouchVisualizer.framework */,
+				84E556322A1CB7DD00127417 /* LNTouchVisualizer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,8 +371,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 84E556172A1C6D0F00127417 /* Products */;
-					ProjectRef = 84E556162A1C6D0F00127417 /* LNTouchVisualizer.xcodeproj */;
+					ProductGroup = 84E5562E2A1CB7DD00127417 /* Products */;
+					ProjectRef = 84E5562D2A1CB7DD00127417 /* LNTouchVisualizer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -387,11 +383,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		84E5561B2A1C6D0F00127417 /* LNTouchVisualizer.framework */ = {
+		84E556322A1CB7DD00127417 /* LNTouchVisualizer.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = LNTouchVisualizer.framework;
-			remoteRef = 84E5561A2A1C6D0F00127417 /* PBXContainerItemProxy */;
+			remoteRef = 84E556312A1CB7DD00127417 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
