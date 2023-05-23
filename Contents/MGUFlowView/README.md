@@ -254,7 +254,7 @@ self.flowView.transformer = transformer;
 > > 	```
 > >     **Trick**으로 만들어지는 외관 | **Trick**으로 Drag&Drop시 문제발생 | **Trick**으로 스크롤에서 문제발생
 > >     :---:|:---:|:---:
-> >     <img src="./screenshot/Simulator Screen Shot - iPhone 14 - 2023-05-24 at 00.39.06.jpg" width="220">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.41.00.gif" width="220">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.45.34.gif" width="220">
+> >     <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 01.37.07.gif" width="220">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.41.00.gif" width="220">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.45.34.gif" width="220">
 
 ```objective-c
 
