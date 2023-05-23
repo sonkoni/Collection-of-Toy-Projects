@@ -178,6 +178,9 @@ self.flowView.transformer = transformer;
 
 ```
 
+</details>
+
+
 <details> 
 <summary>👇🖱️ Vega Style : Layout 알고리즘</summary>
 <hr>
