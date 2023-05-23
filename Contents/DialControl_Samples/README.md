@@ -19,6 +19,7 @@
     * 휠이 돌아가면서 값이 변화할 때마다 사용자에게 Feedback을 줄 수 있는 Sound 설정가능 
     * Sound Source는 Simulator에서 추출함     
 *  **Swift** and **Objective-C** compatability
+*  Written in Objective-C
 
 
 ## Preview
