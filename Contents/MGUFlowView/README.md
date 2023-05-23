@@ -10,7 +10,7 @@
 - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
 <p align="center"><img src="./screenshot/230523b1.jpg" width="500"></p>
 
- | Vega Style | Vega Style - Reverse
+ 
 ## Features
 *  독특한 레이아웃 지원
     * Folding Style: 스크롤 시 종이처럼 접히는 레이아웃 
