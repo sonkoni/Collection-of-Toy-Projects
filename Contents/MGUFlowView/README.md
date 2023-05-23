@@ -32,7 +32,7 @@
 ## Preview
 > - MGUFlowView (iOS)
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
->   - 등장하는 스와이프에 대한 예는 [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell)를 참고
+>   - Preview에 등장하는 스와이프에 대한 예는 [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell)를 참고
 
 Folding Style | Vega Style | Vega Style - Reverse
 ---|---|---
