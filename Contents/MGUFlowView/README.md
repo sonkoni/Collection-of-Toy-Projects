@@ -111,7 +111,7 @@ self.flowView.transformer = transformer;
 <summary>👇🖱️ Folding Style : Layout 알고리즘</summary>
 <hr>
 
-> <strong>Note:</strong> `for-the-badge` is the style that we chose for appearance purposes. Other styles are available at [https://shields.io/#styles](https://shields.io/#styles) and can be used with the badges here. Thanks, @kingthorin for mentioning this!
+> <strong>Note:</strong> `UICollectionViewLayoutAttributes` 을 서브 클래싱하여 `position` 프라퍼티를 추가하여 현재 cell이 기준선(접혀야하는 라인)에서의 위치를 디텍팅하고, 자신이 index가 짝수인지 홀수 인지에 따라서 `transform3D`를 적용하여 적절한 위치를 갖게한다.
 
 ```objective-c
 
