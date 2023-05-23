@@ -108,8 +108,10 @@ self.flowView.transformer = transformer;
 
 
 <details> 
-<summary>👇(🖱️) Folding Style : Layout 알고리즘</summary>
+<summary>👇🖱️ Folding Style : Layout 알고리즘</summary>
 <hr>
+
+> <strong>Note:</strong> `for-the-badge` is the style that we chose for appearance purposes. Other styles are available at [https://shields.io/#styles](https://shields.io/#styles) and can be used with the badges here. Thanks, @kingthorin for mentioning this!
 
 ```objective-c
 
