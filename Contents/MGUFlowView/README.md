@@ -106,8 +106,72 @@ self.flowView.transformer = transformer;
 
 ## Documentation
 
-- DialControl의 Behavior를 위한 설계도
-<img src="./screenshot/230520a2.jpg" width="1000">
+* Folding Style : Layout 알고리즘
+```objective-c
+
+- (void)applyTransformTo:(MGUFlowCellLayoutAttributes *)attributes {
+    if (self.flowView == nil) {
+        return;
+    }
+    MGUFlowLayout *collectionViewLayout = (MGUFlowLayout *)(self.flowView.collectionViewLayout);
+    CGFloat itemSpacing = collectionViewLayout.itemSpacing;
+    
+    if (attributes.representedElementCategory == UICollectionElementCategoryCell) {
+        if (attributes.position >= 1.0 ||
+            (attributes.position >= 0.0 && attributes.indexPath.item % 2 == 0)) { // 기준선에 확 못 미치거나, 짝수 인덱스 (0, 2...) 일때에는 0.0
+            attributes.alpha = 1.0;
+            attributes.transform3D = CATransform3DIdentity;
+            attributes.zIndex = 0;
+        } else if (attributes.position <= - 2.0 ||
+              (attributes.position <= - 1.0 && attributes.indexPath.item % 2 == 1) ) { // 아예 감춰라. 바때문이라도 이건 감춰야한다.
+            attributes.alpha = 0.0;
+            attributes.transform3D = CATransform3DIdentity;
+            attributes.zIndex = 0;
+            return;
+        } else {
+            CATransform3D transform3D = CATransform3DIdentity;
+            transform3D.m34 = -1.0 / self.eyePosition;  // 음수로 커질 수록(작으질 수록) 더 많이 꺾인다.
+            attributes.center = CGPointMake(attributes.center.x, attributes.center.y - attributes.position * itemSpacing);
+            if (attributes.indexPath.item % 2 == 0) { // 짝수 인덱스. 0.0 <~< -2.0 까지 변한다. 윗 부분.
+                // 면적으로 결정하는 것이 합당할 듯하다.
+                CGFloat area = ((itemSpacing / 2.0) * attributes.position) + itemSpacing;
+                CGFloat rotateRadian = -acos(area / itemSpacing);
+                CGFloat yTranslate1 = itemSpacing/2.0 + (-cos(rotateRadian) *(itemSpacing / 2.0)); // 회전으로 인해 땡겨야하는 부분.
+                CGFloat zTranslate = sin(rotateRadian) * (itemSpacing / 2.0);
+                transform3D = CATransform3DTranslate(transform3D, 0.0, 0.0, zTranslate);
+                transform3D = CATransform3DTranslate(transform3D, 0.0, -yTranslate1, 0.0);
+                transform3D = CATransform3DRotate(transform3D, rotateRadian, 1.0, 0.0, 0.0);
+                attributes.transform3D = transform3D;
+            } else { // 홀수 인덱스. 1.0 <~< -1.0 까지 변한다. 아랫 부분.
+                CGFloat area = ((itemSpacing / 2.0) * attributes.position) + itemSpacing / 2.0;
+                CGFloat rotateRadian = acos(area / itemSpacing);
+                CGFloat yTranslate1 = itemSpacing/2.0 - (cos(rotateRadian) *(itemSpacing / 2.0)); // 회전으로 인해 땡겨야하는 부분.
+                CGFloat yTranslate = itemSpacing - (3.0 * yTranslate1);
+                CGFloat zTranslate = -sin(rotateRadian) * (itemSpacing / 2.0);
+                transform3D = CATransform3DTranslate(transform3D, 0.0, 0.0, zTranslate);
+                transform3D = CATransform3DTranslate(transform3D, 0.0, yTranslate, 0.0);
+                transform3D = CATransform3DRotate(transform3D, rotateRadian, 1.0, 0.0, 0.0);
+                attributes.transform3D = transform3D;
+            }
+        }
+    } else if (attributes.representedElementCategory == UICollectionElementCategorySupplementaryView) {
+        if ([attributes.representedElementKind isEqualToString:MGUFlowElementKindFoldLeading]) {
+            CGFloat margin = (itemSpacing + collectionViewLayout.actualLeadingSpacing) / 2.0;
+            if (attributes.position >= 0.0) {
+                attributes.alpha = 0.0;
+            } else if (attributes.position <= -2.0) {
+                attributes.alpha = 1.0;
+            } else { // - 2 < < 0.0 => 알파1.0 ~ 알파0.0
+                attributes.alpha = -attributes.position / 2.0;
+            }
+            attributes.center = CGPointMake(attributes.center.x, attributes.center.y - (attributes.position * itemSpacing) - margin);
+            attributes.zIndex = 1000;
+        }
+    }
+    return;
+}
+
+```
 
 ## Author
 
