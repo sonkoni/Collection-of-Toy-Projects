@@ -51,11 +51,30 @@ dialControl.addTarget(self, action:#selector(dialValueChanged(_:)), for: .valueC
 > Objective-C
 ```objective-c
 
-sound = [MGOSoundRuler rulerSound];
-MMTDialControl *dialControl = [MMTDialControl new];
-dialControl.normalSoundPlayBlock = [sound playSoundTickHaptic];
-[self.view addSubview:dialControl];
-[dialControl addTarget:self action:@selector(dialValueChanged:) forControlEvents:UIControlEventValueChanged];
+CGFloat width = UIScreen.mainScreen.bounds.size.width - (2 * 20.0);
+self->_itemSize = CGSizeMake(width, 65.0);
+
+self.flowView  = [MGUFlowView new];
+[self.flowView registerClass:[MGUFlowFoldCell class]
+      forCellWithReuseIdentifier:NSStringFromClass([MGUFlowFoldCell class])];
+    
+[self.flowView registerClass:[MGUFlowIndicatorSupplementaryView class]
+  forSupplementaryViewOfKind:MGUFlowElementKindFoldLeading
+         withReuseIdentifier:MGUFlowElementKindFoldLeading];
+
+self.flowView.itemSize = self.itemSize;
+self.flowView.leadingSpacing = 20.0;
+self.flowView.interitemSpacing = 0.0;
+self.flowView.scrollDirection = UICollectionViewScrollDirectionVertical;
+self.flowView.decelerationDistance = [MGUFlowView automaticDistance];
+self.flowView.transformer = nil;
+self.flowView.delegate = self;
+self.flowView.bounces = YES;
+self.flowView.alwaysBounceVertical = YES;
+self.flowView.clipsToBounds = YES;
+MGUFlowFoldTransformer *transformer = [MGUFlowFoldTransformer new];
+self.flowView.transformer = transformer;
+[self.view addSubview:self.flowView];
 
 ```
 
