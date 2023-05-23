@@ -106,7 +106,11 @@ self.flowView.transformer = transformer;
 
 ## Documentation
 
-* Folding Style : Layout 알고리즘
+
+<details> 
+<summary>👇 Folding Style : Layout 알고리즘</summary>
+<hr>
+
 ```objective-c
 
 - (void)applyTransformTo:(MGUFlowCellLayoutAttributes *)attributes {
@@ -172,6 +176,9 @@ self.flowView.transformer = transformer;
 }
 
 ```
+
+</details>
+
 
 ## Author
 
