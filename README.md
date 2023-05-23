@@ -58,13 +58,13 @@
 ### Ruler
 - [MGURulerView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURulerView) - 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView 
 ### Segmented Control
-- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - UISegmentedControl를 대체할 수 있는 커스텀 SegmentedControl.
+- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - `UISegmentedControl`를 대체할 수 있는 커스텀 SegmentedControl.
 
 ### Stepper
-- [MGUStepper, MGAStepper](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/Stepper) - UIStepper 및 NSStepper를 대체할 수 있는 커스텀 Stepper
+- [MGUStepper, MGAStepper](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/Stepper) - `UIStepper` 및 `NSStepper`를 대체할 수 있는 커스텀 Stepper
     
 ### Switch
-- [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - UISwitch 및 NSSwitch를 대체할 수 있는 커스텀 스위치
+- [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - `UISwitch` 및 `NSSwitch`를 대체할 수 있는 커스텀 스위치
 - [MGUOnOffButton](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUOnOffButton) - Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼.
 - [MGUFlatSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlatSwitch) - 완료 및 체크를 상징하는 커스텀 스위치
 
@@ -74,7 +74,7 @@
 - [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell) - TODO: SwipeCell ????? 문구 적어라.
 
 #### Collection View
-- [MGUFlowView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlowView) - TODO: MGUFlowView ?????? 문구 적어라.
+- [MGUFlowView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlowView) - `UITableView` 대체할 수 있는 독특한 레이아웃을 제공하는 TableView.
 
 **[back to top](#contents)**
 
