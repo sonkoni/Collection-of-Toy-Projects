@@ -245,7 +245,8 @@ self.flowView.transformer = transformer;
 <hr>
 
 > <strong>Note:</strong> `UICollectionViewLayout` 을 서브 클래싱하여 `prepareLayout`  메서드를 재정의하여 컨텐츠가 최소한 콜렉션뷰 프레임보다는 같거나 크게 해야 역순으로 넣을 수 있는 공간이 확보된다.
-> > CollectionView(또는 TableView) 자체를 𝛑 라디안만큼 z 축으로 회전시키고 각 cell을 𝛑 라디안만큼 z 축으로 회전시키는 Trick으로 역순의 정렬을 만들 수도 있지만, Drag & Drop을 이용할 경우 스타트 시점에 cell이 회전하는 움직임이 발생한다. 따라서 이러한 Trick은 지양해야한다. 처음에는 이 Trick을 사용하려 했지만 이런 문제가 있어 CollectionView를 이용하여 만들었다.
+> > CollectionView(또는 TableView) 자체를 𝛑 라디안만큼 z 축으로 회전시키고 각 cell을 𝛑 라디안만큼 z 축으로 회전시키는 Trick으로 역순의 정렬을 만들 수도 있지만, Drag & Drop을 이용할 경우 스타트 시점에 𝛑 라디안만큼 cell이 회전하는 불편한 사용자 경험을 제공한다. 따라서 이러한 ***Trick***은 지양해야한다. 처음에는 이 Trick을 사용하려 했지만 이런 문제가 있어 CollectionView를 이용하여 만들었다.
+    
 
 ```objective-c
 
