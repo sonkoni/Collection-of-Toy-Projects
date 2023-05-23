@@ -5,9 +5,9 @@
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
 ## **MGUFlowView**
-- 손가락으로 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤
-    - `UIControl` 를 기반으로 제작함
-- [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
+- 스크롤 시 접히는 종이처럼 접히는 Layout과 역순(아래에서 부터) 정렬 가능하며 말단에서 말려들어가는 Layout을 지원하는 Table View를 대체할 수 있는 Component  
+    - `UICollectionViewLayout`, `UICollectionViewLayoutAttributes` 를 서브클래싱하여 제작함
+- [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
 <p align="center"><img src="./screenshot/230523b1.jpg" width="500"></p>
 
 
@@ -17,13 +17,16 @@
 *  제스처가 시작되고 중심으로부터 일정한 Radius를 벗어나면 제스처를 disable 시켜서 오작동을 방지함    
 *  Sound 지원
     * 휠이 돌아가면서 값이 변화할 때마다 사용자에게 Feedback을 줄 수 있는 Sound 설정가능 
-    * Sound Source는 Simulator에서 추출함     
+    * Sound Source는 Simulator에서 추출함
+*  Interface Builder에서 설정가능 - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
+    * Swift : `@IBDesignable` `@IBInspectable`
+    * Objective-C : `IB_DESIGNABLE` `IBInspectable`         
 *  **Swift** and **Objective-C** compatability
 
 
 ## Preview
 > - MGUFlowView (iOS)
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
+>   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
 
 
 Folding Style | Vega Style | Vega Style - Reverse
