@@ -41,11 +41,13 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // MARK: - 생성 & 소멸
     private func setupAppearanceProxy() {
         let appearance = UINavigationBarAppearance.init();
-        appearance.backgroundColor = .systemMint // 내비게이션 바 자체 색
+        appearance.backgroundColor = .systemGroupedBackground  // 내비게이션 바 자체 색
         appearance.shadowColor = UIColor.clear
         appearance.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont(name:"Futura", size:18.0)!,
-            NSAttributedString.Key.foregroundColor: UIColor.white  // 가운데 타이틀 색
+            NSAttributedString.Key.foregroundColor: UIColor.black  // 가운데 타이틀 색
+        ]
+        appearance.largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.black  // 가운데 타이틀 색
         ]
         
         let backButtonAppearance = UIBarButtonItemAppearance.init(style:UIBarButtonItem.Style.plain)

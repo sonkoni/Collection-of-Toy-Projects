@@ -24,7 +24,7 @@ final class MainTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "MGUFlowView"
+        title = "Swipe Cell"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -36,6 +36,8 @@ final class MainTableViewController: UIViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at:indexPath, animated:true)  // 원래 뷰로 돌아 올때, 셀렉션을 해제시킨다. 이게 더 멋지다.
         }
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
     }
 }
 

@@ -22,6 +22,7 @@
 *  일반적인 콜렉션뷰에서 제공하는 델리게이트(`MGUFlowViewDelegate`) 제공
 *  Diffable 기반으로 Update
 *  현재까지는 Scroll Direction은 vertical만 지원함. 필요성이 발생하면 기능 추가하겠음
+*  **랭귀지 다이렉션 어필**
 *  Interface Builder에서 설정가능 - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`         

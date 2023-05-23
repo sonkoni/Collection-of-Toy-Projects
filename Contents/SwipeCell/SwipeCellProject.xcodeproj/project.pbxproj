@@ -113,6 +113,9 @@
 		84E5562B2A1C93D600127417 /* Shot-iPhone14ProMax-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shot-iPhone14ProMax-6.jpg"; sourceTree = "<group>"; };
 		84E5563B2A1CCAF300127417 /* 230523c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230523c1.jpg; sourceTree = "<group>"; };
 		84E5563C2A1CCD5B00127417 /* 230523c2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230523c2.jpg; sourceTree = "<group>"; };
+		84E5563E2A1CF02C00127417 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		84E5563F2A1CF03D00127417 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		84E556402A1CF04900127417 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		84E66C442A14996E001CCF28 /* 230520a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230520a2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -344,6 +347,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				ko,
+				"en-GB",
 			);
 			mainGroup = 845902ED28F0D71600E50B56;
 			productRefGroup = 845902F728F0D71600E50B56 /* Products */;
@@ -406,6 +412,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				8459030528F0D71700E50B56 /* Base */,
+				84E5563E2A1CF02C00127417 /* ar */,
+				84E5563F2A1CF03D00127417 /* ko */,
+				84E556402A1CF04900127417 /* en-GB */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -417,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -477,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
