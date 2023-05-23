@@ -58,7 +58,7 @@
 ### Ruler
 - [MGURulerView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURulerView) - 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView 
 ### Segmented Control
-- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - UISegmentedControl를 대체할 수 있는 커스텀 SegmentedControl. Written in Objective-C.
+- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - UISegmentedControl를 대체할 수 있는 커스텀 SegmentedControl.
 
 ### Stepper
 - [MGUStepper, MGAStepper](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/Stepper) - UIStepper 및 NSStepper를 대체할 수 있는 커스텀 Stepper
