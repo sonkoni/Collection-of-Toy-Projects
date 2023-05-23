@@ -240,6 +240,101 @@ self.flowView.transformer = transformer;
 </details>
 
 
+<details> 
+<summary>👇🖱️ 역순으로 정렬되는 Layout을 확보하기 위한 아이디어</summary>
+<hr>
+
+> <strong>Note:</strong> `UICollectionViewLayout` 을 서브 클래싱하여 `prepareLayout`  메서드를 재정의하여 컨텐츠가 최소한 콜렉션뷰 프레임보다는 같거나 크게 해야 역순으로 넣을 수 있는 공간이 확보된다.
+
+```objective-c
+
+- (void)prepareLayout {
+    if (self.collectionView == nil || self.flowView == nil) {
+        return;
+    }
+    if (self.needsReprepare == NO && CGSizeEqualToSize(self.collectionViewSize, self.collectionView.frame.size)) {
+        return;
+    }
+    
+    self.needsReprepare = NO;
+    self.collectionViewSize = self.collectionView.frame.size;
+    MGUFlowDiffableDataSource *dataSource = self.collectionView.dataSource;
+    NSDiffableDataSourceSnapshot *snapshot = (dataSource.tempSnapshot != nil)? dataSource.tempSnapshot : [dataSource snapshot];
+    self.numberOfSections = snapshot.numberOfSections;
+    self.numberOfItems = (self.numberOfSections == 0) ? 0 : (snapshot.numberOfItems / snapshot.numberOfSections);
+    
+    CGSize size = self.flowView.itemSize;
+    if (CGSizeEqualToSize(size, CGSizeZero)) {
+        self.actualItemSize = self.collectionView.frame.size;
+    } else {
+        self.actualItemSize = size;
+    }
+
+    if (self.flowView.transformer != nil) {
+        self.actualInteritemSpacing = [self.flowView.transformer proposedInteritemSpacing];
+    } else {
+        self.actualInteritemSpacing = self.flowView.interitemSpacing;
+    }
+    
+    self.scrollDirection = self.flowView.scrollDirection;
+    self.actualLeadingSpacing  = self.flowView.leadingSpacing;
+    self.reversed = self.flowView.reversed;
+    
+    self.itemSpacing = (self.scrollDirection == UICollectionViewScrollDirectionHorizontal ? self.actualItemSize.width : self.actualItemSize.height) + self.actualInteritemSpacing;
+
+    // contentSize 계산 및 캐시하여, 매번 계산하지 않게한다.
+    NSInteger numberOfItems = self.numberOfItems * self.numberOfSections;
+    if (self.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+        CGFloat contentSizeWidth = self.actualLeadingSpacing * 2.0; // Leading & trailing spacing
+        contentSizeWidth += (numberOfItems - 1) * self.actualInteritemSpacing; // Interitem spacing
+        contentSizeWidth += numberOfItems * self.actualItemSize.width; // Item sizes
+        //! reverse를 위해서 최소한 collectionView 의 크기만큼은 확보한다.
+        contentSizeWidth = MAX(contentSizeWidth, self.collectionView.frame.size.width);
+        self.contentSize = CGSizeMake(contentSizeWidth, self.collectionView.frame.size.height);
+        
+        //! paging을 위해서는 추가적인 size가 필요할 가능성이 높다.
+        if (contentSizeWidth != self.collectionView.frame.size.width) {
+            CGFloat maxOffset = contentSizeWidth - self.collectionView.frame.size.width;
+            CGFloat itemSpacing = self.itemSpacing;
+            if ([self.flowView.transformer isKindOfClass:[MGUFlowFoldTransformer class]] == YES) {
+                itemSpacing = itemSpacing * 2.0; // 두 칸씩 멈춘다.
+            }
+            CGFloat remainder = fmod(maxOffset, itemSpacing);
+            if (remainder > FLT_EPSILON) { // 보정하라.
+                CGFloat additionalMargin = itemSpacing - remainder;
+                self.contentSize = CGSizeMake(self.contentSize.width + additionalMargin, self.contentSize.height);
+            }
+        }
+    } else {
+        CGFloat contentSizeHeight = self.actualLeadingSpacing * 2; // Leading & trailing spacing
+        contentSizeHeight += (numberOfItems - 1) * self.actualInteritemSpacing; // Interitem spacing
+        contentSizeHeight += numberOfItems * self.actualItemSize.height; // Item sizes
+        contentSizeHeight = MAX(contentSizeHeight, self.collectionView.frame.size.height);
+        self.contentSize = CGSizeMake(self.collectionView.frame.size.width, contentSizeHeight);
+        
+        //! paging을 위해서는 추가적인 size가 필요할 가능성이 높다.
+        if (contentSizeHeight != self.collectionView.frame.size.height) {
+            CGFloat maxOffset = contentSizeHeight - self.collectionView.frame.size.height;
+            CGFloat itemSpacing = self.itemSpacing;
+            if ([self.flowView.transformer isKindOfClass:[MGUFlowFoldTransformer class]] == YES) {
+                itemSpacing = itemSpacing * 2.0; // 두 칸씩 멈춘다.
+            }
+            CGFloat remainder = fmod(maxOffset, itemSpacing);
+            if (remainder > FLT_EPSILON) { // 보정하라.
+                CGFloat additionalMargin = itemSpacing - remainder;
+                self.contentSize = CGSizeMake(self.contentSize.width, self.contentSize.height + additionalMargin);
+            }
+        }
+    }
+    
+    [self adjustCollectionViewBounds];
+}
+
+```
+
+</details>
+
+
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com 
