@@ -108,7 +108,7 @@ self.flowView.transformer = transformer;
 
 
 <details> 
-<summary>👇(클릭) Folding Style : Layout 알고리즘</summary>
+<summary>👇(Click) Folding Style : Layout 알고리즘</summary>
 <hr>
 
 ```objective-c
