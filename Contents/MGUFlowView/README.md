@@ -40,11 +40,29 @@ Folding Style | Vega Style | Vega Style - Reverse
 > Swift
 ```swift
 
-sound = MGOSoundRuler.rulerSound
-let dialControl = MMTDialControl()
-dialControl.normalSoundPlayBlock = sound?.playSoundTickHaptic()
-view.addSubview(dialControl)
-dialControl.addTarget(self, action:#selector(dialValueChanged(_:)), for: .valueChanged)
+let width = UIScreen.main.bounds.width - (2 * 20.0)
+let itemSize = CGSize(width: width, height: 65.0)
+let flowView = MGUFlowView()
+self.itemSize = itemSize
+self.flowView = flowView
+flowView.register(MGUFlowFoldCell.self, forCellWithReuseIdentifier: NSStringFromClass(MGUFlowFoldCell.self))
+flowView.register(MGUFlowIndicatorSupplementaryView.self,
+                   forSupplementaryViewOfKind: MGUFlowElementKindFold.leading.rawValue,
+                   withReuseIdentifier: MGUFlowElementKindFold.leading.rawValue)
+        
+flowView.itemSize = itemSize
+flowView.leadingSpacing = 20.0
+flowView.interitemSpacing = 0.0
+flowView.scrollDirection = .vertical
+flowView.decelerationDistance = MGUFlowView.automaticDistance
+flowView.transformer = nil
+flowView.delegate = self
+flowView.bounces = true
+flowView.alwaysBounceVertical = true
+flowView.clipsToBounds = true
+let transformer = MGUFlowFoldTransformer()
+flowView.transformer = transformer
+view.addSubview(flowView)
 
 ```
 
