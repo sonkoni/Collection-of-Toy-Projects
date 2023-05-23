@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LNTouchVisualizer
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -29,6 +30,20 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nav = UINavigationController.init(rootViewController:mainViewController)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
+    
+        scene.touchVisualizerEnabled = true
+        let rippleConfig = LNTouchConfig.ripple
+        rippleConfig.fillColor = .systemBlue
+        rippleConfig.strokeColor = .systemBlue
+        rippleConfig.alpha = 0.1
+        let contactConfig = LNTouchConfig.touchConfig
+        contactConfig.fillColor = .systemBlue
+        contactConfig.strokeColor = .systemBlue
+        contactConfig.alpha = 0.4
+        scene.touchVisualizerWindow.touchRippleConfig = rippleConfig
+        scene.touchVisualizerWindow.touchContactConfig = contactConfig
+        scene.touchVisualizerWindow.isMorphEnabled = true
+        scene.touchVisualizerWindow.isTouchVisualizationEnabled = true
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}
