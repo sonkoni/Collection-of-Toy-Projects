@@ -10,8 +10,12 @@
 - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
 <p align="center"><img src="./screenshot/230523b1.jpg" width="500"></p>
 
-
+ | Vega Style | Vega Style - Reverse
 ## Features
+*  독특한 레이아웃 지원
+    * Folding Style: 스크롤 시 종이처럼 접히는 레이아웃 
+    * Vega Style: 스크롤 시 끝단에서 말리는 레이아웃 제공
+        * reverse order 기능 존재함. 아이템이 아래에서부터 차오른다. - [Preview](#preview) 참고.
 *  휠의 회전으로 입력값을 설정 가능케 함
     * 손잡이 부분이 아니라도 휠 반경 전체에서 제스처 동작이 시작될 수 있음
 *  제스처가 시작되고 중심으로부터 일정한 Radius를 벗어나면 제스처를 disable 시켜서 오작동을 방지함    
