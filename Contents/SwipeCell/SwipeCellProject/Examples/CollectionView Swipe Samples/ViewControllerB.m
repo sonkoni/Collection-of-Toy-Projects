@@ -19,7 +19,6 @@
 @property (nonatomic, assign) ButtonStyle buttonStyle;
 @property (nonatomic, assign) MGUSwipeTransitionAnimationType transitionAnimationType;
 @property (nonatomic, assign) BOOL usesTallCells;
-
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewDiffableDataSource <NSNumber *, EmailCellModel *>*diffableDataSource;
 @property (nonatomic, assign) MailCollectionLayoutType type;
@@ -164,6 +163,7 @@ static void CommonInit(ViewControllerB *self) {
     [self.diffableDataSource applySnapshot:snapshot animatingDifferences:YES completion:^{}];
 }
 
+
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
@@ -195,16 +195,9 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section {
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [self.collectionView deselectItemAtIndexPath:indexPath animated:YES];
-//    [self.navigationController pushViewController:[ViewController new] animated:YES];
-    //
-//    if (self.tableView.editing == YES) {
-//        return;
-//    } else {
-//        [self.navigationController pushViewController:[ViewController new] animated:YES];
-//    }
 }
 
-//! 물론 cell.maskView 자체가 없기는 하지만, 이걸 해야할 필요가 있을까??
+//! 물론 cell.maskView 자체가 없기는 하지만, 이걸 해야할 필요가 있을까?
 - (void)collectionView:(UICollectionView *)collectionView
        willDisplayCell:(CollectionViewEmailCell *)cell
     forItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -215,7 +208,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 
 
 #pragma mark - <MGUSwipeCollectionViewCellDelegate>
-//!------------------------------------------------- @required
+#pragma mark - @required
 - (MGUSwipeActionsConfiguration *)collectionView:(UICollectionView *)collectionView
 leading_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.isSwipeRightEnabled == NO) {
@@ -369,31 +362,21 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     return configuration;
 }
 
-//!------------------------------------------------- @optional
-- (void)collectionView:(UICollectionView *)collectionView
-willBeginLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-//    CollectionViewEmailCell *cell = (CollectionViewEmailCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//    cell.swipeableContentView.layer.maskedCorners = kCALayerMaxXMinYCorner | kCALayerMaxXMaxYCorner; //
-}
-
-- (void)collectionView:(UICollectionView *)collectionView
-willBeginTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-//    CollectionViewEmailCell *cell = (CollectionViewEmailCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//    cell.swipeableContentView.layer.maskedCorners = kCALayerMinXMinYCorner | kCALayerMinXMaxYCorner; // 좌측
-}
-
-- (void)collectionView:(UICollectionView *)collectionView
-didEndLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
-
-- (void)collectionView:(UICollectionView *)collectionView
-didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
-
+#pragma mark - @optional
 - (CGRect)visibleRectForCollectionView:(UICollectionView *)collectionView  {
     if (self.usesTallCells == NO) {
         return CGRectNull;
     }
     return collectionView.safeAreaLayoutGuide.layoutFrame;
 }
+// - (void)collectionView:(UICollectionView *)collectionView
+// willBeginLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)collectionView:(UICollectionView *)collectionView
+// willBeginTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)collectionView:(UICollectionView *)collectionView
+// didEndLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)collectionView:(UICollectionView *)collectionView
+// didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
 
 
 #pragma mark - Action
@@ -418,7 +401,7 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
     UIAlertAction *revealAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Reveal", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionStyle =     MGUSwipeTransitionStyleReveal;
+        self.transitionStyle = MGUSwipeTransitionStyleReveal;
     }];
     
     NSString *title = [NSString stringWithFormat:@"%@ Swipe Right", self.isSwipeRightEnabled ? @"Disable" : @"Enable"];
@@ -503,12 +486,10 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
                                                            style:UIAlertActionStyleCancel
                                                         handler:nil];
-    
     [controller addAction:imageTitleAction];
     [controller addAction:imageOnlyAction];
     [controller addAction:titleOnlyAction];
     [controller addAction:cancelAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -529,7 +510,7 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
                                                                style:UIAlertActionStyleDefault
                                                             handler:^(UIAlertAction *action) {
         self.buttonStyle = circular;
-        self.transitionStyle =     MGUSwipeTransitionStyleReveal;
+        self.transitionStyle = MGUSwipeTransitionStyleReveal;
     }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
@@ -569,7 +550,6 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
     [controller addAction:normalAction];
     [controller addAction:tallAction];
     [controller addAction:cancelAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -582,31 +562,31 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
     UIAlertAction *defaultAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Default Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeDefault;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeDefault;
     }];
     
     UIAlertAction *springAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Spring Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeSpring;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeSpring;
     }];
     
     UIAlertAction *rotateAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Rotate Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeRotate;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeRotate;
     }];
     
     UIAlertAction *favoriteAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Favorite Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeFavorite;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeFavorite;
     }];
     
     UIAlertAction *noneAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"None Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeNone;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeNone;
     }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
@@ -621,6 +601,7 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
     
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
+
 
 #pragma mark - Helper
 - (void)configureAction:(MGUSwipeAction *)action with:(ActionDescriptor)descriptor {

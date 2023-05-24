@@ -76,7 +76,7 @@ static void CommonInit(ViewControllerA *self) {
     self->_buttonDisplayMode = titleAndImage;
     self->_buttonStyle = backgroundColor;
     self->_usesTallCells = NO;
-    self->_transitionAnimationType =     MGUSwipeTransitionAnimationTypeNone;
+    self->_transitionAnimationType = MGUSwipeTransitionAnimationTypeNone;
 }
 
 - (void)configureTableView {
@@ -85,7 +85,6 @@ static void CommonInit(ViewControllerA *self) {
     self.tableView.allowsMultipleSelectionDuringEditing = YES;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100.0;
-    
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([EmailCell class]) bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:nib forCellReuseIdentifier:NSStringFromClass([EmailCell class])];
 }
@@ -134,7 +133,6 @@ static void CommonInit(ViewControllerA *self) {
     [self.emails enumerateObjectsUsingBlock:^(EmailCellModel *email, NSUInteger idx, BOOL *stop) {
         email.unread = NO;
     }];
-    
     self.usesTallCells = NO;
     NSDiffableDataSourceSnapshot <NSNumber *, EmailCellModel *>*snapshot = [NSDiffableDataSourceSnapshot new];
     [snapshot appendSectionsWithIdentifiers:@[@(0)]];
@@ -153,7 +151,9 @@ static void CommonInit(ViewControllerA *self) {
 }
 
 //! 반드시 구현해줘야한다. 스크롤 왔다갔다하면 frame을 못찾는다.
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView
+  willDisplayCell:(UITableViewCell *)cell
+forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (cell.maskView != nil) {
         cell.maskView.frame = cell.bounds;
     }
@@ -161,7 +161,7 @@ static void CommonInit(ViewControllerA *self) {
 
 
 #pragma mark - <SwipeTableViewCellDelegate>
-//! @required
+#pragma mark - @required
 - (MGUSwipeActionsConfiguration *)tableView:(UITableView *)tableView
 leading_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -342,7 +342,7 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     return configuration;
 }
 
-//! @optional
+#pragma mark - @optional
 - (CGRect)visibleRectForTableView:(UITableView *)tableView {
     if (self.usesTallCells == NO) {
         return CGRectNull;
@@ -350,25 +350,14 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     return tableView.safeAreaLayoutGuide.layoutFrame;
 }
 
-- (void)tableView:(UITableView *)tableView
-willBeginLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"willBeginLeadingSwipeAtIndexPath");
-}
-
-- (void)tableView:(UITableView *)tableView
-willBeginTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"willBeginTrailingSwipeAtIndexPath");
-}
-
-- (void)tableView:(UITableView *)tableView
-didEndLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"didEndLeadingSwipeAtIndexPath");
-}
-
-- (void)tableView:(UITableView *)tableView
-didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"didEndTrailingSwipeAtIndexPath");
-}
+// - (void)tableView:(UITableView *)tableView
+// willBeginLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)tableView:(UITableView *)tableView
+// willBeginTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)tableView:(UITableView *)tableView
+// didEndLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)tableView:(UITableView *)tableView
+// didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
 
 
 #pragma mark - Action
@@ -376,57 +365,47 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Swipe Transition Style"
                                                                         message:nil
                                                                  preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    
     UIAlertAction *borderAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Border", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
         self.transitionStyle = MGUSwipeTransitionStyleBorder;
     }];
-    
     UIAlertAction *dragAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Drag", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
         self.transitionStyle = MGUSwipeTransitionStyleDrag;
     }];
-    
     UIAlertAction *revealAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Reveal", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionStyle =     MGUSwipeTransitionStyleReveal;
+        self.transitionStyle = MGUSwipeTransitionStyleReveal;
     }];
-    
     NSString *title = [NSString stringWithFormat:@"%@ Swipe Right", self.isSwipeRightEnabled ? @"Disable" : @"Enable"];
     UIAlertAction *disableOrEnableAction = [UIAlertAction actionWithTitle:title
                                                                     style:UIAlertActionStyleDefault
                                                                   handler:^(UIAlertAction *action) {
         self.isSwipeRightEnabled = !self.isSwipeRightEnabled;
     }];
-    
     UIAlertAction *buttonDisplayModeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Button Display Mode", @"")
                                                                       style:UIAlertActionStyleDefault
                                                                     handler:^(UIAlertAction *action) {
         [self buttonDisplayModeTapped];
     }];
-    
     UIAlertAction *buttonStyleAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Button Style", @"")
                                                                 style:UIAlertActionStyleDefault
                                                               handler:^(UIAlertAction *action) {
         [self buttonStyleTapped];
     }];
-    
     UIAlertAction *cellHeightAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cell Height", @"")
                                                                style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction *action) {
         [self cellHeightTapped];
     }];
-    
     UIAlertAction *transitionAnimationAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Transition Animation Type", @"")
                                                                         style:UIAlertActionStyleDefault
                                                                       handler:^(UIAlertAction *action) {
         [self transitionAnimationTapped];
     }];
-    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
                                                                style:UIAlertActionStyleCancel
                                                              handler:nil];
@@ -436,7 +415,6 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
                                                         handler:^(UIAlertAction *action) {
         [self resetData];
     }];
-    
     [controller addAction:borderAction];
     [controller addAction:dragAction];
     [controller addAction:revealAction];
@@ -447,7 +425,6 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     [controller addAction:transitionAnimationAction];
     [controller addAction:cancelAction];
     [controller addAction:resetAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -455,34 +432,28 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Button Display Mode"
                                                                         message:nil
                                                                  preferredStyle:UIAlertControllerStyleActionSheet];
-    
     UIAlertAction *imageTitleAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Image + Title", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
         self.buttonDisplayMode = titleAndImage;
     }];
-    
     UIAlertAction *imageOnlyAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Image Only", @"")
                                                                style:UIAlertActionStyleDefault
                                                             handler:^(UIAlertAction *action) {
         self.buttonDisplayMode = imageOnly;
         }];
-    
     UIAlertAction *titleOnlyAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Title Only", @"")
                                                                style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
         self.buttonDisplayMode = titleOnly;
     }];
-    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
                                                            style:UIAlertActionStyleCancel
                                                         handler:nil];
-    
     [controller addAction:imageTitleAction];
     [controller addAction:imageOnlyAction];
     [controller addAction:titleOnlyAction];
     [controller addAction:cancelAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -490,29 +461,24 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Button Style"
                                                                         message:nil
                                                                  preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    
     UIAlertAction *backgroundColorAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Background Color", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
         self.buttonStyle = backgroundColor;
         self.transitionStyle = MGUSwipeTransitionStyleBorder;
     }];
-    
     UIAlertAction *circularAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Circular", @"")
                                                                style:UIAlertActionStyleDefault
                                                             handler:^(UIAlertAction *action) {
         self.buttonStyle = circular;
-        self.transitionStyle =     MGUSwipeTransitionStyleReveal;
+        self.transitionStyle = MGUSwipeTransitionStyleReveal;
     }];
-    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
                                                            style:UIAlertActionStyleCancel
                                                         handler:nil];
     [controller addAction:backgroundColorAction];
     [controller addAction:circularAction];
     [controller addAction:cancelAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -520,30 +486,24 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Cell Height"
                                                                         message:nil
                                                                  preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    
     UIAlertAction *normalAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Normal", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
         self.usesTallCells = NO;
         [self.tableView reloadData];
     }];
-    
-    
     UIAlertAction *tallAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Tall", @"")
                                                          style:UIAlertActionStyleDefault
                                                        handler:^(UIAlertAction *action) {
         self.usesTallCells = YES;
         [self.tableView reloadData];
     }];
-    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
                                                            style:UIAlertActionStyleCancel
                                                         handler:nil];
     [controller addAction:normalAction];
     [controller addAction:tallAction];
     [controller addAction:cancelAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -556,31 +516,31 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertAction *defaultAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Default Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeDefault;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeDefault;
     }];
     
     UIAlertAction *springAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Spring Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeSpring;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeSpring;
     }];
     
     UIAlertAction *rotateAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Rotate Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeRotate;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeRotate;
     }];
     
     UIAlertAction *favoriteAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Favorite Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeFavorite;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeFavorite;
     }];
     
     UIAlertAction *noneAnimationTypeAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"None Animation Type", @"")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        self.transitionAnimationType =     MGUSwipeTransitionAnimationTypeNone;
+        self.transitionAnimationType = MGUSwipeTransitionAnimationTypeNone;
     }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"")
@@ -592,7 +552,6 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
     [controller addAction:favoriteAnimationTypeAction];
     [controller addAction:noneAnimationTypeAction];
     [controller addAction:cancelAction];
-    
     [self mgrPresentAlertViewController:controller animated:YES completion:nil];
 }
 
@@ -615,7 +574,7 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
 
 - (UIView *)createSelectedBackgroundView {
     UIView *view = [UIView new];
-    view.backgroundColor = [UIColor.lightGrayColor colorWithAlphaComponent:0.2];
+    view.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.2];
     return view;
 }
 

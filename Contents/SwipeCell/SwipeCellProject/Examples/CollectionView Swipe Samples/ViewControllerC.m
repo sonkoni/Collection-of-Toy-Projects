@@ -33,9 +33,12 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    _itemSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width - 80.0, 98.0);
-    self.flowView.itemSize = _itemSize;
+    _itemSize = CGSizeMake(self.view.bounds.size.width - 135.0, 80.0);
+    if (CGSizeEqualToSize(_itemSize, self.flowView.itemSize) == NO) {
+        self.flowView.itemSize = _itemSize;
+    }
 }
+
 
 #pragma mark - 생성 & 소멸
 static void CommonInit(ViewControllerC *self) {
@@ -51,7 +54,6 @@ static void CommonInit(ViewControllerC *self) {
       forSupplementaryViewOfKind:MGUFlowElementKindVegaLeading
              withReuseIdentifier:MGUFlowElementKindVegaLeading];
     
-
     self.flowView.itemSize = self.itemSize;
     self.flowView.leadingSpacing = 20.0;
     self.flowView.interitemSpacing = 8.0;
@@ -69,7 +71,7 @@ static void CommonInit(ViewControllerC *self) {
     [self.view addSubview:self.flowView];
     [self.flowView mgrPinEdgesToSuperviewSafeAreaLayoutGuide];
     
-    self.navigationItem.title = NSLocalizedString(@"MMTFav Scene", @"");
+    self.navigationItem.title = NSLocalizedString(@"MiniTimer 앱", @"");
  
     self->_diffableDataSource =
     [[MGUFlowDiffableDataSource alloc] initWithFlowView:self.flowView
@@ -90,7 +92,6 @@ static void CommonInit(ViewControllerC *self) {
         cell.swipeDecoLeftColor = [UIColor clearColor];
         return cell;
     }];
-    
     NSDiffableDataSourceSnapshot <NSNumber *, MiniTimerCellModel *>*snapshot = self.diffableDataSource.snapshot;
     [snapshot appendSectionsWithIdentifiers:@[@(0)]];
     [snapshot appendItemsWithIdentifiers:self.models intoSectionWithIdentifier:@(0)];
@@ -135,7 +136,7 @@ static void CommonInit(ViewControllerC *self) {
 
 
 #pragma mark - <MGUSwipeCollectionViewCellDelegate>
-//!------------------------------------------------- @required
+#pragma mark - @required
 - (MGUSwipeActionsConfiguration *)collectionView:(UICollectionView *)collectionView
 leading_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     return nil;
@@ -143,7 +144,6 @@ leading_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 
 - (MGUSwipeActionsConfiguration *)collectionView:(UICollectionView *)collectionView
 trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
-    //    MiniTimerCell *cell = (MiniTimerCell *)[collectionView cellForItemAtIndexPath:indexPath];
     __weak __typeof(self) weakSelf = self;
         
     // Completed 일 때 삭제 처리
@@ -165,70 +165,27 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     UIImage *image = [UIImage systemImageNamed:@"trash"];
     deleteAction.image = [image mgrImageWithColor:[UIColor whiteColor]];
     deleteAction.textColor = [UIColor whiteColor];
-    //    action.font = [UIFont systemFontOfSize:13.0];
-    //    action.backgroundColor = ActionDescriptorColorForStyle(descriptor, self.buttonStyle);
-    //    deleteAction.transitionDelegate = [SwipeTransitionAnimation transitionAnimationWithType:SwipeTransitionAnimationTypeNone];
-    //    deleteAction.transitionDelegate = [SwipeTransitionAnimation transitionAnimationWithType:SwipeTransitionAnimationTypeFavorite];
-        // SwipeTransitionAnimationTypeFavorite SwipeTransitionAnimationTypeNone
-            
     MGUSwipeActionsConfiguration *configuration = [MGUSwipeActionsConfiguration configurationWithActions:@[deleteAction]];
-    
     configuration.expansionStyle = [MGUSwipeExpansionStyle fill];
-//    configuration.expansionStyle = [SwipeExpansionStyle fillWithDelete];
     configuration.transitionStyle = MGUSwipeTransitionStyleReveal;
     configuration.backgroundColor = [UIColor systemRedColor];
-    // configuration.buttonSpacing = 4.0;
-        
     return configuration;
 }
 
-//!------------------------------------------------- @optional
-- (void)collectionView:(UICollectionView *)collectionView
-willBeginLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-}
-
-- (void)collectionView:(UICollectionView *)collectionView
-willBeginTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {
-}
-
-- (void)collectionView:(UICollectionView *)collectionView
-didEndLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
-
-- (void)collectionView:(UICollectionView *)collectionView
-didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
-
+#pragma mark - @optional
 - (CGRect)visibleRectForCollectionView:(UICollectionView *)collectionView  {
     return CGRectNull;
 }
+// - (void)collectionView:(UICollectionView *)collectionView
+// willBeginLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)collectionView:(UICollectionView *)collectionView
+// willBeginTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)collectionView:(UICollectionView *)collectionView
+// didEndLeadingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
+// - (void)collectionView:(UICollectionView *)collectionView
+// didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath {}
 
 
 #pragma mark - <MGUFlowViewDelegate>
-- (void)flowView:(MGUFlowView *)flowView didSelectItemAtIndex:(NSInteger)index {
-//    [flowView deselectItemAtIndex:index animated:YES];
-//    [flowView scrollToItemAtIndex:index animated:YES];
-}
-
-- (void)flowViewDidScroll:(MGUFlowView *)flowView {
-//    UICollectionView *collectionView = [flowView valueForKey:@"collectionView"];
-//    if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStatePossible) {
-//        NSLog(@"UIGestureRecognizerStatePossible");
-//    } else if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStateBegan) {
-//        NSLog(@"UIGestureRecognizerStateBegan");
-//    } else if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
-//        NSLog(@"UIGestureRecognizerStateChanged");
-//        collectionView.panGestureRecognizer.enabled = NO;
-////        [flowView deselectItemAtIndex:index animated:YES];
-//        [flowView scrollToItemAtIndex:1 animated:YES];
-//        collectionView.panGestureRecognizer.enabled = YES;
-//    } else if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
-//        NSLog(@"UIGestureRecognizerStateEnded");
-//    } else if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStateCancelled) {
-//        NSLog(@"UIGestureRecognizerStateCancelled");
-//    } else if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStateFailed) {
-//        NSLog(@"UIGestureRecognizerStateFailed");
-//    } else if (collectionView.panGestureRecognizer.state == UIGestureRecognizerStateRecognized) {
-//        NSLog(@"UIGestureRecognizerStateRecognized"); // UIGestureRecognizerStateEnded
-//    }
-}
-
+// 모두 옵셔널. 샘플이므로 생략.
 @end
