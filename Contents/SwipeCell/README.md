@@ -45,7 +45,7 @@ Folding Style | Vega Style | Vega Style - Reverse
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.32.30.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.38.30.gif" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-6.jpg" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-3.jpg" width="225">
 
 ## Presets and Styles
-> Swipe Transition Style
+> Transition Style
 
 Border Style|Drag Style|Reveal Style
 ---|---|---
@@ -56,7 +56,7 @@ Border Style|Drag Style|Reveal Style
 
 None|Default|Favorite|Spring|Rotate
 ---|---|---|---|---
-<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">
+<img src="./screenshot/Transition_Animation_None.gif" width="250">|<img src="./screenshot/Transition_Animation_Default.gif" width="250">|<img src="./screenshot/Transition_Animation_Favorite.gif" width="250">|<img src="./screenshot/Transition_Animation_Spring.gif" width="250">|<img src="./screenshot/Transition_Animation_Rotate.gif" width="250">
 
 ---
 > Button Display Mode & Button Style
