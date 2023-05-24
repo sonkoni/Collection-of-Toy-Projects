@@ -45,7 +45,7 @@ Folding Style | Vega Style | Vega Style - Reverse
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.32.30.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.38.30.gif" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-6.jpg" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-3.jpg" width="225">
 
 ## Presets and Styles
-> Default Configuration
+> Button Display Mode & Button Style
 
 $~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
 ---|---|---|---|---|---
