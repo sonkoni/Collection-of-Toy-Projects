@@ -52,6 +52,13 @@ Border Style|Drag Style|Reveal Style
 <img src="./screenshot/TransitionStyle_Border.gif" width="310">|<img src="./screenshot/TransitionStyle_Drag.gif" width="310">|<img src="./screenshot/TransitionStyle_Reveal.gif" width="310">
 
 ---
+> Transition Animation Type
+
+None|Default|Favorite|Spring|Rotate
+---|---|---|---|---
+<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">
+
+---
 > Button Display Mode & Button Style
 
 &nbsp; &nbsp; &nbsp; Display Mode<br/>└───────┐<br/>Style &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Image+Title|Image Only|Title Only
@@ -60,11 +67,6 @@ Background Color |<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" wi
 Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_TitleOnly.jpg" width="250">
 
 
-// typedef NS_ENUM(NSUInteger, MGUSwipeTransitionStyle) {
-//     MGUSwipeTransitionStyleBorder = 0,
-//     MGUSwipeTransitionStyleDrag,
-//     MGUSwipeTransitionStyleReveal
-// };
 
 
 ## Usage
