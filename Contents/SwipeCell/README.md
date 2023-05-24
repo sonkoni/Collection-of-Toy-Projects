@@ -56,7 +56,7 @@ Border Style|Drag Style|Reveal Style
 
 None|Default|Favorite|Spring|Rotate
 ---|---|---|---|---
-<img src="./screenshot/Transition_Animation_None.gif" width="225">|<img src="./screenshot/Transition_Animation_Default.gif" width="225">|<img src="./screenshot/Transition_Animation_Favorite.gif" width="225">|<img src="./screenshot/Transition_Animation_Spring.gif" width="225">|<img src="./screenshot/Transition_Animation_Rotate.gif" width="225">
+<img src="./screenshot/Transition_Animation_None.gif" width="200">|<img src="./screenshot/Transition_Animation_Default.gif" width="200">|<img src="./screenshot/Transition_Animation_Favorite.gif" width="200">|<img src="./screenshot/Transition_Animation_Spring.gif" width="200">|<img src="./screenshot/Transition_Animation_Rotate.gif" width="200">
 
 ---
 > Button Display Mode & Button Style
