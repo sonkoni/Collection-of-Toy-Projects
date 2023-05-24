@@ -45,12 +45,11 @@ Folding Style | Vega Style | Vega Style - Reverse
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.32.30.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.38.30.gif" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-6.jpg" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-3.jpg" width="225">
 
 ## Presets and Styles
-> Button Display Mode & Button Style
+> Swipe Transition Style
 
-&nbsp; &nbsp; &nbsp; Display Mode<br/>└───────┐<br/>Style &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Image+Title|Image Only|Title Only
+Transition Style|Image+Title|Image Only|Title Only
 ---|---|---|---
 Background Color |<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">
-Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_TitleOnly.jpg" width="250">
 
 ---
 > Button Display Mode & Button Style
@@ -59,6 +58,13 @@ Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width=
 ---|---|---|---
 Background Color |<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">
 Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_TitleOnly.jpg" width="250">
+
+
+// typedef NS_ENUM(NSUInteger, MGUSwipeTransitionStyle) {
+//     MGUSwipeTransitionStyleBorder = 0,
+//     MGUSwipeTransitionStyleDrag,
+//     MGUSwipeTransitionStyleReveal
+// };
 
 
 ## Usage
