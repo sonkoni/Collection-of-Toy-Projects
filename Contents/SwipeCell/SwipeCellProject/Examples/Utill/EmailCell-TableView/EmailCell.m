@@ -12,7 +12,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -20,7 +20,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -35,10 +35,9 @@
     [super setSelected:selected animated:animated];
 }
 
-
-- (void)commonInit {
-    _indicatorView = [IndicatorView new];
-    _unread = NO;
+static void CommonInit(EmailCell *self) {
+    self->_indicatorView = [IndicatorView new];
+    self->_unread = NO;
 }
 
 - (void)setUnread:(BOOL)unread {

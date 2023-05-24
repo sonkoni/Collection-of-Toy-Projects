@@ -1,21 +1,21 @@
 //
-//  MMTFavCellModel.m
+//  MiniTimerCellModel.m
 //  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2021/11/03.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
 //
 
-#import "MMTFavCellModel.h"
+#import "MiniTimerCellModel.h"
 
-@interface MMTFavCellModel ()
+@interface MiniTimerCellModel ()
 @end
 
-@implementation MMTFavCellModel
+@implementation MiniTimerCellModel
 + (instancetype)favCellModelWithMainDescription:(NSString *)mainDescription
                                       leftValue:(NSString *)leftValue
                                      rightValue:(NSString *)rightValue {
-    return [[MMTFavCellModel alloc] initWithMainDescription:mainDescription
+    return [[MiniTimerCellModel alloc] initWithMainDescription:mainDescription
                                                   leftValue:leftValue
                                                  rightValue:rightValue];
     

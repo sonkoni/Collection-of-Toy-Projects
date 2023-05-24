@@ -38,7 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self commonInit];
+    CommonInit(self);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -54,41 +54,39 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-//    [self.view layoutIfNeeded];
-//    self.collectionView.frame = self.view.bounds;
     [self.collectionView.collectionViewLayout invalidateLayout];
 }
 
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
-    _userInterfaceLayoutDirection =
+static void CommonInit(ViewControllerB *self) {
+    self->_userInterfaceLayoutDirection =
     [UIView userInterfaceLayoutDirectionForSemanticContentAttribute:self.view.semanticContentAttribute];
     //
     // 일반전인 문자 순서: 문자를 왼쪽에서 오른쪽으로 적는다. UIUserInterfaceLayoutDirectionLeftToRight
     // 아랍어, 히브리어 같은 문자 순서: 문자를 오른쪽에서 왼쪽으로 적는다. UIUserInterfaceLayoutDirectionRightToLeft
-    _emails = @[].mutableCopy;
-    _isSwipeRightEnabled = YES;
-    _transitionStyle = MGUSwipeTransitionStyleBorder;
-    _buttonDisplayMode = titleAndImage;
-    _buttonStyle = backgroundColor;
-    _usesTallCells = NO;
-    _transitionAnimationType = MGUSwipeTransitionAnimationTypeNone;
+    self->_emails = @[].mutableCopy;
+    self->_isSwipeRightEnabled = YES;
+    self->_transitionStyle = MGUSwipeTransitionStyleBorder;
+    self->_buttonDisplayMode = titleAndImage;
+    self->_buttonStyle = backgroundColor;
+    self->_usesTallCells = NO;
+    self->_transitionAnimationType = MGUSwipeTransitionAnimationTypeNone;
     
     UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
-    _collectionView.translatesAutoresizingMaskIntoConstraints = NO;
-    _collectionView.backgroundColor = [UIColor clearColor];
-    _collectionView.alwaysBounceVertical = YES;
-    _collectionView.showsVerticalScrollIndicator = YES;
-    _collectionView.showsHorizontalScrollIndicator = NO;
+    self->_collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+    self->_collectionView.translatesAutoresizingMaskIntoConstraints = NO;
+    self->_collectionView.backgroundColor = [UIColor clearColor];
+    self->_collectionView.alwaysBounceVertical = YES;
+    self->_collectionView.showsVerticalScrollIndicator = YES;
+    self->_collectionView.showsHorizontalScrollIndicator = NO;
     ///_collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever; // system inset에 영향을 받지 않으려면.
-    _collectionView.delegate = self;
-    _collectionView.decelerationRate = UIScrollViewDecelerationRateNormal;
-    _collectionView.allowsMultipleSelection = NO; // 디폴트가 NO이다.
-    [_collectionView registerClass:[CollectionViewEmailCell class]
-        forCellWithReuseIdentifier:NSStringFromClass([CollectionViewEmailCell class])];
+    self->_collectionView.delegate = self;
+    self->_collectionView.decelerationRate = UIScrollViewDecelerationRateNormal;
+    self->_collectionView.allowsMultipleSelection = NO; // 디폴트가 NO이다.
+    [self->_collectionView registerClass:[CollectionViewEmailCell class]
+              forCellWithReuseIdentifier:NSStringFromClass([CollectionViewEmailCell class])];
 
     self.view.backgroundColor = [UIColor systemGroupedBackgroundColor];
     self.view.clipsToBounds = YES;
@@ -106,7 +104,7 @@
                                                                    action:@selector(moreTapped:)];
     self.toolbarItems = @[spaceitem, moreOutline];
     
-    _diffableDataSource =
+    self->_diffableDataSource =
     [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.collectionView
                                                           cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, EmailCellModel *email) {
         CollectionViewEmailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CollectionViewEmailCell class])
@@ -150,7 +148,6 @@
         
         return cell;
     }];
-    
     [self resetData];
 }
 

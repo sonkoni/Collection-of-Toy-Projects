@@ -8,60 +8,44 @@
 @import BaseKit;
 @import IosKit;
 #import "ViewControllerC.h"
-#import "MMTFavCell.h"
-#import "MMTFavCellModel.h"
-
-
-//@interface ViewControllerC () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,
-//                                            MGUSwipeCollectionViewCellDelegate>
+#import "MiniTimerCell.h"
+#import "MiniTimerCellModel.h"
 
 @interface ViewControllerC () <MGUFlowViewDelegate, MGUSwipeCollectionViewCellDelegate>
 @property (nonatomic, assign) CGSize itemSize;
 @property (nonatomic, strong) MGUFlowView *flowView;
-
-@property (nonatomic, strong) NSMutableArray <MMTFavCellModel *>*models;
-@property (nonatomic, strong) MGUFlowDiffableDataSource <NSNumber *, MMTFavCellModel *>*diffableDataSource;
+@property (nonatomic, strong) NSMutableArray <MiniTimerCellModel *>*models;
+@property (nonatomic, strong) MGUFlowDiffableDataSource <NSNumber *, MiniTimerCellModel *>*diffableDataSource;
 @end
 
 @implementation ViewControllerC
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self commonInit];
+    CommonInit(self);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.prefersLargeTitles = YES;
     self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
-    
-//    NSArray <NSIndexPath *>*indexPaths = [self.collectionView indexPathsForSelectedItems];
-//    if (indexPaths != nil) {
-//        for (NSIndexPath *indexPath in indexPaths) {
-//            [self.collectionView deselectItemAtIndexPath:indexPath animated:YES];
-//        }
-//    }
-    
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-//    self.flowView.itemSize = CGSizeMake(self.flowView.bounds.size.width, self.flowView.bounds.size.width);
     _itemSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width - 80.0, 98.0);
-    //return CGSizeMake(collectionView.frame.size.width - 80.0, 98.0);
     self.flowView.itemSize = _itemSize;
 }
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
+static void CommonInit(ViewControllerC *self) {
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupModel];
-    _itemSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width - 135.0, 80.0);
+    self->_itemSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width - 135.0, 80.0);
     
     self.flowView  = [MGUFlowView new];
-    [self.flowView registerClass:[MMTFavCell class]
-          forCellWithReuseIdentifier:NSStringFromClass([MMTFavCell class])];
+    [self.flowView registerClass:[MiniTimerCell class]
+          forCellWithReuseIdentifier:NSStringFromClass([MiniTimerCell class])];
     
     [self.flowView registerClass:[MGUFlowIndicatorSupplementaryView class]
       forSupplementaryViewOfKind:MGUFlowElementKindVegaLeading
@@ -75,7 +59,6 @@
     self.flowView.decelerationDistance = [MGUFlowView automaticDistance];
     self.flowView.transformer = nil;
     self.flowView.delegate = self;
-//    self.flowView.dataSource = self;
     self.flowView.bounces = YES;
     self.flowView.alwaysBounceVertical = YES;
     self.flowView.reversed = YES;
@@ -88,16 +71,16 @@
     
     self.navigationItem.title = NSLocalizedString(@"MMTFav Scene", @"");
  
-    _diffableDataSource =
+    self->_diffableDataSource =
     [[MGUFlowDiffableDataSource alloc] initWithFlowView:self.flowView
-                                           cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath * indexPath, MMTFavCellModel *cellModel) {
+                                           cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath * indexPath, MiniTimerCellModel *cellModel) {
         
-        MMTFavCell *cell =
-        (MMTFavCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([MMTFavCell class])
+        MiniTimerCell *cell =
+        (MiniTimerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([MiniTimerCell class])
                                                                  forIndexPath:indexPath];
         
         if (cell == nil) {
-            cell = [MMTFavCell new];
+            cell = [MiniTimerCell new];
         }
         
         [cell setData:cellModel];
@@ -108,32 +91,31 @@
         return cell;
     }];
     
-    NSDiffableDataSourceSnapshot <NSNumber *, MMTFavCellModel *>*snapshot = self.diffableDataSource.snapshot;
+    NSDiffableDataSourceSnapshot <NSNumber *, MiniTimerCellModel *>*snapshot = self.diffableDataSource.snapshot;
     [snapshot appendSectionsWithIdentifiers:@[@(0)]];
     [snapshot appendItemsWithIdentifiers:self.models intoSectionWithIdentifier:@(0)];
     [self.diffableDataSource applySnapshot:snapshot animatingDifferences:NO completion:^{}];
-    
 }
 
 - (void)setupModel {
-    NSMutableArray <MMTFavCellModel *>*(^modelsBlock)(void) = ^NSMutableArray <MMTFavCellModel *>*{
-        NSMutableArray <MMTFavCellModel *>*models = [NSMutableArray array];
-        MMTFavCellModel *model0 = [MMTFavCellModel favCellModelWithMainDescription:@"재민게임"
+    NSMutableArray <MiniTimerCellModel *>*(^modelsBlock)(void) = ^NSMutableArray <MiniTimerCellModel *>*{
+        NSMutableArray <MiniTimerCellModel *>*models = [NSMutableArray array];
+        MiniTimerCellModel *model0 = [MiniTimerCellModel favCellModelWithMainDescription:@"재민게임"
                                                                          leftValue:@"45"
                                                                         rightValue:@"10"];
-        MMTFavCellModel *model1 = [MMTFavCellModel favCellModelWithMainDescription:@"아침리뷰"
+        MiniTimerCellModel *model1 = [MiniTimerCellModel favCellModelWithMainDescription:@"아침리뷰"
                                                                          leftValue:@"45"
                                                                         rightValue:@"10"];
-        MMTFavCellModel *model2 = [MMTFavCellModel favCellModelWithMainDescription:@"조깅"
+        MiniTimerCellModel *model2 = [MiniTimerCellModel favCellModelWithMainDescription:@"조깅"
                                                                          leftValue:@"45"
                                                                         rightValue:@"10"];
-        MMTFavCellModel *model3 = [MMTFavCellModel favCellModelWithMainDescription:@"영어공부"
+        MiniTimerCellModel *model3 = [MiniTimerCellModel favCellModelWithMainDescription:@"영어공부"
                                                                          leftValue:@"45"
                                                                         rightValue:@"10"];
-        MMTFavCellModel *model4 = [MMTFavCellModel favCellModelWithMainDescription:@"스파게티 면"
+        MiniTimerCellModel *model4 = [MiniTimerCellModel favCellModelWithMainDescription:@"스파게티 면"
                                                                          leftValue:@"45"
                                                                         rightValue:@"10"];
-        MMTFavCellModel *model5 = [MMTFavCellModel favCellModelWithMainDescription:@"역사공부"
+        MiniTimerCellModel *model5 = [MiniTimerCellModel favCellModelWithMainDescription:@"역사공부"
                                                                          leftValue:@"45"
                                                                         rightValue:@"10"];
         [models addObject:model0];
@@ -145,7 +127,7 @@
         return models;
     };
     
-    NSMutableArray <MMTFavCellModel *>*models = modelsBlock();
+    NSMutableArray <MiniTimerCellModel *>*models = modelsBlock();
     [models addObjectsFromArray:modelsBlock()];
     [models addObjectsFromArray:modelsBlock()];
     self.models = models.mutableCopy;
@@ -161,7 +143,7 @@ leading_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 
 - (MGUSwipeActionsConfiguration *)collectionView:(UICollectionView *)collectionView
 trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
-    //    MMTFavCell *cell = (MMTFavCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    //    MiniTimerCell *cell = (MiniTimerCell *)[collectionView cellForItemAtIndexPath:indexPath];
     __weak __typeof(self) weakSelf = self;
         
     // Completed 일 때 삭제 처리
@@ -171,7 +153,7 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
                               handler:^(MGUSwipeAction * _Nonnull action,
                                         __kindof UIView * _Nonnull sourceView,
                                         void (^ _Nonnull completionHandler)(BOOL)) {
-        NSDiffableDataSourceSnapshot <NSNumber *, MMTFavCellModel *>*snapshot = self.diffableDataSource.snapshot;
+        NSDiffableDataSourceSnapshot <NSNumber *, MiniTimerCellModel *>*snapshot = self.diffableDataSource.snapshot;
         [snapshot deleteItemsWithIdentifiers:@[weakSelf.models[indexPath.row]]];
         [weakSelf.models removeObjectAtIndex:indexPath.row];
         [weakSelf.diffableDataSource mgrSwipeApplySnapshot:snapshot

@@ -29,10 +29,9 @@
 		84E556772A1DA65000127417 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556722A1DA65000127417 /* ViewControllerB.m */; };
 		84E556782A1DA65000127417 /* CollectionViewEmailCell_.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E556752A1DA65000127417 /* CollectionViewEmailCell_.xib */; };
 		84E556852A1DAA8000127417 /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5567B2A1DAA8000127417 /* ViewControllerC.m */; };
-		84E556862A1DAA8000127417 /* _MMTFavCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E5567D2A1DAA8000127417 /* _MMTFavCell.xib */; };
-		84E556872A1DAA8000127417 /* FavCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556822A1DAA8000127417 /* FavCellBackgroundView.m */; };
-		84E556882A1DAA8000127417 /* MMTFavCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556832A1DAA8000127417 /* MMTFavCellModel.m */; };
-		84E556892A1DAA8000127417 /* MMTFavCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556842A1DAA8000127417 /* MMTFavCell.m */; };
+		84E556862A1DAA8000127417 /* MiniTimerCell_.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E5567D2A1DAA8000127417 /* MiniTimerCell_.xib */; };
+		84E556882A1DAA8000127417 /* MiniTimerCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556832A1DAA8000127417 /* MiniTimerCellModel.m */; };
+		84E556892A1DAA8000127417 /* MiniTimerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556842A1DAA8000127417 /* MiniTimerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,13 +95,11 @@
 		84E556752A1DA65000127417 /* CollectionViewEmailCell_.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewEmailCell_.xib; sourceTree = "<group>"; };
 		84E5567A2A1DAA8000127417 /* ViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerC.h; sourceTree = "<group>"; };
 		84E5567B2A1DAA8000127417 /* ViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerC.m; sourceTree = "<group>"; };
-		84E5567D2A1DAA8000127417 /* _MMTFavCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _MMTFavCell.xib; sourceTree = "<group>"; };
-		84E5567E2A1DAA8000127417 /* MMTFavCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTFavCellModel.h; sourceTree = "<group>"; };
-		84E5567F2A1DAA8000127417 /* MMTFavCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTFavCell.h; sourceTree = "<group>"; };
-		84E556812A1DAA8000127417 /* FavCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavCellBackgroundView.h; sourceTree = "<group>"; };
-		84E556822A1DAA8000127417 /* FavCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavCellBackgroundView.m; sourceTree = "<group>"; };
-		84E556832A1DAA8000127417 /* MMTFavCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTFavCellModel.m; sourceTree = "<group>"; };
-		84E556842A1DAA8000127417 /* MMTFavCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTFavCell.m; sourceTree = "<group>"; };
+		84E5567D2A1DAA8000127417 /* MiniTimerCell_.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiniTimerCell_.xib; sourceTree = "<group>"; };
+		84E5567E2A1DAA8000127417 /* MiniTimerCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniTimerCellModel.h; sourceTree = "<group>"; };
+		84E5567F2A1DAA8000127417 /* MiniTimerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniTimerCell.h; sourceTree = "<group>"; };
+		84E556832A1DAA8000127417 /* MiniTimerCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniTimerCellModel.m; sourceTree = "<group>"; };
+		84E556842A1DAA8000127417 /* MiniTimerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniTimerCell.m; sourceTree = "<group>"; };
 		84E66C442A14996E001CCF28 /* 230520a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230520a2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,13 +268,11 @@
 		84E5567C2A1DAA8000127417 /* MiniTimerAppCell */ = {
 			isa = PBXGroup;
 			children = (
-				84E5567E2A1DAA8000127417 /* MMTFavCellModel.h */,
-				84E556832A1DAA8000127417 /* MMTFavCellModel.m */,
-				84E5567F2A1DAA8000127417 /* MMTFavCell.h */,
-				84E556842A1DAA8000127417 /* MMTFavCell.m */,
-				84E5567D2A1DAA8000127417 /* _MMTFavCell.xib */,
-				84E556812A1DAA8000127417 /* FavCellBackgroundView.h */,
-				84E556822A1DAA8000127417 /* FavCellBackgroundView.m */,
+				84E5567E2A1DAA8000127417 /* MiniTimerCellModel.h */,
+				84E556832A1DAA8000127417 /* MiniTimerCellModel.m */,
+				84E5567F2A1DAA8000127417 /* MiniTimerCell.h */,
+				84E556842A1DAA8000127417 /* MiniTimerCell.m */,
+				84E5567D2A1DAA8000127417 /* MiniTimerCell_.xib */,
 			);
 			path = MiniTimerAppCell;
 			sourceTree = "<group>";
@@ -349,7 +344,7 @@
 				84E556782A1DA65000127417 /* CollectionViewEmailCell_.xib in Resources */,
 				8459030628F0D71700E50B56 /* LaunchScreen.storyboard in Resources */,
 				8459030328F0D71700E50B56 /* Assets.xcassets in Resources */,
-				84E556862A1DAA8000127417 /* _MMTFavCell.xib in Resources */,
+				84E556862A1DAA8000127417 /* MiniTimerCell_.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,20 +357,19 @@
 			files = (
 				84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */,
 				84A836422A0B1735008F3D25 /* main.swift in Sources */,
-				84E556892A1DAA8000127417 /* MMTFavCell.m in Sources */,
+				84E556892A1DAA8000127417 /* MiniTimerCell.m in Sources */,
 				84E556772A1DA65000127417 /* ViewControllerB.m in Sources */,
 				84E556762A1DA65000127417 /* CollectionViewEmailCell.m in Sources */,
 				84E5566B2A1D330F00127417 /* EmailCellModel.m in Sources */,
 				84E556612A1D291C00127417 /* ViewControllerA.m in Sources */,
 				84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */,
 				845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */,
-				84E556882A1DAA8000127417 /* MMTFavCellModel.m in Sources */,
+				84E556882A1DAA8000127417 /* MiniTimerCellModel.m in Sources */,
 				84E5566C2A1D330F00127417 /* EmailCell.m in Sources */,
 				84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */,
 				84E556852A1DAA8000127417 /* ViewControllerC.m in Sources */,
 				84E5566D2A1D330F00127417 /* SharedUtil.m in Sources */,
 				845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */,
-				84E556872A1DAA8000127417 /* FavCellBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

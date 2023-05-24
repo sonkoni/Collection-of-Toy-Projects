@@ -14,7 +14,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -22,7 +22,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self commonInit];
+        CommonInit(self);
     }
     return self;
 }
@@ -36,10 +36,9 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)commonInit {
-    _color = [UIColor clearColor];
+static void CommonInit(IndicatorView *self) {
+    self->_color = [UIColor clearColor];
 }
-
 
 #pragma mark - 세터 & 게터
 - (void)setColor:(UIColor *)color {

@@ -1,5 +1,5 @@
 //
-//  MMTFavCellModel.h
+//  MiniTimerCellModel.h
 //  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2021/11/03.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMTFavCellModel : NSObject
+@interface MiniTimerCellModel : NSObject
 
 //! left
 @property (nonatomic, strong) NSString *leftValue;

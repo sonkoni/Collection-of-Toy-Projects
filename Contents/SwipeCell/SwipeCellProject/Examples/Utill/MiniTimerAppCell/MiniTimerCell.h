@@ -1,5 +1,5 @@
 //
-//  MMTFavCell.h
+//  MiniTimerCell.h
 //  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 28/10/2019.
@@ -7,12 +7,12 @@
 //
 
 @import IosKit;
-@class MMTFavCellModel;
+@class MiniTimerCellModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMTFavCell : MGUSwipeCollectionViewCell
-- (void)setData:(MMTFavCellModel *)data;
+@interface MiniTimerCell : MGUSwipeCollectionViewCell
+- (void)setData:(MiniTimerCellModel *)data;
 @end
 
 NS_ASSUME_NONNULL_END

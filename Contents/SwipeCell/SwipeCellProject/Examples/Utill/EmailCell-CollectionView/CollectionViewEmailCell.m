@@ -11,7 +11,6 @@
 @interface CollectionViewEmailCell ()
 //! 닙으로 초기화함.
 @property (nonatomic, strong) IBOutlet UIView *topLevelContainer; // 닙으로부터 불러온다. 가장 큰 덩어리. 이것을 붙인다. top level 이므로 strong
-
 @end
 
 @implementation CollectionViewEmailCell
@@ -19,18 +18,10 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self ___commonInit];
+        CommonInit(self);
     }
     return self;
 }
-
-//- (instancetype)initWithCoder:(NSCoder *)coder {
-//    self = [super initWithCoder:coder];
-//    if (self) {
-//        [self ___commonInit];
-//    }
-//    return self;
-//}
 
 - (void)layoutSubviews {
     [super layoutSubviews];
@@ -38,8 +29,8 @@
 
 
 #pragma mark - 생성 & 소멸
-- (void)___commonInit {
-    self.backgroundColor = UIColor.whiteColor;    
+static void CommonInit(CollectionViewEmailCell *self) {
+    self.backgroundColor = UIColor.whiteColor;
     [self setupNIBObject];
     [self setupIndicatorView];
     
@@ -80,11 +71,6 @@
     [self.indicatorView.centerXAnchor constraintEqualToAnchor:self.fromLabel.leftAnchor constant:-16.0].active = YES;
     [self.indicatorView.centerYAnchor constraintEqualToAnchor:self.fromLabel.centerYAnchor].active = YES;
 }
-
-
-//- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-//    [super setSelected:selected animated:animated];
-//}
 
 - (void)setUnread:(BOOL)unread {
     _unread = unread;
