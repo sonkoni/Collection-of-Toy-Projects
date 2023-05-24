@@ -52,14 +52,13 @@ Folding Style | Vega Style | Vega Style - Reverse
 Background Color |<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="250">
 Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_ImageOnly.jpg" width="250">|<img src="./screenshot/Button_Style_Circular_TitleOnly.jpg" width="250">
 
-* Button_Display_Mode_Image+Title
-* Button_Display_Mode_ImageOnly
-* Button_Display_Mode_TitleOnly $~$
+---
+> Forge Configuration
 
-* Button Style
-    * Background Color
-    * Circular
-
+$~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
+---|---|---|---|---|---
+Rounded |<img src="./screenshot/Forge_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Forge_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Forge_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle2_Rounded.jpg" width="225">
+Rect   |<img src="./screenshot/Forge_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Forge_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Forge_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/Forge_LowHeightStyle2_Rect.jpg" width="225">
 
 
 ## Usage
