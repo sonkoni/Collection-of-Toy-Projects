@@ -47,7 +47,7 @@ Folding Style | Vega Style | Vega Style - Reverse
 ## Presets and Styles
 > Button Display Mode & Button Style
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display Mode<br/>Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Image+Title|Image Only|Title Only
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display Mode<br/>Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Image+Title|Image Only|Title Only
 ---|---|---|---
 Background Color |<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">
 Circular   |<img src="./screenshot/Default_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rect.jpg" width="225">
