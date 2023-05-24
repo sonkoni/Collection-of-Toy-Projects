@@ -197,6 +197,7 @@ leading_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     configuration.expansionStyle = [MGUSwipeExpansionStyle selection];
     configuration.transitionStyle = self.transitionStyle;
     configuration.buttonSpacing = 4.0;
+    configuration.backgroundColor = [UIColor systemBlueColor];
     
     if (self.buttonStyle == circular) {
         configuration.backgroundColor = [UIColor systemGray6Color];
@@ -326,6 +327,7 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     //! 쭉 당겼을 때, 발생하게 하는 것. 애플의 performsFirstActionWithFullSwipe = YES 해당. nil 이면 NO
     if (indexPath.row == 1) {
         configuration.expansionStyle = [MGUSwipeExpansionStyle fill];
+        configuration.backgroundColor = [UIColor systemRedColor];
     } else if (indexPath.row == 2) {
         configuration.expansionStyle = [MGUSwipeExpansionStyle fillReverse];
     } else {

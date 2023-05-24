@@ -29,6 +29,7 @@
 *  **Swift** and **Objective-C** compatability
 *  Written in Objective-C
 
+* 아랍어 방향 지원.
 
 ## Preview
 > - MGUFlowView (iOS)
@@ -43,6 +44,13 @@ Folding Style | Vega Style | Vega Style - Reverse
 ---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.32.30.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.38.30.gif" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-6.jpg" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-3.jpg" width="225">
 
+## Presets and Styles
+> Default Configuration
+
+$~$|Standard1|Standard1<br/>Hide Done|Standard2|Low Height Style1|Low Height Style2
+---|---|---|---|---|---
+Rounded |<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rounded.jpg" width="225">
+Rect   |<img src="./screenshot/Default_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle2_Rect.jpg" width="225">
 
 ## Usage
 
