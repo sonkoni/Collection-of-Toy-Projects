@@ -49,7 +49,7 @@ Folding Style | Vega Style | Vega Style - Reverse
 
 Border Style|Drag Style|Reveal Style
 ---|---|---
-<img src="./screenshot/TransitionStyle_Border.gif" width="300">|<img src="./screenshot/TransitionStyle_Drag.gif" width="300">|<img src="./screenshot/TransitionStyle_Reveal.gif" width="300">
+<img src="./screenshot/TransitionStyle_Border.gif" width="310">|<img src="./screenshot/TransitionStyle_Drag.gif" width="310">|<img src="./screenshot/TransitionStyle_Reveal.gif" width="310">
 
 ---
 > Button Display Mode & Button Style
