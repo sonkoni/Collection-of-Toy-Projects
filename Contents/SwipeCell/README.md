@@ -49,7 +49,7 @@ Folding Style | Vega Style | Vega Style - Reverse
 
 &nbsp; &nbsp; &nbsp; Display Mode<br/>└───────┐<br/>Style &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Image+Title|Image Only|Title Only
 ---|---|---|---
-Background Color |<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">
+Background Color |<img src="./screenshot/Button_Display_Mode_Image+Title.jpg" width="225">|<img src="./screenshot/Button_Display_Mode_ImageOnly.jpg" width="225">|<img src="./screenshot/Button_Display_Mode_TitleOnly.jpg" width="225">
 Circular   |<img src="./screenshot/Default_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rect.jpg" width="225">
 
 * Button_Display_Mode_Image+Title
