@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MGUFlowView
+//  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2022/10/08.
 //

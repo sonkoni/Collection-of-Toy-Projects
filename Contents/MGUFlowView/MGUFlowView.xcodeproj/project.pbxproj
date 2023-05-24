@@ -117,6 +117,7 @@
 		84E5565B2A1D1A5100127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.45.34.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.45.34.gif"; sourceTree = "<group>"; };
 		84E5565C2A1D1A5100127417 /* Simulator Screen Shot - iPhone 14 - 2023-05-24 at 00.39.06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Simulator Screen Shot - iPhone 14 - 2023-05-24 at 00.39.06.jpg"; sourceTree = "<group>"; };
 		84E5565E2A1D23A000127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-24 at 01.37.07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-24 at 01.37.07.gif"; sourceTree = "<group>"; };
+		84E5568C2A1DB70400127417 /* 230524a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230524a1.jpg; sourceTree = "<group>"; };
 		84E66C442A14996E001CCF28 /* 230520a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230520a2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +196,7 @@
 				84E66C442A14996E001CCF28 /* 230520a2.jpg */,
 				84E5563B2A1CCAF300127417 /* 230523c1.jpg */,
 				84E5563C2A1CCD5B00127417 /* 230523c2.jpg */,
+				84E5568C2A1DB70400127417 /* 230524a1.jpg */,
 				84E5565A2A1D1A5100127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.41.00.gif */,
 				84E5565B2A1D1A5100127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-24 at 00.45.34.gif */,
 				84E5565E2A1D23A000127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-24 at 01.37.07.gif */,

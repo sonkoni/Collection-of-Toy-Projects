@@ -3,7 +3,7 @@
     {
       "color" : {
         "platform" : "osx",
-        "reference" : "systemRedColor"
+        "reference" : "systemTealColor"
       },
       "idiom" : "universal"
     }

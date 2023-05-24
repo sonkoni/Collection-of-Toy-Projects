@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MGUFlowView
+//  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2022/10/08.
 //
@@ -38,6 +38,7 @@ final class MainTableViewController: UIViewController {
         }
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
+        navigationController?.isToolbarHidden = true
     }
 }
 
@@ -103,23 +104,19 @@ extension MainTableViewController: UITableViewDelegate {
         var viewController: UIViewController? = nil
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                viewController = ViewControllerA()
+                viewController = ViewControllerA(style: .plain)
             } else if indexPath.row == 1 {
-                viewController = ViewControllerB()
+                viewController = ViewControllerA(style: .grouped)
             } else if indexPath.row == 2 {
-                viewController = ViewControllerC()
+                viewController = ViewControllerA(style: .insetGrouped)
             }
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                viewController = ViewControllerD()
+                viewController = ViewControllerB(type: .type1)
             } else if indexPath.row == 1 {
-                viewController = ViewControllerE()
-            }
-        } else if indexPath.section == 2 {
-            if indexPath.row == 0 {
-                viewController = ViewControllerF()
-            } else if indexPath.row == 1 {
-                viewController = ViewControllerG()
+                viewController = ViewControllerB(type: .type2)
+            } else if indexPath.row == 2 {
+                viewController = ViewControllerC()
             }
         }
         

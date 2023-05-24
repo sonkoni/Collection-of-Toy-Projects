@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  MGUFlowView
+//  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2022/10/08.
 //
@@ -58,12 +58,22 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         backIndicatorImage = backIndicatorImage.withTintColor(UIColor.systemBlue, renderingMode:UIImage.RenderingMode.alwaysOriginal)
         appearance.setBackIndicatorImage(backIndicatorImage, transitionMaskImage: backIndicatorImage)
         
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        UINavigationBar.appearance().compactAppearance = appearance
-
+        var newAppearance = appearance.copy()
+        newAppearance.backgroundColor = .clear
+        newAppearance.backgroundEffect = .init(style: .systemMaterialLight)
+        UINavigationBar.appearance().standardAppearance = newAppearance // 위로 올릴때
+        newAppearance = appearance.copy()
+        newAppearance.configureWithTransparentBackground() // 투명
+        UINavigationBar.appearance().scrollEdgeAppearance = newAppearance // 아래로 당길때
+        
+        newAppearance = appearance.copy()
+        newAppearance.backgroundColor = .clear
+        newAppearance.backgroundEffect = .init(style: .systemMaterialLight)
+        UINavigationBar.appearance().compactAppearance = newAppearance // 위로 올릴때
         if #available(iOS 15, *) {
-            UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
+            newAppearance = appearance.copy()
+            newAppearance.configureWithTransparentBackground() // 투명
+            UINavigationBar.appearance().compactScrollEdgeAppearance = newAppearance // 아래로 당길때
         }
     }
 }

@@ -10,8 +10,6 @@
 
 #import "ViewControllerB.h"
 #import "ViewControllerC.h"
-#import "ViewControllerD.h"
-#import "ViewControllerE.h"
-#import "ViewControllerF.h"
-#import "ViewControllerG.h"
+
+#import "ViewControllerA.h"
 

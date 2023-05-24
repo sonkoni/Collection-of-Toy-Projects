@@ -104,6 +104,10 @@ self.flowView.transformer = transformer;
 
 ```
 
+> Interface Builder
+
+<img src="./screenshot/230524a1.jpg" width="200">
+
 ## Documentation
 
 <details> 
