@@ -34,7 +34,7 @@ MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에�
 
 [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 |
 ---|
-<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="810"> |
+<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="805"> |
 
 ## Usage
 
