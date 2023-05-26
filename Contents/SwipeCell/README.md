@@ -132,7 +132,7 @@ self->_diffableDataSource =
     }
     
     [cell setData:cellModel];
-    cell.delegate = self;
+    cell.delegate = self; // <- 스와이프를 받기위해서는 설정해줘야한다.
     cell.swipeDecoRightColor = [UIColor systemRedColor];
     cell.swipeDecoLeftColor = [UIColor clearColor];
     return cell;
@@ -151,9 +151,7 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     MGUSwipeAction *deleteAction =
     [MGUSwipeAction swipeActionWithStyle:MGUSwipeActionStyleDestructive
                                 title:nil
-                              handler:^(MGUSwipeAction * _Nonnull action,
-                                        __kindof UIView * _Nonnull sourceView,
-                                        void (^ _Nonnull completionHandler)(BOOL)) {
+                              handler:^(MGUSwipeAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
         NSDiffableDataSourceSnapshot <NSNumber *, MiniTimerCellModel *>*snapshot = self.diffableDataSource.snapshot;
         [snapshot deleteItemsWithIdentifiers:@[weakSelf.models[indexPath.row]]];
         [weakSelf.models removeObjectAtIndex:indexPath.row];
