@@ -32,14 +32,14 @@
 		84E556862A1DAA8000127417 /* MiniTimerCell_.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E5567D2A1DAA8000127417 /* MiniTimerCell_.xib */; };
 		84E556882A1DAA8000127417 /* MiniTimerCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556832A1DAA8000127417 /* MiniTimerCellModel.m */; };
 		84E556892A1DAA8000127417 /* MiniTimerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556842A1DAA8000127417 /* MiniTimerCell.m */; };
-		84E556962A1DC28500127417 /* LNTouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E556932A1DC27200127417 /* LNTouchVisualizer.framework */; };
-		84E556972A1DC28500127417 /* LNTouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E556932A1DC27200127417 /* LNTouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E556C22A20452400127417 /* LNTouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E556C12A20451E00127417 /* LNTouchVisualizer.framework */; };
+		84E556C32A20452400127417 /* LNTouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E556C12A20451E00127417 /* LNTouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84E556922A1DC27200127417 /* PBXContainerItemProxy */ = {
+		84E556C02A20451E00127417 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 84E5568E2A1DC27200127417 /* LNTouchVisualizer.xcodeproj */;
+			containerPortal = 84E556BC2A20451E00127417 /* LNTouchVisualizer.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 39C38069260B783E00ACF910;
 			remoteInfo = LNTouchVisualizer;
@@ -58,13 +58,13 @@
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84E556982A1DC28500127417 /* Embed Frameworks */ = {
+		84E556C42A20452400127417 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84E556972A1DC28500127417 /* LNTouchVisualizer.framework in Embed Frameworks */,
+				84E556C32A20452400127417 /* LNTouchVisualizer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,8 +123,26 @@
 		84E5567F2A1DAA8000127417 /* MiniTimerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniTimerCell.h; sourceTree = "<group>"; };
 		84E556832A1DAA8000127417 /* MiniTimerCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniTimerCellModel.m; sourceTree = "<group>"; };
 		84E556842A1DAA8000127417 /* MiniTimerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniTimerCell.m; sourceTree = "<group>"; };
-		84E5568E2A1DC27200127417 /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
-		84E66C442A14996E001CCF28 /* 230520a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230520a2.jpg; sourceTree = "<group>"; };
+		84E556992A1DCAA200127417 /* TransitionStyle_Border.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TransitionStyle_Border.gif; sourceTree = "<group>"; };
+		84E5569B2A1DCAA200127417 /* TransitionStyle_Reveal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TransitionStyle_Reveal.gif; sourceTree = "<group>"; };
+		84E5569C2A1DCBF300127417 /* TransitionStyle_Drag.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TransitionStyle_Drag.gif; sourceTree = "<group>"; };
+		84E5569D2A1DDB2400127417 /* ExpansionStyle_FillReverse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ExpansionStyle_FillReverse.gif; sourceTree = "<group>"; };
+		84E5569E2A1DDB2400127417 /* ExpansionStyle_None.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ExpansionStyle_None.gif; sourceTree = "<group>"; };
+		84E5569F2A1DDB2400127417 /* ExpansionStyle_Fill+Delete.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ExpansionStyle_Fill+Delete.gif"; sourceTree = "<group>"; };
+		84E556A02A1DDB2400127417 /* ExpansionStyle_Selecton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ExpansionStyle_Selecton.gif; sourceTree = "<group>"; };
+		84E556A12A1DDB2400127417 /* ExpansionStyle_Fill.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ExpansionStyle_Fill.gif; sourceTree = "<group>"; };
+		84E556A22A1E52B600127417 /* Transition_Animation_Favorite.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Transition_Animation_Favorite.gif; sourceTree = "<group>"; };
+		84E556A32A1E52B600127417 /* Transition_Animation_None.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Transition_Animation_None.gif; sourceTree = "<group>"; };
+		84E556A42A1E52B600127417 /* Transition_Animation_Spring.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Transition_Animation_Spring.gif; sourceTree = "<group>"; };
+		84E556A62A1E52B600127417 /* Transition_Animation_Default.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Transition_Animation_Default.gif; sourceTree = "<group>"; };
+		84E556A72A1E546900127417 /* Transition_Animation_Rotate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Transition_Animation_Rotate.gif; sourceTree = "<group>"; };
+		84E556A82A1E57BB00127417 /* Button_Display_Mode_Image+Title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Button_Display_Mode_Image+Title.jpg"; sourceTree = "<group>"; };
+		84E556A92A1E57BB00127417 /* Button_Display_Mode_ImageOnly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button_Display_Mode_ImageOnly.jpg; sourceTree = "<group>"; };
+		84E556AA2A1E57BB00127417 /* Button_Display_Mode_TitleOnly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button_Display_Mode_TitleOnly.jpg; sourceTree = "<group>"; };
+		84E556AB2A1E6EC000127417 /* Button_Style_Circular_ImageOnly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button_Style_Circular_ImageOnly.jpg; sourceTree = "<group>"; };
+		84E556AC2A1E6EC000127417 /* Button_Style_Circular_TitleOnly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button_Style_Circular_TitleOnly.jpg; sourceTree = "<group>"; };
+		84E556AD2A1E6EC000127417 /* Button_Style_Circular_Image+Title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Button_Style_Circular_Image+Title.jpg"; sourceTree = "<group>"; };
+		84E556BC2A20451E00127417 /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +152,7 @@
 			files = (
 				84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */,
 				84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */,
-				84E556962A1DC28500127417 /* LNTouchVisualizer.framework in Frameworks */,
+				84E556C22A20452400127417 /* LNTouchVisualizer.framework in Frameworks */,
 				84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */,
 				84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */,
 			);
@@ -146,7 +164,7 @@
 		845902ED28F0D71600E50B56 = {
 			isa = PBXGroup;
 			children = (
-				84E5568E2A1DC27200127417 /* LNTouchVisualizer.xcodeproj */,
+				84E556BC2A20451E00127417 /* LNTouchVisualizer.xcodeproj */,
 				8459030D28F0D7BB00E50B56 /* README.md */,
 				8498FF452A0B754E00E3A721 /* screenshot */,
 				845902F828F0D71600E50B56 /* SwipeCellProject */,
@@ -191,6 +209,25 @@
 		8498FF452A0B754E00E3A721 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
+				84E556992A1DCAA200127417 /* TransitionStyle_Border.gif */,
+				84E5569C2A1DCBF300127417 /* TransitionStyle_Drag.gif */,
+				84E5569B2A1DCAA200127417 /* TransitionStyle_Reveal.gif */,
+				84E556A62A1E52B600127417 /* Transition_Animation_Default.gif */,
+				84E556A22A1E52B600127417 /* Transition_Animation_Favorite.gif */,
+				84E556A32A1E52B600127417 /* Transition_Animation_None.gif */,
+				84E556A72A1E546900127417 /* Transition_Animation_Rotate.gif */,
+				84E556A42A1E52B600127417 /* Transition_Animation_Spring.gif */,
+				84E556A12A1DDB2400127417 /* ExpansionStyle_Fill.gif */,
+				84E5569F2A1DDB2400127417 /* ExpansionStyle_Fill+Delete.gif */,
+				84E5569D2A1DDB2400127417 /* ExpansionStyle_FillReverse.gif */,
+				84E5569E2A1DDB2400127417 /* ExpansionStyle_None.gif */,
+				84E556A02A1DDB2400127417 /* ExpansionStyle_Selecton.gif */,
+				84E556A82A1E57BB00127417 /* Button_Display_Mode_Image+Title.jpg */,
+				84E556A92A1E57BB00127417 /* Button_Display_Mode_ImageOnly.jpg */,
+				84E556AA2A1E57BB00127417 /* Button_Display_Mode_TitleOnly.jpg */,
+				84E556AD2A1E6EC000127417 /* Button_Style_Circular_Image+Title.jpg */,
+				84E556AB2A1E6EC000127417 /* Button_Style_Circular_ImageOnly.jpg */,
+				84E556AC2A1E6EC000127417 /* Button_Style_Circular_TitleOnly.jpg */,
 				84E556212A1C73E200127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-23 at 12.56.13.gif */,
 				84E556222A1C758B00127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.12.35.gif */,
 				84E556232A1C780D00127417 /* Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.24.25.gif */,
@@ -199,7 +236,6 @@
 				84E5562A2A1C93D600127417 /* Shot-iPhone14ProMax-3.jpg */,
 				84E5562B2A1C93D600127417 /* Shot-iPhone14ProMax-6.jpg */,
 				84E5561F2A1C6FA500127417 /* 230523b1.jpg */,
-				84E66C442A14996E001CCF28 /* 230520a2.jpg */,
 				84E5563B2A1CCAF300127417 /* 230523c1.jpg */,
 				84E5563C2A1CCD5B00127417 /* 230523c2.jpg */,
 			);
@@ -303,10 +339,10 @@
 			path = MiniTimerAppCell;
 			sourceTree = "<group>";
 		};
-		84E5568F2A1DC27200127417 /* Products */ = {
+		84E556BD2A20451E00127417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84E556932A1DC27200127417 /* LNTouchVisualizer.framework */,
+				84E556C12A20451E00127417 /* LNTouchVisualizer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -322,7 +358,7 @@
 				845902F328F0D71600E50B56 /* Frameworks */,
 				845902F428F0D71600E50B56 /* Resources */,
 				84D6B1D12A1248720044E02D /* Embed PlugIns */,
-				84E556982A1DC28500127417 /* Embed Frameworks */,
+				84E556C42A20452400127417 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,8 +401,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 84E5568F2A1DC27200127417 /* Products */;
-					ProjectRef = 84E5568E2A1DC27200127417 /* LNTouchVisualizer.xcodeproj */;
+					ProductGroup = 84E556BD2A20451E00127417 /* Products */;
+					ProjectRef = 84E556BC2A20451E00127417 /* LNTouchVisualizer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -377,11 +413,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		84E556932A1DC27200127417 /* LNTouchVisualizer.framework */ = {
+		84E556C12A20451E00127417 /* LNTouchVisualizer.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = LNTouchVisualizer.framework;
-			remoteRef = 84E556922A1DC27200127417 /* PBXContainerItemProxy */;
+			remoteRef = 84E556C02A20451E00127417 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

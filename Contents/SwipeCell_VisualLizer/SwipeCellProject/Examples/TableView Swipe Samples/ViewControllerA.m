@@ -194,11 +194,10 @@ leading_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     MGUSwipeActionsConfiguration *configuration = [MGUSwipeActionsConfiguration configurationWithActions:@[read]];
       
     //! 쭉 당겼을 때, 발생하게 하는 것. 애플의 performsFirstActionWithFullSwipe = YES 해당. nil 이면 NO
-//    configuration.expansionStyle = [MGUSwipeExpansionStyle selection];
-    configuration.expansionStyle = nil;
-    configuration.backgroundColor = [UIColor systemBlueColor];
+    configuration.expansionStyle = [MGUSwipeExpansionStyle selection];
     configuration.transitionStyle = self.transitionStyle;
     configuration.buttonSpacing = 4.0;
+    configuration.backgroundColor = [UIColor systemBlueColor];
     
     if (self.buttonStyle == circular) {
         configuration.backgroundColor = [UIColor systemGray6Color];
@@ -226,7 +225,7 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     MGUSwipeAction *delete = [MGUSwipeAction swipeActionWithStyle:MGUSwipeActionStyleDestructive
                                              title:nil
                                            handler:^(MGUSwipeAction *action, UIView *sourceView, void (^completionHandler)(BOOL)) {
-        if (indexPath.row == 1 || indexPath.row == 0) {
+        if (indexPath.row == 1 || indexPath.row == 2) {
             // fill 또는 fillReverse
             UIAlertController *controller = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Delete", @"")
                                                                                 message:NSLocalizedString(@"delete row", @"")
@@ -315,14 +314,13 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     NSArray <MGUSwipeAction *>*actions;
     
-    //if (indexPath.row == 1) {
-    //    actions = @[delete];
-    //} else if (indexPath.row == 2) {
-    //    actions = @[delete, flag];
-    //} else {
-    //    actions = @[delete, flag, more];
-    //}
-    actions = @[delete, flag, more];
+    if (indexPath.row == 1) {
+        actions = @[delete];
+    } else if (indexPath.row == 2) {
+        actions = @[delete, flag];
+    } else {
+        actions = @[delete, flag, more];
+    }
     
     MGUSwipeActionsConfiguration *configuration = [MGUSwipeActionsConfiguration configurationWithActions:actions];
       
@@ -334,7 +332,6 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
         configuration.expansionStyle = [MGUSwipeExpansionStyle fillReverse];
     } else {
         configuration.expansionStyle = [MGUSwipeExpansionStyle fill];
-//        configuration.expansionStyle = [MGUSwipeExpansionStyle fillReverse];
     }
       
     configuration.transitionStyle = self.transitionStyle;
