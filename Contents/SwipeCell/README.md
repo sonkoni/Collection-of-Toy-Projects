@@ -40,9 +40,10 @@ MGUSwipeTableViewCell | MGUSwipeCollectionViewCell | [MiniTimer](https://apps.ap
 ---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 10.40.11.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 11.00.22.gif" width="250">|<img src="./screenshot/noch2-1.1-mod.gif" width="250">
 
-[MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 1 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 2 | [MiniTimer](https://apps.apple.com/app/id1618148240) 앱 Screenshot 1 | [MiniTimer](https://apps.apple.com/app/id1618148240) 앱 Screenshot 2 
----|---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.32.30.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.38.30.gif" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-6.jpg" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-3.jpg" width="225">
+[MiniTimer](https://apps.apple.com/app/id1618148240)(iPad)에서 사용 예 |
+---|
+<img src="./screenshot/pad2-1.1-mod.gif" width="805"> |
+
 
 ## Presets and Styles
 > Transition Styles
