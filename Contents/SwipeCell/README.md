@@ -38,7 +38,7 @@
 
 MGUSwipeTableViewCell | MGUSwipeCollectionViewCell | Vega Style - Reverse
 ---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 10.40.11.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.12.35.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.24.25.gif" width="250">
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 10.40.11.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 11.00.22.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.24.25.gif" width="250">
 
 [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 1 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 2 | [MiniTimer](https://apps.apple.com/app/id1618148240) 앱 Screenshot 1 | [MiniTimer](https://apps.apple.com/app/id1618148240) 앱 Screenshot 2 
 ---|---|---|---
