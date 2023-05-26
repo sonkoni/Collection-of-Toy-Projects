@@ -45,7 +45,7 @@ Folding Style | Vega Style | Vega Style - Reverse
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.32.30.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.38.30.gif" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-6.jpg" width="225">|<img src="./screenshot/Shot-iPhone14ProMax-3.jpg" width="225">
 
 ## Presets and Styles
-> Transition Style
+> Transition Styles
 
 Border Style|Drag Style|Reveal Style
 ---|---|---
@@ -59,7 +59,14 @@ None|Default|Favorite|Spring|Rotate
 <img src="./screenshot/Transition_Animation_None.gif" width="175">|<img src="./screenshot/Transition_Animation_Default.gif" width="175">|<img src="./screenshot/Transition_Animation_Favorite.gif" width="175">|<img src="./screenshot/Transition_Animation_Spring.gif" width="175">|<img src="./screenshot/Transition_Animation_Rotate.gif" width="175">
 
 ---
-> Button Display Mode & Button Style
+> Expansion Styles
+
+None|Selecton|Fill|Fill+Delete|FillReverse
+---|---|---|---|---
+<img src="./screenshot/ExpansionStyle_None.gif" width="175">|<img src="./screenshot/ExpansionStyle_Selecton.gif" width="175">|<img src="./screenshot/ExpansionStyle_Fill.gif" width="175">|<img src="./screenshot/ExpansionStyle_Fill+Delete.gif" width="175">|<img src="./screenshot/ExpansionStyle_FillReverse.gif" width="175">
+
+---
+> Button Display Mode & Button Styles
 
 &nbsp; &nbsp; &nbsp; Display Mode<br/>└───────┐<br/>Style &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Image+Title|Image Only|Title Only
 ---|---|---|---
