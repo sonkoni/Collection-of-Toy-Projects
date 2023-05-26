@@ -36,9 +36,9 @@
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
 
 
-MGUSwipeTableViewCell | MGUSwipeCollectionViewCell | Vega Style - Reverse
+MGUSwipeTableViewCell | MGUSwipeCollectionViewCell | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 1
 ---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 10.40.11.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 11.00.22.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-23 at 13.24.25.gif" width="250">
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 10.40.11.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-26 at 11.00.22.gif" width="250">|<img src="./screenshot/noch2-1.1-mod.gif" width="250">
 
 [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 1 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 2 | [MiniTimer](https://apps.apple.com/app/id1618148240) 앱 Screenshot 1 | [MiniTimer](https://apps.apple.com/app/id1618148240) 앱 Screenshot 2 
 ---|---|---|---
