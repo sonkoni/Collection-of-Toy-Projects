@@ -12,6 +12,11 @@
 
  
 ## Features
+*  Leading 및 Trailing swipe actions 지원
+    * 아랍어와 같은 RTL(right to left) 방향의 문자 시스템에서는 leading이 오른쪽에서 대응하게 설계됨
+*  Action button에 대하여 다양한 Display Mode와 Styles을 지원함
+    * Button Display Mode: Image+Title, Image Only, Title Only 
+    * Button Styles: Background Color, Circular 
 *  독특한 레이아웃 지원
     * Folding Style: 스크롤 시 종이처럼 접히는 레이아웃 
     * Vega Style: 스크롤 시 끝단에서 말리는 레이아웃 제공
@@ -20,16 +25,13 @@
     * 스크롤이 되어 접힌 셀이 존재할 때, 유저에게 인지 시키기 위해 인디케이터(수평 바)를 표시함
     * 인디케이터 커스텀 가능        
 *  일반적인 콜렉션뷰에서 제공하는 델리게이트(`MGUFlowViewDelegate`) 제공
-*  Diffable 기반으로 Update
-*  현재까지는 Scroll Direction은 vertical만 지원함. 필요성이 발생하면 기능 추가하겠음
-*  **랭귀지 다이렉션 어필**
-*  Interface Builder에서 설정가능 - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
-    * Swift : `@IBDesignable` `@IBInspectable`
-    * Objective-C : `IB_DESIGNABLE` `IBInspectable`         
+*  Diffable 기반 대응
+*  Haptic Feedback 제공 : Expansion 발생 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
+    * `UIImpactFeedbackGenerator` 이용하여 구현함         
 *  **Swift** and **Objective-C** compatability
 *  Written in Objective-C
 
-* 아랍어 방향 지원.
+
 
 ## Preview
 > - MGUSwipeCollectionViewCell (UICollectionView)
