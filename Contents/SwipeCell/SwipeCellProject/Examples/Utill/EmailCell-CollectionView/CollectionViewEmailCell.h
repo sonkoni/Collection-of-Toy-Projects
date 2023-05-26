@@ -1,5 +1,5 @@
 //
-//  MaiCellX.h
+//  CollectionViewEmailCell.h
 //  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2021/11/24.

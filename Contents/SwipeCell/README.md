@@ -120,32 +120,58 @@ view.addSubview(flowView)
 ```
 
 > Objective-C
+* `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
 ```objective-c
-
-CGFloat width = UIScreen.mainScreen.bounds.size.width - (2 * 20.0);
-self->_itemSize = CGSizeMake(width, 65.0);
-
-self.flowView  = [MGUFlowView new];
-[self.flowView registerClass:[MGUFlowFoldCell class]
-      forCellWithReuseIdentifier:NSStringFromClass([MGUFlowFoldCell class])];
+self->_diffableDataSource =
+[[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.collectionView
+                                                      cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, EmailCellModel *email) {
+    CollectionViewEmailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CollectionViewEmailCell class])
+                                                                              forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [CollectionViewEmailCell new];
+    }
     
-[self.flowView registerClass:[MGUFlowIndicatorSupplementaryView class]
-  forSupplementaryViewOfKind:MGUFlowElementKindFoldLeading
-         withReuseIdentifier:MGUFlowElementKindFoldLeading];
+    [cell setData:cellModel];
+    cell.delegate = self;
+    cell.swipeDecoRightColor = [UIColor systemRedColor];
+    cell.swipeDecoLeftColor = [UIColor clearColor];
+    return cell;
+}];
 
-self.flowView.itemSize = self.itemSize;
-self.flowView.leadingSpacing = 20.0;
-self.flowView.interitemSpacing = 0.0;
-self.flowView.scrollDirection = UICollectionViewScrollDirectionVertical;
-self.flowView.decelerationDistance = [MGUFlowView automaticDistance];
-self.flowView.transformer = nil;
-self.flowView.delegate = self;
-self.flowView.bounces = YES;
-self.flowView.alwaysBounceVertical = YES;
-self.flowView.clipsToBounds = YES;
-MGUFlowFoldTransformer *transformer = [MGUFlowFoldTransformer new];
-self.flowView.transformer = transformer;
-[self.view addSubview:self.flowView];
+
+```
+* `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
+    * 필요에 따라서 옵셔널 메서드도 구현한다.
+```objective-c
+- (MGUSwipeActionsConfiguration *)collectionView:(UICollectionView *)collectionView
+trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
+    __weak __typeof(self) weakSelf = self;
+        
+    // Completed 일 때 삭제 처리
+    MGUSwipeAction *deleteAction =
+    [MGUSwipeAction swipeActionWithStyle:MGUSwipeActionStyleDestructive
+                                title:nil
+                              handler:^(MGUSwipeAction * _Nonnull action,
+                                        __kindof UIView * _Nonnull sourceView,
+                                        void (^ _Nonnull completionHandler)(BOOL)) {
+        NSDiffableDataSourceSnapshot <NSNumber *, MiniTimerCellModel *>*snapshot = self.diffableDataSource.snapshot;
+        [snapshot deleteItemsWithIdentifiers:@[weakSelf.models[indexPath.row]]];
+        [weakSelf.models removeObjectAtIndex:indexPath.row];
+        [weakSelf.diffableDataSource applySnapshot:snapshot
+                                    collectionView:weakSelf.flowView.collectionView
+                                        completion:nil];
+    }];
+            
+    deleteAction.title = @"삭제";
+    UIImage *image = [UIImage systemImageNamed:@"trash"];
+    deleteAction.image = [image mgrImageWithColor:[UIColor whiteColor]];
+    deleteAction.textColor = [UIColor whiteColor];
+    MGUSwipeActionsConfiguration *configuration = [MGUSwipeActionsConfiguration configurationWithActions:@[deleteAction]];
+    configuration.expansionStyle = [MGUSwipeExpansionStyle fill];
+    configuration.transitionStyle = MGUSwipeTransitionStyleReveal;
+    configuration.backgroundColor = [UIColor systemRedColor];
+    return configuration;
+}
 
 ```
 

@@ -1,5 +1,5 @@
 //
-//  MailCell.m
+//  EmailCell.m
 //  SwipeCellProject
 //
 //  Created by Kwan Hyun Son on 2021/04/23.
