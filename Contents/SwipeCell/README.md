@@ -150,8 +150,8 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     // Completed 일 때 삭제 처리
     MGUSwipeAction *deleteAction =
     [MGUSwipeAction swipeActionWithStyle:MGUSwipeActionStyleDestructive
-                                title:nil
-                              handler:^(MGUSwipeAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+                                   title:nil
+                                 handler:^(MGUSwipeAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
         NSDiffableDataSourceSnapshot <NSNumber *, MiniTimerCellModel *>*snapshot = self.diffableDataSource.snapshot;
         [snapshot deleteItemsWithIdentifiers:@[weakSelf.models[indexPath.row]]];
         [weakSelf.models removeObjectAtIndex:indexPath.row];
