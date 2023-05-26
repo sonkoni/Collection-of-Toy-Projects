@@ -17,20 +17,28 @@
 *  Action button에 대하여 다양한 Display Mode와 Styles을 지원함
     * Button Display Mode: Image+Title, Image Only, Title Only 
     * Button Styles: Background Color, Circular 
-*  독특한 레이아웃 지원
-    * Folding Style: 스크롤 시 종이처럼 접히는 레이아웃 
-    * Vega Style: 스크롤 시 끝단에서 말리는 레이아웃 제공
-        * reverse order 기능 존재함. 아이템이 아래에서부터 차오른다. - [Preview](#preview) 참고.
-*  인디케이터 제공
-    * 스크롤이 되어 접힌 셀이 존재할 때, 유저에게 인지 시키기 위해 인디케이터(수평 바)를 표시함
-    * 인디케이터 커스텀 가능        
-*  일반적인 콜렉션뷰에서 제공하는 델리게이트(`MGUFlowViewDelegate`) 제공
+*  다양한 Transition Styles 제공
+    * Border Style 
+    * Drag Style
+    * Reveal Style
+*  다양한 Transition Animation Type 제공
+    * None 
+    * Default
+    * Favorite
+    * Spring
+    * Rotate
+*  다양한 Expansion Styles 제공
+    * None 
+    * Selecton
+    * Fill
+    * Fill+Delete
+    * FillReverse           
 *  Diffable 기반 대응
 *  Haptic Feedback 제공 : Expansion 발생 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
-    * `UIImpactFeedbackGenerator` 이용하여 구현함         
+    * `UIImpactFeedbackGenerator` 이용하여 구현함  
+*  `UITableView`와 `UICollectionView` 모두 지원           
 *  **Swift** and **Objective-C** compatability
 *  Written in Objective-C
-
 
 
 ## Preview
