@@ -4,11 +4,13 @@
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
-## **MGUFlowView**
+## **MGUSwipeTableViewCell(***UITableView***)** & **MGUSwipeCollectionViewCell(***UICollectionView***)**
 - 스크롤 시 접히는 종이처럼 접히는 Layout과 역순(아래에서 부터) 정렬 가능하며 말단에서 말려들어가는 Layout을 지원하는 Table View를 대체할 수 있는 Component  
     - `UICollectionViewLayout`, `UICollectionViewLayoutAttributes` 를 서브클래싱하여 제작함
 - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
 <p align="center"><img src="./screenshot/230523b1.jpg" width="500"></p>
+
+
 
  
 ## Features
@@ -32,8 +34,9 @@
 * 아랍어 방향 지원.
 
 ## Preview
-> - MGUFlowView (iOS)
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 종이처럼 접히는 레이아웃의 테이블 뷰 및 역순으로 정렬되는 테이블뷰를 요청하여 제작함.
+> - MGUSwipeCollectionViewCell (UICollectionView)
+>   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 커스텀 CollectionView에서 스와이프 기능을 요청하여 제작함.
+> - MGUSwipeTableViewCell (UITableView)
 
 
 MGUSwipeTableViewCell | MGUSwipeCollectionViewCell | [MiniTimer](https://apps.apple.com/app/id1618148240)(iPhone)에서 사용 예
