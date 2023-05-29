@@ -511,9 +511,10 @@ sonkoni(손관현), isomorphic111@gmail.com
 Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi).
 
 ### Differences and Improvements 
-$~$|[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell / MGUSwipeCollectionViewCell
----|---|---
-CollectionView|* 정상적으로 작동하지 않음|셀3
+$~$|[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell / MGUSwipeCollectionViewCell |
+---|---|---|
+CollectionView|* 정상적으로 작동하지 않음|셀3 |\
+              | ㅁㄴㅇㄹ| ㅁㄴㅇㄹ         |
 셀5|셀6|셀7
 
 
