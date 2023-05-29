@@ -515,7 +515,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
 > ---|---
 > `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨 | 다음 모두 정상적으로 작동함<br/>`UITableViewStylePlain`<br/>`UITableViewStyleGrouped`<br/>`UITableViewStyleInsetGrouped`
-> left, right actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | leading, trailing actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
+> Left, right swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | Leading, Trailing swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
 
 
 ---------
@@ -525,7 +525,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 > ---|---
 > swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫히는 버그 존재함 | 정상적으로 작동함
 > Device를 360도 회전하면 cell의 레이아웃이 망가짐 | 정상적으로 작동함
-> left, right actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | leading, trailing actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
+> Left, right swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | Leading, Trailing swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
 
 
 
