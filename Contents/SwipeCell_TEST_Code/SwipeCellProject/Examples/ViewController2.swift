@@ -8,20 +8,15 @@
 import UIKit
 import IosKit
 
-
-final class ViewController2: UIViewController {
-    
-    var dataSource : UITableViewDiffableDataSource<String, String>?
-    var currentSnapshot : NSDiffableDataSourceSnapshot<String, String>?
-    let tableView = UITableView(frame: .zero, style: .insetGrouped)
-    var items = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    
-    
-    
-    
+final class ViewController2: UIViewController, UICollectionViewDelegate {
+    var dataSource: UICollectionViewDiffableDataSource<String, EmailCellModel>?
+    var collectionView: UICollectionView?
+    var emails = EmailCellModel.mockEmails()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "타이틀"
+        view.backgroundColor = .systemGroupedBackground
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -29,10 +24,6 @@ final class ViewController2: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //! 현재 컨트롤러가 UITableViewController 가 아니므로, clearsSelectionOnViewWillAppear가 없다.
-        if let indexPath = tableView.indexPathForSelectedRow {
-            tableView.deselectRow(at:indexPath, animated:true)  // 원래 뷰로 돌아 올때, 셀렉션을 해제시킨다. 이게 더 멋지다.
-        }
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.isToolbarHidden = true
@@ -41,82 +32,102 @@ final class ViewController2: UIViewController {
 
 extension ViewController2 {
     func configureTableView() {
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .vertical
+        let collectionView = UICollectionView.init(frame: .zero, collectionViewLayout: flowLayout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .clear
+        collectionView.alwaysBounceVertical = true
+        collectionView.showsVerticalScrollIndicator = true
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.delegate = self
+        collectionView.decelerationRate = .normal
+        collectionView.allowsMultipleSelection = false
+        collectionView.register(CollectionViewEmailCell.self,
+                                forCellWithReuseIdentifier: NSStringFromClass(CollectionViewEmailCell.self))
         
-        tableView.register(MGUSwipeTableViewCell.self, forCellReuseIdentifier:NSStringFromClass(MGUSwipeTableViewCell.self))
-        tableView.delegate = self
+        view.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            ])
+        self.collectionView = collectionView
     }
     
     func configureDataSource() {
-        
-        dataSource =
-        UITableViewDiffableDataSource (tableView: tableView) {
-             (tableView: UITableView, indexPath: IndexPath, item: String) -> MGUSwipeTableViewCell? in
-            
-           guard let cell = tableView.dequeueReusableCell(
-                withIdentifier:NSStringFromClass(MGUSwipeTableViewCell.self),
-                for: indexPath) as? MGUSwipeTableViewCell else {
-               
-               return MGUSwipeTableViewCell()
-           }
-            
-            cell.accessoryType = .disclosureIndicator
-            var content = cell.defaultContentConfiguration()
-            content.text = item
-            content.directionalLayoutMargins = NSDirectionalEdgeInsets(top:8.0, leading:8.0, bottom:8.0, trailing:8.0)
-            content.textToSecondaryTextVerticalPadding = 5.0
-            cell.contentConfiguration = content
+        guard let collectionView = self.collectionView else {
+            return
+        }
+        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView,
+                                                        cellProvider: { (collectionView: UICollectionView,
+                                                                         indexPath: IndexPath,
+                                                                         cellModel: EmailCellModel) -> MGUSwipeCollectionViewCell? in
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CollectionViewEmailCell.self), for: indexPath) as? CollectionViewEmailCell else {
+                return MGUSwipeCollectionViewCell()
+             }
+            cell.setData(cellModel)
             cell.delegate = self;
             return cell
-        }
-
-        dataSource?.defaultRowAnimation = .fade
+        })
     }
     
     func updateUI(animated: Bool = true) {
-        currentSnapshot = NSDiffableDataSourceSnapshot<String, String>()
-        currentSnapshot?.appendSections(["0"])
-        currentSnapshot?.appendItems(items, toSection:"0")
-        dataSource?.apply(currentSnapshot!, animatingDifferences: animated)
+        var snapshot = NSDiffableDataSourceSnapshot<String, EmailCellModel>()
+        snapshot.appendSections(["0"])
+        snapshot.appendItems(emails, toSection:"0")
+        dataSource?.apply(snapshot, animatingDifferences: animated)
     }
 }
 
-// MARK: - UITableViewDelegate
-extension ViewController2: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+// MARK: - UICollectionViewDelegateFlowLayout
+extension ViewController2: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let maskView = cell.mask {
             maskView.frame = cell.bounds
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 98.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
 }
 
-extension ViewController2: MGUSwipeTableViewCellDelegate {
-    func tableView(_ tableView: UITableView, leading_SwipeActionsConfigurationForRowAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
+extension ViewController2: MGUSwipeCollectionViewCellDelegate {
+    func collectionView(_ collectionView: UICollectionView, leading_SwipeActionsConfigurationForItemAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
         return nil
     }
     
-    func tableView(_ tableView: UITableView, trailing_SwipeActionsConfigurationForRowAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
+    func collectionView(_ collectionView: UICollectionView, trailing_SwipeActionsConfigurationForItemAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
         let deleteAction = MGUSwipeAction.init(style: .destructive, title: nil) {[weak self] action, sourceView, completionHandler in
-            if let items = [self?.items[indexPath.row]] as? [String],
-               var snapshot = self?.dataSource?.snapshot() as? NSDiffableDataSourceSnapshot<String, String>{
+            if let items = [self?.emails[indexPath.row]] as? [EmailCellModel],
+               var snapshot = self?.dataSource?.snapshot() {
                 snapshot.deleteItems(items)
-                self?.items.remove(at: indexPath.row)
-                self?.dataSource?.apply(snapshot, animatingDifferences:true, completion: nil)
+                self?.emails.remove(at: indexPath.row)
+                self?.dataSource?.mgrSwipeApply(snapshot, collectionView: collectionView)
+                //! 중요: MGUSwipeCollectionViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
             }
         }
         let image = UIImage.init(systemName: "trash")
         deleteAction.image = image?.mgrImage(with: .white)
+        deleteAction.title = "Trash"
         let configuration = MGUSwipeActionsConfiguration.init(actions: [deleteAction])
         configuration.expansionStyle = .fill()
         configuration.transitionStyle = .reveal
         configuration.backgroundColor = .systemRed
+        print(configuration)
         return configuration
+    }
+    
+    func visibleRect(for collectionView: UICollectionView) -> CGRect {
+        return .null
     }
 }

@@ -7,6 +7,7 @@
 
 @import IosKit;
 #import "SharedUtil.h"
+@class EmailCellModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) IndicatorView *indicatorView;
 
 - (void)setUnread:(BOOL)unread animated:(BOOL)animated;
-
+- (void)setData:(EmailCellModel *)cellModel;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -71,6 +71,7 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath;
 - (void)hideSwipeAnimated:(BOOL)animated completion:(void(^ _Nullable)(BOOL))completion;
 - (void)didAddActionsView:(UIView *)actionsView NS_REQUIRES_SUPER;
 - (void)didRemoveActionsView:(UIView *)actionsView NS_REQUIRES_SUPER;
+- (void)reset;
 
 //! 디바이스가 horizontal일때, contentView 자체가 움직이지 않는다. swipeableContentView를 사용하자.
 @property (nonatomic, readonly) UIView *swipeableContentView;

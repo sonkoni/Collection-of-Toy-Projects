@@ -93,40 +93,49 @@ Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width=
 > Swift
 * `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
 ```swift
+//! TableView
 dataSource =
 UITableViewDiffableDataSource (tableView: tableView) {
      (tableView: UITableView, indexPath: IndexPath, item: String) -> MGUSwipeTableViewCell? in
-    
-   guard let cell = tableView.dequeueReusableCell(
+    guard let cell = tableView.dequeueReusableCell(
         withIdentifier:NSStringFromClass(MGUSwipeTableViewCell.self),
         for: indexPath) as? MGUSwipeTableViewCell else {
-       
        return MGUSwipeTableViewCell()
-   }
-    
-    cell.accessoryType = .disclosureIndicator
+    }
     var content = cell.defaultContentConfiguration()
     content.text = item
-    content.directionalLayoutMargins = NSDirectionalEdgeInsets(top:8.0, leading:8.0, bottom:8.0, trailing:8.0)
-    content.textToSecondaryTextVerticalPadding = 5.0
     cell.contentConfiguration = content
-    cell.delegate = self;
+    cell.delegate = self; // delegate 설정해야 메시지를 받을 수 있다.
     return cell
 }
+
+//! CollectionView
+dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView,
+                                                cellProvider: { (collectionView: UICollectionView,
+                                                                 indexPath: IndexPath,
+                                                                 cellModel: EmailCellModel) -> MGUSwipeCollectionViewCell? in
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CollectionViewEmailCell.self), for: indexPath) as? CollectionViewEmailCell else {
+        return MGUSwipeCollectionViewCell()
+     }
+    cell.setData(cellModel)
+    cell.delegate = self;
+    return cell
+})
 
 ```
 
 * `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
     * 필요에 따라서 옵셔널 메서드도 구현한다.
 ```swift
-
+//! TableView
 func tableView(_ tableView: UITableView, trailing_SwipeActionsConfigurationForRowAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
     let deleteAction = MGUSwipeAction.init(style: .destructive, title: nil) {[weak self] action, sourceView, completionHandler in
         if let items = [self?.items[indexPath.row]] as? [String],
-           var snapshot = self?.dataSource?.snapshot() as? NSDiffableDataSourceSnapshot<String, String>{
+           var snapshot = self?.dataSource?.snapshot() {
             snapshot.deleteItems(items)
             self?.items.remove(at: indexPath.row)
-            self?.dataSource?.apply(snapshot, animatingDifferences:true, completion: nil)
+            self?.dataSource?.mgrSwipeApply(snapshot, tableView: tableView)
+            //! 중요: MGUSwipeTableViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
         }
     }
     let image = UIImage.init(systemName: "trash")
@@ -136,13 +145,35 @@ func tableView(_ tableView: UITableView, trailing_SwipeActionsConfigurationForRo
     configuration.transitionStyle = .reveal
     configuration.backgroundColor = .systemRed
     return configuration
-}        
+}
+
+//! CollectionView
+func collectionView(_ collectionView: UICollectionView, trailing_SwipeActionsConfigurationForItemAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
+    let deleteAction = MGUSwipeAction.init(style: .destructive, title: nil) {[weak self] action, sourceView, completionHandler in
+        if let items = [self?.emails[indexPath.row]] as? [EmailCellModel],
+           var snapshot = self?.dataSource?.snapshot() {
+            snapshot.deleteItems(items)
+            self?.emails.remove(at: indexPath.row)
+            self?.dataSource?.mgrSwipeApply(snapshot, collectionView: collectionView)
+            //! 중요: MGUSwipeCollectionViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
+        }
+    }
+    let image = UIImage.init(systemName: "trash")
+    deleteAction.image = image?.mgrImage(with: .white)
+    deleteAction.title = "Trash"
+    let configuration = MGUSwipeActionsConfiguration.init(actions: [deleteAction])
+    configuration.expansionStyle = .fill()
+    configuration.transitionStyle = .reveal
+    configuration.backgroundColor = .systemRed
+    return configuration
+}
 
 ```
 
 > Objective-C
 * `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
 ```objective-c
+//! TableView
 _dataSource =
 [[UITableViewDiffableDataSource alloc] initWithTableView:self.tableView
                                             cellProvider:^MGUSwipeTableViewCell *(UITableView *tableView, NSIndexPath *indexPath, NSString *item) {
@@ -150,14 +181,21 @@ _dataSource =
     [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MGUSwipeTableViewCell class])
                                     forIndexPath:indexPath];
     UIListContentConfiguration *content = [cell defaultContentConfiguration];
-    content.text = self.items[indexPath.row];
-    content.directionalLayoutMargins = NSDirectionalEdgeInsetsMake(8.0, 8.0, 8.0, 8.0);
-    content.textToSecondaryTextVerticalPadding = 5.0;
+    content.text = item;
     cell.contentConfiguration = content;
     cell.delegate = self; // delegate 설정.
     return cell;
 }];
 
+//! CollectionView
+self->_diffableDataSource =
+[[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.collectionView
+                                                      cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, EmailCellModel *cellModel) {
+    CollectionViewEmailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CollectionViewEmailCell class]) forIndexPath:indexPath];
+    [cell setData:cellModel];
+    cell.delegate = self;
+    return cell;
+}];
 
 ```
 
@@ -165,22 +203,47 @@ _dataSource =
 * `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
     * 필요에 따라서 옵셔널 메서드도 구현한다.
 ```objective-c
+//! TableView
 - (MGUSwipeActionsConfiguration *)tableView:(UITableView *)tableView
 trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     __weak __typeof(self) weakSelf = self;
     MGUSwipeAction *deleteAction =
     [MGUSwipeAction swipeActionWithStyle:MGUSwipeActionStyleDestructive
-                                title:nil
-                              handler:^(MGUSwipeAction * _Nonnull action,
-                                        __kindof UIView * _Nonnull sourceView,
-                                        void (^ _Nonnull completionHandler)(BOOL)) {
-        NSDiffableDataSourceSnapshot <NSString *, NSString *>*snapshot = self.dataSource.snapshot;
+                                   title:nil
+                                 handler:^(MGUSwipeAction * _Nonnull action,
+                                           __kindof UIView * _Nonnull sourceView,
+                                           void (^ _Nonnull completionHandler)(BOOL)) {
+        NSDiffableDataSourceSnapshot <NSString *, NSString *>*snapshot = weakSelf.dataSource.snapshot;
         [snapshot deleteItemsWithIdentifiers:@[weakSelf.items[indexPath.row]]];
         [weakSelf.items removeObjectAtIndex:indexPath.row];
-        [weakSelf.dataSource applySnapshot:snapshot animatingDifferences:YES];
-        [weakSelf.dataSource applySnapshot:snapshot animatingDifferences:YES completion:nil];
+        [weakSelf.dataSource mgrSwipeApplySnapshot:snapshot tableView:tableView completion:nil];
+        //! 중요: MGUSwipeTableViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
     }];
             
+    UIImage *image = [UIImage systemImageNamed:@"trash"];
+    deleteAction.image = [image mgrImageWithColor:[UIColor whiteColor]];
+    MGUSwipeActionsConfiguration *configuration = [MGUSwipeActionsConfiguration configurationWithActions:@[deleteAction]];
+    configuration.expansionStyle = [MGUSwipeExpansionStyle fill];
+    configuration.transitionStyle = MGUSwipeTransitionStyleReveal;
+    configuration.backgroundColor = [UIColor systemRedColor];
+    return configuration;
+}
+
+//! CollectionView
+- (MGUSwipeActionsConfiguration *)collectionView:(UICollectionView *)collectionView
+trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionViewEmailCell *cell = (CollectionViewEmailCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    __weak __typeof(self) weakSelf = self;
+    MGUSwipeAction *deleteAction =
+    [MGUSwipeAction swipeActionWithStyle:MGUSwipeActionStyleDestructive
+                                   title:@"Trash"
+                                 handler:^(MGUSwipeAction *action, UIView *sourceView, void (^completionHandler)(BOOL)) {
+        NSDiffableDataSourceSnapshot <NSNumber *, EmailCellModel *>*snapshot = weakSelf.diffableDataSource.snapshot;
+        [snapshot deleteItemsWithIdentifiers:@[weakSelf.emails[indexPath.row]]];
+        [weakSelf.emails removeObjectAtIndex:indexPath.row];
+        [weakSelf.diffableDataSource mgrSwipeApplySnapshot:snapshot collectionView:weakSelf.collectionView completion:nil];
+        //! 중요: MGUSwipeCollectionViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
+    }];
     UIImage *image = [UIImage systemImageNamed:@"trash"];
     deleteAction.image = [image mgrImageWithColor:[UIColor whiteColor]];
     MGUSwipeActionsConfiguration *configuration = [MGUSwipeActionsConfiguration configurationWithActions:@[deleteAction]];

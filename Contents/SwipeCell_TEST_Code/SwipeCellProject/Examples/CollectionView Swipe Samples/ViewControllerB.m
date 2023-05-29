@@ -112,12 +112,8 @@ static void CommonInit(ViewControllerB *self) {
         cell.selectedBackgroundView = [UIView new];
         cell.selectedBackgroundView.backgroundColor = [UIColor.lightGrayColor colorWithAlphaComponent:0.2];
 
-        cell.fromLabel.text = email.from;
-        cell.dateLabel.text = email.relativeDateString;
-        cell.subjectLabel.text = email.subject;
-        cell.bodyLabel.text = email.body;
+        [cell setData:email];
         cell.bodyLabel.numberOfLines = self.usesTallCells ? 0 : 2;
-        cell.unread = email.unread;
         
         if (self.type == MailCollectionLayoutType2) {
             cell.clip = NO;

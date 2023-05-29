@@ -59,7 +59,6 @@
 
 
 #pragma mark - 생성 & 소멸
-
 static void CommonInit(MiniTimerCell *self) {
     self.backgroundColor = UIColor.clearColor;
     self.clip = NO; // cell 밖으로 밀려나는 모습이 가능하다.

@@ -60,7 +60,7 @@ didEndTrailingSwipeAtIndexPath:(NSIndexPath *)indexPath;
 - (void)hideSwipeAnimated:(BOOL)animated completion:(void(^ _Nullable)(BOOL))completion;
 - (void)didAddActionsView:(UIView *)actionsView NS_REQUIRES_SUPER;
 - (void)didRemoveActionsView:(UIView *)actionsView NS_REQUIRES_SUPER;
-
+- (void)reset;
 @end
 
 @interface UITableView (MGUSwipeCellKit)

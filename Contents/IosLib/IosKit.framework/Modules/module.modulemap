@@ -4,3 +4,8 @@ framework module IosKit {
   export *
   module * { export * }
 }
+
+module IosKit.Swift {
+  header "IosKit-Swift.h"
+  requires objc
+}

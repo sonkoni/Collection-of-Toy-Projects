@@ -47,9 +47,7 @@
         [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MGUSwipeTableViewCell class])
                                         forIndexPath:indexPath];
         UIListContentConfiguration *content = [cell defaultContentConfiguration];
-        content.text = self.items[indexPath.row];
-        content.directionalLayoutMargins = NSDirectionalEdgeInsetsMake(8.0, 8.0, 8.0, 8.0);
-        content.textToSecondaryTextVerticalPadding = 5.0;
+        content.text = item;
         cell.contentConfiguration = content;
         cell.delegate = self;
         return cell;
@@ -85,7 +83,7 @@ trailing_SwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
         NSDiffableDataSourceSnapshot <NSString *, NSString *>*snapshot = self.dataSource.snapshot;
         [snapshot deleteItemsWithIdentifiers:@[weakSelf.items[indexPath.row]]];
         [weakSelf.items removeObjectAtIndex:indexPath.row];
-        [weakSelf.dataSource applySnapshot:snapshot animatingDifferences:YES completion:nil];
+        [weakSelf.dataSource mgrSwipeApplySnapshot:snapshot tableView:tableView completion:nil];
     }];
             
     UIImage *image = [UIImage systemImageNamed:@"trash"];

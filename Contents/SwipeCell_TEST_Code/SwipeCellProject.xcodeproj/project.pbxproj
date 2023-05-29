@@ -33,7 +33,9 @@
 		84E556882A1DAA8000127417 /* MiniTimerCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556832A1DAA8000127417 /* MiniTimerCellModel.m */; };
 		84E556892A1DAA8000127417 /* MiniTimerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556842A1DAA8000127417 /* MiniTimerCell.m */; };
 		84E556CD2A208D0D00127417 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E556CB2A208D0D00127417 /* ViewController1.m */; };
-		84E556D02A20942200127417 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E556CF2A20942200127417 /* ViewController2.swift */; };
+		84E556D22A20BB9A00127417 /* ViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E556D12A20BB9A00127417 /* ViewControllerX.swift */; };
+		84E557032A2173B000127417 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E557012A21739900127417 /* ViewController2.swift */; };
+		84E557092A21805000127417 /* ViewControllerM.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E557082A21805000127417 /* ViewControllerM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,7 +122,10 @@
 		84E556C92A20637D00127417 /* 230526a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230526a1.jpg; sourceTree = "<group>"; };
 		84E556CA2A208D0D00127417 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		84E556CB2A208D0D00127417 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
-		84E556CF2A20942200127417 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		84E556D12A20BB9A00127417 /* ViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerX.swift; sourceTree = "<group>"; };
+		84E557012A21739900127417 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		84E557072A21805000127417 /* ViewControllerM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerM.h; sourceTree = "<group>"; };
+		84E557082A21805000127417 /* ViewControllerM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +237,8 @@
 				84E556702A1DA61D00127417 /* Utill */,
 				84E556CA2A208D0D00127417 /* ViewController1.h */,
 				84E556CB2A208D0D00127417 /* ViewController1.m */,
-				84E556CF2A20942200127417 /* ViewController2.swift */,
+				84E556D12A20BB9A00127417 /* ViewControllerX.swift */,
+				84E557012A21739900127417 /* ViewController2.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -254,6 +260,8 @@
 			children = (
 				84E556742A1DA65000127417 /* ViewControllerB.h */,
 				84E556722A1DA65000127417 /* ViewControllerB.m */,
+				84E557072A21805000127417 /* ViewControllerM.h */,
+				84E557082A21805000127417 /* ViewControllerM.m */,
 				84E5567A2A1DAA8000127417 /* ViewControllerC.h */,
 				84E5567B2A1DAA8000127417 /* ViewControllerC.m */,
 			);
@@ -404,9 +412,11 @@
 				845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */,
 				84E556882A1DAA8000127417 /* MiniTimerCellModel.m in Sources */,
 				84E5566C2A1D330F00127417 /* EmailCell.m in Sources */,
-				84E556D02A20942200127417 /* ViewController2.swift in Sources */,
+				84E557032A2173B000127417 /* ViewController2.swift in Sources */,
 				84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */,
+				84E556D22A20BB9A00127417 /* ViewControllerX.swift in Sources */,
 				84E556CD2A208D0D00127417 /* ViewController1.m in Sources */,
+				84E557092A21805000127417 /* ViewControllerM.m in Sources */,
 				84E556852A1DAA8000127417 /* ViewControllerC.m in Sources */,
 				84E5566D2A1D330F00127417 /* SharedUtil.m in Sources */,
 				845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */,

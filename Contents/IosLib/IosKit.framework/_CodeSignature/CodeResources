@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/IosKit-Swift.h</key>
+		<data>
+		t+vHiw/aw5sbVYXHM9Nun54nlkg=
+		</data>
 		<key>Headers/IosKit.h</key>
 		<data>
 		w1WDHItOx/uFGrGMlxfTWURmDc8=
@@ -366,7 +370,7 @@
 		</data>
 		<key>Headers/MGUSwipeCollectionViewCell.h</key>
 		<data>
-		EbzehY2utaxF/ngetzXrO7GT4cE=
+		kz5UDDoRD3aQkhXHwZhWFpADMVg=
 		</data>
 		<key>Headers/MGUSwipeExpansionStyle.h</key>
 		<data>
@@ -374,7 +378,7 @@
 		</data>
 		<key>Headers/MGUSwipeTableViewCell.h</key>
 		<data>
-		PnMWI1tBxQBXuevVJKWUnxex+P4=
+		7a7eoCjIMjvthE5yi6D9TTMdSfg=
 		</data>
 		<key>Headers/MGUSwipeableInterface.h</key>
 		<data>
@@ -604,13 +608,40 @@
 		<data>
 		wYZXHBdMeFF7YyXdzCbPF2HAAzI=
 		</data>
+		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		ra0EHeajpy4cl4tGn8lTLvL4Jec=
+		</data>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		</data>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		LZ4TpRsxsrfv2YxnBHg2kZbKVuY=
+		</data>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		tax6BX4PkdfSa2DvJnah1ro/qdg=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		eQr5cUbejOHqrWavSIR10CNYlnk=
+		xV033rXLeRw483o+SwJP4yqPjxY=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/IosKit-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t+vHiw/aw5sbVYXHM9Nun54nlkg=
+			</data>
+			<key>hash2</key>
+			<data>
+			PXEfGDZivAKHw6qiQCMKK0Hs/Hc5HL9mk60xmheiIB4=
+			</data>
+		</dict>
 		<key>Headers/IosKit.h</key>
 		<dict>
 			<key>hash</key>
@@ -1605,11 +1636,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EbzehY2utaxF/ngetzXrO7GT4cE=
+			kz5UDDoRD3aQkhXHwZhWFpADMVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			R6QmIPbC/wxVQLEDKx9bsi4J/GFk4NpIV22Q6mzDtFg=
+			V28bt5rg9bEz73L5O1sWfBESWk/RUoQ6mmHAp4A5mS4=
 			</data>
 		</dict>
 		<key>Headers/MGUSwipeExpansionStyle.h</key>
@@ -1627,11 +1658,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PnMWI1tBxQBXuevVJKWUnxex+P4=
+			7a7eoCjIMjvthE5yi6D9TTMdSfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			JGBbn6BEOYTwUp+F0v4i7q/fFBNEeDLh4k2b15+78Dk=
+			qvS0NaUuD9pVZYLikilAugaNjjIuWDXJMvtROBNLsQM=
 			</data>
 		</dict>
 		<key>Headers/MGUSwipeableInterface.h</key>
@@ -2250,15 +2281,59 @@
 			CYTSUKR0YQsm7icPvewdN4ChiBXCcv+GOLH97F7jr1Y=
 			</data>
 		</dict>
+		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ra0EHeajpy4cl4tGn8lTLvL4Jec=
+			</data>
+			<key>hash2</key>
+			<data>
+			7MY2tjJGe8ixku57C0dkdMPYyPOAvY18zTRECMmhxu4=
+			</data>
+		</dict>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FSPnLbho3G+LL9smI3XgVOqBIQ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			</data>
+		</dict>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LZ4TpRsxsrfv2YxnBHg2kZbKVuY=
+			</data>
+			<key>hash2</key>
+			<data>
+			KgC0uTwIU5rOKr4yS/g6IZV743xhJIXrMQUWGlvJdWM=
+			</data>
+		</dict>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tax6BX4PkdfSa2DvJnah1ro/qdg=
+			</data>
+			<key>hash2</key>
+			<data>
+			81X18QTJbm/9Ge58EnHf49a77YXw1b/TpbM1m8Ue36M=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eQr5cUbejOHqrWavSIR10CNYlnk=
+			xV033rXLeRw483o+SwJP4yqPjxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BS3IYuNidrGFSyo6BV/WAo+cn7W6XhmNbzAdOPVd6J4=
+			HO0KHglhMzR+iOOl17elhqzwgSTcDhRGRZsA5gMR0Oc=
 			</data>
 		</dict>
 	</dict>

@@ -7,6 +7,7 @@
 
 @import IosKit;
 #import "CollectionViewEmailCell.h"
+#import "EmailCellModel.h"
 
 @interface CollectionViewEmailCell ()
 //! 닙으로 초기화함.
@@ -100,5 +101,12 @@ static void CommonInit(CollectionViewEmailCell *self) {
     }
 }
 
+- (void)setData:(EmailCellModel *)cellModel {
+    self.fromLabel.text = cellModel.from;
+    self.dateLabel.text = cellModel.relativeDateString;
+    self.subjectLabel.text = cellModel.subject;
+    self.bodyLabel.text = cellModel.body;
+    self.unread = cellModel.unread;
+}
 
 @end

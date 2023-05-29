@@ -104,12 +104,8 @@ static void CommonInit(ViewControllerA *self) {
         cell.multipleSelectionBackgroundView = [self createMultipleSelectedBackgroundView];
         
         EmailCellModel *email = self.emails[indexPath.row];
-        cell.fromLabel.text = email.from;
-        cell.dateLabel.text = email.relativeDateString;
-        cell.subjectLabel.text = email.subject;
-        cell.bodyLabel.text = email.body;
+        [cell setData:email];
         cell.bodyLabel.numberOfLines = self.usesTallCells ? 0 : 2;
-        cell.unread = email.unread;
         
         NSString *imageName = nil;
         if (self.userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionLeftToRight) { // 일반 언어 순서

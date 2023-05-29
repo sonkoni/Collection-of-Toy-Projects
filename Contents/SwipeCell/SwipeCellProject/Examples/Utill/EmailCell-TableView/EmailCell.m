@@ -6,6 +6,7 @@
 //
 
 #import "EmailCell.h"
+#import "EmailCellModel.h"
 
 @implementation EmailCell
 
@@ -79,6 +80,14 @@ static void CommonInit(EmailCell *self) {
     } else {
         closure();
     }
+}
+
+- (void)setData:(EmailCellModel *)cellModel {
+    self.fromLabel.text = cellModel.from;
+    self.dateLabel.text = cellModel.relativeDateString;
+    self.subjectLabel.text = cellModel.subject;
+    self.bodyLabel.text = cellModel.body;
+    self.unread = cellModel.unread;
 }
 
 @end

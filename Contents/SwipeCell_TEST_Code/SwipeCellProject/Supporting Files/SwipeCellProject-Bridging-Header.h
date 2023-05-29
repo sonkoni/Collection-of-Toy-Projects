@@ -15,3 +15,5 @@
 
 
 #import "ViewController1.h"
+#import "CollectionViewEmailCell.h"
+#import "EmailCellModel.h"
