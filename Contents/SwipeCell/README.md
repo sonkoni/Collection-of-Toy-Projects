@@ -497,10 +497,6 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 
 </details>
 
-
-<img src="./screenshot/230523c1.jpg" width="1000">
-<img src="./screenshot/230523c2.jpg" width="1000">
-
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com
@@ -515,7 +511,7 @@ Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Moh
 
 [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi) | MGUSwipeCollectionViewCell 
 ---|---
-ㅁㄴㅇㄹㅁㄴㅇㄹ | ㅁㄴㅇㄹㅁㄴㅇㄹ
+ㅁㄴㅇㄹㅁㄴㅇㄹ | 정상적으로 작동함
 
 
 * TableView

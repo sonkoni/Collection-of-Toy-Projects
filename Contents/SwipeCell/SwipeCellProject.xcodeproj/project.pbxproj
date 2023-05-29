@@ -66,8 +66,6 @@
 		84D6B1C52A1248700044E02D /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
 		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
-		84E5563B2A1CCAF300127417 /* 230523c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230523c1.jpg; sourceTree = "<group>"; };
-		84E5563C2A1CCD5B00127417 /* 230523c2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230523c2.jpg; sourceTree = "<group>"; };
 		84E5563E2A1CF02C00127417 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		84E5563F2A1CF03D00127417 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		84E556402A1CF04900127417 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -204,8 +202,6 @@
 				84E556C72A20541700127417 /* noch2-1.1-mod.gif */,
 				84E556C82A20541700127417 /* pad2-1.1-mod.gif */,
 				84E556C92A20637D00127417 /* 230526a1.jpg */,
-				84E5563B2A1CCAF300127417 /* 230523c1.jpg */,
-				84E5563C2A1CCD5B00127417 /* 230523c2.jpg */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
