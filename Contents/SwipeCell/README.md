@@ -508,7 +508,6 @@ Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Moh
 
 ### Differences and Improvements 
 > * CollectionView
-
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi) | MGUSwipeCollectionViewCell 
 > ---|---
 > swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫힘 | 정상적으로 작동함
