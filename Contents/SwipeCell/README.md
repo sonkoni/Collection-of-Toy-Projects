@@ -511,7 +511,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi).
 
 ### Differences and Improvements 
-$~$|[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell / MGUSwipeCollectionViewCell |
+$~$|[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell<br/>MGUSwipeCollectionViewCell |
 ---|---|---|
 CollectionView|1.swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫힘<br/>2.Device를 360도 회전하면 cell의 레이아웃이 망가짐|정상적으로 작동함|
 셀5|셀6|셀7
