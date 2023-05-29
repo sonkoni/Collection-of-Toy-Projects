@@ -513,9 +513,9 @@ Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Moh
 ### Differences and Improvements 
 * CollectionView
 
-[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeCollectionViewCell 
+[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi) | MGUSwipeCollectionViewCell 
 ---|---
-1. swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫힘<br/>2. Device를 360도 회전하면 cell의 레이아웃이 망가짐|정상적으로 작동함
+1. swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫힘<br/>2. Device를 360도 회전하면 cell의 레이아웃이 망가짐 |. 정상적으로 작동함
 
 
 * TableView
