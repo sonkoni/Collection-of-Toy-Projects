@@ -90,8 +90,12 @@ Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width=
 
 ## Usage
 
+<details> 
+<summary>👇🖱️ Swift</summary>
+<hr>
+
 > Swift
-* `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
+> `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
 ```swift
 //! TableView
 dataSource =
@@ -169,6 +173,8 @@ func collectionView(_ collectionView: UICollectionView, trailing_SwipeActionsCon
 }
 
 ```
+</details>
+
 
 > Objective-C
 * `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
