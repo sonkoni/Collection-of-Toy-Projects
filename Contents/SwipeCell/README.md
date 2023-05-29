@@ -516,6 +516,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 > ---|---
 > `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨 | 다음 세 가지 스타일 모두 정상적으로 작동함<br/>`UITableViewStylePlain`<br/>`UITableViewStyleGrouped`<br/>`UITableViewStyleInsetGrouped`
 > Left, right swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | Leading, Trailing swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
+> Built-in Transition Animation Type 없음. | There exists a built-in Transition Animation Type.<br/>None<br/>Default<br/>Favorite<br/>Spring<br/>Rotate
 
 
 ---------
