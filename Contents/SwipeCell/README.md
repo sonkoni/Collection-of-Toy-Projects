@@ -491,7 +491,13 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 
 ## Author
 
-sonkoni(손관현), isomorphic111@gmail.com 
+sonkoni(손관현), isomorphic111@gmail.com
+
+
+## Credits
+
+Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi).
+ 
 
 ## License
 
