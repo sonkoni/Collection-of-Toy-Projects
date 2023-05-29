@@ -127,6 +127,7 @@ dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView,
 
 ```
 
+------
 > * `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
 >    * 필요에 따라서 옵셔널 메서드도 구현한다.
 ```swift
