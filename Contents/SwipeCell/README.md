@@ -508,6 +508,16 @@ sonkoni(손관현), isomorphic111@gmail.com
     * [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit)에는 치명적인 버그가 존재하여 그대로 사용할 수 없어 Objective-C로 재작성하면서 발견된 모든 버그를 수정하고, 필요하다고 생각되는 기능을 추가하였음. 추가적으로 메서드 형식을 현재 애플 스와이프와 유사한 방식으로 호출할 수 있도록 모든 요소를 현대적으로 바꿨음.
 
 ### Differences and Improvements 
+
+---------
+> * TableView에서 차이점과 개선점
+>
+> [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
+> ---|---
+> `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨 | 다음 모두 정상적으로 작동함<br/>`UITableViewStylePlain`<br/>`UITableViewStyleGrouped`<br/>`UITableViewStyleInsetGrouped`
+> left, right actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | leading, trailing actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
+
+
 ---------
 > * CollectionView에서 차이점과 개선점
 >
@@ -517,13 +527,6 @@ sonkoni(손관현), isomorphic111@gmail.com
 > Device를 360도 회전하면 cell의 레이아웃이 망가짐 | 정상적으로 작동함
 > left, right actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | leading, trailing actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
 
----------
-> * TableView에서 차이점과 개선점
->
-> [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
-> ---|---
-> `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨 | 다음 모두 정상적으로 작동함<br/>`UITableViewStylePlain`<br/>`UITableViewStyleGrouped`<br/>`UITableViewStyleInsetGrouped`
-> left, right actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | leading, trailing actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
 
 
 
