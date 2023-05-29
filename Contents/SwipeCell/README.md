@@ -91,10 +91,9 @@ Circular   |<img src="./screenshot/Button_Style_Circular_Image+Title.jpg" width=
 ## Usage
 
 <details> 
-<summary>👇🖱️ Swift</summary>
+<summary>👇🖱️ Swift에서의 사용</summary>
 <hr>
 
-> Swift
 > `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
 ```swift
 //! TableView
@@ -128,8 +127,8 @@ dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView,
 
 ```
 
-* `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
-    * 필요에 따라서 옵셔널 메서드도 구현한다.
+> * `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
+>    * 필요에 따라서 옵셔널 메서드도 구현한다.
 ```swift
 //! TableView
 func tableView(_ tableView: UITableView, trailing_SwipeActionsConfigurationForRowAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
@@ -176,8 +175,11 @@ func collectionView(_ collectionView: UICollectionView, trailing_SwipeActionsCon
 </details>
 
 
-> Objective-C
-* `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
+<details> 
+<summary>👇🖱️ Objective-C에서의 사용</summary>
+<hr>
+
+>  `MGUSwipeCollectionViewCell` 또는 `MGUSwipeTableViewCell`의 `delegate` 프라퍼티를 설정한다.
 ```objective-c
 //! TableView
 _dataSource =
@@ -206,8 +208,8 @@ self->_diffableDataSource =
 ```
 
 
-* `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
-    * 필요에 따라서 옵셔널 메서드도 구현한다.
+> * `MGUSwipeCollectionViewCellDelegate` 또는 `MGUSwipeTableViewCellDelegate`의 프로토콜을 구현한다.
+>     * 필요에 따라서 옵셔널 메서드도 구현한다.
 ```objective-c
 //! TableView
 - (MGUSwipeActionsConfiguration *)tableView:(UITableView *)tableView
@@ -260,6 +262,8 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 ```
+</details>
+
 
 ## Documentation
 
