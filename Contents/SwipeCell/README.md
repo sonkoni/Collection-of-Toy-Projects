@@ -521,8 +521,9 @@ sonkoni(손관현), isomorphic111@gmail.com
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
 > ---|---
-> `UITableViewStyleInsetGrouped` 사용시 앱이 크래쉬 됨 | 다음 모두 정상적으로 작동함<br/>`UITableViewStyleInsetGrouped`<br/>`UITableViewStyleInsetGrouped`<br/>`UITableViewStyleInsetGrouped`
+> `UITableViewStyleInsetGrouped` 사용시 앱이 크래쉬 됨 | 다음 모두 정상적으로 작동함<br/>`UITableViewStylePlain`<br/>`UITableViewStyleGrouped`<br/>`UITableViewStyleInsetGrouped`
 > Device를 360도 회전하면 cell의 레이아웃이 망가짐 | 정상적으로 작동함
+
 
 
 ## License
