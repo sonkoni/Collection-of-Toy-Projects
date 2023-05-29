@@ -504,10 +504,11 @@ sonkoni(손관현), isomorphic111@gmail.com
 
 ## Credits
 
-Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi).
+* Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi).
+    * [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit)에 존재하는 치명적인 버그가 존재하여 그대로 사용할 수 없어 Objective-C로 재작성하면서 발견되는 모든 버그를 수정하고, 필요하다고 생각되는 기능을 추가하였음. 추가적으로 메서드 형식을 현재 애플 스와이프와 유사한 방식으로 호출할 수 있도록 모든 요소를 현대적으로 바꿨음.
 
 ### Differences and Improvements 
-> * CollectionView
+> * CollectionView에서 차이점과 개선점을 알아보자.
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi) | MGUSwipeCollectionViewCell 
 > ---|---
