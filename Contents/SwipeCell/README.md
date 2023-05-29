@@ -513,8 +513,7 @@ Inspired by [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Moh
 ### Differences and Improvements 
 $~$|[SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell / MGUSwipeCollectionViewCell |
 ---|---|---|
-CollectionView|* 정상적으로 작동하지 않음|셀3 |\
-              | ㅁㄴㅇㄹ| ㅁㄴㅇㄹ         |
+CollectionView|정상적으로 작동하지 않음<br\>호홓호|셀3 |
 셀5|셀6|셀7
 
 
