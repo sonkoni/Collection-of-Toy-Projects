@@ -105,7 +105,7 @@ UITableViewDiffableDataSource (tableView: tableView) {
     var content = cell.defaultContentConfiguration()
     content.text = item
     cell.contentConfiguration = content
-    cell.delegate = self; // delegate 설정해야 메시지를 받을 수 있다.
+    cell.delegate = self // delegate 설정해야 swipe를 이용할 수 있다.
     return cell
 }
 
@@ -118,7 +118,7 @@ dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView,
         return MGUSwipeCollectionViewCell()
      }
     cell.setData(cellModel)
-    cell.delegate = self;
+    cell.delegate = self // delegate 설정해야 swipe를 이용할 수 있다.
     return cell
 })
 
@@ -183,7 +183,7 @@ _dataSource =
     UIListContentConfiguration *content = [cell defaultContentConfiguration];
     content.text = item;
     cell.contentConfiguration = content;
-    cell.delegate = self; // delegate 설정.
+    cell.delegate = self; // delegate 설정해야 swipe를 이용할 수 있다.
     return cell;
 }];
 
@@ -193,7 +193,7 @@ self->_diffableDataSource =
                                                       cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, EmailCellModel *cellModel) {
     CollectionViewEmailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CollectionViewEmailCell class]) forIndexPath:indexPath];
     [cell setData:cellModel];
-    cell.delegate = self;
+    cell.delegate = self; // delegate 설정해야 swipe를 이용할 수 있다.
     return cell;
 }];
 
