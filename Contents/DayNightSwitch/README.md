@@ -78,8 +78,10 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 
 ## Documentation
 
->  * 7개의 별을 배치하는 알고리즘
->    
+<details> 
+<summary>👇🖱️ 7개의 별을 배치하는 알고리즘</summary>
+<hr>
+
 >  ```objective-c
 >  - (void)setupStarViews { // 7개의 별을 나타낼 수 있게, 아주 작은 하얀색 뷰들을 다른 위치와 약간 다른 사이즈로 생성한다.
 >      CGFloat w = self.frame.size.width;
@@ -105,8 +107,13 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 >  }
 >  ```
 
->  * 7개의 별을 시간차를 두고 반짝이게 하는 알고리즘
->    
+</details>
+
+<details> 
+<summary>👇🖱️ 7개의 별을 시간차를 두고 반짝이게 하는 알고리즘</summary>
+<hr>
+
+
 >  ```objective-c
 >  for (int i = 0; i < self.stars.count; i++) {
 >      
@@ -125,6 +132,8 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 >  }
 >  
 >  ```
+
+</details>
 
 <details> 
 <summary>👇🖱️ border 애니메이션 알고리즘</summary>
