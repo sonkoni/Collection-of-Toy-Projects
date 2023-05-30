@@ -9,7 +9,7 @@
 - `DayNightSwitch`는 [Dribbble](https://dribbble.com/shots/1909289-Day-Night-Toggle-Button-GIF) 에서 발견한 스위치 디자인에 영감을 얻어 `UIControl`(iOS), `NSControl`(macOS)을 서브 클래싱하여 제작함. 
     - `MGUDNSwitch` : iOS 용 (`UIControl` 서브클래스)
     - `MGADNSwitch` : macOS 용 (`NSControl` 서브클래스)
-<p align="center"><img src="./screenshot/230530a3.gif" width="300"></p>
+<p align="center"><img src="./screenshot/230530a3.gif" width="200"></p>
 
 
 ## Features
