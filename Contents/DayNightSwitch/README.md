@@ -49,13 +49,13 @@ MGUDNSwitch (iOS) | MGADNSwitch (macOS)
 //! iOS
 let dayNightSwitch = MGUDNSwitch(center: view.center, switchOn: true, configuration: nil)
 view.addSubview(dayNightSwitch)
-dayNightSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
+dayNightSwitch.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
 
 //! macOS
 let dayNightSwitch = MGADNSwitch(frame: .zero, switchOn: false, configuration: nil)
 view.addSubview(dayNightSwitch)
 dayNightSwitch.target = self
-dayNightSwitch.action = #selector(switchChanged(_:))
+dayNightSwitch.action = #selector(switchValueChanged(_:))
 
 ```
 
@@ -64,7 +64,7 @@ dayNightSwitch.action = #selector(switchChanged(_:))
 //! iOS
 _dayNightSwitch = [[MGUDNSwitch alloc] initWithCenter:CGPointZero switchOn:YES configuration:nil];
 [self.view addSubview:self.dayNightSwitch];
-[self.dayNightSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+[self.dayNightSwitch addTarget:self action:@selector(switchValueChanged:) forControlEvents:UIControlEventValueChanged];
 
 //! macOS
 _dayNightSwitch = [[MGADNSwitch alloc] initWithFrame:NSZeroRect switchOn:NO configuration:nil];
