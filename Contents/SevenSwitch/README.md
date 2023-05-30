@@ -74,6 +74,10 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 
 <img src="./screenshot/230517a1.jpg" width="500">
 
+
+## Documentation
+<img src="./screenshot/230530a1.jpg" width="500">
+
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com 

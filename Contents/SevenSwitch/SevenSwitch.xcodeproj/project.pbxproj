@@ -100,6 +100,7 @@
 		84725FE72A132B24004A9E7C /* Screen Recording 2023-05-16 at 12.04.22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Screen Recording 2023-05-16 at 12.04.22.gif"; sourceTree = "<group>"; };
 		84725FE82A1360A5004A9E7C /* 230516b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b1.jpg; sourceTree = "<group>"; };
 		84725FEC2A13ED8A004A9E7C /* 230517a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230517a1.jpg; sourceTree = "<group>"; };
+		847F5CFF2A25BECD001D464D /* 230530a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230530a1.jpg; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* SevenSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 				84725FE22A13235D004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif */,
 				84725FE52A1323F6004A9E7C /* Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif */,
 				84725FE72A132B24004A9E7C /* Screen Recording 2023-05-16 at 12.04.22.gif */,
+				847F5CFF2A25BECD001D464D /* 230530a1.jpg */,
 				84725FE82A1360A5004A9E7C /* 230516b1.jpg */,
 				84725FEC2A13ED8A004A9E7C /* 230517a1.jpg */,
 			);
