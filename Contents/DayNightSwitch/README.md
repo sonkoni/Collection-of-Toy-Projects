@@ -14,9 +14,8 @@
 
 ## Features
 *  커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있음)
-*  커스텀 Shape 가능
+*  커스텀 Color 설정 가능
     * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
-*  커스텀 손잡이 가능
 *  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device(아이폰, 트랙패드 등)를 통해 전달된다.
     * iOS : `UIImpactFeedbackGenerator` 이용하여 구현함
     * macOS : `NSHapticFeedbackManager` 이용하여 구현함
@@ -34,7 +33,6 @@
 
 ## Preview
 > - MGUDNSwitch (iOS)
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 > - MGADNSwitch (macOS)
 
 MGUDNSwitch (iOS) | MGADNSwitch (macOS)
@@ -79,7 +77,7 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 
 
 ## Documentation
-<img src="./screenshot/230530a1.jpg" width="1000">
+
 
 ## Author
 

@@ -86,7 +86,6 @@
 		84725FB92A130962004A9E7C /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../macLib/BaseKit.framework; sourceTree = "<group>"; };
 		84725FBA2A130962004A9E7C /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../macLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		84725FC72A130E0A004A9E7C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		847F5CFF2A25BECD001D464D /* 230530a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230530a1.jpg; sourceTree = "<group>"; };
 		847F5D002A25C55A001D464D /* DayNightSwitch_macOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNightSwitch_macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		847F5D062A25CC14001D464D /* ViewControllerA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		847F5D082A25CC3C001D464D /* ViewControllerA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerA.xib; sourceTree = "<group>"; };
@@ -202,7 +201,6 @@
 			children = (
 				847F5D162A2604C2001D464D /* Simulator Screen Recording - iPhone 14 - 2023-05-30 at 19.12.19.gif */,
 				847F5D0B2A2601BD001D464D /* Screen Recording 2023-05-30 at 18.58.38.gif */,
-				847F5CFF2A25BECD001D464D /* 230530a1.jpg */,
 				84B9F4992A265F5E00DB591C /* 230531a1.jpg */,
 				847F5D0A2A25E9D9001D464D /* 230530a3.gif */,
 			);
