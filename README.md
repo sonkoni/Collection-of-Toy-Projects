@@ -54,7 +54,7 @@
  
 ## UI-Control
 ### Alert & Action Sheet
-- [MGUAlertViewController, MGUActionSheetController](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AlertActionSheetController) - TODO: 문구 넣어라.
+- [MGUAlertViewController, MGUActionSheetController](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AlertActionSheetController) - `UIAlertController`를 대체할 수 있는 커스텀 ViewController.
 ### DialControl
 - [DialControl Samples](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/DialControl_Samples) - 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤 테스트 샘플
 ### Keyboard
