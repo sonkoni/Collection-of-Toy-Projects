@@ -67,7 +67,6 @@
 		84E556B92A1F8F6200127417 /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif"; sourceTree = "<group>"; };
 		84E556BA2A203F5E00127417 /* 230516b2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b2.jpg; sourceTree = "<group>"; };
 		84E66C322A1473FA001CCF28 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
-		84E66C342A147BD3001CCF28 /* 230517a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230517a2.jpg; sourceTree = "<group>"; };
 		84E66C362A1481EE001CCF28 /* 230516b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b1.jpg; sourceTree = "<group>"; };
 		84E66C422A1491A2001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif"; sourceTree = "<group>"; };
 		84E66C432A1491CE001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif"; sourceTree = "<group>"; };
@@ -141,7 +140,6 @@
 				84E556B92A1F8F6200127417 /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif */,
 				84E66C362A1481EE001CCF28 /* 230516b1.jpg */,
 				84E556BA2A203F5E00127417 /* 230516b2.jpg */,
-				84E66C342A147BD3001CCF28 /* 230517a2.jpg */,
 				847FF9FE2A268B3900F6E67C /* 230531a1.jpg */,
 			);
 			path = screenshot;

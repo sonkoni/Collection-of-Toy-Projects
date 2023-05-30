@@ -67,7 +67,7 @@ MGUNeoSegControl *segmentedControl =
 
 ## Documentation
 
-- Segment 배치를 위한 설계도
+- 컨텐츠 배치를 위한 설계도
 <img src="./screenshot/230531a1.jpg" width="1000">
 
 ## Author
