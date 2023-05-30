@@ -14,8 +14,7 @@
 
 
 ## Features
-*  커스텀 사이즈 가능(`UISwitch` 및 `NSSwitch`와 동일한 `intrinsicContentSize`도 가지고 있음)
-*  ON, OFF 영역에 이미지 또는 텍스트 설정 가능
+*  커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있음)
 *  커스텀 Shape 가능
     * ON, OFF 각각의 상태에 대하여 보더, 백그라운드, 손잡이 색을 개별적으로 설정가능
 *  커스텀 손잡이 가능
@@ -23,14 +22,14 @@
     * iOS : `UIImpactFeedbackGenerator` 이용하여 구현함
     * macOS : `NSHapticFeedbackManager` 이용하여 구현함
 *  제스처가 다 끝나지 않은 상태(손가락이 떨어지지 않은 상태)에서 ON, OFF를 오고가는 상태를 Notification 등록을 통해 감시 가능
-    * iOS : `MGUSevenSwitchStateChangedNotification` 을 이용하여 감시 가능함
+    * iOS : `MGUDNSwitchStateChangedNotification` 을 이용하여 감시 가능함
     * macOS : `MGADNSwitchStateChangedNotification` 을 이용하여 감시 가능함
-*  MGASevenSwitch(macOS)는 마우스 hover 시에 커서 타입을 정할 수 있다.    
-*  MGASevenSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
+*  MGADNSwitch(macOS)는 마우스 hover 시에 커서 타입을 정할 수 있다.    
+*  MGADNSwitch(macOS)는 Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
     * Swift : `@IBDesignable` `@IBInspectable`
     * Objective-C : `IB_DESIGNABLE` `IBInspectable`
 *  **Swift** and **Objective-C** compatability
-*  Support **iOS**(***MGUSevenSwitch***) and **macOS**(***MGASevenSwitch***).
+*  Support **iOS**(***MGUDNSwitch***) and **macOS**(***MGADNSwitch***).
 *  Written in Objective-C
 
 
