@@ -128,7 +128,8 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 
 <details> 
 <summary>👇🖱️ border 애니메이션 알고리즘</summary>
->
+
+
 >   ```objective-c
 >   //! border 애니메이션을 위해서는 start point가 각각 달라야한다.
 >   - (UIBezierPath *)pathForLeftStartRoundRect:(CGRect)rect {
