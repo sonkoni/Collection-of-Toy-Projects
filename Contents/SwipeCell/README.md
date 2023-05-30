@@ -514,12 +514,18 @@ sonkoni(손관현), isomorphic111@gmail.com
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
 > ---|---
-> `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[ ] `UITableViewStyleInsetGrouped` - 앱 ***크래쉬*** 됨</li></ul> | 다음 세 가지 `UITableViewStyle` 모두 정상적으로 작동함<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[x] `UITableViewStyleInsetGrouped`</li></ul>
 > Left, right swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함.<br/><p align="center"><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-30 at 10.25.34.gif" width="150"></p> | Leading, Trailing swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.<br/><p align="center"><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-30 at 10.23.17.gif" width="150"></p>
 > Built-in Transition Animation Type 없음. | There exists a built-in **[Transition Animation Type](#presets-and-styles)**.<br/>1. None<br/>2. Default<br/>3. Favorite<br/>4. Spring<br/>5. Rotate
 > Delete Animation 작동 안함(버그로 추정)<br/>삭제 시 그냥 펑 사라짐<br/><p align="center"><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-29 at 14.52.32.gif" width="150"></p> | Delete Animation 정상 작동<br/>삭제 시 mask view를 통해 자연스럽게 삭제하게 만듬<br/><p align="center"><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-30 at 09.12.30.gif" width="150"></p>
 > **Swift** compatability | **Swift** and **Objective-C** compatability
 
+
+---------
+> * TableView에서 차이점과 개선점
+>
+> [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
+> ---|---
+> `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[ ] `UITableViewStyleInsetGrouped` - 앱 ***크래쉬*** 됨</li></ul> | 다음 세 가지 `UITableViewStyle` 모두 정상적으로 작동함<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[x] `UITableViewStyleInsetGrouped`</li></ul>
 
 
 ---------
@@ -529,8 +535,6 @@ sonkoni(손관현), isomorphic111@gmail.com
 > ---|---
 > swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫히는 버그 존재함 | 정상적으로 작동함
 > Device를 360도 회전하면 cell의 레이아웃이 망가짐 | 정상적으로 작동함
-> Left, right swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | Leading, Trailing swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
-
 
 
 
