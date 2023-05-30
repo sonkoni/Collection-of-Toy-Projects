@@ -55,7 +55,7 @@ MGASevenSwitch (macOS) |
 > Swift
 ```swift
 
-let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
+let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: true, configuration: MGUSevenSwitchConfiguration.default())
 view.addSubview(sevenSwitch)
 sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
 
