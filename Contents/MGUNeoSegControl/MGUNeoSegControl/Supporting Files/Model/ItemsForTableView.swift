@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ItemsForTableView.swift
 //  MGUNeoSegControl
 //
 //  Created by Kwan Hyun Son on 2022/10/10.

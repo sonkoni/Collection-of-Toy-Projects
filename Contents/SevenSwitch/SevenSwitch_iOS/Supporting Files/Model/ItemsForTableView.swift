@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ItemsForTableView.swift
 //  SevenSwitch_iOS
 //
 //  Created by Kwan Hyun Son on 2022/10/10.

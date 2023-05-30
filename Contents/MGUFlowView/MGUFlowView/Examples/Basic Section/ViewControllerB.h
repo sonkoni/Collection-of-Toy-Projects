@@ -1,6 +1,6 @@
 //
 //  ViewControllerB.h
-//  MGRFlowViewExample_koni
+//  MGRFlowView
 //
 //  Created by Kwan Hyun Son on 2021/09/28.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.

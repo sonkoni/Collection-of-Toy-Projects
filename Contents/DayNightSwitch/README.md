@@ -46,21 +46,31 @@ MGUDNSwitch (iOS) | MGADNSwitch (macOS)
 
 > Swift
 ```swift
+//! iOS
+let dayNightSwitch = MGUDNSwitch(center: view.center, switchOn: true, configuration: nil)
+view.addSubview(dayNightSwitch)
+dayNightSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
 
-let sevenSwitch = MGUSevenSwitch(center: CGPoint.zero, switchOn: isBig, configuration: MGUSevenSwitchConfiguration.default())
-view.addSubview(sevenSwitch)
-sevenSwitch.addTarget(self, action: #selector(switchChanged(_:)), for: .valueChanged)
+//! macOS
+let dayNightSwitch = MGADNSwitch(frame: .zero, switchOn: false, configuration: nil)
+view.addSubview(dayNightSwitch)
+dayNightSwitch.target = self
+dayNightSwitch.action = #selector(switchChanged(_:))
 
 ```
 
 > Objective-C
 ```objective-c
+//! iOS
+_dayNightSwitch = [[MGUDNSwitch alloc] initWithCenter:CGPointZero switchOn:YES configuration:nil];
+[self.view addSubview:self.dayNightSwitch];
+[self.dayNightSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
 
-_sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
-                                            switchOn:YES
-                                       configuration:[MGUSevenSwitchConfiguration yellowConfiguration]];
-[self.view addSubview:self.sevenSwitch];
-[self.sevenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+//! macOS
+_dayNightSwitch = [[MGADNSwitch alloc] initWithFrame:NSZeroRect switchOn:NO configuration:nil];
+[self.view addSubview:self.dayNightSwitch];
+self.dayNightSwitch.target = self;
+self.dayNightSwitch.action = @selector(switchValueChanged:);
 
 ```
 > Interface Builder

@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  MGUOnOffButton
+//  ItemsForTableView.swift
+//  MGUFlatSwitch
 //
 //  Created by Kwan Hyun Son on 2022/10/10.
 //
