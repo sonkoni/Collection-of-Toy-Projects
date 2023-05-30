@@ -4,7 +4,7 @@
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
-## **MGUSwipeTableViewCell(***UITableView***)** & **MGUSwipeCollectionViewCell(***UICollectionView***)**
+## **MGUSwipeTableViewCell(***UITableView***)** <br/> **MGUSwipeCollectionViewCell(***UICollectionView***)**
 - 커스텀 CollectionView 에서 스와이프 기능을 지원하고 UITableView에서도 더 더양한 외관과 기능을 제공하는 스와이프 가능한 cell  
     - `UITableViewCell`, `UICollectionViewCell` 을 서브클래싱하여 제작함
 - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 커스텀 CollectionView에서 스와이프 기능을 요청하여 제작함.
