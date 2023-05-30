@@ -59,7 +59,7 @@ self.flatSwitch.checkMarkNCircleStrokeColor = checkMarkNCircleStrokeColor;
 
 > Interface Builder
 
-<img src="./screenshot/230517a4.jpg" width="500">
+<img src="./screenshot/230517a4.jpg" width="600">
 
 ## Author
 
