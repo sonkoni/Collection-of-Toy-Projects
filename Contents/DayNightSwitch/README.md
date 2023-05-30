@@ -105,25 +105,26 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 >  }
 >  ```
 
-* 7개의 별을 시간차를 두고 반짝이게 하는 알고리즘
-```objective-c
-for (int i = 0; i < self.stars.count; i++) {
-    
-    if(switchOn == YES) {
-        self.stars[i].alpha = 0.0;
-    } else {
-        self.stars[i].alpha = 1.0;
-    }
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1 * i * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        self.stars[i].transform = CGAffineTransformMakeScale(1.5, 1.5);
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.05 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-            self.stars[i].transform = CGAffineTransformIdentity;
-        });
-    });
-}
-
-```
+>  * 7개의 별을 시간차를 두고 반짝이게 하는 알고리즘
+>    
+>  ```objective-c
+>  for (int i = 0; i < self.stars.count; i++) {
+>      
+>      if(switchOn == YES) {
+>          self.stars[i].alpha = 0.0;
+>      } else {
+>          self.stars[i].alpha = 1.0;
+>      }
+>      
+>      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1 * i * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+>          self.stars[i].transform = CGAffineTransformMakeScale(1.5, 1.5);
+>          dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.05 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+>              self.stars[i].transform = CGAffineTransformIdentity;
+>          });
+>      });
+>  }
+>  
+>  ```
 
 ## Author
 
