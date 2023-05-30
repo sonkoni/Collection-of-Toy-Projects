@@ -65,7 +65,7 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 ```
 > Interface Builder
 
-<img src="./screenshot/230517a1.jpg" width="500">
+<img src="./screenshot/230531a1.jpg" width="500">
 
 
 ## Documentation
