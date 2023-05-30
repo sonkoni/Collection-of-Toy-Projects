@@ -530,8 +530,8 @@ sonkoni(손관현), isomorphic111@gmail.com
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi) | MGUSwipeCollectionViewCell 
 > ---|---
-> swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫히는 버그 존재함<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.45.15.gif" width="300"></p> | 정상적으로 작동함
-> Device를 360도 회전하면 cell의 레이아웃이 망가짐<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.43.04.gif" width="300"></p> | 정상적으로 작동함
+> swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫히는 버그 존재함<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.43.04.gif" width="300"></p> | 정상적으로 작동함
+> Device를 360도 회전하면 cell의 레이아웃이 망가짐<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.45.15.gif" width="300"></p> | 정상적으로 작동함
 
 
 
