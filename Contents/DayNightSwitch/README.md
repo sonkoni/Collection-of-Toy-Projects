@@ -79,6 +79,11 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 ## Documentation
 
 * 7개의 별을 배치하는 알고리즘
+    ```objective-c
+    - (void)setupStarViews { // 7개의 별을 나타낼 수 있게, 아주 작은 하얀색 뷰들을 다른 위치와 약간 다른 사이즈로 생성한다.
+    }
+    ```
+    
 ```objective-c
 - (void)setupStarViews { // 7개의 별을 나타낼 수 있게, 아주 작은 하얀색 뷰들을 다른 위치와 약간 다른 사이즈로 생성한다.
     CGFloat w = self.frame.size.width;
