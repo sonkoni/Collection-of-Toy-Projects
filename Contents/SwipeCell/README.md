@@ -522,7 +522,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
 > ---|---
-> `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[ ] `UITableViewStyleInsetGrouped` - 앱 ***크래쉬*** 됨</li></ul> | 다음 세 가지 `UITableViewStyle` 모두 정상적으로 작동함<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[x] `UITableViewStyleInsetGrouped`</li></ul>
+> `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[ ] `UITableViewStyleInsetGrouped` - 앱 ***크래쉬*** 됨</li></ul><br/><p align="center"><img src="./screenshot/Screenshot 2023-05-30 at 13.09.31.jpg" width="300"></p> | 다음 세 가지 `UITableViewStyle` 모두 정상적으로 작동함<br/><ul><li>[x] `UITableViewStylePlain`</li><li>[x] `UITableViewStyleGrouped`</li><li>[x] `UITableViewStyleInsetGrouped`</li></ul><br/><p align="center"><img src="./screenshot/Screenshot 2023-05-30 at 13.12.44.jpg" width="300"></p>
 
 
 ---------
@@ -532,6 +532,9 @@ sonkoni(손관현), isomorphic111@gmail.com
 > ---|---
 > swipe로 cell을 expand한 후 Device를 회전하면 cell이 닫히는 버그 존재함<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.43.04.gif" width="300"></p> | 정상적으로 작동함<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.57.46.gif" width="300"></p>
 > Device를 360도 회전하면 cell의 레이아웃이 망가짐<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.45.15.gif" width="300"></p> | 정상적으로 작동함<br/><p align="center"><img src="./screenshot/Screen Recording 2023-05-30 at 12.59.18.gif" width="300"></p>
+
+
+
 
 
 ## License
