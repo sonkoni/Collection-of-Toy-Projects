@@ -37,9 +37,14 @@
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
 > - MGADNSwitch (macOS)
 
-MGUDNSwitch (iOS) | MGADNSwitch (macOS)
----|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-30 at 19.12.19.gif" width="250">|<img src="./screenshot/Screen Recording 2023-05-30 at 18.58.38.gif" width="450">
+
+MGUDNSwitch (iOS) | MGUDNSwitch (iOS) | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용한 예
+---|---|---
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.18.26.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.21.18.gif" width="250">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-16 at 11.33.44.gif" width="250">
+
+MGADNSwitch (macOS) |
+---|
+<img src="./screenshot/Screen Recording 2023-05-30 at 18.58.38.gif" width="450">|
 
 
 ## Usage
