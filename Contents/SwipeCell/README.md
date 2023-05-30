@@ -269,6 +269,11 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 
 ## Documentation
 
+* `MGUSwipeCollectionViewCell`을 사용할 경우에는 `UIListContentConfiguration`을 사용해서는 안된다.
+    * iOS 14이상 부터 지원하는 CollectionView Cell의 스와이프와 충돌하므로 `UIListContentConfiguration`를 사용하지 않으면 문제 없이 작동한다.
+     
+
+    
 
 ## Author
 
