@@ -6,10 +6,6 @@
 //  ----------------------------------------------------------------------
 //
 //
-//! 사용방법
-//! 초기화 메서드는 다음과 같다. 스위치를 ON 상태 또는 OFF 상태로 초기화 할 수 있다.
-/// 1. - initWithCenter:switchOn:
-/// 2. - initWithFrame:switchOn:
 
 //! 스위치의 현재 상태를 확인하고 싶다면 swichOn(getter)를 통해 확인하자.
 
@@ -19,13 +15,48 @@
 //! animated NO이면 애니메이션이 작동되지 않고 변화된다.
 //! 알람은 오지 않는다. 알람은 손가락으로만 작동한다.
 
-//! 사용 방법은 다음과 같다.
-//! [switch addTarget:self action:@selector(dNSwitchValueChanged:) forControlEvents:UIControlEventValueChanged];
-
 #import <IosKit/MGUDNSwitchConfiguration.h>
 
 NS_ASSUME_NONNULL_BEGIN
+extern NSNotificationName const MGUDNSwitchStateChangedNotification; // 제스처가 지속되는 과정에서 on off 상태에 관심이 있다면
 
+/*!
+ * @class      MGUDNSwitch
+ * @abstract   ...
+ * @discussion ...
+ * @code
+        @property (nonatomic, strong) id <NSObject>dnSwitchObserver;
+ 
+        // Target - Action
+        - (IBAction)switchChanged:(MGUDNSwitch *)sender {
+            if (sender.switchOn == YES) {
+            NSLog(@"밸류가 바뀌었네. ON");
+        } else {
+            NSLog(@"밸류가 바뀌었네. OFF");
+        }
+ 
+        // 현재 상태 추적. 손가락으로 움직이는 도중이라도 관찰.
+        _dnSwitch = [[MGUDNSwitch alloc] initWithCenter:center
+                                               switchOn:YES
+                                          configuration:[MGUDNSwitchConfiguration defaultConfiguration]];
+        [self.dnSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+        [self.view addSubview:self.dnSwitch];
+        
+        __weak __typeof(self) weakSelf = self;
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        _dnSwitchObserver = [nc addObserverForName:MGUDNSwitchStateChangedNotification
+                                            object:self.dnSwitch // poster
+                                             queue:[NSOperationQueue mainQueue]
+                                        usingBlock:^(NSNotification *note) {
+            NSLog(@"바뀌었냐?? %d", weakSelf.dnSwitch.switchOn);
+        }];
+ 
+        - (void)dealloc {
+            NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+            [nc removeObserver:_dnSwitchObserver];
+        }
+ * @endcode
+ */
 @interface MGUDNSwitch : UIControl
 
 @property (nonatomic, strong) MGUDNSwitchConfiguration *configuration;

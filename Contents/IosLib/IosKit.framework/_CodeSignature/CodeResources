@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/MGUDNSwitch.h</key>
 		<data>
-		l1NziiFzTWZ5oLFuFHVAWI9nymQ=
+		zFHpSMPXYl+L5WuDb+WG/hAvgPY=
 		</data>
 		<key>Headers/MGUDNSwitchConfiguration.h</key>
 		<data>
@@ -610,7 +610,7 @@
 		</data>
 		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ra0EHeajpy4cl4tGn8lTLvL4Jec=
+		E00nOC4+UNkGQUrOSAd81oEXS7U=
 		</data>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -921,11 +921,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l1NziiFzTWZ5oLFuFHVAWI9nymQ=
+			zFHpSMPXYl+L5WuDb+WG/hAvgPY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MfB4PxbH0sDRhnMrXm5c2acgJkuJnHBwtbnj7UQE9B0=
+			aBH+r5R/WnyUHqk8ETA3ilht0wdQo8hiv2g0PeyRy/Y=
 			</data>
 		</dict>
 		<key>Headers/MGUDNSwitchConfiguration.h</key>
@@ -2285,11 +2285,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ra0EHeajpy4cl4tGn8lTLvL4Jec=
+			E00nOC4+UNkGQUrOSAd81oEXS7U=
 			</data>
 			<key>hash2</key>
 			<data>
-			7MY2tjJGe8ixku57C0dkdMPYyPOAvY18zTRECMmhxu4=
+			mAcvhTmnuWYeCF+ikEYupfGyI2mMJ2b9flPcEosn4cc=
 			</data>
 		</dict>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
