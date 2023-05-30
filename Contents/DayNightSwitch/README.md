@@ -78,6 +78,51 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 
 ## Documentation
 
+* 7개의 별을 배치하는 알고리즘
+```objective-c
+- (void)setupStarViews { // 7개의 별을 나타낼 수 있게, 아주 작은 하얀색 뷰들을 다른 위치와 약간 다른 사이즈로 생성한다.
+    CGFloat w = self.frame.size.width;
+    CGFloat h = self.frame.size.height;
+    CGFloat x = h * 0.05; // 높이의 5%
+    UIView *s1 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.50, h * 0.16, x,       x)];
+    UIView *s2 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.62, h * 0.33, x * 0.6, x * 0.6)];
+    UIView *s3 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.70, h * 0.15, x,       x)];
+    UIView *s4 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.83, h * 0.39, x * 1.4, x * 1.4)];
+    UIView *s5 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.70, h * 0.54, x * 0.8, x * 0.8)];
+    UIView *s6 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.52, h * 0.73, x * 1.3, x * 1.3)];
+    UIView *s7 = [[UIView alloc] initWithFrame: CGRectMake(w * 0.82, h * 0.66, x * 1.1, x * 1.1)];
+    self.stars = @[s1, s2, s3, s4, s5, s6, s7];
+    for (UIView *star in self.stars) {
+        star.layer.masksToBounds = YES;
+        star.layer.cornerRadius  = star.frame.size.height / 2.0;
+        star.backgroundColor     = [UIColor whiteColor];
+        if (self.switchOn == YES) {
+            star.alpha = 0.0;
+        }
+        [self addSubview:star];
+    }
+}
+```
+
+* 7개의 별을 시간차를 두고 반짝이게 하는 알고리즘
+```objective-c
+for (int i = 0; i < self.stars.count; i++) {
+    
+    if(switchOn == YES) {
+        self.stars[i].alpha = 0.0;
+    } else {
+        self.stars[i].alpha = 1.0;
+    }
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1 * i * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.stars[i].transform = CGAffineTransformMakeScale(1.5, 1.5);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.05 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            self.stars[i].transform = CGAffineTransformIdentity;
+        });
+    });
+}
+
+```
 
 ## Author
 
