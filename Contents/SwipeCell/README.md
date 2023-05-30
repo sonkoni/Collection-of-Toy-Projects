@@ -275,7 +275,7 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     
         
 * 스와이프 액션으로 셀을 삭제할 때는 클로저 내부에서 다음과 같은 메서드로 삭제해야한다.
->   * 내부의 애니메이션 처리를 위해 필요하다.
+>   >  * 내부의 애니메이션 처리를 위해 필요하다.
 > ```objective-c
 > // objective-c
 > - (void)mgrSwipeApplySnapshot:(NSDiffableDataSourceSnapshot *)snapshot
