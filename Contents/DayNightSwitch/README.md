@@ -6,10 +6,9 @@
 ![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
 ## **MGUDNSwitch** (***iOS***) <br/> **MGADNSwitch** (***macOS***)
-- `DayNightSwitch`는 `UISwitch` 및 `NSSwitch` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 스위치
-    - MGUDNSwitch : iOS 용 (UIControl 서브클래스)
-    - MGADNSwitch : macOS 용 (NSControl 서브클래스)
-- [MiniTimer](https://apps.apple.com/app/id1618148240)을 만들면서 팝업에 위치할 커스텀 스위치의 요구사항이 있어서 제작함.
+- `DayNightSwitch`는 [Dribbble](https://dribbble.com/shots/1909289-Day-Night-Toggle-Button-GIF) 에서 발견한 스위치 디자인에 영감을 얻어 `UIControl`(iOS 용), `NSControl`(iOS 용)을 서브 클래싱하여 제작함. 
+    - `MGUDNSwitch` : iOS 용 (`UIControl` 서브클래스)
+    - `MGADNSwitch` : macOS 용 (`NSControl` 서브클래스)
 <p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>
 
 
