@@ -274,8 +274,8 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
     * TableView는 문제 없이 작동한다.
     
         
-* 스와이프 액션으로 셀을 삭제할 때는 클로저 내부에서 다음과 같은 메서드로 삭제해야한다.
->    * 내부의 애니메이션 처리를 위해 필요하다.
+> * 스와이프 액션으로 셀을 삭제할 때는 클로저 내부에서 다음과 같은 메서드로 삭제해야한다.
+>     * 내부의 애니메이션 처리를 위해 필요하다.
 > ```objective-c
 > // objective-c
 > - (void)mgrSwipeApplySnapshot:(NSDiffableDataSourceSnapshot *)snapshot
@@ -290,22 +290,22 @@ trailing_SwipeActionsConfigurationForItemAtIndexPath:(NSIndexPath *)indexPath {
 >     completion: (() -> Void)? = nil
 > )    
 > ```    
-```swift
-func tableView(_ tableView: UITableView, trailing_SwipeActionsConfigurationForRowAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
-    let deleteAction = MGUSwipeAction.init(style: .destructive, title: nil) {[weak self] action, sourceView, completionHandler in
-        if let items = [self?.items[indexPath.row]] as? [String],
-           var snapshot = self?.dataSource?.snapshot() {
-            snapshot.deleteItems(items)
-            self?.items.remove(at: indexPath.row)
-            self?.dataSource?.mgrSwipeApply(snapshot, tableView: tableView)
-            //! 중요: MGUSwipeTableViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
-        }
-    }
-    ...
-    return configuration
-}
-
-```    
+> ```swift
+> func tableView(_ tableView: UITableView, trailing_SwipeActionsConfigurationForRowAt indexPath: IndexPath) -> MGUSwipeActionsConfiguration? {
+>     let deleteAction = MGUSwipeAction.init(style: .destructive, title: nil) {[weak self] action, sourceView, completionHandler in
+>         if let items = [self?.items[indexPath.row]] as? [String],
+>            var snapshot = self?.dataSource?.snapshot() {
+>             snapshot.deleteItems(items)
+>             self?.items.remove(at: indexPath.row)
+>             self?.dataSource?.mgrSwipeApply(snapshot, tableView: tableView)
+>             //! 중요: MGUSwipeTableViewCell를 사용하여 스와이프로 삭제할 때는 내가 만든 메서드를 사용해야한다. ∵ 애니메이션 효과 때문에
+>         }
+>     }
+>     ...
+>     return configuration
+> }
+> 
+> ```    
 
     
 
