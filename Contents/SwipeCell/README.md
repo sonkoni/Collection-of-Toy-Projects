@@ -517,7 +517,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 > `UITableViewStyleInsetGrouped` 사용시 앱이 **크래쉬** 됨 | 다음 세 가지 스타일 모두 정상적으로 작동함<br/>`UITableViewStylePlain`<br/>`UITableViewStyleGrouped`<br/>`UITableViewStyleInsetGrouped`
 > Left, right swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응을 못함. | Leading, Trailing swipe actions based.<br/>아랍어와 같이 RTL(right to left)방향으로 문자가 쓰여지는 언어에서<br/>적절하게 대응함.
 > Built-in Transition Animation Type 없음. | There exists a built-in **[Transition Animation Type](#presets-and-styles)**.<br/>1. None<br/>2. Default<br/>3. Favorite<br/>4. Spring<br/>5. Rotate
-> Delete Animation 작동 안함(버그로 추정)<br/>삭제 시 그냥 펑 사라짐<br/><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-29 at 14.52.32.gif" width="200"> | Delete Animation 정상 작동<br/><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-29 at 14.54.02.gif" width="200">
+> Delete Animation 작동 안함(버그로 추정)<br/>삭제 시 그냥 펑 사라짐<br/><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-29 at 14.52.32.gif" width="200"> | Delete Animation 정상 작동<br/><img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-30 at 09.12.30.gif" width="200">
 > **Swift** compatability | **Swift** and **Objective-C** compatability
 
 
