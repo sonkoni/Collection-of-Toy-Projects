@@ -510,7 +510,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 ### Differences and Improvements 
 
 ---------
-> * TableView에서 차이점과 개선점
+> * 차이점과 개선점
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
 > ---|---
