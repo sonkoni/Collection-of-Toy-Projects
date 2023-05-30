@@ -71,7 +71,7 @@
 ### Table View / Collection View
 
 #### Table View
-- [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell) - TODO: SwipeCell ????? 문구 적어라.
+- [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell) - Custom Swipeable `UITableViewCell`/`UICollectionViewCell`
 
 #### Collection View
 - [MGUFlowView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlowView) - `UITableView` 대체할 수 있는 독특한 레이아웃을 제공하는 TableView.
