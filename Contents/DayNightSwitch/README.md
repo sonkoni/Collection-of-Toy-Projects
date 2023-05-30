@@ -79,7 +79,13 @@ _sevenSwitch =[[MGUSevenSwitch alloc] initWithCenter:CGPointZero
 
 ## Author
 
-sonkoni(손관현), isomorphic111@gmail.com 
+sonkoni(손관현), isomorphic111@gmail.com
+
+
+## Credits
+
+Inspired by Dribbble [post](https://dribbble.com/shots/1909289-Day-Night-Toggle-Button-GIF)
+ 
 
 ## License
 
