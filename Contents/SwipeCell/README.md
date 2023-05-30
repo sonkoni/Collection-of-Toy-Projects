@@ -518,7 +518,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 
 
 ---------
-> * Differences and improvements in TableView
+> * Differences and improvements in ***TableView***
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi)|MGUSwipeTableViewCell
 > ---|---
@@ -526,7 +526,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 
 
 ---------
-> * Differences and improvements in CollectionView
+> * Differences and improvements in ***CollectionView***
 >
 > [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit) by [Mohammad Kurabi](https://github.com/kurabi) | MGUSwipeCollectionViewCell 
 > ---|---
