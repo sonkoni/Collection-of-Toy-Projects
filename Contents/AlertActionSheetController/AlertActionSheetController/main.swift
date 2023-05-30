@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  MGUNeoSegControl
+//  Alert & Action Sheet
 //
 //  Created by Kwan Hyun Son on 2023/05/10.
 //

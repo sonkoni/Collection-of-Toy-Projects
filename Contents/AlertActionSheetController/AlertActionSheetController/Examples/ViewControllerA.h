@@ -1,6 +1,6 @@
 //
 //  ViewControllerA.h
-//  MGUNeoSegControl
+//  Alert & Action Sheet
 //
 //  Created by Kwan Hyun Son on 27/01/2020.
 //  Copyright © 2020 Mulgrim Inc. All rights reserved.
