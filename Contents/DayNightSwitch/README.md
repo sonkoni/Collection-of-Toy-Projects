@@ -129,46 +129,46 @@ self.dayNightSwitch.action = @selector(switchValueChanged:);
 <details> 
 <summary>👇🖱️ border 애니메이션 알고리즘</summary>
 
-   ```objective-c
-   //! border 애니메이션을 위해서는 start point가 각각 달라야한다.
-   - (UIBezierPath *)pathForLeftStartRoundRect:(CGRect)rect {
-       CGFloat width  = rect.size.width;
-       CGFloat height = rect.size.height;
-       CGFloat radius = rect.size.height / 2.0;
-       
-       UIBezierPath *path = [UIBezierPath bezierPath];
-       [path moveToPoint:CGPointMake(0, radius)];
-       [path addArcWithCenter:CGPointMake(radius, radius) radius:radius startAngle:M_PI endAngle:-M_PI_2 clockwise:YES];
-       [path addLineToPoint:CGPointMake(width - radius, 0)];
-       [path addArcWithCenter:CGPointMake(width - radius, radius) radius:radius startAngle:-M_PI_2 endAngle:0 clockwise:YES];
-       [path addArcWithCenter:CGPointMake(width - radius, height - radius) radius:radius startAngle:0 endAngle:M_PI_2 clockwise:YES];
-       [path addLineToPoint:CGPointMake(radius, height)];
-       [path addArcWithCenter:CGPointMake(radius, height - radius) radius:radius startAngle:M_PI_2 endAngle:M_PI clockwise:YES];
-       return path;
-       //
-       // CGPath로 쌩으로 만들 수도 있다.
-       // 좌측에서 시작하여 시계방향으로 도는 path이다.
-   }
-   
-   - (UIBezierPath *)pathForRightStartRoundRect:(CGRect)rect {
-       CGFloat width  = rect.size.width;
-       CGFloat height = rect.size.height;
-       CGFloat radius = rect.size.height / 2.0;
-       
-       UIBezierPath *path = [UIBezierPath bezierPath];
-       [path moveToPoint:CGPointMake(width, radius)];
-       [path addArcWithCenter:CGPointMake(width - radius, height - radius) radius:radius startAngle:0 endAngle:M_PI_2 clockwise:YES];
-       [path addLineToPoint:CGPointMake(radius, height)];
-       [path addArcWithCenter:CGPointMake(radius, height - radius) radius:radius startAngle:M_PI_2 endAngle:M_PI clockwise:YES];
-       [path addArcWithCenter:CGPointMake(radius, radius) radius:radius startAngle:M_PI endAngle:-M_PI_2 clockwise:YES];
-       [path addLineToPoint:CGPointMake(width - radius, 0)];
-       [path addArcWithCenter:CGPointMake(width - radius, radius) radius:radius startAngle:-M_PI_2 endAngle:0 clockwise:YES];
-       return [path bezierPathByReversingPath];
-       //
-       // 감춰진 상태에서 시계방향으로 보여줄려고한다. start Point로만 조작하려고 한다.(애니메이션에서 startStoke endStorke 둘다 쓰는 것은 번거롭다.)
-       // 우측에서 반시계방향으로 돌아 만들어진 path이다. (왜냐하면 다음줄에서 reverse하므로.)
-   }
-   ```
+      ```objective-c
+      //! border 애니메이션을 위해서는 start point가 각각 달라야한다.
+      - (UIBezierPath *)pathForLeftStartRoundRect:(CGRect)rect {
+          CGFloat width  = rect.size.width;
+          CGFloat height = rect.size.height;
+          CGFloat radius = rect.size.height / 2.0;
+          
+          UIBezierPath *path = [UIBezierPath bezierPath];
+          [path moveToPoint:CGPointMake(0, radius)];
+          [path addArcWithCenter:CGPointMake(radius, radius) radius:radius startAngle:M_PI endAngle:-M_PI_2 clockwise:YES];
+          [path addLineToPoint:CGPointMake(width - radius, 0)];
+          [path addArcWithCenter:CGPointMake(width - radius, radius) radius:radius startAngle:-M_PI_2 endAngle:0 clockwise:YES];
+          [path addArcWithCenter:CGPointMake(width - radius, height - radius) radius:radius startAngle:0 endAngle:M_PI_2 clockwise:YES];
+          [path addLineToPoint:CGPointMake(radius, height)];
+          [path addArcWithCenter:CGPointMake(radius, height - radius) radius:radius startAngle:M_PI_2 endAngle:M_PI clockwise:YES];
+          return path;
+          //
+          // CGPath로 쌩으로 만들 수도 있다.
+          // 좌측에서 시작하여 시계방향으로 도는 path이다.
+      }
+      
+      - (UIBezierPath *)pathForRightStartRoundRect:(CGRect)rect {
+          CGFloat width  = rect.size.width;
+          CGFloat height = rect.size.height;
+          CGFloat radius = rect.size.height / 2.0;
+          
+          UIBezierPath *path = [UIBezierPath bezierPath];
+          [path moveToPoint:CGPointMake(width, radius)];
+          [path addArcWithCenter:CGPointMake(width - radius, height - radius) radius:radius startAngle:0 endAngle:M_PI_2 clockwise:YES];
+          [path addLineToPoint:CGPointMake(radius, height)];
+          [path addArcWithCenter:CGPointMake(radius, height - radius) radius:radius startAngle:M_PI_2 endAngle:M_PI clockwise:YES];
+          [path addArcWithCenter:CGPointMake(radius, radius) radius:radius startAngle:M_PI endAngle:-M_PI_2 clockwise:YES];
+          [path addLineToPoint:CGPointMake(width - radius, 0)];
+          [path addArcWithCenter:CGPointMake(width - radius, radius) radius:radius startAngle:-M_PI_2 endAngle:0 clockwise:YES];
+          return [path bezierPathByReversingPath];
+          //
+          // 감춰진 상태에서 시계방향으로 보여줄려고한다. start Point로만 조작하려고 한다.(애니메이션에서 startStoke endStorke 둘다 쓰는 것은 번거롭다.)
+          // 우측에서 반시계방향으로 돌아 만들어진 path이다. (왜냐하면 다음줄에서 reverse하므로.)
+      }
+      ```
 
 </details>
 
