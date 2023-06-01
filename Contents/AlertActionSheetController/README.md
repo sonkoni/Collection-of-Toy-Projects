@@ -42,9 +42,8 @@ MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)ÏóêÏÑ
 
 $~$|.fgFade|.fgSlideFromTop|.fgSlideFromTopRotation|.fgSlideFromBottom
 ---|---|---|---|---
-$~$ |<img src="./screenshot/Default_Standard1_AllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rounded.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rounded.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rounded.jpg" width="225">
+$~$ |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom.jpg" width="225">
 .bgScale  |<img src="./screenshot/Default_Standard1_AllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard1_NotAllowDone_Rect.jpg" width="225">|<img src="./screenshot/Default_Standard2_Rect.jpg" width="225">|<img src="./screenshot/Default_LowHeightStyle1_Rect.jpg" width="225">
-
 
 
 ## Usage
