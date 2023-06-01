@@ -11,19 +11,28 @@
 		845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845902FB28F0D71600E50B56 /* SceneDelegate.swift */; };
 		8459030328F0D71700E50B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8459030228F0D71700E50B56 /* Assets.xcassets */; };
 		8459030628F0D71700E50B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8459030428F0D71700E50B56 /* LaunchScreen.storyboard */; };
-		84725F8C2A12BAB0004A9E7C /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 84725F8B2A12BAB0004A9E7C /* ViewControllerA.m */; };
+		847FFA292A277F1E00F6E67C /* SaveAlarm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847FFA262A277F1E00F6E67C /* SaveAlarm.xib */; };
+		847FFA2C2A277F4B00F6E67C /* SaveAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA2B2A277F4B00F6E67C /* SaveAlarm.swift */; };
+		847FFA3F2A279CFE00F6E67C /* ForgeOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847FFA2E2A279CFE00F6E67C /* ForgeOnboardingViewController.xib */; };
+		847FFA402A279CFE00F6E67C /* ForgeOnboardingMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA322A279CFE00F6E67C /* ForgeOnboardingMainCell.m */; };
+		847FFA412A279CFE00F6E67C /* ForgeOnboardingMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847FFA332A279CFE00F6E67C /* ForgeOnboardingMainCell.xib */; };
+		847FFA422A279CFE00F6E67C /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA382A279CFE00F6E67C /* WaveView.m */; };
+		847FFA432A279CFE00F6E67C /* BackgroundColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA392A279CFE00F6E67C /* BackgroundColorView.m */; };
+		847FFA442A279CFE00F6E67C /* ForgeOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA3A2A279CFE00F6E67C /* ForgeOnboardingViewController.m */; };
+		847FFA452A279CFE00F6E67C /* ForgeOnboardingMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA3D2A279CFE00F6E67C /* ForgeOnboardingMessageCell.m */; };
+		847FFA462A279CFE00F6E67C /* ForgeOnboardingMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847FFA3E2A279CFE00F6E67C /* ForgeOnboardingMessageCell.xib */; };
+		847FFA772A27D0CB00F6E67C /* IVDropQuickStepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA732A27D0CB00F6E67C /* IVDropQuickStepperView.m */; };
+		847FFA782A27D0CB00F6E67C /* IVDropQuickDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA742A27D0CB00F6E67C /* IVDropQuickDisplay.m */; };
+		847FFA792A27D0CB00F6E67C /* IVDropQuickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA762A27D0CB00F6E67C /* IVDropQuickView.m */; };
 		84A836422A0B1735008F3D25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A836412A0B1735008F3D25 /* main.swift */; };
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
 		84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */; };
-		84D6B1962A120E380044E02D /* ViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D6B1952A120E380044E02D /* ViewControllerA.xib */; };
-		84D6B1992A1212240044E02D /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6B1972A1212240044E02D /* ViewControllerB.swift */; };
 		84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C32A1248700044E02D /* AudioKit.framework */; };
 		84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C42A1248700044E02D /* IosKit.framework */; };
 		84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C52A1248700044E02D /* GraphicsKit.framework */; };
 		84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C62A1248700044E02D /* BaseKit.framework */; };
 		84D6B1D02A1248720044E02D /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 84D6B1C72A1248700044E02D /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84E66C332A1473FA001CCF28 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E66C322A1473FA001CCF28 /* ViewControllerB.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,16 +57,33 @@
 		8459030528F0D71700E50B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8459030728F0D71700E50B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8459030D28F0D7BB00E50B56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		84725F8A2A12BAB0004A9E7C /* ViewControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
-		84725F8B2A12BAB0004A9E7C /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
 		847FF9FE2A268B3900F6E67C /* 230531a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230531a1.jpg; sourceTree = "<group>"; };
+		847FFA262A277F1E00F6E67C /* SaveAlarm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveAlarm.xib; sourceTree = "<group>"; };
+		847FFA2B2A277F4B00F6E67C /* SaveAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAlarm.swift; sourceTree = "<group>"; };
+		847FFA2E2A279CFE00F6E67C /* ForgeOnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgeOnboardingViewController.xib; sourceTree = "<group>"; };
+		847FFA2F2A279CFE00F6E67C /* ForgeOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgeOnboardingViewController.h; sourceTree = "<group>"; };
+		847FFA312A279CFE00F6E67C /* ForgeOnboardingMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgeOnboardingMainCell.h; sourceTree = "<group>"; };
+		847FFA322A279CFE00F6E67C /* ForgeOnboardingMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgeOnboardingMainCell.m; sourceTree = "<group>"; };
+		847FFA332A279CFE00F6E67C /* ForgeOnboardingMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgeOnboardingMainCell.xib; sourceTree = "<group>"; };
+		847FFA352A279CFE00F6E67C /* BackgroundColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundColorView.h; sourceTree = "<group>"; };
+		847FFA372A279CFE00F6E67C /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		847FFA382A279CFE00F6E67C /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
+		847FFA392A279CFE00F6E67C /* BackgroundColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundColorView.m; sourceTree = "<group>"; };
+		847FFA3A2A279CFE00F6E67C /* ForgeOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgeOnboardingViewController.m; sourceTree = "<group>"; };
+		847FFA3C2A279CFE00F6E67C /* ForgeOnboardingMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgeOnboardingMessageCell.h; sourceTree = "<group>"; };
+		847FFA3D2A279CFE00F6E67C /* ForgeOnboardingMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgeOnboardingMessageCell.m; sourceTree = "<group>"; };
+		847FFA3E2A279CFE00F6E67C /* ForgeOnboardingMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgeOnboardingMessageCell.xib; sourceTree = "<group>"; };
+		847FFA712A27D0CB00F6E67C /* IVDropQuickDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVDropQuickDisplay.h; sourceTree = "<group>"; };
+		847FFA722A27D0CB00F6E67C /* IVDropQuickStepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVDropQuickStepperView.h; sourceTree = "<group>"; };
+		847FFA732A27D0CB00F6E67C /* IVDropQuickStepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVDropQuickStepperView.m; sourceTree = "<group>"; };
+		847FFA742A27D0CB00F6E67C /* IVDropQuickDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVDropQuickDisplay.m; sourceTree = "<group>"; };
+		847FFA752A27D0CB00F6E67C /* IVDropQuickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVDropQuickView.h; sourceTree = "<group>"; };
+		847FFA762A27D0CB00F6E67C /* IVDropQuickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVDropQuickView.m; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* AlertActionSheetController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlertActionSheetController-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		84AF26D628F372BA00C4E0A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsForTableView.swift; sourceTree = "<group>"; };
-		84D6B1952A120E380044E02D /* ViewControllerA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerA.xib; sourceTree = "<group>"; };
-		84D6B1972A1212240044E02D /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		84D6B1C32A1248700044E02D /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
 		84D6B1C42A1248700044E02D /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
 		84D6B1C52A1248700044E02D /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
@@ -66,7 +92,6 @@
 		84E556B82A1F8F6200127417 /* Simulator Screen Recording - iPhone 14 Pro - 2023-05-25 at 21.37.05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 Pro - 2023-05-25 at 21.37.05.gif"; sourceTree = "<group>"; };
 		84E556B92A1F8F6200127417 /* Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif"; sourceTree = "<group>"; };
 		84E556BA2A203F5E00127417 /* 230516b2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b2.jpg; sourceTree = "<group>"; };
-		84E66C322A1473FA001CCF28 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
 		84E66C362A1481EE001CCF28 /* 230516b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b1.jpg; sourceTree = "<group>"; };
 		84E66C422A1491A2001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.42.gif"; sourceTree = "<group>"; };
 		84E66C432A1491CE001CCF28 /* Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 14 - 2023-05-17 at 13.04.15.gif"; sourceTree = "<group>"; };
@@ -123,12 +148,77 @@
 			isa = PBXGroup;
 			children = (
 				84AF26D528F3711F00C4E0A3 /* Model */,
-				84A8363B2A0AD983008F3D25 /* AlertActionSheetController-Bridging-Header.h */,
-				8459030228F0D71700E50B56 /* Assets.xcassets */,
 				8459030428F0D71700E50B56 /* LaunchScreen.storyboard */,
+				8459030228F0D71700E50B56 /* Assets.xcassets */,
+				84A8363B2A0AD983008F3D25 /* AlertActionSheetController-Bridging-Header.h */,
 				8459030728F0D71700E50B56 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		847FFA2D2A279CFE00F6E67C /* ForgeOnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				847FFA2F2A279CFE00F6E67C /* ForgeOnboardingViewController.h */,
+				847FFA3A2A279CFE00F6E67C /* ForgeOnboardingViewController.m */,
+				847FFA2E2A279CFE00F6E67C /* ForgeOnboardingViewController.xib */,
+				847FFA302A279CFE00F6E67C /* ForgeOnboardingMainCell */,
+				847FFA3B2A279CFE00F6E67C /* ForgeOnboardingMessageCell */,
+				847FFA342A279CFE00F6E67C /* Views */,
+			);
+			path = ForgeOnboardingViewController;
+			sourceTree = "<group>";
+		};
+		847FFA302A279CFE00F6E67C /* ForgeOnboardingMainCell */ = {
+			isa = PBXGroup;
+			children = (
+				847FFA312A279CFE00F6E67C /* ForgeOnboardingMainCell.h */,
+				847FFA322A279CFE00F6E67C /* ForgeOnboardingMainCell.m */,
+				847FFA332A279CFE00F6E67C /* ForgeOnboardingMainCell.xib */,
+			);
+			path = ForgeOnboardingMainCell;
+			sourceTree = "<group>";
+		};
+		847FFA342A279CFE00F6E67C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				847FFA352A279CFE00F6E67C /* BackgroundColorView.h */,
+				847FFA392A279CFE00F6E67C /* BackgroundColorView.m */,
+				847FFA362A279CFE00F6E67C /* WaveView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		847FFA362A279CFE00F6E67C /* WaveView */ = {
+			isa = PBXGroup;
+			children = (
+				847FFA372A279CFE00F6E67C /* WaveView.h */,
+				847FFA382A279CFE00F6E67C /* WaveView.m */,
+			);
+			path = WaveView;
+			sourceTree = "<group>";
+		};
+		847FFA3B2A279CFE00F6E67C /* ForgeOnboardingMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				847FFA3C2A279CFE00F6E67C /* ForgeOnboardingMessageCell.h */,
+				847FFA3D2A279CFE00F6E67C /* ForgeOnboardingMessageCell.m */,
+				847FFA3E2A279CFE00F6E67C /* ForgeOnboardingMessageCell.xib */,
+			);
+			path = ForgeOnboardingMessageCell;
+			sourceTree = "<group>";
+		};
+		847FFA702A27D08100F6E67C /* Sheet Content View Samples */ = {
+			isa = PBXGroup;
+			children = (
+				847FFA712A27D0CB00F6E67C /* IVDropQuickDisplay.h */,
+				847FFA742A27D0CB00F6E67C /* IVDropQuickDisplay.m */,
+				847FFA722A27D0CB00F6E67C /* IVDropQuickStepperView.h */,
+				847FFA732A27D0CB00F6E67C /* IVDropQuickStepperView.m */,
+				847FFA752A27D0CB00F6E67C /* IVDropQuickView.h */,
+				847FFA762A27D0CB00F6E67C /* IVDropQuickView.m */,
+			);
+			path = "Sheet Content View Samples";
 			sourceTree = "<group>";
 		};
 		8498FF452A0B754E00E3A721 /* screenshot */ = {
@@ -157,11 +247,10 @@
 		84AF26DA28F37DD500C4E0A3 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				84725F8A2A12BAB0004A9E7C /* ViewControllerA.h */,
-				84725F8B2A12BAB0004A9E7C /* ViewControllerA.m */,
-				84D6B1952A120E380044E02D /* ViewControllerA.xib */,
-				84D6B1972A1212240044E02D /* ViewControllerB.swift */,
-				84E66C322A1473FA001CCF28 /* ViewControllerB.xib */,
+				847FFA702A27D08100F6E67C /* Sheet Content View Samples */,
+				847FFA2D2A279CFE00F6E67C /* ForgeOnboardingViewController */,
+				847FFA2B2A277F4B00F6E67C /* SaveAlarm.swift */,
+				847FFA262A277F1E00F6E67C /* SaveAlarm.xib */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -238,9 +327,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D6B1962A120E380044E02D /* ViewControllerA.xib in Resources */,
+				847FFA3F2A279CFE00F6E67C /* ForgeOnboardingViewController.xib in Resources */,
+				847FFA462A279CFE00F6E67C /* ForgeOnboardingMessageCell.xib in Resources */,
+				847FFA412A279CFE00F6E67C /* ForgeOnboardingMainCell.xib in Resources */,
+				847FFA292A277F1E00F6E67C /* SaveAlarm.xib in Resources */,
 				8459030628F0D71700E50B56 /* LaunchScreen.storyboard in Resources */,
-				84E66C332A1473FA001CCF28 /* ViewControllerB.xib in Resources */,
 				8459030328F0D71700E50B56 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,14 +343,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D6B1992A1212240044E02D /* ViewControllerB.swift in Sources */,
+				847FFA792A27D0CB00F6E67C /* IVDropQuickView.m in Sources */,
+				847FFA452A279CFE00F6E67C /* ForgeOnboardingMessageCell.m in Sources */,
+				847FFA2C2A277F4B00F6E67C /* SaveAlarm.swift in Sources */,
+				847FFA772A27D0CB00F6E67C /* IVDropQuickStepperView.m in Sources */,
 				84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */,
 				84A836422A0B1735008F3D25 /* main.swift in Sources */,
 				84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */,
 				845902FA28F0D71600E50B56 /* AppDelegate.swift in Sources */,
-				84725F8C2A12BAB0004A9E7C /* ViewControllerA.m in Sources */,
+				847FFA402A279CFE00F6E67C /* ForgeOnboardingMainCell.m in Sources */,
 				84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */,
 				845902FC28F0D71600E50B56 /* SceneDelegate.swift in Sources */,
+				847FFA432A279CFE00F6E67C /* BackgroundColorView.m in Sources */,
+				847FFA782A27D0CB00F6E67C /* IVDropQuickDisplay.m in Sources */,
+				847FFA422A279CFE00F6E67C /* WaveView.m in Sources */,
+				847FFA442A279CFE00F6E67C /* ForgeOnboardingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

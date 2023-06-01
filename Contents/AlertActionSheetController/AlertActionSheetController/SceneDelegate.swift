@@ -23,7 +23,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if (UIDevice.current.userInterfaceIdiom == .pad) { print("아이패드") } else { print("아이폰") }
         
         window = UIWindow.init(windowScene:scene)
-        window?.backgroundColor = UIColor.cyan
+        window?.backgroundColor = UIColor.systemYellow
         let mainViewController = MainTableViewController()
         self.mainViewController = mainViewController
         let nav = UINavigationController.init(rootViewController:mainViewController)

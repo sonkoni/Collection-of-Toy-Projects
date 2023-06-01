@@ -23,7 +23,7 @@ final class ItemsForTableView {
         let item3 = Item(title:"Mini Timer 앱 사용예", detailText:"Mini Timer 앱에서 사용한 스위치를 살펴보자.")
 
         allItems = [(sectionTitle: "Basic", items: [item1]),
-                    (sectionTitle: "advanced", items: [item2]),
+                    (sectionTitle: "Advanced", items: [item2]),
                     (sectionTitle: "Using Sample", items: [item3])]
     }
 }

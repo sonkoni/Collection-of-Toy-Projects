@@ -26,7 +26,7 @@ final class ItemsForTableView {
         let item4 = Item(title:"MGUStepper", detailText:"IV-Drop 앱에서 사용한 Stepper를 살펴보자.")
 
         allItems = [(sectionTitle: "Basic", items: [item1, item2]),
-                    (sectionTitle: "advanced", items: [item3]),
+                    (sectionTitle: "Advanced", items: [item3]),
                     (sectionTitle: "Using Sample", items: [item4])]
     }
 }

@@ -21,6 +21,6 @@ final class ItemsForTableView {
         let item1 = Item(title:"MGUNeoSegControl", detailText:"UISegmentedControl 보다 풍부한 디자인의 다양한 예")
         let item2 = Item(title:"IV-Drop, Mini Timer 앱 사용예", detailText:"실전 앱에서 사용한 예제")
         allItems = [(sectionTitle: "Basic", items: [item1]),
-                    (sectionTitle: "advanced", items: [item2])]
+                    (sectionTitle: "Advanced", items: [item2])]
     }
 }

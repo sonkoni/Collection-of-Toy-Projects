@@ -29,6 +29,6 @@ final class ItemsForTableView {
         
         allItems = [(sectionTitle: "Basic", items: [item1, item2, item3]),
                     (sectionTitle: "Mini Timer 에서 사용한 예", items: [item4, item5]),
-                    (sectionTitle: "Advenced", items: [item6, item7])]
+                    (sectionTitle: "Advanced", items: [item6, item7])]
     }
 }

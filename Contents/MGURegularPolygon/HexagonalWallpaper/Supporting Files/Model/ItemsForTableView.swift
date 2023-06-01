@@ -27,7 +27,7 @@ final class ItemsForTableView {
         let item6 = Item(title:"IV Drop 사용예", detailText:"IV Drop 앱에서 사용한 WallPaper를 살펴보자.")
         
         allItems = [(sectionTitle: "Basic", items: [item1, item2]),
-                    (sectionTitle: "advanced", items: [item3, item4, item5]),
+                    (sectionTitle: "Advanced", items: [item3, item4, item5]),
                     (sectionTitle: "Using Sample", items: [item6])]
     }
 }
