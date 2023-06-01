@@ -24,6 +24,8 @@
 		847FFA772A27D0CB00F6E67C /* IVDropQuickStepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA732A27D0CB00F6E67C /* IVDropQuickStepperView.m */; };
 		847FFA782A27D0CB00F6E67C /* IVDropQuickDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA742A27D0CB00F6E67C /* IVDropQuickDisplay.m */; };
 		847FFA792A27D0CB00F6E67C /* IVDropQuickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847FFA762A27D0CB00F6E67C /* IVDropQuickView.m */; };
+		8486E8272A28A6840051F491 /* LNTouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8486E8262A28A67F0051F491 /* LNTouchVisualizer.framework */; };
+		8486E8282A28A6840051F491 /* LNTouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8486E8262A28A67F0051F491 /* LNTouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84A836422A0B1735008F3D25 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A836412A0B1735008F3D25 /* main.swift */; };
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
@@ -35,7 +37,28 @@
 		84D6B1D02A1248720044E02D /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 84D6B1C72A1248700044E02D /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8486E8252A28A67F0051F491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8486E8212A28A67F0051F491 /* LNTouchVisualizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39C38069260B783E00ACF910;
+			remoteInfo = LNTouchVisualizer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		8486E8292A28A6840051F491 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8486E8282A28A6840051F491 /* LNTouchVisualizer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D6B1D12A1248720044E02D /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,10 +102,7 @@
 		847FFA742A27D0CB00F6E67C /* IVDropQuickDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVDropQuickDisplay.m; sourceTree = "<group>"; };
 		847FFA752A27D0CB00F6E67C /* IVDropQuickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVDropQuickView.h; sourceTree = "<group>"; };
 		847FFA762A27D0CB00F6E67C /* IVDropQuickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVDropQuickView.m; sourceTree = "<group>"; };
-		8486E82A2A28AC290051F491 /* output-onlinegiftools-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "output-onlinegiftools-2.gif"; sourceTree = "<group>"; };
-		8486E82B2A28AC290051F491 /* output-onlinegiftools.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "output-onlinegiftools.gif"; sourceTree = "<group>"; };
-		8486E82C2A28AC290051F491 /* output-onlinegiftools-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "output-onlinegiftools-3.gif"; sourceTree = "<group>"; };
-		8486E82D2A28AC340051F491 /* output-onlinegiftools-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "output-onlinegiftools-4.gif"; sourceTree = "<group>"; };
+		8486E8212A28A67F0051F491 /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
 		84A8363B2A0AD983008F3D25 /* AlertActionSheetController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlertActionSheetController-Bridging-Header.h"; sourceTree = "<group>"; };
 		84A836412A0B1735008F3D25 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +128,7 @@
 			files = (
 				84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */,
 				84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */,
+				8486E8272A28A6840051F491 /* LNTouchVisualizer.framework in Frameworks */,
 				84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */,
 				84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */,
 			);
@@ -119,6 +140,7 @@
 		845902ED28F0D71600E50B56 = {
 			isa = PBXGroup;
 			children = (
+				8486E8212A28A67F0051F491 /* LNTouchVisualizer.xcodeproj */,
 				8459030D28F0D7BB00E50B56 /* README.md */,
 				8498FF452A0B754E00E3A721 /* screenshot */,
 				845902F828F0D71600E50B56 /* AlertActionSheetController */,
@@ -225,6 +247,14 @@
 			path = "Sheet Content View Samples";
 			sourceTree = "<group>";
 		};
+		8486E8222A28A67F0051F491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8486E8262A28A67F0051F491 /* LNTouchVisualizer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8498FF452A0B754E00E3A721 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,10 +265,6 @@
 				84E66C362A1481EE001CCF28 /* 230516b1.jpg */,
 				84E556BA2A203F5E00127417 /* 230516b2.jpg */,
 				847FF9FE2A268B3900F6E67C /* 230531a1.jpg */,
-				8486E82A2A28AC290051F491 /* output-onlinegiftools-2.gif */,
-				8486E82C2A28AC290051F491 /* output-onlinegiftools-3.gif */,
-				8486E82D2A28AC340051F491 /* output-onlinegiftools-4.gif */,
-				8486E82B2A28AC290051F491 /* output-onlinegiftools.gif */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
@@ -286,6 +312,7 @@
 				845902F328F0D71600E50B56 /* Frameworks */,
 				845902F428F0D71600E50B56 /* Resources */,
 				84D6B1D12A1248720044E02D /* Embed PlugIns */,
+				8486E8292A28A6840051F491 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,12 +350,28 @@
 			mainGroup = 845902ED28F0D71600E50B56;
 			productRefGroup = 845902F728F0D71600E50B56 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8486E8222A28A67F0051F491 /* Products */;
+					ProjectRef = 8486E8212A28A67F0051F491 /* LNTouchVisualizer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				845902F528F0D71600E50B56 /* AlertActionSheetController */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8486E8262A28A67F0051F491 /* LNTouchVisualizer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LNTouchVisualizer.framework;
+			remoteRef = 8486E8252A28A67F0051F491 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		845902F428F0D71600E50B56 /* Resources */ = {
