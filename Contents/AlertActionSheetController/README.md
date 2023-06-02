@@ -65,8 +65,8 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 <tbody>
   <tr>
     <td>트렌지션스타일</td>
-    <td><code>.fgFade</code></td>
-    <td><code>.fgSlideFromBottom</code></td>
+    <td align="center"><code>.fgFade</code></td>
+    <td align="center"><code>.fgSlideFromBottom</code></td>
     <td align="center">팝업스타일로 자동 설정됨</td>
   </tr>
   <tr>
