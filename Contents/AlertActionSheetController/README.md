@@ -73,7 +73,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
     <td></td>
     <td><img src="./screenshot/FGFade.gif" width="170"></td>
     <td><img src="./screenshot/FGSlideFromBottom.gif" width="170"></td>
-    <td rowspan="2"><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td>
+    <td rowspan="2"><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="400"></td>
   </tr>
   <tr>
     <td>isFool = true</td>
