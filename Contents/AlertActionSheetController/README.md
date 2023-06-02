@@ -58,7 +58,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 <thead>
   <tr>
     <th></th>
-    <th colspan="2">아이폰</th>
+    <th colspan="2"><Strong>아이폰</Strong></th>
     <th>아이패드</th>
   </tr>
 </thead>
