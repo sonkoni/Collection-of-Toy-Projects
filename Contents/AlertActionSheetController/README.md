@@ -16,12 +16,14 @@
 
 
 ## Features
-* `UIAlertController` 과 유사한 구성 및 일반 `UIViewController` 프리젠트와 동일한 메서드(`present(_:animated:completion:)`)를 이용하여 프리젠트
-*  Colors, Gradients, Fonts 등 커스텀 가능
-*  Style presets 지원
-*  Supports texts and images
-*  Text와 Image의 배치를 vertical 또는 horizontal로 배치가능
-*  백그라운드 및 segment를 커스텀 뷰로 제공 가능
+* `UIAlertController` 과 유사한 구성 및 일반 `UIViewController` 프리젠트와 동일한 메서드(`present(_:animated:completion:)`)를 이용하여 present 및 dismiss
+* `UIAlertController` 과 유사한 방식으로 `UITextField` 추가
+* `UIAlertController` 과 유사한 방식으로 `MGUActionSheetController`는 iPad에서 프리젠트 시에 popover 스타일 지원
+    * `MGUActionSheetController`는 iPad에서 백그라운드 터치로 자동 dimiss 호출됨
+*  세 가지 서로 다른 커스텀 content view를 제공하여 구성 및 디자인의 자유도를 높임
+*  백그라운에 대하여 Dim 스타일 또는 blur 스타일을 선택 가능
+*  `MGUAlertViewController`는 pan gesture로 dimiss 가능(On/Off 가능). 백그라운드 터치로 dimiss 가능(On/Off 가능)
+*  제공되는 텍스트(타이틀, 메시지, 버튼)의 font, color, 배경색 설정가능
 *  다양한Transition Styles 제공 - [Presets and Styles](#presets-and-styles) 참고
     * `MGUAlertViewController`
         * Presented ViewController 에 대한 4가지 스타일 제공 
@@ -31,8 +33,6 @@
         * iPad 에서 팝오버 스타일 제공
 *  **Swift** and **Objective-C** compatability
 *  Written in Objective-C
-
-
 
 
 ## Preview
