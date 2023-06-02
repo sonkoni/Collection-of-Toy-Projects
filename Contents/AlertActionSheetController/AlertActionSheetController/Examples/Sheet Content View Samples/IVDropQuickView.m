@@ -236,25 +236,6 @@ static void CommonInit(IVDropQuickView *self) {
     //! Display View를 갱신한다.
     self.quickModel.value = [sender.text doubleValue];
     [self.forgeQuickDisplay setFirstValueString:[self transformString:sender.text] secondValueString:nil];
-    //[self.forgeQuickDisplay setSourceValue:self.quickModel.value];
-    
-    
-    //! FIXME: 임시 잠근다.
-    /////////self.textLabel.text = [self transformString:sender.text];
-    
-//    NSNumberFormatter *formatter = NSNumberFormatter.new;
-//    formatter.numberStyle = kCFNumberFormatterNoStyle;
-//    formatter.roundingMode = kCFNumberFormatterRoundFloor;
-//    formatter.maximumIntegerDigits = 8;
-//    formatter.minimumIntegerDigits = 1;
-//    formatter.maximumFractionDigits = 2;
-//    formatter.minimumFractionDigits = 2;
-//    formatter.allowsFloats = YES;
-    //formatter.alwaysShowsDecimalSeparator  = YES;
-//    NSString *cutNumString = [formatter stringFromNumber:@(sender.text.doubleValue)];
-//    NSLog(@"가공 :{%@}", cutNumString);
-//    sender.text = cutNumString;
-    
 }
 
 - (NSString *)transformString:(NSString *)str {

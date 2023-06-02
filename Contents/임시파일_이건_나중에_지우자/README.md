@@ -2,10 +2,27 @@
 # 주의사항
 만약, iOS Kit 을 재컴파일할 경우, MGURulerView에 사용된, 사운드 소스를 다시 넣어서 컴파일해야한다.
 
+### 시간이 되면 문서화하자.
+* MGUFlowView - 이건 좀더 스위프트 예제로 바꿔 넣자.
+* Dose Picker
+* Ring Progress
+* Carosel
+* Inner Shadow
+* Noise Effect
+* Image Helper
+* Gift Card
+* Gini Effect
+* LoadingView
+* Dynamic Button
+* Material Button
+* Ripple Button
+* Lively Button
+* Graph
+* Display Switcher
+* 애플 뮤직 트렌지션
+* PageControl
 
-
-### 시간이 안되서 못했던 것.
-MGUFlowView - 이건 좀더 스위프트 예제로 바꿔 넣자. 아오 씨바. 짱난다. 
+ 
 
 ## VisualLizer
 * SceneDelegate.swift 파일에 다음을 추가
