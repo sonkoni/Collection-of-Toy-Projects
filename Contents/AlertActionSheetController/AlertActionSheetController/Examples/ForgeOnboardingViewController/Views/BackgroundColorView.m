@@ -1,6 +1,6 @@
 //
 //  BackgroundColorView.m
-//  AlertActionSheetController
+//  Alert & Action Sheet
 //
 //  Created by Kwan Hyun Son on 01/04/2020.
 //  Copyright © 2020 Mulgrim Co. All rights reserved.

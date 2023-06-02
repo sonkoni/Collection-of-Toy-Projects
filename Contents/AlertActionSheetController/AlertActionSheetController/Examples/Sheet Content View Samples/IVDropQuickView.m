@@ -1,6 +1,6 @@
 //
 //  IVDropQuickView.m
-//  MGUAlertView_koni
+//  Alert & Action Sheet
 //
 //  Created by Kwan Hyun Son on 2020/12/23.
 //  Copyright © 2020 Mulgrim Co. All rights reserved.

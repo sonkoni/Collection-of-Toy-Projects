@@ -121,7 +121,6 @@
 		84D6B1C52A1248700044E02D /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
 		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
-		84E556BA2A203F5E00127417 /* 230516b2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,7 +252,6 @@
 			children = (
 				842262862A29E9EB00890E50 /* JohnAlberton.jpg */,
 				842262852A29DE3700890E50 /* 230602a1.jpg */,
-				84E556BA2A203F5E00127417 /* 230516b2.jpg */,
 				847FF9FE2A268B3900F6E67C /* 230531a1.jpg */,
 				842262842A29CC7300890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.16.gif */,
 				842262832A29CC7300890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.24.gif */,

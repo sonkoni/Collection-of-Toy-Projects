@@ -1,6 +1,6 @@
 //
-//  MessageView.h
-//  MGUAlertView_koni
+//  WaveView.h
+//  Alert & Action Sheet
 //
 //  Created by Kwan Hyun Son on 2021/07/23.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
