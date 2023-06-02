@@ -122,6 +122,7 @@ extension MainTableViewController {
 // MARK: - UITableViewDelegate
 extension MainTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
         var alertViewController: MGUAlertViewController?
         let cell = tableView.cellForRow(at: indexPath)
         if indexPath.section == 0 {
@@ -163,10 +164,38 @@ extension MainTableViewController: UITableViewDelegate {
                 alertViewController = createActionSheet7(cell)
             }
         }
-        if let alertViewController = alertViewController {
-            present(alertViewController, animated: true)
+        
+        */
+        
+        let title = "타이틀"
+        let message = "메시지"
+
+        let configuration = MGUAlertViewConfiguration()
+        configuration.transitionStyle = [.fgSlideFromTop, .bgScale]
+        configuration.backgroundTapDismissalGestureEnabled = true
+        configuration.swipeDismissalGestureEnabled = true
+        configuration.alwaysArrangesActionButtonsVertically = false
+
+        let okActionHandler = { (action: MGUAlertAction?) -> Void in
+            print("Ok 버튼 눌렀음.")
         }
-        tableView.deselectRow(at: indexPath, animated: true)
+        let okAction = MGUAlertAction.init(title: "Ok", style: .default, handler: okActionHandler, configuration: nil)
+        
+        let cancelActionHandler = { (action: MGUAlertAction?) -> Void in
+            print("Cancel 버튼 눌렀음.")
+        }
+        let cancelAction = MGUAlertAction.init(title: "Cancel", style: .cancel, handler: cancelActionHandler, configuration: nil)
+        
+        let alertViewController = MGUAlertViewController(configuration: configuration, title: title, message: message, actions: [okAction, cancelAction])
+        
+        present(alertViewController, animated: true)
+        
+//        if let alertViewController = alertViewController {
+//            present(alertViewController, animated: true)
+//        }
+        
+        
+        //tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
