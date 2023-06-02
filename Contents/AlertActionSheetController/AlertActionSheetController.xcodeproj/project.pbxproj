@@ -54,6 +54,7 @@
 		842262702A29A39E00890E50 /* FGSlideFromBottom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FGSlideFromBottom.gif; sourceTree = "<group>"; };
 		842262712A29A39E00890E50 /* FGFade_Full.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FGFade_Full.gif; sourceTree = "<group>"; };
 		842262722A29A39E00890E50 /* FGFade.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FGFade.gif; sourceTree = "<group>"; };
+		842262732A29A8F400890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 13.32.50.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 13.32.50.gif"; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* AlertActionSheetController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertActionSheetController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +256,7 @@
 				842262712A29A39E00890E50 /* FGFade_Full.gif */,
 				8422626F2A29A39E00890E50 /* FGSlideFromBottom_Full.gif */,
 				842262722A29A39E00890E50 /* FGFade.gif */,
+				842262732A29A8F400890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 13.32.50.gif */,
 			);
 			path = screenshot;
 			sourceTree = "<group>";
