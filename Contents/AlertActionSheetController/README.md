@@ -68,14 +68,13 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
     <td align="center">팝업스타일 자동 설정됨</td>
   </tr>
   <tr>
-    <td>gif1</td>
-    <td background-color="lightblue">gif2</td>
+    <td><img src="./screenshot/FGFade.gif" width="190"></td>
+    <td><img src="./screenshot/FGSlideFromBottom.gif" width="190"></td>
     <td><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td>
   </tr>
 </tbody>
 </table>
 
-`style="text-align:center;color:lightblue;background-color:lightyellow"`
 
 ## Usage
 

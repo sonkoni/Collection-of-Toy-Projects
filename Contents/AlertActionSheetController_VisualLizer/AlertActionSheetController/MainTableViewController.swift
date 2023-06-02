@@ -662,8 +662,9 @@ private extension MainTableViewController {
         let okAction = MGUAlertAction.init(title: "Ok", style: .cancel, handler: okActionHandler, configuration: nil)
         
         let configuration = MGUActionSheetConfiguration()
-        configuration.isFullAppearance = true
+//        configuration.isFullAppearance = true
         configuration.transitionStyle = .fgFade
+//        configuration.transitionStyle = [.fgSlideFromBottom]
         configuration.contentViewInset = .init(top: 12.0, left: 8.0, bottom: 8.0, right: 8.0)
 
         var alertViewController: MGUActionSheetController
