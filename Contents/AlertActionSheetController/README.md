@@ -50,8 +50,10 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 
 ---
 
+
+
 > - Transition Styles (`MGUActionSheetController`에서 `transitionStyle`은 iPhone, iPad은 **다르게** 적용된다.)
->   - 아이폰: `.fgFade`, `.fgSlideFromBottom` 중 택 1
+>   - 아이폰: `.fgFade`, `.fgSlideFromBottom` 중 택 1, configuration의 `isFullAppearance`를 `true`로 설정하면 꽉찬 모양으로 표기됨.
 >   - 아이패드: 팝업 스타일로 자동 설정된다.
 
 <table>
