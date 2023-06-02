@@ -63,7 +63,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 </thead>
 <tbody>
   <tr>
-    <td>`.fgFade`</td>
+    <td><code>.fgFade</code></td>
     <td> `.fgSlideFromBottom` </td>
     <td align="center">팝업스타일 자동 설정됨</td>
   </tr>
