@@ -42,7 +42,7 @@ MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)ÏóêÏÑ
 
 $~$|.fgFade|.fgSlideFromTop|.fgSlideFromTopRotation|.fgSlideFromBottom
 ---|---|---|---|---
-$~$ |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom.gif" width="225">
+.bgScale  |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade_Scale.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop_Scale.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation_Scale.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="225">
 .bgScale  |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade_Scale.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop_Scale.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation_Scale.gif" width="225">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="225">
 
 ## Usage
