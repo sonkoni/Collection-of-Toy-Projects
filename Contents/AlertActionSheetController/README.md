@@ -57,8 +57,8 @@ $~$|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Dr
 </thead>
 <tbody>
   <tr>
-    <td><img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="480"></td>
-    <td><img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="480"></td>
+    <td><img src="./screenshot/Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.16.gif" width="480"></td>
+    <td><img src="./screenshot/Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.24.gif" width="480"></td>
   </tr>
 </tbody>
 </table>
