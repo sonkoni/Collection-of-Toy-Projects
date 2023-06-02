@@ -89,14 +89,27 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 > Swift
 ```swift
 
-let config = MGUNeoSegConfiguration.forge()
-containerView.backgroundColor = config.backgroundColor
-let segmentedControl = MGUNeoSegControl.init(titles: self.dropTitleAndImageModels(),
-                                       selecedtitle: "",
-                                      configuration: config)
-view.addSubview(segmentedControl)
-segmentedControl.addTarget(self, action: #selector(valueChanged(_:)), for: .valueChanged)
-segmentedControl.impactOff = false
+let title = "타이틀"
+let message = "메시지"
+
+let configuration = MGUAlertViewConfiguration()
+configuration.transitionStyle = [.fgSlideFromTop, .bgScale]
+configuration.backgroundTapDismissalGestureEnabled = true
+configuration.swipeDismissalGestureEnabled = true
+configuration.alwaysArrangesActionButtonsVertically = false
+
+let okActionHandler = { (action: MGUAlertAction?) -> Void in
+    print("Ok 버튼 눌렀음.")
+}
+let okAction = MGUAlertAction.init(title: "Ok", style: .default, handler: okActionHandler, configuration: nil)
+
+let cancelActionHandler = { (action: MGUAlertAction?) -> Void in
+    print("Cancel 버튼 눌렀음.")
+}
+let cancelAction = MGUAlertAction.init(title: "Cancel", style: .cancel, handler: cancelActionHandler, configuration: nil)
+        
+let alertViewController = MGUAlertViewController(configuration: configuration, title: title, message: message, actions: [okAction, cancelAction])
+present(alertViewController, animated: true)
 
 ```
 
