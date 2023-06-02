@@ -58,7 +58,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 <thead>
   <tr>
     <th></th>
-    <th colspan="2"><Strong>아이폰</Strong></th>
+    <th colspan="2">아이폰</th>
     <th>아이패드</th>
   </tr>
 </thead>
@@ -103,12 +103,32 @@ segmentedControl.impactOff = false
 > Objective-C
 ```objective-c
 
-MGUNeoSegControl *segmentedControl =
-[[MGUNeoSegControl alloc] initWithTitles:[self imageModels]
-                            selecedtitle:@"chrome"
-                           configuration:[MGUNeoSegConfiguration iOS7Configuration]];
-[self.view addSubview:segmentedControl];
-[segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+NSString *title = @"타이틀";
+NSString *message = @"메시지";
+
+MGUAlertViewConfiguration *configuration = [MGUAlertViewConfiguration new];
+configuration.transitionStyle = MGUAlertViewTransitionStyleFGSlideFromTop | MGUAlertViewTransitionStyleBGScale;
+configuration.backgroundTapDismissalGestureEnabled = YES;
+configuration.swipeDismissalGestureEnabled = YES;
+configuration.alwaysArrangesActionButtonsVertically = NO;
+
+void (^okActionHandler)(MGUAlertAction * _Nonnull) = ^(MGUAlertAction * _Nonnull action) { NSLog(@"Ok 버튼 눌렀음.");};
+MGUAlertAction *okAction = [[MGUAlertAction alloc] initWithTitle:@"Ok"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:okActionHandler
+                                                   configuration:nil];
+
+void (^cancelActionHandler)(MGUAlertAction * _Nonnull) = ^(MGUAlertAction * _Nonnull action) { NSLog(@"Cancel 버튼 눌렀음.");};
+MGUAlertAction *cancelAction = [[MGUAlertAction alloc] initWithTitle:@"Cancel"
+                                                               style:UIAlertActionStyleCancel
+                                                             handler:cancelActionHandler
+                                                       configuration:nil];
+
+MGUAlertViewController *alertViewController = [[MGUAlertViewController alloc] initWithConfiguration:configuration
+                                                                                              title:title
+                                                                                            message:message
+                                                                                            actions:@[okAction, cancelAction]];
+[self presentViewController:alertViewController animated:YES completion:nil];
 
 ```
 
