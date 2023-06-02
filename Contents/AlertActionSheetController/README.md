@@ -199,7 +199,6 @@ MGUAlertViewController *alertViewController = [[MGUAlertViewController alloc] in
 - 컨텐츠 배치를 위한 설계도
 <img src="./screenshot/230531a1.jpg" width="1000">
 
-- 위키 링크 넣자.
 
 ## Author
 
