@@ -70,7 +70,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
   <tr>
     <td>gif1</td>
     <td>gif2</td>
-    <td>gif3</td>
+    <td><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td>
   </tr>
 </tbody>
 </table>
