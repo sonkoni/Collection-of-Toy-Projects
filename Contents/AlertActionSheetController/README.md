@@ -49,10 +49,20 @@ $~$|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Dr
 <img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.53.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.59.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.08.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.28.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.36.gif" width="175">
 
 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">아이패드에서 Preview</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="400"></td>
+    <td><img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="400"></td>
+  </tr>
+</tbody>
+</table>
 
-[MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 |
----|
-<img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="805"> |
 
 ## Presets and Styles
 > - Transition Styles (`MGUAlertViewController`에서 `transitionStyle`은 iPhone, iPad 모두 동일하게 적용된다.)
