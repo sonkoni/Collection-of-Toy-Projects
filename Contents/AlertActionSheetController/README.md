@@ -41,6 +41,8 @@ No Button|Three Buttons|TextField|Custom Font|Long Message
 
 > - MGUActionSheetController
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 ActionSheetController의 요구사항이 있어서 제작함.
+>   - 아이패드에서는 Transition Style이  팝업 스타일로 자동 설정된다.
+
 
 $~$|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**
 :---:|:---:|:---:|:---:|:---:
