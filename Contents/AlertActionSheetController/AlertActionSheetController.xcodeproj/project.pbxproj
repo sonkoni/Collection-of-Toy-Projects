@@ -60,6 +60,11 @@
 		842262762A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif"; sourceTree = "<group>"; };
 		842262772A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif"; sourceTree = "<group>"; };
 		842262782A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif"; sourceTree = "<group>"; };
+		842262792A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.04.39.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.04.39.gif"; sourceTree = "<group>"; };
+		8422627A2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.56.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.56.gif"; sourceTree = "<group>"; };
+		8422627B2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.05.07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.05.07.gif"; sourceTree = "<group>"; };
+		8422627C2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.43.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.43.gif"; sourceTree = "<group>"; };
+		8422627D2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.35.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.35.gif"; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* AlertActionSheetController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertActionSheetController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +254,11 @@
 				84E66C362A1481EE001CCF28 /* 230516b1.jpg */,
 				84E556BA2A203F5E00127417 /* 230516b2.jpg */,
 				847FF9FE2A268B3900F6E67C /* 230531a1.jpg */,
+				842262792A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.04.39.gif */,
+				8422627B2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.05.07.gif */,
+				8422627D2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.35.gif */,
+				8422627C2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.43.gif */,
+				8422627A2A29BFD100890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.56.gif */,
 				842262752A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif */,
 				842262762A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif */,
 				842262742A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif */,
