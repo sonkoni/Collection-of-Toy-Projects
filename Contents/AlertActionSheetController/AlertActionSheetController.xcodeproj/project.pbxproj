@@ -55,6 +55,11 @@
 		842262712A29A39E00890E50 /* FGFade_Full.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FGFade_Full.gif; sourceTree = "<group>"; };
 		842262722A29A39E00890E50 /* FGFade.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FGFade.gif; sourceTree = "<group>"; };
 		842262732A29A8F400890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 13.32.50.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 13.32.50.gif"; sourceTree = "<group>"; };
+		842262742A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif"; sourceTree = "<group>"; };
+		842262752A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif"; sourceTree = "<group>"; };
+		842262762A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif"; sourceTree = "<group>"; };
+		842262772A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif"; sourceTree = "<group>"; };
+		842262782A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif"; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* AlertActionSheetController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertActionSheetController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +249,11 @@
 				84E66C362A1481EE001CCF28 /* 230516b1.jpg */,
 				84E556BA2A203F5E00127417 /* 230516b2.jpg */,
 				847FF9FE2A268B3900F6E67C /* 230531a1.jpg */,
+				842262752A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif */,
+				842262762A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif */,
+				842262742A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif */,
+				842262772A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif */,
+				842262782A29B92A00890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif */,
 				8486E82A2A28AC290051F491 /* MGUAlertViewTransitionStyleFGSlideFromTopRotation.gif */,
 				8486E82C2A28AC290051F491 /* MGUAlertViewTransitionStyleFGSlideFromBottom.gif */,
 				8486E82D2A28AC340051F491 /* MGUAlertViewTransitionStyleFGFade.gif */,
