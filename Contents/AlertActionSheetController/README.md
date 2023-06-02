@@ -77,8 +77,8 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
   </tr>
   <tr>
     <td>isFool = true</td>
-    <td>그림3</td>
-    <td>그림4</td>
+    <td><img src="./screenshot/FGFade_Full.gif" width="190"></td>
+    <td><img src="./screenshot/FGSlideFromBottom_Full.gif" width="190"></td>
   </tr>
 </tbody>
 </table>
