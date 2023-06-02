@@ -71,14 +71,14 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
   </tr>
   <tr>
     <td></td>
-    <td><img src="./screenshot/FGFade.gif" width="190"></td>
-    <td><img src="./screenshot/FGSlideFromBottom.gif" width="190"></td>
+    <td><img src="./screenshot/FGFade.gif" width="170"></td>
+    <td><img src="./screenshot/FGSlideFromBottom.gif" width="170"></td>
     <td rowspan="2"><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td>
   </tr>
   <tr>
     <td>isFool = true</td>
-    <td><img src="./screenshot/FGFade_Full.gif" width="190"></td>
-    <td><img src="./screenshot/FGSlideFromBottom_Full.gif" width="190"></td>
+    <td><img src="./screenshot/FGFade_Full.gif" width="170"></td>
+    <td><img src="./screenshot/FGSlideFromBottom_Full.gif" width="170"></td>
   </tr>
 </tbody>
 </table>
