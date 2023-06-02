@@ -69,12 +69,13 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
   </tr>
   <tr>
     <td>gif1</td>
-    <td>gif2</td>
+    <td color="lightblue">gif2</td>
     <td><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td>
   </tr>
 </tbody>
 </table>
 
+`style="text-align:center;color:lightblue;background-color:lightyellow"`
 
 ## Usage
 
