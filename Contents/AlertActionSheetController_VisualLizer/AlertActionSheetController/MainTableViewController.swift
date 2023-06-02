@@ -386,7 +386,7 @@ private extension MainTableViewController {
         let okAction = MGUAlertAction.init(title: "Ok", style: .cancel, handler: okActionHandler, configuration: nil)
 
         let configuration = MGUAlertViewConfiguration()
-        configuration.transitionStyle = [.fgFade]
+        configuration.transitionStyle = [.fgSlideFromTop]
         let alertViewController = MGUAlertViewController.init(configuration: configuration,
                                                               title: title,
                                                               message: message,
