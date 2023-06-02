@@ -47,6 +47,32 @@ $~$|`.fgFade`|`.fgSlideFromTop`|`.fgSlideFromTopRotation`|`.fgSlideFromBottom`
 $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom.gif" width="190">
 `.bgScale` |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190">
 
+> - Transition Styles (`MGUActionSheetController`에서 `transitionStyle`은 iPhone, iPad은 ***다르게*** 적용된다.)
+>   - 아이폰: `.fgFade`, `.fgSlideFromBottom` 중 택 1
+>   - 아이패드: 팝업 스타일로 자동 설정된다.
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">아이폰</th>
+    <th>아이패드</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>AAA</td>
+    <td>BBBB</td>
+    <td align="center">CCC</td>
+  </tr>
+  <tr>
+    <td>gif1</td>
+    <td>gif2</td>
+    <td>gif3</td>
+  </tr>
+</tbody>
+</table>
+
+
 ## Usage
 
 > Swift
