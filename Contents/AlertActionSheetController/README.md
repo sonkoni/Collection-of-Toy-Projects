@@ -21,8 +21,13 @@
 *  Supports texts and images
 *  Text와 Image의 배치를 vertical 또는 horizontal로 배치가능
 *  백그라운드 및 segment를 커스텀 뷰로 제공 가능
-*  Haptic Feedback 제공 : 제스처로 토글 시 Haptic Feedback이 터치한 Device를 통해 전달된다.
-    * `UIImpactFeedbackGenerator` 이용하여 구현함
+* Transition Styles 제공 - [Presets and Styles](#presets-and-styles) 참고
+    * `MGUAlertViewController`
+        * Presented ViewController 에 대한 4가지 스타일 제공 
+        * Presenting ViewController 에 대한 Scale Shrink 스타일 제공
+    * `MGUActionSheetController`
+        * iPhone 에서 Presented ViewController 에 대한 2가지 스타일 제공
+        * iPad 에서 팝오버 스타일 제공
 *  **Swift** and **Objective-C** compatability
 *  Written in Objective-C
 
