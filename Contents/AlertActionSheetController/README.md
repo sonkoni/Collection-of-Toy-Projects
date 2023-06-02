@@ -10,7 +10,7 @@
     - `UIControl` 서브클래스로 제작함
 - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 커스텀 SegmentedControl에 대한 요구사항이 있어서 제작함. [MiniTimer](https://apps.apple.com/app/id1618148240)에서도 사용함.
 <p align="center"><img src="./screenshot/230516b2.jpg" width="900"></p>
-<!--<p align="center"><img src="./screenshot/230516b1.jpg" width="400"></p>-->
+
 
 ## Features
 *  Colors, Gradients, Fonts 등 커스텀 가능
@@ -38,12 +38,14 @@ MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에�
 <img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="805"> |
 
 ## Presets and Styles
-> Transition Styles (MGUAlertViewController)
+> - Transition Styles (MGUAlertViewController)
+>   - 전면부: `.fgFade`, `.fgSlideFromTop`, `.fgSlideFromTopRotation`, `.fgSlideFromBottom` 중 택 1
+>   - 후면부: `.bgScale` 또는 none
 
-$~$|.fgFade|.fgSlideFromTop|.fgSlideFromTopRotation|.fgSlideFromBottom
+$~$|`.fgFade`|`.fgSlideFromTop`|`.fgSlideFromTopRotation`|`.fgSlideFromBottom`
 ---|---|---|---|---
 $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom.gif" width="190">
-.bgScale  |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190">
+`.bgScale` |<img src="./screenshot/MGUAlertViewTransitionStyleFGFade_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTop_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromTopRotation_Scale.gif" width="190">|<img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190">
 
 ## Usage
 
