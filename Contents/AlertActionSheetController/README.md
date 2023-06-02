@@ -38,7 +38,7 @@ MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에�
 <img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="805"> |
 
 ## Presets and Styles
-> - Transition Styles (MGUAlertViewController에서 transition style은 iPhone, iPad 모두 동일하게 적용된다.)
+> - Transition Styles (`MGUAlertViewController`에서 `transitionStyle`은 iPhone, iPad 모두 동일하게 적용된다.)
 >   - 전면부: `.fgFade`, `.fgSlideFromTop`, `.fgSlideFromTopRotation`, `.fgSlideFromBottom` 중 택 1
 >   - 후면부: `.bgScale` 또는 none
 
