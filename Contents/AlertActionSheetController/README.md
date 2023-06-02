@@ -64,7 +64,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 </thead>
 <tbody>
   <tr>
-    <td>트렌지션스타일</td>
+    <td>Transition Style</td>
     <td align="center"><code>.fgFade</code></td>
     <td align="center"><code>.fgSlideFromBottom</code></td>
     <td align="center">팝업스타일로 자동 설정됨</td>
@@ -76,7 +76,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
     <td rowspan="2"><img src="./screenshot/Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 13.32.50.gif" width="380"></td>
   </tr>
   <tr>
-    <td>isFool = true</td>
+    <td>Full Appearance</td>
     <td><img src="./screenshot/FGFade_Full.gif" width="170"></td>
     <td><img src="./screenshot/FGSlideFromBottom_Full.gif" width="170"></td>
   </tr>
