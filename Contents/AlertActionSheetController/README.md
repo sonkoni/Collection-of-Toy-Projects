@@ -25,13 +25,15 @@
 
 
 ## Preview
-> - MGUNeoSegControl (iOS)
->   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 스위치의 요구사항이 있어서 제작함.
+> - MGUAlertViewController
+>   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 AlertViewController의 요구사항이 있어서 제작함.
 >   - [MiniTimer](https://apps.apple.com/app/id1618148240)에서도 사용함.
 
 
 None|Default|Favorite|Spring|Rotate
 ---|---|---|---|---
+<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif" width="175">
+None|Default|Favorite|Spring|Rotate
 <img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif" width="175">
 
 
