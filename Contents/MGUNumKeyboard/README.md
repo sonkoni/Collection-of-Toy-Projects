@@ -90,6 +90,8 @@ privateTextField.addTarget(self, action:#selector(textFieldDidChange(_:)), for: 
 
 ```
 
+----
+
 > Objective-C
 ```objective-c
 
