@@ -32,7 +32,7 @@
 
 None|Default|Favorite|Spring|Rotate
 ---|---|---|---|---
-<img src="./screenshot/Transition_Animation_None.gif" width="175">|<img src="./screenshot/Transition_Animation_Default.gif" width="175">|<img src="./screenshot/Transition_Animation_Favorite.gif" width="175">|<img src="./screenshot/Transition_Animation_Spring.gif" width="175">|<img src="./screenshot/Transition_Animation_Rotate.gif" width="175">
+<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif" width="175">
 
 
 MGUNeoSegControl (iOS) | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예 | [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예
