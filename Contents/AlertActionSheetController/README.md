@@ -50,7 +50,7 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 
 ---
 
-> - Transition Styles (`MGUActionSheetController`에서 `transitionStyle`은 iPhone, iPad은 ***다르게*** 적용된다.)
+> - Transition Styles (`MGUActionSheetController`에서 `transitionStyle`은 iPhone, iPad은 **다르게** 적용된다.)
 >   - 아이폰: `.fgFade`, `.fgSlideFromBottom` 중 택 1
 >   - 아이패드: 팝업 스타일로 자동 설정된다.
 
@@ -63,9 +63,9 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 </thead>
 <tbody>
   <tr>
-    <td>AAA</td>
-    <td>BBBB</td>
-    <td align="center">CCC</td>
+    <td>`.fgFade`</td>
+    <td>`.fgSlideFromBottom`</td>
+    <td align="center">팝업스타일 자동 설정됨</td>
   </tr>
   <tr>
     <td>gif1</td>
