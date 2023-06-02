@@ -33,7 +33,7 @@
 No Button|Three Buttons|TextField|Custom Font|Long Message
 :---:|:---:|:---:|:---:|:---:
 <img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.04.39.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.05.07.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.35.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.43.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.06.56.gif" width="175">
-**Custom Content View**|**Custom Content View**|**Custom Content View**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) Onboarding**
+**Custom Content View**|**Custom Content View**|**Custom Content View**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) Onboarding**
 <img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.34.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.04.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.16.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.35.47.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 14.36.12.gif" width="175">
 
 
@@ -44,7 +44,7 @@ No Button|Three Buttons|TextField|Custom Font|Long Message
 >   - 아이패드에서는 Transition Style이  팝업 스타일로 자동 설정된다.
 
 
-$~$|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904) 에서 사용**
+$~$|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**
 :---:|:---:|:---:|:---:|:---:
 <img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.53.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.59.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.08.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.28.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.36.gif" width="175">
 
