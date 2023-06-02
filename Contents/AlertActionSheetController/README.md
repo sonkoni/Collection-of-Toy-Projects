@@ -113,6 +113,8 @@ present(alertViewController, animated: true)
 
 ```
 
+----
+
 > Objective-C
 ```objective-c
 
