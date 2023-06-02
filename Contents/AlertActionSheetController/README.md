@@ -201,7 +201,7 @@ sonkoni(손관현), isomorphic111@gmail.com
 
 샘플에서 사용된 아래의 [이미지](https://www.istockphoto.com/kr/벡터/화려한-하늘과-바위가있는-아름다운-해변의-일몰-gm1408146499-459099221)의 Author는 [John Alberton](https://www.istockphoto.com/kr/portfolio/JohnAlberton?mediatype=illustration)
 
-<img src="./screenshot/JohnAlberton.jpg" width="200">
+[<img src="./screenshot/JohnAlberton.jpg" width="200">](https://www.istockphoto.com/kr/벡터/화려한-하늘과-바위가있는-아름다운-해변의-일몰-gm1408146499-459099221)
 
 ## License
 
