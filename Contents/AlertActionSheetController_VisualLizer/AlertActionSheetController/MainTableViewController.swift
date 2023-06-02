@@ -122,7 +122,6 @@ extension MainTableViewController {
 // MARK: - UITableViewDelegate
 extension MainTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*
         var alertViewController: MGUAlertViewController?
         let cell = tableView.cellForRow(at: indexPath)
         if indexPath.section == 0 {
@@ -164,38 +163,10 @@ extension MainTableViewController: UITableViewDelegate {
                 alertViewController = createActionSheet7(cell)
             }
         }
-        
-        */
-        
-        let title = "타이틀"
-        let message = "메시지"
-
-        let configuration = MGUAlertViewConfiguration()
-        configuration.transitionStyle = [.fgSlideFromTop, .bgScale]
-        configuration.backgroundTapDismissalGestureEnabled = true
-        configuration.swipeDismissalGestureEnabled = true
-        configuration.alwaysArrangesActionButtonsVertically = false
-
-        let okActionHandler = { (action: MGUAlertAction?) -> Void in
-            print("Ok 버튼 눌렀음.")
+        if let alertViewController = alertViewController {
+            present(alertViewController, animated: true)
         }
-        let okAction = MGUAlertAction.init(title: "Ok", style: .default, handler: okActionHandler, configuration: nil)
-        
-        let cancelActionHandler = { (action: MGUAlertAction?) -> Void in
-            print("Cancel 버튼 눌렀음.")
-        }
-        let cancelAction = MGUAlertAction.init(title: "Cancel", style: .cancel, handler: cancelActionHandler, configuration: nil)
-        
-        let alertViewController = MGUAlertViewController(configuration: configuration, title: title, message: message, actions: [okAction, cancelAction])
-        
-        present(alertViewController, animated: true)
-        
-//        if let alertViewController = alertViewController {
-//            present(alertViewController, animated: true)
-//        }
-        
-        
-        //tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -691,9 +662,8 @@ private extension MainTableViewController {
         let okAction = MGUAlertAction.init(title: "Ok", style: .cancel, handler: okActionHandler, configuration: nil)
         
         let configuration = MGUActionSheetConfiguration()
-//        configuration.isFullAppearance = true
+        configuration.isFullAppearance = true
         configuration.transitionStyle = .fgFade
-//        configuration.transitionStyle = [.fgSlideFromBottom]
         configuration.contentViewInset = .init(top: 12.0, left: 8.0, bottom: 8.0, right: 8.0)
 
         var alertViewController: MGUActionSheetController

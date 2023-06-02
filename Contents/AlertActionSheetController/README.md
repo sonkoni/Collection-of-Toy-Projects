@@ -42,6 +42,12 @@ No Button|Three Buttons|TextField|Custom Font|Long Message
 > - MGUActionSheetController
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 AlertViewController의 요구사항이 있어서 제작함.
 
+No Button|Three Buttons|TextField|Custom Font|Long Message
+:---:|:---:|:---:|:---:|:---:
+<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.53.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.59.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.08.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.28.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.36.gif" width="175">
+
+
+
 [MiniTimer](https://apps.apple.com/app/id1618148240)에서 사용 예 |
 ---|
 <img src="./screenshot/Simulator Screen Recording - iPad Pro (12.9-inch) (6th generation) - 2023-05-25 at 21.30.15.gif" width="805"> |
