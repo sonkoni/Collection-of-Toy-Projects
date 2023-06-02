@@ -5,10 +5,13 @@
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
 
-## **MGUAlertViewController** & **MGUActionSheetController** 
-- `MGUNeoSegControl`는 `UISegmentedControl` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 SegmentedControl
-    - `UIControl` 서브클래스로 제작함
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 SheetViewController에 위치할 커스텀 SegmentedControl에 대한 요구사항이 있어서 제작함. [MiniTimer](https://apps.apple.com/app/id1618148240)에서도 사용함.
+## **MGUAlertViewController** & **MGUActionSheetController**
+- `MGUAlertViewController`, `MGUActionSheetController`는 `UIAlertController` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 AlertController
+    - `UIViewControllerTransitioningDelegate` 프로토콜을 따르는 `UIViewController` 서브클래스로 `MGUAlertViewController`를 제작함
+        - `UIPresentationController`의 커스텀 서브클래스를 이용해 프르젠테이션의 초기 설정을 관할하게함
+        - `UIViewControllerAnimatedTransitioning`을 따르는 커스텀 클래스를 이용하여 present 및 dismiss를 관할하는 객체를 구성함
+    - `MGUActionSheetController`는 `MGUAlertViewController`의 서브클래스로 제작함
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 AlertViewController의 요구사항이 있어서 제작함. [MiniTimer](https://apps.apple.com/app/id1618148240)에서도 사용함.
 <p align="center"><img src="./screenshot/230516b2.jpg" width="900"></p>
 
 
@@ -76,7 +79,6 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 
 
 ---
-
 
 
 > - Transition Styles (`MGUActionSheetController`에서 `transitionStyle`은 iPhone, iPad은 **다르게** 적용된다.)
@@ -180,6 +182,8 @@ MGUAlertViewController *alertViewController = [[MGUAlertViewController alloc] in
 
 - 컨텐츠 배치를 위한 설계도
 <img src="./screenshot/230531a1.jpg" width="1000">
+
+- 위키 링크 넣자.
 
 ## Author
 

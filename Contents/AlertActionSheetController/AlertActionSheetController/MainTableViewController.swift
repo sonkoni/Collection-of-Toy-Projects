@@ -653,8 +653,8 @@ private extension MainTableViewController {
         let cancelHandler = { (action: MGUAlertAction?) -> Void in
             print("Later버튼 눌렀음.")
         }
-        let cancelAction = MGUAlertAction.init(title: "Later", style: .default, handler: cancelHandler, configuration: nil)
         
+        let cancelAction = MGUAlertAction.init(title: "Later", style: .default, handler: cancelHandler, configuration: nil)
         
         let okActionHandler = { (action: MGUAlertAction?) -> Void in
             print("OK 버튼 눌렀음.")
