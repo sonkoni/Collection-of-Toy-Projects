@@ -11,7 +11,7 @@
         - `UIPresentationController`의 커스텀 서브클래스를 이용해 프르젠테이션의 초기 설정을 관할하게함
         - `UIViewControllerAnimatedTransitioning`을 따르는 커스텀 클래스를 이용하여 present 및 dismiss를 관할하는 객체를 구성함
     - `MGUActionSheetController`는 `MGUAlertViewController`의 서브클래스로 제작함
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 AlertViewController의 요구사항이 있어서 제작함. [MiniTimer](https://apps.apple.com/app/id1618148240)에서도 사용함.
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 AlertViewController 및 ActionSheetController의 요구사항이 있어서 제작함. 
 <p align="center"><img src="./screenshot/230516b2.jpg" width="900"></p>
 
 
