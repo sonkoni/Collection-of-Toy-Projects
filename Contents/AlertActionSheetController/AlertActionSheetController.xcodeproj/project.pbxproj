@@ -72,6 +72,7 @@
 		842262822A29C4F300890E50 /* Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.36.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.36.gif"; sourceTree = "<group>"; };
 		842262832A29CC7300890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.24.gif"; sourceTree = "<group>"; };
 		842262842A29CC7300890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.16.gif"; sourceTree = "<group>"; };
+		842262852A29DE3700890E50 /* 230602a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230602a1.jpg; sourceTree = "<group>"; };
 		845902F628F0D71600E50B56 /* AlertActionSheetController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertActionSheetController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845902F928F0D71600E50B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845902FB28F0D71600E50B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +121,6 @@
 		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
 		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
 		84E556BA2A203F5E00127417 /* 230516b2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b2.jpg; sourceTree = "<group>"; };
-		84E66C362A1481EE001CCF28 /* 230516b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 230516b1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +250,7 @@
 		8498FF452A0B754E00E3A721 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				84E66C362A1481EE001CCF28 /* 230516b1.jpg */,
+				842262852A29DE3700890E50 /* 230602a1.jpg */,
 				84E556BA2A203F5E00127417 /* 230516b2.jpg */,
 				847FF9FE2A268B3900F6E67C /* 230531a1.jpg */,
 				842262842A29CC7300890E50 /* Simulator Screen Recording - iPad mini (6th generation) - 2023-06-02 at 15.57.16.gif */,
