@@ -57,20 +57,28 @@ $~$|<img src="./screenshot/MGUAlertViewTransitionStyleFGFade.gif" width="190">|<
 <table>
 <thead>
   <tr>
+    <th></th>
     <th colspan="2">아이폰</th>
     <th>아이패드</th>
   </tr>
 </thead>
 <tbody>
   <tr>
+    <td>트렌지션스타일</td>
     <td><code>.fgFade</code></td>
     <td><code>.fgSlideFromBottom</code></td>
-    <td align="center">팝업스타일 자동 설정됨</td>
+    <td align="center">팝업스타일로 자동 설정됨</td>
   </tr>
   <tr>
+    <td></td>
     <td><img src="./screenshot/FGFade.gif" width="190"></td>
     <td><img src="./screenshot/FGSlideFromBottom.gif" width="190"></td>
-    <td><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td>
+    <td rowspan="2"><td><img src="./screenshot/MGUAlertViewTransitionStyleFGSlideFromBottom_Scale.gif" width="190"></td></td>
+  </tr>
+  <tr>
+    <td>isFool = true</td>
+    <td>그림3</td>
+    <td>그림4</td>
   </tr>
 </tbody>
 </table>
