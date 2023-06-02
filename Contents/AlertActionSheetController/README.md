@@ -16,12 +16,13 @@
 
 
 ## Features
+* `UIAlertController` 과 유사한 구성 및 일반 `UIViewController` 프리젠트와 동일한 메서드(`present(_:animated:completion:)`)를 이용하여 프리젠트
 *  Colors, Gradients, Fonts 등 커스텀 가능
 *  Style presets 지원
 *  Supports texts and images
 *  Text와 Image의 배치를 vertical 또는 horizontal로 배치가능
 *  백그라운드 및 segment를 커스텀 뷰로 제공 가능
-* Transition Styles 제공 - [Presets and Styles](#presets-and-styles) 참고
+*  다양한Transition Styles 제공 - [Presets and Styles](#presets-and-styles) 참고
     * `MGUAlertViewController`
         * Presented ViewController 에 대한 4가지 스타일 제공 
         * Presenting ViewController 에 대한 Scale Shrink 스타일 제공
@@ -30,6 +31,8 @@
         * iPad 에서 팝오버 스타일 제공
 *  **Swift** and **Objective-C** compatability
 *  Written in Objective-C
+
+
 
 
 ## Preview
