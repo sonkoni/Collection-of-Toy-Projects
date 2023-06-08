@@ -8,7 +8,9 @@
 
 
 
-//#import "ViewControllerA.h"
+#ifndef MGUFlowView_Bridging_Header_h
+#define MGUFlowView_Bridging_Header_h
+
 #import "ViewControllerB.h"
 #import "ViewControllerC.h"
 #import "ViewControllerD.h"
@@ -16,3 +18,4 @@
 #import "ViewControllerF.h"
 #import "ViewControllerG.h"
 
+#endif /* MGUFlowView_Bridging_Header_h */

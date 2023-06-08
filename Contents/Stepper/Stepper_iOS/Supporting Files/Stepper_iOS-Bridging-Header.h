@@ -7,5 +7,10 @@
 //!  Build Settings -> Swift Compiler - General -> Objective-C Bridging Header -> '경로를 포함한 파일이름'
 
 
+#ifndef Stepper_iOS_Bridging_Header_h
+#define Stepper_iOS_Bridging_Header_h
+
 #import "ViewControllerC.h"
 #import "ViewControllerD.h"
+
+#endif /* Stepper_iOS_Bridging_Header_h */
