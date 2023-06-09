@@ -19,7 +19,7 @@ final class ViewControllerA: UIViewController {
         super.viewDidLoad()
         viewA.backgroundColor = .clear
         viewA.addSubview(webView)
-        webView.mgrPinEdgesToSuperviewEdges()
+        webView.pinEdgesToSuperviewEdges()
         // stackView.layer.masksToBounds = true <- interface Builder에서 설정함.
         
         if let url = URL(string: "https://www.apple.com") {

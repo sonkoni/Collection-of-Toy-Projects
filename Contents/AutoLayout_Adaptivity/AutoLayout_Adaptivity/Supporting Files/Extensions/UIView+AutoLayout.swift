@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIView {
     @discardableResult
-    func mgrPinEdgesToSuperviewEdges()  -> [NSLayoutConstraint] {
+    func pinEdgesToSuperviewEdges()  -> [NSLayoutConstraint] {
         guard let superview = self.superview else { fatalError("Superview 는 nil 이어서는 안된다.") }
         self.translatesAutoresizingMaskIntoConstraints = false
         let c1 = leadingAnchor.constraint(equalTo: superview.leadingAnchor)
@@ -26,7 +26,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func mgrPinEdgesToSuperviewLayoutMarginsGuide()  -> [NSLayoutConstraint] {
+    func pinEdgesToSuperviewLayoutMarginsGuide()  -> [NSLayoutConstraint] {
         guard let superview = self.superview else { fatalError("Superview 는 nil 이어서는 안된다.") }
         self.translatesAutoresizingMaskIntoConstraints = false
         let c1 = leadingAnchor.constraint(equalTo: superview.layoutMarginsGuide.leadingAnchor)
@@ -41,7 +41,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func mgrPinEdgesToSuperviewSafeAreaLayoutGuide()  -> [NSLayoutConstraint] {
+    func pinEdgesToSuperviewSafeAreaLayoutGuide()  -> [NSLayoutConstraint] {
         guard let superview = self.superview else { fatalError("Superview 는 nil 이어서는 안된다.") }
         self.translatesAutoresizingMaskIntoConstraints = false
         let c1 = leadingAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.leadingAnchor)
@@ -56,7 +56,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func mgrPinEdgesToSuperviewCustomMargins(_ customMargins: UIEdgeInsets)  -> [NSLayoutConstraint] {  // 5,5,5,5 이면 안쪽으로 5만큼 파고든다.
+    func pinEdgesToSuperviewCustomMargins(_ customMargins: UIEdgeInsets)  -> [NSLayoutConstraint] {  // 5,5,5,5 이면 안쪽으로 5만큼 파고든다.
         guard let superview = self.superview else { fatalError("Superview 는 nil 이어서는 안된다.") }
         self.translatesAutoresizingMaskIntoConstraints = false
         let c1 = topAnchor.constraint(equalTo: superview.topAnchor, constant: customMargins.top)
@@ -71,7 +71,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func mgrPinHorizontalEdgesToSuperviewEdges()  -> [NSLayoutConstraint] { // leading, trailing만 super view에 맞춘다.
+    func pinHorizontalEdgesToSuperviewEdges()  -> [NSLayoutConstraint] { // leading, trailing만 super view에 맞춘다.
         guard let superview = self.superview else { fatalError("Superview 는 nil 이어서는 안된다.") }
         self.translatesAutoresizingMaskIntoConstraints = false
         let c1 = leadingAnchor.constraint(equalTo: superview.leadingAnchor)
@@ -82,7 +82,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func mgrPinVerticalEdgesToSuperviewEdges()  -> [NSLayoutConstraint] { // top, bottom만 super view에 맞춘다.
+    func pinVerticalEdgesToSuperviewEdges()  -> [NSLayoutConstraint] { // top, bottom만 super view에 맞춘다.
         guard let superview = self.superview else { fatalError("Superview 는 nil 이어서는 안된다.") }
         self.translatesAutoresizingMaskIntoConstraints = false
         let c1 = topAnchor.constraint(equalTo: superview.topAnchor)
