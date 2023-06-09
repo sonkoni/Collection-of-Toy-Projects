@@ -48,46 +48,46 @@
 *Auto Layout을 프로그래머틱한 방식과 interface builder(xib, storyboard) 방식으로 보여주는 프로젝트*
 - [AutoLayout **Adaptivity**](./Contents/AutoLayout_Adaptivity) - Device Size Classes 및 Orientation 에 따른 AutoLayout Adaptivity **테스트**
 
-- [AutoLayout **Animation**](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Animation) - 오토레이아웃과 UIView 애니메이션 조합 **테스트**
+- [AutoLayout **Animation**](./Contents/AutoLayout_Animation) - 오토레이아웃과 UIView 애니메이션 조합 **테스트**
  
 **[back to top](#contents)**
  
 ## UI-Control
 ### Alert & Action Sheet
-- [MGUAlertViewController, MGUActionSheetController](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AlertActionSheetController) - `UIAlertController`를 대체할 수 있는 커스텀 ViewController.
+- [MGUAlertViewController, MGUActionSheetController](./Contents/AlertActionSheetController) - `UIAlertController`를 대체할 수 있는 커스텀 ViewController.
 ### DialControl
-- [DialControl Samples](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/DialControl_Samples) - 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤 테스트 샘플
+- [DialControl Samples](./Contents/DialControl_Samples) - 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤 테스트 샘플
 ### Keyboard
-- [MGUNumKeyboard](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNumKeyboard) - 커스텀 숫자 키보드
+- [MGUNumKeyboard](./Contents/MGUNumKeyboard) - 커스텀 숫자 키보드
 ### Ruler
-- [MGURulerView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURulerView) - 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView 
+- [MGURulerView](./Contents/MGURulerView) - 스크롤 제스처로 몸무게를 설정할 수 있는 RulerView 
 ### Segmented Control
-- [MGUNeoSegControl](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUNeoSegControl) - `UISegmentedControl`를 대체할 수 있는 커스텀 SegmentedControl.
+- [MGUNeoSegControl](./Contents/MGUNeoSegControl) - `UISegmentedControl`를 대체할 수 있는 커스텀 SegmentedControl.
 
 ### Stepper
-- [MGUStepper, MGAStepper](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/Stepper) - `UIStepper` 및 `NSStepper`를 대체할 수 있는 커스텀 Stepper
+- [MGUStepper, MGAStepper](./Contents/Stepper) - `UIStepper` 및 `NSStepper`를 대체할 수 있는 커스텀 Stepper
     
 ### Switch
-- [MGUDNSwitch, MGADNSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/DayNightSwitch) - `UISwitch` 및 `NSSwitch`를 대체할 수 있는 커스텀 스위치
-- [MGUSevenSwitch, MGASevenSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SevenSwitch) - `UISwitch` 및 `NSSwitch`를 대체할 수 있는 커스텀 스위치
-- [MGUFlatSwitch](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlatSwitch) - 완료 및 체크를 상징하는 커스텀 스위치
-- [MGUOnOffButton](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUOnOffButton) - Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼.
+- [MGUDNSwitch, MGADNSwitch](./Contents/DayNightSwitch) - `UISwitch` 및 `NSSwitch`를 대체할 수 있는 커스텀 스위치
+- [MGUSevenSwitch, MGASevenSwitch](./Contents/SevenSwitch) - `UISwitch` 및 `NSSwitch`를 대체할 수 있는 커스텀 스위치
+- [MGUFlatSwitch](./Contents/MGUFlatSwitch) - 완료 및 체크를 상징하는 커스텀 스위치
+- [MGUOnOffButton](./Contents/MGUOnOffButton) - Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼.
 
 
 
 ### Table View / Collection View
 
 #### Table View
-- [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/SwipeCell) - Custom Swipeable `UITableViewCell`/`UICollectionViewCell`
+- [MGUSwipeTableViewCell, MGUSwipeCollectionViewCell](./Contents/SwipeCell) - Custom Swipeable `UITableViewCell`/`UICollectionViewCell`
 
 #### Collection View
-- [MGUFlowView](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGUFlowView) - `UITableView` 대체할 수 있는 독특한 레이아웃을 제공하는 TableView.
+- [MGUFlowView](./Contents/MGUFlowView) - `UITableView` 대체할 수 있는 독특한 레이아웃을 제공하는 TableView.
 
 **[back to top](#contents)**
 
 ## Wallpaper
 *앱의 배경을 꾸며줄 수 있는 Wallpaper*
-- [MGURegularPolygon](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/MGURegularPolygon) - 앱의 배경을 꾸며줄 수 있는 애니메이팅 가능한 6각형 조각으로 빈틈없이 채우는(hexagonal tiling) Wallpaper View
+- [MGURegularPolygon](./Contents/MGURegularPolygon) - 앱의 배경을 꾸며줄 수 있는 애니메이팅 가능한 6각형 조각으로 빈틈없이 채우는(hexagonal tiling) Wallpaper View
 
 **[back to top](#contents)**
 
