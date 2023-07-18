@@ -55,7 +55,7 @@ No Button|Three Buttons|TextField|Custom Font|Long Message
 >   - 아이패드에서는 Transition Style이 팝업 스타일로 자동 설정된다.
 
 
-$~$|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**
+XX|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**|**[IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용**
 :---:|:---:|:---:|:---:|:---:
 <img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.53.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.28.59.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.08.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.28.gif" width="175">|<img src="./screenshot/Simulator Screen Recording - iPhone SE (3rd generation) - 2023-06-02 at 15.29.36.gif" width="175">
 
