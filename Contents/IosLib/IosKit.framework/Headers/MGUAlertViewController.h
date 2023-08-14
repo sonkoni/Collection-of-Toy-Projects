@@ -32,7 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat maximumWidth; // alert view의 최대 넓이.
 
 @property (nonatomic, strong) NSArray <MGUAlertAction *>*actions; // alert view 응답할 수 있는 MGUAlertAction 객체 배열
-//@property (nonatomic, strong, readonly) NSArray<MGUAlertAction *> *actions; // alert view 응답할 수 있는 MGUAlertAction 객체 배열
 
 //! viewWillAppear 단계에서 alertView에 삽입된다.
 - (void)addTextFieldWithConfigurationHandler:(void (^)(UITextField *textField))configurationHandler; // alert view에 표시되는 UITextField객체
