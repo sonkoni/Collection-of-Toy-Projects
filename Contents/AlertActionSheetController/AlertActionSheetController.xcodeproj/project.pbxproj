@@ -28,11 +28,11 @@
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
 		84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */; };
-		84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C32A1248700044E02D /* AudioKit.framework */; };
-		84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C42A1248700044E02D /* IosKit.framework */; };
-		84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C52A1248700044E02D /* GraphicsKit.framework */; };
-		84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C62A1248700044E02D /* BaseKit.framework */; };
 		84D6B1D02A1248720044E02D /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 84D6B1C72A1248700044E02D /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E161BC2A8B048E0015FAED /* BaseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E161BB2A8B048E0015FAED /* BaseKit.xcframework */; };
+		84E161BE2A8B05A70015FAED /* GraphicsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E161BD2A8B05A60015FAED /* GraphicsKit.xcframework */; };
+		84E161C02A8B06230015FAED /* IosKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E161BF2A8B06230015FAED /* IosKit.xcframework */; };
+		84E161C22A8B06870015FAED /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E161C12A8B06870015FAED /* AudioKit.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,11 +116,11 @@
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		84AF26D628F372BA00C4E0A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsForTableView.swift; sourceTree = "<group>"; };
-		84D6B1C32A1248700044E02D /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
-		84D6B1C42A1248700044E02D /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
-		84D6B1C52A1248700044E02D /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
-		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
 		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
+		84E161BB2A8B048E0015FAED /* BaseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BaseKit.xcframework; path = ../IosLib/BaseKit.xcframework; sourceTree = "<group>"; };
+		84E161BD2A8B05A60015FAED /* GraphicsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GraphicsKit.xcframework; path = ../IosLib/GraphicsKit.xcframework; sourceTree = "<group>"; };
+		84E161BF2A8B06230015FAED /* IosKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IosKit.xcframework; path = ../IosLib/IosKit.xcframework; sourceTree = "<group>"; };
+		84E161C12A8B06870015FAED /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AudioKit.xcframework; path = ../IosLib/AudioKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +128,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */,
-				84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */,
-				84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */,
-				84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */,
+				84E161BC2A8B048E0015FAED /* BaseKit.xcframework in Frameworks */,
+				84E161BE2A8B05A70015FAED /* GraphicsKit.xcframework in Frameworks */,
+				84E161C22A8B06870015FAED /* AudioKit.xcframework in Frameworks */,
+				84E161C02A8B06230015FAED /* IosKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +310,10 @@
 		84D6B1742A1200470044E02D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84D6B1C32A1248700044E02D /* AudioKit.framework */,
-				84D6B1C62A1248700044E02D /* BaseKit.framework */,
-				84D6B1C52A1248700044E02D /* GraphicsKit.framework */,
-				84D6B1C42A1248700044E02D /* IosKit.framework */,
+				84E161BB2A8B048E0015FAED /* BaseKit.xcframework */,
+				84E161BD2A8B05A60015FAED /* GraphicsKit.xcframework */,
+				84E161BF2A8B06230015FAED /* IosKit.xcframework */,
+				84E161C12A8B06870015FAED /* AudioKit.xcframework */,
 				84D6B1C72A1248700044E02D /* IosRes.bundle */,
 			);
 			name = Frameworks;

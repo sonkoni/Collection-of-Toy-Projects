@@ -1,0 +1,553 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IosKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UITableViewDiffableDataSource",
+        "printedName": "UITableViewDiffableDataSource",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "mgrSwipeApply",
+            "printedName": "mgrSwipeApply(_:tableView:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDiffableDataSourceSnapshot",
+                "printedName": "UIKit.NSDiffableDataSourceSnapshot<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:5UIKit28NSDiffableDataSourceSnapshotV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5UIKit29UITableViewDiffableDataSourceC6IosKitE13mgrSwipeApply_05tableC010completionyAA010NSDiffableeF8SnapshotVyxq_G_So0bC0CyycSgtF",
+            "mangledName": "$s5UIKit29UITableViewDiffableDataSourceC6IosKitE13mgrSwipeApply_05tableC010completionyAA010NSDiffableeF8SnapshotVyxq_G_So0bC0CyycSgtF",
+            "moduleName": "IosKit",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_0 : Swift.Sendable, τ_0_1 : Swift.Hashable, τ_0_1 : Swift.Sendable>",
+            "sugared_genericSig": "<SectionIdentifierType, ItemIdentifierType where SectionIdentifierType : Swift.Hashable, SectionIdentifierType : Swift.Sendable, ItemIdentifierType : Swift.Hashable, ItemIdentifierType : Swift.Sendable>",
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5UIKit29UITableViewDiffableDataSourceC",
+        "mangledName": "$s5UIKit29UITableViewDiffableDataSourceC",
+        "moduleName": "UIKit",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_0 : Swift.Sendable, τ_0_1 : Swift.Hashable, τ_0_1 : Swift.Sendable>",
+        "sugared_genericSig": "<SectionIdentifierType, ItemIdentifierType where SectionIdentifierType : Swift.Hashable, SectionIdentifierType : Swift.Sendable, ItemIdentifierType : Swift.Hashable, ItemIdentifierType : Swift.Sendable>",
+        "isOpen": true,
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "declAttributes": [
+          "Custom",
+          "Preconcurrency",
+          "Available",
+          "Available"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UICollectionViewDiffableDataSource",
+        "printedName": "UICollectionViewDiffableDataSource",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "mgrSwipeApply",
+            "printedName": "mgrSwipeApply(_:collectionView:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDiffableDataSourceSnapshot",
+                "printedName": "UIKit.NSDiffableDataSourceSnapshot<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:5UIKit28NSDiffableDataSourceSnapshotV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UICollectionView",
+                "printedName": "UIKit.UICollectionView",
+                "usr": "c:objc(cs)UICollectionView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5UIKit34UICollectionViewDiffableDataSourceC6IosKitE13mgrSwipeApply_010collectionC010completionyAA010NSDiffableeF8SnapshotVyxq_G_So0bC0CyycSgtF",
+            "mangledName": "$s5UIKit34UICollectionViewDiffableDataSourceC6IosKitE13mgrSwipeApply_010collectionC010completionyAA010NSDiffableeF8SnapshotVyxq_G_So0bC0CyycSgtF",
+            "moduleName": "IosKit",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_0 : Swift.Sendable, τ_0_1 : Swift.Hashable, τ_0_1 : Swift.Sendable>",
+            "sugared_genericSig": "<SectionIdentifierType, ItemIdentifierType where SectionIdentifierType : Swift.Hashable, SectionIdentifierType : Swift.Sendable, ItemIdentifierType : Swift.Hashable, ItemIdentifierType : Swift.Sendable>",
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5UIKit34UICollectionViewDiffableDataSourceC",
+        "mangledName": "$s5UIKit34UICollectionViewDiffableDataSourceC",
+        "moduleName": "UIKit",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_0 : Swift.Sendable, τ_0_1 : Swift.Hashable, τ_0_1 : Swift.Sendable>",
+        "sugared_genericSig": "<SectionIdentifierType, ItemIdentifierType where SectionIdentifierType : Swift.Hashable, SectionIdentifierType : Swift.Sendable, ItemIdentifierType : Swift.Hashable, ItemIdentifierType : Swift.Sendable>",
+        "isOpen": true,
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "declAttributes": [
+          "Custom",
+          "Preconcurrency",
+          "Available",
+          "Available"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "StringLiteral",
+      "offset": 693,
+      "length": 16,
+      "value": "\"NOT SELF IN %@\""
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 871,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "StringLiteral",
+      "offset": 1128,
+      "length": 61,
+      "value": "\"제거된 아이템이 오직 한개가 존재해야한다.\""
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1252,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 1541,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 1566,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1657,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 1879,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2018,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 2136,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2433,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeTableViewCell\/MGUSwipeTableViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 2683,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 16,
+      "value": "\"NOT SELF IN %@\""
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 908,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "StringLiteral",
+      "offset": 1176,
+      "length": 61,
+      "value": "\"제거된 아이템이 오직 한개가 존재해야한다.\""
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1352,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 1612,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1666,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 1790,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 1815,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1959,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2020,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2168,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2175,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 2296,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2435,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2549,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2570,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 2692,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2916,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/IosKit\/Components\/SwipeCell\/SwipeCollectionViewCell\/MGUSwipeCollectionViewCell+extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 3040,
+      "length": 3,
+      "value": "0.0"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BaseKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import BaseKit
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+extension Swift.Bool {
+  public var mgrIntValue: Swift.Int {
+    get
+  }
+}
+extension Swift.Int {
+  public var mgrBoolValue: Swift.Bool {
+    get
+  }
+}
+extension Swift.String {
+  public var mgrBoolValue: Swift.Bool {
+    get
+  }
+}
+extension Swift.Dictionary {
+  public func mgrEnumerateKeysAndObjects(reverse: Swift.Bool = false, using block: (Key, Value, inout Swift.Bool) -> Swift.Void)
+}
+extension Swift.String {
+  public subscript(mgr idx: Swift.Int) -> Swift.String? {
+    get
+  }
+}
+extension Swift.String {
+  public subscript(mgr range: Swift.Range<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.ClosedRange<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.PartialRangeThrough<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.PartialRangeFrom<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.PartialRangeUpTo<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+}
+extension Swift.Array {
+  public func mgrEnumerateObjects(reverse: Swift.Bool = false, using block: (Element, Swift.Int, inout Swift.Bool) -> Swift.Void)
+  public func mgrEnumerateObjects(at indexes: Foundation.IndexSet, reverse: Swift.Bool = false, using block: (Element, Swift.Int, inout Swift.Bool) -> Swift.Void)
+}
+extension Swift.String {
+  public var ns: Foundation.NSString {
+    get
+  }
+  public func mgrAppendingPathComponent(_ str: Swift.String) -> Swift.String
+  public func mgrNSRange(of searchString: Swift.String) -> Foundation.NSRange
+}
