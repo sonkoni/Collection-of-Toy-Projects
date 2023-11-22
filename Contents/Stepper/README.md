@@ -9,7 +9,7 @@
 ## iOS
 > MGUStepper(**Swift** and **Objective-C** compatability)
 > SKUStepper(**Swift** only) 
-<br/> macOS
+## macOS
 > MGAStepper
 
 ## **MGUStepper** (***iOS***), **SKUStepper** (***iOS***)-스위프트 전용 <br/> **MGAStepper** (***macOS***)
