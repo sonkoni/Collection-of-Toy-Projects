@@ -7,8 +7,8 @@
 
 
 ## iOS
-> MGUStepper(**Swift** and **Objective-C** compatability)
-> SKUStepper(**Swift** only) 
+> MGUStepper
+> SKUStepper 
 ## macOS
 > MGAStepper
 
