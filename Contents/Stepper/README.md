@@ -17,7 +17,6 @@
 >   - Written in Objective-C
 >   - **Swift** and **Objective-C** compatability
 
-## **MGUStepper** (***iOS***), **SKUStepper** (***iOS***)-스위프트 전용 <br/> **MGAStepper** (***macOS***)
 - `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 Stepper
     - MGUStepper : iOS 용 (UIControl 서브클래스)
     - MGAStepper : macOS 용 (NSControl 서브클래스)
