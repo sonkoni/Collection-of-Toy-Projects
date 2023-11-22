@@ -29,6 +29,21 @@ NS_ASSUME_NONNULL_BEGIN
 //! https://stackoverflow.com/questions/67776944/nssecurecoding-writing-uiview-to-disk
 - (__kindof UIView *)mgrCopyView;
 
+// 손가락이 터치되었을 시, 가장 가까운 뷰를 찾아준다.
+//
+// [self addTarget:self action:@selector(buttonClicked:forEvent:) forControlEvents:UIControlEventTouchUpInside];
+//
+// - (void)buttonClicked:(id)sender forEvent:(UIEvent *)event {
+//     UITouch *touch = [[event allTouches] anyObject];
+//     CGPoint touchPoint = [touch locationInView:self]; // 터치한 위치를 가져오기
+//     UIView *view = [self mgrFindClosestViewToPoint:touchPoint views:viewList];
+//     if (self.selectedIndex != view.tag) {
+//         self.selectedIndex = view.tag;
+//         [self sendActionsForControlEvents:UIControlEventValueChanged];
+//     }
+// }
+- (UIView *)mgrFindClosestViewToPoint:(CGPoint)point views:(NSArray <UIView *>*)views;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,0 +1,16 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name GraphicsKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import GraphicsKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class SKEAccelerationTimer {
+  public init(updateClosure: (() -> Swift.Void)?)
+  @objc deinit
+  public func startAccelerationTimer()
+  public func invalidate()
+}

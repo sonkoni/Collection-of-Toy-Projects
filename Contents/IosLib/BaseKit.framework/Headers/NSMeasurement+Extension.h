@@ -20,11 +20,19 @@ NS_ASSUME_NONNULL_BEGIN
  @constant   MGRMeasurementFormatStyleUnitWidthTypeNarrow .....
  @constant   MGRMeasurementFormatStyleUnitWidthTypeWide .....
  */
-typedef NS_ENUM(NSUInteger, MGRMeasurementFormatStyleUnitWidthType) {
+typedef NS_ENUM(NSInteger, MGRMeasurementFormatStyleUnitWidthType) {
     MGRMeasurementFormatStyleUnitWidthTypeAbbreviated = NSFormattingUnitStyleMedium,
     MGRMeasurementFormatStyleUnitWidthTypeNarrow = NSFormattingUnitStyleShort,
     MGRMeasurementFormatStyleUnitWidthTypeWide = NSFormattingUnitStyleLong
 };
+
+CF_INLINE NSFormattingUnitStyle MGRMeasurementFormatStyleConvert(MGRMeasurementFormatStyleUnitWidthType type) {
+    if (type == MGRMeasurementFormatStyleUnitWidthTypeAbbreviated) { return NSFormattingUnitStyleMedium;
+    } else if (type == MGRMeasurementFormatStyleUnitWidthTypeNarrow) { return NSFormattingUnitStyleShort;
+    } else if (type == MGRMeasurementFormatStyleUnitWidthTypeWide) { return NSFormattingUnitStyleLong;
+    } else { NSCAssert(FALSE, @"예상치 못한 값 등장"); return NSFormattingUnitStyleLong;
+    }
+}
 
 // print(recommendedCalories.formatted(.measurement(width: .wide, usage: .asProvided))) usage: 에 대응한다.
 // MeasurementFormatUnitUsage 스위프트. 에 해당한다.

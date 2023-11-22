@@ -45,6 +45,8 @@ FOUNDATION_EXPORT const unsigned char IosKitVersionString[];
 //! Components
 #import <IosKit/MGUBioMetricAuthenticator.h>
 #import <IosKit/MGUShapeView.h>
+#import <IosKit/MGUSimpleLineView.h>
+#import <IosKit/MGUStockLineInfoView.h>
 #import <IosKit/MGUHexagonalWallpaperView.h>
 #import <IosKit/MGUSoundStateListener.h>
 #import <IosKit/MGUNavigationController.h>
@@ -64,8 +66,12 @@ FOUNDATION_EXPORT const unsigned char IosKitVersionString[];
 #import <IosKit/MGULivelyButton.h>
 #import <IosKit/MGURippleButton.h>
 #import <IosKit/MGUNeoSegControl.h>
+#import <IosKit/MGUNOSearchResultView.h>
 #import <IosKit/MGUSegmentedControl.h>
 #import <IosKit/MGUButton.h>
+#import <IosKit/MGUDropdownButton.h>
+#import <IosKit/MGUDropSegControl.h>
+#import <IosKit/MGUBrightnessBorderButton.h>
 #import <IosKit/MGUKeyboardStateListener.h>
 #import <IosKit/MGUFloatingButton.h>
 #import <IosKit/MGUMorphingLabel.h>

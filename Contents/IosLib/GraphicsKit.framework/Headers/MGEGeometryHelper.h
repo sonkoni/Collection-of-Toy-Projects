@@ -227,6 +227,17 @@ CGFloat MGERotationAngleAboutCenter(CGPoint center, CGPoint A);
 #pragma mark - Random Function : MGERandom_
 CGPoint MGERandomPositionForSize(CGSize size);
 
+#pragma mark - Progress Delay : MGEProgressDelay_
+// MGUHexagonal 클래스에서 영감을 받아서 추상화했다
+// MGUHexagonal 클래스에서 사용된 알고리즘은 실제로 MGEProgressDelayFixDuration 함수의 알고리즘과 같다
+// 0.0 ~ 1.0 의 progress 인자를 집어 넣는 상황에서 duration은 자동으로 (1.0 - delay)로 delay 값이 직접적으로 영향을 미친다.
+CGFloat MGEProgressDelay(CGFloat progress, CGFloat delay);
+
+// 1.0 - delay로 도출된 값 이하로 fixDuration을 설정할 수 있다
+// 만약 delay를 0.0 ~ 0.3의 값으로 랜덤으로 사용한다면 fixDuration은 0.7 이하의 값을 사용하면된다.
+// MGUHexagonal 클래스의 알고리즘은 fixDuration을 0.6으로 고정했고, delay를 0.0 ~ 0.4로 랜덤으로 사용했다
+CGFloat MGEProgressDelayFixDuration(CGFloat progress, CGFloat delay, CGFloat fixDuration);
+
 
 #pragma mark - Etc
 //! 단순히 CGPoint를 CGVector로 바꾼다.

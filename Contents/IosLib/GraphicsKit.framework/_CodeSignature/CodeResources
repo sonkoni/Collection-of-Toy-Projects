@@ -32,6 +32,10 @@
 		<data>
 		cBG1hPmEAhMAiou22TLVHLZHHMQ=
 		</data>
+		<key>Headers/GraphicsKit-Swift.h</key>
+		<data>
+		9Mebzw8cbEZrB5zAVZVzD4hLy7I=
+		</data>
 		<key>Headers/GraphicsKit.h</key>
 		<data>
 		BLvm+yH3Wvknjo9fWGXeqN/f10A=
@@ -78,7 +82,7 @@
 		</data>
 		<key>Headers/MGEGeometryHelper.h</key>
 		<data>
-		TLcpPjNmlbx8tEesXSNdPGn8xDI=
+		i0w4JE7/6x7t3KWkK1aWoyRfzwQ=
 		</data>
 		<key>Headers/MGEGlitchLabel.h</key>
 		<data>
@@ -134,11 +138,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E3SO0Nn+yhzA1X8uN1vuFSvKjJA=
+		1WzBaBJIAXbVmwkBM+Zo88ypTno=
+		</data>
+		<key>Modules/GraphicsKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		LVvUFds7ui/e3VlRlszoueG1Qyo=
+		</data>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		YAgnQJ+nsFNxNog+Gxxf83J1BRM=
+		</data>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		BaeowS9GfvcK/NwE2T+jQWkL24g=
+		</data>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		20Nt9gRk2lzXaKoQuUTWCLTapa0=
+		</data>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		BaeowS9GfvcK/NwE2T+jQWkL24g=
+		</data>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		5oQe0OdY/8+zFAf8wfSbF1E/Ww4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		BT9RkS2eMqor7kP272DHXe54v6Y=
+		xnTD0c74mVW6pTLtnXF05XKD6yY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -218,6 +246,17 @@
 			<key>hash2</key>
 			<data>
 			+I7KqnKc8CjV2+qjEzCLmOMuwRjfZoVSYgYEVoGRGhM=
+			</data>
+		</dict>
+		<key>Headers/GraphicsKit-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9Mebzw8cbEZrB5zAVZVzD4hLy7I=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZdamjdXEuRSV63BSjeiUfT5Tmbh/6QWjFdcnpi+2KhE=
 			</data>
 		</dict>
 		<key>Headers/GraphicsKit.h</key>
@@ -345,11 +384,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TLcpPjNmlbx8tEesXSNdPGn8xDI=
+			i0w4JE7/6x7t3KWkK1aWoyRfzwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			DRUVs6rK4G0bc7xVSQCFda47gSfTobc1+qob9iMu4tQ=
+			IySsWBF9HW8SWlN1AGJqGs+RLLXLEzV/UqXZqld3CNQ=
 			</data>
 		</dict>
 		<key>Headers/MGEGlitchLabel.h</key>
@@ -495,15 +534,81 @@
 			gsXGm1iV8A+BLPc3N28kQrCKN9jnAAS80+DMqDnvSkQ=
 			</data>
 		</dict>
+		<key>Modules/GraphicsKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LVvUFds7ui/e3VlRlszoueG1Qyo=
+			</data>
+			<key>hash2</key>
+			<data>
+			njlGijt0Kp9OAeBxfPgRVezVhJM3i1NHNDHs2M5nemM=
+			</data>
+		</dict>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YAgnQJ+nsFNxNog+Gxxf83J1BRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			3P1sEyF+6nd/3WG/kY0W5a0183CU9tyBk0YIsjj9WZo=
+			</data>
+		</dict>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BaeowS9GfvcK/NwE2T+jQWkL24g=
+			</data>
+			<key>hash2</key>
+			<data>
+			4vHOGvfgD2fyOHOfyg3iU1xHJ9ASWelBmnelUB0rP7M=
+			</data>
+		</dict>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			20Nt9gRk2lzXaKoQuUTWCLTapa0=
+			</data>
+			<key>hash2</key>
+			<data>
+			zNgZqPEXc1vOWloUvtqaESiVo4//xgTYqCmznQBY5v0=
+			</data>
+		</dict>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BaeowS9GfvcK/NwE2T+jQWkL24g=
+			</data>
+			<key>hash2</key>
+			<data>
+			4vHOGvfgD2fyOHOfyg3iU1xHJ9ASWelBmnelUB0rP7M=
+			</data>
+		</dict>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5oQe0OdY/8+zFAf8wfSbF1E/Ww4=
+			</data>
+			<key>hash2</key>
+			<data>
+			L86e6T2HsIF0fxXhYDGRl8RrlaYAHEEZnj2KelZOk5s=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BT9RkS2eMqor7kP272DHXe54v6Y=
+			xnTD0c74mVW6pTLtnXF05XKD6yY=
 			</data>
 			<key>hash2</key>
 			<data>
-			sTGXy/E1Scm2Ubi6G1wol/8mQvJj7yDWwDz26Q/yz9k=
+			vSJcxrFhc0sprAZf7qRDZfCDm727T+ao7p8TaST06oo=
 			</data>
 		</dict>
 	</dict>

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)mgrColorFromHexNumber:(int)hexNumber; //! hex (16진수 )를 UIColor 객체로 변환한다.
 
 + (NSString *)mgrHexStringFromColor:(UIColor *)color;
+
+- (NSInteger)mgrHexNumber;
 @end
 
 NS_ASSUME_NONNULL_END

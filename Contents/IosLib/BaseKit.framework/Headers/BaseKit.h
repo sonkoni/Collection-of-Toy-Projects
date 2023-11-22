@@ -76,6 +76,7 @@ FOUNDATION_EXPORT const unsigned char BaseKitVersionString[];
 #import <BaseKit/MGREmpty.h>
 #import <BaseKit/MGROutlineItem.h>
 #import <BaseKit/MGROutlineItem+Extension.h>
+#import <BaseKit/MGRJamo.h>
 #import <BaseKit/MGRTimer.h>
 #import <BaseKit/MGRPub.h>
 #import <BaseKit/MGRBind.h>

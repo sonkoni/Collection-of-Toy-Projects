@@ -19,6 +19,7 @@
 #import <IosKit/UIColor+Random.h>       //! #import "MGRMathHelper.h" 를 필요로 한다.
 #import <IosKit/UIColor+Material.h>
 #import <IosKit/UIColor+Flat.h>
+#import <IosKit/UIColor+Template.h>
 
 #endif /* UIColor_Extension_h */
 

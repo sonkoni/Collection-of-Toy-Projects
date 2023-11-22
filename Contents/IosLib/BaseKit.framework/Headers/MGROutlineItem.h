@@ -16,9 +16,15 @@
 
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 @class MGROutlineItemLocationInfoValue;
+@class MGROutlineItem;
 typedef const MGROutlineItemLocationInfoValue *MGROutlineItemLocation;
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol MGROutlineItemContent
+@required
+@property (nonatomic, weak) MGROutlineItem *outlineItem;
+@end
 
 typedef NSString * MGROutlineItemKey NS_TYPED_ENUM;
 static MGROutlineItemKey const MGROutlineItemContentItemKey = @"contentItem";
@@ -34,6 +40,7 @@ static MGROutlineItemKey const MGROutlineItemSubitemsKey = @"subitems";
 @property (nonatomic, readonly) NSArray <MGROutlineItem <ObjectType>*>*recurrenceAllCollapsedSubitems; // @dynamic 자기자신 제외. collapse 전체를 확인하기 위해. Temp 이용
 //collapse
 @property (nonatomic, weak) MGROutlineItem <ObjectType>*superItem;
+@property (nonatomic, readonly, nullable) MGROutlineItem <ObjectType>*progenitor; // @dynamic 자신의 최종 뿌리
 @property (nonatomic, readonly) MGROutlineItemLocation currentLocationInfo; // @dynamic
 
 //! iOS 14에서는 사용자체를 안할 것으로 예상된다.

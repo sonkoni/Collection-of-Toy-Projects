@@ -35,6 +35,9 @@ extern const BOOL MGR_CGColorGetComponents(CGColorRef color,
              blue:(NSInteger * _Nullable)blue
             alpha:(CGFloat * _Nullable)alpha;
 
+//! self의 색상이 인수로 주어진 색보다 밝은 색인지를 판단하는 메서드
+- (BOOL)mgrBrighterThanColor:(UIColor *)color;
+
 //! DEBUG 용으로 현재 칼라의 HEX, RGB, HSB, HSL, LAB를 로그로 뽑아서 보여준다. printf사용.
 - (void)mgrDEBUGDescription;
 

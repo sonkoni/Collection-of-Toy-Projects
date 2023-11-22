@@ -73,6 +73,13 @@ static const CGFloat UITableViewDeleteRowDuration = 0.4; // UITableViewDeleteIns
                          duration:(CGFloat)duration
                   completionBlock:(void(^_Nullable)(void))completionBlock;
 
+// cell 위에 붙어있는 버튼을 눌렀을 때, 그 cell의 index path를 알려준다.
+// - (IBAction)clickedButton:(UIButton *)sender {
+//     NSIndexPath *path = [self.tableView mgrIndexPathOfCellWhereViewExists:sender];
+//     NSLog(@"버튼이 눌려줬고, 눌려진 cell의 인덱스 패스는 ---> %@", path);
+// }
+- (NSIndexPath *)mgrIndexPathOfCellWhereViewExists:(__kindof UIView *)view;
+
 @end
 
 NS_ASSUME_NONNULL_END

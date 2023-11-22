@@ -62,7 +62,7 @@ IB_DESIGNABLE
 //! 또는 고정 글자를 이용할 때도 사용할 수 있다.
 @property (nonatomic, strong, nullable) NSMutableArray <NSString *>*items;
 
-- (void)setAllContensEnabled:(BOOL)enabled; // - (void)setEnabled:(BOOL)enabled; 은 가운데 라벨은 항상 enable이다.
+- (void)setAllContentsEnabled:(BOOL)enabled; // - (void)setEnabled:(BOOL)enabled; 은 가운데 라벨은 항상 enable이다.
 - (void)setValueQuietly:(CGFloat)value;
 
 - (instancetype)initWithFrame:(CGRect)frame

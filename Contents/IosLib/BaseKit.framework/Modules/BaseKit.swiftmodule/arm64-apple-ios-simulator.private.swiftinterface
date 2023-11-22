@@ -1,0 +1,166 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BaseKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import BaseKit
+import CoreFoundation
+import Foundation
+import MobileCoreServices
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias SKHDispatchDebounceClosure = (_ interval: Foundation.TimeInterval, _ next: @escaping () -> Swift.Void) -> Swift.Void
+public func SKHDispatchDebounceMake() -> BaseKit.SKHDispatchDebounceClosure
+@_hasMissingDesignatedInitializers public class SKHJamo {
+  @objc deinit
+}
+extension Swift.Bool {
+  public var mgrIntValue: Swift.Int {
+    get
+  }
+}
+extension Swift.Int {
+  public var mgrBoolValue: Swift.Bool {
+    get
+  }
+}
+extension Swift.String {
+  public var mgrBoolValue: Swift.Bool {
+    get
+  }
+}
+extension Foundation.Bundle {
+  public func skhCaseInsensitivePath(forResource name: Swift.String, ofType ext: Swift.String?) -> Swift.String?
+}
+extension Swift.Dictionary {
+  public func mgrEnumerateKeysAndObjects(reverse: Swift.Bool = false, using block: (Key, Value, inout Swift.Bool) -> Swift.Void)
+}
+public protocol SKHOutlineItemContent : AnyObject, Swift.Decodable, Swift.Encodable {
+  func outlineItem<T>(_ value: BaseKit.SKHOutlineItem<T>) where T : Swift.Decodable, T : Swift.Encodable
+}
+@_inheritsConvenienceInitializers final public class SKHOutlineItem<T> : ObjectiveC.NSObject, Swift.Codable, Foundation.NSItemProviderReading, Foundation.NSItemProviderWriting where T : Swift.Decodable, T : Swift.Encodable {
+  final public var contentItem: T?
+  final public var subitems: Swift.Array<BaseKit.SKHOutlineItem<T>>? {
+    get
+  }
+  final public var recurrenceAllSubitems: Swift.Array<BaseKit.SKHOutlineItem<T>>? {
+    get
+  }
+  weak final public var superitem: BaseKit.SKHOutlineItem<T>?
+  final public var progenitor: BaseKit.SKHOutlineItem<T>? {
+    get
+  }
+  final public var isExpanded: Swift.Bool
+  final public var hasSubitem: Swift.Bool {
+    get
+  }
+  final public var indentationLevel: Swift.Int {
+    get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  public init(contentItem: T?, isFolder: Swift.Bool, subitems: Swift.Array<BaseKit.SKHOutlineItem<T>>?)
+  convenience public init(contentItem: T, subitems: Swift.Array<BaseKit.SKHOutlineItem<T>>?)
+  convenience public init(contentItem: T)
+  convenience public init(tempRoot subitems: Swift.Array<BaseKit.SKHOutlineItem<T>>?)
+  final public func append(_ subitems: Swift.Array<BaseKit.SKHOutlineItem<T>>?)
+  final public func insert(_ subitems: [BaseKit.SKHOutlineItem<T>], afterItem: BaseKit.SKHOutlineItem<T>)
+  final public func insert(_ subitems: [BaseKit.SKHOutlineItem<T>], beforeItem: BaseKit.SKHOutlineItem<T>)
+  final public func delete(_ subitems: [BaseKit.SKHOutlineItem<T>])
+  final public func deleteAllSubitems()
+  final public func removeFromSuperitem()
+  final public func superitemsToUpperLimit() -> [BaseKit.SKHOutlineItem<T>]
+  @objc public static var readableTypeIdentifiersForItemProvider: [Swift.String] {
+    @objc get
+  }
+  @objc public static func object(withItemProviderData data: Foundation.Data, typeIdentifier: Swift.String) throws -> Self
+  @objc public static var writableTypeIdentifiersForItemProvider: [Swift.String] {
+    @objc get
+  }
+  #if compiler(>=5.3) && $Sendable
+  @objc final public func loadData(withTypeIdentifier typeIdentifier: Swift.String, forItemProviderCompletionHandler completionHandler: @escaping @Sendable (Foundation.Data?, (any Swift.Error)?) -> Swift.Void) -> Foundation.Progress?
+  #endif
+  @available(*, unavailable)
+  @objc override dynamic public init()
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Swift.String {
+  public subscript(mgr idx: Swift.Int) -> Swift.String? {
+    get
+  }
+}
+extension Swift.String {
+  public subscript(mgr range: Swift.Range<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.ClosedRange<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.PartialRangeThrough<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.PartialRangeFrom<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+  public subscript(mgr range: Swift.PartialRangeUpTo<Swift.Int>) -> Swift.String.SubSequence? {
+    get
+  }
+}
+public func SKHCalculateNumberOfDecimalPlaces(number: Swift.Double) -> Swift.Int
+extension Swift.Array {
+  public func mgrEnumerateObjects(reverse: Swift.Bool = false, using block: (Element, Swift.Int, inout Swift.Bool) -> Swift.Void)
+  public func mgrEnumerateObjects(at indexes: Foundation.IndexSet, reverse: Swift.Bool = false, using block: (Element, Swift.Int, inout Swift.Bool) -> Swift.Void)
+}
+public struct SKHRegularExpStr : Swift.Hashable, Swift.Equatable, Swift.RawRepresentable, @unchecked Swift.Sendable {
+  public typealias RawValue = Swift.String
+  public init(_ rawValue: BaseKit.SKHRegularExpStr.RawValue)
+  public init(rawValue: BaseKit.SKHRegularExpStr.RawValue)
+  public let rawValue: BaseKit.SKHRegularExpStr.RawValue
+  public static let alphabetUppercase: BaseKit.SKHRegularExpStr
+  public static let alphabetLowercase: BaseKit.SKHRegularExpStr
+  public static let alphabet: BaseKit.SKHRegularExpStr
+  public static let number: BaseKit.SKHRegularExpStr
+  public static let hexadecimal: BaseKit.SKHRegularExpStr
+  public static let nonNumber: BaseKit.SKHRegularExpStr
+  public static let alphaNumeric: BaseKit.SKHRegularExpStr
+  public static let korean: BaseKit.SKHRegularExpStr
+  public static let spaceTab: BaseKit.SKHRegularExpStr
+  public static let whitespace: BaseKit.SKHRegularExpStr
+  public static let nonWhitespace: BaseKit.SKHRegularExpStr
+}
+extension Swift.String {
+  public func skhSubstring(to index: Swift.Int) -> Swift.String?
+  public func skhSubString(from index: Swift.Int) -> Swift.String?
+  public func skhFirstIndex(of element: Swift.String) -> Swift.Int?
+  public func skhSeparateCamelToString() -> Swift.String
+  public func skhRange<T>(of searchString: T, options mask: Swift.String.CompareOptions = [], range searchRange: Swift.Range<Swift.String.Index>? = nil, locale: Foundation.Locale? = nil) -> Swift.Range<Swift.String.Index>? where T : Swift.StringProtocol
+  public func skhContain(of multiSearchString: Swift.String, options mask: Foundation.NSString.CompareOptions) -> Swift.Bool
+  public func skhInsertSpace(preExpression: BaseKit.SKHRegularExpStr?, postExpression: BaseKit.SKHRegularExpStr?, replace: Swift.String, changed: Swift.String) -> Swift.String
+  public func skhSubstringBefore(_ separator: Swift.String) -> Swift.String
+  public func skhSubstringAfter(_ separator: Swift.String) -> Swift.String
+  public func skhSubstring(after afterString: Swift.String, before beforeString: Swift.String) -> Swift.String
+  public func skhRemoveLastNumber(withSpaceRemove spaceRemove: Swift.Bool) -> Swift.String
+}
+extension Swift.String {
+  public func skhAttributedString(with headIndent: CoreFoundation.CGFloat) -> Foundation.NSAttributedString
+  public init(EUCKRCompatibleContentsOfFile path: Swift.String) throws
+}
+@available(iOS 16.0, *)
+extension Swift.String {
+  public func skhSaveJSON()
+}
+extension Swift.String {
+  public var ns: Foundation.NSString {
+    get
+  }
+  public func mgrAppendingPathComponent(_ str: Swift.String) -> Swift.String
+  public func mgrNSRange(of searchString: Swift.String) -> Foundation.NSRange
+  public func mgrRange<T>(of searchString: T, options mask: Swift.String.CompareOptions = [], range searchRange: Swift.Range<Swift.String.Index>? = nil, locale: Foundation.Locale? = nil) -> Foundation.NSRange where T : Swift.StringProtocol
+}

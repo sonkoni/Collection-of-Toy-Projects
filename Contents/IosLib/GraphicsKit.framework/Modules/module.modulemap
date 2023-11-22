@@ -1,6 +1,11 @@
 framework module GraphicsKit {
   umbrella header "GraphicsKit.h"
-
   export *
+
   module * { export * }
+}
+
+module GraphicsKit.Swift {
+  header "GraphicsKit-Swift.h"
+  requires objc
 }

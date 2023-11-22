@@ -1,7 +1,7 @@
 framework module BaseKit {
   umbrella header "BaseKit.h"
-
   export *
+
   module * { export * }
 }
 

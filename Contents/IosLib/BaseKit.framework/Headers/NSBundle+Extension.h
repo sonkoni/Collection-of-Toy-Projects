@@ -21,6 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 #if TARGET_OS_OSX
 - (NSString *)mgrAppName;
 #endif
+
+/// 다음의 메서드를 대소문자 구분없이 사용하고 싶을때 이용하라.
+/// - pathForResource:ofType:
+/// - (NSString *)pathForResource:(NSString *)name ofType:(NSString *)ext;
+- (NSString *)mgrCaseInsensitivePathForResource:(NSString *)name ofType:(NSString *)ext;
+
 @end
 
 NS_ASSUME_NONNULL_END

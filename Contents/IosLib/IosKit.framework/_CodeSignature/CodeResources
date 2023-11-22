@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/IosKit-Swift.h</key>
 		<data>
-		0QjxLGP5OYh1HC6gDZ4hyDyLlPY=
+		l8Pgwtw6G8y7PyU6unkeILBOWHo=
 		</data>
 		<key>Headers/IosKit.h</key>
 		<data>
-		w1WDHItOx/uFGrGMlxfTWURmDc8=
+		7QF99cTzIPYaoXp2pTq5YOdOt4E=
 		</data>
 		<key>Headers/MGUActionSheetConfiguration.h</key>
 		<data>
@@ -43,6 +43,10 @@
 		<key>Headers/MGUBioMetricAuthenticator.h</key>
 		<data>
 		O3i3MaH8iXAm/nSdzDFI/QX2dz0=
+		</data>
+		<key>Headers/MGUBrightnessBorderButton.h</key>
+		<data>
+		Boj1Kp//F4zssUXXinU65gDDTJI=
 		</data>
 		<key>Headers/MGUButton.h</key>
 		<data>
@@ -132,6 +136,30 @@
 		<data>
 		4Qa6ww9jSTSFrXCZNOTm/M13gWc=
 		</data>
+		<key>Headers/MGUDropSegCell.h</key>
+		<data>
+		TlrwG61Yy6P5ZD+FEMy42Achc70=
+		</data>
+		<key>Headers/MGUDropSegControl.h</key>
+		<data>
+		Ggzdus+zOgozB3kfA56pGeP5YJg=
+		</data>
+		<key>Headers/MGUDropSegManager.h</key>
+		<data>
+		NIMjet821+4gXRoUWD50H1EmEwg=
+		</data>
+		<key>Headers/MGUDropSegTextCell.h</key>
+		<data>
+		K3FGmTjeKzvTtqsqdfoioS0htEs=
+		</data>
+		<key>Headers/MGUDropdownButton.h</key>
+		<data>
+		5hcrQ/+/19tbHeR5xMpxBPfEPEk=
+		</data>
+		<key>Headers/MGUDropdownCell.h</key>
+		<data>
+		DGaG0QPALmfBSQ6VDVYPF8xt2Bo=
+		</data>
 		<key>Headers/MGUFavoriteSwitch.h</key>
 		<data>
 		0mY6bGddt1OrGitoF8saLK7a9zQ=
@@ -139,6 +167,10 @@
 		<key>Headers/MGUFavoriteSwitchConfiguration.h</key>
 		<data>
 		LsVQSvM2Mx9N0/e6b27zO6hDbtc=
+		</data>
+		<key>Headers/MGUFillTypeDropdownCell.h</key>
+		<data>
+		fmGTB9cQmmlg7/sxUUD+H+sB2zk=
 		</data>
 		<key>Headers/MGUFlatSwitch.h</key>
 		<data>
@@ -204,9 +236,21 @@
 		<data>
 		i3K10lzr+MnM2Sy8zbM7Uvhlf30=
 		</data>
+		<key>Headers/MGUImageDropdownCell.h</key>
+		<data>
+		/aP7mHmBDsPH57J2FevikF/c188=
+		</data>
 		<key>Headers/MGUKeyboardStateListener.h</key>
 		<data>
 		dAnocJDRwxP5Ms3xpVpQX1YajEM=
+		</data>
+		<key>Headers/MGULineDashDropdownCell.h</key>
+		<data>
+		ucp65MmpshrHAmoekxOeDVu1TKA=
+		</data>
+		<key>Headers/MGULineWidthDropdownCell.h</key>
+		<data>
+		/WSeelow2UHkWmL7xYsl2f9B2LA=
 		</data>
 		<key>Headers/MGULivelyButton.h</key>
 		<data>
@@ -256,6 +300,10 @@
 		<data>
 		GvCKYyjbUH/2vBnJprrZrv1k760=
 		</data>
+		<key>Headers/MGUNOSearchResultView.h</key>
+		<data>
+		MFh/JYe+ivGcJEtDrq0HIwu/XHE=
+		</data>
 		<key>Headers/MGUNavigationController.h</key>
 		<data>
 		NPHZ7XbX+bJupTF9gaOXgMuFjXY=
@@ -270,7 +318,7 @@
 		</data>
 		<key>Headers/MGUNeoSegModel.h</key>
 		<data>
-		RFro//NEhuMO9l7AiqrtjODqc58=
+		F5rGMqiXfs4i9pDOk2G0qKF4piU=
 		</data>
 		<key>Headers/MGUNumKeyboard.h</key>
 		<data>
@@ -340,6 +388,10 @@
 		<data>
 		zlkZnhKWUmgrXlkLy5xU/3yFzjw=
 		</data>
+		<key>Headers/MGUSimpleLineView.h</key>
+		<data>
+		jPQu+UExQ6Nm8TUxCu6Zk1LQ+mM=
+		</data>
 		<key>Headers/MGUSimplePopController.h</key>
 		<data>
 		hdWsIjYCFPooCN63jyNI/62uvqQ=
@@ -350,11 +402,19 @@
 		</data>
 		<key>Headers/MGUStepper.h</key>
 		<data>
-		k+m8Lr4bw5Yol2gD76OZKy6yBFs=
+		PMbNW5l8pr7DSJTh8CghWQS0//8=
 		</data>
 		<key>Headers/MGUStepperConfiguration.h</key>
 		<data>
 		Tll1KWkOAYy8aPO1R1YDxYnM7H0=
+		</data>
+		<key>Headers/MGUStockLineInfo.h</key>
+		<data>
+		un6tWuiuJm5FD01mhjfpBjm4XNU=
+		</data>
+		<key>Headers/MGUStockLineInfoView.h</key>
+		<data>
+		/nyFUWs6NQuixCZHDujtfZsqFjM=
 		</data>
 		<key>Headers/MGUSwipeAction.h</key>
 		<data>
@@ -383,6 +443,10 @@
 		<key>Headers/MGUSwipeableInterface.h</key>
 		<data>
 		/CkOkFbQNoM9c8gpCQ95jxLOTYQ=
+		</data>
+		<key>Headers/MGUTextDropdownCell.h</key>
+		<data>
+		qMx8WTQ8s2x1mwmY8kNfFuzBWjw=
 		</data>
 		<key>Headers/MGUVisualEffectView.h</key>
 		<data>
@@ -434,7 +498,7 @@
 		</data>
 		<key>Headers/UIButton+Extension.h</key>
 		<data>
-		ZL/nysCFvkfCnKIUdJOGIes/KQo=
+		g+2RrIL/bDmNMKSYCRvDvRC2uT8=
 		</data>
 		<key>Headers/UICollectionView+Extension.h</key>
 		<data>
@@ -454,7 +518,7 @@
 		</data>
 		<key>Headers/UIColor+Extension.h</key>
 		<data>
-		/SrDoO2BSL3zV2YN9Qo/I8uJFvo=
+		uYiTShhBMHv/xM5+PX61ch/gwS4=
 		</data>
 		<key>Headers/UIColor+Flat.h</key>
 		<data>
@@ -462,7 +526,7 @@
 		</data>
 		<key>Headers/UIColor+HEX.h</key>
 		<data>
-		drDTGyE4XyYvhwqGxGK1jPW0OrM=
+		8i2LzQq6J8T9gpdVX0AcTBv7tu4=
 		</data>
 		<key>Headers/UIColor+HSB.h</key>
 		<data>
@@ -482,11 +546,15 @@
 		</data>
 		<key>Headers/UIColor+RGB.h</key>
 		<data>
-		RBdqh5ATXwRzLB2JpTaFHw17ulc=
+		rS/UiWOvLdpJQw7mp/BfJc+tnfw=
 		</data>
 		<key>Headers/UIColor+Random.h</key>
 		<data>
 		FUsW5MCImj2TIn9FBuGB80pWQ3U=
+		</data>
+		<key>Headers/UIColor+Template.h</key>
+		<data>
+		qhBnB47UAZ1zME+mHDfFcSthbuM=
 		</data>
 		<key>Headers/UIControl+Extension.h</key>
 		<data>
@@ -550,7 +618,7 @@
 		</data>
 		<key>Headers/UITableView+Extension.h</key>
 		<data>
-		Td8Nasnak1is9Ko0z9/sgnsiMzI=
+		baxlcEdAl4WFCWPI7faLzSvyIR8=
 		</data>
 		<key>Headers/UITextView+Extension.h</key>
 		<data>
@@ -570,7 +638,7 @@
 		</data>
 		<key>Headers/UIView+Etc.h</key>
 		<data>
-		qk9LlwWEO93RRnLkNwIhz0saxPI=
+		2PewBzRVlhE/2TNHff+h0xoMc7c=
 		</data>
 		<key>Headers/UIView+Extension.h</key>
 		<data>
@@ -606,43 +674,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NlZFliBvMw36sVLRwe3IaDi7cHU=
+		8Cb9lTxWbvJwpej1zSuTfK/4syg=
 		</data>
 		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		sQUKq7TBwpmSovTn3VunQtMl50M=
-		</data>
-		<key>Modules/IosKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		Y6c8OZAjnmTCXPJg2fEJJN9P3iM=
+		nHb/yYVB5w90D3zRwZW0TqqgFD0=
 		</data>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		67y+PvpgGd9gcXvKz5k6mmG4zcY=
+		</data>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		VyjylyNzaYBaQgarBeywyFG42Dc=
 		</data>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1lI476EArpX2lbMunPnJRqFB4Uw=
+		wtrk7pIhMJ3PD30Q6rY1fyonnO8=
+		</data>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		VyjylyNzaYBaQgarBeywyFG42Dc=
 		</data>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rJ82Fz8m0v1AWCvpOxo3tzeS+DY=
-		</data>
-		<key>Modules/IosKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
-		</data>
-		<key>Modules/IosKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		ue0gi7Bf2WkWDCo/aONLJ/HxID8=
-		</data>
-		<key>Modules/IosKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		ywisRM1JLYT3IrciTZ+8727aWzY=
+		VaU3xIn/868DsoSm7JKOZW2cGqQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		xV033rXLeRw483o+SwJP4yqPjxY=
+		Ed/qcrjc5ToERW/VCoGiyvqJawA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -651,22 +711,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0QjxLGP5OYh1HC6gDZ4hyDyLlPY=
+			l8Pgwtw6G8y7PyU6unkeILBOWHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Epbr1MQnLXsVP85Aglj88DfScXKVlJPF39mUnn9ehQ=
+			9lt+3mYrmoMs5VRyYufqOoBePIqWjxkH1zVPFMr05eE=
 			</data>
 		</dict>
 		<key>Headers/IosKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w1WDHItOx/uFGrGMlxfTWURmDc8=
+			7QF99cTzIPYaoXp2pTq5YOdOt4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			H/z2GJyNTfdRRDDIiR4UYS87hMHKIPIV9FTlx9xx2r0=
+			iqpBWHfuRJ30+1tol5mX7NiHS3J1kPrBW6M/O73aElg=
 			</data>
 		</dict>
 		<key>Headers/MGUActionSheetConfiguration.h</key>
@@ -755,6 +815,17 @@
 			<key>hash2</key>
 			<data>
 			eP9Qi2X/+tdG4oF7kXNqCXY23x7GUx3DoFly9PbQzEE=
+			</data>
+		</dict>
+		<key>Headers/MGUBrightnessBorderButton.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Boj1Kp//F4zssUXXinU65gDDTJI=
+			</data>
+			<key>hash2</key>
+			<data>
+			HXEdD54dDcSYJy8RvKI/kUrlmnZL+MztE2aD800GbzA=
 			</data>
 		</dict>
 		<key>Headers/MGUButton.h</key>
@@ -999,6 +1070,72 @@
 			j9cuWhX6jrdoiOWf8+eqiPstorUYHGlIby2J321yKX8=
 			</data>
 		</dict>
+		<key>Headers/MGUDropSegCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TlrwG61Yy6P5ZD+FEMy42Achc70=
+			</data>
+			<key>hash2</key>
+			<data>
+			Mw9fjGrPK6LB4Gm02VGX4l8WOoryP1lqCODRoAkt6EI=
+			</data>
+		</dict>
+		<key>Headers/MGUDropSegControl.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ggzdus+zOgozB3kfA56pGeP5YJg=
+			</data>
+			<key>hash2</key>
+			<data>
+			TntBL1IH2FAEC1CaV/TapNIhcF7T/85xYWOQuK2Xf0E=
+			</data>
+		</dict>
+		<key>Headers/MGUDropSegManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NIMjet821+4gXRoUWD50H1EmEwg=
+			</data>
+			<key>hash2</key>
+			<data>
+			5ri1+UNSEu3+s0N5BvaBGJWcOm6UfVfKsfGEXfHPrO8=
+			</data>
+		</dict>
+		<key>Headers/MGUDropSegTextCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K3FGmTjeKzvTtqsqdfoioS0htEs=
+			</data>
+			<key>hash2</key>
+			<data>
+			KyRYXiwveBFnhk6T0PeDbpebNb0CJe0x0fEs2ZlDumc=
+			</data>
+		</dict>
+		<key>Headers/MGUDropdownButton.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5hcrQ/+/19tbHeR5xMpxBPfEPEk=
+			</data>
+			<key>hash2</key>
+			<data>
+			0eyhFv5kfHYTkDwME6hMjTk8RRGvFqk0F3d/n3YguUg=
+			</data>
+		</dict>
+		<key>Headers/MGUDropdownCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DGaG0QPALmfBSQ6VDVYPF8xt2Bo=
+			</data>
+			<key>hash2</key>
+			<data>
+			qKQHzt6bGlhyYU6Y2DwCzL+pAPZoGyP2sQ1zjSurikE=
+			</data>
+		</dict>
 		<key>Headers/MGUFavoriteSwitch.h</key>
 		<dict>
 			<key>hash</key>
@@ -1019,6 +1156,17 @@
 			<key>hash2</key>
 			<data>
 			ZO/D4g/sj3+6eYLvg27UlRfWWfFjJ0y5CfivhW/kEC4=
+			</data>
+		</dict>
+		<key>Headers/MGUFillTypeDropdownCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fmGTB9cQmmlg7/sxUUD+H+sB2zk=
+			</data>
+			<key>hash2</key>
+			<data>
+			hUX8rPOsztYUg1SHfaeQCrKPjMnvqt6GMQGB7kSSZcA=
 			</data>
 		</dict>
 		<key>Headers/MGUFlatSwitch.h</key>
@@ -1197,6 +1345,17 @@
 			4izHh6XX6lqibyrWnL3Lfx0XtZgEQBPMR10IHkXcUH8=
 			</data>
 		</dict>
+		<key>Headers/MGUImageDropdownCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/aP7mHmBDsPH57J2FevikF/c188=
+			</data>
+			<key>hash2</key>
+			<data>
+			4IOJybVj83rBgd+nd858GETTXif5slMRdhRj908ZdNM=
+			</data>
+		</dict>
 		<key>Headers/MGUKeyboardStateListener.h</key>
 		<dict>
 			<key>hash</key>
@@ -1206,6 +1365,28 @@
 			<key>hash2</key>
 			<data>
 			lbuuUQfVzkBB40V6NbjwRjfQHsS16rZAcwWstQp5ePI=
+			</data>
+		</dict>
+		<key>Headers/MGULineDashDropdownCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ucp65MmpshrHAmoekxOeDVu1TKA=
+			</data>
+			<key>hash2</key>
+			<data>
+			/Z9lwOM+px0YG1n0C4eg4GgR0t3qz8CGFvN79nc8/wI=
+			</data>
+		</dict>
+		<key>Headers/MGULineWidthDropdownCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/WSeelow2UHkWmL7xYsl2f9B2LA=
+			</data>
+			<key>hash2</key>
+			<data>
+			3yebXAa0+mKCgZirXH6hghm006cURtX9a2MsZXxHtU0=
 			</data>
 		</dict>
 		<key>Headers/MGULivelyButton.h</key>
@@ -1340,6 +1521,17 @@
 			3fNUlZkeNbZVsvEAOv2bqiBfONFzRkSBO59WJUWm4Ug=
 			</data>
 		</dict>
+		<key>Headers/MGUNOSearchResultView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MFh/JYe+ivGcJEtDrq0HIwu/XHE=
+			</data>
+			<key>hash2</key>
+			<data>
+			YU7kg1WDMzb9pwEH09fKSQbSkKz+dpXwYApknbACy+s=
+			</data>
+		</dict>
 		<key>Headers/MGUNavigationController.h</key>
 		<dict>
 			<key>hash</key>
@@ -1377,11 +1569,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RFro//NEhuMO9l7AiqrtjODqc58=
+			F5rGMqiXfs4i9pDOk2G0qKF4piU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Cf9ZNryGnHvCw8yaMlASi1ohGnqg5s416vOe9xarSas=
+			RmyAP4aFIevgJLJn3HXNW4XscALSQvTCXMdJVmKlTzA=
 			</data>
 		</dict>
 		<key>Headers/MGUNumKeyboard.h</key>
@@ -1571,6 +1763,17 @@
 			X9oPn+U2EwdQSnF2652hQIhCF2yj5L0DByNOwgBtC6E=
 			</data>
 		</dict>
+		<key>Headers/MGUSimpleLineView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jPQu+UExQ6Nm8TUxCu6Zk1LQ+mM=
+			</data>
+			<key>hash2</key>
+			<data>
+			oO5iUkUyv/mmSdyx3O+7wei5utU6cfKDP37QaWOsrvc=
+			</data>
+		</dict>
 		<key>Headers/MGUSimplePopController.h</key>
 		<dict>
 			<key>hash</key>
@@ -1597,11 +1800,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k+m8Lr4bw5Yol2gD76OZKy6yBFs=
+			PMbNW5l8pr7DSJTh8CghWQS0//8=
 			</data>
 			<key>hash2</key>
 			<data>
-			n0tLK+KuPg4VILgTC5Pejmzt1RM2u4Z5LfRFvW4x+n0=
+			znknFEXuWqMwoxPM0xwh/XIBKsMyQgX4ZgUGJnpnVgA=
 			</data>
 		</dict>
 		<key>Headers/MGUStepperConfiguration.h</key>
@@ -1613,6 +1816,28 @@
 			<key>hash2</key>
 			<data>
 			budyU3+5H8iWf0tbO22OmvswC4T/jBhnmQlNOL9igFI=
+			</data>
+		</dict>
+		<key>Headers/MGUStockLineInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			un6tWuiuJm5FD01mhjfpBjm4XNU=
+			</data>
+			<key>hash2</key>
+			<data>
+			bQJiQJzB36niLBI3bY/SFMCH5qkHHLUpiMvzLe1YN7A=
+			</data>
+		</dict>
+		<key>Headers/MGUStockLineInfoView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/nyFUWs6NQuixCZHDujtfZsqFjM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vd/6DJiYke3pujBBKsXwp9ZVA0Kpl3h2GiJJ2Fo/1IU=
 			</data>
 		</dict>
 		<key>Headers/MGUSwipeAction.h</key>
@@ -1690,6 +1915,17 @@
 			<key>hash2</key>
 			<data>
 			jUaeH4XJShqDg7knTKNEUjYZrSYhNa5SCKzV5uBozPE=
+			</data>
+		</dict>
+		<key>Headers/MGUTextDropdownCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qMx8WTQ8s2x1mwmY8kNfFuzBWjw=
+			</data>
+			<key>hash2</key>
+			<data>
+			evR2UV5jk5ui1oLoAJqc9tyIHbVDNhN0BgiVpnVpiow=
 			</data>
 		</dict>
 		<key>Headers/MGUVisualEffectView.h</key>
@@ -1828,11 +2064,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZL/nysCFvkfCnKIUdJOGIes/KQo=
+			g+2RrIL/bDmNMKSYCRvDvRC2uT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7kID71eGJyao5uI1e3Un5AVGQqZSz/f/CXLGoZAnPFE=
+			mahB3DvaOFED5CeiXL5BfjZoOZOHDGxU1Od4fo7yU6s=
 			</data>
 		</dict>
 		<key>Headers/UICollectionView+Extension.h</key>
@@ -1883,11 +2119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/SrDoO2BSL3zV2YN9Qo/I8uJFvo=
+			uYiTShhBMHv/xM5+PX61ch/gwS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			HmN8a8nVA7kc0+PT+9G0ARcSPMh4axEeC2+RQCH86ug=
+			ZWG5iHtjO7wUMS0p+WFthSauxcRMNXr6axk+Dt6FDEM=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Flat.h</key>
@@ -1905,11 +2141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			drDTGyE4XyYvhwqGxGK1jPW0OrM=
+			8i2LzQq6J8T9gpdVX0AcTBv7tu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8tlXedA4o+W9OVSBk1bKz8mDqnYut3wDZ/585NsvJKU=
+			cjXOQtESFsXouWsa1pRKaIwaUc7DR7wE7l4CA2Eb1D4=
 			</data>
 		</dict>
 		<key>Headers/UIColor+HSB.h</key>
@@ -1960,11 +2196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RBdqh5ATXwRzLB2JpTaFHw17ulc=
+			rS/UiWOvLdpJQw7mp/BfJc+tnfw=
 			</data>
 			<key>hash2</key>
 			<data>
-			VWqz/vUgYpByssxT07oTaaJRdvcYfuJHRX5SEWZ7tRk=
+			sM6l3WMNHlosFGtcNw8EhvIOJAdYRO/8ihS9d+Cv7Kg=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Random.h</key>
@@ -1976,6 +2212,17 @@
 			<key>hash2</key>
 			<data>
 			O86d2tGF4kFLguQ5UntJ0k4Zv7dBIWRFeWvJse2bEXg=
+			</data>
+		</dict>
+		<key>Headers/UIColor+Template.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qhBnB47UAZ1zME+mHDfFcSthbuM=
+			</data>
+			<key>hash2</key>
+			<data>
+			qUEMJH0SJiuZA2Ug2d/Mcr9tfRpdydfHw8RYX6DiNnc=
 			</data>
 		</dict>
 		<key>Headers/UIControl+Extension.h</key>
@@ -2147,11 +2394,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Td8Nasnak1is9Ko0z9/sgnsiMzI=
+			baxlcEdAl4WFCWPI7faLzSvyIR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			gDmlV8mNh7IiE7AoVUo4dqJHi4O1lKOfN2p3dT8NN2I=
+			TD1AiRkbUvRiDWxig/jjqVLgLab0Clp/GsygUNaJlLs=
 			</data>
 		</dict>
 		<key>Headers/UITextView+Extension.h</key>
@@ -2202,11 +2449,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qk9LlwWEO93RRnLkNwIhz0saxPI=
+			2PewBzRVlhE/2TNHff+h0xoMc7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			S2FZXZsdm8dBSUu0984u6PQcTRxChn7yVz8MNiiluUI=
+			rBDZaNVEu6mu43nhwtRo/SEsTkJi8e+IQvWzO0jkjI4=
 			</data>
 		</dict>
 		<key>Headers/UIView+Extension.h</key>
@@ -2301,99 +2548,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sQUKq7TBwpmSovTn3VunQtMl50M=
+			nHb/yYVB5w90D3zRwZW0TqqgFD0=
 			</data>
 			<key>hash2</key>
 			<data>
-			o7C8Glnht3OAtwPyxi9FRd4QCtutOcPkR9DPp9RR7ZQ=
-			</data>
-		</dict>
-		<key>Modules/IosKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y6c8OZAjnmTCXPJg2fEJJN9P3iM=
-			</data>
-			<key>hash2</key>
-			<data>
-			rTC+iA2SG6e85bWh+Zpricc5F9y8WcQwIlCApbXckbI=
+			7b05XeFgTmB6qDTrvuaIWdiK1DghpDA8GvAaA0eRMrQ=
 			</data>
 		</dict>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
+			67y+PvpgGd9gcXvKz5k6mmG4zcY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			HvFMOEuJPhDv+YefX6lxQc1TqzElP9Hxp++H5WK+G5I=
+			</data>
+		</dict>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VyjylyNzaYBaQgarBeywyFG42Dc=
+			</data>
+			<key>hash2</key>
+			<data>
+			uMBHzap6hWC/52eCBZsc/Ub0MgpKbiO7cvfworXloBY=
 			</data>
 		</dict>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1lI476EArpX2lbMunPnJRqFB4Uw=
+			wtrk7pIhMJ3PD30Q6rY1fyonnO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ev04yYxqNoW91wLPVA00cy3dJcNBztmWeQjNXPgq28s=
+			yMHWBO0UqJjaP4D5cnQuJY7qD5fRl3au+AZGOwqYg6g=
+			</data>
+		</dict>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VyjylyNzaYBaQgarBeywyFG42Dc=
+			</data>
+			<key>hash2</key>
+			<data>
+			uMBHzap6hWC/52eCBZsc/Ub0MgpKbiO7cvfworXloBY=
 			</data>
 		</dict>
 		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rJ82Fz8m0v1AWCvpOxo3tzeS+DY=
+			VaU3xIn/868DsoSm7JKOZW2cGqQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			piLBzV7qCMFQIzV6jHVZzugu4Ktj5EC/FK9mkaSZ8bk=
-			</data>
-		</dict>
-		<key>Modules/IosKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
-			</data>
-		</dict>
-		<key>Modules/IosKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ue0gi7Bf2WkWDCo/aONLJ/HxID8=
-			</data>
-			<key>hash2</key>
-			<data>
-			gB//Y9zy1YIJGVoSwNahv/UKjzdQflVSPyi0G6GdPd4=
-			</data>
-		</dict>
-		<key>Modules/IosKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ywisRM1JLYT3IrciTZ+8727aWzY=
-			</data>
-			<key>hash2</key>
-			<data>
-			LmDx//A+bKZvaoZgweS6Fd/kIxsXPZ2XIOQWuwnEgZM=
+			XXuEqOC2XufwiGI389wSdn5b9QKEIGfp47RuZXBoSUU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xV033rXLeRw483o+SwJP4yqPjxY=
+			Ed/qcrjc5ToERW/VCoGiyvqJawA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HO0KHglhMzR+iOOl17elhqzwgSTcDhRGRZsA5gMR0Oc=
+			ToZJa99mi/pM4LghpW+rBx5WK7w0Fn2d59SlC7AwcgE=
 			</data>
 		</dict>
 	</dict>

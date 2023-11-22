@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL isImageAvailable; //! @dynamic readolny
 
 //! 구현하였음.
-- (BOOL)isEqual:(id)object;
+/// - (BOOL)isEqual:(id)object;
 
 //! 초기화 메서드.
 - (instancetype)initWithTitle:(NSString * _Nullable)title  NS_DESIGNATED_INITIALIZER;

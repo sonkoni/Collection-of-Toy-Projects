@@ -1,0 +1,446 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IosKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BaseKit
+import Foundation
+import GraphicsKit
+@_exported import IosKit
+import QuartzCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SKULineWidthDropdownCell : IosKit.SKUDropdownCell {
+  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @objc deinit
+}
+public struct SKUSimpleLineDirection : Swift.OptionSet, @unchecked Swift.Sendable {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let none: IosKit.SKUSimpleLineDirection
+  public static let horizontal: IosKit.SKUSimpleLineDirection
+  public static let vertical: IosKit.SKUSimpleLineDirection
+  public static let diagonalClockwise: IosKit.SKUSimpleLineDirection
+  public static let diagonalCounterClockwise: IosKit.SKUSimpleLineDirection
+  public static let cross: IosKit.SKUSimpleLineDirection
+  public static let x: IosKit.SKUSimpleLineDirection
+  public static let all: IosKit.SKUSimpleLineDirection
+  public typealias ArrayLiteralElement = IosKit.SKUSimpleLineDirection
+  public typealias Element = IosKit.SKUSimpleLineDirection
+  public typealias RawValue = Swift.UInt
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SKUSimpleLineView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var gridDirection: IosKit.SKUSimpleLineDirection {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor(unsafe) public class func skhKeyWindow() -> UIKit.UIWindow?
+  @_Concurrency.MainActor(unsafe) public class func skhTopViewController(_ viewController: UIKit.UIViewController? = nil) -> UIKit.UIViewController?
+}
+public enum SKUStepperLabelType : Swift.Int {
+  case hidden
+  case showFixed
+  case showDraggable
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class SKUStepperConfiguration : ObjectiveC.NSObject, Foundation.NSCopying {
+  open var value: CoreFoundation.CGFloat
+  open var minimumValue: CoreFoundation.CGFloat
+  open var maximumValue: CoreFoundation.CGFloat
+  open var stepValue: CoreFoundation.CGFloat
+  open var showIntegerIfDoubleIsInteger: Swift.Bool
+  open var autorepeat: Swift.Bool
+  open var cornerRadius: CoreFoundation.CGFloat
+  open var borderWidth: CoreFoundation.CGFloat
+  open var borderColor: UIKit.UIColor
+  open var fullColor: UIKit.UIColor
+  open var separatorColor: UIKit.UIColor
+  open var separatorWidth: CoreFoundation.CGFloat
+  open var separatorHeightRatio: CoreFoundation.CGFloat
+  open var buttonsBackgroundColor: UIKit.UIColor
+  open var limitHitAnimationColor: UIKit.UIColor
+  open var leftNormalImage: UIKit.UIImage?
+  open var leftDisabledImage: UIKit.UIImage?
+  open var rightNormalImage: UIKit.UIImage?
+  open var rightDisabledImage: UIKit.UIImage?
+  open var buttonsContensColor: UIKit.UIColor
+  open var buttonsFont: UIKit.UIFont?
+  open var impactColor: UIKit.UIColor
+  open var stepperLabelType: IosKit.SKUStepperLabelType
+  open var isStaticLabelTitle: Swift.Bool
+  open var labelTextColor: UIKit.UIColor
+  open var labelBackgroundColor: UIKit.UIColor
+  open var labelFont: UIKit.UIFont?
+  open var labelCornerRadius: CoreFoundation.CGFloat
+  open var labelWidthRatio: CoreFoundation.CGFloat
+  open var items: [Swift.String]
+  open var intrinsicContentSize: CoreFoundation.CGSize
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension IosKit.SKUStepperConfiguration {
+  public static func iOS13Configuration() -> IosKit.SKUStepperConfiguration
+  public static func iOS7Configuration() -> IosKit.SKUStepperConfiguration
+  public static func forgeDropConfiguration() -> IosKit.SKUStepperConfiguration
+  public static func forgeDropConfiguration2() -> IosKit.SKUStepperConfiguration
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func skhSetSelectedImage(selectedImage: UIKit.UIImage?, normalImage: UIKit.UIImage?, preventHighlight: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SKUDropdownButton : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public var dropdownData: [any Swift.Equatable]
+  @_Concurrency.MainActor(unsafe) public var cellClass: Swift.AnyClass? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var selectedIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeHolderTextAlignment: UIKit.NSTextAlignment {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textAlignment: UIKit.NSTextAlignment
+  @_Concurrency.MainActor(unsafe) public var dismissOnRotation: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var defaultBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var disabledBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func skhAddChildViewController(_ childController: UIKit.UIViewController, targetView: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) public func skhRemoveFromParentViewController()
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func skhPinEdgesToSuperviewEdgesUsingAutoresizingMask()
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinEdgesToSuperviewEdges() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinEdgesToSuperviewLayoutMarginsGuide() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinEdgesToSuperviewSafeAreaLayoutGuide() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinEdgesToSuperviewCustomMargins(_ customMargins: UIKit.UIEdgeInsets) -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinHorizontalEdgesToSuperviewEdges() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinVerticalEdgesToSuperviewEdges() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterToSuperviewCenterWithSameSize() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterToSuperviewCenter() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterToSuperviewCenterWithInner() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterToSuperviewCenterWithOuter() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterToSuperviewCenterWithFixSize(_ size: CoreFoundation.CGSize) -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterXToSuperviewCenterXWithMultiplier(_ multiplier: CoreFoundation.CGFloat) -> UIKit.NSLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinCenterYToSuperviewCenterYWithMultiplier(_ multiplier: CoreFoundation.CGFloat) -> UIKit.NSLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinTrailingToSuperviewTrailingWithMultiplier(_ multiplier: CoreFoundation.CGFloat) -> UIKit.NSLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinBottomToSuperviewBottomWithMultiplier(_ multiplier: CoreFoundation.CGFloat) -> UIKit.NSLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinSizeToSuperviewSize() -> [UIKit.NSLayoutConstraint]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func skhPinFixSize(_ size: CoreFoundation.CGSize) -> [UIKit.NSLayoutConstraint]
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SKUBrightnessBorderButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+open class DTOSKUDropSeg : Swift.Equatable {
+  public init(title: Swift.String, extendedTitle: Swift.String)
+  public static func == (lhs: IosKit.DTOSKUDropSeg, rhs: IosKit.DTOSKUDropSeg) -> Swift.Bool
+  @objc deinit
+}
+open class SKUDropSegManager {
+  public init(dropSegs: [IosKit.DTOSKUDropSeg], selectedIndex: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SKUTextDropdownCell : IosKit.SKUDropdownCell {
+  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func skhFindClosestView(to point: CoreFoundation.CGPoint, views: [UIKit.UIView]) -> UIKit.UIView?
+}
+extension UIKit.UITableViewDiffableDataSource {
+  @_Concurrency.MainActor(unsafe) public func mgrSwipeApply(_ snapshot: UIKit.NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, tableView: UIKit.UITableView, completion: (() -> Swift.Void)? = nil)
+}
+extension UIKit.UIColor {
+  @discardableResult
+  public func skhGetRed(red: Swift.UnsafeMutablePointer<Swift.Int>?, green: Swift.UnsafeMutablePointer<Swift.Int>?, blue: Swift.UnsafeMutablePointer<Swift.Int>?, alpha: Swift.UnsafeMutablePointer<CoreFoundation.CGFloat>?) -> Swift.Bool
+  public func skhBrighterThanColor(_ color: UIKit.UIColor) -> Swift.Bool
+  public func skhHexCode() -> Swift.Int
+}
+extension UIKit.UIColor {
+  public static func skhLabelColor() -> UIKit.UIColor
+  public static func skhTertiarySystemFillColor() -> UIKit.UIColor
+  public static func skhTertiaryLabelColor() -> UIKit.UIColor
+  public static func skhQuaternaryLabelColor() -> UIKit.UIColor
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SKUNOSearchResultView : UIKit.UIView {
+  public enum ImageType : Swift.Int {
+    case show
+    case hidden
+    case dynamic
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public var searchText: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var imageType: IosKit.SKUNOSearchResultView.ImageType {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor(unsafe) public func applyImage(_ image: UIKit.UIImage?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SKUDropSegControl : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public var itemHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var data: [IosKit.SKUDropSegManager]? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var cellClass: Swift.AnyClass?
+  @_Concurrency.MainActor(unsafe) public var selectedIndexPath: Foundation.IndexPath {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var subitemImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var selectedImageTintColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var normalImageTintColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var imageSpacing: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var imageContainerInsets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var dismissOnRotation: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class SKUStepper : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) open var stepperLabelType: IosKit.SKUStepperLabelType {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var isStaticLabelTitle: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var items: [Swift.String]? {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var value: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func sizeThatFits(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func continueTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func cancelTracking(with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect = .zero, configuration: IosKit.SKUStepperConfiguration?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setValueQuietly(_ value: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func setAllContentsEnabled(_ enabled: Swift.Bool)
+}
+final public class SKUStockLineInfo {
+  final public var curveLines: [IosKit.SKUStockLine]
+  final public var straightLines: [IosKit.SKUStockLine]
+  public init(curveLines: [IosKit.SKUStockLine] = [], straightLines: [IosKit.SKUStockLine] = [])
+  @objc deinit
+}
+final public class SKUStockLine {
+  public enum FillMode : Swift.Int {
+    case shape
+    case bar
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  final public var lineColor: UIKit.UIColor?
+  final public var peakLineColor: UIKit.UIColor?
+  final public var valleyLineColor: UIKit.UIColor?
+  final public var peakFillColor: UIKit.UIColor?
+  final public var valleyFillColor: UIKit.UIColor?
+  final public var fillMode: IosKit.SKUStockLine.FillMode
+  final public var lineWidth: CoreFoundation.CGFloat
+  final public var lineDashes: [CoreFoundation.CGFloat]?
+  final public var isHidden: Swift.Bool
+  public init(lineColor: UIKit.UIColor? = nil, peakLineColor: UIKit.UIColor? = nil, valleyLineColor: UIKit.UIColor? = nil, peakFillColor: UIKit.UIColor? = nil, valleyFillColor: UIKit.UIColor? = nil, fillMode: IosKit.SKUStockLine.FillMode = .shape, lineWidth: CoreFoundation.CGFloat = 0.0, lineDashes: [CoreFoundation.CGFloat]? = nil, isHidden: Swift.Bool = false)
+  @objc deinit
+}
+public struct SKUDropdownCellFillType : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable, @unchecked Swift.Sendable {
+  public typealias RawValue = Swift.String
+  public init(_ rawValue: IosKit.SKUDropdownCellFillType.RawValue)
+  public init(rawValue: IosKit.SKUDropdownCellFillType.RawValue)
+  public let rawValue: IosKit.SKUDropdownCellFillType.RawValue
+  public static let empty: IosKit.SKUDropdownCellFillType
+  public static let horizontal: IosKit.SKUDropdownCellFillType
+  public static let verical: IosKit.SKUDropdownCellFillType
+  public static let cross: IosKit.SKUDropdownCellFillType
+  public static let diagonalClockwise: IosKit.SKUDropdownCellFillType
+  public static let diagonalCounterClockwise: IosKit.SKUDropdownCellFillType
+  public static let x: IosKit.SKUDropdownCellFillType
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SKUFillTypeDropdownCell : IosKit.SKUDropdownCell {
+  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SKUStockLineInfoView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var lineInfo: IosKit.SKUStockLineInfo? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SKUDropSegTextCell : IosKit.SKUDropSegCell {
+  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override final public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @objc deinit
+}
+extension UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) public func skhMaxOffset() -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor(unsafe) public func skhMinOffset() -> CoreFoundation.CGPoint
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SKUImageDropdownCell : IosKit.SKUDropdownCell {
+  @_Concurrency.MainActor(unsafe) @objc override final public var imageView: UIKit.UIImageView? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @objc deinit
+}
+extension UIKit.UICollectionViewDiffableDataSource {
+  @_Concurrency.MainActor(unsafe) public func mgrSwipeApply(_ snapshot: UIKit.NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, collectionView: UIKit.UICollectionView, completion: (() -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SKULineDashDropdownCell : IosKit.SKUDropdownCell {
+  @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SKUDropSegCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SKUDropdownCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @objc deinit
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public func skhIndexPathOfCellWhereViewExists(view: UIKit.UIView) -> Foundation.IndexPath?
+}
+extension IosKit.SKUStepperLabelType : Swift.Equatable {}
+extension IosKit.SKUStepperLabelType : Swift.Hashable {}
+extension IosKit.SKUStepperLabelType : Swift.RawRepresentable {}
+extension IosKit.SKUNOSearchResultView.ImageType : Swift.Equatable {}
+extension IosKit.SKUNOSearchResultView.ImageType : Swift.Hashable {}
+extension IosKit.SKUNOSearchResultView.ImageType : Swift.RawRepresentable {}
+extension IosKit.SKUStockLine.FillMode : Swift.Equatable {}
+extension IosKit.SKUStockLine.FillMode : Swift.Hashable {}
+extension IosKit.SKUStockLine.FillMode : Swift.RawRepresentable {}

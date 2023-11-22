@@ -7,8 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#if TARGET_OS_OSX
+#import <AppKit/AppKit.h>
+#elif TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString * MGRRegularExpStr NS_TYPED_EXTENSIBLE_ENUM;
+static MGRRegularExpStr const MGRRegularExpStrAlphabetUppercase = @"[A-Z]"; // 대문자 중 1개
+static MGRRegularExpStr const MGRRegularExpStrAlphabetLowercase = @"[a-z]"; // 소문자 중 1개
+static MGRRegularExpStr const MGRRegularExpStrAlphabet = @"[A-Za-z]"; // 알파벳 중 1개
+static MGRRegularExpStr const MGRRegularExpStrNumber = @"[0-9]"; // 숫자 중 1개
+static MGRRegularExpStr const MGRRegularExpStrHexadecimal = @"[A-Fa-f0-9]"; // 16진수
+static MGRRegularExpStr const MGRRegularExpStrNonNumber = @"[^0-9]"; // 숫자가 아닌 문자
+static MGRRegularExpStr const MGRRegularExpStrAlphaNumeric = @"[A-Za-z0-9]"; // 영숫자
+static MGRRegularExpStr const MGRRegularExpStrKorean = @"[가-힣]"; // 한글
+static MGRRegularExpStr const MGRRegularExpStrSpaceTab = @"[ \t]"; // 공백과 탭
+static MGRRegularExpStr const MGRRegularExpStrWhitespace = @"[ \t\r\n]"; // 공백 문자 중 1개 [ \t\r\n\v\f], \v\f는 인쇄와 관련
+static MGRRegularExpStr const MGRRegularExpStrNonWhitespace = @"[^ \t\r\n]"; // 공백이 아닌 모든 문자 중 1개 [^ \t\r\n\v\f], \v\f는 인쇄와 관련
 
 // ----------------------------------------------------------------------
 //  문자열 파싱 지원
@@ -33,12 +51,52 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)mgrSubStringSuffix:(NSInteger)n; // 뒤에서 글자 n 개만 뽑아서 반환한다. 글자가 모자르면 전체 글자 반환.
 - (NSString *)mgrRemoveLastCharacter; // 마지막 글자를 제거한다.
 
+// 완벽하지는 않지만 유용함
+- (NSString *)mgrSubstringBefore:(NSString *)separater; // 특정 문자열을 기준으로 처음부터 특정 문자열 등장 이전까지 뽑아줌.
+- (NSString *)mgrSubstringAfter:(NSString *)separater; // 특정 문자열을 기준으로 등장 이후 부터 끝까지 뽑아줌.
+- (NSString *)mgrSubStringAfter:(NSString *)fromString before:(NSString *)toString; // 특정 문자열들 사이의 부분 문자열 뽑아줌
+
 - (NSUInteger)mgrWordCountOfString; // 단어의 갯수를 알려준다.
 - (BOOL)mgrOnlyWhitespaceAndNewlineCharacterSet; // sting이 whitespace OR newline 이면 YES를 반환한다.
 
 - (NSString *)mgrSeparateCamelToString; // 'ThisStringIsJoined' -> 'This String Is Joined'
 - (NSArray <NSString *>*)mgrSeparateCamelToArray; // 'ThisStringIsJoined' -> @[@(This), @(String), @(Is), @(Joined)];
 - (NSArray <NSString *>*)mgrSeparateArrByNewLine; // 개행 단위로 분해한다.
+
+/*
+ /// 앞 뒤 둘 다 사용하는 것을 먼저 호출하자.
+ NSString *original = @"BinaryWave기준값매수";
+ NSString *result = [original mgrInsertSpacePreExpression:MGRRegularExpStrNonWhitespace
+                                           postExpression:MGRRegularExpStrNonWhitespace
+                                                  replace:@"기준값"
+                                                  changed:@"기준값"];
+ // Output: `BinaryWave 기준값 매수`
+ 
+ NSString *original = @"Volume&PriceInSync";
+ NSString *result = [original mgrInsertSpacePreExpression:MGRRegularExpStrNonWhitespace
+                                           postExpression:MGRRegularExpStrNonWhitespace
+                                                  replace:@"&"
+                                                  changed:@"&"];
+ // Output: `Volume & PriceInSync`
+ 
+ NSString *original = @"상승횡보후재상승";
+ NSString *result = [original mgrInsertSpacePreExpression:nil
+                                           postExpression:MGRRegularExpStrNonWhitespace
+                                                  replace:@"횡보후"
+                                                  changed:@"횡보 후"];
+ // Output: `상승횡보 후 재상승`
+ 
+ NSString *original = @"AVG골든크로스";
+ NSString *result = [original mgrInsertSpacePreExpression:MGRRegularExpStrAlphabet
+                                           postExpression:nil
+                                                  replace:@"골"
+                                                  changed:@"골"];
+ // Output: `AVG 골든크로스`
+*/
+- (NSString *)mgrInsertSpacePreExpression:(MGRRegularExpStr _Nullable)preExpression
+                           postExpression:(MGRRegularExpStr _Nullable)postExpression
+                                  replace:(NSString *)replace
+                                  changed:(NSString *)changed;
 
 /**
  * @brief 현재 string에서 좌*우측의 공백을 제거한 후, 공백을 기준으로 문자열을 나누어 배열로 반환한다.
@@ -61,6 +119,18 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (NSArray <NSString *>*)mgrSearchItems;
 
+// 한글도 가능하게 만듬. ex) "스위프트" 검색 시 => ㅅ, 승, 스우, 스윞 모두 가능
+// 초성검색도 가능하게 만들었다. "스위프트" 검색 시 => ㅅㅇㅍㅌ
+// 검색 알고리즘 좋은 예
+//  SearchDisplayingSearchableContentByUsingASearchController_koni
+//  SuggestedSearch_koni
+- (NSRange)mgrRangeOfString:(NSString *)searchString options:(NSStringCompareOptions)mask;
+
+// - mgrRangeOfString:options: 메서드에서 & 검색이 되게 만들었다. 기존 메서드의 기능을 포함한다.
+// 단, 반환형은 BOOL ∵ 여러 단어를 포함하므로 range로 표현하기 곤란하다
+// ex) "Bollinger Bands" 검색 시 Bol & Ban 으로 검색이 가능하게 만들었음 두 단어가 모두 들어간 것을 찾는다
+// Bol 만 검색해도 찾기는 하는데, Ban을 띄어쓰기하고 넣으면 두 입력 단어를 모두 포함하는 것으로 검색해준다
+- (BOOL)mgrContainOfMultiString:(NSString *)searchString options:(NSStringCompareOptions)mask;
 
 /*!
  * @abstract 매개변수로 주어지는 문자열을 모두 찾아 한꺼번에 지워버린다.
@@ -98,6 +168,10 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (NSString *)mgrCuttingNumWithUpperNumber:(CGFloat)number maximumFractionDigits:(NSUInteger)count;
 
+// 문자열 마지막에 숫자가 등장한다면 숫자를 제거해준다. space + 숫자일 경우, space까지 지울지 선택할 수 있다.
+// NSString *str2 = @"ADX 2"; => "ADX " OR "ADX"
+- (NSString *)mgrRemoveLastNumberWithSpaceRemove:(BOOL)spaceRemove;
+
 
 #pragma mark - Decimal
 /**
@@ -125,7 +199,18 @@ NS_ASSUME_NONNULL_BEGIN
 //! 주어진 시간(초 float 소숫점 첫 째짜리 반올림)을 14:58:34로 반환한다. 1시간이 안되면, 58:34로 반환한다. 음수도 가능하다.
 + (NSString *)mgrTimeHMS:(CGFloat)time;
 
+#pragma mark - ETC
 
+//! 두 번째 줄부터 indent를 준다. ex) 14.0 괜찮은듯
+- (NSAttributedString *)mgrAttrStrWithHeadIndent:(CGFloat)headIndent;
+
+//! EUC-KR 인식
+// https://developer.apple.com/documentation/corefoundation/cfstring/external_string_encodings?language=objc
+// kCFStringEncodingMacKorean
+// kCFStringEncodingDOSKorean <- 요놈
+// kCFStringEncodingWindowsKoreanJohab
++ (NSString *)mgrEUCKRCompatibleContentsOfFile:(NSString *)path
+                                         error:(NSError *__autoreleasing  _Nullable * _Nullable)error;
 
 #pragma mark - DEPRECATED
 // 공백 포함하여 글자를 하나씩 배열로 분리한다.
@@ -134,6 +219,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Transform)
 + (NSString *)mgrStringWithRepeating:(NSString *)repeatedValue count:(NSInteger)count; // 반복해서 붙여준다. 1 이상 넣어라. 그 이하면 터지게 할 것이다.
+@end
+
+@interface NSString (Save)
+- (void)mgrSaveJSON;
 @end
 
 NS_ASSUME_NONNULL_END
