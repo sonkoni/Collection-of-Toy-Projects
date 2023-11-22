@@ -7,8 +7,8 @@
 
 
 ## iOS
-> MGUStepper
-> SKUStepper 
+>   MGUStepper
+>   SKUStepper 
 ## macOS
 > MGAStepper
 
