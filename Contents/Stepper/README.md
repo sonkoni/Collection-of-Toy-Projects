@@ -13,7 +13,7 @@
 > - SKUStepper
 >   - Written in Swift
 ## macOS
-> MGAStepper
+> - MGAStepper
 >   - Written in Objective-C
 >   - **Swift** and **Objective-C** compatability
 
