@@ -6,7 +6,7 @@
 ![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
 
-## MGUStepper(***iOS***) <br/> SKUStepper(***iOS***) <br/> MGAStepper(***macOS***)
+## MGUStepper (***iOS***) <br/> SKUStepper (***iOS***) <br/> MGAStepper (***macOS***)
 > - MGUStepper
 >   - Written in Objective-C, **Swift** and **Objective-C** compatability
 > - SKUStepper
