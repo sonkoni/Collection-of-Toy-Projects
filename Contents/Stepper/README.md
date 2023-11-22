@@ -6,10 +6,7 @@
 ![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
 
-## iOS
-> ### MGUStepper (**Swift** and **Objective-C** compatability)
-> ### SKUStepper (**Swift** only)
-## macOS - MGAStepper
+## iOS - MGUStepper(**Swift** and **Objective-C** compatability), SKUStepper(**Swift** only) <br/> macOS - MGAStepper
 
 ## **MGUStepper** (***iOS***), **SKUStepper** (***iOS***)-스위프트 전용 <br/> **MGAStepper** (***macOS***)
 - `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 Stepper
