@@ -1,24 +1,38 @@
 //
-//  ViewControllerA.swift
-//  MGUStepper
+//  ViewController.swift
+//  DropdownButton
 //
-//  Created by Kwan Hyun Son on 2023/05/10.
+//  Created by Kwan Hyun Son on 11/26/23.
 //
 
 import UIKit
 import IosKit
 
-final class ViewControllerA: UIViewController {
+enum SampleType {
+    case text
+    case subPlus
+    case subMinus
+    case subNormal
+    case favorite
+    case favoriteSub
+    case search
+}
+
+final class ViewController: UIViewController {
     
     // MARK: - Property
     
+    var sampleType: SampleType?
+    
     var dataSource: UITableViewDiffableDataSource<String, [[String]]>?
     var currentSnapshot: NSDiffableDataSourceSnapshot<String, [[String]]>?
-    let tableView = UITableView(frame: .zero, style: .plain)
+    @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "텍스트 컨텐츠"
+        if sampleType == .text {
+            navigationItem.title = "텍스트 컨텐츠"
+        }
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -27,7 +41,7 @@ final class ViewControllerA: UIViewController {
 //        for stepper in steppers {
 //            stepper.addTarget(self, action:#selector(stepperValueChanged(_:)), for: .valueChanged)
 //        }
-//        
+//
 //        appleStepper.addTarget(self, action:#selector(appleStepperValueChanged), for: .valueChanged)
     }
     
@@ -49,19 +63,9 @@ final class ViewControllerA: UIViewController {
     }
 }
 
-extension ViewControllerA {
+extension ViewController {
     func configureTableView() {
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
         tableView.rowHeight = 44.0
-        let nib = UINib.init(nibName: String(describing: TableViewCell.self), bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: TableViewCellID.text.rawValue)
         tableView.delegate = self
     }
     
@@ -80,7 +84,7 @@ extension ViewControllerA {
 //            var content = cell.defaultContentConfiguration()
 //            content.text = "item.title"
 //            content.secondaryText = "item.detailText"
-//            
+//
 //            content.directionalLayoutMargins = NSDirectionalEdgeInsets(top:8.0, leading:8.0, bottom:8.0, trailing:8.0)
 //            content.textToSecondaryTextVerticalPadding = 5.0
 //            cell.contentConfiguration = content
@@ -97,7 +101,7 @@ extension ViewControllerA {
 //            let section = allItems[i]
 //            let sectionTitle = section.sectionTitle
 //            let items = section.items
-//            
+//
 //            currentSnapshot?.appendSections([sectionTitle])
 //            currentSnapshot?.appendItems(items, toSection:sectionTitle)
 //        }
@@ -110,6 +114,6 @@ extension ViewControllerA {
     }
 }
 
-extension ViewControllerA: UITableViewDelegate {
+extension ViewController: UITableViewDelegate {
     
 }

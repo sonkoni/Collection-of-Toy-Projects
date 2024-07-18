@@ -18,15 +18,13 @@ final class ItemsForTableView {
     // MARK: - 생성 & 소멸
     private init() {
         
-        let item1 = Item(title:"MGUStepper", detailText:"xib 및 수작업 설정으로 만들었다.")
-        let item2 = Item(title:"MGUStepper", detailText:"코드와 configuration 객체 이용.")
+        let item1 = Item(title:"텍스트 컨텐츠", detailText:"SKUDropdownButton & MGUDropdownButton")
+        let item2 = Item(title:"이미지 컨텐츠", detailText:"SKUDropdownButton & MGUDropdownButton")
         
-        let item3 = Item(title:"MGUStepper", detailText:"서브클래싱 받지 않고 커스텀하기")
-        
-        let item4 = Item(title:"MGUStepper", detailText:"IV-Drop 앱에서 사용한 Stepper를 살펴보자.")
+        let item3 = Item(title:"Line Width 컨텐츠", detailText:"SKUDropdownButton & MGUDropdownButton")
+        let item4 = Item(title:"Dashed Pattern 컨텐츠", detailText:"SKUDropdownButton & MGUDropdownButton")
 
         allItems = [(sectionTitle: "Basic", items: [item1, item2]),
-                    (sectionTitle: "Advanced", items: [item3]),
-                    (sectionTitle: "Using Sample", items: [item4])]
+                    (sectionTitle: "Templete", items: [item3, item4])]
     }
 }

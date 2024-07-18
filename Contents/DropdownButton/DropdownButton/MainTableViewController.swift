@@ -20,10 +20,14 @@ final class MainTableViewController: UIViewController {
     var dataSource : TableViewDiffableDataSource?
     var currentSnapshot : NSDiffableDataSourceSnapshot<String, Item>?
     let tableView = UITableView(frame: .zero, style: .insetGrouped)
+    private let board = UIStoryboard(
+        name: "Storyboard",
+        bundle: nil
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "MGUStepper"
+        title = "Dropdown Button Samples"
         configureTableView()
         configureDataSource()
         updateUI(animated: false)
@@ -97,23 +101,25 @@ extension MainTableViewController {
 // MARK: - UITableViewDelegate
 extension MainTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var viewController: UIViewController? = nil
+        
+        guard let vc = board.instantiateViewController(withIdentifier: String(describing: ViewController.self)) as? ViewController
+        else {
+            return
+        }
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                viewController = ViewControllerA.init()
+                vc.sampleType = .text
             } else if indexPath.row == 1 {
-                viewController = ViewControllerB.init()
+//                viewController = ViewControllerB.init()
             }
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                viewController = ViewControllerC.init()
+//                viewController = ViewControllerC.init()
             }
         } else if indexPath.section == 2 {
-            viewController = ViewControllerD.init()
+//            viewController = ViewControllerD.init()
         }
         
-        if let viewController = viewController {
-            navigationController?.pushViewController(viewController, animated:true)
-        }
+        navigationController?.pushViewController(vc, animated:true)
     }
 }
