@@ -1,6 +1,6 @@
 [<img src="./images/AppIcon.png" width="100">](https://apps.apple.com/app/ivdrop-iv-infusion-calculator/id6642691437)
 &nbsp; &nbsp; &nbsp; &nbsp;
-[<img src="./images/miniTimer.png" width="100">](https://apps.apple.com/app/id1618148240)
+[<img src="./images/miniTimer.png" width="100">](https://apps.apple.com/app/%EB%AF%B8%EB%8B%88%ED%83%80%EC%9D%B4%EB%A8%B8-regain-focus/id6636527822)
 &nbsp; &nbsp; &nbsp; &nbsp;
 [<img src="./images/free-matrix-air-mini.png" width="200">](https://mulgrim.com/free/)
 
