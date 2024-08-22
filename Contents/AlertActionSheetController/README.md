@@ -189,11 +189,11 @@ MGUAlertViewController *alertViewController = [[MGUAlertViewController alloc] in
 ## Documentation
 
 - 여기에 존재하지 않는 추가적인 문서는 다음의 기술위키 문서를 참고하세요.
-    - [모달뷰 컨트롤러](http://wiki.mulgrim.net/page/Project:IOs-ObjC/모달뷰_컨트롤러)
-    - [definesPresentationContext](http://wiki.mulgrim.net/page/Api:UIKit/UIViewController/definesPresentationContext)
-    - [presentedViewControllers](http://wiki.mulgrim.net/page/Api:AppKit/NSViewController/presentedViewControllers)
-    - [transitioningDelegate](http://wiki.mulgrim.net/page/Api:UIKit/UIViewController/transitioningDelegate)
-    - [UIViewControllerTransitioningDelegate](http://wiki.mulgrim.net/page/Api:UIKit/protocol_UIViewControllerTransitioningDelegate)
+    - [모달뷰 컨트롤러](http://192.241.200.240/index.php?title=Project:IOs-ObjC/모달뷰_컨트롤러)
+    - [definesPresentationContext](http://192.241.200.240/index.php?title=Api:UIKit/UIViewController/definesPresentationContext)
+    - [presentedViewControllers](http://192.241.200.240/index.php?title=Api:AppKit/NSViewController/presentedViewControllers)
+    - [transitioningDelegate](http://192.241.200.240/index.php?title=Api:UIKit/UIViewController/transitioningDelegate)
+    - [UIViewControllerTransitioningDelegate](http://192.241.200.240/index.php?title=Api:UIKit/protocol_UIViewControllerTransitioningDelegate)
     
 
 - 컨텐츠 배치를 위한 설계도
