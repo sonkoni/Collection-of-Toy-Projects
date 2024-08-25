@@ -27,6 +27,7 @@
 
 ## Contents
 - [AutoLayout](#autoLayout)
+- [Search](#search)
 - [UI-Control](#ui-control)
     - [Alert & Action Sheet](#alert--action-sheet)
     - [DropdownButton](#dropdownButton)
@@ -52,6 +53,12 @@
 - [AutoLayout **Animation**](./Contents/AutoLayout_Animation) - 오토레이아웃과 UIView 애니메이션 조합 **테스트**
  
 **[back to top](#contents)**
+ 
+## Search
+*일반적인 Search 뿐만 아니라 한글 초성검색 및 미완성 문자까지 검색되게하는 알고리즘을 보여주는 프로젝트*
+- [Initial Consonant Search](./Contents/InitialConsonantSearch) - 초성검색, 일반검색, 미완성 문자 검색 샘플 프로젝트
+
+**[back to top](#contents)** 
  
 ## UI-Control
 ### Alert & Action Sheet
