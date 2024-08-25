@@ -1,4 +1,4 @@
-# Initial Consonant Search Samples
+# Initial Consonant Search Samples - 초성검색
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
