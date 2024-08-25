@@ -97,9 +97,6 @@ NSString *jamo = [MGRJamo getJamo:word];
 // "ㅇㅣㄱㅕㄱㄷㅗ"
 
 ```
-> Interface Builder
-
-<img src="./screenshot/230522a1.jpg" width="200">
 
 ## Documentation
 
