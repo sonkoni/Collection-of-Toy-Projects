@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840C3F4C2C7B10F100D71821 /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3F472C7B10F100D71821 /* GraphicsKit.framework */; };
+		840C3F4E2C7B10F100D71821 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3F482C7B10F100D71821 /* BaseKit.framework */; };
+		840C3F502C7B10F100D71821 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3F492C7B10F100D71821 /* AudioKit.framework */; };
+		840C3F522C7B10F100D71821 /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 840C3F4A2C7B10F100D71821 /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		840C3F532C7B10F100D71821 /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3F4B2C7B10F100D71821 /* IosKit.framework */; };
 		842FC10F2A1AFDB7001CF032 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842FC10D2A1AFDB7001CF032 /* ViewControllerB.xib */; };
 		842FC1182A1AFFF3001CF032 /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842FC1152A1AFFF3001CF032 /* ViewControllerC.xib */; };
 		842FC1192A1AFFF3001CF032 /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FC1172A1AFFF3001CF032 /* ViewControllerC.m */; };
@@ -30,21 +35,26 @@
 		84AF26A828F0DBDF00C4E0A3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */; };
 		84AF26D728F372BA00C4E0A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D628F372BA00C4E0A3 /* Item.swift */; };
 		84AF26D928F376A400C4E0A3 /* ItemsForTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */; };
-		84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C32A1248700044E02D /* AudioKit.framework */; };
-		84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C42A1248700044E02D /* IosKit.framework */; };
-		84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C52A1248700044E02D /* GraphicsKit.framework */; };
-		84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6B1C62A1248700044E02D /* BaseKit.framework */; };
-		84D6B1D02A1248720044E02D /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 84D6B1C72A1248700044E02D /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		840C3F562C7B10F100D71821 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				840C3F522C7B10F100D71821 /* IosRes.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D6B1D12A1248720044E02D /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				84D6B1D02A1248720044E02D /* IosRes.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +62,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		840C3F472C7B10F100D71821 /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
+		840C3F482C7B10F100D71821 /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
+		840C3F492C7B10F100D71821 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
+		840C3F4A2C7B10F100D71821 /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
+		840C3F4B2C7B10F100D71821 /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
 		842FC10D2A1AFDB7001CF032 /* ViewControllerB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
 		842FC1152A1AFFF3001CF032 /* ViewControllerC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
 		842FC1162A1AFFF3001CF032 /* ViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerC.h; sourceTree = "<group>"; };
@@ -81,11 +96,6 @@
 		8459030528F0D71700E50B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8459030728F0D71700E50B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8459030D28F0D7BB00E50B56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		84725FB62A130962004A9E7C /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../macLib/AudioKit.framework; sourceTree = "<group>"; };
-		84725FB72A130962004A9E7C /* MacRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MacRes.bundle; path = ../macLib/MacRes.bundle; sourceTree = "<group>"; };
-		84725FB82A130962004A9E7C /* MacKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacKit.framework; path = ../macLib/MacKit.framework; sourceTree = "<group>"; };
-		84725FB92A130962004A9E7C /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../macLib/BaseKit.framework; sourceTree = "<group>"; };
-		84725FBA2A130962004A9E7C /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../macLib/GraphicsKit.framework; sourceTree = "<group>"; };
 		848091E82B1125DC00405C75 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		848091EC2B13056A00405C75 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		848091EE2B13058A00405C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,11 +104,6 @@
 		84AF26A628F0DBDF00C4E0A3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		84AF26D628F372BA00C4E0A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		84AF26D828F376A400C4E0A3 /* ItemsForTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsForTableView.swift; sourceTree = "<group>"; };
-		84D6B1C32A1248700044E02D /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
-		84D6B1C42A1248700044E02D /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
-		84D6B1C52A1248700044E02D /* GraphicsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsKit.framework; path = ../IosLib/GraphicsKit.framework; sourceTree = "<group>"; };
-		84D6B1C62A1248700044E02D /* BaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseKit.framework; path = ../IosLib/BaseKit.framework; sourceTree = "<group>"; };
-		84D6B1C72A1248700044E02D /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +111,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D6B1CE2A1248710044E02D /* BaseKit.framework in Frameworks */,
-				84D6B1C82A1248710044E02D /* AudioKit.framework in Frameworks */,
-				84D6B1CA2A1248710044E02D /* IosKit.framework in Frameworks */,
-				84D6B1CC2A1248710044E02D /* GraphicsKit.framework in Frameworks */,
+				840C3F502C7B10F100D71821 /* AudioKit.framework in Frameworks */,
+				840C3F4E2C7B10F100D71821 /* BaseKit.framework in Frameworks */,
+				840C3F4C2C7B10F100D71821 /* GraphicsKit.framework in Frameworks */,
+				840C3F532C7B10F100D71821 /* IosKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,16 +216,11 @@
 		84D6B1742A1200470044E02D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84D6B1C32A1248700044E02D /* AudioKit.framework */,
-				84D6B1C62A1248700044E02D /* BaseKit.framework */,
-				84D6B1C52A1248700044E02D /* GraphicsKit.framework */,
-				84725FB62A130962004A9E7C /* AudioKit.framework */,
-				84725FB92A130962004A9E7C /* BaseKit.framework */,
-				84725FBA2A130962004A9E7C /* GraphicsKit.framework */,
-				84725FB82A130962004A9E7C /* MacKit.framework */,
-				84725FB72A130962004A9E7C /* MacRes.bundle */,
-				84D6B1C42A1248700044E02D /* IosKit.framework */,
-				84D6B1C72A1248700044E02D /* IosRes.bundle */,
+				840C3F492C7B10F100D71821 /* AudioKit.framework */,
+				840C3F482C7B10F100D71821 /* BaseKit.framework */,
+				840C3F472C7B10F100D71821 /* GraphicsKit.framework */,
+				840C3F4B2C7B10F100D71821 /* IosKit.framework */,
+				840C3F4A2C7B10F100D71821 /* IosRes.bundle */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +236,7 @@
 				845902F328F0D71600E50B56 /* Frameworks */,
 				845902F428F0D71600E50B56 /* Resources */,
 				84D6B1D12A1248720044E02D /* Embed PlugIns */,
+				840C3F562C7B10F100D71821 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);

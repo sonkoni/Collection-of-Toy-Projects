@@ -1,0 +1,337 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GraphicsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SKEAccelerationTimer",
+        "printedName": "SKEAccelerationTimer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "updateClosure",
+            "printedName": "updateClosure",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvp",
+            "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvp",
+            "moduleName": "GraphicsKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvg",
+                "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvg",
+                "moduleName": "GraphicsKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvs",
+                "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvs",
+                "moduleName": "GraphicsKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvM",
+                "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13updateClosureyycSgvM",
+                "moduleName": "GraphicsKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timerInterval",
+            "printedName": "timerInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GraphicsKit20SKEAccelerationTimerC13timerIntervalSdvpZ",
+            "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13timerIntervalSdvpZ",
+            "moduleName": "GraphicsKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GraphicsKit20SKEAccelerationTimerC13timerIntervalSdvgZ",
+                "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13timerIntervalSdvgZ",
+                "moduleName": "GraphicsKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(updateClosure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SKEAccelerationTimer",
+                "printedName": "GraphicsKit.SKEAccelerationTimer",
+                "usr": "s:11GraphicsKit20SKEAccelerationTimerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GraphicsKit20SKEAccelerationTimerC13updateClosureACyycSg_tcfc",
+            "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC13updateClosureACyycSg_tcfc",
+            "moduleName": "GraphicsKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startAccelerationTimer",
+            "printedName": "startAccelerationTimer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GraphicsKit20SKEAccelerationTimerC017startAccelerationD0yyF",
+            "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC017startAccelerationD0yyF",
+            "moduleName": "GraphicsKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidate",
+            "printedName": "invalidate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GraphicsKit20SKEAccelerationTimerC10invalidateyyF",
+            "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC10invalidateyyF",
+            "moduleName": "GraphicsKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GraphicsKit20SKEAccelerationTimerC",
+        "mangledName": "$s11GraphicsKit20SKEAccelerationTimerC",
+        "moduleName": "GraphicsKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/GraphicsKit\/Components\/AccelerationTimer - Swift\/SKEAccelerationTimer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 434,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kwanhyunson\/Documents\/GitHub\/Library\/Framework\/GraphicsKit\/Components\/AccelerationTimer - Swift\/SKEAccelerationTimer.swift",
+      "kind": "FloatLiteral",
+      "offset": 546,
+      "length": 4,
+      "value": "0.05"
+    }
+  ]
+}

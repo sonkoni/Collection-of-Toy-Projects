@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hjd-Yv-b5i" userLabel="Table Header View" customClass="ConfigCommonHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="가격정보" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-Gv-hPd">
+                    <rect key="frame" x="8" y="0.0" width="377" height="44"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="q5P-pN-uvm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Z3s-Gv-hPd" secondAttribute="bottom" id="5Ka-5o-9UP"/>
+                <constraint firstItem="Z3s-Gv-hPd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hjd-Yv-b5i" secondAttribute="leading" constant="8" id="JPs-Lz-D19"/>
+                <constraint firstItem="Z3s-Gv-hPd" firstAttribute="leading" secondItem="q5P-pN-uvm" secondAttribute="leading" priority="990" id="Xk4-4y-0lw"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z3s-Gv-hPd" secondAttribute="trailing" constant="8" id="naM-a3-7uU"/>
+                <constraint firstItem="q5P-pN-uvm" firstAttribute="trailing" secondItem="Z3s-Gv-hPd" secondAttribute="trailing" priority="990" id="p17-vS-IOu"/>
+                <constraint firstItem="Z3s-Gv-hPd" firstAttribute="top" secondItem="Hjd-Yv-b5i" secondAttribute="top" id="v4V-P6-4yc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="Z3s-Gv-hPd" id="fDu-x8-dAJ"/>
+            </connections>
+            <point key="canvasLocation" x="-1321" y="-169"/>
+        </view>
+    </objects>
+</document>

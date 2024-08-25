@@ -1,6 +1,0 @@
-framework module GraphicsKit {
-  umbrella header "GraphicsKit.h"
-
-  export *
-  module * { export * }
-}

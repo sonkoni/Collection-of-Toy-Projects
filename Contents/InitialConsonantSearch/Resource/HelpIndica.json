@@ -1,0 +1,2926 @@
+[
+  {
+    "title" : "BollingerBands",
+    "contents" : [
+      {
+        "[개요]" : "Bollinger_Up(가격,승수,기간,이평방법);\n\nBollinger_Mid(가격,기간,이평방법);\n\nBollinger_Dn(가격,승수,기간,이평방법);"
+      },
+      {
+        "[설명]" : "기준선 상하에 두개선 총 3개선으로 구성되어 있으며, Bollinger Bands의 상, 하한선은 표준 편차에 의해 산출된 이동평균 값이다.\n\n주가나 지수의 움직임이 큰 시기에는 Bands의 폭이 넓어지고 움직임이 작은 시기에는 Bands의 폭이 좁아지는 특성이 있다.\n\n지지 저항 상단밴드는 보통 저항권으로, 하단 밴드는 지지권으로 작용한다.\n\n가격과의 교차 보합권에서 상단 또는 하단 밴드를 주가가 뚫고, 밴드의 폭이 넓어지게 되면, 주가의 추세가 밴드를 뚫은 방향으로 전환되는 가능성이 매우 높아짐"
+      },
+      {
+        "[계산식]" : "상한선 = n일 단순이동평균 + 승수 × 표준편차\n\n중심선 = n일 단순이동평균\n\n하한선 = n일 단순이동평균 - 승수 × 표준편차"
+      }
+    ]
+  },
+  {
+    "title" : "고저이동평균",
+    "contents" : [
+      {
+        "[개요]" : "MAHighLowHi(기간,이평방법);\n\nMAHighLowLo(기간,이평방법);"
+      },
+      {
+        "[설명]" : "지표이름 그대로 고가에 대한 이동평균과 저가에 대한 이동평균선을 나타냄"
+      },
+      {
+        "[계산식]" : "Hi = MA(High, 이평방법)\n\nLo = MA(Low, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "CFTPP",
+    "contents" : [
+      {
+        "[개요]" : "CFTPP (Chicago Floor Traders' Pivotal Point)\n\nCFTPP_Res1();\n\nCFTPP_Res2();\n\nCFTPP_Sup1();\n\nCFTPP_Sup2();"
+      },
+      {
+        "[설명]" : "이 함수는 시카고 거래소의 장내거래인이 사용하는 함수로 상품의 단기 지지/저항선을 계산하는 함수입니다."
+      },
+      {
+        "[계산식]" : "TP = (H + L + C) ÷ 3\n\n저항선1 = TP×2-L(1)\n\n저항선2 = TP + (H(1) - L(1))\n\n지지선1 = TP × 2-H(1)\n\n지지선2 = TP-(H(1) - L(1))"
+      }
+    ]
+  },
+  {
+    "title" : "DEMA",
+    "contents" : [
+      {
+        "[개요]" : "DEMA(가격,기간);\n\nDEMA (Double Exponential Moving Average)"
+      },
+      {
+        "[설명]" : "DEMA는 2중 지수 이동 평균으로서 일반 지수이동평균보다 더 매끄러운 지표이고 지표의 지체됨이 적다."
+      },
+      {
+        "[계산식]" : "DEMA = 2 × EMA(가격, 기간) - EMA(EMA(가격, 기간), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "Demark",
+    "contents" : [
+      {
+        "[개요]" : "Demark_Res();\n\nDemark_Mid();\n\nDemark_Sup();"
+      },
+      {
+        "[설명]" : "1980년대 초부터 기술적분석가인 Thomas. R. Demark는 자신만이 사용하던 특유의 일일목표가격 설정법을 제시하였다. 이 기법의 핵심은 전일저가와 전일고가와의 관계에 의해 다음날 가격변동폭이 결정된다는 사고를 바탕으로 하고 있다.\n\n지지선/저항선 활용 시가가 예상목표 가격대(예상고가와 예상저가 사이)에서 시작을 하면 예상고가가 저항선이 되고 예상저가가 지지선이 되는 것으로 해석.\n\n추세 활용 시가가 예상목표 가격대보다 높은 수준에서 시작하면 단기적으로 상승 추세신호, 예상목표 가격대보다 낮은 수준에서 시작하면 단기적으로 하락 추세신호로 해석"
+      },
+      {
+        "[계산식]" : "목표기준가\n    (전일종가×2 + 전일저가 + 전일고가) ÷ 4\n\n 1) 음봉일 경우(시가 > 종가)\n\n     목표고저기준가 = 전일의(고가 + 저가 + 종가 + 저가) ÷ 2\n\n 2) 양봉일 경우(시가 < 종가)\n\n     목표고저기준가 = 전일의(고가 + 저가 + 종가 + 고가) ÷ 2\n\n 3) 십자형일 경우(시가 = 종가)\n\n   목표고저기준가 = 전일의(고가 + 저가 + 종가 + 종가) ÷ 2\n\n목표고가 = 목표고저기준가 - 전일저가\n\n목표저가 = 목표고저기준가 - 전일고가"
+      }
+    ]
+  },
+  {
+    "title" : "Detrend",
+    "contents" : [
+      {
+        "[개요]" : "Detrend(가격)"
+      },
+      {
+        "[설명]" : "비추세 가격 지표는 우선 회귀선 을 계산하여 시계열 한 후, 가격선의 기울기를 뺀 값이다."
+      },
+      {
+        "[계산식]" : "DP = Price(i) - Slope × i"
+      }
+    ]
+  },
+  {
+    "title" : "Envelope",
+    "contents" : [
+      {
+        "[개요]" : "Envelope_Hi(가격,기간,비율);\n\nEnvelope_Mid(가격,기간);\n\nEnvelope_Lo(가격,기간,비율);"
+      },
+      {
+        "[설명]" : "Envelop는 매닝 스톨러에 의하여 개발된 것으로 이동평균선이 지지선이나 저항성의 구실도 한다는 점을 착안하여 추세의 움직임이 어떻게 될 것인지를 예측하는 기법이다, 이동평균선에서 일정비율만큼을 더한 선을 위에 그리고, 일정비율만큼을 뺀선을 아래에 그린것입니다.\n\nEnvelope와 Bollinger band의 차이점은 Bollinger band는 가격의 움직임에 의해 폭이 확대 또는 축소되는 특성을 가지고 있으나, Envelope는 그 폭이 항상 일정하다는 점에서 차이가 있습니다. 즉, 이 원리는 '시장가격의 움직임이란 특정의 추세중심선을 사이에 두고 일정한 범위에서의 사이클을 그리며 움직인다.'라는 가정에서 비롯된다.\n\n주가가 저항선에 도달했을 때를 매도 신호로, 주가가 지지선에 도달했을 때를 매수 신호로 인식합니다. 등락이 큰 주식일수록 Envelope 곡선의 범위를 더 크게 함."
+      },
+      {
+        "[계산식]" : "저항선 = SMA(C, 기간) + (SMA(C, 기간) × Percent)\n\n중심선 = SMA(C, 기간)\n\n지지선 = SMA(C, 기간) - (SMA(C, 기간) × Percent)"
+      }
+    ]
+  },
+  {
+    "title" : "일목균형지표",
+    "contents" : [
+      {
+        "[개요]" : "IchimokuTenkan(전환선기간,기준선기간,선행기간1,선행기간2,후행기간);\n\nIchimokuKijun(전환선기간,기준선기간,선행기간1,선행기간2,후행기간);\n\nIchimokuSenkouSpan1(전환선기간,기준선기간,선행기간1,선행기간2,후행기간);\n\nIchimokuSenkouSpan2(전환선기간,기준선기간,선행기간1,선행기간2,후행기간);\n\nIchimokuChikou(전환선기간,기준선기간,선행기간1,선행기간2,후행기간);"
+      },
+      {
+        "[설명]" : "일목균형표는 1936년 일본 동경신문의 시황부장이었던 이찌모꾸산징(일목산인)이 개발한 주가 예측차트이다.\n\n지수나 지수 관련 대형주 등의 순수한 자유 경쟁 시장에서의 지수의 흐름을 예상하는데 큰 도움을 준다."
+      },
+      {
+        "[계산식]" : "전환선 = (최근 9일간의 최고치 + 최저치) ÷ 2\n\n기준선 = (최근 26일간의 최고치 + 최저치) ÷ 2\n\n선행스팬1 = (기준선 + 전환선) ÷ 2 -> 26일 선행(앞으로) 시킨선\n\n선행스팬2 = (최근 52일간의 최고치 + 최저치) ÷ 2 -> 26일 선행(앞으로) 시킨선\n\n후행스팬 = 현재의 가격을 26일 후행(뒤로) 시킨선"
+      }
+    ]
+  },
+  {
+    "title" : "MovingAverage",
+    "contents" : [
+      {
+        "[개요]" : "MovingAverage(가격,기간,이평방법);"
+      },
+      {
+        "[설명]" : "일부 데이터에 더 많은 비중을 두고 계산을 행한 평균 값.\n\n시계열의 각 항에 대하여 그것을 중심으로 하는 전후 일정 항 수의 평균값을 연결하여 경향선을 구하는 방법. 이 방법은 이해하기가 쉽고 계산이 쉬운 반면에 항수에 대한 일정한 규칙이 없어 항수에 따라 그 결과가 달라질 수 있으며, 첫 항과 끝 항의 추세값을 계산할 수 없으므로 최근의 추세선을 구하기 어려운 단점이 있다.\n\n이평방법에는 아래와 같은 10가지 계산방법이 존재한다.\n\n  1. 지수 - Exponential\n\n  2. 최소자승 - Least Squares\n\n  3. 단순 - Simple\n\n  4. 삼각 - Triangular\n\n  5. 변동 - Variable\n\n  6. 가중 - Weighted\n\n  7. Welles - Welles Wilder style\n\n  8. 지체지수 - Zero Lag Exponential\n\n  9. 기하 - Heometric\n\n  10. 조화 - Harmonic"
+      },
+      {
+        "[계산식]" : "Moving Average = Moving Average(가격, 기간, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "MAEnvelope",
+    "contents" : [
+      {
+        "[개요]" : "MAEnvelope_Hi(가격,비율 ÷ 100,기간,이평방법);\n\nMAEnvelope_Lo(가격,비율 ÷ 100,기간,이평방법);"
+      },
+      {
+        "[설명]" : "이동평균선을 감싸는 저항선과 지지선으로 구성된다."
+      },
+      {
+        "[계산식]" : "저항선(HiBand) = MA + 비율 × MA\n\n지지선(LoBand) = MA - 비율 × MA"
+      }
+    ]
+  },
+  {
+    "title" : "MedianPrices",
+    "contents" : [
+      {
+        "[개요]" : "MedianPrices();"
+      },
+      {
+        "[설명]" : "당일의 고가와 저가를 더한 후 이를 \"2\"로 나눈 값으로 이는 가격의 평균 혹은 중위수의 개념을 갖게 된다.\n\n이동평균의 교차에 의한 매매룰에 의하여 매매를 할 경우 단순히 당일의 종가를 사용할 경우에 비하여 Median Price를 사용하는 것이 도움이 될 수 있다."
+      },
+      {
+        "[계산식]" : "MedianPrices = (H + L) ÷ 2"
+      }
+    ]
+  },
+  {
+    "title" : "Pivot",
+    "contents" : [
+      {
+        "[개요]" : "Pivot_Res2();\n\nPivot_Res1();\n\nPivot_Mid();\n\nPivot_Sup1();\n\nPivot_Sup2();"
+      },
+      {
+        "[설명]" : "Pivot분석이란 선물거래와 같이 일일매매(DayTrading)가 빈번한 거래에서 주로 사용되는 단기적인 가격흐름의 중심,저항,지지 분석이다.\n\nPivot은 당일의 고가,저가,종가를 평균하여 당일의 중심가격(Pivot Value)을 먼저 산출한 후 지지와 저항가격대를 산출한다.\n\n피봇분석은 당일의 가격변동폭이 클수록 다음날 피봇의 지지와 저항수준이 넓혀지게 됩니다.\n\n피봇분석에 의해 산출된 수치들은 기본적으로 지지와 저항의 수준으로 사용되며 그 중 PivotPoint 자체가 가장 훌륭한 지지와 저항수준이 되며 1차와 2차의 지지및 저항수준은 PivotPoint 보다 신뢰도가 조금 떨어집니다"
+      },
+      {
+        "[계산식]" : "2차저항선 = Pivot + 전일고가 - 전일저가\n\n1차저항선 = (Pivot × 2) - 전일저가\n\n중심선(Pivot Point) = (전일고가 + 전일저가 + 전일종가) ÷ 3\n\n1차지지선 = (Pivot × 2) - 전일고가\n\n2차지지선 = Pivot - 전일고가 + 전일저가"
+      }
+    ]
+  },
+  {
+    "title" : "PriceChannel",
+    "contents" : [
+      {
+        "[개요]" : "PriceChannel_Hi(기간);\n\nPriceChannel_Mid(기간);\n\nPriceChannel_Lo(기간);"
+      },
+      {
+        "[설명]" : "이 지표는 지지와 저항선을 의미한다. 상한선은 일정기간전의 최고가를 하한선은 일정기간전의 최저가를 이은선이다. 이 채널은 채널포지션을 결정하는데 사용되지 않고 현재바의 최저가와 최고가를 보여줄뿐이다.\n\n가격이 상한선에 가까이 갈수록(고점돌파) 새로운 상승추세의 시작으로 과매수를 의미하며, 가격이 하한선에 가까이 갈수록(저점돌파) 새로운 하락추세의 시작으로 과매도를 의미한다."
+      },
+      {
+        "[계산식]" : "상한선 = 일정기간내의 최고가를 이은선\n\n기준선 = 일정기간내의 종가를 이은선\n\n하한선 = 일정기간내의 최저가를 이은선"
+      }
+    ]
+  },
+  {
+    "title" : "ProjectionBand",
+    "contents" : [
+      {
+        "[개요]" : "ProjectionBand_Hi(기간);\n\nProjectionBand_Lo(기간);"
+      },
+      {
+        "[설명]" : "Projection Bands 지표는 N일의 Highest(고가의 선형회귀선)와 Lowest(저가의 선형회귀선)로 계산이 된다"
+      },
+      {
+        "[계산식]" : "저항선 = max(고가[-x] + 기울기[] × χ)\n\n지지선 = min(저가[-x] + 기울기[] × χ)\n\n고가 기울기 = N일 고가의 선형회귀선 기울기\n\n저가 기울기 = N일 저가의 선형회귀선 기울기"
+      }
+    ]
+  },
+  {
+    "title" : "PSar",
+    "contents" : [
+      {
+        "[개요]" : "Psar (Parabolic, Stop and Reverse)\n\nPSAR(가속변수,최대가속값);"
+      },
+      {
+        "[설명]" : "Parabolic(SAR, Stop and Reversal)는 Welles Wilder에 의해서 개발된 부가지표로 주가의 추세전환점을 결정하기 위하여 사용된다.\n\n주가가 SAR아래로 가격이 떨어지면 매도, 주가가 SAR 위로 가격이 올라갔을 때는 매수. 추세시장에서는 효과적인 지표이나 비추세적 시장에서는 Whipsaw가 많이 발생하는 단점이 있음."
+      },
+      {
+        "[계산식]" : "상승추세 또는 하락추세에 따라 구분하여 계산한다.\n\n상승추세 : 전일 Psar + 가속도(상승추세의 신고가 - 전일Psar)\n\n하락추세 : 전일 PSar + 가속도(하락추세의 신저가 - 전일PSar)"
+      }
+    ]
+  },
+  {
+    "title" : "표준오차밴드",
+    "contents" : [
+      {
+        "[개요]" : "StdErrBand_Hi(Close,Factor,Period);\n\nStdErrBand_Mid(Close,Factor,Period);\n\nStdErrBand_Lo(Close,Factor,Period);"
+      },
+      {
+        "[설명]" : "표준오차태밴드는 Envelope의 한 종류이고 보기에는 Bollinger Bands와 비슷하지만 계산방법과 해석이 다르다. 선형회귀선에 대한 주가의 근접 정도를 계산하는 변동성 지표이다.\n\nMid선은 최소자승이평이다. High선은 Mid선에서 Factor의 N일 표본오차 값을 더해서 계산된다. Low선은 Mid선에서 Factor의 N일 표본오차 값을 빼서 계산된다"
+      },
+      {
+        "[계산식]" : "Hi = Mid + Factor × StdError(Price)\n\nMid= LstSqrtMA(Price)\n\nLo = Mid - Factor × StdError(Price)"
+      }
+    ]
+  },
+  {
+    "title" : "TEMA",
+    "contents" : [
+      {
+        "[개요]" : "TEMA (Triple Exponential Moving Average)\n\nTEMA(가격,기간);"
+      },
+      {
+        "[설명]" : "일반 지수이동평균보다 더 매끄러운 지표이고 지표의 지체됨이 적다"
+      },
+      {
+        "[계산식]" : "TEMA = 3 × EMA(Input) - 3 × EMA(EMA(Input)) + EMA(EMA(EMA(Input))"
+      }
+    ]
+  },
+  {
+    "title" : "TypicalPrices",
+    "contents" : [
+      {
+        "[개요]" : "TypicalPrices();"
+      },
+      {
+        "[설명]" : "Median Price와 Weighted Close와 비슷한 지표로 매일의 가격을 단순평균한 값이다. 시/고/저/종 데이터의 고+저+종데이터의 평균이고 몇몇 인디케이터 계산에 사용된다."
+      },
+      {
+        "[계산식]" : "TypicalPrices = (High + Low + Close) ÷ 3"
+      }
+    ]
+  },
+  {
+    "title" : "VIDYA",
+    "contents" : [
+      {
+        "[개요]" : "VIDYA (Variable Index DYnamic Average)\n\nVIDYA(가격,CMO기간,Smooth);"
+      },
+      {
+        "[설명]" : "VIDYA지표는 데이터의 변동값에 가중치를 조절한 지수이평이다."
+      },
+      {
+        "[계산식]" : "sc = 2 ÷ (n + 1)\n\nvi = CMO(Price)\n\nSC = 가중치(Smoothing Constant)\n\nVI  = 변동값(volatility Index)\n\nVIDYA = sc × vi × 가격 + (1 - SC × vi) × 가격(1)"
+      }
+    ]
+  },
+  {
+    "title" : "WeightedCloses",
+    "contents" : [
+      {
+        "[개요]" : "WeightedCloses();"
+      },
+      {
+        "[설명]" : "WC는 종가의 개념을 다른 측면에서 접근해 보려고 하는데서 나온 지표이다. 이 지표는 독단적으로 사용하는 경우는 별로 없고 항상 다른 지표의 구성요소가 되며 매일 매일의 주가를 단순 평가한 지표로서 종가를 강조하고 있다."
+      },
+      {
+        "[계산식]" : "WC = (High + Low + Close × 2) ÷ 4"
+      }
+    ]
+  },
+  {
+    "title" : "ZigZag",
+    "contents" : [
+      {
+        "[개요]" : "ZigZag(가격,전환값,비율여부);"
+      },
+      {
+        "[설명]" : "Zig Zag는 전환 가격 이하의 작은 가격 움직임을 제외하여 가격 추세의 중요한 움직임(임계치 이상 움직임)을 쉽게 포착하기 위하여 사용되는 지표입니다.\n\n즉 사용자가 원하는 전환비율에 맞추어 꺾은선으로 차트를 보여줌."
+      },
+      {
+        "[계산식]" : "첫 봉 종가 대비 전환비율(n%) 이상 상승 또는 하락하면 확정되지 않은 예비의 고/저점을 지정하고 예비의 고/저점 대비 전환비율(n%) 이상 하락하여 예비 고/저점이 확인되면 고/저점으로 확정.\n\n이런 방식의 고->저->고 또는 저->고->저 반복된 순서로 고/저점 직선을 연결함."
+      }
+    ]
+  },
+  {
+    "title" : "가격이동평균",
+    "contents" : [
+      {
+        "[개요]" : "이동평균선 분석은, 기술적 지표에서 가장 지표적인 방법으로 이동평균선과 주가와 관계에서 지지와 저항을 이용한 분석과 이동평균선들과 주가의 배열간의 상관 관계를 분석하는 방법이 있다. \n\n이동평균선과 주가와는 중력과 비슷한 관계가 있어, 주가가 급등락하면, 언젠가는 주가와 이동평균선과 다시 모이려는 경향이 발생한다."
+      },
+      {
+        "[설명]" : "Cross 활용\n  특정일수 이동평균선을 기준으로 주가가 상향돌파하면, 매수신호로, 하향돌파하면 매도신호로 판단한다.\n\n이동평균선 배열 판단\n  이동평균선이 위로부터 장기,중기,단기로 배열되어있으면, 역배열이라 하여 약세국면을, 이동평균선이 아래로부터 단기,중기,장기로 배열되어있으면 정배열이라하며, 강세를 예상한다.\n\n괴리도 활용\n  이동평균선과 주가와의 관계주가가 매우 등락하며 이동평균선과 크게 괴리가 발생하였을때는, 반발매수 가능성이 높으며, 주가가 매우 급등하며 이동평균선과 괴리가 발생하였을때는 매도세가 강화될 가능성이 높다고 판단한다."
+      }
+    ]
+  },
+  {
+    "title" : "이평그물지표",
+    "contents" : [
+      {
+        "[설명]" : "이동평균의 나열 시작, 종료, 증가값으로 촘촘함의 정도를 조절\n\n분산될 때 급등/급락의 의미가있고 횡보할 때 보합의 의미를 가짐"
+      }
+    ]
+  },
+  {
+    "title" : "시고저라인",
+    "contents" : [
+      {
+        "[개요]" : "Open\n\nLow\n\nHigh"
+      },
+      {
+        "[설명]" : "종가를 제외한 시가, 고가, 저가를 3가지 선으로 나타냄"
+      },
+      {
+        "[계산식]" : "시가 = Open\n\n저가 = Low\n\n고가 = High"
+      }
+    ]
+  },
+  {
+    "title" : "McGinley_Dynamic",
+    "contents" : [
+      {
+        "[설명]" : "가격 지표로도 사용할 수 있는 지표로, 주가의 추세 파악에 사용됨"
+      },
+      {
+        "[계산식]" : "EMA(가격,기간) + ((가격 - EMA(가격,기간)) ÷ (가격 ÷ EMA(가격,기간) × 비율))"
+      }
+    ]
+  },
+  {
+    "title" : "MovingAverageChannels",
+    "contents" : [
+      {
+        "[개요]" : "MAC (MovingAverageChannels)\n\nMovingAverage(H,기간,이평방법) × (1 + 비율)\n\nMovingAverage(H,기간,이평방법)\n\nMovingAverage(L,기간,이평방법)\n\nMovingAverage(L,기간,이평방법) × (1 - 비율)"
+      },
+      {
+        "[설명]" : "MAC는 Envelope나 Bollinger Band와는 달리 고가와 저가의 이동평균을 차트에 표시하는 방법으로써 매매시점을 포착하기 위해 주로 사용되는데, 4개의 이동평균선을 매입과 매도선으로 사용하는 것이다.\n\n가격이 제1선을 상향 돌파하지 못하고 재차 하락하면 매도 시점으로 본다.\n\n가격이 제 1선을 상향 돌파하면 추격 매수 시점으로 본다.\n\n가격이 제 1선을 돌파하고 지속 상승을 한 후 다시 제1선 아래로 하향하면 제1선을 매도 시점으로 활용한다.\n\n가격이 제4선을 하향 돌파하면 매도 시점으로 인식하며 마지막 매도의  기회로 본다.\n\n가격이 제4선을 하향 돌파한 후 회귀하여 다시 제4선을 상향 돌파하면 매수 시점으로 본다.\n\n가격이 제4선을 하향 돌파하지 못하고 다시 상승하면  매수 시점으로 본다."
+      },
+      {
+        "[계산식]" : "최상선 = 10일 이평(고가) × 비율(1.02)\n\n상선 = 10일 이평(고가)\n\n하선 = 10일 이평(저가)\n\n최하선 = 10일 이평(저가) × 비율(0.98)"
+      }
+    ]
+  },
+  {
+    "title" : "LinearRegressionIndex",
+    "contents" : [
+      {
+        "[개요]" : "LRI (LinearRegressionIndex)\n\nRegressionLineMv(가격,기간);"
+      },
+      {
+        "[설명]" : "Linear Regression Indicator(회귀선지표)와 동일한 방법으로 과거 일정기간을 대상으로 매일 직선회귀선을 계산하여 지표화한 것이다.\n\n직선회귀기울기를 해석할 경우 R-squared를 동시에 분석하는 것이 좋다.\n\n이는 직선회귀기울기가 추세의 대략적인 방향을 제시하는 반면 R-squared는 추세의 강도에 관련된 정보를 제공하기 때문이다.\n\nR-squared해석할 경우 R-squared를 동시에 분석하는 것이 좋다.\n\n이는 직선회귀기울기가 추세의 대략적인 방향을 제시하는 반면 R-squared는 추세의 강도에 관련된 정보를 제공하기 때문이다.\n\nR-squared값이 높다는 것은 직선회귀기울기가 가파른 상승 혹은 하락 기울기를 가짐을 의미한다.\n\n직선회귀기울기가 처음으로 의미있는 양의 값을 갖게 되는 시점을 매수포지션 설정시점으로 해석할 경우 R-squared를 동시에 분석하는 것이 좋다.\n\n이는 직선회귀기울기가 추세의 대략적인 방향을 제시하는 반면 R-squared는 추세의 강도에 관련된 정보를 제공하기 때문이다.\n\nR-squared값이 높다는 것은 직선회귀기울기가 가파른 상승 혹은 하락 기울기를 가짐을 의미한다.\n\n직선회귀기울기가 처음으로 의미있는 양의 값을 갖게 되는 시점을 매수포지션 설정시점으로 활용할 수 있다.\n\n반면 기울기가 의미있는 하락기울기로 변하게 되는 시점을 매수포지션을 청산하거나 매도포지션을 설정하는 시점으로 활용할 수 있다."
+      },
+      {
+        "[계산식]" : "Υ = aχ + b\n\nLinearRegressionIndex = LinearRegressionSlopexPrice + LinearRegressionConst"
+      }
+    ]
+  },
+  {
+    "title" : "KeltnerChannels",
+    "contents" : [
+      {
+        "[개요]" : "(비율 × MovingAverage((high-low),기간,단순이평)) + MovingAverage((close + low + high) ÷ 3,기간,단순이평)\n\nMovingAverage((close + low + high) ÷ 3,기간,단순이평)\n\nMovingAverage((close + low + high) ÷ 3,기간,단순이평)-(비율 × MovingAverage((high-low),기간,단순이평))"
+      },
+      {
+        "[설명]" : "KeltnerChannels는 상한선과 하한선의 범위를 사용하는 Envelop이론에서 만들어진 변동성을 기반으로 만들어진 지표이며 채널중단점 및 채널 방향으로 역전을 식별하는데 사용되는 추세지표입니다."
+      },
+      {
+        "[계산식]" : "상한선\n  (비율 × MovingAverage((high - low),기간,단순이평)) + MovingAverage((close + low + high) ÷ 3,기간,단순이평)\n\n중심선\n  MovingAverage((close + low + high) ÷ 3,기간,단순이평)\n\n하한선\n  MovingAverage((close + low + high) ÷ 3,기간,단순이평) - (비율 × MovingAverage((high - low),기간,단순이평))"
+      }
+    ]
+  },
+  {
+    "title" : "CBO",
+    "contents" : [
+      {
+        "[개요]" : "CBO (Channel Break Out)\n\nHighest(H,기간)\n\n(Highest(H,기간) + Lowest(L, 기간)) ÷ 2\n\nLowest(L,기간)"
+      },
+      {
+        "[설명]" : "이 지표는 추세부분에서 개척자인 Richard Dochain에 의해 소개된 부가지표이다. CBO는 단순추세추종돌파시스템(a Simple Trend Following Breakout System)이다. CBO는 추세시장에서는 매우 유용한 지표이나, 비추세장에서는 그러하지 못한 단점이 있다"
+      },
+      {
+        "[계산식]" : "상한선 = Max(고가, n)  <-  n일중 최고가 (HHV(Highest High Value))\n\n하한선 = Min(저가, n)  <-  n일중 최저가 (LLV(Lowest Low Value))\n\n중심선 = (상한선 + 하한선) ÷ 2"
+      }
+    ]
+  },
+  {
+    "title" : "PriceHighLowIndex",
+    "contents" : [
+      {
+        "[개요]" : "highestperiod(Hi가격, 기간, 방향);\n\nlowestperiod(Lo가격, 기간, 방향);"
+      },
+      {
+        "[설명]" : "PriceHighLowIndex 지표는 입력값을 기간동안의 최고가,최저가를 구해서 박스 형태의 지표를 나타낸다. 이 지표는 구간내에 박스권 돌파를 판단하기 유용하며,기간값에 따라 단기(5),중기(20),장기(60)일 등 변형해서 분석할수 있다. 고가/저가 대신 종가로 적용해볼수도 있다. 방향이 1이면 뒤에서 기간동안의 최고/최저를 뜻하고 0이면 앞에서 기간동안의 최고/최저값이다."
+      },
+      {
+        "[계산식]" : "저항선 = HighestPreiod(Hi가격, 기간, 방향)\n\n지지선 = LowestPreiod(Lo가격, 기간, 방향)"
+      }
+    ]
+  },
+  {
+    "title" : "AccumSwingIndex",
+    "contents" : [
+      {
+        "[개요]" : "AccumSwingIndex(LimitMove);"
+      },
+      {
+        "[설명]" : "Accum Swing Index는 0~100 사이의 Up Bar와 0~-100사이의 Down Bar를 가지는 Swing Index값을 누적하여 나타내는 지표이다. 단지 2개의 바의 테이터를 사용하는 Swing Index보다 더 장기적인 데이터를 제공한다."
+      },
+      {
+        "[계산식]" : "Var1 = ABS((H - C(1)) + 0.5 × (L - C(1)) + 0.25 × (C(1) + O(1)));\n\nVar2 = ABS((L - C(1)) + 0.5 × (H - C(1)) + 0.25 × (C(1) + O(1)));\n\nVar3 = ABS((H - L) + 0.25 × (C(1) + O(1)));\n\nMax((H - C(1)), (L - C(1)), (H - C)) == (H - C(1)) : R = Var1\n\nMax((H - C(1)), (L - C(1)), (H - C)) == (L - C(1)) : R = Var2\n\nMax((H - C(1)), (L - C(1)), (H - C)) == (H - C) : R = Var3\n\nK = Max((H - C(1)), (L - C(1)));\n    (때로는 K = Max((H(1) - C), (L(1) - C)) 이렇게도 사용됨)\n\nSwingIndex = (((C - C(1)) + 0.5 × (C - O) + 0.25 × (C(1) - O(1))) ÷ R) × (K ÷ L) × (50)\n\nAccum(SwingIndex(LimitMove))"
+      }
+    ]
+  },
+  {
+    "title" : "CCI",
+    "contents" : [
+      {
+        "[개요]" : "CCI(Commodity Channel Index)\n\nCCI(기간);"
+      },
+      {
+        "[설명]" : "Donald Lambert에 의해 개발된 지표이며 주가의 평균을 기준으로 하여 현재 주식가격의 변동성을 측정하는 지표이다.\n기본 매매범위는 100과 -100사이\n\nCCI가 0보다 큰값일때 시장은 상승추세이며, 0보다 작은값을 가질때는 하락추세로 판단할 수 있다."
+      },
+      {
+        "[계산식]" : "TP = (H + L + C) ÷ 3\n\nATP = SMA(TP, n)\n\nMD = SMA(abs(TP - ATP), n)\n\nCCI = (TP - ATP) ÷ (MD × 0.015)"
+      }
+    ]
+  },
+  {
+    "title" : "ChaikinOscillator",
+    "contents" : [
+      {
+        "[개요]" : "ChaikinOscillator (Chaikin’s A/D Oscillator)\n\nChaikinOscillator(기간1,기간2);"
+      },
+      {
+        "[설명]" : "Marc Chaikin에 의해서 개발된 지표로서 지표개발의 선각자들인 Joseph Granville 와 Larry Williams에 의해 완성된 지표의 연장(extending)이다.\n\nAccumulation/Distribution 지표를 기초로 작성한 이동평균 오실레이터로 주가나 지수의 과열/침체를 판단하는데 이용된다."
+      },
+      {
+        "[계산식]" : "AD = AccumDistribution();\n\nChaikinOscillator = EMA(AD, n) - EMA(AD, m)"
+      }
+    ]
+  },
+  {
+    "title" : "이격도",
+    "contents" : [
+      {
+        "[개요]" : "Disparity(가격,기간);"
+      },
+      {
+        "[설명]" : "이격도는 주가가 이동 평균 값으로부터 어느 정도 차이가 있는가를 나타내는 지표이다. 그리고 보다 단기적인 투자시점을 포착하기 위한 지표로 지행성지표인 이동평균선의 결점을 보완한 지표이다.\n\n주가는 이동평균선으로부터 멀어지면 언젠가는 다시 이동평균선으로 회귀하려는 경향이 있다.\n\n상승 국면일때 20일 이동 평균인 경우 106% 이상이면 매도시점, 98% 수준이면 매수시점. 60일 이동 평균인 경우 110% 이상이면 매도시점, 98% 수준이면 매수시점\n\n 하강 국면일때 20일 이동 평균인 경우 102% 이상이면 매도시점, 92% 수준이면 매수시점. 60일 이동 평균인 경우 104% 이상이면 매도시점, 88% 수준이면 매수시점."
+      },
+      {
+        "[계산식]" : "이격도 = (C ÷ MA(C,기간)) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "DPO",
+    "contents" : [
+      {
+        "[개요]" : "DPO(Detrended Price Oscillator)\nDPO(가격,기간);"
+      },
+      {
+        "[설명]" : "글자 의미 그대로 가격에서의 추세를 제거하는 지표이다. 그리고 Detrended Price는 주가의 싸이클과 과매도/과매입수준을 보다 쉽게 확인할 수 있는 지표이다.\n\n지표값이 저점에서 높은 값을 보일 때, 상승 전환을 예상할 수 있으며, 지표값이 고점에서 낮은 값을 보일 때, 하락 전환을 예상할 수 있다."
+      },
+      {
+        "[계산식]" : "Shift = 기간 ÷ 2 + 1;\n\nDPO = C(Shift) - Sum(C,기간) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "DX",
+    "contents" : [
+      {
+        "[개요]" : "DX(Directional Movement)\n\nDX(기간);"
+      },
+      {
+        "[설명]" : "Directional Movement System은 Welles Wilder에 의해 개발된 추세지표로 그의 저서인 New Concepts in Technical Trading System에서 소개되었다.\n\nDX는 +DI와 -DI선의 차이(폭)을 선으로 표시한 것이다."
+      },
+      {
+        "[계산식]" : "DX = (PDI - MDI) ÷ (PDI + MDI) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "EnergyIndex",
+    "contents" : [
+      {
+        "[개요]" : "EnergyIndex_Buy(기간);\n\nEnergyIndex_Sell(기간);"
+      },
+      {
+        "[설명]" : "업종(시장)이나 종목에서 현재 에너지가 집중되는지 분산되는지를 파악하기 위한 지표로 상승에너지와 하락에너지를 평가하여 주가의 상승 및 하락여부를 파악한다.\n\n매수에너지가 68%이하이고, 매도에너지가 130%이상일 때, 개별종목이나 시장이 침체를 보이는 것으로 판단하여 기술적 반등을 기대하여 매수를 고려하게 되고, 매수에너지가 330%이상이고, 매도에너지가 35%이하일 때, 개별종목이나 시장이 과열될 것으로 판단하여 매도를 고려한다."
+      },
+      {
+        "[계산식]" : "매수 = n일간 Sum (고가 - 시가) × 100 ÷ n일간 Sum (시가 - 저가)\n\n매도 = n일간 Sum (고가 - 종가) × 100 ÷ n일간 Sum (종가 - 저가)"
+      }
+    ]
+  },
+  {
+    "title" : "ErayBull",
+    "contents" : [
+      {
+        "[개요]" : "ErayBull(Elder Ray Bull)\n\nErayBull(기간);"
+      },
+      {
+        "[설명]" : "Elder Ray는 1989년 Dr. Alexander Elder가 개발한 지표이다. 병원의 의사들은 사람의 신체 내부의 상태나 뼈의 이상 여부를 진단하기 위해 X-ray를 사용한다. 이와 같은 원리를 증권시장 분석에 응용한 것이 Elder Ray다. 이 지표는 주가에 영향을 미치는 매수와 매도세의 힘을 파악하기 위하여 이 지표를 개발하였다.\n\nElder Ray는 추세지표와 진동자로 구성되어 있다. 즉, 추세지표인 지수 이동평균선(EMA)과 진동자인 강세력(Bull Power)과 약세력(Bear Power)이다. BrayBear는 그중 강세력(Bull Power)에 해당된다.\n\n보편적으로 Bear Power가 0이하일 때 매수를 하거나 Bull Power가 0이상일 때 매수를 한다."
+      },
+      {
+        "[계산식]" : "ErayBull = High - EMA(C, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "ErayBear",
+    "contents" : [
+      {
+        "[개요]" : "ErayBear(Elder Ray Bear)\n\nErayBear(기간);"
+      },
+      {
+        "[설명]" : "Elder Ray는 1989년 Dr. Alexander Elder가 개발한 지표이다. 병원의 의사들은 사람의 신체 내부의 상태나 뼈의 이상 여부를 진단하기 위해 X-ray를 사용한다. 이와 같은 원리를 증권시장 분석에 응용한 것이 Elder Ray다. 이 지표는 주가에 영향을 미치는 매수와 매도세의 힘을 파악하기 위하여 이 지표를 개발하였다.\n\nElder Ray는 추세지표와 진동자로 구성되어 있다.즉, 추세지표인 지수 이동평균선(EMA)과 진동자인 강세력(Bull Power)과 약세력(Bear Power)이다. BrayBear는 그중 약세력(Bear Power)에 해당된다.\n\n보편적으로 Bear Power가 0이하일 때 매수를 하거나 Bull Power가 0이상일 때 매수를 한다."
+      },
+      {
+        "[계산식]" : "ErayBear = Low - EMA(C, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "IMI",
+    "contents" : [
+      {
+        "[개요]" : "IMI (Intraday Momentum Index)\n\nIMI(기간);"
+      },
+      {
+        "[설명]" : "IMI는 RSI와 비슷하게 보이는 지표이나, 시가와 종가를 사용하고 RSI는 종가와 이전종가를 사용한다.\n\nIMI 값이 70 이상인 경우는 과매수 상태이고, 30이하인 경우에는 과매도 상태이다."
+      },
+      {
+        "[계산식]" : "If C > O then\n  UpSum = UpSum(-1) + (C - O)\nelse\n  DownSum = DownSum(-1) + (O - C)\n\nIMI = 100 × (UpSum ÷ (UpSum + DownSum))"
+      }
+    ]
+  },
+  {
+    "title" : "MACD",
+    "contents" : [
+      {
+        "[개요]" : "MACD(Moving Average Convergence & Divergence)\n\nA = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)"
+      },
+      {
+        "[설명]" : "MACD는 Gerald Appel이 System and Forecasts라는 책자에서 소개한 지표이다. Gerald Appel에 의하여 창안된 MACD는 Granville의 법칙 이래 오늘날 시장에서 가장 많이 참고로 하는 훌륭한 지표이다. Granvill은 주가와 이동평균의 교차, 이동평균과 이동평균의 교차점을 매매타이밍으로 삼았다. 그러나 Appel은 두 이동평균의 폭이 좁아지고 넓어지며 교차하는 것을 이용할 수 있도록 개선한 지표를 개발해냈다.\n\nMACD 지표는 주식가격에 대한 두 개의 장기, 단기 이동평균선간의 상관관계를 보여주는 운동량 지표이다."
+      },
+      {
+        "[계산식]" : "MACD = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "MACDOscillator",
+    "contents" : [
+      {
+        "[개요]" : "MACDOscillator (Moving Average Convergence and Divergence Oscillator)\n\nMA((MA(가격,단기,이평방법) - MA(가격,장기,이평방법)),시그널기간,이평방법);"
+      },
+      {
+        "[설명]" : "MACDOscillator는 MACD와 Singal의 차이를 이용하여 Bar차트롤 표현하여 MACD 보다 빠른추세 판단을 하는데 도움을 준다."
+      },
+      {
+        "[계산식]" : "MACDOscillator = MACD - MACD_Sig"
+      }
+    ]
+  },
+  {
+    "title" : "MassIndex",
+    "contents" : [
+      {
+        "[개요]" : "MassIndex(기간);"
+      },
+      {
+        "[설명]" : "MI는 Donald Dorsey에 의해 개발되었고 고가와 저가 사이의 변동폭을 계산하여 추세의 전환점을 예측하는데 유용한 지표이다. 주가 변동폭이 커지면 MI는 증가하고 주가 변동폭이 작아지면 MI는 감소하는 특징이 있다.\n\n25일 MI가 27선을 넘어선 후 바로 26.5선을 하향 돌파하는 경우(reversal bulge가 발생)에는 곧 주가 추세의 전환 시점이 임박했음을 의미한다.\n\nReversal bulge가 발생 했을 경우에 9일 지수 이동 평균 선이 단기 하락 추세이면 매수 시점으로, 단기 상승 추세이면 매도 시점으로 판단된다."
+      },
+      {
+        "[계산식]" : "Var1 = EMA(H-L,9) ÷ EMA(EMA(H-L,9),9)\n\nMassIndex = Sum(Var1, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "Momentum",
+    "contents" : [
+      {
+        "[개요]" : "Momentum(가격,기간);"
+      },
+      {
+        "[설명]" : "MOMENTUM은 물리학의 운동법칙을 원용하여 개발한 지표이며, 그 의미는 주어진 기간동안 주가가 변해온 양이 얼마인가를 측정하는 지표이다.\n\nMomentum 지표가 0선을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측\n\nMomentum이 Signal을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측"
+      },
+      {
+        "[계산식]" : "Momentum = C/C(기간) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "NetChangeOscillator",
+    "contents" : [
+      {
+        "[개요]" : "NCO(Net Change Oscillator)\n\nNCO(가격,기간);"
+      },
+      {
+        "[설명]" : "현재의 주가가 상승국면에 진입하고 있는지 하락국면에 진입하고 있는지 과거의 주가와 비교하여 현재시점의 형태를 파악하는 지표이다."
+      },
+      {
+        "[계산식]" : "NCO = 당일종가 - n일전 종가"
+      }
+    ]
+  },
+  {
+    "title" : "PriceOscillator",
+    "contents" : [
+      {
+        "[활용]" : "PriceOscillator(가격,단기,장기,이평방법);"
+      },
+      {
+        "[설명]" : "Price Oscillator는 단기 이동 평균과 장기 이동 평균과의 차이를 분석하여 매매에 이용하는 지표이다.\n\n0을 중심으로 상향돌파 시에 단기이평이 장기이평선을 상향 돌파했다는 의미로 매수시점 0을 중심으로 하향돌파 시에 단기이평이 장기이평선을 하향 돌파했다는 의미로 매도시점 으로 추측한다."
+      },
+      {
+        "[계산식]" : "PO = SlowMA(Price, Period1) - FastMA(Price, Period2)"
+      }
+    ]
+  },
+  {
+    "title" : "PriceOSCPct",
+    "contents" : [
+      {
+        "[활용]" : "PriceOSCPct(Price Oscillator Percent)\n\nPriceOscillatorPct(가격,단기,장기,이평방법);"
+      },
+      {
+        "[설명]" : "Price Oscillator는 단기 이동 평균과 장기 이동 평균과의 차이를 분석하여 매매에 이용하는 지표입니다."
+      },
+      {
+        "[계산식]" : "POP = 100 × (SlowMA(Price,Period1) - FastMA(Price,Period2)) ÷ FastMA(Price,Period2)"
+      }
+    ]
+  },
+  {
+  "title" : "ProjectionBandwidth",
+    "contents" : [
+      {
+        "[활용]" : "ProjectionBandwidth(기간);"
+      },
+      {
+        "[설명]" : "이 지표는 Projection Band지표에 기반을 둔다. Band의 폭에 대한 중간점의 비율이 적은 폭의 값은 밴드가 좁다는 것을 의미하고 큰 폭의 값은 밴드가 넓다는 것을 의미한다.\n\n즉, 밴드폭은 변동성의 측정값이다."
+      },
+      {
+        "[계산식]" : "HiSlope = 고가의 N일 선형회귀선 기울기\n\nLowSlope = 저가의 N일 선형회귀선 기울기\n\nHiBand = 최대값 N일간의(고가[-x] + b × χ)\n\nLowBand = 최저값 N일간의 (저가[-x] + b × χ)\n\nPBw = 200 × (HiBand-LowBand) ÷ (HiBand+LowBand)"
+      }
+    ]
+  },
+  {
+  "title" : "ProjectionOscillator",
+    "contents" : [
+      {
+        "[활용]" : "ProjectionOscillator(기간1,기간2);"
+      },
+      {
+        "[설명]" : "이 지표는 Projection Band지표에 기반을 둔다. OSC값은 종가가 밴드내에서 비율로서 어디에 위치해있는지를 나타낸다. 그러므로 OSc값 50은 종가가 밴드의 중간에 있다는 것을 의미한다.\n\n100의 값은 종가가 TopBand에 있는 것이고 0값은 종가가 LowBand에 있다는 뜻"
+      },
+      {
+        "[계산식]" : "HiSlope = 고가의 N일 선형회귀선 기울기\n\nLowSlope = 저가의 N일 선형회귀선 기울기\n\nHiBand = 최대값 N일간의(고가[-x] + b × χ)\n\nLowBand = 최저값 N일간의 (저가[-x] + b × χ)\n\nPBosc = 100 × (C-LowBand) ÷ (HiBand-LowBand)"
+      }
+    ]
+  },
+  {
+    "title" : "PVO",
+    "contents" : [
+      {
+        "[활용]" : "PVO(Percentage Volume Oscillator)\n\nPVO(단기,장기,이평방법);"
+      },
+      {
+        "[설명]" : "Percentage Volume Oscillator(PVO)는 두 거래량의 이동평균의 차이를 비율로 나타낸 것이다.\n\nPVO는 최대 100의 값을 가지지만, 최소값은 정해진 값이 없다."
+      },
+      {
+        "[계산식]" : "PVO = 100 × (EMA(V,26) - EMA(V,12)) ÷ EMA(V,26)"
+      }
+    ]
+  },
+  {
+    "title" : "PriceROC",
+    "contents" : [
+      {
+        "[활용]" : "PriceROC(Price Rate Of Change)\n\nROC(가격,승수,기간);"
+      },
+      {
+        "[설명]" : "당일종가와 n일전 주가 사이의 차이를 가격변화율로 나타낸 지표이다. 당일 주가가 n일전 대비 상승추세인지 하락추세인지를 분석할 수 있다.\n\nPrice ROC가 0값을 기준으로 양의 값이면 상승 추세로, 음의 값이면 하락 추세로 인식한다.\n\nPrice ROC가 높이 올라갈수록 주가는 과다매수 상태를 나타내고, Price ROC가 낮게 내려갈수록 주가는 과다매도 상태를 나타낸다."
+      },
+      {
+        "[계산식]" : "PriceRoc = (C - C(n)) ÷ C(n) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "LinearRegressionSlope",
+    "contents" : [
+      {
+        "[활용]" : "LRS(Linear Regression Slope)\n\nRegressionSlopeMv(가격,기간);"
+      },
+      {
+        "[설명]" : "Linear Regression Indicator(회귀선지표)와 동일한 방법으로 과거 일정기간을 대상으로 매일 직선회귀선을 계산하고 각 일자의 직선회귀 기울기를 이어서 지표화한 것이 LinearRegressionSlope이다. 직선회귀기울기는 단위기간변화에 따라 가격이 얼마나 변화할 것으로 기대되는지를 보여준다.\n\n직선회귀기울기를 해석할 경우 R-squared를 동시에 분석하는 것이 좋다. 이는 직선회귀기울기가 추세의 대략적인 방향을 제시하는 반면 R-squared는 추세의 강도에 관련된 정보를 제공하기 때문이다. R-squared값이 높다는 것은 직선회귀기울기가 가파른 상승 혹은 하락 기울기를 가짐을 의미한다.\n\n직선회귀기울기가 처음으로 의미있는 양의 값을 갖게 되는 시점을 매수포지션 설정시점으로 활용할 수 있다. 반면 기울기가 의미있는 하락기울기로 변하게 되는 시점을 매수포지션을 청산하거나 매도포지션을 설정하는 시점으로 활용할 수 있다."
+      },
+      {
+        "[계산식]" : "Υ = aχ + b\n\nLinearRegressionConst = RegressionSlopeMv(가격,기간);"
+      }
+    ]
+  },
+  {
+    "title" : "RMI",
+    "contents" : [
+      {
+        "[활용]" : "RMI(Relative Momentum Index)\n\nif((avg(if(C < C(적용기간), (C(적용기간) - C), 0), 이평기간)) ≦ 0, 100, (100 - (100 ÷ (1 + ((avg(if(C > C(적용기간), (C - C(적용기간)), 0), 이평기간)) ÷ (avg(if(C < C(적용기간), (C(적용기간) - C), 0), 이평기간)))))))"
+      },
+      {
+        "[설명]" : "- RSI(상대강도지수)\n과매수/과매도분석, 괴리분석, 차트분석 등을 사용하여 해석하지만 불규칙하게 움직이는 경향이 있어서 어느 정도까지는 주관적 분석을 피할 수 없다. 그러므로 경우에 따라서는 잘못된 매매신호를 인식하게 되는 문제점이 있다. 이러한 문제점을 해결하기 위해 로저 알트만(Roger Altman)이 상대강도지수에 모멘텀 개념을 넣어 보다 해석이 쉬운 지표로 전환한 것이 상대모멘텀지수이다.\n\n- 괴리도(Divergence)분석\n가격은 신고가에 도달했으나 RSI는 이전보다 낮은 고점을 기록하고 하락할 때에는 약세괴리로 강력한 매도신호를 나타내고, 가격은 신저가로 하락했으나 RSI는 이전보다 높은 저점을 기록하고 상승할 때에는 강세괴리로 강력한 매수신호를 나타낸다.\n\n- 패턴 분석\n추세선, 저지와 저항, 이중바닥 등 전통적인 차트 분석 기법을 RSI에 적용하여 분석하는 것으로, RSI가 주가에 선행하여 이러한 패턴을 완성하기 때문에 유용성이 높다.\n\n- 과매수/과매도\nRSI는 30 이하이면 과매도(Oversold) 상태, 70 이상이면 과매수(Overbought) 상태를 나타낸다. RSI가 과매도선 아래에서 위로 상승할 때 매수하고, 과매수선 위에서 아래로 하락할 때 매도한다."
+      },
+      {
+        "[계산식]" : "Var1 = if(C < C(기간1), (C(기간1) - C), 0);\n\nVar2 = if(C > C(기간1), (C - C(기간1)), 0);\n\nVar3 = 100 - (100 ÷ (1 + ((avg(Var2, 기간2)) ÷ (avg(Var1, 기간2)));\n\nRMI = if(avg(Var1, 기간2) ≦ 0, 100, Var3)"
+      }
+    ]
+  },
+  {
+    "title" : "RSI",
+    "contents" : [
+      {
+        "[활용]" : "RSI (Relative Strength Index)\n\nRSI(가격,기간);"
+      },
+      {
+        "[설명]" : "RSI 는 가격움직임의 절대값에 최근 가격상승움직임의 비율을 계산한 값으로 표현하고 범위는 0에서 100까지이다. 추세의 강도를 표시하여 향후 추세전환 시점이 예측가능하다.\n\nRSI 는 70이 넘었을때 과매수, 30아래로 내려갈때 과매도상황으로 해석한다."
+      },
+      {
+        "[계산식]" : "Up = if (가격 > 가격(1), 가격 - 가격(1), 0)\n\nDn = if (가격 ≦ 가격(1), 가격(1) - 가격, 0)\n\nUpAVG = (UpAVG × (기간 - 1) + Up) ÷ 기간\n\nDnAVG = (DnAVG × (기간 - 1) + Dn) ÷ 기간\n\nRSI = 100 × UpAVG ÷ (UpAVG + DnAVG)"
+      }
+    ]
+  },
+  {
+    "title" : "RWI",
+    "contents" : [
+      {
+        "[활용]" : "RWI (Random Walk Index)\n\nRWI_Hi(기간);\n\nRWI_Lo(기간);"
+      },
+      {
+        "[설명]" : "RWI는 직선과 비교해서 안건이 추세이거나, 무작위적인 거래영역에 존재하는 경우 결정된다. 무작위적 가격움직임이 늘어날수록, RWI 의 변동이 늘어난다.\n\n짧은 주기의(2 에서 7) RWI 는 과매수/과매도 지표이고, 긴 주기의(8 에서 64) RWI 는 추세지표이다."
+      },
+      {
+        "[계산식]" : "고가 = (High - Low[n - 1]) ÷ (ATR × sqrt(n))\n\n저가 = (High[n - 1] - Low) ÷ (ATR × sqrt(n))"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticFast",
+    "contents" : [
+      {
+        "[활용]" : "StochasticFast(기간1);\n\nMA(StochasticFast(기간1),기간2,이평방법);"
+      },
+      {
+        "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 일정 기간 동안의 주가 변동폭 중에서 금일 종가의 위치를 백분율로 나타내는 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다.\n\n시장가격이 상승추세에 있다면 현재가격은 최고가 부근에 위치할 가능성이 높고, 하락추세에 있다면 현재가는 최저가 부근에서 형성될 가능성이 높다는 것에 착안하여 만들어진 지표이다.\n\n80이상일때를 매도시점으로, 20이하일때를 매수시점으로 추측한다.\n\n%K 값이 %D 값을 상향 돌파하여 상승하게 되면 매수 신호이고 하향 돌파하여 하락하게 되면 매도 신호로 추측한다.\n\n주가와 %K 추세 사이에 Divergence가 발생하면 곧 추세 전환이 발생한다는 신호이다."
+      },
+      {
+        "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\n\nStochasticFastK = if(Var1 != 0, Var2, 0)\nStochasticFastD = MA(StochasticFastK, 기간2)"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticSlow",
+    "contents" : [
+      {
+        "[활용]" : "StochasticSlow(기간1,기간2,이평방법);\n\nMA(StochasticSlow(기간1,기간2,이평방법),기간3, 이평방법);"
+      },
+      {
+        "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 일정 기간 동안의 주가 변동폭 중에서 금일 종가의 위치를 백분율로 나타내는 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다.\n\n시장가격이 상승추세에 있다면 현재가격은 최고가 부근에 위치할 가능성이 높고, 하락추세에 있다면 현재가는 최저가 부근에서 형성될 가능성이 높다는 것에 착안하여 만들어진 지표이다.\n\n80이상일때를 매도시점으로, 20이하일때를 매수시점으로 추측한다.\n\n%K 값이 %D 값을 상향 돌파하여 상승하게 되면 매수 신호이고 하향 돌파하여 하락하게 되면 매도 신호로 추측한다.\n\n주가와 %K 추세 사이에 Divergence가 발생하면 곧 추세 전환이 발생한다는 신호이다."
+      },
+      {
+        "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\nVar3 = MA(Var2, 기간2)\n\nStochasticSlowK = if(Var1 != 0, Var3, 0)\nStochasticSlowD = MA(StochasticSlowK, 기간3)"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticFast_OSC",
+    "contents" : [
+      {
+        "[활용]" : "StochasticOscillator(기간1,기간2,이평방법);"
+      },
+      {
+        "[설명]" : "StochasticFast_OSC 는 StochasticFast의 K 와 D의 차이를 나타내는 Oscillator이다."
+      },
+      {
+        "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\n\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\n\nStochasticFastK = if(Var1 != 0, Var2, 0)\n\nStochasticFastD = MA(StochasticFastK, 기간2)\n\nStochasticFast_OSC = StochasticFastK - StochasticFastD;"
+      }
+    ]
+  },
+  {
+    "title" : "StochRSI",
+    "contents" : [
+      {
+        "[활용]" : "StochRSI(가격,기간);"
+      },
+      {
+        "[설명]" : "Tushard Chande와 Stanley Kroll에 의해 개발된 지표로서, 일정기간동안의 RSI 상대강도를 측정할 수 있는 오실레이터이다. 이 지표는 스토케스틱 공식에 RSI를 대입하여 계산한다. 이 오실레이터는 0과 100사이에서 움직인다."
+      },
+      {
+        "[계산식]" : "Var1 = RSI(기간1) - lowest(RSI(기간1), 기간2);\n\nVar2 = highest(RSI(기간1), 기간2) - lowest(RSI(기간1), 기간2);\n\nStochRSI = (Var1 ÷ Var2) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "SwingIndex",
+    "contents" : [
+      {
+        "[활용]" : "SwingIndex(LimitMove);"
+      },
+      {
+        "[설명]" : "Swing Index는 최근의 가격(시가, 고가, 저가, 종가)과 종전의 가격과의 관계를 비교하여 기초물의 \"Real\"가격을 고립 시키기 위해 연구 한 것임.\n\nSwing Index는 실제 가격을 확인하려고 시도한다.\n\n이 지수는 자체로 해석하기가 어렵고, 일반적으로 Accumulation Swing index를 형성하는 표현으로 사용된다."
+      },
+      {
+        "[계산식]" : "Var1 = ABS((H - C(1)) + 0.5 × (L - C(1)) + 0.25 × (C(1) + O(1)));\n\nVar2 = ABS((L - C(1)) + 0.5 × (H - C(1)) + 0.25 × (C(1) + O(1)));\n\nVar3 = ABS((H - L) + 0.25 × (C(1) + O(1)));\n\nMax((H - C(1)), (L - C(1)), (H - C)) == (H - C(1)) : R = Var1\n\nMax((H - C(1)), (L - C(1)), (H - C)) == (L - C(1)) : R = Var2\n\nMax((H - C(1)), (L - C(1)), (H - C)) == (H - C) : R = Var3\n\nK = Max((H - C(1)), (L - C(1)));\n    (때로는 K = Max((H(1) - C), (L(1) - C)) 이렇게도 사용됨)\n\nSwingIndex = (((C - C(1)) + 0.5 × (C - O) + 0.25 × (C(1) - O(1))) ÷ R) × (K ÷ L) × (50)"
+      }
+    ]
+  },
+  {
+    "title" : "TSI",
+    "contents" : [
+      {
+        "[활용]" : "TSI(True Strength Index)\n\nTSI(가격,기간1,기간2);"
+      },
+      {
+        "[설명]" : "TSI는 RSI의 변형 중 하나 이다.\n\nTSI 는 이중 평활 지수이동평균을 이용하여 불안정한 가격변동과 추세변화지점을 제거한 가격 탄력성이다."
+      },
+      {
+        "[계산식]" : "TSI = EMA(EMA(C - C[-1])) ÷ EMA(EMA(|C - C[-1]|))"
+      }
+    ]
+  },
+  {
+    "title" : "UltimateOscillator",
+    "contents" : [
+      {
+        "[활용]" : "UltimateOscillator(기간1,기간2,기간3);"
+      },
+      {
+        "[설명]" : "Ultimate Oscillator는 매수와 매도의 영향에 민감하고 안정적인 신호를 제공한다. 신호들은 오실레이터 추세를 벗어나거나 나뉘어 과매수와 과매도 수준을 기반으로한다.\n\nWilliams는 오실레이터의 값을 산출할시에 사용되는 주기의 수에 따라 크게 달라질수 있다고 알렸다. 기본적인 기간은 7과 14와 28이고 값의 범위는 0에서 100이다. - 70 이 넘어가면 과매수상태 이고, 30 이하이면 과매도상태 이다."
+      },
+      {
+        "[계산식]" : "UltimateOscillator = UltimateOscillator(기간1,기간2,기간3)"
+      }
+    ]
+  },
+  {
+    "title" : "VolumeROC",
+    "contents" : [
+      {
+        "[활용]" : "VolumeROC(Volume Rate of Change)\n\nVROC(승수,기간);"
+      },
+      {
+        "[설명]" : "VROC는 당일의 거래량과 n일전 거래량사이의 차이를 퍼센트(Percentage)개념으로 도출한 지표이다. 이 지표는 Oscillator의 개념과 Momentum의 개념을 혼합한 개념이기도 하다. PROC의 주가가격에 거래량만 대체 시키면 된다. Volume ROC는 거래량 변화의 속도를 나타낸다. 급격한 지표값 증가를 나타내는 경우 가격의 Break Out 지점을 나타낸다."
+      },
+      {
+        "[계산식]" : "VROC = (V - V(n)) ÷ V(n) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "WilliamsR",
+    "contents" : [
+      {
+        "[활용]" : "(highest(H,기간) - C) ÷ (highest(H, 기간) - lowest(L, 기간)) × (-100)"
+      },
+      {
+        "[설명]" : "Williams %R은 거칠게 그려진 Stochastic %K 와 비슷하다. 값의 범위는 0에서 100까지로, 차트에 그려질때는 거꾸로 그려진다. 0부터 -100까지의 범위로 그려진다.\n\n-100 ~ -80 사이에서 과매도구간, -20 ~ 0 사이를 과매수구간으로 추측한다.\n\n%R은 매매신호가 발생했더라도 추세를 확인한 후에 매매에 임하여야 하며, 이를 위하여 ADX처럼 추세강도를 나타내 주는 지표와 같이 분석하여야 한다."
+      },
+      {
+        "[계산식]" : "WilliamsR = 100 × (Highest(H, 기간) - C) ÷ (Highest(H, 기간) - Lowest(L, 기간))"
+      }
+    ]
+  },
+  {
+    "title" : "Band%B",
+    "contents" : [
+      {
+        "[활용]" : "Band%B(BollingerBands %)\n\nUpInput = Bollinger_Up(가격,승수,기간,이평방법);\n\nDnInput = Bollinger_Dn(가격,승수,기간,이평방법);\n\nMidInput = Bollinger_Mid(가격,기간,이평방법);\n\n(C - DnInput) ÷ (UpInput - DnInput) × 100;"
+      },
+      {
+        "[설명]" : "Band %b는 Bollinger Bands에서 파생된 지표로 Bollinger Bands의 오실레이터 역할을 하며 가격이 밴드의 어느 위치에 있는가를 파악하는 지표이다. 이 지표값이 100일때가 가격이 상한밴드에 있다는 것이고, 0일때는 가격이 하한밴드에 있다는 것을 말한다. 즉, 이 Band %b는 가격이 과열과 침체국면을 확인하는데 사용되는 지표이며 Bollinger Bands와 병행하여 사용한다.\n\n분석은 과열 침체 구역을 설정하여 매매의 신호로 이용할 수 있으며, 다른 오실레이터의 분석과 마찬가지로 Divergence에 의한 추세전환을 예상할 수도 있다.\n\nBollinger Bands 폭이 축소되어 확산되는 시점에 Band %b가 저점에서 상향하면 매수하고, Bollinger Bands 폭이 확산되는 시점에 Band %b가 고점에서 하향하면 매도의 시점으로 본다."
+      },
+      {
+        "[계산식]" : "Up = Bollinger_Up(가격,승수,기간,이평방법);\n\nDn = Bollinger_Dn(가격,승수,기간,이평방법);\n\nBand%B = (종가 - Dn) ÷ (Up - Dn) × 100;"
+      }
+    ]
+  },
+  {
+    "title" : "PriceChangeLine",
+    "contents" : [
+      {
+        "[활용]" : "A = Max(Max(H - C(1), C(1) - L), H - L);\n\nB = if(A == 0, 0, (O - C(1)) ÷ A);\n\nsum(B)"
+      },
+      {
+        "[설명]" : "시가형성 세력의 강도를 누적합산 한 값으로 나타낸 지표이다."
+      },
+      {
+        "[계산식]" : "Var1 = O - C(1);\n\nVar2 = Max(Max(H - C(1), C(1) - L), H - L);\n\nPriceChangeLine = sum(Var1 ÷ Var2)"
+      }
+    ]
+  },
+  {
+  "title" : "BPDL_HiLoIndex",
+    "contents" : [
+      {
+        "[활용]" : "((Log(C ÷ ((((Highest(H(기간), 기간) + Lowest(L(기간), 기간)) ÷ 2))))) + 1) × 50"
+      },
+      {
+        "[설명]" : "추세강도를 측정하는 지표의 일종"
+      },
+      {
+        "[계산식]" : "Var1 = (Highest(H(기간), 기간) + Lowest(L(기간), 기간)) ÷ 2;\n\nVar2 = Log(C ÷ Var2);\n\nBPDL_HiLoIndex = (Var2 + 1) × 50"
+      }
+    ]
+  },
+  {
+    "title" : "BPDL_RSI",
+    "contents" : [
+      {
+        "[활용]" : "(((C - C(기간)) ÷ (MovingAverage((abs(C - C(1)) × 기간), 기간, 이평방법))) + 1) × 50"
+      },
+      {
+        "[설명]" : "RSI지표의 일종"
+      },
+      {
+        "[계산식]" : "Var1 = C - C(기간);\n\nVar2 = MovingAverage(abs(C - C(1)) × 기간, 기간, 이평방법);\n\nBPDL_RSI = ((Var1 ÷ Var2) + 1) × 50"
+      }
+    ]
+  },
+  {
+    "title" : "BPDL_TrendFilter-Raw",
+    "contents" : [
+      {
+        "[활용]" : "sum(If(sma(C - C(1), 기간) > 0, 1, -1) × Pow((sma(Pow(C - C(1), 2), 기간) + 1), 0.5) + Pow((Pow(C - C(1), 2) + 1), 0.5) × If(C > C(1), 1, -1))"
+      },
+      {
+        "[설명]" : "주가의 추세를 파악하는데 용이한 지표"
+      },
+      {
+        "[계산식]" : "Var1 = sma((C - C(1)), 기간);\n\nVar2 = Pow(C - C(1), 2);\n\nVar3 = If(Var1 > 0), 1, -1) × Pow((sma(Var2, 기간) + 1), 0.5);\n\nVar4 = Pow((Var2 + 1), 0.5) × (If((C > C(1)), 1, -1));\n\nBPDL_TrendFilter-Raw = Sum(Var3 + Var4)"
+      }
+    ]
+  },
+  {
+    "title" : "Morris_MixedMomentum",
+    "contents" : [
+      {
+        "[활용]" : "(C + C(2)) - (C(7) + C(9))"
+      },
+      {
+        "[설명]" : "이 지표의 개념은 종가와 2일전의 종가의 그룹과 7일전의 종가와 9일전의 종가의 그룹간의 모멘텀을 비교하는 데 있다."
+      },
+      {
+        "[계산식]" : "Morris_MixedMomentum = (C + C(2)) - (C(7) + C(9))"
+      }
+    ]
+  },
+  {
+    "title" : "MACD_SAR",
+    "contents" : [
+      {
+        "[활용]" : "M = MA(가격,단기,이평방법) - MA(가격,장기,이평방법);\n\nMS = EMA(M, 시그널기간);\n\nS = PSAR(가속변수, 최대가속값);\n\nif(M>MS, if(S<가격,2,1), if(S>가격,-2,-1));"
+      },
+      {
+        "[설명]" : "MACD와 파라볼릭 SAR가 결합한 일종의 binary wave지표이다. MACD 와 MACD 시그널과의 관계와, 파라볼릭과 종가와의 관계를 통해 매수와 매도 신호를 각각 +1, -1로 나타낸다. 두 지표 중 하나만 매수 신호를 나타낼 때는  1 또는 -1, 모두 매도 신호일 때는 -2를 표시, 모두 매수 신호일 때는 2로 표시한다."
+      },
+      {
+        "[계산식]" : "MACD = MA(가격,단기,이평방법) - MA(가격,장기,이평방법);\n\nMACD-Sig = EMA(MACD, 이평방법);\n\nSig = PSAR(가속변수, 최대가속값);\n\nMACD_SAR = if(MACD>MACD-Sig, if(Sig<가격,2,1), if(Sig>가격,-2,-1))"
+      }
+    ]
+  },
+  {
+    "title" : "OnBalancePrice",
+    "contents" : [
+      {
+        "[활용]" : "Sum(if(C > C(1), 1, if(C < C(1), -1, 0)))"
+      },
+      {
+        "[설명]" : "전일과 금일을 비교하여 상승시 1을, 하락시 -1을 누적합산하여 나타낸 지표로서, 추세를 나타낸다."
+      },
+      {
+        "[계산식]" : "OnBalancePrice = Sum(if(C > C(1), 1, if(C < C(1), -1, 0)))"
+      }
+    ]
+  },
+  {
+    "title" : "ArmsEaseOfMovement",
+    "contents" : [
+      {
+        "[활용]" : "EMA(((H + L) ÷ 2 - (H(1) + L(1)) ÷ 2) ÷ (V ÷ (H - L)), 기간)"
+      },
+      {
+        "[설명]" : "이큐볼륨 차트를 만든 Richart Arms가 만든 지표이다.\n\n거대 거래량은 큰폭의 고가와 저가의 간격이 없으면 발생하지 않으며 이때는 움직이기가 어렵다. 다른 말로 하자면, 거래량이 적고, 고가와 저가의 범위가 넓다면, 이를 쉽게 움직일수 있는 날이다 라고 칭한다."
+      },
+      {
+        "[계산식]" : "Var1 = ((H + L) ÷ 2 - (H(1) + L(1)) ÷ 2);\n\nVar2 = V ÷ (H - L);\n\nArmsEaseOfMovement = EMA(Var1 ÷ Var2, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "BandWidth",
+    "contents" : [
+      {
+        "[활용]" : "Up = MovingAverage(가격, 기간, 이평방법) + 승수 × StdDevMv(가격, 0, 기간);\n\nDown = MovingAverage(가격, 기간, 이평방법) - 승수 × StdDevMv(가격, 0, 기간);\n\nMid = MovingAverage(가격, 기간, 이평방법);\n\n(Up - Down) ÷ Mid"
+      },
+      {
+        "[설명]" : "Band Width는 Bollinger bands의 폭을 계산하여 향후 주가의 변동성을 예측하는데 사용된다.\n\n기본적으로 Band Width의 값이 과도하게 커지거나 작아지면 조만간 추세가 전환될 수 있다는 것을 예측할 수가 있다."
+      },
+      {
+        "[계산식]" : "Band Width = (BollingerBandUp - BollingerBandDown) ÷ BollingerBandMid"
+      }
+    ]
+  },
+  {
+    "title" : "EOM",
+    "contents" : [
+      {
+        "[활용]" : "EOM(Ease Of Movement)\n\nMovingAverage(((H+L) ÷ 2-(H(1)+L(1)) ÷ 2) ÷ (V ÷ (H-L)),기간,이평방법)"
+      },
+      {
+        "[설명]" : "EOM은 거래량과 주가의 상관 관계를 나타내는 지표입니다.\n\nEOM은 거래량이 적은 상태에서 주가가 상승 중일 때는 높은 수치를 나타내며 거래량이 적은 상태에서 주가가 하락 중일 때는 낮은 수치를 나타납니다.\n\n주가의 변동이 거의 없거나 변동은 있는데 거래량이 많은 경우 EOM의 값은 거의 0에 가깝습니다.\n\nEOM이 0선을 상향 돌파하면 매수 신호, 하향 돌파하면 매도 신호를 나타냅니다."
+      },
+      {
+        "[계산식]" : "Var1 = ((H+L) ÷ 2-(H(1)+L(1)) ÷ 2) ÷ (V ÷ (H-L));\n\nEOM = MovingAverage(Var1,기간,이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "HighLowOscillator",
+    "contents" : [
+      {
+        "[활용]" : "EMA((H - C(1)) ÷ (H - L), 기간)"
+      },
+      {
+        "[설명]" : "고가와 저가의 범위 내에서 종가가 차지하는 비율을 지수이동 평균한 값이다.(다이버전스 활용)"
+      },
+      {
+        "[계산식]" : "HighLowOscillator = EMA((H - C(1)) ÷ (H - L), 기간);"
+      }
+    ]
+  },
+  {
+    "title" : "Morris_DailyPressure",
+    "contents" : [
+      {
+        "[활용]" : "EMA((((H - O) + (C - L)) ÷ (2 × H - 2 × L)), 기간)"
+      },
+      {
+        "[설명]" : "가격과 현재의 활동성과의 관계를 보는 지표"
+      },
+      {
+        "[계산식]" : "Var1 = ((H - O) + (C - L)) ÷ (2 × H - 2 × L);\n\nMorris_DailyPressure = EMA(Var1, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "NorthPriceActionLine",
+    "contents" : [
+      {
+        "[활용]" : "A = if(H-L== 0, 0, H - L);\n\nB = if(A == 0, 0, (C - O) ÷ A);\n\nSum(B)"
+      },
+      {
+        "[설명]" : "봉의 전체길이에서 봉의 body가 차지하는 비율을 누적합산한 값이다"
+      },
+      {
+        "[계산식]" : "NorthPriceActionLine = sum((C - O) ÷ (H - L))"
+      }
+    ]
+  },
+  {
+    "title" : "Reverse",
+    "contents" : [
+      {
+        "[활용]" : "if(sum(C - C(1), Period1) > 0, sum(C - C(1), Period1) × (-100) ÷ sum(if(C > C(1), C - C(1), 0), Period1), sum(C - C(1), Period1) × 100 ÷ sum(if(C < C(1), C - C(1), 0), Period1))\n\nif(sum(C - C(1), Period2) > 0, sum(C - C(1), Period2) × (-100) ÷ sum(if(C > C(1), C - C(1), 0), Period2), sum(C - C(1), Period2) × 100 ÷ sum(if(C < C(1), C - C(1), 0), Period2))"
+      },
+      {
+        "[설명]" : "주가는 상승과정에서 점차 에너지를 소비하고 하락과정에서 에너지를 축적한다는 점에 착안하여 만든 지표입니다.\n\n주가가 하락하는 경우는 에너지의 축적도가 높아지게 되고 주가가 상승하는 경우는 에너지가 감소하게 된다는 의미로 볼 때, 주가와 역 방향으로 움직이게 되어 REVERSE지수로 명명하게 되었습니다.\n\nReverse(12)와 Reverse(24)가 +75 ~ +100 사이에 두선이 모이면 매입\n\nReverse(12)와 Reverse(24)가 -75 ~ -100 사이에 두선이 모이면 매도"
+      },
+      {
+        "[계산식]" : "Var1(기간) = sum(C - C(1), 기간) × (-100) ÷ sum(if(C > C(1), C - C(1), 0), 기간)\n\nVar2(기간) = sum(C - C(1), 기간) × 100 ÷ sum(if(C < C(1), C - C(1), 0), 기간)\n\n단기누적 = if(sum(C - C(1), 12) > 0, Var1(12), Var2(12))\n\n장기누적 = if(sum(C - C(1), 24) > 0, Var1(24), Var2(24))"
+      }
+    ]
+  },
+  {
+    "title" : "VelocityIndex",
+    "contents" : [
+      {
+        "[활용]" : "(SMA(((((L ÷ 2) + O) ÷ (O + H + L)) × 100), 기간)) - 50"
+      },
+      {
+        "[설명]" : "추세 지속에 대한 여부를 가늠하기 위한 지표"
+      },
+      {
+        "[계산식]" : "VelocityIndex = (SMA(((((L ÷ 2) + O) ÷ (O + H + L)) × 100), 기간)) - 50"
+      }
+    ]
+  },
+  {
+    "title" : "VolumeOscillator",
+    "contents" : [
+      {
+        "[활용]" : "A = movingaverage(V, 기간1, 이평방법);\n\nB = movingaverage(V, 기간2, 이평방법);\n\n(A - B) ÷ A × 100"
+      },
+      {
+        "[설명]" : "Volume Oscillator는 단기 거래량 이동 평균과 장기 거래량 이동 평균과의 차이를 분석하여 매매에 이용하는 거래량 지표입니다.\n\nVolume Oscillator가 0선을 상향돌파 하게 되면 단기간의 거래량 증가추세가 장기간에 걸친 거래량 증가추세 보다 더 많이 증가하고 있음을 나타냅니다.\n\n거래량이 감소하면서 주가가 하락하고 거래량이 증가하면서 주가가 상승하게 되면 상승 장세라 하고, 주가가 큰 폭 상승 후 하락하기 시작할 때 거래량이 증가하게 되고 주가가 상승하는 도중 거래량이 감소하게 되면 약세 장세를 나타내는 신호입니다."
+      },
+      {
+        "[계산식]" : "Var1 = SMA(V, 10);\n\nVar2 = SMA(V, 20);\n\nVolumeOscillator = (Var1 - Var2) ÷ Var1 × 100"
+      }
+    ]
+  },
+  {
+    "title" : "BostiansIntradayIntensityIndex",
+    "contents" : [
+      {
+        "[활용]" : "A = if(H==L, 0, H - L);\n\nB = if(A==0, 0, V × ((Pow((C - L), 2) - Pow((H - C), 2)) ÷ A));\n\nsum(B);"
+      },
+      {
+        "[설명]" : "David Bostian에 의해 개발된 지표로, 일일 가격과 거래량관의 상관관계를 측정하는 지표로 오래되었다.\n\n이는 대량으로 거래하는 기관투자자들의 행동을 따라하는 것을 의미한다."
+      },
+      {
+        "[계산식]" : "Var1 = V × ((Pow((C - L), 2) - Pow((H - C), 2)) ÷ (H - L));\n\nBostiansIntradayIntensityIndex = sum(Var1)"
+      }
+    ]
+  },
+  {
+    "title" : "BPDL_ShortTrend",
+    "contents" : [
+      {
+        "[활용]" : "EMA((C - C(기간1)) ÷ (SMA(Abs(C - C(1)), 기간2)), 기간1)"
+      },
+      {
+        "[설명]" : "추세 지표의 일종"
+      },
+      {
+        "[계산식]" : "Var1 = C - C(기간1);\n\nVar2 = SMA(Abs(C - C(1)), 기간2);\n\nBPDL_ShortTrend = EMA(Var1 ÷ Var2, 기간1)"
+      }
+    ]
+  },
+  {
+    "title" : "LinearRegressionConst",
+    "contents" : [
+      {
+        "[활용]" : "RegressionConstMv(가격,기간);"
+      },
+      {
+        "[설명]" : "Linear Regression Indicator(회귀선지표)와 동일한 방법으로 과거 일정기간을 대상으로 매일 직선회귀선을 계산하고 각 일자의 직선회귀 절편을 이어서 지표화한 것이 LinearRegressionConst이다.\n\n직선회귀기울기를 해석할 경우 R-squared를 동시에 분석하는 것이 좋다. 이는 직선회귀기울기가 추세의 대략적인 방향을 제시하는 반면 R-squared는 추세의 강도에 관련된 정보를 제공하기 때문이다. R-squared값이 높다는 것은 직선회귀기울기가 가파른 상승 혹은 하락 기울기를 가짐을 의미한다.\n\n직선회귀기울기가 처음으로 의미있는 양의 값을 갖게 되는 시점을 매수포지션 설정시점으로 활용할 수 있다. 반면 기울기가 의미있는 하락기울기로 변하게 되는 시점을 매수포지션을 청산하거나 매도포지션을 설정하는 시점으로 활용할 수 있다."
+      },
+      {
+        "[계산식]" : "Υ = aχ + b\n\nLinearRegressionConst = RegressionConstMv(가격, 기간);"
+      }
+    ]
+  },
+  {
+    "title" : "이격도(N)",
+    "contents" : [
+      {
+        "[활용]" : "Disparity(가격,기간1);\n\nDisparity(가격,기간2);\n\nDisparity(가격,기간3);\n\nDisparity(가격,기간4);\n\nDisparity(가격,기간5);"
+      },
+      {
+        "[설명]" : "이격도는 주가가 이동 평균 값으로부터 어느 정도 차이가 있는가를 나타내는 지표이다. 그리고 보다 단기적인 투자시점을 포착하기 위한 지표로 지행성지표인 이동평균선의 결점을 보완한 지표이다.\n\n주가는 이동평균선으로부터 멀어지면 언젠가는 다시 이동평균선으로 회귀하려는 경향이 있다.\n\n상승 국면일때 20일 이동 평균인 경우 106% 이상이면 매도시점, 98% 수준이면 매수시점. 60일 이동 평균인 경우 110% 이상이면 매도시점, 98% 수준이면 매수시점\n\n 하강 국면일때 20일 이동 평균인 경우 102% 이상이면 매도시점, 92% 수준이면 매수시점. 60일 이동 평균인 경우 104% 이상이면 매도시점, 88% 수준이면 매수시점."
+      },
+      {
+        "[계산식]" : "이격도 = (C ÷ MA(C,기간)) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "구RSI",
+    "contents" : [
+      {
+        "[활용]" : "RSI (Relative Strength Index)\n\nA = Price;\n\nB = A(1);\n\nM = A - B;\n\nsum(if(M>0,M,0),Period) ÷ sum(if(M>0,M,-M),Period) × 100"
+      },
+      {
+        "[설명]" : "RSI 는 가격움직임의 절대값에 최근 가격상승움직임의 비율을 계산한 값으로 표현하고 범위는 0에서 100까지이다. 추세의 강도를 표시하여 향후 추세전환 시점이 예측가능하다.\n\nRSI 는 70이 넘었을때 과매수, 30아래로 내려갈때 과매도상황으로 해석한다."
+      },
+      {
+        "[계산식]" : "(n일간 상승폭의 합계) ÷ (n일간 상승폭의 합계 = n일간의 하락폭의 합계) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "VPCI",
+    "contents" : [
+      {
+        "[활용]" : "VM = SMA(C, short) ÷ SMA(C, long);\n\nWMA2 = sum(C × V, long) ÷ sum(V, long);\n\nVPC = WMA2 - SMA(C,long);\n\nVPR = sum(C × V, short) ÷ sum(V, short);\n\nVPCI = VPC × VPR × VM;\n\nVPCIS = sum(VPCI × V, MovAvg) ÷ sum(V, MovAvg);\n\nVPCI - VPCIS;"
+      },
+      {
+        "[설명]" : "VPCI지표는 거래량 가중이평을 종가와 누적해서 계산하는 지표로써 거래량이 주가분석에 어떠한 영향을 미치는지 알 수 있다"
+      },
+      {
+        "[계산식]" : "VWMA(Volume Weighted Moving Average - 거래량가중이평)\n\n = ∑(종가x(거래량\/∑기간총거래량));\n\nVPC = 장기VWMA - 장기SMA;\n\nVPR = 단기VWMA\/단기SMA;\n\nVM = 단기평균거래량\/장기평균거래량;\n\nVPCI = VPC x VPR x VM;"
+      }
+    ]
+  },
+  {
+    "title" : "VolumeWeightedAvgPrice",
+    "__comment__" : "[계산식]이 없어서 뺐다.",
+    "contents" : [
+      {
+        "[활용]" : "CumPrice = Sum(가격, 기간);\n\nCumVolume = Sum(V, 기간);\n\nCumPrice × V ÷ CumVolume;"
+      },
+      {
+        "[설명]" : "VWAP지표는 미국 Dolar거래를 분석하기 위해서 사용되는 지표이다. 일반적으로 5분차트를 이용한다.\n\nVWAP = 기간누적 Typical Price × Volume ÷ 기간누적 Volume;\n\n기간누적을 하지 않고 전체 누적을 하려면 수식에서 Sum(V, Period)를 Sum(V)로 하면 된다. 단순히 가격, 거래량을 분석하는 방식이 아닌 가격누적과 거래량 누적을 매일의 거래량을 연산함으로 누적된 거래량과 가격의 추세를 분석하는데 유용하다."
+      }
+    ]
+  },
+  { "title" : "AverageTrueRange",
+    "contents" : [
+      {
+        "[활용]" : "ATR(기간);"
+      },
+      {
+        "[설명]" : "Welles Wilder가 그의 저서인 New Concepts in Technical Trading System에서 변동성을 측정하기 위하여 개발된 ATR의 지표를 통하여 소개되었다. 전일 종가를 기반으로 당일 고가와 저가가 어디에 위치하고 있는지 비교하여 현재의 시장가격이 어느 방향으로 어느 정도 변동했는지를 수치화한 변동성 지표이다.\n\n높은 ATR 값은 투자자의 투매나 주식시장의 공황과 같은 현상 뒤에 시장의 바닥권에서 나타난다. 낮은 ATR 값은 시장의 횡보국면에서 나타난다. ATR은 단기적인 변동성을 측정하는 지표로도 사용하며, 시장의 추세가 움직임이 없는 횡보국면 속에서도 큰 폭의 등락을 거듭하는 경우가 있다."
+      },
+      {
+        "[계산식]" : "TR = Max((H - L), abs(C(1) - H), abs(C(1) - L))\n\nATR = SMA(TR, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "BollingerWidth",
+    "contents" : [
+      {
+        "[활용]" : "BollingerWidth(가격,승수,기간);"
+      },
+      {
+        "[설명]" : "BBW는 Bollinger Bands의 폭을 차트화 한 것이다. Bollinger Bands의 폭이 증가하게 되면 기초자산의 변동성도 증가하고 있음을 알려준다."
+      },
+      {
+        "[계산식]" : "Bollinger Width = Bollinger Upper Band - Bollinger Lower Band"
+      }
+    ]
+  },
+  {
+    "title" : "ChaikinVolatility",
+    "contents" : [
+      {
+        "[활용]" : "ChaikinVolatility(기간);"
+      },
+      {
+        "[설명]" : "이 지표는 Marc Chaikin에 의해 개발되었고 거래범위의 변화의 속도를 나타내며 주가 변동폭을 이용하여 주가의 변동성(Volatility)을 측정하는 지표이다.\n\n고가와 저가의 차이의 증가로 변동을 정의한다. 급격한 증가는 바닥에 가까워지고 있는 상황이고 느린 감소는 천정에 가까워지고 있는 상황이다"
+      },
+      {
+        "[계산식]" : "CV = (EMAHL - EMAHL(Period)) ÷ (EMAHL(Period) × 100)\n\nEMAHL = 10 Period EMA Of (High-Low)"
+      }
+    ]
+  },
+  {
+    "title" : "DiffRatio",
+    "contents" : [
+      {
+        "[활용]" : "DiffRatio(Difference Price Ratio)\n\nDiffRatio(가격,기간);"
+      },
+      {
+        "[설명]" : "주어진 값의 현재값과 N기간전의 값의 차이 비율. 만일 1로 하게 되면 전일값과의 대비율이 된다."
+      },
+      {
+        "[계산식]" : "DiffRatio = (가격 - 가격(n)) ÷ 가격(n)"
+      }
+    ]
+  },
+  {
+    "title" : "DiffValue",
+    "contents" : [
+      {
+        "[활용]" : "DiffValue(Difference Price Value)\n\nDiffValue(가격, 기간);"
+      },
+      {
+        "[설명]" : "주어진 값의 현재값과 N기간전의 값의 대비. 만일 1로 하게 되면 전일값과의 대비값이 된다."
+      },
+      {
+        "[계산식]" : "DV = (가격 - 가격(n))"
+      }
+    ]
+  },
+  {
+    "title" : "Dispersion",
+    "contents" : [
+      {
+        "[활용]" : "Dispersion(Moving Dispersion)\n\nDispersionMv(가격,기간); "
+      },
+      {
+        "[설명]" : "이 지표는 주어진 기간동안의 값 간의 차이의 절대값을 구하여 계산한다."
+      },
+      {
+        "[계산식]" : "Dispersion = Sqrt(SMA(abs(log(가격 - 가격(1))), 기간))"
+      }
+    ]
+  },
+  {
+    "title" : "NeoPsychology",
+    "contents" : [
+      {
+        "[활용]" : "NeoPsychology(Neo Psychological Line)\n\nNeoPsychology(가격,기간,이평방법);"
+      },
+      {
+        "[설명]" : "당일의 주가와 이동평균값의 조합에 의해 일정 기간 주가 향방을 예측하는 지표이며, 일정 기간동안 주가와 이동평균과의 괴리방향의 분포를 구하고 지수화한 것임"
+      },
+      {
+        "[계산식]" : "Var1 = (C - n일전 이동평균)의 값 중 (+)값의 개수\n\nNeoPsychology = (n일동안의 Var1) ÷ n"
+      }
+    ]
+  },
+  {
+    "title" : "PerformancePct",
+    "contents" : [
+      {
+        "[활용]" : "PerformancePct(가격);"
+      },
+      {
+        "[설명]" : "시작데이터와 당일가격 간의 차이를 비율로 나타내는 지표이다. 또한 정규화 된 가격이고 두 증권의 비교나 증권과 지수의 비교에 유용하다."
+      },
+      {
+        "[계산식]" : "PerformancePct = 100 × (C - C(n)) ÷ C(n)"
+      }
+    ]
+  },
+  {
+    "title" : "RVI",
+    "contents" : [
+      {
+        "[활용]" : "RVI(Relative Volatility Index)\n\nRVI(기간);\n\nupstdev = avg(if(C > C(1), stdDevMv(C, 1, 10), 0), 기간);\n\ndownstdev = avg(if(C < C(1), stdDevMv(C, 1, 10), 0), 기간);\n\nfirststedv = avg(if(C ≦ C(1), stdDevMv(c, 1, 10), 0), 기간);\n\nresult = if(firststedv == 0, 100, 100 - (100 × downstdev ÷ (upstdev+downstdev)));"
+      },
+      {
+        "[설명]" : "RVI는 RSI를 기초로하는 지표로서 변동성의 방향을 측정하기위해 사용되며, 계산과정은 절대적인 가격의 변화가 아닌 가격변동의 표준편차를 측정하는 것을 제외하면 평균가격의 변화를 사용하는 RSI지표와 동일하다. RVI는 9기간 기준의 가격 표준편차를 사용한다. 지표 자체로 매매신호를 나타내기 보다는 다른 지표에서 발생한 매매신호를 확인하기 위해 주로 사용된다.\n\n50 이상일 경우에 매수신호, 50 이하일 경우에 매도신호\n매수신호를 무시하였다면 RVI가 60 이상 매수, 40 이하 매도\n\n40 이하로 하락할 경우 매수포지션을 청산.\n60 이상으로 상승할 경우 매도포지션을 청산."
+      },
+      {
+        "[계산식]" : "If Price > Price[-1] Then\n    Up = STDDev(Price)\n    Dn = 0\nelse\n    Up = 0\n    Dn = STDDev(Price)\n\nUpAvg = (UpAvg × (n - 1) + Up) ÷ n\n\nDnAvg = (DnAvg × (n - 1) + Dn) ÷ n\n\nRVIorg = 100 × upAvg ÷ (UpAvg + DnAvg)\n\nRVI = (RVIOrgin(High) + RVIOrigin(Low)) ÷ 2"
+      }
+    ]
+  },
+  {
+    "title" : "표준편차",
+    "contents" : [
+      {
+        "[활용]" : "표준편차(Moving Standard Deviation)\n\nStdDevMv(Close,Sample,Period);"
+      },
+      {
+        "[설명]" : "변동성을 나타내는 통계적 지표이며 평균에서 떨어져있는 정도를 측정한다.\n\n분석하고자 하는 주가가  큰 폭으로 변할 때 높은 값을 나타내며, 주가가 큰 변화 없이 안정적일 때는 낮은 값을 나타낸다.\n\n값이 작으면 주가가 횡보상태를 유지하였으므로 곧 주가의 이탈을 예상할 수 있다."
+      },
+      {
+        "[계산식]" : "표준편차 = sqrt(Sum(Pow(가격, 2), 기간) - Pow(Sum(가격), 2) ÷ Pow(가격, 2))"
+      }
+    ]
+  },
+  {
+    "title" : "표준오차",
+    "contents" : [
+      {
+        "[활용]" : "표준오차(Standard Error)\n\nStdErrMv(Close,Period);"
+      },
+      {
+        "[설명]" : "평균의 표준편차를 말한다. 이것은 평균값이 얼마나 정확한가를 표시해주는 값이다. \n\n표준오차틑 시행횟수가 작을수록 커지고 시행회수가 많을수록 작아진다. 표준오차를 구하려면 우석 측정값들의 편차(측정값 - 평균),편차의 제곱을 구한뒤 표준편차(root(Σ편차의제곱 ÷ N - 1)를 구하고 아래 수식에 대입하면 된다. 평균의 정확도를 알수 있다"
+      },
+      {
+        "[계산식]" : "표준오차 = 표준편차(σ) ÷ root(시행횟수 N)"
+      }
+    ]
+  },
+  {
+    "title" : "TrueRange",
+    "contents" : [
+      {
+        "[활용]" : "TR();"
+      },
+      {
+        "[설명]" : "Welles Wilder가 개발한 개념을 이용한 지표로서, 일간대 일간의 가격에서 True Range의 정도를 보여준다.\n\n고가와 전일의 저가와의 차를 및 전일의 종가와 당일의 저가와의 차 그리고 고가와 저가의 차를 이용하여 값을 구한다."
+      },
+      {
+        "[계산식]" : "TrueRange = Max(Max(H - C(1), C(1) - L), H - L)"
+      }
+    ]
+  },
+  {
+    "title" : "TrendScore",
+    "contents" : [
+      {
+        "[활용]" : "TrendScore(가격,기간);"
+      },
+      {
+        "[설명]" : "Trend Score 는 당일 가격이 위로 향하는지 아래로 향하는지 동향을 파악하여 매우 간단하게 표시하려고 시도한 지표이다.\n\n추세가 1이 되는 경우로는 이전가격보다 현재가격이 높거나 같은 경우이고, -1이 되는 경우는 이전가격이 현재가격보다 높은 경우이다."
+      },
+      {
+        "[계산식]" : "TrendScore = Sum(if(C ≧ C(1), 1, -1), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "WellesSum",
+    "contents" : [
+      {
+        "[활용]" : "WellesSum(가격,기간);"
+      },
+      {
+        "[설명]" : "Welles Sum 은 Wells Wilder 가 연속데이터의 이동합계를 이용하여 만들어낸 방법이다. 각 값은 해당값 부터 이전 n주기까지의 값의 합이다."
+      },
+      {
+        "[계산식]" : "WellesSum = Sum(C(1), 기간) - Sum(C(1), 기간) ÷ 기간 + C"
+      }
+    ]
+  },
+  {
+    "title" : "OpenDifference",
+    "contents" : [
+      {
+        "[활용]" : "Abs(highest(O - C(1), 시간))\n\nAbs(lowest(O - C(1), 시간))"
+      },
+      {
+        "[설명]" : "시가와 종가의 15일간의 최고치와 최저치의 절대값을 사용하는 함수 이다. 시간에 대한 증권의 변동성을 보여준다."
+      },
+      {
+        "[계산식]" : "OpenDifference= Abs(highest(O - C(1), 기간)) - Abs(lowest(O - C(1), 기간))"
+      }
+    ]
+  },
+  {
+    "title" : "Volume&PriceInSync",
+    "contents" : [
+      {
+        "[활용]" : "If((C < C(1) && V < V(1)), -V, if(C > C(1) && V > V(1), V, 0))"
+      },
+      {
+        "[설명]" : "가격과 거래량간에 상관관계가 높다는데 기초를 두어 만들었다. 가격과 거래량이 함께 올라가면 + 함께 하락하면 -로 개념을 두었다."
+      },
+      {
+        "[계산식]" : "Var1 = C < C(1) && V < V(1);\n\nVar2 = C > C(1) && V > V(1);\n\nVolume&PriceInSync = If(Var1, -V, if(Var2, V, 0))"
+      }
+    ]
+  },
+  {
+    "title" : "ABRatio",
+    "__comment__" : "내용이 없어서 [활용]을 뺐다.",
+    "contents" : [
+      {
+        "[설명]" : "주가 움직임을 강약 에너지의 대결로 파악하고 양자간 균형의 변화를 파악함으로써 주가의 움직임을 예측하려는 지표가 AB Ratio이다. 강약의 에너지를 파악함에 있어 각기 다른 기준가격을 설정하여 파악하였는데, 즉 A Ratio는 당일의 시가를 기준가격으로 설정하였고, B Ratio는 전일의 종가를 기준가격으로 설정하였다.\n\n강 에너지는 기준가격에서 당일의 고가까지의 가격변동폭으로 정의되고, 약 에너지는 기준가격에서 당일의 저가까지의 가격변동폭으로 정의된다. 이 강약 에너지의 비율이 AB Ratio 인데 일반적으로 매일의 비율을 사용하기 보다는 일정기간으로 평활화시킨 비율(보통 20일을 사용)을 사용하여 분석한다.\n\nA Ratio는 에너지의 크기를 측정하는 기준으로 당일시가를 사용하기 때문에 전일의 종가를 기준으로 하는 B Ratio보다 움직임폭이 작다. 따라서 강 에너지의 확장국면에서는 탄력이 큰 B Ratio가 A Ratio를 상향 돌파하게되고, 약 에너지의 확장국면에서는 B Ratio가 A Ratio를 하향 돌파하게된다.\n\nB Ratio가 A Ratio를 상향 돌파하는 시점이 매수신호이고, B Ratio가 A Ratio를 하향 돌파하는 시점이 매도신호이다. 또한 AB Ratio가 동반 상승시에는 주가의 추가 상승이 예상되고, 동반 하락시에는 추가 하락이 예상된다."
+      },
+      {
+        "[계산식]" : "A = 100 × sum((H-O),기간) ÷ sum((O-L),기간)\n\nB = 100 × sum((H-C(1)),기간) ÷ sum((C(1)-L),기간)"
+      }
+    ],
+    
+  },
+  {
+    "title" : "RVIoriginal",
+    "contents" : [
+      {
+        "[활용]" : "RVIoriginal(Relative Volatility Index Orignal)\n\nRVIoriginal(가격,기간);"
+      },
+      {
+        "[설명]" : "RVI 지표는 orignal RVI가 개정된 것이다. 종가를 사용하여 계산되는 RVI의 오리지널 버전이다. 개정된 버전은 고가의 오리지널RVI와 저가의 오리지널RVI의 평균을 가지고 계산된다."
+      },
+      {
+        "[계산식]" : "If Price > Price[-1] Then\n    Up = STDDev(Price)\n    Dn = 0\nelse\n    Up = 0\n    Dn = STDDev(Price)\n\n\nUpAvg = (UpAvg × (n - 1) + Up) ÷ n\n\nDnAvg = (DnAvg × (n - 1) + Dn) ÷ n\n\nRVIoriginal = 100 × upAvg ÷ (UpAvg + DnAvg)"
+      }
+    ],
+  },
+  {
+    "title" : "RelativeVigorIndex",
+    "contents" : [
+      {
+        "[활용]" : "RVI(Relative Vigor Index)\n\nA = RelativeVigorIndex(기간);\n\nSignal = (A + 2 × A(1) + 2 × A(2) + A(3)) ÷ 6;"
+      },
+      {
+        "[설명]" : "RVI지표는 가격이 하락추세에서 시가보다 더 낮은 종가와 상승추세에서 시가보다 더 높은 종가에 개념을 둔 OSC지표이다"
+      },
+      {
+        "[계산식]" : "bar a = Close - Open\n\nbar b = Close - Open one bar prior to a\n\nbar c = Close - Open one bar prior to b\n\nbar d = Close - Open one bar prior to c\n\nnumerator = [ a + (2 × b) + (2 × c) + d ] ÷ 6\n\n\ne = High - Low of bar a\n\nf = High - Low of bar b\n\ng = High - Low of bar c\n\nh = High - Low of bar d\n\ndenominator = [ e + (2 × f) + (2 × g) + h ] ÷ 6\n\n\nRVI = SMA of numerator for period selected / SMA of denominator for period selected\n\n\nSignal Line Calculation\n    i = RVI value one bar prior\n\n    j = RVI value one bar prior to i\n\n    k = RVI value one bar prior to j\n\n\nSignal Line = [ RVI + (2 × i) + (2 × j) + k] ÷ 6"
+      }
+    ]
+  },
+  {
+    "title" : "AR",
+    "contents" : [
+      {
+        "[활용]" : "AR(Ar Ratio)\n\nAR(기간);"
+      },
+      {
+        "[설명]" : "시노하라비율이란 시노하라 마사시에 의해 개발된 오실레이터 지표이다. 이 지표를 만든 이유는 시세에 과학적으로 접근하기 위함에 있다. 주가는 그 강하고 약한 에너지와 인기의 누적에 의해 변화한다. 따라서 에너지와 인기의 강약 비율을 만든다면 주관적이며 막연한 희망에서 벗어나 객관적으로 시세에 대응해 가는 여유를 가질 수 있는 기회를 가질 수 있게 된다."
+      },
+      {
+        "[계산식]" : "Var1 = Sum(H - O, 기간);\n\nVar2 = Sum(O - L, 기간);\n\nAR = Var1 × 100 ÷ Var2"
+      }
+    ]
+  },
+  {
+    "title" : "BOP",
+    "contents" : [
+      {
+        "[활용]" : "BOP(Balance of Power)\n\nBOP(기간);"
+      },
+      {
+        "[설명]" : "2001년 8월 Igor Livshin에 의해 Stock & Commodities 간행물에 소개된 지표이다. 이 지표는 시장심의 균형을 찾아가는 지표라고 할 수 있다. 일반적으로 가격을 초과하는 시장능력을 평가하므로 강세시장과 약세시장을 측정하는 지표이다."
+      },
+      {
+        "[계산식]" : "BOP = (종가 - 시가) ÷ (고가 - 저가)"
+      }
+    ]
+  },
+  {
+    "title" : "BR",
+    "contents" : [
+      {
+        "[활용]" : "BR(Br Ratio)\n\nBR(기간);"
+      },
+      {
+        "[설명]" : "시노하라비율이란 시노하라 마사시에 의해 개발된 오실레이터 지표이다. 이 지표를 만든 이유는 시세에 과학적으로 접근하기 위함에 있다. 주가는 그 강하고 약한 에너지와 인기의 누적에 의해 변화한다. 따라서 에너지와 인기의 강약 비율을 만든다면 주관적이며 막연한 희망에서 벗어나 객관적으로 시세에 대응해 가는 여유를 가질 수 있는 기회를 가질 수 있게 된다."
+      },
+      {
+        "[계산식]" : "Var1 = Sum(H - C(1), 기간);\n\nVar2 = Sum(C(1) - L, 기간);\n\nBR = Var1 ÷ Var2 × 100"
+      }
+    ]
+  },
+  {
+    "title" : "CMO",
+    "contents" : [
+      {
+        "[활용]" : "CMO(Chande Momentum Oscillator)\n\nCMO(가격,기간);"
+      },
+      {
+        "[설명]" : "CMO는 구가내에서 상승폭과 하락폭의 차이를 오실레이터로 나타낸다. 상승과 하락의 비율이 3:1 정도를 기준으로 보고 이상이면 과열, 이하면 침체로 해석한다. 상승이 과하면 하락하고 하락이 과하면 상승한다는 기본개념을 갖고 있다. FX마진거래를 위해서 개발되었고 단기투자용 지표이다.\n\n50과 -50선을 기준으로 매매시점으로 잡으며 50선을 넘어서 고점에서 반전하여 하락하면 매도, 50선 아래에서 저점에서 반등하면 매수한다."
+      },
+      {
+        "[계산식]" : "Up = if(C > C(1), C - C(1), 0);\n\nDn = if(C < C(1), C(1) - C, 0);\n\nUpSum = Sum(Up, 기간);\n\nDnSum = Sum(Dn, 기간);\n\nCMO = 100 × (UpSum - DnSum) ÷ (UpSum + DnSum)"
+      }
+    ]
+  },
+  {
+    "title" : "MesaSineWave",
+    "contents" : [
+      {
+        "[활용]" : "MESAsinewave(기간);\n\nMESAsinewaveLead(기간);"
+      },
+      {
+        "[설명]" : "MESA Sine Wave는 두 Sine 곡선을 계산하여 나타내는 지표이다.\n\n두 곡선이 비슷할때 시장의 Sine파동은 한 사이클안에 있다.\n\n그렇지 않으면 시장 신호의 추세는 단지 마켓이 한 사이클안에 있을때만 생성된다."
+      },
+      {
+        "[계산식]" : "RealPart = ∑(Cos(360 × j ÷ n) × Close(-i))\nImagPart = ∑(Sin(360 × j ÷ n) × Close(-i))\n\nif ImagPart > 0.001 then\n    DCPhase = atan(RealPart ÷ ImagPart) + 90\nelse\n    DCPhase = 90\n\nIf ImagPart < 0 then\n    DCPhae = DCPhase + 180\n\nIf ImagPart > 270 then\n     DCPhae = DCPhase - 360\n\nSine = sin(DCPhase)\n\nLeadSine = sin(DCPhase + 45)"
+      }
+    ]
+  },
+  {
+    "title" : "NMO",
+    "contents" : [
+      {
+        "[활용]" : "NMO(Net Momentum Oscillator)\n\nNMO(가격,기간);"
+      },
+      {
+        "[설명]" : "NMO는 RSI의 변형이다. RSI가 주가하락에 대한 상승기간의 비율에의해 계산되는 반면 NMO는 (상승+하락)의 모멘텀에 (상승-하락)의 비율이다"
+      },
+      {
+        "[계산식]" : "Up = if(C > C(1), C - C(1), 0);\n\nDn = if(C < C(1), C(1) - C, 0);\n\nUpSum = Sum(Up, 기간);\n\nDnSum = Sum(Dn, 기간);\n\nNMO = 100 × (UpSum - DnSum) ÷ (UpSum + DnSum)"
+      }
+    ]
+  },
+  {
+    "title" : "RangeIndicator",
+    "contents" : [
+      {
+        "[활용]" : "RangeIndicator(Stoch기간, MA기간);"
+      },
+      {
+        "[설명]" : "Range indicator 는 intraday range (high - low) 와 inter-day (close - previous close) range 를 비교한다. intraday range 가 더 큰 경우, Range Indicator 가 더 큰 값을 가지게 된다."
+      },
+      {
+        "[계산식]" : "RangeIndicator = RangeIndicator(Stoch기간, MA기간)"
+      }
+    ]
+  },
+  {
+    "title" : "SMI",
+    "contents" : [
+      {
+        "[활용]" : "SMI(Stochastic Momentum Index)\n\nSMI(기간1, 기간2, 기간3);"
+      },
+      {
+        "[설명]" : "이 지표는 Stochastic Oscillator에 기반을 둔다. Stochastic Oscillator가 종가가 고/저값 범위의 상대값으로 계산되는데 반해 SMI는 종가가 고/저값 범위의 중간값에 대한 상대값이라는 차이가 있다. SMI값의 범위는 +100 ~ -100사이이다"
+      },
+      {
+        "[계산식]" : "Var1 = C - (Highest(H, 기간) - Lowest(L, 기간)) ÷ 2;\n\nVar2 = EMA(EMA(Var1, 기간), 기간);\n\nVar3 = Highest(H, 기간) - Lowest(L, 기간);\n\nVar4 = EMA(EMA(Var3, 기간), 기간);\n\nSMI = 100 × (Var2 ÷ (Var4 ÷ 2))"
+      }
+    ]
+  },
+  {
+    "title" : "EMV",
+    "contents" : [
+      {
+        "[활용]" : "EMV(Easy Of Movement)\n\nEMV(기간, 이평방법, Volinc);"
+      },
+      {
+        "[설명]" : "Equivolume를 개발한 Richard W.Arms, Jr에 의해서 만들어 졌다. 거래량과 주가의 변화간에 상관관계를 보여주는 지표이다. 즉, 주가가 변할 때 얼마나 많은 거래량이 수반되는가를 보여주는 지표이다. 문서에 따라서 EMV, EOM 둘 다 사용한다."
+      },
+      {
+        "[계산식]" : "MidPointMove = (H + L) ÷ 2 - (H(1) + L(1)) ÷ 2;\n\nBoxRatio = V(10,000) ÷ (H-L);\n\nEOM = Var1 ÷ BoxRatio"
+      }
+    ]
+  },
+  {
+    "title" : "BinaryWaveMACD",
+    "contents" : [
+      {
+        "[활용]" : "EMA(BinaryWave(MAOsc1, MAOsc2, MASig, MA기간, ROC기간, 스톡기간), 기간1) - EMA(BinaryWave(MAOsc1, MAOsc2, MASig, MA기간, ROC기간, 스톡기간), 기간2)"
+      },
+      {
+        "[설명]" : "바이너리 웨이브 MACD는 바이너리 웨이브를 MACD 타입으로 변형하여 응용한 것이다.\n\n내용은 MACD 방식대로 바이너리웨이브의 장단기 이동평균 차이를 계산한다.\n\n매매방식은 MACD와 동일하다. 0선을 상향돌파시 매수, 하향돌파시 매도. Signal선을 상향돌파시 매수, 하향돌파시 매도."
+      },
+      {
+        "[계산식]" : "Var1 = BinaryWave(MAOsc1, MAOsc2, MASig, MA기간, ROC기간, 스톡기간);\n\nBinaryWaveMACD = EMA(Var1, 기간1) - EMA(Var1, 기간2)"
+      }
+    ]
+  },
+  {
+    "title" : "ADX",
+    "contents" : [
+      {
+        "[활용]" : "ADX (Average Directional Movement Index)\n\nADX(DX기간,ADX기간);\n\nPlusDI(DX기간);\n\nMinusDI(DX기간);"
+      },
+      {
+        "[설명]" : "DMI(Directional Movement Index)를 개발한 Welles Wilder Jr이 1978년에 개발한 지표로서 주가가 추세를 가지고 움직이고 있는지를 판단하는데 도움이 되는 지표이다.\n\nADX는 3개의 선으로 구성되는 데, PDI(Positive Directional Indicator), NDI(Negative Directional Indicator), ADX로 나눠진다.\n\n현재의 시장추세와 함께 그 추세의 강도까지 알려주는  지표로 단기보다는 중장기 추세판별에 적합하다"
+      },
+      {
+        "[계산식]" : "PDM(+DM) : H - H(1) (+값만 취함)\n\nMDM(-DM) : L - L(1) (-값만 취함)\n\nDX = ((|PDI-MDI|) ÷ (PDI+MDI)) × 100\n\nPDI = PDM ÷ TR()\n\nMDI = MDM ÷ TR()\n\nADX = EMa(DX, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "ADXR",
+    "contents" : [
+      {
+        "[활용]" : "ADXR (Average Directional Movement Rating)\n\nADXR(DX기간,ADX기간,ADXR기간);"
+      },
+      {
+        "[설명]" : "ADXR 지표는 당일 ADX에 n일전 ADX값을 더해 2로 나누어 계산하는 지표이다.\n\n사실상, 이것은 두 ADX 값의 평균이다."
+      },
+      {
+        "[계산식]" : "ADXR = (ADXR + ADXR(기간)) ÷ 2"
+      }
+    ]
+  },
+ {
+    "title" : "Aroon",
+    "contents" : [
+      {
+        "[활용]" : "Aroon_Up(기간);\n\nAroon_Dn(기간);"
+      },
+      {
+        "[설명]" : "Aroon지표는 1995년 Tushar Chande가 개발하였다. 이 지표는 추세의 형태와 강도를 파악하는데 사용된다."
+      },
+      {
+        "[계산식]" : "Aroon Up\n    = 100 × (기간 - 최고가 이후 봉개수) ÷ 기간\n\nAroon Down\n    = 100 × (기간 - 최저가 이후 봉개수) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "AroonOSC",
+    "contents" : [
+      {
+        "[활용]" : "AroonOscillator(기간);"
+      },
+      {
+        "[설명]" : "Aroon지표는 1995년 Tushar Chande가 개발하였다. 이 지표는 추세의 형태와 강도를 파악하는데 사용된다."
+      },
+      {
+        "[계산식]" : "Aroon Up\n    = 100 × (기간 - 최고가 이후 봉개수) ÷ 기간\n\nAroon Down\n    = 100 × (기간 - 최저가 이후 봉개수) ÷ 기간\n\n- Aroon Oscillator = AroonUP - AroonDown"
+      }
+    ]
+  },
+  {
+    "title" : "DMI",
+    "contents" : [
+      {
+        "[활용]" : "DMI (Directional Movement Index)\n\nPlusDI(기간);\n\nMinusDI(기간);"
+      },
+      {
+        "[설명]" : "J. Welles Wilder Jr에 의해 1978년에 소개 되었다. 이는 시장이 추세를 이루는지를 측정하고 규명하기 위하여 고안된 것으로 주가의 순 상승력을 파악하기 위한 지표이다."
+      },
+      {
+        "[계산식]" : "PDM(+DM) : H - H(1) (+값만 취함)\n\nMDM(-DM) : L - L(1) (-값만 취함)\n\nDX = ((|PDI - MDI|) ÷ (PDI + MDI)) × 100\n\nPDI = PDM ÷ TR()\n\nMDI = MDM ÷ TR()"
+      }
+    ]
+  },
+  {
+    "title" : "DynamicMI",
+    "contents" : [
+      {
+        "[활용]" : "DynamicMI (Dynamic Momentum Index)\n\nDynamicMI(가격, 기간, RSI기간);"
+      },
+      {
+        "[설명]" : "Dynamic Momentum Index지표는 Tushar Chande 와 Stanley Kroll에 의해 1993년 5월에 Stocks and Commodities 잡지에 소개되었다. 이 지표는 Relative Strength Index (RSI)지표와 매우 유사하지만 제목 그대로 동적 기간을 사용한다. RSIPeriod 값은 최소 5에서 최대 30까지 값을 사용한다. DynamicMI 지표는 특정 자산의 과매수, 과매도 상태를 결정직는 분석 기술에 사용된다."
+      },
+      {
+        "[계산식]" : "SD = StdDevMv(C, 0, 5);\n\nASD = SMA(SD, MAPeriod)\n\nDynamicMI = RSIPeriod(SD ÷ ASD)"
+      }
+    ]
+  },
+  {
+    "title" : "ForecastOscillator",
+    "contents" : [
+      {
+        "[활용]" : "ForecastOscillator(가격,기간);"
+      },
+      {
+        "[설명]" : "Forecast Oscillator는 실제가격과 전값의 FO의 차이에 대한 비율로 계산된다. 가격과 forecast가 동일할때 Oscillator값은 0이 된다."
+      },
+      {
+        "[계산식]" : "ForecastOscillator = 100.0 × (C - FO(1)) ÷ C"
+      }
+    ]
+  },
+  {
+    "title" : "MovingSum",
+    "contents" : [
+      {
+        "[활용]" : "MovingSum (Moving Summation)\n\nMovingSum(가격,기간);"
+      },
+      {
+        "[설명]" : "MovinSum 지표는 n기간까지의 합을 나타내는 지표이다. 이 지표는 Sum에 n값으로 나누지 않는 Simple Moving Average이다. 많은 다른 지표들의 계산에 사용된다. 또한 기존의 지표를 수정하기 위해서도 사용될 수 있다."
+      },
+      {
+        "[계산식]" : "MovingSum = Sum(가격, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "PFE",
+    "contents" : [
+      {
+        "[활용]" : "PFE(Polarized Fractal Efficiency)\n\nPFE(가격, 기간1, 기간2);"
+      },
+      {
+        "[설명]" : "PFE지표는 가격이 얼마나 효율적으로 이동하는 지를 판단하기 위해서 프랙탈기하학을 사용한다. PFE가 0값주위로 왔다갔다할때 주가는 혼잡하고 추세에 있지 않다."
+      },
+      {
+        "[계산식]" : "Var1 = 100 × Sqrt((Pow(가격 - 가격(-n -1)), 2), Pow(n, 2) ÷ 가격;\n\nVar2 = if(C < C(1), Var1 × -1, Var1)\n\nPFE = MA(Var2)"
+      }
+    ]
+  },
+  {
+    "title" : "QstickOscillator",
+    "contents" : [
+      {
+        "[활용]" : "Qstick(기간);"
+      },
+      {
+        "[설명]" : "QstickOscillator 지표는 시가와 종가의 차이값에 대한 지수이평이다. Qstick의 이름 중 'Stick'은 CandleStick Charting에서 왔다. candlestick의 몸체는 시가에서 종가까지이다"
+      },
+      {
+        "[계산식]" : "QstickOscillator = MovingAverage(C-O, 기간, 지수이평);"
+      }
+    ]
+  },
+  {
+    "title" : "SonarMomentum",
+    "contents" : [
+      {
+        "[활용]" : "SONAR(가격,기간1,기간2,이평방법);"
+      },
+      {
+        "[설명]" : "SonarMomentum 지표는 1979년 일본노무라 증권의 기술적 분석가인 오카모도에 의해 개발된 지표로서 음파탐지기에서 명명되었으며 주가 사이클의 전환점을 파악하기 위해 개발된 시계열 챠트이다.\n\n지표값이 0을 기준으로 상향 돌파하면 매수 신호가 되고, 하향 돌파하면 매도 신호가 된다.\n\nSonarMomentum이 SonarMomentum 이동 평균을 아래에서 위로 교차했을 경우에는 매수 신호로, 위에서 아래로 교차했을 경우는 매도 신호로 인식한다."
+      },
+      {
+        "[계산식]" : "SonarMomentum = (EMA(C,기간1) - EMA(C(기간2),기간1)) ÷ EMA(C(기간2),기간1)"
+      }
+    ]
+  },
+  {
+    "title" : "T3",
+    "contents" : [
+      {
+        "[활용]" : "T3(가격, 기간, 인수, 횟수);"
+      },
+      {
+        "[설명]" : "T3지표는 DEMA지표에 기반을 둔 완화된 함수이거나 이평의 한 형태이다. 그 결과로 함수는 GD, Generalized DEMA로 불려진다."
+      },
+      {
+        "[계산식]" : "GD(Datas) = EMA(Datas) × (1 + VFactor) - EMA(EMA(Datas)) × VFactor\n\nT3 = GD(GD(GD(Datas)))"
+      }
+    ]
+  },
+  {
+    "title" : "TRIX",
+    "contents" : [
+      {
+        "[활용]" : "TRIX(가격,기간);"
+      },
+      {
+        "[설명]" : "TRIX 지표는 세 번의 지수이평의 변화 비율로 계산된다. 값은 0 주위를 왔다갔한다\n\n매수/매도 신호는 TRIX가 0값 위/아래로 Cross 할 때 발생한다\n\nSignal 선은 TRIX 값의 9일 이평을 전통적으로 사용한다."
+      },
+      {
+        "[계산식]" : "M = EMA(EMA(EMA(가격)))\n\nTRIX = 100 × (M - M(1)) ÷ M"
+      }
+    ]
+  },
+  {
+    "title" : "VHF",
+    "contents" : [
+      {
+        "[활용]" : "VHF(Vertical Horizontal Filter)\n\nVHF(가격,기간);"
+      },
+      {
+        "[설명]" : "Vertical Horizontal Filter는 시장이 추세적 시장인지 비추세적 시장인지를 결정한다. MACD나 이동평균과 같은 추세지향 지표들은 추세적 시장에서는 시장을 정확히 표현하지만, 비추세적 시장에서는 서로 상반된 결과를 내놓곤 한다. 또한 RSI나 Stochastic같은 오실레이터들은 비추세적 시장에서는 매매시점을 잘 표현하지만 추세적 시장에서는 너무 성급한 지표값을 내놓곤 한다.\n\nVHF는 시장의 추세정도를 표현하므로 사용할 지표를 결정하는데 도움을 준다. VHF값 자체로 시장의 추세정도를 결정한다. VHF 값이 높을 때는 추세지향 지표를 사용하는 것이 더 유용하다. VHF의 방향은 장이 추세를 띄고 나아갈지, 비추세적으로 진행될지를 알려준다. VHF 값이 커지면 추세적 시장으로 발전하고, 값이 작아지면 비추세적 국면으로 진입함을 의미한다."
+      },
+      {
+        "[계산식]" : "Var1 = Highest(H, 기간) - Lowest(L, 기간);\n\nVar2 = (가격 - 가격(1)) ÷ 가격(1);\n\nVHF = Var1 ÷ Sum(Var2)"
+      }
+    ]
+  },
+  {
+    "title" : "AnnualPercentChange",
+    "contents" : [
+      {
+        "[활용]" : "((C - C(기간)) ÷ C(기간)) × 100"
+      },
+      {
+        "[설명]" : "AnnualPercentChange 지표는 특정일의 가격대비 당일가격의 대비율을 보여준다."
+      },
+      {
+        "[계산식]" : "AnnualPercentChange = ((C - C(기간)) ÷ C(기간)) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "BigMovesOnly",
+    "contents" : [
+      {
+        "[활용]" : "sum((If(O > 변수, O, 0)) - (If(H > 변수, H, 0)))"
+      },
+      {
+        "[설명]" : "특정 값 이상으로 시가와 고가 형성되었을 때 그 차를 구하여 누적 합계를 한다. 이를 통해 주가의 큰 변동을 한눈에 알 수 있다."
+      },
+      {
+        "[계산식]" : "BigMovesOnly =  Sum((If(O > 변수, O, 0)) - (If(H > 변수, H, 0)))"
+      }
+    ]
+  },
+  {
+    "title" : "PringsKST(User-Arithmetic)",
+    "contents" : [
+      {
+        "[활용]" : "(MA(ROC(C, 승수, 10), 10, 이평방법) + 2 × (MA(ROC(C, 승수, 15), 10, 이평방법)) + 3 × (MA(ROC(C, 승수, 20), 15, 이평방법)) + 4 × (MA(ROC(C, 승수, 30), 20, 이평방법))) ÷ 10"
+      },
+      {
+        "[설명]" : "원 KST 함수로서, 다수의 ROC의 이동평균을 이용하여 구해진다.\n\nMartin Pring이 개발한 지표임"
+      },
+      {
+        "[계산식]" : "Func1(기간1, 기간2) = MA(ROC(C, 100, 기간1), 기간2), 이평방법);\n\nVar1 = (1 × Func1(10, 10)) + (2 × (Func1(15, 10));\n\nVar2 = (3 × Func1(20, 15)) + (4 × (Func1(30, 20));\n\nPringsKST = (Var1 + Var2) ÷ 10"
+      }
+    ]
+  },
+  {
+    "title" : "PringsLongKST-Monthly",
+    "contents" : [
+      {
+        "[활용]" : "((1 × (EMA(ROC(C, 39, 26), 26))) + (2 × (EMA(ROC(C, 52, 26), 26))) + (3 × (EMA(ROC(C, 78, 26), 26))) + (4 × (EMA(ROC(C, 104, 39), 39)))) ÷ 10"
+      },
+      {
+        "[설명]" : "Pring's KST지표의 일종으로, 월간 데이타를 이용할 때 사용된다."
+      },
+      {
+        "[계산식]" : "Func1(승수, 기간1) = EMA(ROC(C, 승수, 기간1), 기간1), 이평방법);\n\nVar1 = (1 × Func1(39, 26) + (2 × (Func1(52, 26));\n\nVar2 = (3 × (Func1(78, 26)) + (4 × (Func1(104, 39));\n\nPringsLongKST-Monthly = (Var1 + Var2) ÷ 10"
+      }
+    ]
+  },
+  {
+    "title" : "PringsLongKST-Wkly",
+    "contents" : [
+      {
+        "[활용]" : "((EMA(ROC(C, 9, 6), 6)) + (2 × (EMA(ROC(C, 12, 6), 6))) + (3 × (EMA(ROC(C, 18, 6), 6))) + (4 × (EMA(ROC(C, 24, 9), 9)))) ÷ 10"
+      },
+      {
+        "[설명]" : "주간 데이터를 사용시 사용되는 지표로, Martin Pring의 KST지표의 일종이다."
+      },
+      {
+        "[계산식]" : "Func1(승수, 기간1) = EMA(ROC(C, 승수, 기간1), 기간1), 이평방법);\n\nVar1 = (1 × Func1(9, 6) + (2 × (Func1(12, 6));\n\nVar2 = (3 × (Func1(18, 6)) + (4 × (Func1(24, 9));\n\nPringsLongKST-Wkly = (Var1 + Var2) ÷ 10"
+      }
+    ]
+  },
+  {
+    "title" : "PringsMedKST(Wkly-EMA)",
+    "contents" : [
+      {
+        "[활용]" : "((EMA(ROC(C, 10, 10), 10)) + (2 × (EMA(ROC(C, 13, 13), 13))) + (3 × (EMA(ROC(C, 15, 15), 15))) + (4 × (EMA(ROC(C, 20, 20), 20)))) ÷ 10"
+      },
+      {
+        "[설명]" : "주간 데이터를 사용시 사용되는 지표로, Martin Pring의 KST지표의 일종이다."
+      },
+      {
+        "[계산식]" : "Func1(승수, 기간1) = EMA(ROC(C, 승수, 기간1), 기간1), 이평방법);\n\nVar1 = (1 × Func1(10, 10) + (2 × (Func1(13, 13));\n\nVar2 = (3 × (Func1(15, 15)) + (4 × (Func1(20, 20));\n\nPringsMedKST(Wkly-EMA) = (Var1 + Var2) ÷ 10"
+      }
+    ]
+  },
+  {
+    "title" : "SmoothedROC",
+    "contents" : [
+      {
+        "[활용]" : "100 × EMA(C, 기간) ÷ EMA(C(종가날짜), 기간)"
+      },
+      {
+        "[설명]" : "Momentum과 RoC는 단순이동평균에서와 같이 개별 가격 데이터에 대해 두번씩 반응하는 결점을 가진다. 즉 새로운 가격으로 계산 기간에 포함될 때 한번 반응하고, 계산 기간을 벗어 날 때 다시 한번 반응하게 된다.\n\n이러한 문제점을 보완하기 위해서 두 시점에서의 가격 대신에 지수이동평균 값을 가지고 비교하는 평활화된 RoC(Smoothed Monentum도 동일함)를 도입하였다. SRoC는 두 시점에서의 이동평균값으로 비교하기 때문에 매매신호는 더 적게 나타내지만, 그 신호의 질은 더 우수하다. SRoC의 방향전환은 흔히 주가의 방향전환보다 앞서 일어난다. 상승전환은 중요한 바닥을 나타내고, 하락전환은 중요한 정점을 나타낸다. SRoC와 주가와의 괴리는 특히 강력한 매매신호를 나타낸다.\n\nSRoC의 방향전환: SRoC가 기준선 아래에서 상승전환할 때는 매수신호이고, 기준선 위에서 하락전환 할 때는 매도신호이다.(기준선과의 교차를 매매시점으로 분석하기도 한다)\n\n괴리도(Divergence) 분석: 가격은 신고가에 도달했으나 SRoC는 이전보다 낮은 고점을 기록하고 하락할 때에는 약세괴리로 강력한 매도신호를 나타내고, 가격은 신저가로 하락했으나 SRoC는 이전보다 높은 저점을 기록하고 상승할 때에는 강세괴리로 강력한 매수신호를 나타낸다."
+      },
+      {
+        "[계산식]" : "SmoothedROC = 100 × EMA(C, 기간) ÷ EMA(C(종가날짜), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "Trendex",
+    "contents" : [
+      {
+        "[활용]" : "INPUT1 = ((C - C(기간1)) ÷ C(기간1) × 100);\n\nINPUT2 = ((C - C(기간2)) ÷ C(기간2) × 100);\n\nWMA((Input1 + Input2), 기간3)"
+      },
+      {
+        "[설명]" : "원래는 다우 지수의 월간 데이터에서 사용되었음. 일반적으로, 11 ~ 14개월은 심리적으로 손실을 극복할 수있다는 개념의 지표"
+      },
+      {
+        "[계산식]" : "Var1 = ((C - C(기간1)) ÷ C(기간1) × 100);\n\nVar2 = ((C - C(기간2)) ÷ C(기간2) × 100);\n\nTrendex = WMA((Var1 + Var2), 기간3)"
+      }
+    ]
+  },
+  {
+    "title" : "TSF",
+    "contents" : [
+      {
+        "[활용]" : "TSF(Time Series Forecast)\n\nRegressionConstMv(가격,기간) + RegressionSlopeMv(가격,기간);"
+      },
+      {
+        "[설명]" : "선형회귀(Linear Regression)란 과거의 값으로 미래의 가치를 예측하기 위해 사용되는 통계학적 방법이다. 이 방법으로 두 지점 사이의 추세선을 그리는 것이 LRL(Linear Regression Line)이며, 이 값은  균형가격의 의미를 가지므로 LRL선 위의 가격은 과매수, 아래의 가격은 과매도 가격이다. 선형회귀 분석선(Linear Regression Line)은 최소제곱법을 사용하여 두 점 사이를 추세선으로 그리며, 이 추세선은 정확히 가격의 중앙점에 위치하므로, 향후 주가의 균형 가격을 예측할 수 있다. TSF는 LRL의 최종값에 Linear Regression Slope의 값을 더하여 계산된다. 따라서 LRL의 최종값을 연결한 Linear Regression Indicator와 아주 근소한 차이를 가지며, 가격의 변화에 조금 더 민감하다."
+      },
+      {
+        "[계산식]" : "Var1 = RegressionConstMv(가격, 기간);\n\nVar2 = RegressionSlopeMv(가격, 기간);\n\nTSF = Var1 + Var2"
+      }
+    ]
+  },
+  {
+    "title" : "MovingAverageOscillator",
+    "contents" : [
+      {
+        "[활용]" : "MAO(Moving Average Oscillator)\n\nMovingAverage(가격,단기,이평방법) - MovingAverage(가격,장기,이평방법)"
+      },
+      {
+        "[설명]" : "MAO는 단기 이동 평균 값과 장기 이동 평균값의 차이를 나타내어 주가 추세를 판단하기 위한 지표이다. Oscillator 값이 0선을 상향돌파할때를 매수시점으로, 0선을 하향돌파할때를 매도시점으로 인식한다. Oscillator 값이 0에 근접하다가 0을 돌파하지않고, 반대 방향으로 움직이는 경우에는 기존의 추세가 강화되는 신호로 해석한다."
+      },
+      {
+        "[계산식]" : "Var1 = MovingAverage(가격,단기,이평방법);\n\nVar2 = MovingAverage(가격,장기,이평방법);\n\nMovingAverageOscillator = Var1 - Var2"
+      }
+    ]
+  },
+  {
+    "title" : "BWI",
+    "contents" : [
+      {
+        "[활용]" : "BWI(Binary Wave Index)\n\nnPrice = 가격;\n\n((MovingAverage(nPrice, 기간, 이평방법) + 승수 × StdDevMv(nPrice, 샘플, 기간)) - (MovingAverage(nPrice, 기간, 이평방법) - 승수 × StdDevMv(nPrice, 샘플, 기간))) ÷ (MovingAverage(nPrice, 기간, 이평방법))"
+      },
+      {
+        "[설명]" : "이 지표는 가격변동성의 시간적 변화(Volatility Change)를 나타내는 지표이다. 가격변동성을 판단할 때 주가가 높으면 그 만큼 변동성이 큰 것이 일반적이며 반대로 주가가 낮으면 가격변동성이 낮은 것이 일반적이다. 따라서 볼린저밴드의 가격대폭(상단밴드 - 하단밴드)을 추세를 의미하는 가격대 중심선으로 나누어 주가수준에 따라 수정한 변동성을 측정한다. BWI의 값이 상대적으로 낮다는 것은 볼린저밴드의 가격대 폭이 상당폭 축소된 것이며 따라서 앞으로 추세변화의 가능성이 크다고 해석한다.\n\n예를 들어 미국 주식시장의 S&P500의 경우에는 BWI가 2 이하로 하락하면 보통 앞으로 추세변화가 있을 것으로 해석한다. 한국 종합지수의 경우에는 대체로 0.04 이하로 하락하면 추세의 변화를 예고하는 것으로 이해할 수 있다. 그러나 여기에서 주의해야 할 점은 BWI는 미래의 추세적 변동의 가능성을 시사할 뿐이며 추세의 방향에 대해서는 아무런 정보도 제공하지 않는다는 것이다. 즉 BWI는 추세변동 가능성의 정도만을 파악하는 지표임을 알아야 한다."
+      },
+      {
+        "[계산식]" : "\n\n  Var1 = MovingAverage(가격,기간,이평방법);\n\n  Var2 = 승수*StdDevMv(가격,샘플,기간);\n\n- BWI = ((Var1+Var2) -(Var1-Var2)) \/ (Var1)\n"
+      }
+    ]
+  },
+  {
+    "title" : "RankCorrelationIndex",
+    "contents" : [
+      {
+        "[활용]" : "RankCorrelation(가격, 단기)\n\nRankCorrelation(가격, 중기)\n\nRankCorrelation(가격, 장기)"
+      },
+      {
+        "[설명]" : "RankCorrelationIndex 지표는 소프트웨어 패키지의 일부러 처음 제공되었다가 통계 분야에 채택되어 사용되는 지표이다. 많은 다른 지표들과는 대조적으로 완전히 다른 접근법으로 계산의 기초를 둔다, 가격은 없고 날짜로 변수를 사용하여 계산한다.\n\n-95 이하에서 전환 (바닥시세권의 탈피), -80 이하에서 -80이상으로 전환 (상승전환), (-)권에서의 반발 인 경우 매수 신호로 여기고 +95 이상에서 하락전환 (천정권으로 하락시작), +80 이상에서 +80이하로 전환 (하락전환), (+)권에선 반발 인 경우 매도 신호로 여긴다."
+      },
+      {
+        "[계산식]" : "RankCorrelationIndex = RankCorrelation(가격, 단기)"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticSlow_OSC",
+    "contents" : [
+      {
+        "[활용]" : "A=StochasticSlow(기간1, 기간2, 이평방법);\n\nA - MA(A, 기간3, 이평방법);"
+      },
+      {
+        "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다"
+      },
+      {
+        "[계산식]" : "Var1 = StochasticSlow(기간1, 기간2, 이평방법);\n\nStochasticSlow_OSC = Var1- MA(Var1, 기간3, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "AccumDistribution",
+    "contents" : [
+      {
+        "[활용]" : "AccumDistribution(Accumulation/Distribution Line)\n\nAccumDist();"
+      },
+      {
+        "[설명]" : "Chaikin Oscillator 와 Chaikin Volatility를 개발한 Mark Chaikin이 만든 지표로서 주가와 거래량의 변화를 나타내는 운동량 지표이다. 이 지표는 거래량이 증가할수록 나타나는 가격의 움직임은 더욱더 중요한 의미를 내포하고 있다는 전제를 기본 바탕으로 하고 있다. Accumulation/Distribution Line은 기술적지표로 잘 알려진 OBV(On Balance Volume)를 변화시킨 것이다.\n\nOBV는 단순한 주가상승 하락에 대한 거래량 관계를 나타낸 단순한 지표라면 Accumulation/Distribution Line의 지표는 (종가-저가)가 (고가-종가)보다 커야만 그 차이(portion)만큼의 거래량이 (+)쪽으로 반영된다.\n    AD이 상승 -> 매수세력 강화 거래량의 대부분이 주가 상승과 밀접한 관계가 있다고 판단한다.\n    AD이 하락 -> 매수세력 분산 거래량의 대부분이 주가 하락과 밀접한 관계가 있다고 판단한다.\n\nAD값의 추세와 주가 추세를 서로 비교하여 Divergence가 발생하면 곧 AD의 추세 방향대로 주가가 움직인다고 판단한다."
+      },
+      {
+        "[계산식]" : "CLV = ((C-L) - (H-C)) ÷ (H-L)\n\nAccumDistribution = AD(-1) + CLV × Volume"
+      }
+    ]
+  },
+  {
+    "title" : "BSI",
+    "contents" : [
+      {
+        "[활용]" : "BSI(Buy Sell Index)\n\nBSI(Close,기간1,기간2,기간3,기간4,기간5);"
+      },
+      {
+        "[설명]" : "이동평균선의 개념을 이용하여 증권시장이 과열상승하고 있는지 너무 침체하고 있는지를 판단하는 지표이다."
+      },
+      {
+        "[계산식]" : "BSI = ((x1이격도 + x2이격도 + x3이격도 + x4이격도 + x5이격도) ÷ 5, n)"
+      }
+    ]
+  },
+  {
+    "title" : "CSIndex",
+    "contents" : [
+      {
+        "[활용]" : "CSIndex(Commodity Selection Index)\n\nCSIndex(기간,차이,수수료,이동값);"
+      },
+      {
+        "[설명]" : "CSIndex지표는 ADXR과 ATR이동값을 포함하는 상수에 의해 곱해서 계산하는 합성지표이다."
+      },
+      {
+        "[계산식]" : "K = 100 × (이동값 ÷ (sqrt(차이))) ÷ (150 + 수수료);\n\nCSIndex = K × ADXR × ATR"
+      }
+    ]
+  },
+  {
+    "title" : "DemandIndex",
+    "contents" : [
+      {
+        "[활용]" : "DemandIdx(기간);"
+      },
+      {
+        "[설명]" : "Demand지표는 매수압력과 매도압력의 비율에 의해 계산되어지는 가격과 거래량에 기반된 시장강도지표이다. 이지표는 가격이동의 선행지표가 될 수 있다"
+      },
+      {
+        "[계산식]" : "DemandIndex = DemandIdx(기간)"
+      }
+    ]
+  },
+  {
+    "title" : "DownAverage",
+    "contents" : [
+      {
+        "[활용]" : "DownAverage(가격,기간);"
+      },
+      {
+        "[설명]" : "DownAverage 지표는 연속 가격 감소의 Welles Wilder Style 이동평균이다. RSI의 계산에 사용된다"
+      },
+      {
+        "[계산식]" : "Var1 = if(C < C(1), C(1) - C, 0)\n\nDownAverage = (Var1(1) × (기간-1) + Var1) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "ForceIndex",
+    "contents" : [
+      {
+        "[활용]" : "ForceIndex(기간,이평방법);"
+      },
+      {
+        "[설명]" : "FI는 Dr. Alexander Elder가 개발한 진동자 지표이다. 힘지수는 엘더레이지표와 달리 거래량도 포함해서 주가를 분석한다. 즉 주가가 움직이는 방향, 움직이는 범위, 그리고 거래량을 분석해서 그 힘을 측정한다. 만약에 주가가 전일보다 높은 수준에서 끝나면 움직임의 힘이 강한 것이고, 전일보다 낮은 수준에서 끝나면 움직임이 약한 것이다."
+      },
+      {
+        "[계산식]" : "ForceIndex = EMA(V × (C - C(1)), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "Inertia",
+    "contents" : [
+      {
+        "[활용]" : "Inertia(RVI기간,MA기간);"
+      },
+      {
+        "[설명]" : "Inertia 지표는 최소자승이평을 참조한 Relative Volatility Index (RVI) 이다. RVI 지표에 따르면 Inertia의 범위는 0 ~ 100을 가지며 Inertia 값이 50 이상의 값이 되면 긍정적인 장기 추세 신호가 나타나고 50이하의 값이 되면 부정적인 신호가 나타난다."
+      },
+      {
+        "[계산식]" : "Inertia = LstSqrMA(RVI)"
+      }
+    ]
+  },
+
+  {
+    "title" : "KlingerOscillator",
+    "contents" : [
+      {
+        "[활용]" : "KlingerOscillator();"
+      },
+      {
+        "[설명]" : "KlingerOscillator 지표는 고-저 거래범위를 결합하여 거래량과 AD 거래의 상단과 하단을 찾을 수 있다. KlingerOscillator는 대부분 Klinger Volume Oscillator 또는 KVO로 알고 있고 KO Signal은 KO의 13 지수이평을 이용한다."
+      },
+      {
+        "[계산식]" : "Trend = if((H + L + C) > (H(1) + L(1) + C(1)), Trend + 1, Trend - 1);\n\nDM = H - L;\n\nCM = if(Trend = Trend(1), CM(1) + DM, DM(1) + DM);\n\nVF = V × |2 × (DM ÷ CM - 1)| × Trend × 100;\n\nKlingerOscillator = EMA(VF, 34) - EMA(VF, 55);"
+      }
+    ]
+  },
+  {
+    "title" : "MoneyFlowIndex",
+    "contents" : [
+      {
+        "[활용]" : "MoneyFlowIndex(기간);"
+      },
+      {
+        "[설명]" : "MFI는 주식 거래를 위한 자금이 유입되거나 유출되는 양을 측정해 주는 지표로서 추세 전환시기를 예측하거나 시세의 과열 및 침체 정도를 파악하는데 유용하다. RSI가 주가만을 사용한 지표인데 비해 MFI는 주가와 거래량을 동시에 사용하는 특징이 있다.\n\nMFI 값이 80 이상이면 과열로 보고 이 이상이면 매도로 판단 검색\n\nMFI 값이 20 이상이면 침체로 보고 이 이상이면 매수로 판단 검색"
+      },
+      {
+        "[계산식]" : "TP = (H + L + C) ÷ 3;\n\nMoneyFlow = TP × V;\n\nPMF_Sum = \n    Sum(If(TP ＞ TP(1), MoneyFlow, 0));\n\nNMF_Sum = \n    Sum(If(TP < TP(1), MoneyFlow, 0));\n\nMoneyRatio = PMF_Sum + NMF_Sum;\n\nMoneyFlowIndex = 100 - (100 ÷ 1 + MoneyRatio)"
+      }
+    ]
+  },
+  {
+    "title" : "신심리도",
+    "contents" : [
+      {
+        "[활용]" : "신심리선(New Psychology Line)\n\nNewPsychology(가격,기간);"
+      },
+      {
+        "[설명]" : "지수 신심리선 차트는 시장의 심리상태를 판단하는 지수로서 과거 심리선의 단점을 보완하여 주가 등락폭까지를 감안한 지표이다."
+      },
+      {
+        "[계산식]" : "n일동안 상승폭비율 = 상승폭 ÷ (상승폭 + 하락폭)\n\nn일동안 하락폭비율 = 하락폭 ÷ (상승폭 + 하락폭)\n\n신심리선 = 상승일수 × (n일동안 상승폭 비율 - n일동안 하락폭비율) ÷ 10"
+      }
+    ]
+  },
+  {
+    "title" : "OmegaIndex",
+    "contents" : [
+      {
+        "[활용]" : "OmegaIndex(가격,기간1,기간2);"
+      },
+      {
+        "[설명]" : "시장전체 및 종목의 심리과열 및 심리침체를 판단하기에 매우 적절한 보조지표이다. 대표적인 심리지표인 RSI와 이격도(Disparity)를 절묘하게 배합하여 만든 지표이다. RSI와 이격도의 민감도(Sensitivity)로 계산된다."
+      },
+      {
+        "[계산식]" : "OmegaIndex = (이격도(가격, 기간1) + RSI(가격, 기간2)) ÷ 2"
+      }
+    ]
+  },
+  {
+    "title" : "투자심리선",
+    "contents" : [
+      {
+        "[활용]" : "투자심리선(Psychology Line)\n\nPsychologyLine(가격,기간);"
+      },
+      {
+        "[설명]" : "투자심리선은 주식시장이 현재 과열국면인지 침체국면인지를 파악하여 단기적 매매시점을 결정 하기 위한 지표로 시장의 갑작스런 악재나 호재를 즉각 반영시킴으로써 시장의 변화를 신속하고 객관적으로 판단할 수 있게 하는 단순한 지표이다."
+      },
+      {
+        "[계산식]" : "심리도 = n일간 전일대비 상승일수 × 100 ÷ n"
+      }
+    ]
+  },
+  {
+    "title" : "PVRank",
+    "contents" : [
+      {
+        "[활용]" : "PVRank();"
+      },
+      {
+        "[설명]" : "Price Volume Rank 지표는 컴퓨터없이도 계산이 가능한 지표로 단순하게 개발되었다. 기본적으로 PVRank가 2.5이하일 때 매수, 2.5이상일 때 매도한다."
+      },
+      {
+        "[계산식]" : "Var1 = C > C(1) and V > V(1);\n\nVar2 = C > C(1) and V < V(1);\n\nVar3 = C < C(1) and V < V(1);\n\nVar4 = C < C(1) and V > V(1);\n\nPVRank = if(Var1, 1, if(Var2, 2, if(Var3, 3, if(Var4, 4, 0))))"
+      }
+    ]
+  },
+  {
+    "title" : "PVT",
+    "contents" : [
+      {
+        "[활용]" : "PVT(Price Volume Trend)\n\nPVT();"
+      },
+      {
+        "[설명]" : "PVT는 주가의 상승, 하락에 따라 현재의 주식시장이 매집 단계에 있는지 분산 단계에 있는지를 분석할 수 있는 지표이다. OBV와 비슷하나 전일 주가와 대비한 금일의 주가 상승분 또는 하락분만큼만 더해 주고 빼 준다는 의미에서 OBV 보다는 매매 자금의 흐름을 좀더 정확히 반영한다고 볼 수 있다."
+      },
+      {
+        "[계산식]" : "PVT = (((C-C(1)) ÷ C(1)) × V) + PVT(1)"
+      }
+    ]
+  },
+  {
+    "title" : "UpAverage",
+    "contents" : [
+      {
+        "[활용]" : "UpAverage(가격,기간);"
+      },
+      {
+        "[설명]" : "UpAverage 지표는 연속 가격 증가의 Welles Wilder Style 이동평균이다. RSI의 계산에 사용된다"
+      },
+      {
+        "[계산식]" : "Var1 = if(C > C(1), C - C(1), 0)\n\nUpAverage = (Var1(1) × (기간-1) + Var1) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "WilliamsAccumDist",
+    "contents" : [
+      {
+        "[활용]" : "WilliamsAccumDist(Williams Accumulation/Distribution)\n\nWilliamsAD();"
+      },
+      {
+        "[설명]" : "Williams' Acc/Dist는 현재 주식 시장의 매수.매도 세력을 나타내 주는 지표입니다. 주가가 신고가를 형성하고 있는데 Williams' Acc/Dist가 신고가를 형성하지 못하면 매수세력이 분산되고 있음을 나타내므로 매도 신호입니다. 주가가 신저가를 형성하고 있는데 Williams' Acc/Dist가 신저가를 형성하지 못하면 매수세력이 축적되고 있음을 나타내므로 매수 신호입니다."
+      },
+      {
+        "[계산식]" : "Var1 = Sum(if(C > C(1), C - Min(C(1), L), 0));\n\nVar2 = Sum(if(C < C(1), C - Max(C(1), H), 0));\n\nWilliamsAccumDist = Var1 + Var2"
+      }
+    ]
+  },
+  {
+    "title" : "BPDL_Stochastic",
+    "contents" : [
+      {
+        "[활용]" : "((((C - (L(기간 - 1))) ÷ ((highest(H, 기간) - lowest(L, 기간)))) × 100) + 100) ÷ 2"
+      },
+      {
+        "[설명]" : "Stochastics지표의 일종"
+      },
+      {
+        "[계산식]" : "Var1 = C - L(기간 - 1);\n\nVar2 = highest(H, 기간) - lowest(L, 기간);\n\nBPDL_Stochastic = (((Var1 ÷ Var2) × 100) + 100) ÷ 2"
+      }
+    ]
+  },
+  {
+    "title" : "CompuTracVolatility",
+    "contents" : [
+      {
+        "[활용]" : "A=SMA(((H - L) ÷ C ), 기간);\n\nB = A(기간);\n\nif(B==0, 0, A ÷ B * 100)"
+      },
+      {
+        "[설명]" : "변동성 지표의 일종으로서, 봉의 전체길이의 평균이 일정기간전의 평균과 비교한 값이다."
+      },
+      {
+        "[계산식]" : "Var1 = SMA(((H - L) ÷ C), 기간);\n\nCompuTracVolatility = Var1 ÷ Var1(기간) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "PluralityIndex",
+    "contents" : [
+      {
+        "[활용]" : "SMA(Abs(O - H), 기간)"
+      },
+      {
+        "[설명]" : "John McGinley에 의해 만들어진 지표이고 시가와 고가의 차의 절대값을 이동평균한 값이다. 이는 매수 세력과 매도 세력의 차를 바탕으로 한다."
+      },
+      {
+        "[계산식]" : "PluralityIndex = SMA(Abs(O - H), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "ChaikinMoneyFlow",
+    "contents" : [
+      {
+        "[활용]" : "ChaikinMoneyFlow(기간);"
+      },
+      {
+        "[설명]" : "Marc Chaikin에 의해 개발되었으며, 주어진 기간동안의 Accumulation/Distribution 값을 합한 값을 주어진 기간동안의 거래량을 더하나 값으로 나누어 계산한다. CFI 값이 양수일 때 강세장을 나타낸다. CFI 값이 음수일 때 약세장을 나타낸다."
+      },
+      {
+        "[계산식]" : "AD = (((C - L) - (H - C)) ÷ (H - L)) × V;\n\nChaikinMoneyFlow = Sum(AD, 기간) ÷ Sum(V, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "MarketFacilitation",
+    "contents" : [
+      {
+        "[활용]" : "MarketFacilitation();"
+      },
+      {
+        "[설명]" : "MarketFacilitation는 거래량에 의해 나누어지는 TradingRange(H-L)의 값이다. 거래량단위별 가격의 이동을 측정한다."
+      },
+      {
+        "[계산식]" : "MFI = (H - L) ÷ V"
+      }
+    ]
+  },
+  {
+    "title" : "NegativeVolumeIndex",
+    "contents" : [
+      {
+        "[활용]" : "NVI();"
+      },
+      {
+        "[설명]" : "NVI(Negative Volume Indicator)는 거래량이 전일에 비해 감소하는 날을 중심으로 만든 지표이다. 거래가 감소하는 날에는 투기자금(smart money)이 먼저 빠져나간다는 가정을 전제로 하고 있다."
+      },
+      {
+        "[계산식]" : "NVI = if(V<V(1), NVI(1)+(C-C(1) ÷ C(1)), NVI(1));"
+      }
+    ]
+  },
+  {
+    "title" : "OBV",
+    "contents" : [
+      {
+        "[활용]" : "OBV (On Ballance Volume)\n\nOBV();"
+      },
+      {
+        "[설명]" : "OBV는 현재의 주식 시장이 매집 단계에 있는지 분산 단계에 있는지를 분석할 수 있으며, 특히 주식 시장이 큰 변동 없이 정체 상태에 있을 때 주가의 추세 방향을 예측하는데 유용한 지표입니다.\n\n주가는 계속 하락하고 있지만 OBV는 횡보할 경우 조만간 주가 상승이 예상되고 주가는 계속 상승하고 있지만 OBV는 횡보할 경우, 조만간 주가 하락이 예상된다.\n\n주가가 횡보하고 있을 때 OBV 선의 고점이 계속 상승할 경우 조만간 주가 상승이 예상되고, OBV선의 고점이 계속 하락하는 것은 조만간 주가 하락이 예상됩니다."
+      },
+      {
+        "[계산식]" : "OBV = if(C>C(1), OBV(1)+V, if(C<C(1), OBV(1)-V, if(C==C(1), OBV(1),0))"
+      }
+    ]
+  },
+  {
+    "title" : "OBVolMv",
+    "contents" : [
+      {
+        "[활용]" : "OBVolMv(On Balance Volume, Moving)\n\nOBVolMv(기간);"
+      },
+      {
+        "[설명]" : "OBVolMv 지표는 1963년 Joseph Granville's의 \"최대이익을 위한 일일주식시장 타이밍의 새로운전략\" 이라는 도서에 따르면 OBV지표가 누적의 전체를 나타내는 것이 아니라 전체의 움직임이다."
+      },
+      {
+        "[계산식]" : "OBVolMv = Accum(OBV(), 기간);"
+      }
+    ]
+  },
+  {
+    "title" : "PositiveVolumeIndex",
+    "contents" : [
+      {
+        "[활용]" : "PVI();"
+      },
+      {
+        "[설명]" : "PVI는 거래량이 전일에 비해 증가하는 날을 중심으로 만든 지표로서 현재의 주식 시장이 활황장 인가 침체장 인가를 구분할 수 있는 지표이다.\n\nPVI에 정반대의 관점에서 출발한 지표로 NVI(Negative Volume Index)가 있다.\n\nPVI값이 PVI의 1년 이동평균선 (300일 또는 52주) 위에 놓여 있을 때 활황 장세일 확률이 79% 정도이며, 이동평균선 아래에 놓여 있을 때 침체 장세일 확률은 대략 67% 정도이다.\n\n확률적으로 NVI는 활황장을, PVI는 침체장을 판단하는데 유리한 지표라 할 수 있다."
+      },
+      {
+        "[계산식]" : "PositiveVolumeIndex = if(V>V(1), PVI(1)＋(C-C(1)) ÷ C(1), PVI(1))"
+      }
+    ]
+  },
+  {
+    "title" : "VAO",
+    "contents" : [
+      {
+        "[활용]" : "VAO(Volume Average Oscillator)\n\nVAO(기간);"
+      },
+      {
+        "[설명]" : "거래량과 가격 변동폭을 규정한 지표이다. 주가가 상승할 경우에는 거래량 증가가 함께 일어난다는 기본적인 전제를 깔고 만들어진 지표이다."
+      },
+      {
+        "[계산식]" : "Var1 = C - (Highest(C, 기간) + Lowest(C, 기간)) ÷ 2;\n\nVAO = Var1 × Accum(V, 기간) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "VolumeRatio",
+    "contents" : [
+      {
+        "[활용]" : "VR(기간);"
+      },
+      {
+        "[설명]" : "VR은 OBV와 마찬가지로 거래량의 데이터를 사용하게 된다. OBV는 기준일을 결정하는 방법에 따라서 가치 큰 차이가 발생하며 그 자체로서는 시세를 판단하거나 과거와 비교하는 것이 불가능하다. 이러한 결점을 보완하는 것이 VR이다. OBV가 주가의 상승일과 하락일의 거래량을 가감해서 누적되는데 반해 VR은 비율로 분석한다.\n\nVolumeRatio 지표값에 대해서 아래와 같이 판단된다. \n    70% 이하이면 침체국면 \n    150% ~ 200%이면 보통\n    450% 이상이면 과열국면\n\n상승장에서는 과열심리로 인해 시장가격이 지속해서 올라가는 경우가 많기에, VR 지표는 침체기일 때 상대적으로 신뢰도가 큽니다."
+      },
+      {
+        "[계산식]" : "Var1 = (Sum(if(C>C(1), V), 기간) + Sum(if(C==C(1), V), 기간) ÷ 2);\n\nVar2 = (Sum(if(C<C(1), V), 기간) + Sum(if(C==C(1), V), 기간) ÷ 2);\n\nVolumeRatio = 100 × (Var1 ÷ Var2)"
+      }
+    ]
+  },
+  {
+    "title" : "거래량",
+    "contents" : [
+      {
+        "[설명]" : "주식시장에서 주식이 거래된 양을 뜻한다. 주가지수와 함께 주식시장의 장세를 판단하는 중요한 지표로, 주가의 변동을 일으키는 신호로 받아들여진다. 즉, 주식시장에서 거래량이 늘어나면 주가의 상승이 기대되고 줄어들면 하락이 예측된다.주식시장의 유통수준을 장기간에 걸쳐 정확히 파악할 때 기준이 되기도 한다. 여기에는 상장주식회전율과 시가총액회전율이 있는데, 상장주식회전율은 거래량을 해당기간 중 평균상장주식수로 나누어 산출하며 시가총액회전율은 거래대금을 해당기간 중 평균시가총액으로 나누어 산출한다.\n\n선물시장에서 특정기간 내에 거래된 선물계약의 수를 뜻하기도 한다. 선물계약 매도수량과 매입수량 중 한 쪽의 수량만으로 표시하는데, 이때의 거래는 투자자간에 의견의 불일치가 있어서 발생한다. 곧 매수자는 해당가격이 싸다고 생각하는 반면 매도자는 비싸다고 판단해 거래가 이루어지는 것이다. 이는 새로운 정보가 유입될 때 그 정보를 서로 다르게 해석하였음을 의미한다."
+      }
+    ]
+  },
+  {
+    "title" : "거래량이동평균",
+    "contents" : [
+      {
+        "[활용]" : "이동평균선 분석은, 기술적 지표에서 가장 지표적인 방법으로 이동평균선과 거래량와 관계에서 지지와 저항을 이용한 분석과 이동평균선들과 거래량의 배열간의 상관 관계를 분석하는 방법이 있다.\n\n이동평균선과 거래량과는 중력과 비슷한 관계가 있어, 주가가 급등락하면, 언젠가는 주가와 이동평균선과 다시 모이려는 경향이 발생한다."
+      },
+      {
+        "[설명]" : "Cross 활용\n  특정일수 이동평균선을 기준으로 거래량이 상향돌파하면, 매수신호로, 하향돌파하면 매도신호로 판단한다.\n\n이동평균선 배열 판단\n  이동평균선이 위로부터 장기,중기,단기로 배열되어있으면, 역배열이라 하여 약세국면을, 이동평균선이 아래로부터 단기,중기,장기로 배열되어있으면 정배열이라하며, 강세를 예상한다.\n\n괴리도 활용\n  이동평균선과 거래량과의 관계거래가 매우 등락하며 이동평균선과 크게 괴리가 발생하였을때는, 반발매수 가능성이 높으며, 거래량이 매우 급등하며 이동평균선과 괴리가 발생하였을때는 매도세가 강화될 가능성이 높다고 판단한다."
+      }
+    ]
+  },
+  {
+    "title" : "거래대금",
+    "contents" : [
+      {
+        "[설명]" : "해당종목의 시장가격에 거래량을 곱한 것이다. 어떤 종목의 거래대금이 많다면, 이는 일반적으로 그 종목에 대한 거래가 활발하다는 것을 나타낸다. 즉, 그 종목이 시장에서 인기가 높다고 할 수 있다. 그러나 대량의 자전거래 또는 종목별 호재로 인하여 거래대금이 급격히 증가하는 경우도 있다."
+      }
+    ]
+  },
+  {
+    "title" : "GMMcClellanOscillator",
+    "contents" : [
+      {
+        "[활용]" : "EMA((O × C) - (H × (V × 100)), 기간1)\n\nEMA((O × C) - (H × (V × 100)), 기간2)"
+      },
+      {
+        "[설명]" : "Greg Morris 거래량을 McClellan Oscillator에 적용 시키며 이 지표를 만들었다. 이 지표는 거래량이 충분치 않을 때는 주가가 꺽이는 경향을 이용한 것이다. 과매도와 과매수 개념은 McClellan Oscillator와 같으나, 약간은 다르다."
+      },
+      {
+        "[계산식]" : "Var1 = EMA((O × C) - (H × (V × 100)), 기간1);\n\nVar2 = EMA((O × C) - (H × (V × 100)), 기간2);\n\nGMMcClellanOscillator = Var1 - Var2"
+      }
+    ]
+  },
+  {
+    "title" : "GMMcClellanSummation",
+    "contents" : [
+      {
+        "[활용]" : "Sum(EMA((O × C) - (H × (V × 100)), 기간1)\n\nEMA((O × C) - (H × (V × 100)), 기간2))"
+      },
+      {
+        "[설명]" : "Greg Morris 거래량을 McClellan Oscillator에 적용 시키며 이 지표를 만들었다. 이 지표는 거래량이 충분치 않을 때는 주가가 꺽이는 경향을 이용한 것이다. 과매도와 과매수 개념은 McClellan Oscillator와 같으나, 약간은 다르다. McClellan 오실레이터의 누적값이다."
+      },
+      {
+        "[계산식]" : "Var1 = EMA((O × C) - (H × (V × 100)), 기간1);\n\nVar2 = EMA((O × C) - (H × (V × 100)), 기간2);\n\nGMMcClellanSummation = Sum(Var1 - Var2)"
+      }
+    ]
+  },
+  {
+    "title" : "McClellan_Oscillator",
+    "contents" : [
+      {
+        "[활용]" : "McClellanOscillator(기간1, 기간2);"
+      },
+      {
+        "[설명]" : "이 지표는 Sherman과 Marian McClellan에 의해서 만들어진 지표인데, McClellan Oscillator는 증권시장에서 상승종목수와 하락종목수의 차이를 평활화(Smooth)시켜 시장폭을 가늠하는 지표이다."
+      },
+      {
+        "[계산식]" : "10% 지수이동평균은 약 19일 이동평균선을 말하며, 5% 지수이동평균은 약 39일 이동평균선을 말한다.\n\nVar1 = EMA(상승종목수 - 하락종목수, 19);\n\nVar2 = EMA(상승종목수 - 하락종목수, 39);\n\nMcClellan_Oscillator = Var1 - Var2"
+      }
+    ]
+  },
+  {
+    "title" : "McClellan_Summation",
+    "contents" : [
+      {
+        "[활용]" : "McClellanSummation(기간1, 기간2);"
+      },
+      {
+        "[설명]" : "이 지표는 Sherman과 Marian McClellan에 의해서 만들어진 지표인데, McClellan Oscillator를 바탕으로 한 시장 폭(Market Breath)을 측정하는 지표이다."
+      },
+      {
+        "[계산식]" : "단, 5% trend 는 (상승종목수 - 하락종목수)의 5% 지수이동평균(약 19일) 10% trend 는 (상승종목수 - 하락종목수)의 10% 지수이동평균(약 39일)\n\nVar1 = EMA(상승종목수 - 하락종목수, 19);\n\nVar2 = EMA(상승종목수 - 하락종목수, 39);\n\n- 1) MSI = McClellan Oscillator - (10 × Var2) + (20 × Var1) + 1000\n\n- 2) MSI = 전일의 Summation Index + McClellan Oscillator로 계산된다."
+      }
+    ]
+  },
+  {
+    "title" : "BPDL_RelativeVolumeIndex",
+    "contents" : [
+      {
+        "[활용]" : "SMA(((If((C > C(기간)), 1, -1)) × (V ÷ SMA(V, 12))), 기간)"
+      },
+      {
+        "[설명]" : "주가 상승에 따른 거래량의 ROC(rate of change)과의 곱을 평균 낸 값이다. 주가의 추세에 따른 거래량의 변화율을 쉽게 알 수 있다. 추세선 분석 및 괴리도 분석을 활용"
+      },
+      {
+        "[계산식]" : "BRVI = SMA(((If((C > C(기간)), 1, -1)) × (V ÷ SMA(V, 12))), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "DailyVolumeIndex",
+    "contents" : [
+      {
+        "[활용]" : "(((C - L) ÷ C) - ((H - C) ÷ C)) × V"
+      },
+      {
+        "[설명]" : "당일의 매수와 매도세력을 고려하여, 만든 거래량 지표의 일종이다."
+      },
+      {
+        "[계산식]" : "DailyVolumeIndex = (((C - L) ÷ C) - ((H - C) ÷ C)) × V"
+      }
+    ]
+  },
+  {
+    "title" : "Morris_IntradayAccumulator",
+    "contents" : [
+      {
+        "[활용]" : "sum((C - ((H + L) ÷ 2)) × V)"
+      },
+      {
+        "[설명]" : "종가와 일중 고가와 저가의 중간값과의 차에 거래량을 곱한 값을 누적한 것이다."
+      },
+      {
+        "[계산식]" : "Morris_IntradayAccumulator = sum((C - ((H + L) ÷ 2)) × V)"
+      }
+    ]
+  },
+  {
+    "title" : "MovingBalanceIndicator",
+    "contents" : [
+      {
+        "[활용]" : "MBI(MovingBalanceIndicator)\n\n(SMA((1 ÷ ((O ÷ H) ÷ (C ÷ (V × 100)))) × 10, 기간)) + (SMA(((C) ÷ (C + (V × 100))) × 100, 기간)) + ((SMA(O, 기간)) ÷ (SMA(H, 기간)) × 10)"
+      },
+      {
+        "[설명]" : "Humphrey Lloyd 박사에 의해 만들어진 지표이다."
+      },
+      {
+        "[계산식]" : "Var1 = SMA((1 ÷ ((O ÷ H) ÷ (C ÷ (V × 100)))) × 10, 기간);\n\nVar2 = SMA(((C) ÷ (C + (V × 100))) × 100, 기간);\n\nVar3 = (SMA(O, 기간)) ÷ (SMA(H, 기간)) × 10;\n\nMovingBalanceIndicator = Var1 + Var2 + Var3"
+      }
+    ]
+  },
+  {
+  "title" : "OBVwithAverageVolume",
+    "contents" : [
+      {
+        "[활용]" : "sum((C × (V - SMA(V, 15))))"
+      },
+      {
+        "[설명]" : "그랜빌의 개념에서 평균 거래량을 일일 거래량 대신에 사용한 지표이다."
+      },
+      {
+        "[계산식]" : "OBVwithAverageVolume = Sum((C × (V - SMA(V, 15))))"
+      }
+    ]
+  },
+  {
+    "title" : "OBVMidpoint",
+    "contents" : [
+      {
+        "[활용]" : "M=(H + L) ÷ 2;\n\nM1=(H(1) + L(1)) ÷ 2;\n\nsum(if(M > M1, V, if(M < C(1), -V, 0)))"
+      },
+      {
+        "[설명]" : "그랜빌의 OBV를 종가 대신에 당일 고가와 저가의 중간값을 사용하는 것이다."
+      },
+      {
+        "[계산식]" : "Var1 = (H + L) ÷ 2;\n\nVar2 = (H(1) + L(1)) ÷ 2;\n\nOBVMidpoint = Sum(if(Var1 > Var2, V, if(Var1 < C(1), -V, 0)))"
+      }
+    ]
+  },
+  {
+    "title" : "OBVOscillator",
+    "contents" : [
+      {
+        "[활용]" : "EMA(OBV(), 기간) - OBV()"
+      },
+      {
+        "[설명]" : "이 지표는 OBV의 특정일간의 지수이동 평균과 OBV간의 차이를 나타낸 값이다."
+      },
+      {
+        "[계산식]" : "OBVOscillator = EMA(OBV(), 기간) - OBV()"
+      }
+    ]
+  },
+  {
+    "title" : "SmoothAccumDist",
+    "contents" : [
+      {
+        "[활용]" : "SmoothAccumDist(Smooth Accumulation/Distribution)\n\nEMA((((4 × C) + (H + L) + (((H(1) + L(1)))) × V)), 기간)"
+      },
+      {
+        "[설명]" : "Bruce Delaurentis of Kensington 자산관리 에서 만든 Special Accumulation Distribution을 부드럽게 한 지표이다."
+      },
+      {
+        "[계산식]" : "SmoothAccumDist = EMA((((4 × C) + (H + L) + (((H(1) + L(1)))) × V)), 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "SpecialAccumDist",
+    "contents" : [
+      {
+        "[활용]" : "SpecialAccumDist(Special Accumulation/Distribution)\n\nSum(((C × 4) - ((H + L) + (((H(1) + L(1)))))) × V)"
+      },
+      {
+        "[설명]" : "Bruce DeLaurentis of Kensington 자산 관리 회사에서 발전 시킨 지표로서, 주가를 고려한 거래량 지표이다. 이를 통해 추세 및 거래량의 강도를 알 수 있다."
+      },
+      {
+        "[계산식]" : "SpecialAccumDist = Sum(((C × 4) - ((H + L) + (((H(1) + L(1)))))) × V)"
+      }
+    ]
+  },
+  {
+    "title" : "DysartVolume",
+    "contents" : [
+      {
+        "[활용]" : "EMA((If(V > V(1), sum(V), 0)) - (If(V < V(1), sum(V), 0)), 기간)"
+      },
+      {
+        "[설명]" : "만일 거래량이 전일 보다 늘어났으면, 거래량을 계속 더한 값을 거래량이 감소했을 때 거래량을 더한 값으로 뺀 것에 지수 이동평균한 지표"
+      },
+      {
+        "[계산식]" : "Var1 = (If(V > V(1), sum(V), 0)) - (If(V < V(1), sum(V), 0));\n\nDysartVolume = EMA(Var1 ,기간)"
+      }
+    ]
+  },
+  {
+    "title" : "Volume%Plus-minusAVG",
+    "contents" : [
+      {
+        "[활용]" : "(V - SMA(V, 기간)) ÷ SMA(V, 기간)"
+      },
+      {
+        "[설명]" : "N일평균 거래량과 당일 거래량의 차를 N일이동평균선으로의 퍼센트로 나타낸 지표이다."
+      },
+      {
+        "[계산식]" : "Volume%Plus-minusAVG = (V - SMA(V, 기간)) ÷ SMA(V, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "VolumeStdDeviation",
+    "contents" : [
+      {
+        "[활용]" : "(V - SMA(V, 기간)) ÷ StdDevMv(V, 0, 기간)"
+      },
+      {
+        "[설명]" : "n일 간의 거래량 이동평균과  거래량과의 차를 n일간의 거래량의 표준편차로 나눈 값이다. 중요한 변곡정에서 값이 상승하는 성격이 있다."
+      },
+      {
+        "[계산식]" : "VolumeStdDeviation = (V - SMA(V, 기간)) ÷ StdDevMv(V, 0, 기간)"
+      }
+    ]
+  },
+  {
+    "title" : "일간누적거래량",
+    "contents" : [
+      {
+        "[활용]" : "DaySum(Volume)"
+      },
+      {
+        "[설명]" : "일간누적거래량은 일별 거래량의 데이터를 합산하여 보여주는 지표이다."
+      },
+      {
+        "[계산식]" : "일간누적거래량 = DaySum(Volume)"
+      }
+    ]
+  },
+  {
+    "title" : "일간누적거래대금",
+    "contents" : [
+      {
+        "[활용]" : "DaySum(거래대금)"
+      },
+      {
+        "[설명]" : "일간누적거래대금은 일별 거래대금의 데이터를 합산하여 보여주는 지표이다."
+      },
+      {
+        "[계산식]" : "일간누적거래대금 = DaySum(Amount)"
+      }
+    ]
+  },
+  {
+    "title" : "BinaryWave",
+    "contents" : [
+      {
+        "[활용]" : "BinaryWave(MAOsc1,MAOsc2,MASig,MA기간,ROC기간,스톡기간);"
+      },
+      {
+        "[설명]" : "Binary Wave는 스티븐 B. 아첼리스가 기존의 지표를 가지고 새로 만든 지표이다. 즉, Binary Wave는 MACD, Exponential Moving Average, ROC, Stochastic 등 총 4개의 지표를 이용하여 만든 지표이다.\n\nBinary가 의미하듯이 컴퓨터 이진파일의 0, 1값에서 착안하여 만들었는데, 각 지표의 상태에 따라 -1, 또는 1의 값을 부여하여 합산하여 만든 지표이다.\n\n    1. MACD Oscillator이 ‘0’보다 크면 1, 작으면 -1\n\n    2. 종가가 Exponential Maving Average값보다 크면 1, 작으면 -1\n\n    3. Price ROC가 ‘0’보다 크면 1, 작으면 -1\n\n    4. StochasticSlow의 %k 가 50보다 크면 1, 작으면 -1을 부여한다.\n\n이렇게 나타난 값들은 모두 더하여 Binary Wave를 형성한다. 4가지 모두 만족하게 되면 4가 되고, 모두 만족하지 못하면 -4가 된다. 즉, Binary Wave는 -4 ~ 4사이를 움직인다.\n\n지표값이 0선을 상향 돌파시 매수, 하향돌파시 매도하며, +4이면 강세시장을 -4이면 약세시장을 나타낸다."
+      },
+      {
+        "[계산식]" : "Var1 = if(MACDOscillator > 0, 1, -1);\n\nVar2 = if(C > EMA, 1, -1);\n\nVar3 = if(PriceRoc > 0, 1, -1);\n\nVar4 = if(StochasticSlow %K>50, 1, -1);\n\nBinaryWave = Var1 + Var2 + Var3 + Var4;"
+      }
+    ]
+  },
+  {
+    "title" : "가격거래상관분석",
+    "contents" : [
+      {
+        "[활용]" : "가격거래상관분석(Correlation Coefficient Moving)\n\nCorCoefMV(가격, Volume, 기간);"
+      },
+      {
+        "[설명]" : "가격거래상관분석은 지난 n기간 동안의 두 데이터에 대한 상관분석을 계산한 것이다. Inpout1값과 Input2값의 상관계수 분석 두 값이 얼마나 상관 관계가 있는지를 표현"
+      },
+      {
+        "[계산식]" : "가격거래상관분석 = Cov ÷ (σX + σY)"
+      }
+    ]
+  },
+  {
+    "title" : "가격거래공분산",
+    "contents" : [
+      {
+        "[활용]" : "가격거래공분산(Moving Covariance)\n\nCovarianceMv(가격,Volume,기간);"
+      },
+      {
+        "[설명]" : "가격거래공분산은 지난 n기간 동안의 두 데이터에 대한 공분산을 계산한 것이다."
+      },
+      {
+        "[계산식]" : "가격거래공분산 = (Σ(X - |X|) x (Y - |Y|)) ÷ n"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticClose",
+    "contents" : [
+      {
+        "[활용]" : "Stochastic(C,기간);"
+      },
+      {
+        "[설명]" : "StochasticClose지표는 시/고/저/종 대신 특정 배열을 접목시킨 Lane Stochastic Osc 계산법의 일반적인 형태이다. 이 지표는 다른지표들과 합성하기에 매우 유용하다."
+      },
+      {
+        "[계산식]" : "StochasticClose = (C - Lowest(C, 기간)) ÷ (Highest(C, 기간) - Lowest(C, 기간))"
+      }
+    ]
+  },
+  {
+    "title" : "WellesVolatilitySIC",
+    "contents" : [
+      {
+        "[활용]" : "WellesVolatilitySIC(Welles Wilder Volatility Significant Close)\n\nWellesVolatility_Sic(상수,기간);"
+      },
+      {
+        "[설명]" : "WellesVolatilitySIC 지표는 Welles Wilder Volatility System 중 하나로 가격의 포지션이 Short상태이면 기간중 최소값, Long상태이면 기간중 최대값으로 정한다."
+      },
+      {
+        "[계산식]" : "WellesVolatilitySIC = if(가격 < 가격(1), Lowest(가격, 기간), Highest(가격, 기간))"
+      }
+    ]
+  },
+  {
+    "title" : "WellesVolatilityARC",
+    "contents" : [
+      {
+        "[활용]" : "WellesVolatilityARC(Welles Wilder Volatility Average true Range times Constant)\n\nWellesVolatility_Arc(상수,기간);"
+      },
+      {
+        "[설명]" : "WellesVolatilityARC 지표는 Welles Wilder Volatility System 중 하나로 Average True Range(ATR)에 상수를 곱하여 표현한 지표이다."
+      },
+      {
+        "[계산식]" : "WellesVolatilityARC = ATR(기간) × 상수"
+      }
+    ]
+  },
+  {
+    "title" : "WellesVolatilitySAR",
+    "contents" : [
+      {
+        "[활용]" : "WellesVolatilitySAR(Welles Wilder Volatility Stop and Reversal)\n\nWellesVolatility_Sar(상수,기간);"
+      },
+      {
+        "[설명]" : "WellesVolatilitySAR 지표는 Welles Wilder Volatility System 중 하나로 가격의 포지션이 Short상태이면 WellesVolatilitySIC-WellesVolatilityATR, Long상태이면 WellesVolatilitySIC+WellesVolatilityATR로 값을 산출한다."
+      },
+      {
+        "[계산식]" : "Var1 = WellesVolatilityARC;\n\nVar2 = WellesVolatilitySIC;\n\nWellesVolatilitySAR = if(가격 < 가격(1), Var1 + Var2, Var1 - Var2)"
+      }
+    ]
+  },
+  {
+    "title" : "가격거래결정분석",
+    "contents" : [
+      {
+        "[활용]" : "가격거래결정분석(R-Squared)\n\nRsquaredCoefMV(가격,Volume,기간);"
+      },
+      {
+        "[설명]" : "결정계수 지표는 가격이 선형회귀선에 얼마나 잘 근접하게 계산되었는지를 나타낸다. 상관계수의 Square(제곱) 계산에서 이름이 유래되었다.(수학에서 그리스 문자 rho,r의 문자를 나타낸다)\n\n주가지수나 채권지수와 기준이 되는 벤치마크 지수의 상관관계를 나타내는 지표, 미국에서 고정 수익의 유가증권의 경우 기준 지수는 미재무부 단기 국채이고 주식은 S&P 500지수 이다. R-squared 항상 0과 100사이의 값이다. 0값은 값들이 평균과 상관없다는 것을 나타내고 100값은 모든 값이 그것의 평균과 일치함을 나타낸다."
+      },
+      {
+        "[계산식]" : "R-Squared = 기간데이터의 변동폭 ÷ 전체데이터의변동폭"
+      }
+    ]
+  },
+  {
+    "title" : "가격거래베타분석",
+    "contents" : [
+      {
+        "[활용]" : "가격거래베타분석(Beta Coefficient)\n\nBetaCoefMV(가격,Volume,기간)"
+      },
+      {
+        "[설명]" : "개별증권 또는 포트폴리오의 수익이 증권시장 전체의 움직임에 대해서 얼마나 민감하게 반응하는가를 나타내는 수치. Input1값과 input2값의 상관관계값"
+      },
+      {
+        "[계산식]" : "베타계수 = AB상관계수 × A표준편차 ÷ B표준편차"
+      }
+    ]
+  },
+  {
+    "title" : "HighLowEnvelope",
+    "contents" : [
+      {
+        "[활용]" : "(H - L) × ROC(C, 100, 1)"
+      },
+      {
+        "[설명]" : "HighLowEnvelope 지표는 봉길이(H-L)에 추세의 강도를 곱해준 지표이다."
+      },
+      {
+        "[계산식]" : "HighLowEnvelope = (H - L) × ROC(C, 100, 1)"
+      }
+    ]
+  },
+  {
+    "title" : "LinearTrendOscillator",
+    "contents" : [
+      {
+        "[활용]" : "(Sin(((10 × (Sum(Sum(1) × C, 10))) - (Sum(Sum(1), 10) × (Sum(C, 10)))) ÷ ((10 × Sum(Pow(Sum(1), 2), 10)) - Pow(Sum(Sum(1), 10), 2))) - Sin(((20 × (Sum(Sum(1) × C, 20))) - (Sum(Sum(1), 20) × (Sum(C, 20)))) ÷ ((20 × Sum(Pow(Sum(1), 2), 20)) - Pow(Sum(Sum(1), 20), 2)))) × 100"
+      },
+      {
+        "[설명]" : "sin함수를 이용한 지표로서 라인의 각도에 의한 사인함수에 의한 값을 보여준다."
+      },
+      {
+        "[계산식]" : "Func1(기간) = 기간 × (Sum(Sum(1) × C, 기간));\n\nFunc2(기간) = Sum(Sum(1), 기간) × (Sum(C, 기간);\n\nFunc3(기간) = 기간 × Sum(Pow(Sum(1), 2), 기간);\n\nFunc4(기간) = Pow(Sum(Sum(1), 기간), 2);\n\nVar1 = Sin((Func1(10) - Func2(10)) ÷ (Func3(10) - Func4(10)));\n\nVar2 = Sin((Func1(20) - Func2(20)) ÷ (Func3(20) - Func4(20)));\n\nLinearTrendOscillator = (Var1 - Var2) × 100;"
+      }
+    ]
+  },
+  {
+    "title" : "Sigma",
+    "contents" : [
+      {
+        "[활용]" : "(가격-SMA(가격,기간)) ÷ Stddevmv(가격,샘플,기간)"
+      },
+      {
+        "[설명]" : "특정 기간 주가의 표준편차와 당일 주가의 차를 비교한 지표로서, 현재시점의 주가의 침체도 또는 과열도를 판단하는 보조지표이다. 가격이 일정기간 변화를 보이지 않다가 급격히 큰 상승이나 하락을 보일 때의 Sigma지표의 매매활용도가 높다."
+      },
+      {
+        "[계산식]" : "Sigma = (가격-SMA(가격,기간)) ÷ Stddevmv(가격,샘플,기간)"
+      }
+    ]
+  },
+  {
+    "title" : "SlopeOfPrice",
+    "contents" : [
+      {
+        "[활용]" : "A = Sum(1);\n\n((10 × (Sum(A × C, 10))) - (Sum(A, 10) × (Sum(C, 10)))) ÷ ((10 × Sum(Pow(A, 2), 10)) - Pow(Sum(A, 10), 2))"
+      },
+      {
+        "[설명]" : "SlopeOfPrice 지표는 기간 주가의 표준편차와 당일 주가의 차를 비교한 지표이다."
+      },
+      {
+        "[계산식]" : "Var1 = Sum(1);\n\nVar2 = (10 × Sum(A × C, 10)) - (Sum(A, 10) × Sum(C, 10));\n\nVar3 = (10 × Sum(Pow(A, 2), 10)) - Pow(Sum(A, 10), 2);\n\nSlopeOfPrice = Var2 ÷ Var3;"
+      }
+    ]
+  },
+  {
+    "title" : "SlopeOfVolume",
+    "contents" : [
+      {
+        "[활용]" : "A = sum(1);\n\n((21 × (Sum(A × V, 21))) - (Sum(A, 21) × (Sum(V, 21)))) ÷ ((21 × Sum(Pow(A, 2), 21)) - Pow(Sum(A, 21), 2))"
+      },
+      {
+        "[설명]" : "SlopeOfVolume 지표는 거래량의 증감의 기울기를 나타내는 지표이다."
+      },
+      {
+        "[계산식]" : "Var1 = Sum(1);\n\nVar2 = (21 × Sum(A × V, 21)) - (Sum(A, 21) × Sum(V, 21));\n\nVar3 = (21 × Sum(Pow(A, 2), 21)) - Pow(Sum(A, 21), 2);\n\nSlopeOfVolume = Var2 ÷ Var3;"
+      }
+    ]
+  },
+  {
+    "title" : "SmoothedMomentum",
+    "contents" : [
+      {
+        "[활용]" : "A = sum(If(C > EMA(C(1), 10), 1, If(C < EMA(C(1), 10), -1, 0)));\n\nB=(A - A(5)) ÷ A(5);\n\nEMA(B, 5)"
+      },
+      {
+        "[설명]" : "SmoothedMomentum 지표는 두 개의 주기의 값을 이용하여 모멘텀을 관찰하는 지표로서, 지수 이동 평균과 종가와의 상관관계를 이용한다."
+      },
+      {
+        "[계산식]" : "Var1 = Sum(If(C > EMA(C(1), 10), 1, If(C < EMA(C(1), 10), -1, 0)));\n\nVar2=(Var1 - Var1(5)) ÷ Var1(5);\n\nSmoothedMomentum = EMA(Var2, 5)"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticFast_Close",
+    "contents" : [
+      {
+        "[활용]" : "((C - lowest(C, 기간)) ÷ (highest(H, 기간) - lowest(L, 기간))) × 100"
+      },
+      {
+        "[설명]" : "StochasticFast_Close지표는 최저 저가 대신에 최저 종가를 사용하여 만든 Stochastics 지표로서 Howard Young에 의해서 개발되었다."
+      },
+      {
+        "[계산식]" : "Var1 = (C - Lowest(C, 기간)) ÷ (Highest(H, 기간) - Lowest(L, 기간));\n\nStochasticFast_Close = Var1 × 100"
+      }
+    ]
+  },
+  {
+    "title" : "StochasticSlow_Close",
+    "contents" : [
+      {
+        "[활용]" : "SMA(((C - lowest(C, FastK기간)) ÷ (highest(H, FastK기간) - lowest(L, FastK기간))) × 100, SlowK기간)"
+      },
+      {
+        "[설명]" : "StochasticSlow_Close지표는 최저 저가 대신에 최저 종가를 사용하여 만든 Stochastics 지표로서 Howard Young에 의해서 개발되었다."
+      },
+      {
+        "[계산식]" : "Var1 = (C - Lowest(C, FastK기간)) ÷ (Highest(H, FastK기간) - Lowest(L, FastK기간));\n\nStochasticSlow_Close = SMA(Var1 × 100, SlowK기간)"
+      }
+    ]
+  },
+  {
+    "title" : "Volume&PriceAccum",
+    "contents" : [
+      {
+        "[활용]" : "Volume & Price Accum"
+      },
+      {
+        "[설명]" : "가격과 거래량간에 상관관계가 높다는데 기초를 두어 만들었다. 가격과 거래량이 같이 동시에 올라가면 +1 동시에 하락하면 -1의 누적으로 표현된다. 가격과 거래량의 동반 상승, 하락을 분석하기 좋은 지표이다."
+      },
+      {
+        "[계산식]" : "Sum(((C > (C(1))) && (V > (V(1)))) - ((C < (C(1))) && (V < (V(1)))))"
+      }
+    ]
+  },
+  {
+    "title" : "R-Squared",
+    "contents" : [
+      {
+        "[활용]" : "RSquared(가격,기간);"
+      },
+      {
+        "[설명]" : "결정계수, 주가지수나 채권지수와 기준이 되는 벤치마크 지수의 상관관계를 나타내는 지표, 미국에서 고정 수익의 유가증권의 경우 기준 지수는 미재무부 단기 국채이고 주식은 S&P 500지수 이다."
+      },
+      {
+        "[계산식]" : "R-Squared = RSquared(가격,기간);"
+      }
+    ]
+  }
+]
