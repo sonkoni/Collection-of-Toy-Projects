@@ -100,24 +100,168 @@ NSString *jamo = [MGRJamo getJamo:word];
 
 ## Documentation
 
-- long press 시 일정한 간격으로 반복 호출되며 반복호출되는 간격이 일정 시간이 지나면 빨라지게 하기위해 다음의 알고리즘을 구상함.
-    - 반복 호출되다가 일정 시간이 지나면 반복 호출 간격이 5배로 빨라지고 또 일정 시간이나면 거기서 2배가 빨라진다.
-```objective-c
+- SKHJamo.swift
+    - 한글 자음과 모음의 분리를 처리 
+```swift
 
-//! 애플의 UIStepper와 유사하게 작동하게 하기 위해 만든 알고리즘. 타이머가 가속도를 가지고 움직이는 것처럼 골라준다.
-- (NSInteger)timerFireCountModulo {
-    if (self.timerFireCount > 80) { // 0.05(81) -> 0.05(82) -> 0.05(83) -> 0.05(84) -> 0.05(85)
-        return 1; // 0.05 sec * 1 = 0.05 sec : (리턴값 * 0.05)는 호출되는 간격
-    } else if (self.timerFireCount > 50) { // 0.1(52) -> 0.1(54) -> 0.1(56) -> 0.1(58) -> 0.1(60)
-        return 2; // 0.05 sec * 2 = 0.1 sec : (리턴값 * 0.05)는 호출되는 간격
-    } else { // 0.5(10) -> 0.5(20) -> 0.5(30) -> 0.5(40) -> 0.5(50)
-        return 10; // 0.05 sec * 10 = 0.5 sec : (리턴값 * 0.05)는 호출되는 간격
+import Foundation
+
+extension CharacterSet{
+    static var modernHangul: CharacterSet{
+        return CharacterSet(charactersIn: ("가".unicodeScalars.first!)...("힣".unicodeScalars.first!))
     }
-    //
-    // self.timerFireCount % [self timerFireCountModulo] == 0 에 대한 호출.
-    // 1. 0.5초마다 호출된다.(2.5초 동안 = 50 * 0.05) 즉, 5회 호출된다.
-    // 2. 0.1초마다 호출된다.(1.5초 동안 = 30 * 0.05) 즉, 15회 호출된다.
-    // 3. 0.05초마다 호출된다. 계속.
+}
+
+public class SKHJamo {
+    
+    // UTF-8 기준
+    static let INDEX_HANGUL_START:UInt32 = 44032  // "가"
+    static let INDEX_HANGUL_END:UInt32 = 55203    // "힣"
+    
+    static let CYCLE_CHO :UInt32 = 588
+    static let CYCLE_JUNG :UInt32 = 28
+    
+    static let CHO = [
+        "ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ",
+        "ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"
+    ]
+    
+    static let JUNG = [
+        "ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ","ㅕ", "ㅖ", "ㅗ", "ㅘ",
+        "ㅙ", "ㅚ","ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ",
+        "ㅣ"
+    ]
+    
+    static let JONG = [
+        "","ㄱ","ㄲ","ㄳ","ㄴ","ㄵ","ㄶ","ㄷ","ㄹ","ㄺ",
+        "ㄻ","ㄼ","ㄽ","ㄾ","ㄿ","ㅀ","ㅁ","ㅂ","ㅄ","ㅅ",
+        "ㅆ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"
+    ]
+    
+    static let JONG_DOUBLE = [
+        "ㄳ":"ㄱㅅ","ㄵ":"ㄴㅈ","ㄶ":"ㄴㅎ","ㄺ":"ㄹㄱ","ㄻ":"ㄹㅁ",
+        "ㄼ":"ㄹㅂ","ㄽ":"ㄹㅅ","ㄾ":"ㄹㅌ","ㄿ":"ㄹㅍ","ㅀ":"ㄹㅎ",
+        "ㅄ":"ㅂㅅ"
+    ]
+    
+    static let MO = [
+        "ㅘ":"ㅏ", "ㅙ":"ㅐ", "ㅚ":"ㅣ", "ㅝ":"ㅓ", "ㅞ":"ㅔ", "ㅟ":"ㅣ", "ㅢ":"ㅣ"
+    ]
+        
+    static let MO_LIST = [
+        "ㅘ", "ㅙ", "ㅚ", "ㅝ", "ㅞ", "ㅟ", "ㅢ"
+    ]
+        
+    static let JA = [
+        "ㄱ":2, "ㄲ":4, "ㄴ":2, "ㄷ":3, "ㄸ":6,
+        "ㄹ":5, "ㅁ":4, "ㅂ":4, "ㅃ":8, "ㅅ":2,
+        "ㅆ":4, "ㅇ":1, "ㅈ":3, "ㅉ":6, "ㅊ":4,
+        "ㅋ":3, "ㅌ":4, "ㅍ":4, "ㅎ":3, "ㅏ":2,
+        "ㅐ":3, "ㅑ":3, "ㅒ":4, "ㅓ":2, "ㅔ":3,
+        "ㅕ":3, "ㅖ":4, "ㅗ":2, "ㅘ":4, "ㅙ":5,
+        "ㅚ":3, "ㅛ":3, "ㅜ":2, "ㅝ":4, "ㅞ":5,
+        "ㅟ":3, "ㅠ":3, "ㅡ":1, "ㅢ":2, "ㅣ":1,
+        "ㄳ":4, "ㄵ":5, "ㄶ":5, "ㄺ":7, "ㄻ":9,
+        "ㄼ":9, "ㄽ":7, "ㄾ":9, "ㄿ":9, "ㅀ":8,
+        "ㅄ":6
+    ]
+    
+    // 주어진 "코드의 음절"을 자모음으로 분해해서 리턴하는 함수
+    private class func getJamoFromOneSyllable(_ n: UnicodeScalar) -> String?{
+        if CharacterSet.modernHangul.contains(n){
+            let index = n.value - INDEX_HANGUL_START
+            let cho = CHO[Int(index / CYCLE_CHO)]
+            let jung = JUNG[Int((index % CYCLE_CHO) / CYCLE_JUNG)]
+            var jong = JONG[Int(index % CYCLE_JUNG)]
+            if let disassembledJong = JONG_DOUBLE[jong] {
+                jong = disassembledJong
+            }
+            return cho + jung + jong
+        }else{
+            return String(UnicodeScalar(n))
+        }
+    }
+    
+    // 주어진 "코드의 음절"중 초성을 분해해서 리턴하는 함수
+    private class func getChoFromOneSyllable(_ n: UnicodeScalar) -> String?{
+        if CharacterSet.modernHangul.contains(n){
+            let index = n.value - INDEX_HANGUL_START
+            let cho = CHO[Int(index / CYCLE_CHO)]
+            return cho
+        } else {
+            return String(UnicodeScalar(n))
+        }
+    }
+}
+
+extension SKHJamo {
+    
+    // 주어진 "단어"를 자모음으로 분해해서 리턴하는 함수
+    class func getJamo(_ input: String) -> String {
+        var jamo = ""
+        //let word = input.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters)
+        for scalar in input.unicodeScalars{
+            jamo += getJamoFromOneSyllable(scalar) ?? ""
+        }
+        return jamo
+    }
+    
+    class func getJamoList(_ input: String) -> [String] {
+        var jamos: [String] = []
+        //let word = input.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters)
+        for scalar in input.unicodeScalars{
+            jamos.append(getJamoFromOneSyllable(scalar) ?? "")
+        }
+        return jamos
+    }
+    
+    // 주어진 "단어"를 초성만 가져와서 리턴하는 함수
+    class func getCho(_ input: String) -> String {
+        var jamo = ""
+        //let word = input.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters)
+        for scalar in input.unicodeScalars{
+            jamo += getChoFromOneSyllable(scalar) ?? ""
+        }
+        return jamo
+    }
+    
+    class func getDanmo(_ input: Character) -> Character {
+        for (key, value) in MO {
+            if key == "\(input)" {
+                return Character(value)
+            }
+        }
+        return input
+    }
+    
+    //이전 입력한 내용과 비교해서 삭제인지 추가 입력인지 확인하는 함수
+    class func isDanmoDelete(preInputList: [String], inputList: [String]) -> Bool {
+        var preCount = 0
+        var curCount = 0
+        
+        for text in preInputList {
+            for (key, value) in JA {
+                if text == key  {
+                    preCount += value
+                    break
+                }
+            }
+        }
+        
+        for text in inputList {
+            for (key, value) in JA {
+                if text == key {
+                    curCount += value
+                    break
+                }
+            }
+        }
+        
+        if curCount < preCount {
+            return true
+        }
+        return false
+    }
 }
 
 ```
