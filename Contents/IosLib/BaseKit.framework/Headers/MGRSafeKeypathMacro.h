@@ -31,3 +31,11 @@
  *  1.0     2020-07-05      : 생성
  *
  */
+
+
+//---------------------------------------------------------------
+// Koni 이런 방법도 있다고 함
+// https://github.com/keitaito/KeyPathMacroTestApp
+/**
+#define keyPath(base, path) ({ __typeof__(base.path) _ __attribute__((unused)); @#path; })
+ */

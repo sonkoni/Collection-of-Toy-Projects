@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) UIViewController *secondContentViewController; // secondContentView만 있을 수 있다.
 @property (nonatomic, strong, nullable) UIViewController *thirdContentViewController; // thirdContentView만 있을 수 있다.
 
+@property (nonatomic, strong, readonly) UIView *decoView;
+
 @property (nonatomic) CGFloat maximumWidth; // alert view의 최대 넓이.
 
 @property (nonatomic, strong) NSArray <MGUAlertAction *>*actions; // alert view 응답할 수 있는 MGUAlertAction 객체 배열

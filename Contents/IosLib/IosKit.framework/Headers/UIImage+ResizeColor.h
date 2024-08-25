@@ -42,6 +42,13 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (UIImage *)mgrImageWithCircularColor:(UIColor *)circularColor circularSize:(CGSize)circularSize;
 
+// rounded rect에 이미지를 넣어서 반환한다. rounded rect의 사이즈는 이미지의 사이즈를 따른다.
+// 아마도 self는 둘레에 알파 이미지가 존재할듯
+- (UIImage *)mgrImageWithBackgroundColor:(UIColor *)backgroundColor
+                             borderColor:(UIColor *)borderColor
+                             borderWidth:(CGFloat)borderWidth
+                            cornerRadius:(CGFloat)cornerRadius;
+
 //! 색으로 이미지를 만든다. 색, 사이즈, radius를 조정할 수 있다.
 + (UIImage *)mgrImageWithColor:(UIColor *)color size:(CGSize)size cornerRadius:(CGFloat)cornerRadius;
 

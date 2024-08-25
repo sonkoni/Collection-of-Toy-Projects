@@ -104,6 +104,11 @@ CGRect MGERectForMacFromIosRect(CGRect iosRect, CGFloat superHeight);
 //! MacOS의 frame을 iOS의 frame으로 바꿔준다.
 CGRect MGERectForIosFromMacRect(CGRect macRect, CGFloat superHeight);
 
+#if TARGET_OS_OSX
+
+#elif TARGET_OS_IPHONE
+CGRect MGERectClipRectUsingEdge(CGRect rect, UIEdgeInsets insets);
+#endif
 
 #pragma mark - 배율 : MGESize_, MGEAspect_ MGEPoint_
 /// factor 배율의 size 를 반환
@@ -134,7 +139,7 @@ CGRect MGERectByFillingRect(CGRect sourceRect, CGRect destRect);
 CGRect MGERectByFittingRect(CGRect sourceRect, CGRect destRect);
 
 /// sourceRect에 내부에 접하는 정사각형. 센터가 동일하다.
-CGRect MGERectSquareByFittingRect(CGRect destRect);
+CGRect MGERectSquareByFittingRect(CGRect sourceRect);
 
 
 #pragma mark - 트랜스폼 : MGETransform_ CGAffineTransform - view, MGETransform3D_ CATransform3D - layer

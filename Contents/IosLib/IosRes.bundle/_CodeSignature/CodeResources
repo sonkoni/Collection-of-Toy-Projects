@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		hpNz9RCfVgDjNV47EL+DpBAVEro=
+		d+eXRT/zwoGlrS1DNWrVCOHYJIY=
 		</data>
 		<key>MGUDosePickerViewController.nib</key>
 		<data>
@@ -40,6 +40,26 @@
 		<data>
 		If2g4OvNJry71ubUiF91b3NzokY=
 		</data>
+		<key>_SKUMessages_CardView.nib</key>
+		<data>
+		gdmyr0YiFHRKZq9FCNRwDv/t1lM=
+		</data>
+		<key>_SKUMessages_CenteredView.nib</key>
+		<data>
+		3qUDgsDroZgXZWBw2te0aehIxxI=
+		</data>
+		<key>_SKUMessages_MessageView.nib</key>
+		<data>
+		MnVahgFYbF7xKnB7lfd1KEKo6uw=
+		</data>
+		<key>_SKUMessages_StatusLine.nib</key>
+		<data>
+		aujARt7jqnggTcCUEFChyzr6T74=
+		</data>
+		<key>_SKUMessages_TabView.nib</key>
+		<data>
+		Y+CtXER+SOswV3VJxz+55GXLC8Y=
+		</data>
 		<key>sound_key_press_click.caf</key>
 		<data>
 		4bU22ceXUmD6pnAFHrvP+mVTlNs=
@@ -71,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hpNz9RCfVgDjNV47EL+DpBAVEro=
+			d+eXRT/zwoGlrS1DNWrVCOHYJIY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xTSadPZx/WP4W9LGVlb0ozWhpCRMSTe7HyB/oUD1mwM=
+			cB6pcYwZ+D9Aa+R9KeiCbKlILO3nXYs8lwS6h0f6fX0=
 			</data>
 		</dict>
 		<key>MGUDosePickerViewController.nib</key>
@@ -164,6 +184,61 @@
 			<key>hash2</key>
 			<data>
 			y3Rq3kvUIkMEJfo4sF4PFFv4ZHDzfswQgOZArNmvuPo=
+			</data>
+		</dict>
+		<key>_SKUMessages_CardView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gdmyr0YiFHRKZq9FCNRwDv/t1lM=
+			</data>
+			<key>hash2</key>
+			<data>
+			97DyLJhiDJo8x3mSHKzqJRjikzzRcDC+ThCzyxoDhoc=
+			</data>
+		</dict>
+		<key>_SKUMessages_CenteredView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3qUDgsDroZgXZWBw2te0aehIxxI=
+			</data>
+			<key>hash2</key>
+			<data>
+			HuIQ24KfSXkkrvzpWPyftrIvUAVjOD1x983yYVqaXsg=
+			</data>
+		</dict>
+		<key>_SKUMessages_MessageView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MnVahgFYbF7xKnB7lfd1KEKo6uw=
+			</data>
+			<key>hash2</key>
+			<data>
+			+hWT9l2xITP9yVvHeexW4lkAJeb2gEw1w7NJ02g1hS8=
+			</data>
+		</dict>
+		<key>_SKUMessages_StatusLine.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aujARt7jqnggTcCUEFChyzr6T74=
+			</data>
+			<key>hash2</key>
+			<data>
+			mxOvkhP0cWrzSL1kAjfeXGdtosgvzS2SXmtSDrcUxcE=
+			</data>
+		</dict>
+		<key>_SKUMessages_TabView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y+CtXER+SOswV3VJxz+55GXLC8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			juGxkMLq7/o/4tnjSovc80TvgmnWq07ZQHLCPvMn+9c=
 			</data>
 		</dict>
 		<key>sound_key_press_click.caf</key>

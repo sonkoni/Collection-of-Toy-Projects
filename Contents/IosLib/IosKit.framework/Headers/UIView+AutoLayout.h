@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray <NSLayoutConstraint *>*)mgrPinEdgesToSuperviewLayoutMarginsGuide;
 - (NSArray <NSLayoutConstraint *>*)mgrPinEdgesToSuperviewSafeAreaLayoutGuide;
 - (NSArray <NSLayoutConstraint *>*)mgrPinEdgesToSuperviewCustomMargins:(UIEdgeInsets)customMargins; // 인셋만큼 파고든다.
+- (NSArray <NSLayoutConstraint *>*)mgrExistInsideSuperviewWithCustomEdgeInsets:(UIEdgeInsets)customEdgeInsets; // 인셋만큼 파코든 내부에 존재하게 강요한다. 추가적인 레이아웃 필요함.
+- (NSArray <NSLayoutConstraint *>*)mgrExistInsideSuperviewSafeAreaWithCustomEdgeInsets:(UIEdgeInsets)customEdgeInsets; // 인셋만큼 파코든 내부에 존재하게 강요한다. 추가적인 레이아웃 필요함.
 
 - (NSArray <NSLayoutConstraint *>*)mgrPinHorizontalEdgesToSuperviewEdges; // leading, trailing만 super view에 맞춘다.
 - (NSArray <NSLayoutConstraint *>*)mgrPinVerticalEdgesToSuperviewEdges;   // top, bottom만 super view에 맞춘다.

@@ -27,10 +27,14 @@ typedef NS_OPTIONS (NSInteger, MGUAlertViewTransitionStyle) {
 @property (nonatomic) MGUAlertViewTransitionStyle transitionStyle; // 등장하는 스타일 셋 중에 하나.
 
 //! 디폴트 NO. alert view를 둘러싼 희미한 배경을 탭하여 action handler를 실행하지 않고 닫음.
+//! 아래 두 개는 공존할 수 없다. 한 프라퍼티만 enable 또는 모두 disable
 @property (nonatomic) BOOL backgroundTapDismissalGestureEnabled;
+@property (nonatomic) BOOL backgroundTapForceEndEdit;
 
 //! 디폴트 NO. alert view를 위 또는 아래로 스와이프하여 action handler를 실행하지 않고 닫음.
 @property (nonatomic) BOOL swipeDismissalGestureEnabled;
+
+@property (nonatomic) BOOL dismissWhenRotating; // 디폴트 NO
 
 //! MGUAlertPresentationController에서 사용된다.
 @property (nonatomic, nullable) UIView *alternativeBackgroundView; 

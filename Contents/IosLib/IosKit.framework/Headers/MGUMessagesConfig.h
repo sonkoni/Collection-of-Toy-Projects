@@ -87,7 +87,7 @@ typedef NS_ENUM(NSUInteger, MGUMessagesBecomeKeyWindow) {
     MGUMessagesBecomeKeyWindowAutoMatic = 1, // 딤 모드에 따라.
     MGUMessagesBecomeKeyWindowYES,
     MGUMessagesBecomeKeyWindowNO
-} ;
+};
 
 typedef void(^MGUMessagesEventListener)(MGUMessagesEvent event);
 

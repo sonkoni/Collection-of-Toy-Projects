@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/IosKit-Swift.h</key>
 		<data>
-		l8Pgwtw6G8y7PyU6unkeILBOWHo=
+		/zALBm2aCEZeWRrQ64UkEdeOMSo=
 		</data>
 		<key>Headers/IosKit.h</key>
 		<data>
-		7QF99cTzIPYaoXp2pTq5YOdOt4E=
+		0+hanfYtrwf/dC5EC+kZuKCbFzc=
 		</data>
 		<key>Headers/MGUActionSheetConfiguration.h</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Headers/MGUAlertViewConfiguration.h</key>
 		<data>
-		S11CTFaYZ9CChT/eMYapUNp5o7Q=
+		5aHwPDfauC1t3OGjhemFDPRexv4=
 		</data>
 		<key>Headers/MGUAlertViewController.h</key>
 		<data>
-		lnyC+jTsLoIsYNLl2fkdRdQ+iYg=
+		6FNlCGsPejF4El7EPmfwX4l4tfQ=
 		</data>
 		<key>Headers/MGUAssets.h</key>
 		<data>
-		cT2IKYoGL8PvSBl7f8se7OWfXA8=
+		FNp+IUbu1Di2pSrNcSS3dzC8mz4=
 		</data>
 		<key>Headers/MGUBioMetricAuthenticator.h</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>Headers/MGUDropSegControl.h</key>
 		<data>
-		Ggzdus+zOgozB3kfA56pGeP5YJg=
+		NxMZ5UNNPhZA06kQixYlDJYOka0=
 		</data>
 		<key>Headers/MGUDropSegManager.h</key>
 		<data>
-		NIMjet821+4gXRoUWD50H1EmEwg=
+		BCTNn9DgdDtvppGNVHjiryfUdK0=
 		</data>
 		<key>Headers/MGUDropSegTextCell.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Headers/MGUDropdownButton.h</key>
 		<data>
-		5hcrQ/+/19tbHeR5xMpxBPfEPEk=
+		Q46FICgftaevB3Wy+oRcUVZBt5w=
 		</data>
 		<key>Headers/MGUDropdownCell.h</key>
 		<data>
@@ -171,6 +171,18 @@
 		<key>Headers/MGUFillTypeDropdownCell.h</key>
 		<data>
 		fmGTB9cQmmlg7/sxUUD+H+sB2zk=
+		</data>
+		<key>Headers/MGUFinancialKeyboard.h</key>
+		<data>
+		WthwTCtytjmIGV2bW6a5ZhpfwmU=
+		</data>
+		<key>Headers/MGUFinancialKeyboardConfiguration.h</key>
+		<data>
+		/JUhJQZ2H/9vihEn3mivFUOJOmk=
+		</data>
+		<key>Headers/MGUFinancialTextField.h</key>
+		<data>
+		+sI6DowD3LVHnZucS5q3vSUc1HM=
 		</data>
 		<key>Headers/MGUFlatSwitch.h</key>
 		<data>
@@ -236,9 +248,21 @@
 		<data>
 		i3K10lzr+MnM2Sy8zbM7Uvhlf30=
 		</data>
+		<key>Headers/MGUHitView.h</key>
+		<data>
+		N3FYsSkx0TwhKL22cuNG+oRzNmM=
+		</data>
 		<key>Headers/MGUImageDropdownCell.h</key>
 		<data>
 		/aP7mHmBDsPH57J2FevikF/c188=
+		</data>
+		<key>Headers/MGUInputAccessoryView.h</key>
+		<data>
+		D2Ha42N6caMElKrA8zbRYvxA83I=
+		</data>
+		<key>Headers/MGUInputTextView.h</key>
+		<data>
+		lPUzKbVLOVQIcr6vezRq4J0kEGk=
 		</data>
 		<key>Headers/MGUKeyboardStateListener.h</key>
 		<data>
@@ -266,7 +290,7 @@
 		</data>
 		<key>Headers/MGUMessageView.h</key>
 		<data>
-		ILN45chSc9KVxa1VfRPBZGSjQsc=
+		fLi3MZwyV4quMN7zVoO6yRVoF9U=
 		</data>
 		<key>Headers/MGUMessagesAnimationContext.h</key>
 		<data>
@@ -278,7 +302,7 @@
 		</data>
 		<key>Headers/MGUMessagesConfig.h</key>
 		<data>
-		InwjFo4q0vGiRm84EVhm+8SIZe0=
+		2UHOnKSMCJiELHO7p2rBahjkqCI=
 		</data>
 		<key>Headers/MGUMessagesController.h</key>
 		<data>
@@ -382,7 +406,7 @@
 		</data>
 		<key>Headers/MGUSideBarConfig.h</key>
 		<data>
-		6s1xDWxi/nAuIoiQB4s2mQHJDQo=
+		LCsdcRBfcsLrMD6jrHMHgUP1g14=
 		</data>
 		<key>Headers/MGUSideBarController.h</key>
 		<data>
@@ -448,6 +472,14 @@
 		<data>
 		qMx8WTQ8s2x1mwmY8kNfFuzBWjw=
 		</data>
+		<key>Headers/MGUTextField.h</key>
+		<data>
+		wcXVFswjddtmrt7bUp0sh4BE+bk=
+		</data>
+		<key>Headers/MGUTextView.h</key>
+		<data>
+		FmiKXraDPJ01R+gtbFckVlu13dw=
+		</data>
 		<key>Headers/MGUVisualEffectView.h</key>
 		<data>
 		WG/AtCtWjLNZ8vZWDWGiwKjHQuo=
@@ -498,7 +530,7 @@
 		</data>
 		<key>Headers/UIButton+Extension.h</key>
 		<data>
-		g+2RrIL/bDmNMKSYCRvDvRC2uT8=
+		tyWF3VuLdG8OzVmTlIe2UqJm8ls=
 		</data>
 		<key>Headers/UICollectionView+Extension.h</key>
 		<data>
@@ -506,7 +538,7 @@
 		</data>
 		<key>Headers/UICollectionViewDiffableDataSource+Extension.h</key>
 		<data>
-		ytXRlNwprbC0p+iZjaiGamlDUvg=
+		K5lugSBqTKMLnne3mlOoNc7f+K4=
 		</data>
 		<key>Headers/UIColor+CIELAB.h</key>
 		<data>
@@ -514,7 +546,7 @@
 		</data>
 		<key>Headers/UIColor+DarkModeSupport.h</key>
 		<data>
-		Tsj3ZkgkH46YzENRcvUnVRe6dQ8=
+		559oNF4qcVP+QQSEvnSq4+hmQxc=
 		</data>
 		<key>Headers/UIColor+Extension.h</key>
 		<data>
@@ -526,7 +558,7 @@
 		</data>
 		<key>Headers/UIColor+HEX.h</key>
 		<data>
-		8i2LzQq6J8T9gpdVX0AcTBv7tu4=
+		BeZVLRAKjtuBDQOgkYDrUOgp5DA=
 		</data>
 		<key>Headers/UIColor+HSB.h</key>
 		<data>
@@ -546,7 +578,7 @@
 		</data>
 		<key>Headers/UIColor+RGB.h</key>
 		<data>
-		rS/UiWOvLdpJQw7mp/BfJc+tnfw=
+		ZY9gtodohDaOU+5yn7k59GcOfk0=
 		</data>
 		<key>Headers/UIColor+Random.h</key>
 		<data>
@@ -554,7 +586,7 @@
 		</data>
 		<key>Headers/UIColor+Template.h</key>
 		<data>
-		qhBnB47UAZ1zME+mHDfFcSthbuM=
+		Fld/HqDkAvtjHfpXMA08KUEbkz0=
 		</data>
 		<key>Headers/UIControl+Extension.h</key>
 		<data>
@@ -574,7 +606,7 @@
 		</data>
 		<key>Headers/UIImage+DarkModeSupport.h</key>
 		<data>
-		loHFID/90oY6RmlC/HiOrGHOOFE=
+		SHQlYsumkPJgnv8/CEfXoU4jj9g=
 		</data>
 		<key>Headers/UIImage+Etc.h</key>
 		<data>
@@ -582,15 +614,23 @@
 		</data>
 		<key>Headers/UIImage+Extension.h</key>
 		<data>
-		s7RchJ/2zLUd+m5kQ1RNQ0Hxdz0=
+		uZXSdon3tK58grthXVx9g4YxAzs=
+		</data>
+		<key>Headers/UIImage+GIF.h</key>
+		<data>
+		d9e3b5xDumAFvlNazNPe+bNG2Lc=
 		</data>
 		<key>Headers/UIImage+ImageEffects.h</key>
 		<data>
 		vdfbbcjeoAFSEdMGmD2DrjINKMc=
 		</data>
+		<key>Headers/UIImage+Merge.h</key>
+		<data>
+		8rGHcy9eViP9nRlCEQtScLLSeJc=
+		</data>
 		<key>Headers/UIImage+ResizeColor.h</key>
 		<data>
-		AG9jkGoS7szZFpfZc+hYHWtJbhw=
+		GXvU4PqSbbr5HAWVgqC3Cvaup+M=
 		</data>
 		<key>Headers/UIImage+Rotation.h</key>
 		<data>
@@ -599,6 +639,10 @@
 		<key>Headers/UILabel+Extension.h</key>
 		<data>
 		yJ5QPZoBfP/MU04D53+GeSY6GpY=
+		</data>
+		<key>Headers/UINavigationBar+Extension.h</key>
+		<data>
+		XyJ8vABhfWDcSmopCXUqcBte6Hk=
 		</data>
 		<key>Headers/UINavigationController+Extension.h</key>
 		<data>
@@ -612,17 +656,25 @@
 		<data>
 		0MCHie2dZY6Oc3kjGm+aCtrxsh0=
 		</data>
+		<key>Headers/UIScreen+Extension.h</key>
+		<data>
+		gMEjTmj5nLTxfJQ/4ASLCvvX1Y4=
+		</data>
 		<key>Headers/UIScrollView+Extension.h</key>
 		<data>
-		jpEnegFl9ujhCtgCTc1GkbsE3uk=
+		TAbbdxo7fSXomTkxXOHv+jROTLo=
 		</data>
 		<key>Headers/UITableView+Extension.h</key>
 		<data>
-		baxlcEdAl4WFCWPI7faLzSvyIR8=
+		Hk1r7iODXRbMvuhXJcnTVdxzXcM=
 		</data>
 		<key>Headers/UITextView+Extension.h</key>
 		<data>
 		UG8slcDQ7Km6orQSxTsR9rxmHfk=
+		</data>
+		<key>Headers/UIToolbar+Extension.h</key>
+		<data>
+		3z0egtp58peMTxR9Iowhi+Cgtfg=
 		</data>
 		<key>Headers/UIView+Animation.h</key>
 		<data>
@@ -630,7 +682,7 @@
 		</data>
 		<key>Headers/UIView+AutoLayout.h</key>
 		<data>
-		4b0YVFJb47jEDZw4T4/+uzoyMqI=
+		lkQ6lfFa7JbmCfmqLUZXTnczsfs=
 		</data>
 		<key>Headers/UIView+Drawing.h</key>
 		<data>
@@ -638,7 +690,7 @@
 		</data>
 		<key>Headers/UIView+Etc.h</key>
 		<data>
-		2PewBzRVlhE/2TNHff+h0xoMc7c=
+		hF02hHfLM04jWIRgE8JI/XXollY=
 		</data>
 		<key>Headers/UIView+Extension.h</key>
 		<data>
@@ -654,15 +706,15 @@
 		</data>
 		<key>Headers/UIView+Recurrence.h</key>
 		<data>
-		Dpc2cEY+NC/otiFVPkErdxH3XXg=
+		8D/QkjkcQxZjyuJp4dSZ3LbwcNI=
 		</data>
 		<key>Headers/UIView+Screenshot.h</key>
 		<data>
-		qSouD0mM0jzzXTXQkCuAaNLzTN0=
+		e02gXI8RShhIZuMd7/v//FP4gS0=
 		</data>
 		<key>Headers/UIViewController+Extension.h</key>
 		<data>
-		nW7uO8NXQwB4BFrtAKW05cpi6mw=
+		CDo4617QClDjo4yF/8/TW0ocP3U=
 		</data>
 		<key>Headers/UIVisualEffectView+Extension.h</key>
 		<data>
@@ -674,31 +726,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8Cb9lTxWbvJwpej1zSuTfK/4syg=
+		dw+RP0KJAhS91SEnrU6EClnPQdo=
 		</data>
-		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		nHb/yYVB5w90D3zRwZW0TqqgFD0=
+		KVIkoI8Yg/KVxogY7Fw15gvZ5ls=
 		</data>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		67y+PvpgGd9gcXvKz5k6mmG4zcY=
+		eCKBWoeeJmiotaN0mdCArYiDaPo=
 		</data>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		VyjylyNzaYBaQgarBeywyFG42Dc=
+		UxYBYNcSgZkOhXNv54ZyxzucFvg=
 		</data>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		wtrk7pIhMJ3PD30Q6rY1fyonnO8=
+		ogajiRmW01H42pOKdM5VIHZLucc=
 		</data>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		VyjylyNzaYBaQgarBeywyFG42Dc=
+		UxYBYNcSgZkOhXNv54ZyxzucFvg=
 		</data>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VaU3xIn/868DsoSm7JKOZW2cGqQ=
+		/aDa5TcFOGAzNYGK5cFmuX2QPNs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -711,22 +763,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l8Pgwtw6G8y7PyU6unkeILBOWHo=
+			/zALBm2aCEZeWRrQ64UkEdeOMSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			9lt+3mYrmoMs5VRyYufqOoBePIqWjxkH1zVPFMr05eE=
+			PZfr3q4UQdIT7We3K/ctjFGmK1sGhPaiMqjWVD5jr2c=
 			</data>
 		</dict>
 		<key>Headers/IosKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7QF99cTzIPYaoXp2pTq5YOdOt4E=
+			0+hanfYtrwf/dC5EC+kZuKCbFzc=
 			</data>
 			<key>hash2</key>
 			<data>
-			iqpBWHfuRJ30+1tol5mX7NiHS3J1kPrBW6M/O73aElg=
+			/mnatZzsdxpgFLw8MCA5aFmJ5VcEQPfT16fx6z0x2Hk=
 			</data>
 		</dict>
 		<key>Headers/MGUActionSheetConfiguration.h</key>
@@ -777,33 +829,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S11CTFaYZ9CChT/eMYapUNp5o7Q=
+			5aHwPDfauC1t3OGjhemFDPRexv4=
 			</data>
 			<key>hash2</key>
 			<data>
-			pYzDGgTqt3kFJBXpvMjfPtpvjD6uzlq+HNDA5MDjJg0=
+			1Yu2+nECOoWOvAoc4NIkX2xHdrFggBml3lYOjTKOuuQ=
 			</data>
 		</dict>
 		<key>Headers/MGUAlertViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lnyC+jTsLoIsYNLl2fkdRdQ+iYg=
+			6FNlCGsPejF4El7EPmfwX4l4tfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			eI4Bt6M6SBkrL+gCQmLR0cFxpukhiUox6Q86iY3TYS4=
+			5beQiyLjUOooQsQX9i0AJRmpFDQf2KvLwjCZmt/qJiQ=
 			</data>
 		</dict>
 		<key>Headers/MGUAssets.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cT2IKYoGL8PvSBl7f8se7OWfXA8=
+			FNp+IUbu1Di2pSrNcSS3dzC8mz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ESt5IAhfNoPG+lWX3sRviwDmVcQN82Dur0sonKST3E=
+			PwXkSudB25FvBSAjbhafd1vLYrQFVImtshK9vQaV9wk=
 			</data>
 		</dict>
 		<key>Headers/MGUBioMetricAuthenticator.h</key>
@@ -1085,22 +1137,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ggzdus+zOgozB3kfA56pGeP5YJg=
+			NxMZ5UNNPhZA06kQixYlDJYOka0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TntBL1IH2FAEC1CaV/TapNIhcF7T/85xYWOQuK2Xf0E=
+			jd5ZJI/S8WDHSedGpYkLq+KH+NlY5LFK7a/ob63yF7Q=
 			</data>
 		</dict>
 		<key>Headers/MGUDropSegManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NIMjet821+4gXRoUWD50H1EmEwg=
+			BCTNn9DgdDtvppGNVHjiryfUdK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ri1+UNSEu3+s0N5BvaBGJWcOm6UfVfKsfGEXfHPrO8=
+			QT72ojLEvkyK8tTyndF6T8l3eoP6FOrVFwiffzzJlrU=
 			</data>
 		</dict>
 		<key>Headers/MGUDropSegTextCell.h</key>
@@ -1118,11 +1170,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5hcrQ/+/19tbHeR5xMpxBPfEPEk=
+			Q46FICgftaevB3Wy+oRcUVZBt5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			0eyhFv5kfHYTkDwME6hMjTk8RRGvFqk0F3d/n3YguUg=
+			od2pfJ2lZaePRf10/f/RnRFTpT9rcJkNg50UPYBENLg=
 			</data>
 		</dict>
 		<key>Headers/MGUDropdownCell.h</key>
@@ -1167,6 +1219,39 @@
 			<key>hash2</key>
 			<data>
 			hUX8rPOsztYUg1SHfaeQCrKPjMnvqt6GMQGB7kSSZcA=
+			</data>
+		</dict>
+		<key>Headers/MGUFinancialKeyboard.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WthwTCtytjmIGV2bW6a5ZhpfwmU=
+			</data>
+			<key>hash2</key>
+			<data>
+			zc005WtGsfJG2ZEfA/1ncUDR3W9qWiDS65yD6Zjq/28=
+			</data>
+		</dict>
+		<key>Headers/MGUFinancialKeyboardConfiguration.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/JUhJQZ2H/9vihEn3mivFUOJOmk=
+			</data>
+			<key>hash2</key>
+			<data>
+			AZaYceELbhiNGsTd/k3S0bvPm1AnOOrJ5fSV6LwxIU4=
+			</data>
+		</dict>
+		<key>Headers/MGUFinancialTextField.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+sI6DowD3LVHnZucS5q3vSUc1HM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8+P5CYp3ewKZrtJcmmFayS/VcGrTehzEygTCYcH8hlQ=
 			</data>
 		</dict>
 		<key>Headers/MGUFlatSwitch.h</key>
@@ -1345,6 +1430,17 @@
 			4izHh6XX6lqibyrWnL3Lfx0XtZgEQBPMR10IHkXcUH8=
 			</data>
 		</dict>
+		<key>Headers/MGUHitView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N3FYsSkx0TwhKL22cuNG+oRzNmM=
+			</data>
+			<key>hash2</key>
+			<data>
+			1SMAT7vFW7OmtnbnnpASuNwdGveOwvwYueGAWWbeZIQ=
+			</data>
+		</dict>
 		<key>Headers/MGUImageDropdownCell.h</key>
 		<dict>
 			<key>hash</key>
@@ -1354,6 +1450,28 @@
 			<key>hash2</key>
 			<data>
 			4IOJybVj83rBgd+nd858GETTXif5slMRdhRj908ZdNM=
+			</data>
+		</dict>
+		<key>Headers/MGUInputAccessoryView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2Ha42N6caMElKrA8zbRYvxA83I=
+			</data>
+			<key>hash2</key>
+			<data>
+			Nap5IDezrnCDNCWGggeu3QhDGPnyUBX0XQanyAkHvqo=
+			</data>
+		</dict>
+		<key>Headers/MGUInputTextView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lPUzKbVLOVQIcr6vezRq4J0kEGk=
+			</data>
+			<key>hash2</key>
+			<data>
+			1d5L7QwzJmrI2pAFs37omI2F/cFOYfWFVGwtzlEd3O4=
 			</data>
 		</dict>
 		<key>Headers/MGUKeyboardStateListener.h</key>
@@ -1426,11 +1544,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ILN45chSc9KVxa1VfRPBZGSjQsc=
+			fLi3MZwyV4quMN7zVoO6yRVoF9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			WIKi63dGghDKiqEM+/vCZl0TYYGiXzFl9/55dmtPeIQ=
+			CjlAwPFWAuQtG9BaYeAOopkIOTVz4vFpGeojccJN/M0=
 			</data>
 		</dict>
 		<key>Headers/MGUMessagesAnimationContext.h</key>
@@ -1459,11 +1577,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			InwjFo4q0vGiRm84EVhm+8SIZe0=
+			2UHOnKSMCJiELHO7p2rBahjkqCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			EkRaU043gER0HmMz/9dNylDzuFT/tgvL/HqqYyNPrns=
+			W0SAqC8YcLAkM3o1B+FcCvcQ1pWs5FAb5lI4eVjIopg=
 			</data>
 		</dict>
 		<key>Headers/MGUMessagesController.h</key>
@@ -1745,11 +1863,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6s1xDWxi/nAuIoiQB4s2mQHJDQo=
+			LCsdcRBfcsLrMD6jrHMHgUP1g14=
 			</data>
 			<key>hash2</key>
 			<data>
-			g9so0CZMHxTxGlVITI38D3OBcuLcvImNPM328+jjNmY=
+			EOBhv/NU6TYk8PE5RqoxT0/bk0ewDltjPwd51KkgMxo=
 			</data>
 		</dict>
 		<key>Headers/MGUSideBarController.h</key>
@@ -1928,6 +2046,28 @@
 			evR2UV5jk5ui1oLoAJqc9tyIHbVDNhN0BgiVpnVpiow=
 			</data>
 		</dict>
+		<key>Headers/MGUTextField.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcXVFswjddtmrt7bUp0sh4BE+bk=
+			</data>
+			<key>hash2</key>
+			<data>
+			rI8ueEhPjDQNFoe1MI3VcCP4C1FhbZJ0F6slDGTCEww=
+			</data>
+		</dict>
+		<key>Headers/MGUTextView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FmiKXraDPJ01R+gtbFckVlu13dw=
+			</data>
+			<key>hash2</key>
+			<data>
+			yeM0MJXpE2GYn9+5YaF59DdLkj8I3bXrQScQrFcO+Cg=
+			</data>
+		</dict>
 		<key>Headers/MGUVisualEffectView.h</key>
 		<dict>
 			<key>hash</key>
@@ -2064,11 +2204,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g+2RrIL/bDmNMKSYCRvDvRC2uT8=
+			tyWF3VuLdG8OzVmTlIe2UqJm8ls=
 			</data>
 			<key>hash2</key>
 			<data>
-			mahB3DvaOFED5CeiXL5BfjZoOZOHDGxU1Od4fo7yU6s=
+			+w/qUWSxpoCZQmG+c894QZrqkEzPYJDmlVe/IaLo+Xg=
 			</data>
 		</dict>
 		<key>Headers/UICollectionView+Extension.h</key>
@@ -2086,11 +2226,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ytXRlNwprbC0p+iZjaiGamlDUvg=
+			K5lugSBqTKMLnne3mlOoNc7f+K4=
 			</data>
 			<key>hash2</key>
 			<data>
-			75RU20xcCBHjBfdg6tJOqeDfnSrFisLH2tgXfdHdbWo=
+			hRLBGmuCJbJiox4tqTY9bIsaJmG7tJYPfj34XNYBf1Q=
 			</data>
 		</dict>
 		<key>Headers/UIColor+CIELAB.h</key>
@@ -2108,11 +2248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tsj3ZkgkH46YzENRcvUnVRe6dQ8=
+			559oNF4qcVP+QQSEvnSq4+hmQxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			JS2ZZHqDWtuO4eBFl8qKVYmiGGNlJSzLBsShjGitExI=
+			up6xw2A3LkyG8Mhhio7h5g25bIYSzxUvyfqFm3iZlyU=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Extension.h</key>
@@ -2141,11 +2281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8i2LzQq6J8T9gpdVX0AcTBv7tu4=
+			BeZVLRAKjtuBDQOgkYDrUOgp5DA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cjXOQtESFsXouWsa1pRKaIwaUc7DR7wE7l4CA2Eb1D4=
+			0bsTzgb0Qz8s/Ps8dYru93LX+icFP78t811pFGnlV7Q=
 			</data>
 		</dict>
 		<key>Headers/UIColor+HSB.h</key>
@@ -2196,11 +2336,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rS/UiWOvLdpJQw7mp/BfJc+tnfw=
+			ZY9gtodohDaOU+5yn7k59GcOfk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			sM6l3WMNHlosFGtcNw8EhvIOJAdYRO/8ihS9d+Cv7Kg=
+			nmBb5Va6IabRwJRfNtmuZGlapqV45hYBOU80ikcBPg8=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Random.h</key>
@@ -2218,11 +2358,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qhBnB47UAZ1zME+mHDfFcSthbuM=
+			Fld/HqDkAvtjHfpXMA08KUEbkz0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qUEMJH0SJiuZA2Ug2d/Mcr9tfRpdydfHw8RYX6DiNnc=
+			ipKjlMYj3wn+vgI8ERIRoSrYCXNIj92RTxIedpacn7c=
 			</data>
 		</dict>
 		<key>Headers/UIControl+Extension.h</key>
@@ -2273,11 +2413,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			loHFID/90oY6RmlC/HiOrGHOOFE=
+			SHQlYsumkPJgnv8/CEfXoU4jj9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lsn3Mfq/ZkECQbmRw5Iu0BJyPOFiA5sM2VwqfgRSsuQ=
+			KI/D+Vm3Ev5hXWXr85lre4yXs1MgRXrtObhpClef1e4=
 			</data>
 		</dict>
 		<key>Headers/UIImage+Etc.h</key>
@@ -2295,11 +2435,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s7RchJ/2zLUd+m5kQ1RNQ0Hxdz0=
+			uZXSdon3tK58grthXVx9g4YxAzs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4FkSte1QudjS1SCe7z7AOBusCEDsubYi+jQ/NxJNA/Y=
+			jtyR/a4wCzKJ1/ZqTm3oSR6Ep2sYAzIdaF2DeKM5MzE=
+			</data>
+		</dict>
+		<key>Headers/UIImage+GIF.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d9e3b5xDumAFvlNazNPe+bNG2Lc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kQGUKrOYHN+4QqybOb5O0wUmAH2Rz0OhcDFJ3Qunxlw=
 			</data>
 		</dict>
 		<key>Headers/UIImage+ImageEffects.h</key>
@@ -2313,15 +2464,26 @@
 			z2jvqal+rKaOSs3oRwejRnMxdfgSg2kKMYc32YTuJz4=
 			</data>
 		</dict>
+		<key>Headers/UIImage+Merge.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8rGHcy9eViP9nRlCEQtScLLSeJc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Pg2iDVFmsAq1yvY5aAPlZUGwbMuXJ9AUM33UClYvrTo=
+			</data>
+		</dict>
 		<key>Headers/UIImage+ResizeColor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AG9jkGoS7szZFpfZc+hYHWtJbhw=
+			GXvU4PqSbbr5HAWVgqC3Cvaup+M=
 			</data>
 			<key>hash2</key>
 			<data>
-			173Yvx+70OYD/dYOTHn4sH+naP1ZLiF2onCl07x3BM0=
+			86IsQekDZO4TKCPu5+0E6PZTd8yg2bFekcPdYrdimUY=
 			</data>
 		</dict>
 		<key>Headers/UIImage+Rotation.h</key>
@@ -2344,6 +2506,17 @@
 			<key>hash2</key>
 			<data>
 			DOpRGxhb1sR5nSAkJmFFcckg6vOrnCf+5RfJ+amaGqo=
+			</data>
+		</dict>
+		<key>Headers/UINavigationBar+Extension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XyJ8vABhfWDcSmopCXUqcBte6Hk=
+			</data>
+			<key>hash2</key>
+			<data>
+			g/9iW9tRtDm0pQw2GI/iY/P76M4FbrwzzjIbivfS+w8=
 			</data>
 		</dict>
 		<key>Headers/UINavigationController+Extension.h</key>
@@ -2379,26 +2552,37 @@
 			/gH//Sb+oZ+6uHOOAw0rdXlbCZwmfWN7TtzBSva0YCk=
 			</data>
 		</dict>
+		<key>Headers/UIScreen+Extension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gMEjTmj5nLTxfJQ/4ASLCvvX1Y4=
+			</data>
+			<key>hash2</key>
+			<data>
+			u7XRBoVkkdSRoFq1sAesZPorUqP5BB9BCO9VqBpWPFA=
+			</data>
+		</dict>
 		<key>Headers/UIScrollView+Extension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jpEnegFl9ujhCtgCTc1GkbsE3uk=
+			TAbbdxo7fSXomTkxXOHv+jROTLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			FvLPL3PbEOCkbyfuamtj+hkI2BKbSpnb6NAKBFkYhH4=
+			E+tfrcGVTFTfhiNh4RWqVQPXpjZZd9OlxFJ8mBzXdLs=
 			</data>
 		</dict>
 		<key>Headers/UITableView+Extension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			baxlcEdAl4WFCWPI7faLzSvyIR8=
+			Hk1r7iODXRbMvuhXJcnTVdxzXcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			TD1AiRkbUvRiDWxig/jjqVLgLab0Clp/GsygUNaJlLs=
+			BkSvyi8HjYDi8bezEra4Ri+9/iBQPCtRztxsFSRxFFM=
 			</data>
 		</dict>
 		<key>Headers/UITextView+Extension.h</key>
@@ -2410,6 +2594,17 @@
 			<key>hash2</key>
 			<data>
 			pGbm0m0xxX1kMC2H+go1ot16ZrAy6M+NIn/qVcZUbGM=
+			</data>
+		</dict>
+		<key>Headers/UIToolbar+Extension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3z0egtp58peMTxR9Iowhi+Cgtfg=
+			</data>
+			<key>hash2</key>
+			<data>
+			jFxOUVjGTNacgRmLa8sY/YBSe9bueqgusOSU4avey3E=
 			</data>
 		</dict>
 		<key>Headers/UIView+Animation.h</key>
@@ -2427,11 +2622,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4b0YVFJb47jEDZw4T4/+uzoyMqI=
+			lkQ6lfFa7JbmCfmqLUZXTnczsfs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gzx8U74mYgt2WZ/Y0A0ml8deuZAokw1qmutvTYVuA0E=
+			/3w8JbK1sH/d6oNby+c4mJUsR8B2GtP+KOHwoik9OUQ=
 			</data>
 		</dict>
 		<key>Headers/UIView+Drawing.h</key>
@@ -2449,11 +2644,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2PewBzRVlhE/2TNHff+h0xoMc7c=
+			hF02hHfLM04jWIRgE8JI/XXollY=
 			</data>
 			<key>hash2</key>
 			<data>
-			rBDZaNVEu6mu43nhwtRo/SEsTkJi8e+IQvWzO0jkjI4=
+			2N3/Im1W4OowkEUo6jv50Hd3h/PVDdvQRfVtw13wnGs=
 			</data>
 		</dict>
 		<key>Headers/UIView+Extension.h</key>
@@ -2493,33 +2688,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dpc2cEY+NC/otiFVPkErdxH3XXg=
+			8D/QkjkcQxZjyuJp4dSZ3LbwcNI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ev/viefExv9mEwaSwOMXwt+B0nLmw9sQ/FF+rm3bHok=
+			LdaOX9LGxYkS61VCEpYQ/QRi9LVKtSY82YL7a5AHCDI=
 			</data>
 		</dict>
 		<key>Headers/UIView+Screenshot.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qSouD0mM0jzzXTXQkCuAaNLzTN0=
+			e02gXI8RShhIZuMd7/v//FP4gS0=
 			</data>
 			<key>hash2</key>
 			<data>
-			IPFRjkgzWsKNLHTkSyRrCDn0mXvuU8eh/JGyCVjlZDM=
+			ihzAjbmQm6ae2M5nYNuS6zxgOuS60Y5OncNRHCnIaoY=
 			</data>
 		</dict>
 		<key>Headers/UIViewController+Extension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nW7uO8NXQwB4BFrtAKW05cpi6mw=
+			CDo4617QClDjo4yF/8/TW0ocP3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			XNB67BBT4TB1CMXIdVd/qGnnH1X3UhCDzDGjBp/gFF4=
+			uLRrFH3bXtPdP31xZeRbs9QvHT5PovabORoZy1OVsAk=
 			</data>
 		</dict>
 		<key>Headers/UIVisualEffectView+Extension.h</key>
@@ -2544,70 +2739,70 @@
 			CYTSUKR0YQsm7icPvewdN4ChiBXCcv+GOLH97F7jr1Y=
 			</data>
 		</dict>
-		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/IosKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nHb/yYVB5w90D3zRwZW0TqqgFD0=
+			KVIkoI8Yg/KVxogY7Fw15gvZ5ls=
 			</data>
 			<key>hash2</key>
 			<data>
-			7b05XeFgTmB6qDTrvuaIWdiK1DghpDA8GvAaA0eRMrQ=
+			l0xDijvbJTqtCu8yg5wSUHXHvJapesqVJko+hnJlnLc=
 			</data>
 		</dict>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			67y+PvpgGd9gcXvKz5k6mmG4zcY=
+			eCKBWoeeJmiotaN0mdCArYiDaPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			HvFMOEuJPhDv+YefX6lxQc1TqzElP9Hxp++H5WK+G5I=
+			Y5vh8N2w0C5xFxKA/qRraYSOnHn7MmyZ3NsT+v6xMJo=
 			</data>
 		</dict>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VyjylyNzaYBaQgarBeywyFG42Dc=
+			UxYBYNcSgZkOhXNv54ZyxzucFvg=
 			</data>
 			<key>hash2</key>
 			<data>
-			uMBHzap6hWC/52eCBZsc/Ub0MgpKbiO7cvfworXloBY=
+			2WKNEtBEFh7K2XIvbzH02K6Ol7flPhLBLLrV5sAL1wA=
 			</data>
 		</dict>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wtrk7pIhMJ3PD30Q6rY1fyonnO8=
+			ogajiRmW01H42pOKdM5VIHZLucc=
 			</data>
 			<key>hash2</key>
 			<data>
-			yMHWBO0UqJjaP4D5cnQuJY7qD5fRl3au+AZGOwqYg6g=
+			s95zigbrIZ7QnjoCBmxjSSZUyKUoilHETAt5Ud1mtN0=
 			</data>
 		</dict>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VyjylyNzaYBaQgarBeywyFG42Dc=
+			UxYBYNcSgZkOhXNv54ZyxzucFvg=
 			</data>
 			<key>hash2</key>
 			<data>
-			uMBHzap6hWC/52eCBZsc/Ub0MgpKbiO7cvfworXloBY=
+			2WKNEtBEFh7K2XIvbzH02K6Ol7flPhLBLLrV5sAL1wA=
 			</data>
 		</dict>
-		<key>Modules/IosKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/IosKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VaU3xIn/868DsoSm7JKOZW2cGqQ=
+			/aDa5TcFOGAzNYGK5cFmuX2QPNs=
 			</data>
 			<key>hash2</key>
 			<data>
-			XXuEqOC2XufwiGI389wSdn5b9QKEIGfp47RuZXBoSUU=
+			Iik3P+zVo0mUI2QpP1ycg7Oam50Fan55YW5jnu/mLSo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

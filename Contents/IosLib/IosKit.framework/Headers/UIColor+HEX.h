@@ -11,12 +11,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (HEX)
 
-+ (UIColor *)mgrColorFromHexString:(NSString *)hexString; //! hex string(16진수 문자열)을 UIColor 객체로 변환한다.
++ (UIColor *)mgrColorFromHexString:(NSString *)hexString; //! hex string(16진수 문자열)을 UIColor 객체로
+
 + (UIColor *)mgrColorFromHexNumber:(int)hexNumber; //! hex (16진수 )를 UIColor 객체로 변환한다.
 
-+ (NSString *)mgrHexStringFromColor:(UIColor *)color;
++ (UIColor *)mgrColorFromHexString:(NSString *)hexString alpha:(CGFloat)alpha;
+
++ (UIColor *)mgrColorFromHexNumber:(int)hexNumber alpha:(CGFloat)alpha;
+
+- (NSString *)mgrHexString;
 
 - (NSInteger)mgrHexNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

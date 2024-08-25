@@ -16,11 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray <DTODropSeg *>*dtoDropSegs;
 @property (nonatomic, assign) NSInteger selectedIndex;
 @property (nonatomic, strong, readonly) DTODropSeg *selectedDTODropSeg;
+- (BOOL)containsDTO:(DTODropSeg *)dto;
 
 - (instancetype)initWithDropSegs:(NSArray <DTODropSeg *>*)dropSegs selectedIndex:(NSInteger)selectedIndex;
 @end
 
-@interface DTODropSeg : NSObject
+@interface DTODropSeg : NSObject <NSCopying>
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *extendedTitle;
 

@@ -17,6 +17,8 @@
 #define MGR_FLT_EQUAL(lvar, rvar)      (fabs(lvar - rvar) <= FLT_EPSILON)
 #define MGR_EPSILON (4.94065645841247E-224) // LDBL_EPSILON 보다 작다.
 
+typedef double _Complex DoubleComplex; // 컴파일러 에러 때문에
+
 // ----------------------------------------------------------------------
 
 NS_ASSUME_NONNULL_BEGIN
@@ -45,7 +47,7 @@ CGFloat MGRRandomFocus3(NSInteger focus);
 #pragma mark - Equation Function : MGREquation_
 /*** 1차 방정식, 2차 방정식, 3차 방정식, 4차 방정식 ****/
 void MGRLinearEquation(double a , double b, double * realRoot); // 1차
-void MGRQuadraticEquation(double a, double b, double c, double complex roots[_Nonnull], int * nRealRootCount); // 2차
+void MGRQuadraticEquation(double a, double b, double c, DoubleComplex roots[_Nonnull], int * nRealRootCount); // 2차
 /**
 * 3차 방정식의 해를 구한다.
 * @param a                 3차 항의 계수 : 0.0을 대입하면 터지게 설게되어있다.
@@ -71,8 +73,8 @@ void MGRQuadraticEquation(double a, double b, double c, double complex roots[_No
             count);
  @endcode
 */
-void MGRCubicEquation(double a, double b, double c, double d, double complex roots[_Nonnull], int * nRealRootCount); // 3차
-void MGRQuarticEquation(double a , double b, double c, double d, double e, double complex roots[_Nonnull], int * nRealRootCount); // 4차
+void MGRCubicEquation(double a, double b, double c, double d, DoubleComplex roots[_Nonnull], int * nRealRootCount); // 3차
+void MGRQuarticEquation(double a , double b, double c, double d, double e, DoubleComplex roots[_Nonnull], int * nRealRootCount); // 4차
 
 
 #pragma mark - Bezier path : MGRCubicBezier_
@@ -112,7 +114,7 @@ long double ceill_DecimalPlace(long double arg, int place);
 float floorf_DecimalPlace(float arg, int place);
 double floor_DecimalPlace(double arg, int place);
 long double floorl_DecimalPlace(long double arg, int place);
-#pragma mark - 반올림: MGRRound_  소숫점 n 번째 자리에서 가능하게한다.
+#pragma mark - 반올림: MGRRound_  소숫점 n 번째 자리에서 반올림한다.
 float MGRRoundFloatDecimal(float arg, int place);
 double MGRRoundDoubleDecimal(double arg, int place);
 long double MGRRoundLongDoubleDemical(long double arg, int place);

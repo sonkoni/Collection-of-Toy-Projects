@@ -38,3 +38,67 @@ static const MARSpaceSize MARSpaceSizeMinimalTouch  = 44.f;             // ìµœì†
 
 @interface UIFont (Assets)
 @end
+
+//
+//
+/*
+"_person.text.rectangle.fill"
+UIColor(
+    red: 75.0/255.0,
+    green: 217.0/255.0,
+    blue: 100.0/255.0,
+    alpha: 1.0
+)
+
+-----------------------------------------
+
+"_square.and.arrow.forward.square.fill"
+"_person.fill.badge.minus"
+"_bell.badge.square.fill"
+UIColor(
+    red: 255.0/255.0,
+    green: 59.0/255.0,
+    blue: 47.0/255.0,
+    alpha: 1.0
+)
+
+-----------------------------------------
+
+"_magnifyingglass.square.fill"
+UIColor(
+    red: 72.0/255.0,
+    green: 72.0/255.0,
+    blue: 74.0/255.0,
+    alpha: 1.0
+)
+
+-----------------------------------------
+
+"_house.square.fill"
+UIColor(
+    red: 251.0/255.0,
+    green: 145.0/255.0,
+    blue: 14.0/255.0,
+    alpha: 1.0
+)
+
+-----------------------------------------
+
+"_questionmark.square.fill"
+UIColor(
+    red: 2.0/255.0,
+    green: 123.0/255.0,
+    blue: 254.0/255.0,
+    alpha: 1.0
+)
+
+-----------------------------------------
+
+"_creditcard.square.fill"
+UIColor(
+    red: 142.0/255.0,
+    green: 142.0/255.0,
+    blue: 147.0/255.0,
+    alpha: 1.0
+)
+*/

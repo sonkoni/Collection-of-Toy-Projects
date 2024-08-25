@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Screenshot)
 
+- (UIImage *)mgrScreenshotWithoutViews:(NSArray <UIView *>*)views; // 특정 서브뷰를 제외하고자할 때
 - (UIImage *)mgrScreenshot;
 - (UIImage *)mgrScreenshotWithInsideFrame:(CGRect)insideFrame;
 

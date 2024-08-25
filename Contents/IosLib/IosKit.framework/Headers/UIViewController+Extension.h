@@ -32,6 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 // - (void)loadView; 메커니즘을 표현해봤다.
 - (void)mgrLoadView;
+
+// viewWillAppear 에서 사용하면 됨
+- (void)mgrNavibarWithLargeTitle:(BOOL)isLargeTitle;
+
+// viewWillAppear 에서 사용하면 됨
+- (NSDirectionalEdgeInsets)mgrInsetsForCenterLargeTitle;
+
 @end
 
 NS_ASSUME_NONNULL_END

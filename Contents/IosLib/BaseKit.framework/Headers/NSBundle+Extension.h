@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 다음의 메서드를 대소문자 구분없이 사용하고 싶을때 이용하라.
 /// - pathForResource:ofType:
 /// - (NSString *)pathForResource:(NSString *)name ofType:(NSString *)ext;
-- (NSString *)mgrCaseInsensitivePathForResource:(NSString *)name ofType:(NSString *)ext;
+- (NSString * _Nullable)mgrCaseInsensitivePathForResource:(NSString *)name ofType:(NSString *)ext;
 
 @end
 

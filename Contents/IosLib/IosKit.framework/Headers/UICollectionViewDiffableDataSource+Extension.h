@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 // iOS 15 미만에서 사용하기 위해
 - (void)mgrApplySnapshotUsingReloadData:(NSDiffableDataSourceSnapshot<SectionIdentifierType,ItemIdentifierType>*)snapshot;
 - (void)mgrApplySnapshotUsingReloadData:(NSDiffableDataSourceSnapshot<SectionIdentifierType,ItemIdentifierType>*)snapshot completion:(void(^ _Nullable)(void))completion;
+
+
+- (void)mgrCollapseItemsAnimated:(BOOL)animated;
+
+- (void)mgrExpandItemsAnimated:(BOOL)animated;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,8 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (DarkModeSupport)
 
-+ (UIImage * _Nullable)mgrDynamicImageWithNormalImage:(UIImage *_Nullable)normalImage
-                                            darkImage:(UIImage *_Nullable)darkImage;
+/// 원본 칼라를 사용하고 싶다면, color에 모두 nil을 넣어라.
++ (UIImage *_Nullable)mgrDynamicImageWithNormalImage:(UIImage *_Nullable)normalImage
+                                           darkImage:(UIImage *_Nullable)darkImage
+                                         normalColor:(UIColor *_Nullable)normalColor
+                                           darkColor:(UIColor *_Nullable)darkColor;
 
 @end
 

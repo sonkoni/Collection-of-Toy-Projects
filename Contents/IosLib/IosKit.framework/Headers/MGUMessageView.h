@@ -42,7 +42,7 @@ static MGUMessageViewLayout const MGUMessageViewLayoutCenteredView  = @"_MGUMess
 @property (weak, nonatomic, nullable) IBOutlet UIImageView *iconImageView;
 @property (weak, nonatomic, nullable) IBOutlet UILabel *iconLabel;
 @property (weak, nonatomic, nullable) IBOutlet UIButton *button;
-@property (nonatomic, strong) NSString *identifier; // @dynamicno
+@property (nonatomic, strong) NSString *identifier; // @dynamic
 
 @property (nonatomic, strong, nullable) NSString *accessibilityPrefix;
 

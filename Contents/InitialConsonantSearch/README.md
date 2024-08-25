@@ -1,73 +1,75 @@
-# AutoLayout Adaptivity 
+# IndicatorSettingsTest - 지표설정
 
-## Device Size Classes 및 Orientation 에 따른 AutoLayout Adaptivity **테스트** 샘플
-- Size classes (compact, regular)에 따른 AutoLayout Adaptivity : Swift Sample
-- Orientation (Portrait, Landscape)에 따른 AutoLayout Adaptivity : Objective-C Sample
+## IndicatorSettingsTest 화면에 대한 개인작업물
+
+----
+구형 - 총: 151
+기술적지표
+    가격지표 - 16개
+    분석지표 - 53개
+    투자자지표 - 2개
+
+신호/강세/약세
+    신호 - 42개
+    강세/약세 - 38개
+
+----
+현재 - 총 609개 - (없는 것: 지표-투자자지표, 패턴-횡보구간패턴, 박스장패턴)
+지표: 209(합계)
+    30(가격지표) + 58(모멘텀지표) + 19(변동성지표) + 10(채널지표) + 27(추세지표) + 19(시장강도지표) + 27(거래량지표) + 19(기타지표) + 0(투자자지표) = 209(합계)
+
+신호: 158(합계)    
+    126(분석신호) + 32(매매신호) = 158(합계)
     
-## Preview
-> - Swift Sample
->   - Interface Builder based
->
-> - Objective-C Sample
->   - Programmatically based
+    
+패턴: 116(합계)      
+    27(상승반전패턴) + 10(상승지속패턴) + 24(하락반전패턴) + 9(하락지속패턴) + 0(횡보구간패턴)+ 0(박스장세패턴)+ 46(추세패턴) = 116(합계)
+    
 
-`Swift` |`Objective-C`
----|---
-<img src="./screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">|<img src="./screenshot/Screen Recording 2023-05-15 at 12.00.52.gif" width="450">    
+구간: 74개(합계)
 
-## Documentation
+채움: 52개(합계)
+    28(가격영역채움) + 2(거래량영역채움) + 22(분석영역채움) = 52(합계)
 
-- 여기에 존재하지 않는 추가적인 문서는 다음의 기술위키 문서를 참고하세요.
-    - [자동회전](http://192.241.200.240/index.php?title=Project:IOs-ObjC/자동회전)
-    - [오토레이아웃](http://192.241.200.240/index.php?title=Project:IOs-ObjC/오토레이아웃)
-    - [콤팩트와_레귤러](http://192.241.200.240/index.php?title=Project:IOs-ObjC/콤팩트와_레귤러)
-    - [intrinsicContentSize](http://192.241.200.240/index.php?title=Api:UIKit/UIView/intrinsicContentSize)
-    - [뷰 전환](http://192.241.200.240/index.php?title=Project:Mac-ObjC/뷰_전환)
+----
 
+## 키움 - 362개
 
+보조지표 - 168개
+    추세지표 - 19개
+    변동성지표 - 7개
+    모멘텀지표 - 38개
+    시장강도지표 - 27개
+    가격지표 - 13개
+    거래량지표 - 12개
+    모바일전용 - 3개
+    기타지표 - 49개 
 
+신호검색 - 168개
+    지표검색 - 63개
+    전략시그널검색 - 32개
+    상승반전캔들검색 - 28개
+    상승지속캔들검색 - 10개
+    하락반전캔들검색 - 25개
+    하락지속캔들검색 - 10개
 
-- Swift Sample : Interface Builder based
-<img src="./screenshot/230515a1.jpg" width="1000">
+강세/약세 - 26개
 
-- Objective-C Sample : Programmatically
-```objective-c
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self configureTableView];
-    [self configureDataSource];
-    [self updateUI];
-    __weak __typeof(self) weakSelf = self;
-    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    self.observer = [notificationCenter addObserverForName:UIDeviceOrientationDidChangeNotification
-                                                    object:nil
-                                                     queue:[NSOperationQueue mainQueue]
-                                                usingBlock:^(NSNotification *note) {
-        if (weakSelf.presentedViewController == nil &&
-            UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation) == YES) {
-            ViewControllerX *vc = [ViewControllerX new];
-            vc.modalPresentationStyle = UIModalPresentationFullScreen;
-            vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            [weakSelf presentViewController:vc animated:YES completion:^{}];
-        }
-    }];
-}
+----
 
-```
+## 신한 - 168개
 
-## Bug
-### System Bug
-- iOS 16 이상의 Simulator부터는 `WKWebView` 이용 시 다음과 경고 로그가 발생한다.
-    - [Apple Developer Forums](https://developer.apple.com/forums/thread/714467) 에 따르면 시스템 버그로 사료된다.
-```
-[Security] This method should not be called on the main thread as it may lead to UI unresponsiveness.
-```
+오버레이 - 17개
 
+보조지표 - 113개
+    거래량지표 - 16개
+    시장지표 - 21개
+    추세지표 - 23개
+    변동성지표 - 22개
+    2차파생지표 - 11개
+    시장강도지표 - 20개
 
-## Author
+신호/검색 - 38개
+    신호검색 - 19개
+    캔들 강세/약세 - 19개
 
-sonkoni(손관현), isomorphic111@gmail.com 
-
-## License
-
-This project is released under the MIT License. See [LICENSE](https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/LICENSE) for more information.

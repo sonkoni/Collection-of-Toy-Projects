@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 // Class에 해당하는(__kindof) 수퍼뷰를 만날 때까지 위로 찾아서 최초로 찾으면 그 객체(1개)를 반환한다.
 - (__kindof UIView * _Nullable)mgrRecurrenceSuperviewsOfType:(Class)classObject;
 
+/// 자신의 최종 뿌리
+- (__kindof UIView * _Nullable)mgrProgenitor;
+
 @end
 
 NS_ASSUME_NONNULL_END

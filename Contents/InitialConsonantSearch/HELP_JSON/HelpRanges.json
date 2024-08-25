@@ -1,0 +1,1039 @@
+[
+  {
+    "title" : "이격도과열구간",
+    "contents" : [
+      {
+        "[활용]" : "이격도가 기준값보다 크거나 같으면 과열구간 발생\n\nDisparity(가격,기간) ≧ 기준값"
+      },
+      {
+        "[설명]" : "이격도는 주가가 이동 평균 값으로부터 어느 정도 차이가 있는가를 나타내는 지표이다. 그리고 보다 단기적인 투자시점을 포착하기 위한 지표로 지행성지표인 이동평균선의 결점을 보완한 지표이다.\n\n주가는 이동평균선으로부터 멀어지면 언젠가는 다시 이동평균선으로 회귀하려는 경향이 있다.\n\n상승 국면일때 20일 이동 평균인 경우 106% 이상이면 매도시점, 98% 수준이면 매수시점. 60일 이동 평균인 경우 110% 이상이면 매도시점, 98% 수준이면 매수시점\n\n 하강 국면일때 20일 이동 평균인 경우 102% 이상이면 매도시점, 92% 수준이면 매수시점. 60일 이동 평균인 경우 104% 이상이면 매도시점, 88% 수준이면 매수시점."
+      },
+      {
+        "[계산식]" : "이격도 = (C ÷ MA(C,기간)) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "이격도침체구간",
+    "contents" : [
+      {
+        "[활용]" : "이격도가 기준값보다 작으면 침체구간 발생\n\nDisparity(가격,기간) < 기준값"
+      },
+      {
+        "[설명]" : "이격도는 주가가 이동 평균 값으로부터 어느 정도 차이가 있는가를 나타내는 지표이다. 그리고 보다 단기적인 투자시점을 포착하기 위한 지표로 지행성지표인 이동평균선의 결점을 보완한 지표이다.\n\n주가는 이동평균선으로부터 멀어지면 언젠가는 다시 이동평균선으로 회귀하려는 경향이 있다.\n\n상승 국면일때 20일 이동 평균인 경우 106% 이상이면 매도시점, 98% 수준이면 매수시점. 60일 이동 평균인 경우 110% 이상이면 매도시점, 98% 수준이면 매수시점\n\n 하강 국면일때 20일 이동 평균인 경우 102% 이상이면 매도시점, 92% 수준이면 매수시점. 60일 이동 평균인 경우 104% 이상이면 매도시점, 88% 수준이면 매수시점."
+      },
+      {
+        "[계산식]" : "이격도 = (C ÷ MA(C,기간)) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "이평간강세구간",
+    "contents" : [
+      {
+        "[활용]" : "단기 이동평균 값이 장기 이동평균 값보다 크거나 같으면 강세구간 발생\n\nMoving Average(가격,단기,이평방법) ≧ Moving Average(가격,장기,이평방법)"
+      },
+      {
+        "[설명]" : "일부 데이터에 더 많은 비중을 두고 계산을 행한 평균 값.\n\n시계열의 각 항에 대하여 그것을 중심으로 하는 전후 일정 항 수의 평균값을 연결하여 경향선을 구하는 방법. 이 방법은 이해하기가 쉽고 계산이 쉬운 반면에 항수에 대한 일정한 규칙이 없어 항수에 따라 그 결과가 달라질 수 있으며, 첫 항과 끝 항의 추세값을 계산할 수 없으므로 최근의 추세선을 구하기 어려운 단점이 있다.\n\n이평방법에는 아래와 같은 10가지 계산방법이 존재한다.\n\n  1. 지수 - Exponential\n\n  2. 최소자승 - Least Squares\n\n  3. 단순 - Simple\n\n  4. 삼각 - Triangular\n\n  5. 변동 - Variable\n\n  6. 가중 - Weighted\n\n  7. Welles - Welles Wilder style\n\n  8. 지체지수 - Zero Lag Exponential\n\n  9. 기하 - Heometric\n\n  10. 조화 - Harmonic"
+      },
+      {
+        "[계산식]" : "Moving Average = Moving Average(가격, 기간, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "이평간약세구간",
+    "contents" : [
+      {
+        "[활용]" : "단기 이동평균 값이 장기 이동평균 값보다 작으면 약세구간 발생\n\nMoving Average(가격,단기,이평방법) < Moving Average(가격,장기,이평방법)"
+      },
+      {
+        "[설명]" : "일부 데이터에 더 많은 비중을 두고 계산을 행한 평균 값.\n\n시계열의 각 항에 대하여 그것을 중심으로 하는 전후 일정 항 수의 평균값을 연결하여 경향선을 구하는 방법. 이 방법은 이해하기가 쉽고 계산이 쉬운 반면에 항수에 대한 일정한 규칙이 없어 항수에 따라 그 결과가 달라질 수 있으며, 첫 항과 끝 항의 추세값을 계산할 수 없으므로 최근의 추세선을 구하기 어려운 단점이 있다.\n\n이평방법에는 아래와 같은 10가지 계산방법이 존재한다.\n\n  1. 지수 - Exponential\n\n  2. 최소자승 - Least Squares\n\n  3. 단순 - Simple\n\n  4. 삼각 - Triangular\n\n  5. 변동 - Variable\n\n  6. 가중 - Weighted\n\n  7. Welles - Welles Wilder style\n\n  8. 지체지수 - Zero Lag Exponential\n\n  9. 기하 - Heometric\n\n  10. 조화 - Harmonic"
+      },
+      {
+        "[계산식]" : "Moving Average = Moving Average(가격, 기간, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "이평가격간강세구간",
+    "contents" : [
+      {
+        "[활용]" : "가격 이동평균 값이 가격 값보다 크거나 같으면 강세구간 발생\n\nMoving Average(가격,기간,이평방법) ≧ 가격"
+      },
+      {
+        "[설명]" : "일부 데이터에 더 많은 비중을 두고 계산을 행한 평균 값.\n\n시계열의 각 항에 대하여 그것을 중심으로 하는 전후 일정 항 수의 평균값을 연결하여 경향선을 구하는 방법. 이 방법은 이해하기가 쉽고 계산이 쉬운 반면에 항수에 대한 일정한 규칙이 없어 항수에 따라 그 결과가 달라질 수 있으며, 첫 항과 끝 항의 추세값을 계산할 수 없으므로 최근의 추세선을 구하기 어려운 단점이 있다.\n\n이평방법에는 아래와 같은 10가지 계산방법이 존재한다.\n\n  1. 지수 - Exponential\n\n  2. 최소자승 - Least Squares\n\n  3. 단순 - Simple\n\n  4. 삼각 - Triangular\n\n  5. 변동 - Variable\n\n  6. 가중 - Weighted\n\n  7. Welles - Welles Wilder style\n\n  8. 지체지수 - Zero Lag Exponential\n\n  9. 기하 - Heometric\n\n  10. 조화 - Harmonic"
+      },
+      {
+        "[계산식]" : "Moving Average = Moving Average(가격, 기간, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "이평가격간약세구간",
+    "contents" : [
+      {
+        "[활용]" : "가격 이동평균 값이 가격 값보다 작으면 약세구간 발생\n\nMoving Average(가격,기간,이평방법) < 가격"
+      },
+      {
+        "[설명]" : "일부 데이터에 더 많은 비중을 두고 계산을 행한 평균 값.\n\n시계열의 각 항에 대하여 그것을 중심으로 하는 전후 일정 항 수의 평균값을 연결하여 경향선을 구하는 방법. 이 방법은 이해하기가 쉽고 계산이 쉬운 반면에 항수에 대한 일정한 규칙이 없어 항수에 따라 그 결과가 달라질 수 있으며, 첫 항과 끝 항의 추세값을 계산할 수 없으므로 최근의 추세선을 구하기 어려운 단점이 있다.\n\n이평방법에는 아래와 같은 10가지 계산방법이 존재한다.\n\n  1. 지수 - Exponential\n\n  2. 최소자승 - Least Squares\n\n  3. 단순 - Simple\n\n  4. 삼각 - Triangular\n\n  5. 변동 - Variable\n\n  6. 가중 - Weighted\n\n  7. Welles - Welles Wilder style\n\n  8. 지체지수 - Zero Lag Exponential\n\n  9. 기하 - Heometric\n\n  10. 조화 - Harmonic"
+      },
+      {
+        "[계산식]" : "Moving Average = Moving Average(가격, 기간, 이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "투자심리도기준값과열",
+    "contents" : [
+      {
+        "[활용]" : "투자심리선이 기준값보다 크거나 같은면 과열구간 발생\n\nPsychology Line(가격,기간) ≧ 기준값"
+      },
+      {
+        "[설명]" : "투자심리선은 주식시장이 현재 과열국면인지 침체국면인지를 파악하여 단기적 매매시점을 결정하기 위한 지표로 시장의 갑작스런 악재나 호재를 즉각 반영시킴으로써 시장의 변화를 신속하고 객관적으로 판단할 수 있게 하는 단순한 지표이다."
+      },
+      {
+        "[계산식]" : "심리도 = n일간 전일대비 상승일수 × 100 ÷ n"
+      }
+    ]
+  },
+  {
+    "title" : "투자심리도기준값침체",
+    "contents" : [
+      {
+        "[활용]" : "투자심리선이 기준값보다 작으면 침체구간 발생\n\nPsychology Line(가격,기간) < 기준값"
+      },
+      {
+        "[설명]" : "투자심리선은 주식시장이 현재 과열국면인지 침체국면인지를 파악하여 단기적 매매시점을 결정하기 위한 지표로 시장의 갑작스런 악재나 호재를 즉각 반영시킴으로써 시장의 변화를 신속하고 객관적으로 판단할 수 있게 하는 단순한 지표이다."
+      },
+      {
+        "[계산식]" : "심리도 = n일간 전일대비 상승일수 × 100 ÷ n"
+      }
+    ]
+  },
+  {
+    "title" : "Aroon강세구간",
+    "contents" : [
+      {
+        "[활용]" : "Aroon Up 값이 Aroon Down 값보다 크거나 같으면 강세구간 발생"
+      },
+      {
+        "[설명]" : "Aroon지표는 1995년 Tushar Chande가 개발하였다. 이 지표는 추세의 형태와 강도를 파악하는데 사용된다."
+      },
+      {
+        "[계산식]" : "Aroon Up\n    = 100 × (기간 - 최고가 이후 봉개수) ÷ 기간\n\nAroon Down\n    = 100 × (기간 - 최저가 이후 봉개수) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "Aroon약세구간",
+    "contents" : [
+      {
+        "[활용]" : "Aroon Up 값이 Aroon Down 값보다 작으면 약세구간 발생"
+      },
+      {
+        "[설명]" : "Aroon지표는 1995년 Tushar Chande가 개발하였다. 이 지표는 추세의 형태와 강도를 파악하는데 사용된다."
+      },
+      {
+        "[계산식]" : "Aroon Up\n    = 100 × (기간 - 최고가 이후 봉개수) ÷ 기간\n\nAroon Down\n    = 100 × (기간 - 최저가 이후 봉개수) ÷ 기간"
+      }
+    ]
+  },
+  {
+    "title" : "CCI과매도구간",
+    "contents" : [
+      {
+        "[활용]" : "CCI 값이 기준값보다 작으면 과매도구간 발생\n\nCCI(기간) < 기준값"
+      },
+      {
+        "[설명]" : "Donald Lambert에 의해 개발된 지표이며 주가의 평균을 기준으로 하여 현재 주식가격의 변동성을 측정하는 지표이다.\n기본 매매범위는 100과 -100사이\n\nCCI가 0보다 큰값일때 시장은 상승추세이며, 0보다 작은값을 가질때는 하락추세로 판단할 수 있다."
+      },
+      {
+        "[계산식]" : "TP = (H + L + C) ÷ 3\n\nATP = SMA(TP, n)\n\nMD = SMA(abs(TP - ATP), n)\n\nCCI = (TP - ATP) ÷ (MD × 0.015)"
+      }
+    ]
+  },
+  {
+    "title" : "CCI과매수구간",
+    "contents" : [
+      {
+        "[활용]" : "CCI 값이 기준값보다 크거나 같으면 과매수구간 발생\n\nCCI(기간) ≧ 기준값"
+      },
+      {
+        "[설명]" : "Donald Lambert에 의해 개발된 지표이며 주가의 평균을 기준으로 하여 현재 주식가격의 변동성을 측정하는 지표이다.\n기본 매매범위는 100과 -100사이\n\nCCI가 0보다 큰값일때 시장은 상승추세이며, 0보다 작은값을 가질때는 하락추세로 판단할 수 있다."
+      },
+      {
+        "[계산식]" : "TP = (H + L + C) ÷ 3\n\nATP = SMA(TP, n)\n\nMD = SMA(abs(TP - ATP), n)\n\nCCI = (TP - ATP) ÷ (MD × 0.015)"
+      }
+    ]
+  },
+  {
+    "title" : "DMI강세구간",
+    "contents" : [
+      {
+        "[활용]" : "DI Plus값이 DI Minus값보다 크거나 같으면 강세구간 발생\n\nPlus DI(기간) ≧ Minus DI(기간)"
+      },
+      {
+        "[설명]" : "J. Welles Wilder Jr에 의해 1978년에 소개 되었다. 이는 시장이 추세를 이루는지를 측정하고 규명하기 위하여 고안된 것으로 주가의 순 상승력을 파악하기 위한 지표이다."
+      },
+      {
+        "[계산식]" : "PDM(+DM) : H - H(1) (+값만 취함)\n\nMDM(-DM) : L - L(1) (-값만 취함)\n\nDX = ((|PDI - MDI|) ÷ (PDI + MDI)) × 100\n\nPDI = PDM ÷ TR()\n\nMDI = MDM ÷ TR()"
+      }
+    ]
+  },
+  {
+    "title" : "DMI약세구간",
+    "contents" : [
+      {
+        "[활용]" : "DI Plus값이 DI Minus값보다 작으면 약세구간 발생\n\nPlus DI(기간) < Minus DI(기간)"
+      },
+      {
+        "[설명]" : "J. Welles Wilder Jr에 의해 1978년에 소개 되었다. 이는 시장이 추세를 이루는지를 측정하고 규명하기 위하여 고안된 것으로 주가의 순 상승력을 파악하기 위한 지표이다."
+      },
+      {
+        "[계산식]" : "PDM(+DM) : H - H(1) (+값만 취함)\n\nMDM(-DM) : L - L(1) (-값만 취함)\n\nDX = ((|PDI - MDI|) ÷ (PDI + MDI)) × 100\n\nPDI = PDM ÷ TR()\n\nMDI = MDM ÷ TR()"
+      }
+    ]
+  },
+  {
+    "title" : "MACD기준선강세구간",
+    "contents" : [
+      {
+        "[활용]" : "MACD 값이 기준선보다 크거나 같으면 강세구간 발생\n\nMACD Input = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)\n\nMACD Input ≧ Base Line"
+      },
+      {
+        "[설명]" : "MACD는 Gerald Appel이 System and Forecasts라는 책자에서 소개한 지표이다. Gerald Appel에 의하여 창안된 MACD는 Granville의 법칙 이래 오늘날 시장에서 가장 많이 참고로 하는 훌륭한 지표이다. Granvill은 주가와 이동평균의 교차, 이동평균과 이동평균의 교차점을 매매타이밍으로 삼았다. 그러나 Appel은 두 이동평균의 폭이 좁아지고 넓어지며 교차하는 것을 이용할 수 있도록 개선한 지표를 개발해냈다.\n\nMACD 지표는 주식가격에 대한 두 개의 장기, 단기 이동평균선간의 상관관계를 보여주는 운동량 지표이다."
+      },
+      {
+        "[계산식]" : "MACD = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "MACD기준선약세구간",
+    "contents" : [
+      {
+        "[활용]" : "MACD 값이 기준선보다 작으면 약세구간 발생\n\nMACD Input = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)\n\nMACD Input < Base Line"
+      },
+      {
+        "[설명]" : "MACD는 Gerald Appel이 System and Forecasts라는 책자에서 소개한 지표이다. Gerald Appel에 의하여 창안된 MACD는 Granville의 법칙 이래 오늘날 시장에서 가장 많이 참고로 하는 훌륭한 지표이다. Granvill은 주가와 이동평균의 교차, 이동평균과 이동평균의 교차점을 매매타이밍으로 삼았다. 그러나 Appel은 두 이동평균의 폭이 좁아지고 넓어지며 교차하는 것을 이용할 수 있도록 개선한 지표를 개발해냈다.\n\nMACD 지표는 주식가격에 대한 두 개의 장기, 단기 이동평균선간의 상관관계를 보여주는 운동량 지표이다."
+      },
+      {
+        "[계산식]" : "MACD = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "MACD크로스강세구간",
+    "contents" : [
+      {
+        "[활용]" : "MACD 값이 MACD기준선(이동평균값)보다 크거나 같으면 강세구간 발생\n\nMACD Input = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)\n\nMACD Input ≧ Moving Average(MACD Input,이평기간,이평방법)"
+      },
+      {
+        "[설명]" : "MACD는 Gerald Appel이 System and Forecasts라는 책자에서 소개한 지표이다. Gerald Appel에 의하여 창안된 MACD는 Granville의 법칙 이래 오늘날 시장에서 가장 많이 참고로 하는 훌륭한 지표이다. Granvill은 주가와 이동평균의 교차, 이동평균과 이동평균의 교차점을 매매타이밍으로 삼았다. 그러나 Appel은 두 이동평균의 폭이 좁아지고 넓어지며 교차하는 것을 이용할 수 있도록 개선한 지표를 개발해냈다.\n\nMACD 지표는 주식가격에 대한 두 개의 장기, 단기 이동평균선간의 상관관계를 보여주는 운동량 지표이다."
+      },
+      {
+        "[계산식]" : "MACD = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "MACD크로스약세구간",
+    "contents" : [
+      {
+        "[활용]" : "MACD 값이 MACD기준선(이동평균값)보다 작으면 약세구간 발생\n\nMACD Input = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)\n\nMACD Input < Moving Average(MACD Input,이평기간,이평방법)"
+      },
+      {
+        "[설명]" : "MACD는 Gerald Appel이 System and Forecasts라는 책자에서 소개한 지표이다. Gerald Appel에 의하여 창안된 MACD는 Granville의 법칙 이래 오늘날 시장에서 가장 많이 참고로 하는 훌륭한 지표이다. Granvill은 주가와 이동평균의 교차, 이동평균과 이동평균의 교차점을 매매타이밍으로 삼았다. 그러나 Appel은 두 이동평균의 폭이 좁아지고 넓어지며 교차하는 것을 이용할 수 있도록 개선한 지표를 개발해냈다.\n\nMACD 지표는 주식가격에 대한 두 개의 장기, 단기 이동평균선간의 상관관계를 보여주는 운동량 지표이다."
+      },
+      {
+        "[계산식]" : "MACD = MA(가격,단기,이평방법) - MA(가격,장기,이평방법)"
+      }
+    ]
+  },
+  {
+    "title" : "Momentum강세구간",
+    "contents" : [
+      {
+        "[활용]" : "Momentum값이 기준값보다 크거나 같으면 강세구간 발생\n\nMomentum(가격,기간) ≧ 기준값"
+      },
+      {
+        "[설명]" : "MOMENTUM은 물리학의 운동법칙을 원용하여 개발한 지표이며, 그 의미는 주어진 기간동안 주가가 변해온 양이 얼마인가를 측정하는 지표이다.\n\nMomentum 지표가 0선을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측\n\nMomentum이 Signal을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측"
+      },
+      {
+        "[계산식]" : "Momentum = C/C(기간) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "Momentum약세구간",
+    "contents" : [
+      {
+        "[활용]" : "Momentum값이 기준값보다 작으면 약세구간 발생\n\nMomentum(가격,기간) < 기준값"
+      },
+      {
+        "[설명]" : "MOMENTUM은 물리학의 운동법칙을 원용하여 개발한 지표이며, 그 의미는 주어진 기간동안 주가가 변해온 양이 얼마인가를 측정하는 지표이다.\n\nMomentum 지표가 0선을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측\n\nMomentum이 Signal을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측"
+      },
+      {
+        "[계산식]" : "Momentum = C/C(기간) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "Momentum기준선약세구간",
+    "contents" : [
+      {
+        "[활용]" : "Momentum값이 Momentum기준선(이동평균값)보다 작으면 약세구간 발생\n\nMomentum Input = Momentum(가격,Mom기간)\n\nMomentum Input < Moving Average(Momentum Input,이평기간,이평방법)"
+      },
+      {
+        "[설명]" : "MOMENTUM은 물리학의 운동법칙을 원용하여 개발한 지표이며, 그 의미는 주어진 기간동안 주가가 변해온 양이 얼마인가를 측정하는 지표이다.\n\nMomentum 지표가 0선을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측\n\nMomentum이 Signal을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측"
+      },
+      {
+        "[계산식]" : "Momentum = C/C(기간) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "Momentum기준선강세구간",
+    "contents" : [
+      {
+        "[활용]" : "Momentum값이 Momentum기준선(이동평균값)보다 크거나 같으면 강세구간 발생\n\nMomentum Input = Momentum(가격,Mom기간)\n\nMomentum Input ≧ Moving Average(Momentum Input,이평기간,이평방법)"
+      },
+      {
+        "[설명]" : "MOMENTUM은 물리학의 운동법칙을 원용하여 개발한 지표이며, 그 의미는 주어진 기간동안 주가가 변해온 양이 얼마인가를 측정하는 지표이다.\n\nMomentum 지표가 0선을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측\n\nMomentum이 Signal을 상향 돌파하면 매수시점, 하향 돌파하면 매도시점으로 추측"
+      },
+      {
+        "[계산식]" : "Momentum = C/C(기간) × 100"
+      }
+    ]
+  },
+  {
+    "title" : "PSar가격강세구간",
+    "contents" : [
+      {
+        "[활용]" : "Psar 값이 가격보다 작거나 같으면 강세구간 발생\n\nPSAR(가속변수,최대가속값) ≦ 가격"
+      },
+      {
+        "[설명]" : "Parabolic(SAR, Stop and Reversal)는 Welles Wilder에 의해서 개발된 부가지표로 주가의 추세전환점을 결정하기 위하여 사용된다.\n\n주가가 SAR아래로 가격이 떨어지면 매도, 주가가 SAR 위로 가격이 올라갔을 때는 매수. 추세시장에서는 효과적인 지표이나 비추세적 시장에서는 Whipsaw가 많이 발생하는 단점이 있음."
+      },
+      {
+        "[계산식]" : "상승추세 또는 하락추세에 따라 구분하여 계산한다.\n\n상승추세 : 전일 Psar + 가속도(상승추세의 신고가 - 전일Psar)\n\n하락추세 : 전일 PSar + 가속도(하락추세의 신저가 - 전일PSar)"
+      }
+    ]
+  },
+  {
+    "title" : "PSar가격약세구간",
+    "contents" : [
+      {
+        "[활용]" : "Psar 값이 가격보다 크면 약세구간 발생\n\nPSAR(가속변수,최대가속값) > 가격"
+      },
+      {
+        "[설명]" : "Parabolic(SAR, Stop and Reversal)는 Welles Wilder에 의해서 개발된 부가지표로 주가의 추세전환점을 결정하기 위하여 사용된다.\n\n주가가 SAR아래로 가격이 떨어지면 매도, 주가가 SAR 위로 가격이 올라갔을 때는 매수. 추세시장에서는 효과적인 지표이나 비추세적 시장에서는 Whipsaw가 많이 발생하는 단점이 있음."
+      },
+      {
+        "[계산식]" : "상승추세 또는 하락추세에 따라 구분하여 계산한다.\n\n상승추세 : 전일 Psar + 가속도(상승추세의 신고가 - 전일Psar)\n\n하락추세 : 전일 PSar + 가속도(하락추세의 신저가 - 전일PSar)"
+      }
+    ]
+  },
+  {
+    "title" : "RSI과열구간",
+    "contents" : [
+      {
+        "[활용]" : "RSI 값이 기준값보다 크거나 같으면 과열구간 발생\n\nRSI(가격,기간) ≧ 기준값"
+      },
+      {
+        "[설명]" : "RSI 는 가격움직임의 절대값에 최근 가격상승움직임의 비율을 계산한 값으로 표현하고 범위는 0에서 100까지이다. 추세의 강도를 표시하여 향후 추세전환 시점이 예측가능하다.\n\nRSI 는 70이 넘었을때 과매수, 30아래로 내려갈때 과매도상황으로 해석한다."
+      },
+      {
+        "[계산식]" : "Up = if (가격 > 가격(1), 가격 - 가격(1), 0)\n\nDn = if (가격 ≦ 가격(1), 가격(1) - 가격, 0)\n\nUpAVG = (UpAVG × (기간 - 1) + Up) ÷ 기간\n\nDnAVG = (DnAVG × (기간 - 1) + Dn) ÷ 기간\n\nRSI = 100 × UpAVG ÷ (UpAVG + DnAVG)"
+      }
+    ]
+  },
+  {
+    "title" : "RSI침체구간",
+    "contents" : [
+      {
+        "[활용]" : "RSI 값이 기준값보다 작으면 침체구간 발생\n\nRSI(가격,기간) < 기준값"
+      },
+      {
+        "[설명]" : "RSI 는 가격움직임의 절대값에 최근 가격상승움직임의 비율을 계산한 값으로 표현하고 범위는 0에서 100까지이다. 추세의 강도를 표시하여 향후 추세전환 시점이 예측가능하다.\n\nRSI 는 70이 넘었을때 과매수, 30아래로 내려갈때 과매도상황으로 해석한다."
+      },
+      {
+        "[계산식]" : "Up = if (가격 > 가격(1), 가격 - 가격(1), 0)\n\nDn = if (가격 ≦ 가격(1), 가격(1) - 가격, 0)\n\nUpAVG = (UpAVG × (기간 - 1) + Up) ÷ 기간\n\nDnAVG = (DnAVG × (기간 - 1) + Dn) ÷ 기간\n\nRSI = 100 × UpAVG ÷ (UpAVG + DnAVG)"
+      }
+    ]
+  },
+  {
+    "title" : "RSI기준값강세구간",
+    "contents" : [
+        {
+        "[활용]" : "RSI 값이 RSI기준선(이동평균값)보다 크거나 같으면 강세구간 발생\n\nRSI Input = RSI(가격,RSI기간)\n\nRSI Input ≧ Moving Average(RSI Input,이평기간,이평방법)"
+        },
+        {
+        "[설명]" : "RSI는 가격움직임의 절대값에 최근 가격상승움직임의 비율을 계산한 값으로 표현하고 범위는 0에서 100까지이다. 추세의 강도를 표시하여 향후 추세전환 시점이 예측가능하다.\n\nRSI 는 70이 넘었을때 과매수, 30아래로 내려갈때 과매도상황으로 해석한다."
+        },
+        {
+        "[계산식]" : "Up = if (가격 > 가격(1), 가격 - 가격(1), 0)\n\nDn = if (가격 ≦ 가격(1), 가격(1) - 가격, 0)\n\nUpAVG = (UpAVG × (기간 - 1) + Up) ÷ 기간\n\nDnAVG = (DnAVG × (기간 - 1) + Dn) ÷ 기간\n\nRSI = 100 × UpAVG ÷ (UpAVG + DnAVG)"
+        }
+    ]
+  },
+  {
+      "title" : "RSI기준값약세구간",
+      "contents" : [
+        {
+          "[활용]" : "RSI 값이 RSI기준선(이동평균값)보다 작으면 약세구간 발생\n\nRSI Input = RSI(가격,RSI기간)\n\nRSI Input < Moving Average(RSI Input,이평기간,이평방법)"
+        },
+        {
+            "[설명]" : "RSI는 가격움직임의 절대값에 최근 가격상승움직임의 비율을 계산한 값으로 표현하고 범위는 0에서 100까지이다. 추세의 강도를 표시하여 향후 추세전환 시점이 예측가능하다.\n\nRSI 는 70이 넘었을때 과매수, 30아래로 내려갈때 과매도상황으로 해석한다."
+        },
+        {
+            "[계산식]" : "Up = if (가격 > 가격(1), 가격 - 가격(1), 0)\n\nDn = if (가격 ≦ 가격(1), 가격(1) - 가격, 0)\n\nUpAVG = (UpAVG × (기간 - 1) + Up) ÷ 기간\n\nDnAVG = (DnAVG × (기간 - 1) + Dn) ÷ 기간\n\nRSI = 100 × UpAVG ÷ (UpAVG + DnAVG)"
+        }
+      ]
+  },
+  {
+    "title" : "TRIX기준값강세구간",
+    "contents" : [
+      {
+        "[활용]" : "Trix 값이 기준값보다 크거나 같으면 강세구간 발생\n\nTRIX(가격,기간) ≧ 기준값"
+      },
+      {
+        "[설명]" : "TRIX 지표는 세 번의 지수이평의 변화 비율로 계산된다. 값은 0 주위를 왔다갔한다\n\n매수/매도 신호는 TRIX가 0값 위/아래로 Cross 할 때 발생한다\n\nSignal 선은 TRIX 값의 9일 이평을 전통적으로 사용한다."
+      },
+      {
+        "[계산식]" : "M = EMA(EMA(EMA(가격)))\n\nTRIX = 100 × (M - M(1)) ÷ M"
+      }
+    ]
+  },
+  {
+    "title" : "TRIX기준값약세구간",
+    "contents" : [
+      {
+        "[활용]" : "Trix 값이 기준값보다 작으면 약세구간 발생\n\nTRIX(가격,기간) < 기준값"
+      },
+      {
+          "[설명]" : "TRIX 지표는 세 번의 지수이평의 변화 비율로 계산된다. 값은 0 주위를 왔다갔한다\n\n매수/매도 신호는 TRIX가 0값 위/아래로 Cross 할 때 발생한다\n\nSignal 선은 TRIX 값의 9일 이평을 전통적으로 사용한다."
+      },
+      {
+        "[계산식]" : "M = EMA(EMA(EMA(가격)))\n\nTRIX = 100 × (M - M(1)) ÷ M"
+      }
+    ]
+  },
+  {
+    "title" : "TRIX기준선강세구간",
+    "contents" : [
+      {
+        "[활용]" : "Trix 값이 Trix기준선(이동평균값)보다 크거나 같으면 강세구간 발생\n\nTRIX Input = TRIX(가격,TRIX기간)\n\nTRIX Input ≧ Moving Average(TRIX Input,이평기간,이평방법)"
+      },
+      {
+          "[설명]" : "TRIX 지표는 세 번의 지수이평의 변화 비율로 계산된다. 값은 0 주위를 왔다갔한다\n\n매수/매도 신호는 TRIX가 0값 위/아래로 Cross 할 때 발생한다\n\nSignal 선은 TRIX 값의 9일 이평을 전통적으로 사용한다."
+      },
+      {
+        "[계산식]" : "M = EMA(EMA(EMA(가격)))\n\nTRIX = 100 × (M - M(1)) ÷ M"
+      }
+    ]
+  },
+  {
+    "title" : "TRIX기준선약세구간",
+    "contents" : [
+        {
+          "[활용]" : "Trix 값이 Trix기준선(이동평균값)보다 작으면 약세구간 발생\n\nTRIX Input = TRIX(가격,TRIX기간)\n\nTRIX Input < Moving Average(TRIX Input,이평기간,이평방법)"
+        },
+        {
+            "[설명]" : "TRIX 지표는 세 번의 지수이평의 변화 비율로 계산된다. 값은 0 주위를 왔다갔한다\n\n매수/매도 신호는 TRIX가 0값 위/아래로 Cross 할 때 발생한다\n\nSignal 선은 TRIX 값의 9일 이평을 전통적으로 사용한다."
+        },
+        {
+          "[계산식]" : "M = EMA(EMA(EMA(가격)))\n\nTRIX = 100 × (M - M(1)) ÷ M"
+        }
+      ]
+  },
+  {
+      "title" : "ADX기준선강세구간",
+      "contents" : [
+        {
+          "[활용]" : "ADX 값이 ADX기준선(이동평균값)보다 크거나 같으면 강세구간 발생\n\nADX Input = ADX(DX기간,ADX기간)\n\nADX Input ≧ Moving Average(ADX Input,이평기간,이평방법)"
+        },
+        {
+          "[설명]" : "DMI(Directional Movement Index)를 개발한 Welles Wilder Jr이 1978년에 개발한 지표로서 주가가 추세를 가지고 움직이고 있는지를 판단하는데 도움이 되는 지표이다.\n\nADX는 3개의 선으로 구성되는 데, PDI(Positive Directional Indicator), NDI(Negative Directional Indicator), ADX로 나눠진다.\n\n현재의 시장추세와 함께 그 추세의 강도까지 알려주는  지표로 단기보다는 중장기 추세판별에 적합하다"
+        },
+        {
+          "[계산식]" : "PDM(+DM) : H - H(1) (+값만 취함)\n\nMDM(-DM) : L - L(1) (-값만 취함)\n\nDX = ((|PDI-MDI|) ÷ (PDI+MDI)) × 100\n\nPDI = PDM ÷ TR()\n\nMDI = MDM ÷ TR()\n\nADX = EMa(DX, 기간)"
+        }
+      ]
+  },
+  {
+      "title" : "ADX기준선약세구간",
+      "contents" : [
+        {
+          "[활용]" : "ADX 값이 ADX기준선(이동평균값)보다 작으면 약세구간 발생\n\nADX Input = ADX(DX기간,ADX기간)\n\nADX Input < Moving Average(ADX Input,이평기간,이평방법)"
+        },
+        {
+            "[설명]" : "DMI(Directional Movement Index)를 개발한 Welles Wilder Jr이 1978년에 개발한 지표로서 주가가 추세를 가지고 움직이고 있는지를 판단하는데 도움이 되는 지표이다.\n\nADX는 3개의 선으로 구성되는 데, PDI(Positive Directional Indicator), NDI(Negative Directional Indicator), ADX로 나눠진다.\n\n현재의 시장추세와 함께 그 추세의 강도까지 알려주는  지표로 단기보다는 중장기 추세판별에 적합하다"
+        },
+        {
+            "[계산식]" : "PDM(+DM) : H - H(1) (+값만 취함)\n\nMDM(-DM) : L - L(1) (-값만 취함)\n\nDX = ((|PDI-MDI|) ÷ (PDI+MDI)) × 100\n\nPDI = PDM ÷ TR()\n\nMDI = MDM ÷ TR()\n\nADX = EMa(DX, 기간)"
+        }
+      ]
+    },
+  {
+      "title" : "EnergyIndex강세구간",
+      "contents" : [
+        {
+          "[활용]" : "Energy Index Sell 값이 Energy Index Buy값 보다 크거나 같으면 강세구간 발생\n\nEnergy Index Sell(기간) ≧ Energy Index Buy(기간)"
+        },
+        {
+            "[설명]" : "업종(시장)이나 종목에서 현재 에너지가 집중되는지 분산되는지를 파악하기 위한 지표로 상승에너지와 하락에너지를 평가하여 주가의 상승 및 하락여부를 파악한다.\n\n매수에너지가 68%이하이고, 매도에너지가 130%이상일 때, 개별종목이나 시장이 침체를 보이는 것으로 판단하여 기술적 반등을 기대하여 매수를 고려하게 되고, 매수에너지가 330%이상이고, 매도에너지가 35%이하일 때, 개별종목이나 시장이 과열될 것으로 판단하여 매도를 고려한다."
+        },
+        {
+          "[계산식]" : "매수 = n일간 Sum (고가 - 시가) × 100 ÷ n일간 Sum (시가 - 저가)\n\n매도 = n일간 Sum (고가 - 종가) × 100 ÷ n일간 Sum (종가 - 저가)"
+        }
+      ]
+  },
+  {   "title" : "EnergyIndex약세구간",
+      "contents" : [
+        {
+          "[활용]" : "Energy Index Sell 값이 Energy Index Buy값 보다 작으면 약세구간 발생Energy Index Sell(기간) < Energy Index Buy(기간)"
+        },
+        {
+          "[설명]" : "업종(시장)이나 종목에서 현재 에너지가 집중되는지 분산되는지를 파악하기 위한 지표로 상승에너지와 하락에너지를 평가하여 주가의 상승 및 하락여부를 파악한다.\n\n매수에너지가 68%이하이고, 매도에너지가 130%이상일 때, 개별종목이나 시장이 침체를 보이는 것으로 판단하여 기술적 반등을 기대하여 매수를 고려하게 되고, 매수에너지가 330%이상이고, 매도에너지가 35%이하일 때, 개별종목이나 시장이 과열될 것으로 판단하여 매도를 고려한다."
+        },
+        {
+            "[계산식]" : "매수 = n일간 Sum (고가 - 시가) × 100 ÷ n일간 Sum (시가 - 저가)\n\n매도 = n일간 Sum (고가 - 종가) × 100 ÷ n일간 Sum (종가 - 저가)"
+        }
+      ]
+  },
+  {
+      "title" : "MesaSineWave강세",
+      "contents" : [
+        {
+          "[활용]" : "MESA Sine Wave 값이 MESA Sine Wave Lead 값보다 크거나 같으면 강세구간 발생\n\nMESA Sine Wave(기간) ≧ MESA Sine Wave Lead(기간)"
+        },
+        {
+          "[설명]" : "MESA Sine Wave는 두 Sine 곡선을 계산하여 나타내는 지표이다.\n\n두 곡선이 비슷할때 시장의 Sine파동은 한 사이클안에 있다.\n\n그렇지 않으면 시장 신호의 추세는 단지 마켓이 한 사이클안에 있을때만 생성된다."
+        },
+        {
+          "[계산식]" : "RealPart = ∑(Cos(360 × j ÷ n) × Close(-i))\nImagPart = ∑(Sin(360 × j ÷ n) × Close(-i))\n\nif ImagPart > 0.001 then\n    DCPhase = atan(RealPart ÷ ImagPart) + 90\nelse\n    DCPhase = 90\n\nIf ImagPart < 0 then\n    DCPhae = DCPhase + 180\n\nIf ImagPart > 270 then\n     DCPhae = DCPhase - 360\n\nSine = sin(DCPhase)\n\nLeadSine = sin(DCPhase + 45)"
+        }
+      ]
+  },
+  {
+      "title" : "MesaSineWave약세",
+      "contents" : [
+        {
+            "[활용]" : "MESA Sine Wave 값이 MESA Sine Wave Lead 값보다 작으면 약세구간 발생\n\nMESA Sine Wave(기간) < MESA Sine Wave Lead(기간)"
+        },
+        {
+            "[설명]" : "MESA Sine Wave는 두 Sine 곡선을 계산하여 나타내는 지표이다.\n\n두 곡선이 비슷할때 시장의 Sine파동은 한 사이클안에 있다.\n\n그렇지 않으면 시장 신호의 추세는 단지 마켓이 한 사이클안에 있을때만 생성된다."
+        },
+        {
+            "[계산식]" : "RealPart = ∑(Cos(360 × j ÷ n) × Close(-i))\nImagPart = ∑(Sin(360 × j ÷ n) × Close(-i))\n\nif ImagPart > 0.001 then\n    DCPhase = atan(RealPart ÷ ImagPart) + 90\nelse\n    DCPhase = 90\n\nIf ImagPart < 0 then\n    DCPhae = DCPhase + 180\n\nIf ImagPart > 270 then\n     DCPhae = DCPhase - 360\n\nSine = sin(DCPhase)\n\nLeadSine = sin(DCPhase + 45)"
+        }
+      ]
+  },
+  {
+      "title" : "RWI강세구간",
+      "contents" : [
+
+        {
+          "[활용]" : "RWI Hi 값이 RWI Lo값보다 크거나 같으면 강세구간 발생\n\nRWI Hi(기간) ≧ RWI Lo(기간)"
+        },
+        {
+          "[설명]" : "RWI는 직선과 비교해서 안건이 추세이거나, 무작위적인 거래영역에 존재하는 경우 결정된다. 무작위적 가격움직임이 늘어날수록, RWI 의 변동이 늘어난다.\n\n짧은 주기의(2 에서 7) RWI 는 과매수/과매도 지표이고, 긴 주기의(8 에서 64) RWI 는 추세지표이다."
+        },
+        {
+          "[계산식]" : "고가 = (High - Low[n - 1]) ÷ (ATR × sqrt(n))\n\n저가 = (High[n - 1] - Low) ÷ (ATR × sqrt(n))"
+        }
+      ]
+    },
+  {
+      "title" : "RWI약세구간",
+      "contents" : [
+        {
+            "[활용]" : "RWI Hi 값이 RWI Lo값보다 작으면 약세구간 발생\n\nRWI Hi(기간) < RWI Lo(기간)"
+        },
+        {
+          "[설명]" : "RWI는 직선과 비교해서 안건이 추세이거나, 무작위적인 거래영역에 존재하는 경우 결정된다. 무작위적 가격움직임이 늘어날수록, RWI 의 변동이 늘어난다.\n\n짧은 주기의(2 에서 7) RWI 는 과매수/과매도 지표이고, 긴 주기의(8 에서 64) RWI 는 추세지표이다."
+        },
+        {
+          "[계산식]" : "고가 = (High - Low[n - 1]) ÷ (ATR × sqrt(n))\n\n저가 = (High[n - 1] - Low) ÷ (ATR × sqrt(n))"
+        }
+      ]
+    },
+  {
+        "title" : "ZigZag상승구간",
+      "contents" : [
+        {
+          "[활용]" : "ZigZag 값이 ZiagZag 전값보다 크면 상승구간 발생\n\nGrow(ZigZag(가격,전환값,비율여부),동일여부)"
+        },
+        {
+          "[설명]" : "Zig Zag는 전환 가격 이하의 작은 가격 움직임을 제외하여 가격 추세의 중요한 움직임(임계치 이상 움직임)을 쉽게 포착하기 위하여 사용되는 지표입니다.\n\n즉 사용자가 원하는 전환비율에 맞추어 꺾은선으로 차트를 보여줌."
+        },
+        {
+          "[계산식]" : "첫 봉 종가 대비 전환비율(n%) 이상 상승 또는 하락하면 확정되지 않은 예비의 고/저점을 지정하고 예비의 고/저점 대비 전환비율(n%) 이상 하락하여 예비 고/저점이 확인되면 고/저점으로 확정.\n\n이런 방식의 고->저->고 또는 저->고->저 반복된 순서로 고/저점 직선을 연결함."
+        }
+      ]
+    },
+  {
+    "title" : "ZigZag하락구간",
+    "contents" : [
+    {
+        "[활용]" : "ZigZag 값이 ZiagZag 전값 보다 작으면 하락구간 발생.\n\nShrink(ZigZag(가격,전환값,비율여부),동일여부)"
+    },
+    {
+        "[설명]" : "Zig Zag는 전환 가격 이하의 작은 가격 움직임을 제외하여 가격 추세의 중요한 움직임(임계치 이상 움직임)을 쉽게 포착하기 위하여 사용되는 지표입니다.\n\n즉 사용자가 원하는 전환비율에 맞추어 꺾은선으로 차트를 보여줌."
+    },
+    {
+        "[계산식]" : "첫 봉 종가 대비 전환비율(n%) 이상 상승 또는 하락하면 확정되지 않은 예비의 고/저점을 지정하고 예비의 고/저점 대비 전환비율(n%) 이상 하락하여 예비 고/저점이 확인되면 고/저점으로 확정.\n\n이런 방식의 고->저->고 또는 저->고->저 반복된 순서로 고/저점 직선을 연결함."
+    }
+    ]
+  },
+  {
+      "title" : "WilliamsR과매도영역",
+      "contents" : [
+        {
+          "[활용]" : "WilliamsR 값이 기준값보다 작거나 같으면 과매도영역 발생\n\nWilliamsR(기간) ≦ 기준값"
+        },
+        {
+          "[설명]" : "Williams %R은 거칠게 그려진 Stochastic %K 와 비슷하다. 값의 범위는 0에서 100까지로, 차트에 그려질때는 거꾸로 그려진다. 0부터 -100까지의 범위로 그려진다.\n\n-100 ~ -80 사이에서 과매도구간, -20 ~ 0 사이를 과매수구간으로 추측한다.\n\n%R은 매매신호가 발생했더라도 추세를 확인한 후에 매매에 임하여야 하며, 이를 위하여 ADX처럼 추세강도를 나타내 주는 지표와 같이 분석하여야 한다."
+        },
+        {
+          "[계산식]" : "WilliamsR = 100 × (Highest(H, 기간) - C) ÷ (Highest(H, 기간) - Lowest(L, 기간))"
+        }
+      ]
+    },
+  {
+        "title" : "WilliamsR과매수영역",
+      "contents" : [
+        {
+          "[활용]" : "WilliamsR 값이 기준값보다 크거나 같으면 과매수영역 발생\n\nWilliamsR(기간) ≧ 기준값"
+        },
+        {
+          "[설명]" : "Williams %R은 거칠게 그려진 Stochastic %K 와 비슷하다. 값의 범위는 0에서 100까지로, 차트에 그려질때는 거꾸로 그려진다. 0부터 -100까지의 범위로 그려진다.\n\n-100 ~ -80 사이에서 과매도구간, -20 ~ 0 사이를 과매수구간으로 추측한다.\n\n%R은 매매신호가 발생했더라도 추세를 확인한 후에 매매에 임하여야 하며, 이를 위하여 ADX처럼 추세강도를 나타내 주는 지표와 같이 분석하여야 한다."
+        },
+        {
+          "[계산식]" : "WilliamsR = 100 × (Highest(H, 기간) - C) ÷ (Highest(H, 기간) - Lowest(L, 기간))"
+        }
+      ]
+    },
+  {
+      "title" : "UpDownAVG강세구간",
+      "contents" : [
+        {
+          "[활용]" : "UpAverage 값이 DownAverage 값보다 크거나 같으면 강세구간 발생\n\nUpAverage(가격,기간) ≧ DownAverage(가격,기간)"
+        },
+        {
+          "[설명]" : "UpAverage 지표는 연속 가격 증가의 Welles Wilder Style 이동평균이다. RSI의 계산에 사용된다.\n\nDownAverage 지표는 연속 가격 감소의 Welles Wilder Style 이동평균이다. RSI의 계산에 사용된다."
+        },
+        {
+          "[계산식]" : "Var1 = if(C>C(1), C-C(1), 0)\n\nUpAverage = (Var1(1) × (기간-1) + Var1) ÷ 기간\n\nDownAverage = (Var1(1) × (기간-1) + Var1) ÷ 기간"
+        }
+      ]
+  },
+  {
+        "title" : "UpDownAVG약세구간",
+      "contents" : [
+        {
+          "[활용]" : "UpAverage 값이 DownAverage 값보다 작으면 약세구간 발생\n\nUpAverage(가격,기간) < DownAverage(가격,기간)"
+        },
+        {
+          "[설명]" : "UpAverage 지표는 연속 가격 증가의 Welles Wilder Style 이동평균이다. RSI의 계산에 사용된다.\n\nDownAverage 지표는 연속 가격 감소의 Welles Wilder Style 이동평균이다. RSI의 계산에 사용된다."
+        },
+        {
+          "[계산식]" : "Var1 = if(C>C(1), C-C(1), 0)\n\nUpAverage = (Var1(1) × (기간-1) + Var1) ÷ 기간\n\nDownAverage = (Var1(1) × (기간-1) + Var1) ÷ 기간"
+        }
+      ]
+    },
+  {
+        "title" : "TrendScore강세구간",
+      "contents" : [
+        {
+          "[활용]" : "TrendScore 값이 기준값보다 크거니 같으면 강세구간 발생.\n\nTrendScore(가격,기간) ≧ 기준값 "
+        },
+        {
+          "[설명]" : "Trend Score 는 당일 가격이 위로 향하는지 아래로 향하는지 동향을 파악하여 매우 간단하게 표시하려고 시도한 지표이다.\n\n추세가 1이 되는 경우로는 이전가격보다 현재가격이 높거나 같은 경우이고, -1이 되는 경우는 이전가격이 현재가격보다 높은 경우이다."
+        },
+        {
+          "[계산식]" : "TrendScore = Sum(if(C ≧ C(1), 1, -1), 기간)"
+        }
+      ]
+    },
+  {
+        "title" : "TrendScore약세구간",
+      "contents" : [
+        {
+          "[활용]" : "TrendScore 값이 기준값보다 작으면 약세구간 발생.\n\nTrendScore(가격,기간) < 기준값 "
+        },
+        {
+          "[설명]" : "Trend Score 는 당일 가격이 위로 향하는지 아래로 향하는지 동향을 파악하여 매우 간단하게 표시하려고 시도한 지표이다.\n\n추세가 1이 되는 경우로는 이전가격보다 현재가격이 높거나 같은 경우이고, -1이 되는 경우는 이전가격이 현재가격보다 높은 경우이다."
+        },
+        {
+          "[계산식]" : "TrendScore = Sum(if(C ≧ C(1), 1, -1), 기간)"
+        }
+      ]
+    },
+  {
+      "title" : "StochasticFast강세구간",
+      "contents" : [
+        {
+          "[활용]" : "StochasticFast 값이 기준값보다 크거나 같으면 강세구간 발생.\n\nStochasticFast(FastK기간) ≧ 기준값"
+        },
+        {
+          "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 일정 기간 동안의 주가 변동폭 중에서 금일 종가의 위치를 백분율로 나타내는 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다.\n\n시장가격이 상승추세에 있다면 현재가격은 최고가 부근에 위치할 가능성이 높고, 하락추세에 있다면 현재가는 최저가 부근에서 형성될 가능성이 높다는 것에 착안하여 만들어진 지표이다.\n\n80이상일때를 매도시점으로, 20이하일때를 매수시점으로 추측한다.\n\n%K 값이 %D 값을 상향 돌파하여 상승하게 되면 매수 신호이고 하향 돌파하여 하락하게 되면 매도 신호로 추측한다.\n\n주가와 %K 추세 사이에 Divergence가 발생하면 곧 추세 전환이 발생한다는 신호이다."
+        },
+        {
+          "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\n\nStochasticFastK = if(Var1 != 0, Var2, 0)\nStochasticFastD = MA(StochasticFastK, 기간2)"
+        }
+      ]
+    },
+  {
+        "title" : "StochasticFast약세구간",
+      "contents" : [
+        {
+          "[활용]" : "StochasticFast 값이 기준값보다 작으면 약세구간 발생.\n\nStochasticFast(FastK기간) < 기준값"
+        },
+        {
+          "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 일정 기간 동안의 주가 변동폭 중에서 금일 종가의 위치를 백분율로 나타내는 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다.\n\n시장가격이 상승추세에 있다면 현재가격은 최고가 부근에 위치할 가능성이 높고, 하락추세에 있다면 현재가는 최저가 부근에서 형성될 가능성이 높다는 것에 착안하여 만들어진 지표이다.\n\n80이상일때를 매도시점으로, 20이하일때를 매수시점으로 추측한다.\n\n%K 값이 %D 값을 상향 돌파하여 상승하게 되면 매수 신호이고 하향 돌파하여 하락하게 되면 매도 신호로 추측한다.\n\n주가와 %K 추세 사이에 Divergence가 발생하면 곧 추세 전환이 발생한다는 신호이다."
+        },
+        {
+          "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\n\nStochasticFastK = if(Var1 != 0, Var2, 0)\nStochasticFastD = MA(StochasticFastK, 기간2)"
+        }
+      ]
+    },
+  {
+      "title" : "StochasticSlow강세구간",
+      "contents" : [
+        {
+          "[활용]" : "StochasticSlow 값이 기준값보다 크거나 같으면 강세구간 발생.\n\nStochasticSlow(FastK기간,SlowK기간,이평방법) ≧ 기준값"
+        },
+        {
+          "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 일정 기간 동안의 주가 변동폭 중에서 금일 종가의 위치를 백분율로 나타내는 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다.\n\n시장가격이 상승추세에 있다면 현재가격은 최고가 부근에 위치할 가능성이 높고, 하락추세에 있다면 현재가는 최저가 부근에서 형성될 가능성이 높다는 것에 착안하여 만들어진 지표이다.\n\n80이상일때를 매도시점으로, 20이하일때를 매수시점으로 추측한다.\n\n%K 값이 %D 값을 상향 돌파하여 상승하게 되면 매수 신호이고 하향 돌파하여 하락하게 되면 매도 신호로 추측한다.\n\n주가와 %K 추세 사이에 Divergence가 발생하면 곧 추세 전환이 발생한다는 신호이다."
+        },
+        {
+          "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\nVar3 = MA(Var2, 기간2)\n\nStochasticSlowK = if(Var1 != 0, Var3, 0)\nStochasticSlowD = MA(StochasticSlowK, 기간3)"
+        }
+      ]
+    },
+  {
+        "title" : "StochasticSlow약세구간",
+      "contents" : [
+        {
+          "[활용]" : "StochasticSlow 값이 기준값보다 작으면 약세구간 발생.\n\nStochasticSlow(FastK기간,SlowK기간,이평방법) < 기준값"
+        },
+        {
+          "[설명]" : "미국의 투자 지도자인 George C Lane 에 의해서 개발된 지표로서 일정 기간 동안의 주가 변동폭 중에서 금일 종가의 위치를 백분율로 나타내는 지표로서 수학적인 계산기법과는 아무런 연관이 없고, 주가의 추계적인 동태를 파악하기 위해 만든 지표이다.\n\n시장가격이 상승추세에 있다면 현재가격은 최고가 부근에 위치할 가능성이 높고, 하락추세에 있다면 현재가는 최저가 부근에서 형성될 가능성이 높다는 것에 착안하여 만들어진 지표이다.\n\n80이상일때를 매도시점으로, 20이하일때를 매수시점으로 추측한다.\n\n%K 값이 %D 값을 상향 돌파하여 상승하게 되면 매수 신호이고 하향 돌파하여 하락하게 되면 매도 신호로 추측한다.\n\n주가와 %K 추세 사이에 Divergence가 발생하면 곧 추세 전환이 발생한다는 신호이다."
+        },
+        {
+          "[계산식]" : "Var1 = Highest(H, 기간1) - Lowest(L, 기간1);\nVar2 = (C-Lowest(L, 기간1)) ÷ (Highest(H, 기간1) - Lowest(L, 기간1)) × 100;\nVar3 = MA(Var2, 기간2)\n\nStochasticSlowK = if(Var1 != 0, Var3, 0)\nStochasticSlowD = MA(StochasticSlowK, 기간3)"
+        }
+      ]
+    },
+  {
+        "title" : "AB-Ratio강세구간",
+      "contents" : [
+        {
+          "[활용]" : "아래의 [계산법]에 소개된 A와 B값을 비교하여 A값이 B값보다 작을때 강세구간 발생.\n\nsum((h-o),누적기간) ÷ sum((o-l),누적기간) ≦ sum((h-c(1)),누적기간) ÷ sum((c(1)-l),누적기간)"
+        },
+        {
+          "[설명]" : "주가 움직임을 강약 에너지의 대결로 파악하고 양자간 균형의 변화를 파악함으로써 주가의 움직임을 예측하려는 지표가 AB Ratio이다. 강약의 에너지를 파악함에 있어 각기 다른 기준가격을 설정하여 파악하였는데, 즉 A Ratio는 당일의 시가를 기준가격으로 설정하였고, B Ratio는 전일의 종가를 기준가격으로 설정하였다.\n\n강 에너지는 기준가격에서 당일의 고가까지의 가격변동폭으로 정의되고, 약 에너지는 기준가격에서 당일의 저가까지의 가격변동폭으로 정의된다. 이 강약 에너지의 비율이 AB Ratio 인데 일반적으로 매일의 비율을 사용하기 보다는 일정기간으로 평활화시킨 비율(보통 20일을 사용)을 사용하여 분석한다.\n\nA Ratio는 에너지의 크기를 측정하는 기준으로 당일시가를 사용하기 때문에 전일의 종가를 기준으로 하는 B Ratio보다 움직임폭이 작다. 따라서 강 에너지의 확장국면에서는 탄력이 큰 B Ratio가 A Ratio를 상향 돌파하게되고, 약 에너지의 확장국면에서는 B Ratio가 A Ratio를 하향 돌파하게된다.\n\nB Ratio가 A Ratio를 상향 돌파하는 시점이 매수신호이고, B Ratio가 A Ratio를 하향 돌파하는 시점이 매도신호이다. 또한 AB Ratio가 동반 상승시에는 주가의 추가 상승이 예상되고, 동반 하락시에는 추가 하락이 예상된다."
+        },
+        {
+          "[계산식]" : "A = 100 × sum((H-O),기간) ÷ sum((O-L),기간)\n\nB = 100 × sum((H-C(1)),기간) ÷ sum((C(1)-L),기간)"
+        }
+      ]
+    },
+  {
+      "title" : "AB-Ratio약세구간",
+      "contents" : [
+        {
+          "[활용]" : "아래의 [계산법]에 소개된 A와 B값을 비교하여 A값이 B값보다 크면 약세구간 발생\n\nsum((h-o),누적기간) ÷ sum((o-l),누적기간) > sum((h-c(1)),누적기간) ÷ sum((c(1)-l),누적기간)"
+        },
+        {
+          "[설명]" : "주가 움직임을 강약 에너지의 대결로 파악하고 양자간 균형의 변화를 파악함으로써 주가의 움직임을 예측하려는 지표가 AB Ratio이다. 강약의 에너지를 파악함에 있어 각기 다른 기준가격을 설정하여 파악하였는데, 즉 A Ratio는 당일의 시가를 기준가격으로 설정하였고, B Ratio는 전일의 종가를 기준가격으로 설정하였다.\n\n강 에너지는 기준가격에서 당일의 고가까지의 가격변동폭으로 정의되고, 약 에너지는 기준가격에서 당일의 저가까지의 가격변동폭으로 정의된다. 이 강약 에너지의 비율이 AB Ratio 인데 일반적으로 매일의 비율을 사용하기 보다는 일정기간으로 평활화시킨 비율(보통 20일을 사용)을 사용하여 분석한다.\n\nA Ratio는 에너지의 크기를 측정하는 기준으로 당일시가를 사용하기 때문에 전일의 종가를 기준으로 하는 B Ratio보다 움직임폭이 작다. 따라서 강 에너지의 확장국면에서는 탄력이 큰 B Ratio가 A Ratio를 상향 돌파하게되고, 약 에너지의 확장국면에서는 B Ratio가 A Ratio를 하향 돌파하게된다.\n\nB Ratio가 A Ratio를 상향 돌파하는 시점이 매수신호이고, B Ratio가 A Ratio를 하향 돌파하는 시점이 매도신호이다. 또한 AB Ratio가 동반 상승시에는 주가의 추가 상승이 예상되고, 동반 하락시에는 추가 하락이 예상된다."
+        },
+        {
+          "[계산식]" : "A = 100 × sum((H-O),기간) ÷ sum((O-L),기간)\n\nB = 100 × sum((H-C(1)),기간) ÷ sum((C(1)-L),기간)"
+        }
+      ]
+    },
+  {
+      "title" : "BinaryWave강세구간",
+      "contents" : [
+        {
+          "[활용]" : "BinaryWave값이 0값보다 크거나 같으면 강세구간 발생.\n\nBinaryWave(MAOsc1,MAOsc2,MASig,MAPeriod,ROCPeriod,StochPeriod) ≧ 0.0"
+        },
+        {
+          "[설명]" : "Binary Wave는 스티븐 B. 아첼리스가 기존의 지표를 가지고 새로 만든 지표이다. 즉, Binary Wave는 MACD, Exponential Moving Average, ROC, Stochastic 등 총 4개의 지표를 이용하여 만든 지표이다.\n\nBinary가 의미하듯이 컴퓨터 이진파일의 0, 1값에서 착안하여 만들었는데, 각 지표의 상태에 따라 -1, 또는 1의 값을 부여하여 합산하여 만든 지표이다.\n\n    1. MACD Oscillator이 ‘0’보다 크면 1, 작으면 -1\n\n    2. 종가가 Exponential Maving Average값보다 크면 1, 작으면 -1\n\n    3. Price ROC가 ‘0’보다 크면 1, 작으면 -1\n\n    4. StochasticSlow의 %k 가 50보다 크면 1, 작으면 -1을 부여한다.\n\n이렇게 나타난 값들은 모두 더하여 Binary Wave를 형성한다. 4가지 모두 만족하게 되면 4가 되고, 모두 만족하지 못하면 -4가 된다. 즉, Binary Wave는 -4 ~ 4사이를 움직인다.\n\n지표값이 0선을 상향 돌파시 매수, 하향돌파시 매도하며, +4이면 강세시장을 -4이면 약세시장을 나타낸다."
+        },
+        {
+          "[계산식]" : "Var1 = if(MACDOscillator > 0, 1, -1);\n\nVar2 = if(C > EMA, 1, -1);\n\nVar3 = if(PriceRoc > 0, 1, -1);\n\nVar4 = if(StochasticSlow %K>50, 1, -1);\n\nBinaryWave = Var1 + Var2 + Var3 + Var4;"
+        }
+      ]
+    },
+  {
+      "title" : "BinaryWave약세구간",
+      "contents" : [
+        {
+          "[활용]" : "BinaryWave값이 0값보다 작으면 약세구간 발생.\n\nBinaryWave(MAOsc1,MAOsc2,MASig,MAPeriod,ROCPeriod,StochPeriod) < 0.0"
+        },
+        {
+          "[설명]" : "Binary Wave는 스티븐 B. 아첼리스가 기존의 지표를 가지고 새로 만든 지표이다. 즉, Binary Wave는 MACD, Exponential Moving Average, ROC, Stochastic 등 총 4개의 지표를 이용하여 만든 지표이다.\n\nBinary가 의미하듯이 컴퓨터 이진파일의 0, 1값에서 착안하여 만들었는데, 각 지표의 상태에 따라 -1, 또는 1의 값을 부여하여 합산하여 만든 지표이다.\n\n    1. MACD Oscillator이 ‘0’보다 크면 1, 작으면 -1\n\n    2. 종가가 Exponential Maving Average값보다 크면 1, 작으면 -1\n\n    3. Price ROC가 ‘0’보다 크면 1, 작으면 -1\n\n    4. StochasticSlow의 %k 가 50보다 크면 1, 작으면 -1을 부여한다.\n\n이렇게 나타난 값들은 모두 더하여 Binary Wave를 형성한다. 4가지 모두 만족하게 되면 4가 되고, 모두 만족하지 못하면 -4가 된다. 즉, Binary Wave는 -4 ~ 4사이를 움직인다.\n\n지표값이 0선을 상향 돌파시 매수, 하향돌파시 매도하며, +4이면 강세시장을 -4이면 약세시장을 나타낸다."
+        },
+        {
+          "[계산식]" : "Var1 = if(MACDOscillator > 0, 1, -1);\n\nVar2 = if(C > EMA, 1, -1);\n\nVar3 = if(PriceRoc > 0, 1, -1);\n\nVar4 = if(StochasticSlow %K>50, 1, -1);\n\nBinaryWave = Var1 + Var2 + Var3 + Var4;"
+        }
+      ]
+    },
+  {
+        "title" : "Chaikin'sOscillator과열구간",
+      "contents" : [
+        {
+          "[활용]" : "Chaikin'sOscillator 값이 0보다 크거나 같으면 과열구간 발생.\n\nChaikinOscillator(Period1,Period2) ≧ 0"
+        },
+        {
+          "[설명]" : "Marc Chaikin에 의해서 개발된 지표로서 지표개발의 선각자들인 Joseph Granville 와 Larry Williams에 의해 완성된 지표의 연장(extending)이다.\n\nAccumulation/Distribution 지표를 기초로 작성한 이동평균 오실레이터로 주가나 지수의 과열/침체를 판단하는데 이용된다."
+        },
+        {
+          "[계산식]" : "AD = AccumDistribution();\n\nChaikinOscillator = EMA(AD, n) - EMA(AD, m)"
+        }
+      ]
+    },
+  {
+        "title" : "Chaikin'sOscillator침체구간",
+      "contents" : [
+        {
+          "[활용]" : "Chaikin'sOscillator 값이 0보다 작으면 침체구간 발생.\n\nChaikinOscillator(Period1,Period2) < 0"
+        },
+        {
+          "[설명]" : "Marc Chaikin에 의해서 개발된 지표로서 지표개발의 선각자들인 Joseph Granville 와 Larry Williams에 의해 완성된 지표의 연장(extending)이다.\n\nAccumulation/Distribution 지표를 기초로 작성한 이동평균 오실레이터로 주가나 지수의 과열/침체를 판단하는데 이용된다."
+        },
+        {
+          "[계산식]" : "AD = AccumDistribution();\n\nChaikinOscillator = EMA(AD, n) - EMA(AD, m)"
+        }
+      ]
+    },
+  {
+      "title" : "EOM강세구간",
+      "contents" : [
+        {
+          "[활용]" : "EOM 값이 0 값보다 크거나 같으면 강세구간 발생, 하향돌파하면 매도신호\n\nMovingAverage(((H+L) ÷ 2-(H(1)+L(1)) ÷ 2) ÷ (V ÷ (H-L)),기간,이평방법) ≧ 0"
+        },
+        {
+          "[설명]" : "EOM은 거래량과 주가의 상관 관계를 나타내는 지표입니다.\n\nEOM은 거래량이 적은 상태에서 주가가 상승 중일 때는 높은 수치를 나타내며 거래량이 적은 상태에서 주가가 하락 중일 때는 낮은 수치를 나타납니다.\n\n주가의 변동이 거의 없거나 변동은 있는데 거래량이 많은 경우 EOM의 값은 거의 0에 가깝습니다.\n\nEOM이 0선을 상향 돌파하면 매수 신호, 하향 돌파하면 매도 신호를 나타냅니다."
+        },
+        {
+          "[계산식]" : "Var1 = ((H+L) ÷ 2-(H(1)+L(1)) ÷ 2) ÷ (V ÷ (H-L));\n\nEOM = MovingAverage(Var1,기간,이평방법)"
+        }
+      ]
+    },
+  {
+        "title" : "EOM약세구간",
+      "contents" : [
+        {
+          "[활용]" : "EOM 값이 0 값보다 작으면 약세구간 발생, 상향돌파하면 매수신호\n\nMovingAverage(((H+L) ÷ 2-(H(1)+L(1)) ÷ 2) ÷ (V ÷ (H-L)),기간,이평방법) < 0"
+        },
+        {
+          "[설명]" : "EOM은 거래량과 주가의 상관 관계를 나타내는 지표입니다.\n\nEOM은 거래량이 적은 상태에서 주가가 상승 중일 때는 높은 수치를 나타내며 거래량이 적은 상태에서 주가가 하락 중일 때는 낮은 수치를 나타납니다.\n\n주가의 변동이 거의 없거나 변동은 있는데 거래량이 많은 경우 EOM의 값은 거의 0에 가깝습니다.\n\nEOM이 0선을 상향 돌파하면 매수 신호, 하향 돌파하면 매도 신호를 나타냅니다."
+        },
+        {
+          "[계산식]" : "Var1 = ((H+L) ÷ 2-(H(1)+L(1)) ÷ 2) ÷ (V ÷ (H-L));\n\nEOM = MovingAverage(Var1,기간,이평방법)"
+        }
+      ]
+    },
+  {
+        "title" : "NetChangeOscillator강세구간",
+      "contents" : [
+        {
+          "[활용]" : "NCO 값이 0보다 크거나 같으면 강세구간 발생, 하향돌파시 매도신호.\n\nNCO(가격,기간) ≧ 0"
+        },
+        {
+          "[설명]" : "현재의 주가가 상승국면에 진입하고 있는지 하락국면에 진입하고 있는지 과거의 주가와 비교하여 현재시점의 형태를 파악하는 지표이다."
+        },
+        {
+          "[계산식]" : "NCO = 당일종가 - n일전 종가"
+        }
+      ]
+    },
+  {
+        "title" : "NetChangeOscillator약세구간",
+      "contents" : [
+        {
+          "[활용]" : "NCO 값이 0보다 작으면 약세구간 발생, 상향돌파시 매수신호.\n\nNCO(가격,기간) < 0"
+        },
+        {
+          "[설명]" : "현재의 주가가 상승국면에 진입하고 있는지 하락국면에 진입하고 있는지 과거의 주가와 비교하여 현재시점의 형태를 파악하는 지표이다."
+        },
+        {
+          "[계산식]" : "NCO = 당일종가 - n일전 종가"
+        }
+      ]
+    },
+  {
+      "title" : "NVI기준선강세구간",
+      "contents" : [
+        {
+          "[활용]" : "NVI 값이 NVI기준선(이동평균값)보다 크거나 같으면 강세구간 발생, 하향돌파시 매도신호.\n\nNVI() ≧ MovingAverage(NVI(),이평기간,이평방법)"
+        },
+        {
+          "[설명]" : "NVI(Negative Volume Indicator)는 거래량이 전일에 비해 감소하는 날을 중심으로 만든 지표이다. 거래가 감소하는 날에는 투기자금(smart money)이 먼저 빠져나간다는 가정을 전제로 하고 있다. 따라서 이 지표는 전일에 비해서 거래량이 감소했을 경우에만 관심을 가진다. \n\nNVI에 정반대의 관점에서 출발한 지표로 PVI(Positive Volume Index)가 있다."
+        },
+        {
+          "[계산식]" : "Var1 = (가격-가격(1)) ÷ 가격(1);\n\nNVI = If(V<V(1), NVI(1)+Var1, NVI(1))"
+        }
+      ]
+    },
+  {
+        "title" : "NVI기준선약세구간",
+      "contents" : [
+        {
+          "[활용]" : "NVI 값이 NVI기준선(이동평균값)보다 작으면 약세구간 발생, 상향돌파시 매수신호.\n\nNVI() < MovingAverage(NVI(),이평기간,이평방법)"
+        },
+        {
+          "[설명]" : "NVI(Negative Volume Indicator)는 거래량이 전일에 비해 감소하는 날을 중심으로 만든 지표이다. 거래가 감소하는 날에는 투기자금(smart money)이 먼저 빠져나간다는 가정을 전제로 하고 있다. 따라서 이 지표는 전일에 비해서 거래량이 감소했을 경우에만 관심을 가진다. \n\nNVI에 정반대의 관점에서 출발한 지표로 PVI(Positive Volume Index)가 있다."
+        },
+        {
+          "[계산식]" : "Var1 = (가격-가격(1)) ÷ 가격(1);\n\nNVI = If(V<V(1), NVI(1)+Var1, NVI(1))"
+        }
+      ]
+    },
+  {
+        "title" : "PVI기준선강세구간",
+      "contents" : [
+        {
+          "[활용]" : "PVI 값이 PVI기준선(이동평균값)보다 크거나 같으면 강세구간 발생, 하향돌파시 매도신호.\n\nPVI() ≧ MovingAverage(PVI(),이평기간,이평방법)"
+        },
+        {
+          "[설명]" : "PVI는 현명한 투자가는 거래량이 증가되는 상태의 시장에서 매매를 행하는 반면에 일반 대중은 거래량이 충분이 증가된 상태에서 매매를 한다는 기본가정에서 출발한다. 따라서 이 지표는 전일에 비해서 거래량이 증가했을 경우에만 관심을 가진다."
+        },
+        {
+          "[계산식]" : "Var1 = (C-C(1)) ÷ C(1);\n\nPVI = If(V>V(1), PVI(1) + Var1, PVI(1))"
+        }
+      ]
+    },
+  {
+        "title" : "PVI기준선약세구간",
+      "contents" : [
+        {
+          "[활용]" : "PVI 값이 PVI기준선(이동평균값)보다 작으면 약세구간 발생, 상향돌파시 매수신호.\n\nPVI() < MovingAverage(PVI(),이평기간,이평방법)"
+        },
+        {
+          "[설명]" : "PVI는 현명한 투자가는 거래량이 증가되는 상태의 시장에서 매매를 행하는 반면에 일반 대중은 거래량이 충분이 증가된 상태에서 매매를 한다는 기본가정에서 출발한다. 따라서 이 지표는 전일에 비해서 거래량이 증가했을 경우에만 관심을 가진다."
+        },
+        {
+          "[계산식]" : "Var1 = (C-C(1)) ÷ C(1);\n\nPVI = If(V>V(1), PVI(1) + Var1, PVI(1))"
+        }
+
+      ]
+    },
+  {
+        "title" : "PriceROC강세구간",
+      "contents" : [
+        {
+          "[활용]" : "PriceROC 값이 0값 보다 크거나 같으면 강세구간 발생, 하향돌파시 매도신호.\n\nRateOfChange(가격,Factor,기간) ≧ 0"
+        },
+        {
+          "[설명]" : "당일종가와 n일전 주가 사이의 차이를 가격변화율로 나타낸 지표이다. 당일 주가가 n일전 대비 상승추세인지 하락추세인지를 분석할 수 있다.\n\nPrice ROC가 0값을 기준으로 양의 값이면 상승 추세로, 음의 값이면 하락 추세로 인식한다.\n\nPrice ROC가 높이 올라갈수록 주가는 과다매수 상태를 나타내고, Price ROC가 낮게 내려갈수록 주가는 과다매도 상태를 나타낸다."
+        },
+        {
+          "[계산식]" : "PriceRoc = (C - C(n)) ÷ C(n) × 100"
+        }
+      ]
+    },
+  {
+        "title" : "PriceROC약세구간",
+      "contents" : [
+        {
+          "[활용]" : "PriceROC 값이 0값 보다 작으면 약세구간 발생, 상향돌파시 매수신호.\n\nRateOfChange(가격,Factor,기간) < 0"
+        },
+        {
+          "[설명]" : "당일종가와 n일전 주가 사이의 차이를 가격변화율로 나타낸 지표이다. 당일 주가가 n일전 대비 상승추세인지 하락추세인지를 분석할 수 있다.\n\nPrice ROC가 0값을 기준으로 양의 값이면 상승 추세로, 음의 값이면 하락 추세로 인식한다.\n\nPrice ROC가 높이 올라갈수록 주가는 과다매수 상태를 나타내고, Price ROC가 낮게 내려갈수록 주가는 과다매도 상태를 나타낸다."
+        },
+        {
+          "[계산식]" : "PriceRoc = (C - C(n)) ÷ C(n) × 100"
+        }
+      ]
+    },
+  {
+      "title" : "Sonar기준선강세구간",
+      "contents" : [
+        {
+          "[활용]" : "Sonar 값이 Sonar기준선(이동평균값)보다 작으면 강세구간 발생, 하향 돌파시 매도.\n\nSonarInput = SONAR(가격,기간1,기간2,이평방법1);\n\nSonarInput ≧ MovingAverage(SonarInput,이평기간,이평방법2)"
+        },
+        {
+          "[설명]" : "SonarMomentum 지표는 1979년 일본노무라 증권의 기술적 분석가인 오카모도에 의해 개발된 지표로서 음파탐지기에서 명명되었으며 주가 사이클의 전환점을 파악하기 위해 개발된 시계열 챠트이다.\n\n지표값이 0을 기준으로 상향 돌파하면 매수 신호가 되고, 하향 돌파하면 매도 신호가 된다.\n\nSonarMomentum이 SonarMomentum 이동 평균을 아래에서 위로 교차했을 경우에는 매수 신호로, 위에서 아래로 교차했을 경우는 매도 신호로 인식한다."
+        },
+        {
+          "[계산식]" : "SonarMomentum = (EMA(C,기간1) - EMA(C(기간2),기간1)) ÷ EMA(C(기간2),기간1)"
+        }
+      ]
+    },
+  {
+      "title" : "Sonar기준선약세구간",
+      "contents" : [
+        {
+          "[활용]" : "Sonar 값이 Sonar기준선(이동평균값)보다 작으면 약세구간 발생, 상향 돌파시 매수.\n\nSonarInput = SONAR(가격,기간1,기간2,이평방법1);\n\nSonarInput < MovingAverage(SonarInput,이평기간,이평방법2)"
+        },
+        {
+          "[설명]" : "SonarMomentum 지표는 1979년 일본노무라 증권의 기술적 분석가인 오카모도에 의해 개발된 지표로서 음파탐지기에서 명명되었으며 주가 사이클의 전환점을 파악하기 위해 개발된 시계열 챠트이다.\n\n지표값이 0을 기준으로 상향 돌파하면 매수 신호가 되고, 하향 돌파하면 매도 신호가 된다.\n\nSonarMomentum이 SonarMomentum 이동 평균을 아래에서 위로 교차했을 경우에는 매수 신호로, 위에서 아래로 교차했을 경우는 매도 신호로 인식한다."
+        },
+        {
+          "[계산식]" : "SonarMomentum = (EMA(C,기간1) - EMA(C(기간2),기간1)) ÷ EMA(C(기간2),기간1)"
+        }
+      ]
+    },
+  {
+      "title" : "VR강세구간",
+      "contents" : [
+        {
+          "[활용]" : "VR(Volume Ratio)값이 100 보다 크거나 같으면 강세구간 발생, 100값 하향돌파시 매도.\n\nVR(Period) ≧ 100"
+        },
+        {
+          "[설명]" : "VR은 OBV와 마찬가지로 거래량의 데이터를 사용하게 된다. OBV는 기준일을 결정하는 방법에 따라서 가치 큰 차이가 발생하며 그 자체로서는 시세를 판단하거나 과거와 비교하는 것이 불가능하다. 이러한 결점을 보완하는 것이 VR이다. OBV가 주가의 상승일과 하락일의 거래량을 가감해서 누적되는데 반해 VR은 비율로 분석한다.\n\nVolumeRatio 지표값에 대해서 아래와 같이 판단된다. \n    70% 이하이면 침체국면 \n    150% ~ 200%이면 보통\n    450% 이상이면 과열국면\n\n상승장에서는 과열심리로 인해 시장가격이 지속해서 올라가는 경우가 많기에, VR 지표는 침체기일 때 상대적으로 신뢰도가 큽니다."
+        },
+        {
+          "[계산식]" : "Var1 = (Sum(if(C>C(1), V), 기간) + Sum(if(C==C(1), V), 기간) ÷ 2);\n\nVar2 = (Sum(if(C<C(1), V), 기간) + Sum(if(C==C(1), V), 기간) ÷ 2);\n\nVolumeRatio = 100 × (Var1 ÷ Var2)"
+        }
+      ]
+    },
+  {
+      "title" : "VR약세구간",
+      "contents" : [
+        {
+          "[활용]" : "VR(Volume Ratio)값이 300 보다 작으면 약세구간 발생, 300값 상향돌파시 매수.\n\nVR(Period) < 300"
+        },
+        {
+          "[설명]" : "VR은 OBV와 마찬가지로 거래량의 데이터를 사용하게 된다. OBV는 기준일을 결정하는 방법에 따라서 가치 큰 차이가 발생하며 그 자체로서는 시세를 판단하거나 과거와 비교하는 것이 불가능하다. 이러한 결점을 보완하는 것이 VR이다. OBV가 주가의 상승일과 하락일의 거래량을 가감해서 누적되는데 반해 VR은 비율로 분석한다.\n\nVolumeRatio 지표값에 대해서 아래와 같이 판단된다. \n    70% 이하이면 침체국면 \n    150% ~ 200%이면 보통\n    450% 이상이면 과열국면\n\n상승장에서는 과열심리로 인해 시장가격이 지속해서 올라가는 경우가 많기에, VR 지표는 침체기일 때 상대적으로 신뢰도가 큽니다."
+        },
+        {
+          "[계산식]" : "Var1 = (Sum(if(C>C(1), V), 기간) + Sum(if(C==C(1), V), 기간) ÷ 2);\n\nVar2 = (Sum(if(C<C(1), V), 기간) + Sum(if(C==C(1), V), 기간) ÷ 2);\n\nVolumeRatio = 100 × (Var1 ÷ Var2)"
+        }
+      ]
+    },
+  {
+      "title" : "MFI과열구간",
+      "contents" : [
+        {
+          "[활용]" : "MoneyFlowIndex 값이 기준값보다 크거나 같으면 과열구간 발생.\n\nMoneyFlowIndex(Period) ≧ 기준값"
+        },
+        {
+          "[설명]" : "MFI는 주식 거래를 위한 자금이 유입되거나 유출되는 양을 측정해 주는 지표로서 추세 전환시기를 예측하거나 시세의 과열 및 침체 정도를 파악하는데 유용하다. RSI가 주가만을 사용한 지표인데 비해 MFI는 주가와 거래량을 동시에 사용하는 특징이 있다.\n\nMFI 값이 80 이상이면 과열로 보고 이 이상이면 매도로 판단 검색\n\nMFI 값이 20 이상이면 침체로 보고 이 이상이면 매수로 판단 검색"
+        },
+        {
+          "[계산식]" : "TP = (H + L + C) ÷ 3;\n\nMoneyFlow = TP × V;\n\nPMF_Sum = \n    Sum(If(TP ＞ TP(1), MoneyFlow, 0));\n\nNMF_Sum = \n    Sum(If(TP < TP(1), MoneyFlow, 0));\n\nMoneyRatio = PMF_Sum + NMF_Sum;\n\nMoneyFlowIndex = 100 - (100 ÷ 1 + MoneyRatio)"
+        }
+      ]
+    },
+  {
+        "title" : "MFI침체구간",
+      "contents" : [
+        {
+          "[활용]" : "MoneyFlowIndex 값이 기준값보다 작으면 침체구간 발생.\n\nMoneyFlowIndex(Period) < 기준값"
+        },
+        {
+          "[설명]" : "MFI는 주식 거래를 위한 자금이 유입되거나 유출되는 양을 측정해 주는 지표로서 추세 전환시기를 예측하거나 시세의 과열 및 침체 정도를 파악하는데 유용하다. RSI가 주가만을 사용한 지표인데 비해 MFI는 주가와 거래량을 동시에 사용하는 특징이 있다.\n\nMFI 값이 80 이상이면 과열로 보고 이 이상이면 매도로 판단 검색\n\nMFI 값이 20 이상이면 침체로 보고 이 이상이면 매수로 판단 검색"
+        },
+        {
+          "[계산식]" : "TP = (H + L + C) ÷ 3;\n\nMoneyFlow = TP × V;\n\nPMF_Sum = \n    Sum(If(TP ＞ TP(1), MoneyFlow, 0));\n\nNMF_Sum = \n    Sum(If(TP < TP(1), MoneyFlow, 0));\n\nMoneyRatio = PMF_Sum + NMF_Sum;\n\nMoneyFlowIndex = 100 - (100 ÷ 1 + MoneyRatio)"
+        }
+      ]
+    }
+]

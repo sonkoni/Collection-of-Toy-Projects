@@ -9,6 +9,11 @@
 // https://pspdfkit.com/blog/2019/adopting-dark-mode-on-ios/
 // https://engineering.nodesagency.com/categories/ios/2019/07/03/Dark-Mode
 // https://eunjin3786.tistory.com/301
+//
+// 애플 스위치 회색부분 색
+// 233 <- 라이트 // 22 차이
+// 54 <- 다크 // 54 차이
+// 26 : X = 22 : 55 => 65
 
 #import <UIKit/UIKit.h>
 

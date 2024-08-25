@@ -21,6 +21,7 @@ FOUNDATION_EXPORT const unsigned char BaseKitVersionString[];
 #import <BaseKit/MGRNotOverrideMacro.h>
 #import <BaseKit/MGRNullMacro.h>
 #import <BaseKit/MGRSafeKeypathMacro.h>
+#import <BaseKit/MGRKeypathMacro.h>
 #import <BaseKit/MGRScreenMacro.h>
 #import <BaseKit/MGRDeviceMacro.h>
 #import <BaseKit/MGRNotAvailableMacro.h>
@@ -55,6 +56,7 @@ FOUNDATION_EXPORT const unsigned char BaseKitVersionString[];
 #import <BaseKit/NSDictionary+Extension.h>
 #import <BaseKit/NSError+Extension.h>
 #import <BaseKit/NSException+Extension.h>
+#import <BaseKit/NSFileManager+Extension.h>
 #import <BaseKit/NSIndexPath+Extension.h>
 #import <BaseKit/NSIndexSet+Extension.h>
 #import <BaseKit/NSJSONSerialization+Extension.h>
@@ -77,6 +79,7 @@ FOUNDATION_EXPORT const unsigned char BaseKitVersionString[];
 #import <BaseKit/MGROutlineItem.h>
 #import <BaseKit/MGROutlineItem+Extension.h>
 #import <BaseKit/MGRJamo.h>
+#import <BaseKit/MGRTimeInterval.h>
 #import <BaseKit/MGRTimer.h>
 #import <BaseKit/MGRPub.h>
 #import <BaseKit/MGRBind.h>

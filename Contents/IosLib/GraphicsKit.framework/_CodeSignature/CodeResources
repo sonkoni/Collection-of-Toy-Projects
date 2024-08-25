@@ -32,13 +32,17 @@
 		<data>
 		cBG1hPmEAhMAiou22TLVHLZHHMQ=
 		</data>
+		<key>Headers/CATransaction+Extension.h</key>
+		<data>
+		9YuZ2QsQ6OGAGfqf7aQIVSObA2g=
+		</data>
 		<key>Headers/GraphicsKit-Swift.h</key>
 		<data>
-		9Mebzw8cbEZrB5zAVZVzD4hLy7I=
+		fADX7tmvbCPQajv9oFKWpHgIXvs=
 		</data>
 		<key>Headers/GraphicsKit.h</key>
 		<data>
-		BLvm+yH3Wvknjo9fWGXeqN/f10A=
+		w8fcTIaRJT+IXsJp6lP9a2aulwY=
 		</data>
 		<key>Headers/MGEAccelerationTimer.h</key>
 		<data>
@@ -82,7 +86,7 @@
 		</data>
 		<key>Headers/MGEGeometryHelper.h</key>
 		<data>
-		i0w4JE7/6x7t3KWkK1aWoyRfzwQ=
+		cOFzGDDQ4zWInvCuKXZRXmdzDeQ=
 		</data>
 		<key>Headers/MGEGlitchLabel.h</key>
 		<data>
@@ -138,31 +142,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1WzBaBJIAXbVmwkBM+Zo88ypTno=
+		ufVwfpbzEal+RwV/nNzCfVL0qXo=
 		</data>
-		<key>Modules/GraphicsKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/GraphicsKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		LVvUFds7ui/e3VlRlszoueG1Qyo=
+		d6d7NbAZfAhgk1Svi/w86O+6rM0=
 		</data>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
 		YAgnQJ+nsFNxNog+Gxxf83J1BRM=
 		</data>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		BaeowS9GfvcK/NwE2T+jQWkL24g=
+		1KuzWP8v2PtEP9VA9j7QUlBomrk=
 		</data>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		20Nt9gRk2lzXaKoQuUTWCLTapa0=
+		osP35fw9GHZ1tLMIy+ZZmH1ozbw=
 		</data>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BaeowS9GfvcK/NwE2T+jQWkL24g=
+		1KuzWP8v2PtEP9VA9j7QUlBomrk=
 		</data>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		5oQe0OdY/8+zFAf8wfSbF1E/Ww4=
+		99yvmjp+1Nk09AWxDmUncVRD3EI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -248,26 +252,37 @@
 			+I7KqnKc8CjV2+qjEzCLmOMuwRjfZoVSYgYEVoGRGhM=
 			</data>
 		</dict>
+		<key>Headers/CATransaction+Extension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9YuZ2QsQ6OGAGfqf7aQIVSObA2g=
+			</data>
+			<key>hash2</key>
+			<data>
+			Cfk9LXZ+gD+5vVGB5f8G93YyyQ3BNYN/FXo/vsjXsuI=
+			</data>
+		</dict>
 		<key>Headers/GraphicsKit-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9Mebzw8cbEZrB5zAVZVzD4hLy7I=
+			fADX7tmvbCPQajv9oFKWpHgIXvs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZdamjdXEuRSV63BSjeiUfT5Tmbh/6QWjFdcnpi+2KhE=
+			x+3m8n4mFRGGI9NhZDkhGxCxnsMCv0WWOn3kVfiozLo=
 			</data>
 		</dict>
 		<key>Headers/GraphicsKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BLvm+yH3Wvknjo9fWGXeqN/f10A=
+			w8fcTIaRJT+IXsJp6lP9a2aulwY=
 			</data>
 			<key>hash2</key>
 			<data>
-			H98Li/GpGAukpkCooivBUJj7RZvPFyqdiH0yLf6JTto=
+			MA9EUWtn7lX08JmPamLzbScVhNRoUw/52LPInzXAlDg=
 			</data>
 		</dict>
 		<key>Headers/MGEAccelerationTimer.h</key>
@@ -384,11 +399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i0w4JE7/6x7t3KWkK1aWoyRfzwQ=
+			cOFzGDDQ4zWInvCuKXZRXmdzDeQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			IySsWBF9HW8SWlN1AGJqGs+RLLXLEzV/UqXZqld3CNQ=
+			gafVUYFfkdu2SxJXLkpCJkks9KVtHIaTJ5JSJVKoRHo=
 			</data>
 		</dict>
 		<key>Headers/MGEGlitchLabel.h</key>
@@ -534,18 +549,18 @@
 			gsXGm1iV8A+BLPc3N28kQrCKN9jnAAS80+DMqDnvSkQ=
 			</data>
 		</dict>
-		<key>Modules/GraphicsKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/GraphicsKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LVvUFds7ui/e3VlRlszoueG1Qyo=
+			d6d7NbAZfAhgk1Svi/w86O+6rM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			njlGijt0Kp9OAeBxfPgRVezVhJM3i1NHNDHs2M5nemM=
+			AoHovuXCymBJHTMZ6o5rENC2vUtGAk0fsvmD7XXuD/4=
 			</data>
 		</dict>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -556,48 +571,48 @@
 			3P1sEyF+6nd/3WG/kY0W5a0183CU9tyBk0YIsjj9WZo=
 			</data>
 		</dict>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BaeowS9GfvcK/NwE2T+jQWkL24g=
+			1KuzWP8v2PtEP9VA9j7QUlBomrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4vHOGvfgD2fyOHOfyg3iU1xHJ9ASWelBmnelUB0rP7M=
+			XAwgbCJlAzgGtmhW8RooGzjCBmwo/NeNpp2+SEjiQ68=
 			</data>
 		</dict>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			20Nt9gRk2lzXaKoQuUTWCLTapa0=
+			osP35fw9GHZ1tLMIy+ZZmH1ozbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zNgZqPEXc1vOWloUvtqaESiVo4//xgTYqCmznQBY5v0=
+			4jvt3Wqj/rg6nR94Ci9Ey1CJi5KlLxECHP0kwS/xEB8=
 			</data>
 		</dict>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BaeowS9GfvcK/NwE2T+jQWkL24g=
+			1KuzWP8v2PtEP9VA9j7QUlBomrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4vHOGvfgD2fyOHOfyg3iU1xHJ9ASWelBmnelUB0rP7M=
+			XAwgbCJlAzgGtmhW8RooGzjCBmwo/NeNpp2+SEjiQ68=
 			</data>
 		</dict>
-		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/GraphicsKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5oQe0OdY/8+zFAf8wfSbF1E/Ww4=
+			99yvmjp+1Nk09AWxDmUncVRD3EI=
 			</data>
 			<key>hash2</key>
 			<data>
-			L86e6T2HsIF0fxXhYDGRl8RrlaYAHEEZnj2KelZOk5s=
+			IBjpUOvO4IgFcKRPRdi++P47L1rpFpACrTweUqLzy4A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

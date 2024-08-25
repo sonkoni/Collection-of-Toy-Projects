@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) UIColor *defaultBackgroundColor;
 @property (nonatomic, strong, nullable) UIColor *disabledBackgroundColor;
+@property (class, nonatomic, readonly) UIColor *defaultBackgroundColor;
 
 @property(nonatomic, assign) BOOL dismissOnRotation; // 디폴트 YES
 

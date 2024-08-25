@@ -40,6 +40,8 @@ CG_INLINE MGUSideBarWidthDeterminant MGUSideBarWidthDeterminantMake(CGFloat rati
 
 @interface MGUSideBarConfig : NSObject
 @property (nonatomic, assign) BOOL backgroundTapDismissalGestureEnabled; // 디폴트 : YES
+@property (nonatomic, assign) BOOL backgroundTapDismissalAnimating; // 디폴트 : YES
+@property (nonatomic, assign) BOOL useInteractionDismissalGestureEnabled; // 디폴트 : YES
 @property (nonatomic, assign) BOOL acceptFirstResponder; // 텍스트 필드가 존재할 때. 띄우면서 퍼스트 리스폰더로 만들것인지여부.
 @property (nonatomic, assign) MGUSideBarWidthDeterminant widthDeterminant;
 @property (nonatomic, assign) MGUSideBarControllerTransitionStyle transitionStyle;

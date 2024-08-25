@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 //         [self sendActionsForControlEvents:UIControlEventValueChanged];
 //     }
 // }
-- (UIView *)mgrFindClosestViewToPoint:(CGPoint)point views:(NSArray <UIView *>*)views;
+- (UIView * _Nullable)mgrFindClosestViewToPoint:(CGPoint)point views:(NSArray <UIView *>*)views;
 
 @end
 

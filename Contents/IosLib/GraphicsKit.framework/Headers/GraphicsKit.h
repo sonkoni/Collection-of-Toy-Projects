@@ -21,6 +21,7 @@ FOUNDATION_EXPORT const unsigned char GraphicsKitVersionString[];
 #import <GraphicsKit/CALayer+Extension.h>
 #import <GraphicsKit/CAGradientLayer+Extension.h>
 #import <GraphicsKit/CAMediaTimingFunction+Extension.h>
+#import <GraphicsKit/CATransaction+Extension.h>
 
 //! Helper
 #import <GraphicsKit/MGEEasingHelper.h>

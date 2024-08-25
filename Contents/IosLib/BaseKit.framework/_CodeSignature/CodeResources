@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/BaseKit-Swift.h</key>
 		<data>
-		IWnq4HrkTWirnagurVJ98M2UiT8=
+		TGRzmo4O+ZgEAHkWgJELFA+mmd8=
 		</data>
 		<key>Headers/BaseKit.h</key>
 		<data>
-		gr+f4elLJgTHhxIo9kqgwyorlh0=
+		KRFouRA9RzcxFJkx67k1JRvUEPk=
 		</data>
 		<key>Headers/MGRBind.h</key>
 		<data>
@@ -88,9 +88,17 @@
 		<data>
 		fMo6+/Dv+WvmWNRuEgzGR7EheWg=
 		</data>
+		<key>Headers/MGRKeypathMacro.h</key>
+		<data>
+		KCh+Wv/TbViouA+2pL5ra9oiiHk=
+		</data>
 		<key>Headers/MGRMathHelper.h</key>
 		<data>
-		effikf2I8AY0KuvVLs3C2vMhCEs=
+		utJCPJiqGMCamwyqQrdQt1815Cw=
+		</data>
+		<key>Headers/MGRMetamacro.h</key>
+		<data>
+		2A/HF5BOWrLIxsmv/6peH018lGE=
 		</data>
 		<key>Headers/MGRNotAvailableMacro.h</key>
 		<data>
@@ -134,7 +142,7 @@
 		</data>
 		<key>Headers/MGRSafeKeypathMacro.h</key>
 		<data>
-		4Ww+d6Of8LbMJjorDzdV1qHQ1Wg=
+		deO6hdo5FqhyQeyFfdM1+i2gkPc=
 		</data>
 		<key>Headers/MGRScreenMacro.h</key>
 		<data>
@@ -155,6 +163,10 @@
 		<key>Headers/MGRTagObject.h</key>
 		<data>
 		tn4Yk47s84D9voD/3IPIkx5Nt24=
+		</data>
+		<key>Headers/MGRTimeInterval.h</key>
+		<data>
+		KhaOvdIwtTDIRjjgeBDlRQEkNm8=
 		</data>
 		<key>Headers/MGRTimer.h</key>
 		<data>
@@ -198,11 +210,11 @@
 		</data>
 		<key>Headers/NSAttributedString+Extension.h</key>
 		<data>
-		JpxQ9UWRGEU80jB9uR1ujC806gw=
+		AzCEom7kOl1An13e2bYI7+rdgZA=
 		</data>
 		<key>Headers/NSBundle+Extension.h</key>
 		<data>
-		CCuyTrBLejUuLYxGiIV/h9vxW6w=
+		qwYGsvtpt0LxE3LYQnHR2jRMQL4=
 		</data>
 		<key>Headers/NSCalendar+Extension.h</key>
 		<data>
@@ -214,7 +226,7 @@
 		</data>
 		<key>Headers/NSDate+Extension.h</key>
 		<data>
-		jqGWedH2BxjBT/8RDTWMnAsfhhQ=
+		LGqZQTJS/fUJu+dK0avHvaC41sw=
 		</data>
 		<key>Headers/NSDictionary+Extension.h</key>
 		<data>
@@ -227,6 +239,10 @@
 		<key>Headers/NSException+Extension.h</key>
 		<data>
 		m8o7zALu+5M0vT5yS03u8nGVeOA=
+		</data>
+		<key>Headers/NSFileManager+Extension.h</key>
+		<data>
+		0H3IJ3v5J/K9iPBQufj3DylMROs=
 		</data>
 		<key>Headers/NSIndexPath+Extension.h</key>
 		<data>
@@ -264,13 +280,33 @@
 		<data>
 		XfhIbpe/z14bazsDS6tBMcxkxrc=
 		</data>
+		<key>Headers/NSObject+Etc.h</key>
+		<data>
+		gEae1M37J0KbPkguLfrjTmGK6dY=
+		</data>
 		<key>Headers/NSObject+Extension.h</key>
 		<data>
-		VXdSl5642lzgFVTrx6p6vehKJhw=
+		2zfdBLXile1gfI8mxKxeR5vQDjA=
+		</data>
+		<key>Headers/NSObject+KVO.h</key>
+		<data>
+		T1fQ74HVCjja1dN20z/+XqwXCIQ=
+		</data>
+		<key>Headers/NSString+Etc.h</key>
+		<data>
+		tRGJQzx8B8dfKB+6lWVnEnFJSSU=
 		</data>
 		<key>Headers/NSString+Extension.h</key>
 		<data>
-		5Qa+wrRV3ZlgIDNa8V1Vq7csUFY=
+		gIXBbOPXSGymu2MPFReWjsSgDnw=
+		</data>
+		<key>Headers/NSString+Info.h</key>
+		<data>
+		oeAD5IeDRYthQqaKbg97KvVOFh8=
+		</data>
+		<key>Headers/NSString+Search.h</key>
+		<data>
+		0NrnIN92j3YBuekVP9Kbz3ldSJw=
 		</data>
 		<key>Headers/NSURL+Extension.h</key>
 		<data>
@@ -286,31 +322,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zrRtIbP0yJVOoOjGB2sQYKD0PR0=
+		mk+NdYWXxrvL7GgyRBhm32s7H+Q=
 		</data>
-		<key>Modules/BaseKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/BaseKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		HrzBIBBJzvvh9h1lWsZhr4XHWX0=
+		f6QDY0MDcKYeMKUsVhopfarYmYM=
 		</data>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+J5cYQaMnzxdZNFY/xiQwFHdxeA=
+		bt0rcwJJLJH2ne0DqLSgOG2TaWw=
 		</data>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		fPCP80E8qzEkpCjHcm14lG1jrNA=
+		tmgY5OkysBahljBwa4Dgt1bO1So=
 		</data>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		yZKVW3NLoW1st+t6mbIrG53/Xjc=
+		bzV7buOtti1JaV3H92ZJUA1sC1M=
 		</data>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		fPCP80E8qzEkpCjHcm14lG1jrNA=
+		tmgY5OkysBahljBwa4Dgt1bO1So=
 		</data>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		cwT94pRvwBLfsXSHm3cc36amit4=
+		b1yUDTgd7/LGvbZ8hoPSkJvRY8I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -334,22 +370,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IWnq4HrkTWirnagurVJ98M2UiT8=
+			TGRzmo4O+ZgEAHkWgJELFA+mmd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			hvofNVyc4PH9vkNxPpmZ7COUbuIstMwR4hbBxk52ReE=
+			Pk1Hwa3Wk5F1BMwMRRcluxx12tkPtgFmh3Mc6Enac6k=
 			</data>
 		</dict>
 		<key>Headers/BaseKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gr+f4elLJgTHhxIo9kqgwyorlh0=
+			KRFouRA9RzcxFJkx67k1JRvUEPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			SvcHg2vt9W8GnKpnvtQ7fIiN+0Rusifr7ObSUw0IVk8=
+			TEGcI3vEOQW9I90IIfGBgWT36bsLHH9MFNChzY5Kk1Y=
 			</data>
 		</dict>
 		<key>Headers/MGRBind.h</key>
@@ -550,15 +586,37 @@
 			09Il49n1cFiObbUHE5V/CGnyDbXMm34VJl7XP4AnZGM=
 			</data>
 		</dict>
+		<key>Headers/MGRKeypathMacro.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KCh+Wv/TbViouA+2pL5ra9oiiHk=
+			</data>
+			<key>hash2</key>
+			<data>
+			3Lth5ie3v5+tNYbdFLm8LBFaY36zcQ2in0OgbxRX4t0=
+			</data>
+		</dict>
 		<key>Headers/MGRMathHelper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			effikf2I8AY0KuvVLs3C2vMhCEs=
+			utJCPJiqGMCamwyqQrdQt1815Cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+tF7GXapNKyzSPr0U/GN7iYSPPwMuFzZ6i3wABhfBoI=
+			oeiXgaj9irPHTZW+aE5aAFhOO5x7aTQ7pAFmhRxlogE=
+			</data>
+		</dict>
+		<key>Headers/MGRMetamacro.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2A/HF5BOWrLIxsmv/6peH018lGE=
+			</data>
+			<key>hash2</key>
+			<data>
+			D9XOouPVsAbwG65Dl8QKK+exBvIPlK/yMwhbOYLBWkg=
 			</data>
 		</dict>
 		<key>Headers/MGRNotAvailableMacro.h</key>
@@ -675,11 +733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4Ww+d6Of8LbMJjorDzdV1qHQ1Wg=
+			deO6hdo5FqhyQeyFfdM1+i2gkPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			zqDhfFF4cZTwUC2Y2ADOmCoFBbCpz4dAKnoZwXab9jc=
+			RG1y975TWyBOEoWcHOSKru/FwxE/SgxPuJJjezGEBYY=
 			</data>
 		</dict>
 		<key>Headers/MGRScreenMacro.h</key>
@@ -735,6 +793,17 @@
 			<key>hash2</key>
 			<data>
 			W/c/4T9MlNw7I2m4TJJd9JQHjxwkSbiMLnVHx0IO+qU=
+			</data>
+		</dict>
+		<key>Headers/MGRTimeInterval.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KhaOvdIwtTDIRjjgeBDlRQEkNm8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vh3e2BFhFjRIRs094xNgyNN9hcxsZUic9YbCHmoq++0=
 			</data>
 		</dict>
 		<key>Headers/MGRTimer.h</key>
@@ -851,22 +920,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JpxQ9UWRGEU80jB9uR1ujC806gw=
+			AzCEom7kOl1An13e2bYI7+rdgZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			7n2PxB2UKjkB56othRt8Gbig/enulmUHWLfO0ud5S5U=
+			LwMpvvFXwF0l1ZjJtzWhiwYrp778efK18+XbI6CmQKg=
 			</data>
 		</dict>
 		<key>Headers/NSBundle+Extension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CCuyTrBLejUuLYxGiIV/h9vxW6w=
+			qwYGsvtpt0LxE3LYQnHR2jRMQL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gnEtVIQINMblQC0W/s2+IDk6m95ZfoeM1SKeGc0u3sU=
+			VioKjldBBfbgfp3D8ffRc+Nv9tRTPbzONvSkFmvZKfw=
 			</data>
 		</dict>
 		<key>Headers/NSCalendar+Extension.h</key>
@@ -895,11 +964,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jqGWedH2BxjBT/8RDTWMnAsfhhQ=
+			LGqZQTJS/fUJu+dK0avHvaC41sw=
 			</data>
 			<key>hash2</key>
 			<data>
-			EM14R9Xq8bJnHTShV0VXjKqfG6O8N+ghkjgmvNvnAws=
+			7HE1u1iypKrBMKC8/NVOPGOfBFy7LifHzxmOm0RFQak=
 			</data>
 		</dict>
 		<key>Headers/NSDictionary+Extension.h</key>
@@ -933,6 +1002,17 @@
 			<key>hash2</key>
 			<data>
 			xLQxX4iSVg4aWGZf4dvu59JEfjlfwc5V8ug+POHjhyY=
+			</data>
+		</dict>
+		<key>Headers/NSFileManager+Extension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0H3IJ3v5J/K9iPBQufj3DylMROs=
+			</data>
+			<key>hash2</key>
+			<data>
+			c82YFZe8kvSw/3lLizCpK7KpLHZ7PgWYbrpzYWLOPms=
 			</data>
 		</dict>
 		<key>Headers/NSIndexPath+Extension.h</key>
@@ -1034,26 +1114,81 @@
 			szP7KSsepKgKYMnW4NkWCUKrg3ZT4WB57sswdzgP6Ks=
 			</data>
 		</dict>
+		<key>Headers/NSObject+Etc.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gEae1M37J0KbPkguLfrjTmGK6dY=
+			</data>
+			<key>hash2</key>
+			<data>
+			YBxZVBehnpGHMbKpb7QN4aoHzRi4iEhGdWXhiS33Qdc=
+			</data>
+		</dict>
 		<key>Headers/NSObject+Extension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VXdSl5642lzgFVTrx6p6vehKJhw=
+			2zfdBLXile1gfI8mxKxeR5vQDjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			0uuKb/K4Yb8JCjLdQUcIIbJ48n1JxmwbOQsrEJ+abL0=
+			YEp+jwU1tSJ9tH/8bLEe7YYAtjPH4fBJYGugOPb+LrQ=
+			</data>
+		</dict>
+		<key>Headers/NSObject+KVO.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T1fQ74HVCjja1dN20z/+XqwXCIQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			E24Ce6kkMj/ZpoFL1kKyfDw4UBgXUIFhpWtsBAJZQ74=
+			</data>
+		</dict>
+		<key>Headers/NSString+Etc.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tRGJQzx8B8dfKB+6lWVnEnFJSSU=
+			</data>
+			<key>hash2</key>
+			<data>
+			5d0IffoHYyW/FuNBYZyAUNsbWW4zkCUTikE2MPcvFaE=
 			</data>
 		</dict>
 		<key>Headers/NSString+Extension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5Qa+wrRV3ZlgIDNa8V1Vq7csUFY=
+			gIXBbOPXSGymu2MPFReWjsSgDnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MKKi6cH8UtijLUtoWE0KAWAw/cSnJUQ//g8TNS5waWI=
+			tpx57KADudEKgRE+Xv3MA3NTxdrBYJX58Sk76+i0afo=
+			</data>
+		</dict>
+		<key>Headers/NSString+Info.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oeAD5IeDRYthQqaKbg97KvVOFh8=
+			</data>
+			<key>hash2</key>
+			<data>
+			IDleU0nTj7pDvz+HvgUUT6e4JxRkVJDC0oQb+M5lCTM=
+			</data>
+		</dict>
+		<key>Headers/NSString+Search.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0NrnIN92j3YBuekVP9Kbz3ldSJw=
+			</data>
+			<key>hash2</key>
+			<data>
+			F6QsNzPz7XTyBipV3/vEAxlLHK4LHYYAKeaE8o+zif8=
 			</data>
 		</dict>
 		<key>Headers/NSURL+Extension.h</key>
@@ -1089,70 +1224,70 @@
 			Rsr87z0H/5Job1z0yjt7GhgEUetlyjh+mOzaqb1qaHk=
 			</data>
 		</dict>
-		<key>Modules/BaseKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/BaseKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HrzBIBBJzvvh9h1lWsZhr4XHWX0=
+			f6QDY0MDcKYeMKUsVhopfarYmYM=
 			</data>
 			<key>hash2</key>
 			<data>
-			SfkBfo+wiWl57BJEILrYZQAU08hGF3f5XSCXMT+JM5A=
+			Z9bJM5CCL1d5R5kMUnWdtyapdCZSAqI+0Ot0u96zKY4=
 			</data>
 		</dict>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+J5cYQaMnzxdZNFY/xiQwFHdxeA=
+			bt0rcwJJLJH2ne0DqLSgOG2TaWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MapJHXmN1A1Szb5DsZnlQN6d84Wlq2EmQs9bwk14jlg=
+			t6JAMOnK1gw2rzoJOH/1KBEHe1um4XXjqP4Ogtt0jCM=
 			</data>
 		</dict>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fPCP80E8qzEkpCjHcm14lG1jrNA=
+			tmgY5OkysBahljBwa4Dgt1bO1So=
 			</data>
 			<key>hash2</key>
 			<data>
-			iGzPyBBVzK4akbjlTeY4wNo6I5TBLvcjz24WXIiEZ/I=
+			9cOltmmcY5P+r6xCP1jcZV/nTp6WTdAof7pSQyKv7ac=
 			</data>
 		</dict>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yZKVW3NLoW1st+t6mbIrG53/Xjc=
+			bzV7buOtti1JaV3H92ZJUA1sC1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q5Ik6R/Y0BMmbjUoJZ33gPCfydsOO2TmU375OFFx9V8=
+			1KR0jR9xvgKzFrNmQbPAmPEToQ++NgmSE2fx7B7d9S0=
 			</data>
 		</dict>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fPCP80E8qzEkpCjHcm14lG1jrNA=
+			tmgY5OkysBahljBwa4Dgt1bO1So=
 			</data>
 			<key>hash2</key>
 			<data>
-			iGzPyBBVzK4akbjlTeY4wNo6I5TBLvcjz24WXIiEZ/I=
+			9cOltmmcY5P+r6xCP1jcZV/nTp6WTdAof7pSQyKv7ac=
 			</data>
 		</dict>
-		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/BaseKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cwT94pRvwBLfsXSHm3cc36amit4=
+			b1yUDTgd7/LGvbZ8hoPSkJvRY8I=
 			</data>
 			<key>hash2</key>
 			<data>
-			OZHEog4n+tfIXh1Fnt7tayZRlrPXT5+jdIc9h1cVBNM=
+			acUnkTISscXC1vWk7tjkpoXeyRnbpvbZ8vFptQ4JGLE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

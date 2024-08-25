@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)mgrTertiarySystemFillColor;
 + (UIColor *)mgrTertiaryLabelColor;
 + (UIColor *)mgrQuaternaryLabelColor;
++ (UIColor *)mgrSeparatorColor;
++ (UIColor *)mgrPlaceholderTextColor;
+
++ (UIColor *)mgrFocusRingColor;
 
 @end
 

@@ -1,3 +1,4 @@
+//
 //  UITableView+Extension.h
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
 //  ----------------------------------------------------------------------
@@ -79,6 +80,10 @@ static const CGFloat UITableViewDeleteRowDuration = 0.4; // UITableViewDeleteIns
 //     NSLog(@"버튼이 눌려줬고, 눌려진 cell의 인덱스 패스는 ---> %@", path);
 // }
 - (NSIndexPath *)mgrIndexPathOfCellWhereViewExists:(__kindof UIView *)view;
+
+- (void)mgrSetEditing:(BOOL)editing
+             animated:(BOOL)animated
+           completion:(void(^_Nullable)(void))completion;
 
 @end
 

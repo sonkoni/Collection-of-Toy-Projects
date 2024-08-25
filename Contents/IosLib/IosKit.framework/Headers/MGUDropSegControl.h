@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray <MGUDropSegManager *>*data;
 @property (nonatomic, strong) Class cellClass;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+@property (nonatomic, readonly) DTODropSeg *selectedDTO; // @dynamic
 
 @property (nonatomic, strong) UIImage *subitemImage;
 @property (nonatomic, strong) UIColor *selectedImageTintColor;
@@ -24,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIEdgeInsets imageContainerInsets;
 
 @property(nonatomic, assign) BOOL dismissOnRotation; // 디폴트 YES
+
+- (BOOL)containsDTO:(DTODropSeg *)dto;
 
 @end
 
