@@ -3,78 +3,129 @@
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
-![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0) 
+![macOS](https://img.shields.io/badge/MAC%20OS-000000?style=flat-square&logo=macos&logoColor=F0F0F0)
 
-## IndicatorSettingsTest 화면에 대한 개인작업물
 
-----
-구형 - 총: 151
-기술적지표
-    가격지표 - 16개
-    분석지표 - 53개
-    투자자지표 - 2개
+## MGRJamo (***Objective-C***) <br/> SKHJamo (***Swift***)
+> - MGRJamo
+>   - Written in **Objective-C**, **Swift** and **Objective-C** compatability
+> - SKHJamo
+>   - Written in **Swift**
 
-신호/강세/약세
-    신호 - 42개
-    강세/약세 - 38개
+- `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 Stepper
+    - MGUStepper : iOS 용 (UIControl 서브클래스)
+    - MGAStepper : macOS 용 (NSControl 서브클래스)
+- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
+<p align="center"><img src="./screenshot/230522b1.jpg" width="400"></p>
 
-----
-현재 - 총 609개 - (없는 것: 지표-투자자지표, 패턴-횡보구간패턴, 박스장패턴)
-지표: 209(합계)
-    30(가격지표) + 58(모멘텀지표) + 19(변동성지표) + 10(채널지표) + 27(추세지표) + 19(시장강도지표) + 27(거래량지표) + 19(기타지표) + 0(투자자지표) = 209(합계)
 
-신호: 158(합계)    
-    126(분석신호) + 32(매매신호) = 158(합계)
-    
-    
-패턴: 116(합계)      
-    27(상승반전패턴) + 10(상승지속패턴) + 24(하락반전패턴) + 9(하락지속패턴) + 0(횡보구간패턴)+ 0(박스장세패턴)+ 46(추세패턴) = 116(합계)
-    
+## Features
+*  커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있으므로 autolayout으로 position만으로도 설정 가능)
+*  Label 설정가능
+    * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
+    * 가운데 Label에 Drag 기능을 설정할 수 있다.
+    * 가운데 Label에 현재 Stepper의 값을 표기할 수도 있고, 원하는 문구를 넣을 수도 있다.
+*  Style presets 지원
+    * 5가지의 presets 
+    * presets에 추가적 커스텀 가능 
+*  커스텀 Shape 가능
+    * VisualEffectView를 배경으로 설정할 수 있다.
+    * 버튼 및 중앙 Label에 image 또는 text를 설정할 수 있다.
+    * Stepper, 버튼, 중앙 Label에 원하는 radius를 줄 수 있다.    
+*  long press 지원
+    * `UIStepper`처럼 long press 시 반복되어 버튼 press가 호출되고 일정 시간이 지나면 반복되는 간격이 빨라진다. 
+*  Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
+    * Swift : `@IBDesignable` `@IBInspectable`
+    * Objective-C : `IB_DESIGNABLE` `IBInspectable`
+*  **Swift** and **Objective-C** compatability
+*  Support **iOS**(***MGUStepper***) and **macOS**(***MGAStepper***).
+*  Written in Objective-C
 
-구간: 74개(합계)
 
-채움: 52개(합계)
-    28(가격영역채움) + 2(거래량영역채움) + 22(분석영역채움) = 52(합계)
+## Preview
+> - MGUStepper (iOS)
+>   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
+> - MGAStepper (macOS)
 
-----
 
-## 키움 - 362개
+MGUStepper (iOS) - xib | MGUStepper (iOS) - code | more custom | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
+---|---|---|---
+<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.12.20.gif" width="225">
 
-보조지표 - 168개
-    추세지표 - 19개
-    변동성지표 - 7개
-    모멘텀지표 - 38개
-    시장강도지표 - 27개
-    가격지표 - 13개
-    거래량지표 - 12개
-    모바일전용 - 3개
-    기타지표 - 49개 
+MGAStepper (macOS) |
+---|
+<img src="./screenshot/Screen Recording 2023-05-22 at 11.40.53.gif" width="450">|
 
-신호검색 - 168개
-    지표검색 - 63개
-    전략시그널검색 - 32개
-    상승반전캔들검색 - 28개
-    상승지속캔들검색 - 10개
-    하락반전캔들검색 - 25개
-    하락지속캔들검색 - 10개
 
-강세/약세 - 26개
+## Presets and Styles
+> Built-in configuration
 
-----
+Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
+---|---|---|---|---
+<img src="./screenshot/230522c5.jpg" width="225"> |<img src="./screenshot/230522c2.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c3.jpg" width="225">|<img src="./screenshot/230522c4.jpg" width="225">
 
-## 신한 - 168개
+---
 
-오버레이 - 17개
+> More configuration<br/>
+> 다음과 같이 직접적으로 프라퍼티를 조절하여 다양한 외관을 생성할 수 있다.
 
-보조지표 - 113개
-    거래량지표 - 16개
-    시장지표 - 21개
-    추세지표 - 23개
-    변동성지표 - 22개
-    2차파생지표 - 11개
-    시장강도지표 - 20개
+더 커스텀하기|
+---|
+<img src="./screenshot/230522c6.jpg" width="225">|
 
-신호/검색 - 38개
-    신호검색 - 19개
-    캔들 강세/약세 - 19개
+## Usage
 
+> Swift
+```swift
+
+stepper = MGUStepper(configuration: MGUStepperConfiguration.forgeDrop())
+if let stepper = stepper {
+    containerView.addSubview(stepper) // intrinsicContentSize 설정됨
+    stepper.addTarget(self, action:#selector(stepperValueChanged(_:)), for: .valueChanged)
+}
+
+```
+
+> Objective-C
+```objective-c
+
+_stepper = [[MGUStepper alloc] initWithConfiguration:[MGUStepperConfiguration forgeDropConfiguration]];
+[self.view addSubview:self.stepper]; // intrinsicContentSize 설정됨
+[self.stepper addTarget:self action:@selector(stepperValueChanged:) forControlEvents:UIControlEventValueChanged];
+
+```
+> Interface Builder
+
+<img src="./screenshot/230522a1.jpg" width="200">
+
+## Documentation
+
+- long press 시 일정한 간격으로 반복 호출되며 반복호출되는 간격이 일정 시간이 지나면 빨라지게 하기위해 다음의 알고리즘을 구상함.
+    - 반복 호출되다가 일정 시간이 지나면 반복 호출 간격이 5배로 빨라지고 또 일정 시간이나면 거기서 2배가 빨라진다.
+```objective-c
+
+//! 애플의 UIStepper와 유사하게 작동하게 하기 위해 만든 알고리즘. 타이머가 가속도를 가지고 움직이는 것처럼 골라준다.
+- (NSInteger)timerFireCountModulo {
+    if (self.timerFireCount > 80) { // 0.05(81) -> 0.05(82) -> 0.05(83) -> 0.05(84) -> 0.05(85)
+        return 1; // 0.05 sec * 1 = 0.05 sec : (리턴값 * 0.05)는 호출되는 간격
+    } else if (self.timerFireCount > 50) { // 0.1(52) -> 0.1(54) -> 0.1(56) -> 0.1(58) -> 0.1(60)
+        return 2; // 0.05 sec * 2 = 0.1 sec : (리턴값 * 0.05)는 호출되는 간격
+    } else { // 0.5(10) -> 0.5(20) -> 0.5(30) -> 0.5(40) -> 0.5(50)
+        return 10; // 0.05 sec * 10 = 0.5 sec : (리턴값 * 0.05)는 호출되는 간격
+    }
+    //
+    // self.timerFireCount % [self timerFireCountModulo] == 0 에 대한 호출.
+    // 1. 0.5초마다 호출된다.(2.5초 동안 = 50 * 0.05) 즉, 5회 호출된다.
+    // 2. 0.1초마다 호출된다.(1.5초 동안 = 30 * 0.05) 즉, 15회 호출된다.
+    // 3. 0.05초마다 호출된다. 계속.
+}
+
+```
+
+## Author
+
+sonkoni(손관현), isomorphic111@gmail.com 
+
+## License
+
+This project is released under the MIT License. See [LICENSE](https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/LICENSE) for more information.
