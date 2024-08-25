@@ -8,8 +8,10 @@
 
 ## MGRJamo (***Objective-C***) <br/> SKHJamo (***Swift***)
 > - MGRJamo
+>   - UTF-8 기준의 Objective-C용 한글 자모 분해 라이브러리
 >   - Written in **Objective-C**, **Swift** and **Objective-C** compatability
 > - SKHJamo
+>   - UTF-8 기준의 Swift용 한글 자모 분해 라이브러리
 >   - Written in **Swift**
 
 - `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 Stepper
