@@ -80,20 +80,21 @@ Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
 > Swift
 ```swift
 
-stepper = MGUStepper(configuration: MGUStepperConfiguration.forgeDrop())
-if let stepper = stepper {
-    containerView.addSubview(stepper) // intrinsicContentSize 설정됨
-    stepper.addTarget(self, action:#selector(stepperValueChanged(_:)), for: .valueChanged)
-}
+let word = "이격도"
+let jamo = SKHJamo.getJamo(word)
+
+// "ㅇㅣㄱㅕㄱㄷㅗ"
 
 ```
 
 > Objective-C
 ```objective-c
 
-_stepper = [[MGUStepper alloc] initWithConfiguration:[MGUStepperConfiguration forgeDropConfiguration]];
-[self.view addSubview:self.stepper]; // intrinsicContentSize 설정됨
-[self.stepper addTarget:self action:@selector(stepperValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+NSString *word = @"이격도";
+NSString *jamo = [MGRJamo getJamo:word];
+  
+// "ㅇㅣㄱㅕㄱㄷㅗ"
 
 ```
 > Interface Builder
