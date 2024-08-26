@@ -13,7 +13,7 @@
 
 - `MGUDropdownButton`, `SKUDropdownButton`는 `NSPopUpButton`(macOS) 의 기능을 구현 및 확장한 iOS 용 커스텀 Dropdown Button
 - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Dropdown Button**에 대한 요구사항이 있어서 제작함.
-<p align="left"><img src="./screenshot/240826a3.jpg" width="400"><img src="./screenshot/GIF2.gif" width="100">
+<p align="center"><img src="./screenshot/240826a3.jpg" width="400"><img src="./screenshot/GIF2.gif" width="60">
 
 ## Features
 *  커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있으므로 autolayout으로 position만으로도 설정 가능)
