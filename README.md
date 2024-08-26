@@ -27,9 +27,10 @@
 
 ## Contents
 - [AutoLayout](#autoLayout)
+- [Modal](#modal)
+    - [Alert & Action Sheet](#alert--action-sheet)
 - [Search](#search)
 - [UI-Control](#ui-control)
-    - [Alert & Action Sheet](#alert--action-sheet)
     - [DropdownButton](#dropdownButton)
     - [DialControl](#dialControl)
     - [Keyboard](#keyboard)
@@ -45,7 +46,6 @@
 - [License](#license)
 
 
-
 ## AutoLayout
 *Auto Layout을 프로그래머틱한 방식과 interface builder(xib, storyboard) 방식으로 보여주는 프로젝트*
 - [AutoLayout **Adaptivity**](./Contents/AutoLayout_Adaptivity) - Device Size Classes 및 Orientation 에 따른 AutoLayout Adaptivity **테스트**
@@ -54,6 +54,11 @@
  
 **[back to top](#contents)**
  
+## Modal
+### Alert & Action Sheet
+- [MGUAlertViewController, MGUActionSheetController](./Contents/AlertActionSheetController) - `UIAlertController`를 대체할 수 있는 커스텀 ViewController.
+**[back to top](#contents)** 
+ 
 ## Search
 *일반적인 Search 뿐만 아니라 한글 초성검색 및 미완성 문자까지 검색되게하는 알고리즘을 보여주는 프로젝트*
 - [Initial Consonant Search](./Contents/InitialConsonantSearch) - 초성검색, 일반검색, 미완성 문자 검색 샘플 프로젝트
@@ -61,8 +66,6 @@
 **[back to top](#contents)** 
  
 ## UI-Control
-### Alert & Action Sheet
-- [MGUAlertViewController, MGUActionSheetController](./Contents/AlertActionSheetController) - `UIAlertController`를 대체할 수 있는 커스텀 ViewController.
 ### DropdownButton
 - [SKUDropdownButton, MGUDropdownButton](./Contents/DropdownButton) - `NSPopUpButton`(macOS) 의 기능을 구현 및 확장한 iOS 용 커스텀 Dropdown Button
 ### DialControl
