@@ -47,7 +47,7 @@
 ## Preview
 > - 관련동영상
 
-<p align="left"><img src="./screenshot/240826a3.jpg" width="400"></p>](https://youtu.be/161FoZYpU8I?si=rsnyjAQHsTWMouqp&t=94)
+[<p align="left"><img src="./screenshot/240826a3.jpg" width="400"></p>](https://youtu.be/161FoZYpU8I?si=rsnyjAQHsTWMouqp&t=94)
 
 ## Usage
 
