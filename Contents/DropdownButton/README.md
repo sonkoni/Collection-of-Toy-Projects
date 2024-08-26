@@ -51,11 +51,6 @@ MGUStepper (iOS) - xib | MGUStepper (iOS) - code | more custom | [IV-Drop](https
 ---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.12.20.gif" width="225">
 
-MGAStepper (macOS) |
----|
-<img src="./screenshot/Screen Recording 2023-05-22 at 11.40.53.gif" width="450">|
-
-
 ## Presets and Styles
 > Built-in configuration
 
