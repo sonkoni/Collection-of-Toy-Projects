@@ -12,9 +12,7 @@
 >   - Written in **Swift**
 
 - `MGUDropdownButton`, `SKUDropdownButton`는 `NSPopUpButton`(macOS) 의 기능을 구현 및 확장한 iOS 용 커스텀 Dropdown Button
-    - MGUDropdownButton : **Swift** and **Objective-C** compatability
-    - SKUDropdownButton : **Swift** compatability
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
+- [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Dropdown Button**에 대한 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230522b1.jpg" width="400"></p>
 
 
