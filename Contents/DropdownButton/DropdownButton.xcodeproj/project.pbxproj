@@ -135,7 +135,7 @@
 		840C3F942C7C539500D71821 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
 		840C3F952C7C539500D71821 /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
 		840C3F962C7C539500D71821 /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
-		840C3FBB2C7C6F9E00D71821 /* GIF1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GIF1.gif; sourceTree = "<group>"; };
+		840C3FBB2C7C6F9E00D71821 /* GIF2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GIF2.gif; sourceTree = "<group>"; };
 		84530F192B060BD200038077 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		84530F1A2B060BD200038077 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		84530F1B2B060BD200038077 /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 		840C3F912C7C51C800D71821 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				840C3FBB2C7C6F9E00D71821 /* GIF1.gif */,
+				840C3FBB2C7C6F9E00D71821 /* GIF2.gif */,
 				840C3F832C7C51C800D71821 /* 230522a1.jpg */,
 				840C3F842C7C51C800D71821 /* 230522b1.jpg */,
 				840C3F852C7C51C800D71821 /* 230522c1.jpg */,
