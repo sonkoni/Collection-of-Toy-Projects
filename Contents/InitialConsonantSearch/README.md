@@ -15,8 +15,10 @@
 >   - Written in **Swift**
 
 - 텍스트 필드를 사용해서 검색을 구현할 시 한글 자음과 모음을 분리해서도, 합쳐서도 필터링이 되게 한다.
+```
     - "이격도" 라는 텍스트를 검색한다 ->
         - 이격도 라는 글자 + "ㅇ, 이, 익, 이격, 이격ㄷ, 이격도, ㅇㄱㄷ" 까지도 검색이 되게 하려면 다음을 이용한다
+```
 
 - [MTS 프로젝트](https://youtu.be/161FoZYpU8I?si=z89zAGR5vfeHqILa&t=90)를 진행하면서 **초성검색**에 대한 요구사항이 있어서 제작함.
 [<p align="center"><img src="./screenshot/240826a1.jpg" width="400"></p>](https://youtu.be/161FoZYpU8I?si=rsnyjAQHsTWMouqp&t=94)
