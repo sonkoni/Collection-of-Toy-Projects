@@ -43,6 +43,8 @@
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
 > - MGAStepper (macOS)
 
+
+
 |--|--|--|--|--|--|--|--|
 |♜| |♝|♛|♚|♝|♞|♜|
 | |♟|♟|♟| |♟|♟|♟|
@@ -52,6 +54,8 @@
 | | | | | |♘| | |
 |♙|♙|♙|♙| |♙|♙|♙|
 |♖|♘|♗|♕|♔| | |♖|
+
+
 
 
 MGUStepper (iOS) - xib | MGUStepper (iOS) - code | more custom | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
