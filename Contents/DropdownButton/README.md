@@ -51,10 +51,6 @@ SKUDropSegControl |
 ---|
 <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif" width="180"> |
 
-MGUStepper (iOS) - xib | MGUStepper (iOS) - code | more custom | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
----|---|---|---
-<img src="./screenshot/GIF2.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.03.45.gif" width="225">|<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.12.20.gif" width="225">
-
 ## Presets and Styles
 > Built-in configuration
 
