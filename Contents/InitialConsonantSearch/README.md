@@ -223,6 +223,50 @@ extension SKHJamo {
 
 ```
 
+> - String+Extension.swift
+
+```swift
+
+import Foundation
+
+public extension String {
+
+    func mgrRange<T>(
+        of searchString: T,
+        options mask: String.CompareOptions = [],
+        range searchRange: Range<Self.Index>? = nil,
+        locale: Locale? = nil
+    ) -> NSRange where T : StringProtocol {
+        var searchString = searchString.trimmingCharacters(in: .whitespaces) // 양끝 트리밍
+        let result = self.range(of: searchString, options: mask, range: searchRange, locale: locale)
+        if let result = result {
+            let loc = result.lowerBound.utf16Offset(in: self)
+            let len = result.upperBound.utf16Offset(in: self) - loc
+            return NSMakeRange(loc, len)
+        }
+        var selfString = SKHJamo.getJamo(self)
+        searchString = SKHJamo.getJamo(searchString)
+        var range = selfString.range(of: searchString, options: mask, range: searchRange, locale: locale)
+        if let range = range {
+            let loc = range.lowerBound.utf16Offset(in: selfString)
+            let len = range.upperBound.utf16Offset(in: selfString) - loc
+            return NSMakeRange(loc, len)
+        }
+        selfString = SKHJamo.getCho(self)
+        /// searchString = SKHJamo.getCho(searchString) // 이건 완전히 이미 분해되었음.(∵) 기존에 완전히 분해했으므로.
+        range = selfString.range(of: searchString, options: mask, range: searchRange, locale: locale)
+        if let range = range {
+            let loc = range.lowerBound.utf16Offset(in: selfString)
+            let len = range.upperBound.utf16Offset(in: selfString) - loc
+            return NSMakeRange(loc, len)
+        }
+        return NSRange(location: NSNotFound, length: 0)
+    }
+    
+}
+
+```
+
 ## Author
 
 sonkoni(손관현), isomorphic111@gmail.com 
