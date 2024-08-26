@@ -56,15 +56,6 @@ Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
 ---|---|---|---|---
 <img src="./screenshot/230522c5.jpg" width="225"> |<img src="./screenshot/230522c2.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c3.jpg" width="225">|<img src="./screenshot/230522c4.jpg" width="225">
 
----
-
-> More configuration<br/>
-> 다음과 같이 직접적으로 프라퍼티를 조절하여 다양한 외관을 생성할 수 있다.
-
-더 커스텀하기|
----|
-<img src="./screenshot/230522c6.jpg" width="225">|
-
 ## Usage
 
 > Swift
