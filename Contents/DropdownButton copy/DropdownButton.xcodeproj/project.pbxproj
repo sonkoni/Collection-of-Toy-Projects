@@ -31,6 +31,8 @@
 		840C3FA72C7C53A700D71821 /* IosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3F952C7C539500D71821 /* IosKit.framework */; };
 		840C3FA82C7C53A700D71821 /* IosKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3F952C7C539500D71821 /* IosKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		840C3FA92C7C53A700D71821 /* IosRes.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 840C3F962C7C539500D71821 /* IosRes.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		840C3FB42C7C659E00D71821 /* LNTouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3FB12C7C630800D71821 /* LNTouchVisualizer.framework */; };
+		840C3FB52C7C659E00D71821 /* LNTouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 840C3FB12C7C630800D71821 /* LNTouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84530F1C2B060BD200038077 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 84530F1A2B060BD200038077 /* ViewControllerB.m */; };
 		84530F1D2B060BD200038077 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84530F1B2B060BD200038077 /* ViewControllerB.xib */; };
 		84530F2D2B06E1A200038077 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530F2C2B06E1A200038077 /* MainTableViewController.swift */; };
@@ -46,6 +48,16 @@
 		845D0F812AA6DD8E005EE4A0 /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 845D0F7F2AA6DD8E005EE4A0 /* ViewControllerA.m */; };
 		845D0F822AA6DD8E005EE4A0 /* ViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D0F802AA6DD8E005EE4A0 /* ViewControllerA.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840C3FB02C7C630800D71821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840C3FAC2C7C630800D71821 /* LNTouchVisualizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39C38069260B783E00ACF910;
+			remoteInfo = LNTouchVisualizer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		48E8732F29240DCF0033F23F /* Embed Watch Content */ = {
@@ -94,6 +106,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		840C3FB62C7C659E00D71821 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				840C3FB52C7C659E00D71821 /* LNTouchVisualizer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -135,7 +158,7 @@
 		840C3F942C7C539500D71821 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../IosLib/AudioKit.framework; sourceTree = "<group>"; };
 		840C3F952C7C539500D71821 /* IosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IosKit.framework; path = ../IosLib/IosKit.framework; sourceTree = "<group>"; };
 		840C3F962C7C539500D71821 /* IosRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosRes.bundle; path = ../IosLib/IosRes.bundle; sourceTree = "<group>"; };
-		840C3FBB2C7C6F9E00D71821 /* GIF1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GIF1.gif; sourceTree = "<group>"; };
+		840C3FAC2C7C630800D71821 /* LNTouchVisualizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNTouchVisualizer.xcodeproj; path = ../../../Archon/ObjcSubject/Visualizer/LNTouchVisualizer/LNTouchVisualizer/LNTouchVisualizer.xcodeproj; sourceTree = "<group>"; };
 		84530F192B060BD200038077 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		84530F1A2B060BD200038077 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		84530F1B2B060BD200038077 /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
@@ -164,6 +187,7 @@
 			files = (
 				840C3F9B2C7C539500D71821 /* AudioKit.framework in Frameworks */,
 				840C3F992C7C539500D71821 /* BaseKit.framework in Frameworks */,
+				840C3FB42C7C659E00D71821 /* LNTouchVisualizer.framework in Frameworks */,
 				840C3F972C7C539500D71821 /* GraphicsKit.framework in Frameworks */,
 				840C3F9D2C7C539500D71821 /* IosKit.framework in Frameworks */,
 			);
@@ -186,6 +210,7 @@
 		482D49192923C71A005CA28D = {
 			isa = PBXGroup;
 			children = (
+				840C3FAC2C7C630800D71821 /* LNTouchVisualizer.xcodeproj */,
 				840C3F812C7C518D00D71821 /* README.md */,
 				840C3F912C7C51C800D71821 /* screenshot */,
 				48F00E4229240D2900DBA3FC /* IosObjcSample */,
@@ -250,7 +275,6 @@
 		840C3F912C7C51C800D71821 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				840C3FBB2C7C6F9E00D71821 /* GIF1.gif */,
 				840C3F832C7C51C800D71821 /* 230522a1.jpg */,
 				840C3F842C7C51C800D71821 /* 230522b1.jpg */,
 				840C3F852C7C51C800D71821 /* 230522c1.jpg */,
@@ -267,6 +291,14 @@
 				840C3F902C7C51C800D71821 /* Simulator Screen Recording - iPhone 14 - 2023-05-22 at 12.12.20.gif */,
 			);
 			path = screenshot;
+			sourceTree = "<group>";
+		};
+		840C3FAD2C7C630800D71821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840C3FB12C7C630800D71821 /* LNTouchVisualizer.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		84530F2E2B06E1D300038077 /* Model */ = {
@@ -338,6 +370,7 @@
 				48F00E3E29240D2800DBA3FC /* Frameworks */,
 				48F00E3F29240D2800DBA3FC /* Resources */,
 				840C3F752C7C502D00D71821 /* Embed PlugIns */,
+				840C3FB62C7C659E00D71821 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +432,12 @@
 			mainGroup = 482D49192923C71A005CA28D;
 			productRefGroup = 482D49232923C71A005CA28D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 840C3FAD2C7C630800D71821 /* Products */;
+					ProjectRef = 840C3FAC2C7C630800D71821 /* LNTouchVisualizer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				48F00E4029240D2800DBA3FC /* DropdownButton */,
@@ -406,6 +445,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		840C3FB12C7C630800D71821 /* LNTouchVisualizer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LNTouchVisualizer.framework;
+			remoteRef = 840C3FB02C7C630800D71821 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		48F00E3F29240D2800DBA3FC /* Resources */ = {
