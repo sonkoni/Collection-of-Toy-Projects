@@ -17,7 +17,7 @@
 - `MGUStepper`, `MGAStepper`는 `UIStepper` 및 `NSStepper` 보다 더 많은 기능과 디자인의 자유도를 보장하는 커스텀 Stepper
     - MGUStepper : iOS 용 (UIControl 서브클래스)
     - MGAStepper : macOS 용 (NSControl 서브클래스)
-- [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 팝업에 위치할 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
+- [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 만들면서 `초성검색`에 대한 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/230522b1.jpg" width="400"></p>
 
 
