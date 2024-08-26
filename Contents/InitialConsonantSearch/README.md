@@ -21,7 +21,7 @@
     ```
 
 - [MTS 프로젝트](https://youtu.be/161FoZYpU8I?si=z89zAGR5vfeHqILa&t=90)를 진행하면서 **초성검색**에 대한 요구사항이 있어서 제작함.
-- 추가적으로 Debounce 기능을 추가할 수 있으나, 자료의 양이 많지 않을 경우(경험상 1000개 이하)는 생략하는 것이 UX상 더 나은 것으로 사료된다.
+- 추가적으로 **Debounce** 기능을 추가할 수 있으나, 자료의 양이 많지 않을 경우(경험상 1000개 이하)는 생략하는 것이 UX상 더 나은 것으로 사료된다.
  
 [<p align="center"><img src="./screenshot/240826a1.jpg" width="400"></p>](https://youtu.be/161FoZYpU8I?si=rsnyjAQHsTWMouqp&t=94)
 
