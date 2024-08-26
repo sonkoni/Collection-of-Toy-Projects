@@ -224,6 +224,7 @@ extension SKHJamo {
 ```
 
 > - String+Extension.swift
+>   - 실제 사용에 있어서는 `extension`을 이용하여 일관된 논리를 유지한다.
 
 ```swift
 
