@@ -49,7 +49,7 @@
 
 관련동영상 |
 ---|
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.56.48.gif" width="225">|
+[<p align="center"><img src="./screenshot/240826a2.jpg" width="400"></p>](https://youtu.be/161FoZYpU8I?si=rsnyjAQHsTWMouqp&t=94)|
 
 ## Usage
 
