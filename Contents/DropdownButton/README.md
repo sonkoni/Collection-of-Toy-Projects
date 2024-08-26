@@ -39,6 +39,8 @@
 
 
 ## Preview
+<img src="./screenshot/GIF2.gif" width="225"><img src="./screenshot/GIF2.gif" width="225"><img src="./screenshot/GIF2.gif" width="225">
+
 > - MGUStepper (iOS)
 >   - [IV-Drop](https://apps.apple.com/app/id1574452904)을 만들면서 커스텀 Stepper에 대한 요구사항이 있어서 제작함.
 > - MGAStepper (macOS)
