@@ -44,21 +44,18 @@
 > - MGAStepper (macOS)
 
 
-<img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225"> | <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225"> | <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225"> | <img src="./screenshot/Simulator Screen Recording - iPhone 14 - 2023-05-22 at 11.58.38.gif" width="225">
+<img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif" width="225"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif" width="225"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.41.31.gif" width="225"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.42.30.gif" width="225">
 ---|---|---|---
 
-|--|--|--|--|--|--|--|--|
-|♜| |♝|♛|♚|♝|♞|♜|
-| |♟|♟|♟| |♟|♟|♟|
-|♟| |♞| | | | | |
-| |♗| | |♟| | | |
-| | | | |♙| | | |
-| | | | | |♘| | |
-|♙|♙|♙|♙| |♙|♙|♙|
-|♖|♘|♗|♕|♔| | |♖|
+```
 
 
 
+
+Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.05.gif
+
+Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif
+```
 
 MGUStepper (iOS) - xib | MGUStepper (iOS) - code | more custom | [IV-Drop](https://apps.apple.com/app/id1574452904)에서 사용한 예
 ---|---|---|---
