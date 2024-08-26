@@ -25,34 +25,7 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6UM-ID-t9t" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="1518"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAN-Tp-Cfe">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="1518"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXm-dT-G3G">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="506"/>
-                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMg-qy-xaB">
-                                            <rect key="frame" x="0.0" y="506" width="50" height="506"/>
-                                            <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-6w-0GA">
-                                            <rect key="frame" x="0.0" y="1012" width="50" height="506"/>
-                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="50" id="ZAm-MJ-5bm"/>
-                                    </constraints>
-                                </stackView>
-                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="ZAN-Tp-Cfe" firstAttribute="top" secondItem="6UM-ID-t9t" secondAttribute="top" id="7vC-BN-iyk"/>
-                                <constraint firstItem="ZAN-Tp-Cfe" firstAttribute="leading" secondItem="6UM-ID-t9t" secondAttribute="leading" id="VAT-3R-q1w"/>
-                                <constraint firstAttribute="bottom" secondItem="ZAN-Tp-Cfe" secondAttribute="bottom" id="zzL-BD-wCO"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
@@ -79,15 +52,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
