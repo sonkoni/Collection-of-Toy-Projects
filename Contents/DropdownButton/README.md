@@ -102,7 +102,7 @@ self.dropdownButton.textAlignment = NSTextAlignmentLeft;
 
 `Swift` |`Objective-C`
 ---|---
-<img src="./screenshot/aaa.gif" width="450">|<img src="./screenshot/bbb.gif" width="450">
+<img src="./screenshot/Screen Recording 2024-08-27 at 13.13.11.gif" width="450">|<img src="./screenshot/Screen Recording 2024-08-27 at 13.12.36.gif" width="450">
 
 - long press 시 일정한 간격으로 반복 호출되며 반복호출되는 간격이 일정 시간이 지나면 빨라지게 하기위해 다음의 알고리즘을 구상함.
     - 반복 호출되다가 일정 시간이 지나면 반복 호출 간격이 5배로 빨라지고 또 일정 시간이나면 거기서 2배가 빨라진다.
