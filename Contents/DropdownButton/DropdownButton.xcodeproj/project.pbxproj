@@ -134,6 +134,11 @@
 		840C3FBF2C7C7CC600D71821 /* Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif"; sourceTree = "<group>"; };
 		840C3FC02C7C7CC600D71821 /* Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif"; sourceTree = "<group>"; };
 		840C3FC12C7C7CC600D71821 /* Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif"; sourceTree = "<group>"; };
+		840C3FC22C7D7E2100D71821 /* 240827a4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 240827a4.png; sourceTree = "<group>"; };
+		840C3FC32C7D7E2100D71821 /* 240827a1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 240827a1.png; sourceTree = "<group>"; };
+		840C3FC42C7D7E2100D71821 /* 240827a5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 240827a5.png; sourceTree = "<group>"; };
+		840C3FC52C7D7E2100D71821 /* 240827a3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 240827a3.png; sourceTree = "<group>"; };
+		840C3FC62C7D7E2100D71821 /* 240827a2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 240827a2.png; sourceTree = "<group>"; };
 		84530F192B060BD200038077 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		84530F1A2B060BD200038077 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		84530F1B2B060BD200038077 /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
@@ -255,6 +260,11 @@
 				840C3F892C7C51C800D71821 /* 230522c5.jpg */,
 				840C3F8A2C7C51C800D71821 /* 230522c6.jpg */,
 				840C3F8B2C7C51C800D71821 /* 240826a3.jpg */,
+				840C3FC32C7D7E2100D71821 /* 240827a1.png */,
+				840C3FC62C7D7E2100D71821 /* 240827a2.png */,
+				840C3FC52C7D7E2100D71821 /* 240827a3.png */,
+				840C3FC22C7D7E2100D71821 /* 240827a4.png */,
+				840C3FC42C7D7E2100D71821 /* 240827a5.png */,
 				840C3FC12C7C7CC600D71821 /* Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif */,
 				840C3FC02C7C7CC600D71821 /* Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif */,
 				840C3FBE2C7C7CC600D71821 /* Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.41.31.gif */,
