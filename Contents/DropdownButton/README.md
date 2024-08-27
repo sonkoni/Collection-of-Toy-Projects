@@ -16,7 +16,12 @@
 <p align="center"><img src="./screenshot/240826a3.jpg" width="400"></p>
 
 ## Features
-*  커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있으므로 autolayout으로 position만으로도 설정 가능)
+* 커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있으므로 autolayout으로 position만으로도 설정 가능)
+* Auto direction 지원
+    * 기본적으로 popup으로 등장하는 컨텐츠는 버튼의 아래쪽 등장한다. 
+    * 그러나 만약 컨텐츠가 아래쪽에 등장했을 때, 가시권에서 벗어나는 경우라면 팝업 직전에 내부적으로 계산하여 위치를 자동. 조정한다. 
+* 회전 시 위치 재조정 지원
+    * 화면 회전 시, 이미 표시된 팝오버는 현재 화면 상태에 맞게 위치가 자동으로 재조정되거나, 필요에 따라 자동으로 사라지게 하는 것을 선택할 수 있다.
 *  Label 설정가능
     * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
     * 가운데 Label에 Drag 기능을 설정할 수 있다.
