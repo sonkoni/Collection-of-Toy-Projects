@@ -20,6 +20,7 @@
 
 ## Features
 *  범위 설정 지원
+    * `@property (nonatomic, assign) CGFloat maxDataValue;`
 *  Style presets 지원
     * `.none`
     * `.dot` ~ floating value
