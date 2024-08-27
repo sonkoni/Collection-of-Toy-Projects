@@ -68,12 +68,14 @@ textField.alertMessage = "1 이상 3,000 이하의 숫자만 유효합니다."
 textField.completionClosure = { [weak self] (dataValue: Double) -> Void in
     let result = min(max(1.0, dataValue), 3000.0)
     let finalResult = lround(result)
-    self?.textField.dataValue = result; // 실제 사용되는 숫자로 바꿔줘야할 필요가 있을 수 있다
+    self?.textField.dataValue = result;
     print("finalResult ==> \(finalResult)")
 }
 textField.dataValue = 50.0
 
 ```
+
+----
 
 > Objective-C
 ```objective-c
@@ -87,7 +89,7 @@ __weak __typeof(self.textField) weakTextField = self.textField;
 self.textField.completionBlock = ^(CGFloat dataValue) {
     CGFloat result = MIN(MAX(1.0, dataValue), 3000.0);
     NSInteger finalResult = lround(result);
-    weakTextField.dataValue = result; // 실제 사용되는 숫자로 바꿔줘야할 필요가 있을 수 있다
+    weakTextField.dataValue = result;
     NSLog(@"finalResult ==> %ld", finalResult);
 };
 self.textField.dataValue = 50.0;
