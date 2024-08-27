@@ -1,4 +1,4 @@
-# DropdownButton - 작성중 
+# DropdownButton 
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
@@ -103,6 +103,7 @@ self.dropdownButton.textAlignment = NSTextAlignmentLeft;
     - 화면 회전 시, 이미 표시된 팝오버는 현재 화면 상태에 맞게 위치가 자동으로 재조정되거나, 필요에 따라 자동으로 사라지게 하는 것을 선택할 수 있다.
     ```objective-c
     @property (nonatomic, getter=isDismissOnRotation) BOOL dismissOnRotation;
+    
     self.dropdownButton.dismissOnRotation = NO;
     ```
     
