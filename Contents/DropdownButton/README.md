@@ -19,9 +19,12 @@
 * 커스텀 사이즈 가능(`intrinsicContentSize`도 가지고 있으므로 autolayout으로 position만으로도 설정 가능)
 * Auto direction 지원
     * 기본적으로 popup으로 등장하는 컨텐츠는 버튼의 아래쪽 등장한다. 
-    * 그러나 만약 컨텐츠가 아래쪽에 등장했을 때, 가시권에서 벗어나는 경우라면 팝업 직전에 내부적으로 계산하여 위치를 자동. 조정한다. 
+    * 그러나 만약 컨텐츠가 아래쪽에 등장했을 때, 가시권에서 벗어나는 경우라면 팝업 직전에 내부적으로 계산하여 위치를 자동 조정된다.
+* Auto Height 지원
+    * popup될 컨텐츠 리스트가 대량이어서 여유공간보다 클 경우 자동으로 컨텐츠 컨테이너가 조정되고 스크롤 가능하게된다.
 * 회전 시 위치 재조정 지원
     * 화면 회전 시, 이미 표시된 팝오버는 현재 화면 상태에 맞게 위치가 자동으로 재조정되거나, 필요에 따라 자동으로 사라지게 하는 것을 선택할 수 있다.
+    * `@property (nonatomic, getter=isDismissOnRotation) BOOL dismissOnRotation;`
 *  Label 설정가능
     * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
     * 가운데 Label에 Drag 기능을 설정할 수 있다.
@@ -34,13 +37,11 @@
     * 버튼 및 중앙 Label에 image 또는 text를 설정할 수 있다.
     * Stepper, 버튼, 중앙 Label에 원하는 radius를 줄 수 있다.    
 *  long press 지원
-    * `UIStepper`처럼 long press 시 반복되어 버튼 press가 호출되고 일정 시간이 지나면 반복되는 간격이 빨라진다. 
-*  Interface Builder에서 설정가능하다. - 그러나 XCode 자체 렌더링 버그가 있기 때문에 추천하지 않는다.
-    * Swift : `@IBDesignable` `@IBInspectable`
-    * Objective-C : `IB_DESIGNABLE` `IBInspectable`
-*  **Swift** and **Objective-C** compatability
-*  Support **iOS**(***MGUStepper***) and **macOS**(***MGAStepper***).
-*  Written in Objective-C
+    * `UIStepper`처럼 long press 시 반복되어 버튼 press가 호출되고 일정 시간이 지나면 반복되는 간격이 빨라진다.
+* MGUDropdownButton
+    * Written in **Objective-C**, **Swift** and **Objective-C** compatability
+* SKUDropdownButton
+    * Written in **Swift**
 
 
 ## Preview
