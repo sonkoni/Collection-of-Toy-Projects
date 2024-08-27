@@ -63,9 +63,9 @@ SKUDropSegControl |
 ## Presets and Styles
 > Built-in configuration
 
-Text|Image|Dash|Line|fill type
----|---|---|---|---
-<img src="./screenshot/240827a1.png" width="90"> |<img src="./screenshot/240827a2.png" width="90">|<img src="./screenshot/240827a3.png" width="90">|<img src="./screenshot/240827a4.png" width="90">|<img src="./screenshot/240827a5.png" width="90">
+Text|Image|Dash|Line
+---|---|---|---
+<img src="./screenshot/240827c1.jpg" width="110"> |<img src="./screenshot/240827c2.jpg" width="110">|<img src="./screenshot/240827c3.jpg" width="110">|<img src="./screenshot/240827c4.jpg" width="110">
 
 ## Usage
 
