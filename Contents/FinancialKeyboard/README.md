@@ -61,7 +61,7 @@ SKUDropSegControl |
 <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif" width="180"> |
 
 ## Presets and Styles
-> Built-in configuration
+> - Built-in configuration
 >     - `SKUFinancialKeyboard.BtnOptions`
 
 `.none`|`.dot`|`.pm`|`.dotPm`
