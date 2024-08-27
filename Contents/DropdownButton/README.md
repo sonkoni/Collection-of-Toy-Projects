@@ -62,7 +62,7 @@ SKUDropSegControl |
 
 Text|Image|Dash|Line|fill type
 ---|---|---|---|---
-<img src="./screenshot/240827a1.png" width="180"> |<img src="./screenshot/240827a2.png" width="180">|<img src="./screenshot/240827a3.png" width="180">|<img src="./screenshot/240827a4.png" width="180">|<img src="./screenshot/240827a5.png" width="180">
+<img src="./screenshot/240827a1.png" width="160"> |<img src="./screenshot/240827a2.png" width="160">|<img src="./screenshot/240827a3.png" width="160">|<img src="./screenshot/240827a4.png" width="160">|<img src="./screenshot/240827a5.png" width="160">
 
 ## Usage
 
