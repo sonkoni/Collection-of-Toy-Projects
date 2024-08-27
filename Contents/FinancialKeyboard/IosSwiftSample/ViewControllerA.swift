@@ -33,7 +33,6 @@ class ViewControllerA: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textField1.buttonOptions = .none
         textField2.buttonOptions = .dot
         textField3.buttonOptions = .dotPm

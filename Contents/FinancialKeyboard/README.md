@@ -61,32 +61,36 @@
 > Swift
 ```swift
 
-let dropdownButton = SKUDropdownButton()
-dropdownButton.cellClass = SKUTextDropdownCell.self
-dropdownButton.dropdownData = ["전봉색상", "전값대비", "보합색"]
-dropdownButton.selectedIndex = 0
-dropdownButton.dismissOnRotation = false // 회전 시 안사라지게 할 수 있다.
-dropdownButton.placeHolderTextAlignment = .right
-dropdownButton.textAlignment = .left
-dropdownButton.addTarget(self, action: #selector(dropdownBtnValueChanged(_:)), for: .valueChanged)
-contentView.addSubview(dropdownButton)
-dropdownButton.skhPinCenterToSuperviewCenterWithFixSize(CGSize(width: 90.0, height: 28.0))
+textField = SKUFinancialTextField()
+textField.buttonOptions = .none
+textField.maxDataValue = 3000.0
+textField.alertMessage = "1 이상 3,000 이하의 숫자만 유효합니다."
+textField.completionClosure = { [weak self] (dataValue: Double) -> Void in
+    let result = min(max(1.0, dataValue), 3000.0)
+    let finalResult = lround(result)
+    self?.textField.dataValue = result; // 실제 사용되는 숫자로 바꿔줘야할 필요가 있을 수 있다
+    print("finalResult ==> \(finalResult)")
+}
+textField.dataValue = 50.0
 
 ```
 
 > Objective-C
 ```objective-c
 
-self.dropdownButton = [MGUDropdownButton new];
-self.dropdownButton.cellClass = [MGUTextDropdownCell class];
-self.dropdownButton.dropdownData = @[@"전봉색상", @"전값대비", @"보합색"];
-self.dropdownButton.dismissOnRotation = NO; // 회전 시 안사라지게 할 수 있다.
-self.dropdownButton.selectedIndex = 0;
-self.dropdownButton.placeHolderTextAlignment = NSTextAlignmentRight;
-self.dropdownButton.textAlignment = NSTextAlignmentLeft;
-[self.dropdownButton addTarget:self action:@selector(dropdownBtnValueChanged:) forControlEvents:UIControlEventValueChanged];
-[self.contentView addSubview:self.dropdownButton];
-[self.dropdownButton mgrPinCenterToSuperviewCenterWithFixSize:CGSizeMake(90.0, 28.0)];
+self.textField = [MGUFinancialTextField new];
+self.textField.buttonOptions = MGUFinancialKeyboardBtnOptionsNone;
+    
+self.textField.maxDataValue = 3000.0;
+self.textField.alertMessage = @"1 이상 3,000 이하의 숫자만 유효합니다.";
+__weak __typeof(self.textField) weakTextField = self.textField;
+self.textField.completionBlock = ^(CGFloat dataValue) {
+    CGFloat result = MIN(MAX(1.0, dataValue), 3000.0);
+    NSInteger finalResult = lround(result);
+    weakTextField.dataValue = result; // 실제 사용되는 숫자로 바꿔줘야할 필요가 있을 수 있다
+    NSLog(@"finalResult ==> %ld", finalResult);
+};
+self.textField.dataValue = 50.0;
 
 ```
 
