@@ -65,7 +65,7 @@ SKUDropSegControl |
 
 Text|Image|Dash|Line
 ---|---|---|---
-<img src="./screenshot/240827c3.jpg" width="150"> |<img src="./screenshot/240827c4.jpg" width="150">|<img src="./screenshot/240827c2.jpg" width="150">|<img src="./screenshot/240827c1.jpg" width="150">
+<img src="./screenshot/240827c3.jpg" width="170"> |<img src="./screenshot/240827c4.jpg" width="170">|<img src="./screenshot/240827c2.jpg" width="170">|<img src="./screenshot/240827c1.jpg" width="170">
 
 ## Usage
 
