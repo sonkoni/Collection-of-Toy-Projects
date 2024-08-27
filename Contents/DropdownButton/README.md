@@ -25,19 +25,12 @@
 * 회전 시 위치 재조정 지원
     * 화면 회전 시, 이미 표시된 팝오버는 현재 화면 상태에 맞게 위치가 자동으로 재조정되거나, 필요에 따라 자동으로 사라지게 하는 것을 선택할 수 있다.
     * `@property (nonatomic, getter=isDismissOnRotation) BOOL dismissOnRotation;`
-*  Label 설정가능
-    * 가운데 Label을 표기할지에 대하여 설정할 수 있다.
-    * 가운데 Label에 Drag 기능을 설정할 수 있다.
-    * 가운데 Label에 현재 Stepper의 값을 표기할 수도 있고, 원하는 문구를 넣을 수도 있다.
 *  Style presets 지원
     * 5가지의 presets 
     * presets에 추가적 커스텀 가능 
-*  커스텀 Shape 가능
-    * VisualEffectView를 배경으로 설정할 수 있다.
-    * 버튼 및 중앙 Label에 image 또는 text를 설정할 수 있다.
-    * Stepper, 버튼, 중앙 Label에 원하는 radius를 줄 수 있다.    
-*  long press 지원
-    * `UIStepper`처럼 long press 시 반복되어 버튼 press가 호출되고 일정 시간이 지나면 반복되는 간격이 빨라진다.
+*  Text alignment 설정가능 - `TextDropdownCell` 일때
+    * Place holder text alignment를 설정가능
+    * content text alignment를 설정가능
 * MGUDropdownButton
     * Written in **Objective-C**, **Swift** and **Objective-C** compatability
 * SKUDropdownButton
