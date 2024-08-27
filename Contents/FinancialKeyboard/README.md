@@ -93,7 +93,96 @@ self.textField.dataValue = 50.0;
 
 ```
 
-<!--## Documentation-->
+## Documentation
+* 만약 TextField가 `UITableViewCell` 위에 존재할때 Offset을 조정해야할 상황이 발생할 수 있다.
+    * 키보드가 등장했을 때, TextField를 가릴 수 있는 상황에서는 Offset을 조정하여 사용자 경험을 해치지 않아야한다.
+    
+```swift
+
+func handleKeyboardNotification(_ notification: Notification?) {
+        
+    guard let visibleCells = self.tableView.visibleCells as? [FTableViewCell],
+          let userInfo = notification?.userInfo,
+          let name = notification?.name,
+          let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
+    else {
+        return
+    }
+    let cell = visibleCells.first { cell in
+        if cell.minField.isFocusState {
+            return true
+        } else {
+            return false
+        }
+    }
+    self.currentTextField = cell?.minField
+        
+    let previousNotificationName = self.previousNotificationName
+    let previousKeyboardHeight = self.previousKeyboardHeight
+    self.previousNotificationName = name
+    
+    let keyboardHeight = keyboardFrame.height
+    self.previousKeyboardHeight = keyboardHeight
+
+    if previousNotificationName == name && previousKeyboardHeight == keyboardHeight {
+        return
+    }
+        
+    guard let animationCurve = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt,
+          let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double
+          else {
+              return
+    }
+
+    let options = UIView.AnimationOptions(rawValue: animationCurve << 16) // Convert the animation
+
+    if name == UIResponder.keyboardWillHideNotification {
+        let originalMaxOffsetY = self.tableView.skhMaxOffset().y - self.tableView.contentInset.bottom
+        let originalMaxOffsetYClamped = max(0.0, originalMaxOffsetY)
+        if originalMaxOffsetYClamped < self.tableView.contentOffset.y {
+            UIViewPropertyAnimator.runningPropertyAnimator(
+                withDuration: duration,
+                delay: 0.0,
+                options: options,
+                animations: {
+                self.tableView.setContentOffset(CGPoint(x: 0.0, y: originalMaxOffsetYClamped), animated: false)
+                self.view.layoutIfNeeded()
+            }, completion: { _ in
+                self.tableView.contentInset = .zero
+                self.tableView.scrollIndicatorInsets = .zero
+            })
+        } else {
+            self.tableView.contentInset = .zero
+            self.tableView.scrollIndicatorInsets = .zero
+        }
+        return
+    }
+
+    if name == UIResponder.keyboardWillShowNotification {
+        let bottomInset = keyboardHeight - self.view.safeAreaInsets.bottom
+        self.tableView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: bottomInset, right: 0.0)
+        self.tableView.scrollIndicatorInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: bottomInset, right: 0.0)
+    }
+
+    if let textField = currentTextField,
+       let window = textField.window {
+        let rect = textField.convert(textField.bounds, to: window)
+        let upLength = rect.origin.y + rect.size.height + 4.0
+        let total = upLength + keyboardHeight
+        var movingOffset = self.tableView.contentOffset
+        if total > window.bounds.size.height {
+            let move = abs(window.bounds.size.height - total)
+            movingOffset = CGPoint(x: movingOffset.x, y: movingOffset.y + move)
+        }
+
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration, delay: 0.0, options: options, animations: {
+            self.tableView.setContentOffset(movingOffset, animated: false)
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+}
+
+```
 
 ## Author
 
