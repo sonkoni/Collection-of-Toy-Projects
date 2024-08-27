@@ -100,7 +100,7 @@ self.dropdownButton.textAlignment = NSTextAlignmentLeft;
 
 ## Documentation
 
-`Swift` |`Objective-C`
+default |`self.dropdownButton.dismissOnRotation = NO;`
 ---|---
 <img src="./screenshot/Screen Recording 2024-08-27 at 13.13.11.gif" width="450">|<img src="./screenshot/Screen Recording 2024-08-27 at 13.12.36.gif" width="450">
 
