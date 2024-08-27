@@ -21,6 +21,7 @@
 ## Features
 *  범위 설정 지원
     * `@property (nonatomic, assign) CGFloat maxDataValue;`
+    * 범위 초과 시 `alertMessage` 설정가능
 *  Style presets 지원
     * `.none`
     * `.dot` ~ floating value
