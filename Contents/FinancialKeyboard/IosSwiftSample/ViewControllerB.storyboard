@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View ControllerB-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerB" id="BYZ-38-t0r" customClass="ViewControllerB" customModule="IosSwiftFinancialKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QSE-yM-MfK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemYellowColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" rowHeight="44" id="Yii-4W-JPO" customClass="FTableViewCell" customModule="IosSwiftFinancialKeyboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yii-4W-JPO" id="tkN-1A-qwQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pH3-Kq-F8w">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-ML-4P3" userLabel="Min Check Btn Container">
+                                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bm5-B5-yZm" userLabel="Min Check Button">
+                                                                    <rect key="frame" x="-3" y="4" width="50" height="35"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="tintColor" red="0.058823529411764705" green="0.15686274509803921" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" image="checkmark.circle.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="clickedMinuteCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HhM-KC-z5h"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="3NH-ML-4P3" secondAttribute="height" id="ma8-Vj-omE"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPB-s5-928" userLabel="First Divier View">
+                                                            <rect key="frame" x="44" y="0.0" width="1" height="44"/>
+                                                            <color key="backgroundColor" systemColor="separatorColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="1" id="xKB-V9-2Y1"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-4w-Ifk">
+                                                            <rect key="frame" x="45" y="0.0" width="151" height="44"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qaa-ZM-ilH">
+                                                                    <rect key="frame" x="5" y="5" width="141" height="34"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                    <connections>
+                                                                        <outlet property="delegate" destination="BYZ-38-t0r" id="zPY-vp-tVa"/>
+                                                                    </connections>
+                                                                </textField>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Qaa-ZM-ilH" firstAttribute="top" secondItem="Wgd-4w-Ifk" secondAttribute="top" constant="5" id="Tmd-Iw-gT1"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Qaa-ZM-ilH" secondAttribute="trailing" constant="5" id="bvU-6b-b3s"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Qaa-ZM-ilH" secondAttribute="bottom" constant="5" id="hhd-PA-mkH"/>
+                                                                <constraint firstItem="Qaa-ZM-ilH" firstAttribute="leading" secondItem="Wgd-4w-Ifk" secondAttribute="leading" constant="5" id="kXV-z1-400"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8I-bF-vSv" userLabel="Second Divier View">
+                                                            <rect key="frame" x="196" y="0.0" width="1" height="44"/>
+                                                            <color key="backgroundColor" systemColor="separatorColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvK-iH-fDg" userLabel="Tick Check Btn Container">
+                                                            <rect key="frame" x="197" y="0.0" width="44" height="44"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-4Z-SwQ" userLabel="Tick Check Button">
+                                                                    <rect key="frame" x="-3" y="4" width="50" height="35"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="tintColor" red="0.058823529411764705" green="0.15686274509803921" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" image="checkmark.circle.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="clickedTickCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Asv-Ix-sex"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="OvK-iH-fDg" secondAttribute="height" id="drm-r3-Ix5"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spd-1M-fxk" userLabel="Third Divier View">
+                                                            <rect key="frame" x="241" y="0.0" width="1" height="44"/>
+                                                            <color key="backgroundColor" systemColor="separatorColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQM-KL-T2a">
+                                                            <rect key="frame" x="242" y="0.0" width="151" height="44"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIN-Wu-kyK" userLabel="Modify Button2">
+                                                                    <rect key="frame" x="5" y="5" width="141" height="34"/>
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" title="1">
+                                                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </buttonConfiguration>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="pIN-Wu-kyK" firstAttribute="leading" secondItem="wQM-KL-T2a" secondAttribute="leading" constant="5" id="H1P-it-dv7"/>
+                                                                <constraint firstItem="pIN-Wu-kyK" firstAttribute="top" secondItem="wQM-KL-T2a" secondAttribute="top" constant="5" id="KHl-7j-p3v"/>
+                                                                <constraint firstAttribute="trailing" secondItem="pIN-Wu-kyK" secondAttribute="trailing" constant="5" id="Nef-P2-Kg3"/>
+                                                                <constraint firstAttribute="bottom" secondItem="pIN-Wu-kyK" secondAttribute="bottom" constant="5" id="QJ9-HV-yRY"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="g8I-bF-vSv" firstAttribute="width" secondItem="TPB-s5-928" secondAttribute="width" id="Bep-3m-jqQ"/>
+                                                        <constraint firstItem="Wgd-4w-Ifk" firstAttribute="width" secondItem="wQM-KL-T2a" secondAttribute="width" priority="999" id="buC-xL-7eC"/>
+                                                        <constraint firstItem="spd-1M-fxk" firstAttribute="width" secondItem="TPB-s5-928" secondAttribute="width" id="nRT-mn-r0A"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pH3-Kq-F8w" firstAttribute="leading" secondItem="tkN-1A-qwQ" secondAttribute="leading" id="DY2-ZF-Ym0"/>
+                                                <constraint firstItem="pH3-Kq-F8w" firstAttribute="top" secondItem="tkN-1A-qwQ" secondAttribute="top" id="HCR-MS-jQh"/>
+                                                <constraint firstAttribute="trailing" secondItem="pH3-Kq-F8w" secondAttribute="trailing" id="I1k-5m-fGm"/>
+                                                <constraint firstAttribute="bottom" secondItem="pH3-Kq-F8w" secondAttribute="bottom" id="wvE-c1-A6g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="minCheckBtn" destination="Bm5-B5-yZm" id="kZy-Y1-A22"/>
+                                            <outlet property="minTextField" destination="Qaa-ZM-ilH" id="vk9-LN-g2f"/>
+                                            <outlet property="separatorConstraint" destination="xKB-V9-2Y1" id="Jet-cK-dby"/>
+                                            <outlet property="tickCheckBtn" destination="5Al-4Z-SwQ" id="Xhd-Gv-KhQ"/>
+                                            <outlet property="tickModifyBtn" destination="pIN-Wu-kyK" id="bjb-2r-aoN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZxW-Bg-ibi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yFM-lX-nH8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QSE-yM-MfK" secondAttribute="bottom" id="GBI-db-DO8"/>
+                            <constraint firstItem="QSE-yM-MfK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UhQ-c7-KJd"/>
+                            <constraint firstItem="QSE-yM-MfK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tw5-RR-JlI"/>
+                            <constraint firstAttribute="trailing" secondItem="QSE-yM-MfK" secondAttribute="trailing" id="xa1-xZ-CU7"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="4fQ-Zv-vB7"/>
+                        <barButtonItem title="취소" style="plain" id="fo9-2o-l6B">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="o5l-6V-GnX"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="mUK-l9-QlV"/>
+                        <barButtonItem title="저장" style="done" id="A7a-zh-YvE">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="AkV-Ja-4lu"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="bWb-bI-aq9"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="QSE-yM-MfK" id="7Qv-iQ-cl4"/>
+                        <outlet property="testView" destination="prP-Rr-JT8" id="UNg-OQ-Nle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="prP-Rr-JT8" customClass="TableViewHeaderFooterView" customModule="IosSwiftFinancialKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xM2-Rw-mpL">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분차트 단위" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEx-qH-L4Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-os-2xh">
+                                    <rect key="frame" x="196" y="0.0" width="1" height="44"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="9qt-ED-hIL"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="틱차트 단위" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHP-ZK-r9k">
+                                    <rect key="frame" x="197" y="0.0" width="196" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="FHP-ZK-r9k" firstAttribute="width" secondItem="vEx-qH-L4Z" secondAttribute="width" id="6TQ-Of-9L7"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="vx3-o3-bho"/>
+                    <constraints>
+                        <constraint firstItem="xM2-Rw-mpL" firstAttribute="leading" secondItem="vx3-o3-bho" secondAttribute="leading" id="EYp-w5-mcp"/>
+                        <constraint firstItem="xM2-Rw-mpL" firstAttribute="top" secondItem="prP-Rr-JT8" secondAttribute="top" id="Lcs-AZ-iwJ"/>
+                        <constraint firstItem="vx3-o3-bho" firstAttribute="trailing" secondItem="xM2-Rw-mpL" secondAttribute="trailing" id="NIx-P1-q3R"/>
+                        <constraint firstItem="xM2-Rw-mpL" firstAttribute="bottom" secondItem="prP-Rr-JT8" secondAttribute="bottom" id="bYy-WR-V2D"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="separatorConstraint" destination="9qt-ED-hIL" id="lPH-B1-PDR"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-981" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
