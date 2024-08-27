@@ -1,4 +1,4 @@
-# FinancialKeyboard - 작성중 
+# FinancialKeyboard 
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white)
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
@@ -98,6 +98,24 @@ self.textField.dataValue = 50.0;
     * 키보드가 등장했을 때, TextField를 가릴 수 있는 상황에서는 Offset을 조정하여 사용자 경험을 해치지 않아야한다.
     
 ```swift
+
+func setupKeyboardObserver() {
+    let nc = NotificationCenter.default
+    weak var weakSelf = self
+    showObserver = nc.addObserver(forName: UIResponder.keyboardWillShowNotification,
+                                  object: nil,
+                                  queue: OperationQueue.main) { note in
+        weakSelf?.showKeyboard = true
+        weakSelf?.handleKeyboardNotification(note)
+    }
+
+    hideObserver = nc.addObserver(forName: UIResponder.keyboardWillHideNotification,
+                                  object: nil,
+                                  queue: OperationQueue.main) { note in
+        weakSelf?.showKeyboard = false
+        weakSelf?.handleKeyboardNotification(note)
+    }
+}
 
 func handleKeyboardNotification(_ notification: Notification?) {
         
