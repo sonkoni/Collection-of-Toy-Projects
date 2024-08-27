@@ -44,9 +44,9 @@
 > - SKUFinancialKeyboard (Written in Swift), MGUFinancialKeyboard (Written in Objective-C, **Swift** and **Objective-C** compatability)
 >   - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Number Keyboard**에 대한 요구사항이 있어서 제작함.
 
-SKUDropdownButton - line | SKUDropdownButton - text | SKUDropdownButton - dash | SKUDropdownButton - image | SKUDropdownButton - fill type
----|---|---|---|---
-<img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.41.31.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.42.30.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.05.gif" width="180">
+SKUDropdownButton - line | SKUDropdownButton - text
+---|---
+<img src="./screenshot/240827d1.gif" width="180"> | <img src="./screenshot/240827d2.gif" width="180">
 
 ## Presets and Styles
 > - Built-in configuration

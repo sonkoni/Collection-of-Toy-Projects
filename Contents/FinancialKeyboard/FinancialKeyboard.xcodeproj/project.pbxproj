@@ -154,6 +154,8 @@
 		84454BB02C7DA43600674A95 /* 240827c4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 240827c4.jpg; sourceTree = "<group>"; };
 		84454BB12C7DA43600674A95 /* 240827c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 240827c1.jpg; sourceTree = "<group>"; };
 		84454BB22C7DA43600674A95 /* 240827c2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 240827c2.jpg; sourceTree = "<group>"; };
+		84454BB32C7DB3E600674A95 /* 240827d1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 240827d1.gif; sourceTree = "<group>"; };
+		84454BB42C7DB3E600674A95 /* 240827d2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 240827d2.gif; sourceTree = "<group>"; };
 		847BA7B72B4E807A00361CA1 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847BA7BB2B4E808200361CA1 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847BA7BF2B4E808800361CA1 /* GraphicsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GraphicsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +302,8 @@
 		84454B9E2C7D9D9700674A95 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
+				84454BB32C7DB3E600674A95 /* 240827d1.gif */,
+				84454BB42C7DB3E600674A95 /* 240827d2.gif */,
 				84454BAD2C7DA30100674A95 /* 240827b1.jpg */,
 				84454BA72C7D9DB500674A95 /* 240827a1.png */,
 				84454BA12C7D9DB500674A95 /* 240827a2.png */,
