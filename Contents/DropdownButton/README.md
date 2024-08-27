@@ -90,9 +90,6 @@ self.dropdownButton.textAlignment = NSTextAlignmentLeft;
 [self.dropdownButton mgrPinCenterToSuperviewCenterWithFixSize:CGSizeMake(90.0, 28.0)];
 
 ```
-> Interface Builder
-
-<img src="./screenshot/230522a1.jpg" width="200">
 
 ## Documentation
 
