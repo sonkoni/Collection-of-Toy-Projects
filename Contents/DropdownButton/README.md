@@ -62,20 +62,32 @@ SKUDropSegControl |
 > Swift
 ```swift
 
-stepper = MGUStepper(configuration: MGUStepperConfiguration.forgeDrop())
-if let stepper = stepper {
-    containerView.addSubview(stepper) // intrinsicContentSize 설정됨
-    stepper.addTarget(self, action:#selector(stepperValueChanged(_:)), for: .valueChanged)
-}
+let dropdownButton = SKUDropdownButton()
+dropdownButton.cellClass = SKUTextDropdownCell.self
+dropdownButton.dropdownData = ["전봉색상", "전값대비", "보합색"]
+dropdownButton.selectedIndex = 0
+dropdownButton.dismissOnRotation = false // 회전 시 안사라지게 할 수 있다.
+dropdownButton.placeHolderTextAlignment = .right
+dropdownButton.textAlignment = .left
+dropdownButton.addTarget(self, action: #selector(dropdownBtnValueChanged(_:)), for: .valueChanged)
+contentView.addSubview(dropdownButton)
+dropdownButton.skhPinCenterToSuperviewCenterWithFixSize(CGSize(width: 90.0, height: 28.0))
 
 ```
 
 > Objective-C
 ```objective-c
 
-_stepper = [[MGUStepper alloc] initWithConfiguration:[MGUStepperConfiguration forgeDropConfiguration]];
-[self.view addSubview:self.stepper]; // intrinsicContentSize 설정됨
-[self.stepper addTarget:self action:@selector(stepperValueChanged:) forControlEvents:UIControlEventValueChanged];
+self.dropdownButton = [MGUDropdownButton new];
+self.dropdownButton.cellClass = [MGUTextDropdownCell class];
+self.dropdownButton.dropdownData = @[@"전봉색상", @"전값대비", @"보합색"];
+self.dropdownButton.dismissOnRotation = NO; // 회전 시 안사라지게 할 수 있다.
+self.dropdownButton.selectedIndex = 0;
+self.dropdownButton.placeHolderTextAlignment = NSTextAlignmentRight;
+self.dropdownButton.textAlignment = NSTextAlignmentLeft;
+[self.dropdownButton addTarget:self action:@selector(dropdownBtnValueChanged:) forControlEvents:UIControlEventValueChanged];
+[self.contentView addSubview:self.dropdownButton];
+[self.dropdownButton mgrPinCenterToSuperviewCenterWithFixSize:CGSizeMake(90.0, 28.0)];
 
 ```
 > Interface Builder
