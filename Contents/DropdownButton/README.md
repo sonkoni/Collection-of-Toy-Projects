@@ -104,7 +104,7 @@ self.dropdownButton.textAlignment = NSTextAlignmentLeft;
     ```objective-c
     @property (nonatomic, getter=isDismissOnRotation) BOOL dismissOnRotation;
     
-    self.dropdownButton.dismissOnRotation = NO;
+    self.dropdownButton.dismissOnRotation = NO; // 회전 시 팝업된 컨텐츠의 위치 재조정
     ```
     
 default |`self.dropdownButton.dismissOnRotation = NO;`
