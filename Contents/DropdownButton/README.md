@@ -27,10 +27,10 @@
     * `@property (nonatomic, getter=isDismissOnRotation) BOOL dismissOnRotation;`
 *  Style presets 지원
     * 5가지의 presets 
-    * presets에 추가적 커스텀 가능 
+    * Presets에 추가적 커스텀 가능 
 *  Text alignment 설정가능 - `TextDropdownCell` 일때
     * Place holder text alignment를 설정가능
-    * content text alignment를 설정가능
+    * Content text alignment를 설정가능
 * MGUDropdownButton
     * Written in **Objective-C**, **Swift** and **Objective-C** compatability
 * SKUDropdownButton
@@ -42,7 +42,7 @@
 >   - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Dropdown Button**에 대한 요구사항이 있어서 제작함.
 > - MGUDropdownButton (Written in Objective-C, **Swift** and **Objective-C** compatability)
  
-SKUDropdownButton | SKUDropdownButton | SKUDropdownButton | SKUDropdownButton | SKUDropdownButton
+SKUDropdownButton - line | SKUDropdownButton | SKUDropdownButton | SKUDropdownButton | SKUDropdownButton
 ---|---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.41.31.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.42.30.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.05.gif" width="180">
 
