@@ -13,9 +13,8 @@
 >   - SKUFinancialTextField 와 연동
 >   - Written in **Swift**
 
-- 숫자 값을 입력받을 수 있는 Number Keyboard
+- `TextField` 와 반응하여 숫자 및 특정 기호를 입력받을 수 있는 커스텀 Number Keyboard
 - `UIInputView` 를 기반으로 제작함
-- `TextField` 와 반응하는 iOS 용 커스텀 Number Keyboard
 - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 text field에 반응하는 **Number Keyboard**에 대한 요구사항이 있어서 제작함.
 <p align="center"><img src="./screenshot/240826a3.jpg" width="400"></p>
 
