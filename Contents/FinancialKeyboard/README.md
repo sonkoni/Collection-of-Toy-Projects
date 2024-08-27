@@ -49,17 +49,6 @@ SKUDropdownButton - line | SKUDropdownButton - text | SKUDropdownButton - dash |
 ---|---|---|---|---
 <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.39.04.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.40.25.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.41.31.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.42.30.gif" width="180"> | <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.05.gif" width="180">
 
-
-<br/>
-
-> - SKUDropSegControl (Written in swift)
->   - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Dropdown SegmentedControl**에 대한 요구사항이 있어서 제작함.
-> - MGUDropSegControl (Written in Objective-C, **Swift** and **Objective-C** compatability)
-
-SKUDropSegControl |
----|
-<img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif" width="180"> |
-
 ## Presets and Styles
 > - Built-in configuration
 >     - `SKUFinancialKeyboard.BtnOptions`
