@@ -44,9 +44,9 @@
 > - SKUFinancialKeyboard (Written in Swift), MGUFinancialKeyboard (Written in Objective-C, **Swift** and **Objective-C** compatability)
 >   - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Number Keyboard**에 대한 요구사항이 있어서 제작함.
 
-SKUDropdownButton - line | SKUDropdownButton - text
+`.none` | `.dot`
 ---|---
-<img src="./screenshot/240827d1.gif" width="180"> | <img src="./screenshot/240827d2.gif" width="180">
+<img src="./screenshot/240827d1.gif" width="225"> | <img src="./screenshot/240827d2.gif" width="225">
 
 ## Presets and Styles
 > - Built-in configuration
