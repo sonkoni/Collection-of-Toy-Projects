@@ -38,9 +38,9 @@
 
 
 ## Preview
-> - SKUDropdownButton (Written in swift)
+> - SKUDropdownButton (Written in Swift), MGUDropdownButton (Written in Objective-C, **Swift** and **Objective-C** compatability)
 >   - [MTS 프로젝트](https://www.youtube.com/playlist?list=PLFPYBBPL_u8oSMkmvaVAF8Gg3Uhb4dOWG)를 진행하면서 증권사 앱에서 사용되는 **Dropdown Button**에 대한 요구사항이 있어서 제작함.
-> - MGUDropdownButton (Written in Objective-C, **Swift** and **Objective-C** compatability)
+ 
  
 SKUDropdownButton - line | SKUDropdownButton - text | SKUDropdownButton - dash | SKUDropdownButton - image | SKUDropdownButton - fill type
 ---|---|---|---|---
