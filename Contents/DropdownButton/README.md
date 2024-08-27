@@ -58,13 +58,6 @@ SKUDropSegControl |
 ---|
 <img src="./screenshot/Simulator Screen Recording - iPhone 15 Pro - 2024-08-26 at 17.43.34.gif" width="180"> |
 
-## Presets and Styles
-> Built-in configuration
-
-Default|iOS7 Style|iOS13 Style|IV-Drop1|IV-Drop2
----|---|---|---|---
-<img src="./screenshot/230522c5.jpg" width="225"> |<img src="./screenshot/230522c2.jpg" width="225">|<img src="./screenshot/230522c1.jpg" width="225">|<img src="./screenshot/230522c3.jpg" width="225">|<img src="./screenshot/230522c4.jpg" width="225">
-
 ## Usage
 
 > Swift
