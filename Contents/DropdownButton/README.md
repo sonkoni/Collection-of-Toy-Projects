@@ -60,9 +60,7 @@ SKUDropSegControl |
 ## Presets and Styles
 > Built-in configuration
 
-<!--SKUDropdownButton - line | SKUDropdownButton - text | SKUDropdownButton - dash | SKUDropdownButton - image | SKUDropdownButton - fill type-->
-
-Text|Image|iOS13 Style|IV-Drop1|IV-Drop2
+Text|Image|Dash|Line|fill type
 ---|---|---|---|---
 <img src="./screenshot/240827a1.png" width="180"> |<img src="./screenshot/240827a2.png" width="180">|<img src="./screenshot/240827a3.png" width="180">|<img src="./screenshot/240827a4.png" width="180">|<img src="./screenshot/240827a5.png" width="180">
 
