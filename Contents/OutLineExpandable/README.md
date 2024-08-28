@@ -17,15 +17,16 @@
 <p align="center"><img src="./screenshot/240828a4.jpg" width="400"></p>
 
 ## Features
-*  휠의 회전으로 입력값을 설정 가능케 함
-    * 손잡이 부분이 아니라도 휠 반경 전체에서 제스처 동작이 시작될 수 있음
-*  제스처가 시작되고 중심으로부터 일정한 Radius를 벗어나면 제스처를 disable 시켜서 오작동을 방지함    
-*  Sound 지원
-    * 휠이 돌아가면서 값이 변화할 때마다 사용자에게 Feedback을 줄 수 있는 Sound 설정가능 
-    * Sound Source는 Simulator에서 추출함     
-*  **Swift** and **Objective-C** compatability
-*  Written in Objective-C
-
+* 계층적 데이터의 구조를 잡아준다
+* 실제로 사용될 컨텐츠는 제네릭으로 감싸는 구조
+* 서브 아이템을 열고 닫을 수 있는 Flag를 지원하여 사용될 UI(TableView 또는 CollectionView)에서 이를 적절히 이용할 수 있다
+* recurrence 기능을 제공하여 일괄적인 데이터 업데이트 가능
+* 특정 아이템에서 자신의 indexPath에 대한 정보 Get 가능
+* UI 에서 Drag & Drop 이용 시 아카이브 데이터 제공     
+* MGROutlineItem
+    * Written in **Objective-C**, **Swift** and **Objective-C** compatability
+* SKHOutlineItem
+    * Written in **Swift**
 
 ## Preview
 > - MGROutlineItem (***Objective-C***), SKHOutlineItem (***Swift***) & UI
