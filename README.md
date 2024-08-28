@@ -69,7 +69,8 @@
 
 ## Tree
 *Tree 구조를 형성하는 클래스 및 UI(TableView OR CollectionView)*
-- [OutlineItem + (TableView OR CollectionView)](./Contents/OutLineExpandable) - Tree 알고리즘과 UI(Expandable)
+- [OutlineItem + (TableView OR CollectionView)](./Contents/OutLineExpandable)
+    - Tree 알고리즘과 UI(Expandable + Drag and Drop) 구현을 보여주는 프로젝트
 
 **[back to top](#contents)** 
  
