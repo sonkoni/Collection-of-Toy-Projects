@@ -10,7 +10,6 @@
 #import "Item.h"
 #import "ViewController.h"
 #import "ViewControllerX1.h"
-#import "ViewControllerX2.h"
 #import "ViewControllerY1.h"
 #import "ViewControllerY2.h"
 
@@ -117,8 +116,6 @@
     if (indexPath.section == 1) {
         if(indexPath.row == 0){
             viewController = [ViewControllerX1 new];
-        } else if (indexPath.row == 1) {
-            viewController = [ViewControllerX2 new];
         }
         if (@available(iOS 14, *)) {
             viewController.navigationItem.title = [NSString stringWithFormat:@"%@ %@", listContentConfiguration.text, listContentConfiguration.secondaryText];

@@ -30,8 +30,7 @@
         
         Item *item0 = [[Item alloc] initWithText:@"NMOutlineView" detailText:@"NMOutlineView를 알아보자."];
         
-        Item *item2 = [[Item alloc] initWithText:@"UITableView" detailText:@"iOS 13"];
-        Item *item3 = [[Item alloc] initWithText:@"UITableView" detailText:@"iOS 14"];
+        Item *item2 = [[Item alloc] initWithText:@"UITableView" detailText:@"..."];
         
         Item *item4 = [[Item alloc] initWithText:@"UICollectionView" detailText:@"iOS 13"];
         Item *item5 = [[Item alloc] initWithText:@"UICollectionView" detailText:@"iOS 14"];
@@ -45,7 +44,7 @@
         
         NSMutableDictionary <NSString *, NSArray <Item *>*>* section1 = @{
             @"TableView 이용" :
-        @[item2, item3]
+        @[item2]
         }.mutableCopy;
 
         NSMutableDictionary <NSString *, NSArray <Item *>*>* section2 = @{

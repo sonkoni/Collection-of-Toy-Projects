@@ -6,24 +6,25 @@
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
 //
 
+@import BaseKit;
+@import IosKit;
+
 #import "ViewControllerY2.h"
-#import "MGROutlineItem.h"
-#import "MGROutlineContent.h"
-#import "MGROutlineIndicatorLineView.h"
+#import "OutlineContent.h"
+#import "OutlineIndicatorLineView.h"
 #import "EmptyViewController.h"
-#import "NSArray+MGRBase.h"
 
 typedef NSString * MGRMainSection NS_STRING_ENUM;
 static MGRMainSection const mainSection  = @"mainSection";
 
 @interface ViewControllerY2 () <UICollectionViewDelegate, UICollectionViewDragDelegate, UICollectionViewDropDelegate>
 
-@property (nonatomic, strong) UICollectionViewDiffableDataSource <MGRMainSection, MGROutlineItem <MGROutlineContent *>*>*dataSource;
-@property (nonatomic, strong, readonly) NSDiffableDataSourceSectionSnapshot <MGROutlineItem <MGROutlineContent *>*>*sectionSnapshot; // @dynamic
+@property (nonatomic, strong) UICollectionViewDiffableDataSource <MGRMainSection, MGROutlineItem <OutlineContent *>*>*dataSource;
+@property (nonatomic, strong, readonly) NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*sectionSnapshot; // @dynamic
 @property (nonatomic, strong, nullable) MGROutlineItemLocation dropLocationInfoValue;
 @property (nonatomic, strong) UICollectionView *outlineCollectionView;
-@property (nonatomic, strong) NSMutableArray <MGROutlineItem <MGROutlineContent *>*>*menuItems;
-@property (nonatomic, strong) MGROutlineIndicatorLineView *indicatorLineView;
+@property (nonatomic, strong) NSMutableArray <MGROutlineItem <OutlineContent *>*>*menuItems;
+@property (nonatomic, strong) OutlineIndicatorLineView *indicatorLineView;
 @property (nonatomic, strong) UIView *indicatorSuperFaceView;
 @property (nonatomic) CGFloat indentationWidth; // 디폴트 20.0으로 잡는다.
 
@@ -48,56 +49,56 @@ static MGRMainSection const mainSection  = @"mainSection";
 - (void)_commonInit {
     Class classObjc = [EmptyViewController class];
     
-    MGROutlineItem <MGROutlineContent *>*item0 =
-    [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Compositional Layout"] subitems:@[
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Getting Started"] subitems:@[
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Grid" viewControllerClass:classObjc]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Inset Items Grid" viewControllerClass:classObjc]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Two-Column Grid" viewControllerClass:classObjc]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Per-Section Layout"] subitems:@[
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Distinct Sections" viewControllerClass:classObjc]],
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Adaptive Sections" viewControllerClass:classObjc]]]]]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Advanced Layouts"] subitems:@[
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Supplementary Views"] subitems:@[
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Item Badges" viewControllerClass:classObjc]],
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Section Headers/Footers" viewControllerClass:classObjc]],
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Pinned Section Headers" viewControllerClass:classObjc]]]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Section Background Decoration" viewControllerClass:classObjc]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Nested Groups" viewControllerClass:classObjc]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Orthogonal Sections"] subitems:@[
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Orthogonal Sections" viewControllerClass:classObjc]],
-                [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Orthogonal Section Behaviors" viewControllerClass:classObjc]]]]]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Conference App"] subitems:@[
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Videos" viewControllerClass:classObjc]],
-            [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"News" viewControllerClass:classObjc]]]]
+    MGROutlineItem <OutlineContent *>*item0 =
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Compositional Layout"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Getting Started"] subitems:@[
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Grid" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Inset Items Grid" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Two-Column Grid" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Per-Section Layout"] subitems:@[
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Distinct Sections" viewControllerClass:classObjc]],
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Adaptive Sections" viewControllerClass:classObjc]]]]]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Advanced Layouts"] subitems:@[
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Supplementary Views"] subitems:@[
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Item Badges" viewControllerClass:classObjc]],
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Section Headers/Footers" viewControllerClass:classObjc]],
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Pinned Section Headers" viewControllerClass:classObjc]]]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Section Background Decoration" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Nested Groups" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Orthogonal Sections"] subitems:@[
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Orthogonal Sections" viewControllerClass:classObjc]],
+                [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Orthogonal Section Behaviors" viewControllerClass:classObjc]]]]]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Conference App"] subitems:@[
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Videos" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"News" viewControllerClass:classObjc]]]]
     ]];
     
     MGROutlineItem *item1 =
-    [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Diffable Data Source"] subitems:@[
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Mountains Search" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Settings: Wi-Fi" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Insertion Sort Visualization" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"UITableView: Editing" viewControllerClass:classObjc]]]];
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Diffable Data Source"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Mountains Search" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Settings: Wi-Fi" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Insertion Sort Visualization" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"UITableView: Editing" viewControllerClass:classObjc]]]];
     
     MGROutlineItem *item2 =
-    [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Lists"] subitems:@[
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Simple List" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Reorderable List" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"List Appearances" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"List with Custom Cells" viewControllerClass:classObjc]]]];
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Lists"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Simple List" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Reorderable List" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"List Appearances" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"List with Custom Cells" viewControllerClass:classObjc]]]];
     
     MGROutlineItem *item3 =
-    [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Outlines"] subitems:@[
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Emoji Explorer" viewControllerClass:classObjc]],
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Emoji Explorer - List" viewControllerClass:classObjc]]]];
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Outlines"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Emoji Explorer" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Emoji Explorer - List" viewControllerClass:classObjc]]]];
     
     MGROutlineItem *item4 =
-    [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Cell Configurations"] subitems:@[
-        [MGROutlineItem outlineWithContentItem:[MGROutlineContent itemWithTitle:@"Custom Configurations" viewControllerClass:classObjc]]]];
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Cell Configurations"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Custom Configurations" viewControllerClass:classObjc]]]];
     
     _menuItems = @[item0, item1, item2, item3, item4].mutableCopy;
     
-    _indicatorLineView = [MGROutlineIndicatorLineView new];
+    _indicatorLineView = [OutlineIndicatorLineView new];
     _indicatorSuperFaceView = [UIView new];
     self.indicatorSuperFaceView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.2];
     self.indicatorSuperFaceView.userInteractionEnabled = NO;
@@ -123,7 +124,7 @@ static MGRMainSection const mainSection  = @"mainSection";
     //! UICollectionViewCellRegistration iOS 14 이상부터 가능.
     UICollectionViewCellRegistration *containerCellRegistration =
     [UICollectionViewCellRegistration registrationWithCellClass:[UICollectionViewListCell class]
-    configurationHandler:^(__kindof UICollectionViewListCell * _Nonnull cell, NSIndexPath * _Nonnull indexPath, MGROutlineItem <MGROutlineContent *>*  _Nonnull item) {
+    configurationHandler:^(__kindof UICollectionViewListCell * _Nonnull cell, NSIndexPath * _Nonnull indexPath, MGROutlineItem <OutlineContent *>*  _Nonnull item) {
         
         // Populate the cell with our item description.
         UIListContentConfiguration *contentConfiguration = [cell defaultContentConfiguration];
@@ -141,7 +142,7 @@ static MGRMainSection const mainSection  = @"mainSection";
 
     UICollectionViewCellRegistration *cellRegistration =
     [UICollectionViewCellRegistration registrationWithCellClass:[UICollectionViewListCell class]
-    configurationHandler:^(__kindof UICollectionViewListCell * _Nonnull cell, NSIndexPath * _Nonnull indexPath, MGROutlineItem <MGROutlineContent *>*  _Nonnull item) {
+    configurationHandler:^(__kindof UICollectionViewListCell * _Nonnull cell, NSIndexPath * _Nonnull indexPath, MGROutlineItem <OutlineContent *>*  _Nonnull item) {
         
         // Populate the cell with our item description.
         UIListContentConfiguration *contentConfiguration = [cell defaultContentConfiguration];
@@ -153,7 +154,7 @@ static MGRMainSection const mainSection  = @"mainSection";
 
     _dataSource =
     [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.outlineCollectionView
-    cellProvider:^UICollectionViewCell * _Nullable(UICollectionView *collectionView, NSIndexPath *indexPath, MGROutlineItem <MGROutlineContent *>*item) {
+    cellProvider:^UICollectionViewCell * _Nullable(UICollectionView *collectionView, NSIndexPath *indexPath, MGROutlineItem <OutlineContent *>*item) {
         // Return the cell.
         if (item.subitems.count == 0) {
             return [collectionView dequeueConfiguredReusableCellWithRegistration:cellRegistration
@@ -167,7 +168,7 @@ static MGRMainSection const mainSection  = @"mainSection";
     }];
 
     // load our initial data
-    NSDiffableDataSourceSectionSnapshot <MGROutlineItem <MGROutlineContent *>*>*snapshot = [self sectionSnapshot];
+    NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*snapshot = [self sectionSnapshot];
     
     [self.dataSource applySnapshot:snapshot
                          toSection:mainSection
@@ -183,13 +184,13 @@ static MGRMainSection const mainSection  = @"mainSection";
 
 
 #pragma mark - 세터 & 게터
-- (NSDiffableDataSourceSectionSnapshot<MGROutlineItem <MGROutlineContent *>*> *)sectionSnapshot {
-    NSDiffableDataSourceSectionSnapshot <MGROutlineItem <MGROutlineContent *>*>*sectionSnapshot = [NSDiffableDataSourceSectionSnapshot new];
-    void (^__block addItemsBlock)(NSArray <MGROutlineItem <MGROutlineContent *>*>*, MGROutlineItem <MGROutlineContent *>* _Nullable);
+- (NSDiffableDataSourceSectionSnapshot<MGROutlineItem <OutlineContent *>*> *)sectionSnapshot {
+    NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*sectionSnapshot = [NSDiffableDataSourceSectionSnapshot new];
+    void (^__block addItemsBlock)(NSArray <MGROutlineItem <OutlineContent *>*>*, MGROutlineItem <OutlineContent *>* _Nullable);
 
-    __weak __block __typeof(addItemsBlock) weakAddItemsBlock = addItemsBlock = ^(NSArray <MGROutlineItem <MGROutlineContent *>*>*menuItems, MGROutlineItem <MGROutlineContent *>* _Nullable parent){
+    __weak __block __typeof(addItemsBlock) weakAddItemsBlock = addItemsBlock = ^(NSArray <MGROutlineItem <OutlineContent *>*>*menuItems, MGROutlineItem <OutlineContent *>* _Nullable parent){
         [sectionSnapshot appendItems:menuItems intoParentItem:parent];
-        for (MGROutlineItem <MGROutlineContent *>*menuItem in menuItems) {
+        for (MGROutlineItem <OutlineContent *>*menuItem in menuItems) {
             if (menuItem.subitems.count > 0) {
                 weakAddItemsBlock(menuItem.subitems, menuItem);
             }
@@ -204,7 +205,7 @@ static MGRMainSection const mainSection  = @"mainSection";
 #pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    MGROutlineItem <MGROutlineContent *>*outlineItem = [self.dataSource itemIdentifierForIndexPath:indexPath];
+    MGROutlineItem <OutlineContent *>*outlineItem = [self.dataSource itemIdentifierForIndexPath:indexPath];
     if (outlineItem == nil) {
         return;
     }
@@ -221,7 +222,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 //! ~ Required
 - (NSArray<UIDragItem *> *)collectionView:(UICollectionView *)collectionView
              itemsForBeginningDragSession:(id<UIDragSession>)session atIndexPath:(NSIndexPath *)indexPath {
-    MGROutlineItem <MGROutlineContent *>*item = [self.dataSource itemIdentifierForIndexPath:indexPath];
+    MGROutlineItem <OutlineContent *>*item = [self.dataSource itemIdentifierForIndexPath:indexPath];
     NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithObject:item];
     UIDragItem *dragItem = [[UIDragItem alloc] initWithItemProvider:itemProvider];
     dragItem.localObject = item;
@@ -250,7 +251,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
               itemsForAddingToDragSession:(id<UIDragSession>)session
                               atIndexPath:(NSIndexPath *)indexPath
                                     point:(CGPoint)point {
-    MGROutlineItem <MGROutlineContent *>*item = [self.dataSource itemIdentifierForIndexPath:indexPath];
+    MGROutlineItem <OutlineContent *>*item = [self.dataSource itemIdentifierForIndexPath:indexPath];
     NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithObject:item];
     UIDragItem *dragItem = [[UIDragItem alloc] initWithItemProvider:itemProvider];
     dragItem.localObject = item;
@@ -303,10 +304,10 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
         [collectionView.indexPathsForVisibleItems containsObject:destinationIndexPath]) {  // 현재 collectionView 위에서 드래깅 되고 있을 때.
         
         UIDragItem *sourceItem = session.items.firstObject;
-        MGROutlineItem <MGROutlineContent *>*sourceOutlineItem = sourceItem.localObject;
-        MGROutlineItem <MGROutlineContent *>*currentGestureItem = [self.dataSource itemIdentifierForIndexPath:destinationIndexPath];
+        MGROutlineItem <OutlineContent *>*sourceOutlineItem = sourceItem.localObject;
+        MGROutlineItem <OutlineContent *>*currentGestureItem = [self.dataSource itemIdentifierForIndexPath:destinationIndexPath];
 //      NSIndexPath *sourceIndexPath = [self.dataSource indexPathForItemIdentifier:sourceOutlineItem];
-        NSArray <MGROutlineItem <MGROutlineContent *>*>*recurrenceAllSubitems = [sourceOutlineItem recurrenceAllSubitems];
+        NSArray <MGROutlineItem <OutlineContent *>*>*recurrenceAllSubitems = [sourceOutlineItem recurrenceAllSubitems];
         
         if ([sourceOutlineItem isEqual:currentGestureItem] == NO &&
             [recurrenceAllSubitems containsObject:currentGestureItem] == NO) {
@@ -350,10 +351,10 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
     id <UICollectionViewDropItem>itemToDrop = coordinator.items.firstObject;
     NSIndexPath *sourceIndexPath = itemToDrop.sourceIndexPath;
     UIDragItem *dragItem = itemToDrop.dragItem;
-    MGROutlineItem <MGROutlineContent *>*sourceOutlineItem = dragItem.localObject;
-//    MGROutlineItem <MGROutlineContent *>*oldSourceItemSuper = sourceOutlineItem.superItem;
+    MGROutlineItem <OutlineContent *>*sourceOutlineItem = dragItem.localObject;
+//    MGROutlineItem <OutlineContent *>*oldSourceItemSuper = sourceOutlineItem.superItem;
 //    NSIndexPath *finalFingerLocationIndexPath = coordinator.destinationIndexPath;
-//    MGROutlineItem <MGROutlineContent *>*finalFingerLocationOutlineItem = [self.dataSource itemIdentifierForIndexPath:finalFingerLocationIndexPath];
+//    MGROutlineItem <OutlineContent *>*finalFingerLocationOutlineItem = [self.dataSource itemIdentifierForIndexPath:finalFingerLocationIndexPath];
     
     if (self.dropLocationInfoValue == nil) {
         [coordinator dropItem:dragItem toItemAtIndexPath:sourceIndexPath];
@@ -365,7 +366,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
     
     if (coordinator.proposal.operation == UIDropOperationCopy) {
         NSMutableArray <MGROutlineItem *>*reloadItems = @[sourceOutlineItem].mutableCopy;
-        MGROutlineItem <MGROutlineContent *>*willCloseItem = nil;
+        MGROutlineItem <OutlineContent *>*willCloseItem = nil;
         if (sourceOutlineItem.superItem != nil && sourceOutlineItem.superItem.subitems.count == 1) {
             willCloseItem = sourceOutlineItem.superItem;
         }
@@ -385,7 +386,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
                 [self.menuItems insertObject:sourceOutlineItem atIndex:0];
             }
         } else { // 들어가게 되는 곳이 루트 아이템이 아닐 경우.
-            MGROutlineItem <MGROutlineContent *>*targetItem = self.dropLocationInfoValue.superItem;
+            MGROutlineItem <OutlineContent *>*targetItem = self.dropLocationInfoValue.superItem;
             [reloadItems addObject:targetItem];
             if (self.dropLocationInfoValue.afterItem != nil) {
                 [targetItem insertSubitems:@[sourceOutlineItem] afterItem:self.dropLocationInfoValue.afterItem];
@@ -396,10 +397,10 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
             }
         }
         
-        NSDiffableDataSourceSectionSnapshot <MGROutlineItem <MGROutlineContent *>*>*sectionSnapshot = [self.dataSource snapshotForSection:mainSection];
-        MGROutlineItem <MGROutlineContent *>*targetItem = self.dropLocationInfoValue.superItem;
+        NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*sectionSnapshot = [self.dataSource snapshotForSection:mainSection];
+        MGROutlineItem <OutlineContent *>*targetItem = self.dropLocationInfoValue.superItem;
         
-        NSMutableArray <MGROutlineItem <MGROutlineContent *>*>*expandedItems = [sectionSnapshot expandedItems].mutableCopy;
+        NSMutableArray <MGROutlineItem <OutlineContent *>*>*expandedItems = [sectionSnapshot expandedItems].mutableCopy;
         if (willCloseItem != nil) {
             [reloadItems addObject:willCloseItem];
             [expandedItems removeObject:willCloseItem];
@@ -442,7 +443,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
     self.dropLocationInfoValue = nil;
     return;
     //
-    //        NSDiffableDataSourceSectionSnapshot <MGROutlineItem <MGROutlineContent *>*>*deleteSectionSnapshot =
+    //        NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*deleteSectionSnapshot =
     //        [sectionSnapshot snapshotOfParentItem:sourceOutlineItem includingParentItem:YES];
     //        [sectionSnapshot deleteItems:deleteSectionSnapshot.items];
 }
@@ -470,8 +471,8 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
                                     dropSessionDidUpdate:(id<UIDropSession>)session
                                 withDestinationIndexPath:(NSIndexPath *)destinationIndexPath {
     UIDragItem *sourceItem = session.items.firstObject;
-    MGROutlineItem <MGROutlineContent *>*sourceOutlineItem = sourceItem.localObject;
-    MGROutlineItem <MGROutlineContent *>*currentGestureItem = [self.dataSource itemIdentifierForIndexPath:destinationIndexPath];
+    MGROutlineItem <OutlineContent *>*sourceOutlineItem = sourceItem.localObject;
+    MGROutlineItem <OutlineContent *>*currentGestureItem = [self.dataSource itemIdentifierForIndexPath:destinationIndexPath];
 //    NSIndexPath *sourceIndexPath = [self.dataSource indexPathForItemIdentifier:sourceOutlineItem];
 //    UICollectionViewCell *sourceCell = [collectionView cellForItemAtIndexPath:sourceIndexPath];
     UICollectionViewCell *currentCell = [collectionView cellForItemAtIndexPath:destinationIndexPath];
@@ -482,7 +483,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
     
     BOOL isInnerLocation = (CGRectGetMinX(dragPreviewFrame) >= CGRectGetMinX(currentCellFrame)) ? YES : NO;
     
-    NSDiffableDataSourceSectionSnapshot <MGROutlineItem <MGROutlineContent *>*>*sectionSnapshot = [self.dataSource snapshotForSection:mainSection];
+    NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*sectionSnapshot = [self.dataSource snapshotForSection:mainSection];
     BOOL isCurrentGestureItemExpanded = [sectionSnapshot isExpanded:currentGestureItem];
 //    BOOL isCurrentGestureItemExpanded = currentGestureItem.expanded; <- 13 버전에서는 다 컨트롤 해줘서 가져왔다.
 //    BOOL isCurrentGestureItemFolder = currentGestureItem.isFolder; // 이건 상황에 맞게 구성해야한다.
@@ -493,7 +494,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
     
     MGROutlineItemLocation sourceItemLocationInfo;
     //! superItem 이 없을 경우에는 위치를 판단할 수 없으므로 임시로 만들어 준다.
-    MGROutlineItem <MGROutlineContent *>*tempRoot = [MGROutlineItem tempRootWithSubitems:self.menuItems];
+    MGROutlineItem <OutlineContent *>*tempRoot = [MGROutlineItem tempRootWithSubitems:self.menuItems];
     sourceItemLocationInfo = sourceOutlineItem.currentLocationInfo;
     if ([sourceItemLocationInfo.superItem isEqual:tempRoot] == YES) {
         sourceItemLocationInfo.superItem = nil;
@@ -511,9 +512,9 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
         xKnobOrigin = xKnobOriginIn;
     } else { // 바깥쪽 인디케이터가 그려진다.
         // 현재 제스처가 위치한 곳의 셀이 단일 셀이거나, 그룹셀이지만 닫혀 있는 경우.
-        MGROutlineItem <MGROutlineContent *>*targetItem = ([currentGestureItem.superItem isEqual:tempRoot]) ? nil : currentGestureItem.superItem;
-        MGROutlineItem <MGROutlineContent *>*afterItem = currentGestureItem;
-        MGROutlineItem <MGROutlineContent *>*beforeItem = currentGestureItem.currentLocationInfo.beforeItem;
+        MGROutlineItem <OutlineContent *>*targetItem = ([currentGestureItem.superItem isEqual:tempRoot]) ? nil : currentGestureItem.superItem;
+        MGROutlineItem <OutlineContent *>*afterItem = currentGestureItem;
+        MGROutlineItem <OutlineContent *>*beforeItem = currentGestureItem.currentLocationInfo.beforeItem;
         xKnobOrigin = xKnobOriginOut;
         
         //! 더 이동할 수도 있는 가능성을 열어두자. 이 부분을 접으면 제한적으로 이동한다.
@@ -532,7 +533,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
         
         dropLocationInfoValue = MGROutlineItemLocationMake(targetItem, afterItem, beforeItem);
     }
-    // MGROutlineItem <MGROutlineContent *>*beforeItem = currentGestureItem.currentLocationInfo.beforeItem; 를 확인해야하므로 여기서 제거하는것이 옳다.
+    // MGROutlineItem <OutlineContent *>*beforeItem = currentGestureItem.currentLocationInfo.beforeItem; 를 확인해야하므로 여기서 제거하는것이 옳다.
     [tempRoot deleteAllSubitems]; //! 반드시 제거해야한다.
         
     self.indicatorLineView.knobPosition = MGROutlineIndicatorKnobPositionMake(isKnobBottom, xKnobOrigin);
