@@ -79,8 +79,12 @@ _menuItems = @[item0, item1].mutableCopy;
 ```
 
 ## Documentation
+<details> 
+<summary>👇🖱️ `SKHOutlineItem.swift` </summary>
+<hr>
 
-> Swift
+> <strong>Note:</strong> `MGROutlineItem.h`, `MGROutlineItem.m` 생략
+
 ```Swift
 
 import Foundation
@@ -488,6 +492,8 @@ extension SKHOutlineItem {
 }
 
 ```
+
+</details>
 
 ## Author
 
