@@ -38,10 +38,10 @@
     - [Segmented Control](#segmented-control)
     - [Stepper](#stepper)
     - [Switch](#switch)
+- [View](#view)
     - [Table View / Collection View](#table-view--collection-view)
       - [Table View](#table-view)
-      - [Collection View](#collection-view)
-      
+      - [Collection View](#collection-view)      
 - [Wallpaper](#wallpaper)
 - [License](#license)
 
@@ -88,8 +88,9 @@
 - [MGUFlatSwitch](./Contents/MGUFlatSwitch) - 완료 및 체크를 상징하는 커스텀 스위치
 - [MGUOnOffButton](./Contents/MGUOnOffButton) - Skeuomorphism(스큐어모피즘) 스타일 온오프 버튼.
 
+**[back to top](#contents)**
 
-
+## View
 ### Table View / Collection View
 
 #### Table View
@@ -97,6 +98,7 @@
 
 #### Collection View
 - [MGUFlowView](./Contents/MGUFlowView) - `UITableView` 대체할 수 있는 독특한 레이아웃을 제공하는 TableView.
+
 
 **[back to top](#contents)**
 
