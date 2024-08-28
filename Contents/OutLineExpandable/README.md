@@ -4,12 +4,17 @@
 ![Objective-C](https://img.shields.io/badge/Objective--C-3A95E3?style=flat-square&logo=apple&logoColor=white)<br/>
 ![iOS](https://img.shields.io/badge/IOS-000000?style=flat-square&logo=ios&logoColor=white)
 
-## **Outline Project**
-- 손가락으로 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤
-    - `UIControl` 를 기반으로 제작함
-- [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
-<p align="center"><img src="./screenshot/240828a4.jpg" width="400"></p>
 
+## MGROutlineItem (***Objective-C***) <br/> SKHOutlineItem (***Swift***)
+- 트리구조 라이브러리 & UI 구현(UI는 `UITableView` 또는 `UICollectionView` 이용)
+- [MTS 프로젝트](https://youtu.be/161FoZYpU8I?si=z89zAGR5vfeHqILa&t=90)를 진행하면서 해당 트리구조 라이브러리 이용함.
+> - MGROutlineItem
+>   - 트리구조 라이브러리
+>   - Written in **Objective-C**, **Swift** and **Objective-C** compatability
+> - SKHOutlineItem
+>   - 트리구조 라이브러리
+>   - Written in **Swift**
+<p align="center"><img src="./screenshot/240828a4.jpg" width="400"></p>
 
 ## Features
 *  휠의 회전으로 입력값을 설정 가능케 함
