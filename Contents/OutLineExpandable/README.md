@@ -29,7 +29,7 @@
 
 ## Preview
 > - MGROutlineItem (***Objective-C***), SKHOutlineItem (***Swift***) & UI
->   - [MiniTimer](https://apps.apple.com/app/id1618148240)를 만들면서 휠을 돌려서 입력값을 설정할 수 있는 다이얼 컨트롤에 대한 요구사항 이 있어서 제작함.
+>   - 트리구조 알고리즘과 이를 뷰모델로 이용하여 구현한 UI(`UITableView` OR `UICollectionView`)
 
 Sample 1 | Sample 2 | [MTS 프로젝트](https://youtu.be/161FoZYpU8I?si=z89zAGR5vfeHqILa&t=90)에서 사용 예
 ---|---|---
