@@ -1,38 +1,37 @@
 //
-//  ViewControllerY1.m
+//  ViewController1.m
 //  OutlineProject
 //
-//  Created by Kwan Hyun Son on 2021/08/24.
+//  Created by Kwan Hyun Son on 2021/08/20.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
 //
 
 @import BaseKit;
-
-#import "ViewControllerY1.h"
-#import "MGROutlineItemCell.h"
-#import "OutlineIndicatorLineView.h"
+#import "ViewController1.h"
 #import "OutlineContent.h"
+#import "OutlineIndicatorLineView.h"
+#import "OutlineCell.h"
 #import "EmptyViewController.h"
 
 typedef NSString * MGRMainSection NS_STRING_ENUM;
 static MGRMainSection const mainSection  = @"mainSection";
 
-@interface ViewControllerY1 () <UICollectionViewDelegate, UICollectionViewDragDelegate, UICollectionViewDropDelegate>
-@property (nonatomic, strong) UICollectionViewDiffableDataSource <MGRMainSection, MGROutlineItem <OutlineContent *>*>*dataSource;
+@interface ViewController1 ()  <UITableViewDelegate, UITableViewDragDelegate, UITableViewDropDelegate>
+@property (nonatomic, strong) UITableViewDiffableDataSource <MGRMainSection, MGROutlineItem <OutlineContent *>*>*dataSource;
 @property (nonatomic, strong, readonly) NSDiffableDataSourceSnapshot <MGRMainSection, MGROutlineItem <OutlineContent *>*>*snapshotForCurrentState; // @dynamic
-@property (nonatomic, strong) UICollectionView *outlineCollectionView;
+@property (nonatomic, strong) UITableView *outlineTableView;
 @property (nonatomic, strong) NSMutableArray <MGROutlineItem <OutlineContent *>*>*menuItems;
 @property (nonatomic, strong, nullable) MGROutlineItemLocation dropLocationInfoValue;
 @property (nonatomic, strong) OutlineIndicatorLineView *indicatorLineView;
 @property (nonatomic, strong) UIView *indicatorSuperFaceView;
 @property (nonatomic) CGFloat indentationWidth; // 디폴트 20.0으로 잡는다.
-
 //! Drag Preview를 추적하기 위해. https://stackoverflow.com/questions/51020273/get-frame-of-drag-preview/61308512#61308512
 @property (nonatomic) CGPoint initialDragLocation;
 @property (nonatomic) CGRect initialDragCellFrame;
+
 @end
 
-@implementation ViewControllerY1
+@implementation ViewController1
 @dynamic snapshotForCurrentState;
 
 - (void)viewDidLoad {
@@ -40,26 +39,25 @@ static MGRMainSection const mainSection  = @"mainSection";
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self _commonInit];
-    [self configureCollectionView];
+    [self configureTableView];
     [self configureDataSource];
+//    [self updateUIAnimated:NO];
 }
 
 /*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         MGROutlineItem *item  = self.menuItems.lastObject.subitems.lastObject;
         NSData *data =[NSKeyedArchiver archivedDataWithRootObject:item
                                             requiringSecureCoding:NO
                                                             error:nil];
-        MGROutlineItem <ContentItem *>*item2 = [NSKeyedUnarchiver unarchivedObjectOfClass:[MGROutlineItem class] fromData:data error:nil];
+        MGROutlineItem <OutlineContent *>*item2 = [NSKeyedUnarchiver unarchivedObjectOfClass:[MGROutlineItem class] fromData:data error:nil];
         NSLog(@"item2 %@", item2.contentItem);
         NSLog(@"%@", item2.contentItem.title);
         NSLog(@"%@", item2.contentItem.viewControllerClass);
     });
 }*/
-
 
 #pragma mark - 생성 & 소멸
 - (void)_commonInit {
@@ -107,30 +105,39 @@ static MGRMainSection const mainSection  = @"mainSection";
     _indentationWidth = 20.0;
 }
 
-- (void)configureCollectionView {
-    _outlineCollectionView =
-    [[UICollectionView alloc] initWithFrame:self.view.bounds
-                       collectionViewLayout:[self generateLayout]];
-    [self.view addSubview:self.outlineCollectionView];
-    self.outlineCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    self.outlineCollectionView.backgroundColor = [UIColor systemGroupedBackgroundColor];
-    self.outlineCollectionView.delegate = self;
-    [self.outlineCollectionView registerClass:[MGROutlineItemCell class]
-                   forCellWithReuseIdentifier:[MGROutlineItemCell reuseIdentifer]];
+- (void)configureTableView {
+    _outlineTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    [self.view addSubview:self.outlineTableView];
+    self.outlineTableView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.outlineTableView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
+    [self.outlineTableView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
+    [self.outlineTableView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+    [self.outlineTableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+    [self.outlineTableView registerClass:[OutlineCell class]
+                  forCellReuseIdentifier:NSStringFromClass([OutlineCell class])];
     
-    self.outlineCollectionView.dragDelegate = self;
-    self.outlineCollectionView.dropDelegate = self;
-    self.outlineCollectionView.dragInteractionEnabled = YES;
+    
+    self.outlineTableView.rowHeight = 44.0;
+    self.outlineTableView.delegate = self;
+    self.outlineTableView.dragDelegate = self;
+    self.outlineTableView.dropDelegate = self;
+    self.outlineTableView.dragInteractionEnabled = YES;
+    self.outlineTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)configureDataSource {
+    __weak __typeof(self) weakSelf = self;
     _dataSource =
-    [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.outlineCollectionView
-    cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, MGROutlineItem <OutlineContent *>*outlineItem) {
-        MGROutlineItemCell *cell =
-        [collectionView dequeueReusableCellWithReuseIdentifier:[MGROutlineItemCell reuseIdentifer]
-                                                  forIndexPath:indexPath];
-        if ([cell isKindOfClass:[MGROutlineItemCell class]] == NO) {
+    [[UITableViewDiffableDataSource alloc] initWithTableView:self.outlineTableView
+                                                cellProvider:^UITableViewCell *(UITableView *tableView,
+                                                                                NSIndexPath *indexPath,
+                                                                                MGROutlineItem <OutlineContent *>*outlineItem) {
+        __strong __typeof(weakSelf) self = weakSelf;
+        OutlineCell *cell =
+        [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([OutlineCell class])
+                                        forIndexPath:indexPath];
+        
+        if ([cell isKindOfClass:[OutlineCell class]] == NO) {
             NSAssert(FALSE, @"Could not create new cell");
         }
         
@@ -142,35 +149,11 @@ static MGRMainSection const mainSection  = @"mainSection";
         return cell;
     }];
 
+    self.dataSource.defaultRowAnimation = UITableViewRowAnimationFade;
+    
     // load our initial data
     NSDiffableDataSourceSnapshot <MGRMainSection, MGROutlineItem <OutlineContent *>*>*snapshot = [self snapshotForCurrentState];
     [self.dataSource applySnapshot:snapshot animatingDifferences:NO];
-}
-
-- (UICollectionViewLayout *)generateLayout {
-    NSCollectionLayoutDimension *itemHeightDimension = [NSCollectionLayoutDimension absoluteDimension:44.0];
-    NSCollectionLayoutSize *itemSize =
-    [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0]
-                                   heightDimension:itemHeightDimension];
-
-    NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSize];
-    NSCollectionLayoutSize *groupSize =
-    [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0]
-                                   heightDimension:itemHeightDimension];
-
-    NSCollectionLayoutGroup *group =
-    [NSCollectionLayoutGroup horizontalGroupWithLayoutSize:groupSize
-                                                   subitem:item
-                                                     count:1];
-    NSCollectionLayoutSection *section =
-    [NSCollectionLayoutSection sectionWithGroup:group];
-    
-    section.contentInsets = NSDirectionalEdgeInsetsMake(0.0, 10.0, 0.0, 10.0);
-    
-    UICollectionViewCompositionalLayout *layout =
-    [[UICollectionViewCompositionalLayout alloc] initWithSection:section];
-    
-    return layout;
 }
 
 - (void)updateUI {
@@ -178,14 +161,13 @@ static MGRMainSection const mainSection  = @"mainSection";
     [self.dataSource applySnapshot:snapshot animatingDifferences:YES];
 }
 
-
 #pragma mark - 세터 & 게터
 - (NSDiffableDataSourceSnapshot <MGRMainSection, MGROutlineItem *>*)snapshotForCurrentState {
     NSDiffableDataSourceSnapshot <MGRMainSection, MGROutlineItem *>*snapshot = [NSDiffableDataSourceSnapshot new];
     [snapshot appendSectionsWithIdentifiers:@[mainSection]];
-    
+
     void (^__block addItemsBlock)(MGROutlineItem * _Nullable);
-    
+
     __weak __block __typeof(addItemsBlock) weakAddItemsBlock = addItemsBlock = ^(MGROutlineItem *menuItem){
         [snapshot appendItemsWithIdentifiers:@[menuItem]];
         if (menuItem.isExpanded == YES) {
@@ -194,30 +176,29 @@ static MGRMainSection const mainSection  = @"mainSection";
             }
         }
     };
-    
+
     for (MGROutlineItem *item in self.menuItems) {
         addItemsBlock(item);
     }
-    
+
     return snapshot;
 }
 
 
-#pragma mark - <UICollectionViewDelegate>
-- (void)collectionView:(UICollectionView *)collectionView
-didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+#pragma mark - <UITableViewDelegate>
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MGROutlineItem <OutlineContent *>*outlineItem = [self.dataSource itemIdentifierForIndexPath:indexPath];
     if (outlineItem == nil) {
         return;
     }
-    
-    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-    
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     if (outlineItem.hasSubitem == YES) {
         outlineItem.expanded = !outlineItem.isExpanded;
-            
-        MGROutlineItemCell *cell = (MGROutlineItemCell *)[collectionView cellForItemAtIndexPath:indexPath];
-        if ([cell isKindOfClass:[MGROutlineItemCell class]] == YES) {
+        
+        OutlineCell *cell = (OutlineCell *)[tableView cellForRowAtIndexPath:indexPath];
+        if ([cell isKindOfClass:[OutlineCell class]] == YES) {
             [UIView animateWithDuration:0.2
                              animations:^{
                 cell.expanded = outlineItem.isExpanded;
@@ -235,75 +216,89 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 
-#pragma mark - <UICollectionViewDragDelegate>
-//! ~ Required
-- (NSArray<UIDragItem *> *)collectionView:(UICollectionView *)collectionView
-             itemsForBeginningDragSession:(id<UIDragSession>)session atIndexPath:(NSIndexPath *)indexPath {
-    MGROutlineItem *item = [self.dataSource itemIdentifierForIndexPath:indexPath];
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    UIView *backgroundView = [UIView new];
+    backgroundView.backgroundColor = [UIColor clearColor];
+    cell.backgroundView = backgroundView;
+}
+
+
+#pragma mark - <UITableViewDragDelegate>
+- (NSArray <UIDragItem *>*)tableView:(UITableView *)tableView
+        itemsForBeginningDragSession:(id<UIDragSession>)session
+                         atIndexPath:(NSIndexPath *)indexPath {
+    MGROutlineItem <OutlineContent *>*item = [self.dataSource itemIdentifierForIndexPath:indexPath];
     NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithObject:item];
     UIDragItem *dragItem = [[UIDragItem alloc] initWithItemProvider:itemProvider];
     dragItem.localObject = item;
-    
+
     //! 최초 Drag를 시작한 손가락의 위치와 그에 해당하는 cell의 frame을 저장한다. 드래그로 움직이는 셀의 프레임을 추적하기 위함이다.
-    _initialDragLocation = [session locationInView:collectionView];
-    NSIndexPath *path = [collectionView indexPathForItemAtPoint:_initialDragLocation];
-    MGROutlineItemCell *cell = (MGROutlineItemCell *)[collectionView cellForItemAtIndexPath:path];
-    _initialDragCellFrame = [cell.containerView convertRect:cell.containerView.bounds toView:collectionView];
+    _initialDragLocation = [session locationInView:tableView];
+    NSIndexPath *path = [tableView indexPathForRowAtPoint:_initialDragLocation];
+    OutlineCell *cell = (OutlineCell *)[tableView cellForRowAtIndexPath:path];
+    _initialDragCellFrame = [cell.containerView convertRect:cell.containerView.bounds toView:tableView];
     return @[dragItem];
-    //
-    //! 옮겨지면서 보여질 커스텀한 뷰를 만들 수 있다. - collectionView:dragPreviewParametersForItemAtIndexPath: 간단한 것은 이걸로도 충분할 수 있다.
-    //! 움직이는 순간 손가락 터치를 옮겨지는 Preview의 중심으로 만든다. 즉, 어떤 뷰가 만들어질 줄 모르는 상황이므로 가운데로 옮기는 것이다.
+//
+//! 옮겨지면서 보여질 커스텀한 뷰를 만들 수 있다. - collectionView:dragPreviewParametersForItemAtIndexPath: 간단한 것은 이걸로도 충분할 수 있다.
+//! 움직이는 순간 손가락 터치를 옮겨지는 Preview의 중심으로 만든다. 즉, 어떤 뷰가 만들어질 줄 모르는 상황이므로 가운데로 옮기는 것이다.
 //    dragItem.previewProvider = ^UIDragPreview *{
 //        UIDragPreviewParameters *parameters = [self collectionView:collectionView dragPreviewParametersForItemAtIndexPath:indexPath];
 //        UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
 //        parameters.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
 //        return [[UIDragPreview alloc] initWithView:cell parameters:parameters];
 //    };
-    // CGPoint touchLocation = [session locationInView:collectionView]; // 터치가 되고 있는 위치를 알려준다.
+// CGPoint touchLocation = [session locationInView:collectionView]; // 터치가 되고 있는 위치를 알려준다.
 }
+
 
 //! 기존 drag 세션에 지정된 아이템을 추가한다. 2개 이상.
 /*
-- (NSArray<UIDragItem *> *)collectionView:(UICollectionView *)collectionView
-              itemsForAddingToDragSession:(id<UIDragSession>)session
-                              atIndexPath:(NSIndexPath *)indexPath
-                                    point:(CGPoint)point {
-    OutlineItem *item = [self.dataSource itemIdentifierForIndexPath:indexPath];
+- (NSArray <UIDragItem *>*)tableView:(UITableView *)tableView
+         itemsForAddingToDragSession:(id<UIDragSession>)session
+                         atIndexPath:(NSIndexPath *)indexPath
+                               point:(CGPoint)point {
+    MGROutlineItem <OutlineContent *>*item = [self.dataSource itemIdentifierForIndexPath:indexPath];
     NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithObject:item];
     UIDragItem *dragItem = [[UIDragItem alloc] initWithItemProvider:itemProvider];
     dragItem.localObject = item;
     return @[dragItem];
-}*/
-
+    
+}
+*/
 
 // 드래그하는 동안 지정된 위치에 아이템을 표시하는 방법에 대한 커스텀 정보를 반환한다. 드래그하면서 표시될 뷰를 꾸민다.
-- (UIDragPreviewParameters *)collectionView:(UICollectionView *)collectionView
-    dragPreviewParametersForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (collectionView == self.outlineCollectionView) {
-        MGROutlineItemCell *cell = (MGROutlineItemCell *)[collectionView cellForItemAtIndexPath:indexPath];
+- (UIDragPreviewParameters *)tableView:(UITableView *)tableView
+dragPreviewParametersForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (tableView == self.outlineTableView) {
+        
+        OutlineCell *cell = (OutlineCell *)[tableView cellForRowAtIndexPath:indexPath];
         CGRect cellContainerViewFrame = [cell.containerView convertRect:cell.containerView.bounds toView:cell];
         UIDragPreviewParameters *previewParameters = [UIDragPreviewParameters new];
         previewParameters.visiblePath = [UIBezierPath bezierPathWithRoundedRect:cellContainerViewFrame cornerRadius:5.0];
         return previewParameters;
     }
     return nil;
-    //
-    //        CGRect cellContentViewFrame = cell.contentView.frame;
-    //        previewParameters.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.2];
+//
+//        CGRect cellContentViewFrame = cell.contentView.frame;
+//        previewParameters.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.2];
 }
 
 
-#pragma mark - <UICollectionViewDropDelegate>
+#pragma mark - <UITableViewDropDelegate>
 //! 이 메서드를 구현하지 않으면 collectionView 는 YES를 반환한 것으로 간주한다.
-- (BOOL)collectionView:(UICollectionView *)collectionView canHandleDropSession:(id<UIDropSession>)session {
+- (BOOL)tableView:(UITableView *)tableView canHandleDropSession:(id<UIDropSession>)session {
     return [session canLoadObjectsOfClass:[MGROutlineItem class]];
 }
 
 //! Drop 할때, 어떻게 보여지는 애니메이션에서 최종적인 모양.
-- (UIDragPreviewParameters *)collectionView:(UICollectionView *)collectionView
-    dropPreviewParametersForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (collectionView == self.outlineCollectionView) {
-        MGROutlineItemCell *cell = (MGROutlineItemCell *)[collectionView cellForItemAtIndexPath:indexPath];
+- (UIDragPreviewParameters *)tableView:(UITableView *)tableView
+dropPreviewParametersForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (tableView == self.outlineTableView) {
+        OutlineCell *cell = (OutlineCell *)[tableView cellForRowAtIndexPath:indexPath];
         CGRect cellContainerViewFrame = [cell.containerView convertRect:cell.containerView.bounds toView:cell];
         UIDragPreviewParameters *previewParameters = [UIDragPreviewParameters new];
         previewParameters.visiblePath = [UIBezierPath bezierPathWithRoundedRect:cellContainerViewFrame cornerRadius:5.0];
@@ -314,68 +309,68 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 //! 팬이 시작되면 계속해서 반복적으로 치게된다.
-- (UICollectionViewDropProposal *)collectionView:(UICollectionView *)collectionView
-                            dropSessionDidUpdate:(id<UIDropSession>)session
-                        withDestinationIndexPath:(NSIndexPath *)destinationIndexPath {
+- (UITableViewDropProposal *)tableView:(UITableView *)tableView
+                  dropSessionDidUpdate:(id<UIDropSession>)session
+              withDestinationIndexPath:(NSIndexPath *)destinationIndexPath {
     if (session.localDragSession != nil &&
-        collectionView.hasActiveDrag == YES &&
+        tableView.hasActiveDrag == YES &&
         destinationIndexPath != nil &&
-        [collectionView.indexPathsForVisibleItems containsObject:destinationIndexPath]) {  // 현재 collectionView 위에서 드래깅 되고 있을 때.
+        [tableView.indexPathsForVisibleRows containsObject:destinationIndexPath]) {  // 현재 collectionView 위에서 드래깅 되고 있을 때.
         
         UIDragItem *sourceItem = session.items.firstObject;
         MGROutlineItem *sourceOutlineItem = sourceItem.localObject;
         MGROutlineItem *currentGestureItem = [self.dataSource itemIdentifierForIndexPath:destinationIndexPath];
 //      NSIndexPath *sourceIndexPath = [self.dataSource indexPathForItemIdentifier:sourceOutlineItem];
         NSArray <MGROutlineItem *>*recurrenceAllSubitems = [sourceOutlineItem recurrenceAllSubitems];
+
+        
         if ([sourceOutlineItem isEqual:currentGestureItem] == NO &&
             [recurrenceAllSubitems containsObject:currentGestureItem] == NO) {
-            UIDropOperation dropOperation = [self _privateCollectionView:collectionView
-                                                    dropSessionDidUpdate:session
-                                                withDestinationIndexPath:destinationIndexPath];
-            
-            return [[UICollectionViewDropProposal alloc] initWithDropOperation:dropOperation
-                                                                        intent:UICollectionViewDropIntentUnspecified];
+            UIDropOperation dropOperation = [self _privateTableView:tableView
+                                               dropSessionDidUpdate:session
+                                           withDestinationIndexPath:destinationIndexPath];
+
+            return [[UITableViewDropProposal alloc] initWithDropOperation:dropOperation intent:UITableViewDropIntentUnspecified];
         }
     }
-    
+
     [self removeIndicatorLineView];
-    return [[UICollectionViewDropProposal alloc] initWithDropOperation:UIDropOperationCancel
-                                                                intent:UICollectionViewDropIntentUnspecified];
-    //! UIDropOperation
+    return [[UITableViewDropProposal alloc] initWithDropOperation:UIDropOperationCancel intent:UITableViewDropIntentUnspecified];
+//! UIDropOperation
 //        UIDropOperationCancel
 //        UIDropOperationForbidden
 //        UIDropOperationMove
 //        UIDropOperationCopy
-    
-    //! UICollectionViewDropIntent
-//        UICollectionViewDropIntentUnspecified,
-//        UICollectionViewDropIntentInsertAtDestinationIndexPath,
-//        UICollectionViewDropIntentInsertIntoDestinationIndexPath,
+
+//! UITableViewDropIntent
+//        UITableViewDropIntentUnspecified,
+//        UITableViewDropIntentInsertAtDestinationIndexPath,
+//        UITableViewDropIntentInsertIntoDestinationIndexPath,
+//        UITableViewDropIntentAutomatic
 }
 
-- (void)collectionView:(UICollectionView *)collectionView dropSessionDidEnter:(id<UIDropSession>)session {}
-- (void)collectionView:(UICollectionView *)collectionView dropSessionDidExit:(id<UIDropSession>)session {
+- (void)tableView:(UITableView *)tableView dropSessionDidEnter:(id<UIDropSession>)session {}
+- (void)tableView:(UITableView *)tableView dropSessionDidExit:(id<UIDropSession>)session {
     [self removeIndicatorLineView];
 }
-- (void)collectionView:(UICollectionView *)collectionView dropSessionDidEnd:(id<UIDropSession>)session {
+- (void)tableView:(UITableView *)tableView dropSessionDidEnd:(id<UIDropSession>)session {
     [self removeIndicatorLineView];
 }
 
 //! 최초 시작 인덱스가 아닌 곳에서 멈추면 들어온다.
-- (void)collectionView:(UICollectionView *)collectionView
-performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
-    [self removeIndicatorLineView];
+- (void)tableView:(UITableView *)tableView performDropWithCoordinator:(id<UITableViewDropCoordinator>)coordinator {
     
-    id <UICollectionViewDropItem>itemToDrop = coordinator.items.firstObject;
+    [self removeIndicatorLineView];
+    id<UITableViewDropItem> itemToDrop = coordinator.items.firstObject;
     NSIndexPath *sourceIndexPath = itemToDrop.sourceIndexPath;
     UIDragItem *dragItem = itemToDrop.dragItem;
     MGROutlineItem *sourceOutlineItem = dragItem.localObject;
 //    OutlineItem *oldSourceItemSuper = sourceOutlineItem.superItem;
 //    NSIndexPath *finalFingerLocationIndexPath = coordinator.destinationIndexPath;
 //    OutlineItem *finalFingerLocationOutlineItem = [self.dataSource itemIdentifierForIndexPath:finalFingerLocationIndexPath];
-    
+
     if (self.dropLocationInfoValue == nil) {
-        [coordinator dropItem:dragItem toItemAtIndexPath:sourceIndexPath];
+        [coordinator dropItem:dragItem toRowAtIndexPath:sourceIndexPath];
         return;
     } else if ([sourceOutlineItem isKindOfClass:[MGROutlineItem class]] == NO || sourceIndexPath == nil) {
         self.dropLocationInfoValue = nil;
@@ -395,7 +390,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
         } else { // 루트 아이템이 아닐 경우.
             [sourceOutlineItem removeFromSuperitem];
         }
-        
+
         //! menuItems 업데이트 : 드래그 아이템 적절한 위치 집어 넣기
         if (self.dropLocationInfoValue.superItem == nil) { // 드래그 된 아이템이 들어가게 되는 곳이 루트 아이템 이라면
             if (self.dropLocationInfoValue.afterItem != nil) {
@@ -415,34 +410,33 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
                 [targetItem appendSubitems:@[sourceOutlineItem]];
             }
         }
-        
+
         //! expand 해야할 item 모으기. 임시 Root가 필요하다.
         MGROutlineItem <OutlineContent *>*tempRoot = [MGROutlineItem tempRootWithSubitems:self.menuItems];
         NSMutableArray <MGROutlineItem *>*expandedItems = [tempRoot recurrenceAllExpandedSubitems].mutableCopy;
         [tempRoot deleteAllSubitems]; //! 반드시 제거해야한다.
-        
+
         if (willCloseItem != nil) {
             willCloseItem.expanded = NO;
             [reloadItems addObject:willCloseItem];
         }
-        
+
         MGROutlineItem *targetItem = self.dropLocationInfoValue.superItem;
         if ([expandedItems containsObject:targetItem] == NO && targetItem != nil) {
             targetItem.expanded = YES;
         }
-        
+
         NSDiffableDataSourceSnapshot *snapshot = [self snapshotForCurrentState];
-        
+
         __weak __typeof(self) weakSelf = self;
         // https://developer.apple.com/forums/thread/126742
         [snapshot reloadItemsWithIdentifiers:reloadItems];
-//        [snapshot reloadSectionsWithIdentifiers:@[mainSection]]; //  이걸 써도 편하긴 하지만. 좀더 효율적인것을 쓰자.
         [self.dataSource applySnapshot:snapshot animatingDifferences:YES completion:^{
             [weakSelf.dataSource applySnapshot:snapshot animatingDifferences:NO completion:^{}];
         }];
 
-        [coordinator dropItem:dragItem
-            toItemAtIndexPath:[self.dataSource indexPathForItemIdentifier:sourceOutlineItem]]; // 콜렉션뷰의 특정 위치에 놓는다.
+        // 테이블뷰의 특정 위치에 놓는다.
+        [coordinator dropItem:dragItem toRowAtIndexPath:[self.dataSource indexPathForItemIdentifier:sourceOutlineItem]];
     }
 
     self.dropLocationInfoValue = nil;
@@ -452,6 +446,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
 //        [sectionSnapshot snapshotOfParentItem:sourceOutlineItem includingParentItem:YES];
 //        [sectionSnapshot deleteItems:deleteSectionSnapshot.items];
 }
+
 
 #pragma mark - Helper
 - (void)removeIndicatorLineView {
@@ -470,39 +465,39 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
     return newFrame;
 }
 
-//! outline collection view 위의 임의의 셀 위에서 놀고 있을 때 && source item(recurrence subitems를 포함하여)이 아닌 다른 아이템에 있을 때.
-- (UIDropOperation)_privateCollectionView:(UICollectionView *)collectionView
-                                    dropSessionDidUpdate:(id<UIDropSession>)session
-                                withDestinationIndexPath:(NSIndexPath *)destinationIndexPath {
+//! outline tableView view 위의 임의의 셀 위에서 놀고 있을 때 && source item(recurrence subitems를 포함하여)이 아닌 다른 아이템에 있을 때.
+- (UIDropOperation)_privateTableView:(UITableView *)tableView
+                dropSessionDidUpdate:(id<UIDropSession>)session
+            withDestinationIndexPath:(NSIndexPath *)destinationIndexPath {
     UIDragItem *sourceItem = session.items.firstObject;
     MGROutlineItem *sourceOutlineItem = sourceItem.localObject;
     MGROutlineItem *currentGestureItem = [self.dataSource itemIdentifierForIndexPath:destinationIndexPath];
 //    NSIndexPath *sourceIndexPath = [self.dataSource indexPathForItemIdentifier:sourceOutlineItem];
 //    UICollectionViewCell *sourceCell = [collectionView cellForItemAtIndexPath:sourceIndexPath];
-    MGROutlineItemCell *currentCell = (MGROutlineItemCell *)[collectionView cellForItemAtIndexPath:destinationIndexPath];
-    
-    CGPoint touchLocation = [session locationInView:collectionView]; // previewProvider 가 제공되었다는 가정하에 이렇다.
+    OutlineCell *currentCell = (OutlineCell *)[tableView cellForRowAtIndexPath:destinationIndexPath];
+
+    CGPoint touchLocation = [session locationInView:tableView]; // previewProvider 가 제공되었다는 가정하에 이렇다.
     CGRect dragPreviewFrame = [self currentDragPreviewFrameAtLocation:touchLocation]; // cell의 containerview를 collectionview에서 해석.
-    CGRect currentCellFrame = [currentCell.containerView convertRect:currentCell.containerView.bounds toView:collectionView];
-    
+    CGRect currentCellFrame = [currentCell.containerView convertRect:currentCell.containerView.bounds toView:tableView];
+
     BOOL isInnerLocation = (CGRectGetMinX(dragPreviewFrame) >= CGRectGetMinX(currentCellFrame)) ? YES : NO;
     BOOL isCurrentGestureItemExpanded = currentGestureItem.expanded;
-    //! 설정할때, 뷰컨트롤러를 갖고 있지 않은 아이템은 폴더로 설정했지만, 사용하지를 않았다.
+//! 설정할때, 뷰컨트롤러를 갖고 있지 않은 아이템은 폴더로 설정했지만, 사용하지를 않았다.
 //    BOOL isCurrentGestureItemFolder = currentGestureItem.isFolder; // 이건 상황에 맞게 구성해야한다.
-    
+
     BOOL isKnobBottom = YES;
-    CGFloat xKnobOriginOut = 10.0;
-    CGFloat xKnobOriginIn = 35.0; // 이 둘의 차이는 눈에 보이는 정도로 판단했다. 이미지의 가로 사이즈가 25.0 이므로 이정도 차이가 생김.
+    CGFloat xKnobOriginOut = 15.0;
+    CGFloat xKnobOriginIn = 40.0; // 이 둘의 차이는 눈에 보이는 정도로 판단했다. 이미지의 가로 사이즈가 25.0 이므로 이정도 차이가 생김.
     CGFloat xKnobOrigin;
-    
+
     MGROutlineItemLocation sourceItemLocationInfo;
-    //! superItem 이 없을 경우에는 위치를 판단할 수 없으므로 임시로 만들어 준다.
+//! superItem 이 없을 경우에는 위치를 판단할 수 없으므로 임시로 만들어 준다.
     MGROutlineItem <OutlineContent *>*tempRoot = [MGROutlineItem tempRootWithSubitems:self.menuItems];
     sourceItemLocationInfo = sourceOutlineItem.currentLocationInfo;
     if ([sourceItemLocationInfo.superItem isEqual:tempRoot] == YES) {
         sourceItemLocationInfo.superItem = nil;
     }
-    
+
     MGROutlineItemLocation dropLocationInfoValue; //! destination을 찾아보자.
     if (self.menuItems.firstObject == currentGestureItem &&
         CGRectGetMidY(dragPreviewFrame) <= CGRectGetMidY(currentCellFrame)) { // 현재 제스처 아이템이 루트 아이템 중에서 첫 번째이면서 한도초과
@@ -519,7 +514,7 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
         MGROutlineItem *afterItem = currentGestureItem;
         MGROutlineItem *beforeItem = currentGestureItem.currentLocationInfo.beforeItem;
         xKnobOrigin = xKnobOriginOut;
-        
+
         //! 더 이동할 수도 있는 가능성을 열어두자. 이 부분을 접으면 제한적으로 이동한다.
         if (targetItem != nil && currentGestureItem == currentGestureItem.superItem.subitems.lastObject) {
             CGFloat distance = CGRectGetMinX(currentCellFrame) - CGRectGetMinX(dragPreviewFrame);
@@ -533,34 +528,33 @@ performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator {
                 xKnobOrigin = xKnobOriginOut - (self.indentationWidth * index);
             }
         }
-        
+
         dropLocationInfoValue = MGROutlineItemLocationMake(targetItem, afterItem, beforeItem);
     }
-    // MGROutlineItem *beforeItem = currentGestureItem.currentLocationInfo.beforeItem; 를 확인해야하므로 여기서 제거하는것이 옳다.
+// MGROutlineItem *beforeItem = currentGestureItem.currentLocationInfo.beforeItem; 를 확인해야하므로 여기서 제거하는것이 옳다.
     [tempRoot deleteAllSubitems]; //! 반드시 제거해야한다.
-    
-        
+
     self.indicatorLineView.knobPosition = MGROutlineIndicatorKnobPositionMake(isKnobBottom, xKnobOrigin);
     if (self.indicatorLineView.superview != currentCell.containerView) {
         [currentCell.containerView addSubview:self.indicatorLineView];
     }
     self.indicatorLineView.frame = currentCell.containerView.bounds;
-    
+
     if (dropLocationInfoValue.superItem == nil) {
         [self.indicatorSuperFaceView removeFromSuperview];
     } else {
         NSIndexPath *indexPath = [self.dataSource indexPathForItemIdentifier:dropLocationInfoValue.superItem];
         if (indexPath != nil) {
-            UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
             if (self.indicatorSuperFaceView.superview != cell) {
                 [cell addSubview:self.indicatorSuperFaceView];
             }
             self.indicatorSuperFaceView.frame = cell.bounds;
         }
     }
-    
+
     self.dropLocationInfoValue = dropLocationInfoValue;
-    //! 변할 필요가 없는 곳.
+//! 변할 필요가 없는 곳.
     if (MGROutlineItemLocationEqualToLocation(sourceItemLocationInfo, dropLocationInfoValue) == YES ||
         dropLocationInfoValue.superItem == sourceOutlineItem ||
         dropLocationInfoValue.afterItem == sourceOutlineItem ||

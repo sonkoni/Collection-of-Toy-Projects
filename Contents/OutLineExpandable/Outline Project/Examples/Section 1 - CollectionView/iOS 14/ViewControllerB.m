@@ -1,5 +1,5 @@
 //
-//  ViewControllerY2.m
+//  ViewControllerB.m
 //  OutlineProject
 //
 //  Created by Kwan Hyun Son on 2021/08/24.
@@ -9,7 +9,7 @@
 @import BaseKit;
 @import IosKit;
 
-#import "ViewControllerY2.h"
+#import "ViewControllerB.h"
 #import "OutlineContent.h"
 #import "OutlineIndicatorLineView.h"
 #import "EmptyViewController.h"
@@ -17,7 +17,7 @@
 typedef NSString * MGRMainSection NS_STRING_ENUM;
 static MGRMainSection const mainSection  = @"mainSection";
 
-@interface ViewControllerY2 () <UICollectionViewDelegate, UICollectionViewDragDelegate, UICollectionViewDropDelegate>
+@interface ViewControllerB () <UICollectionViewDelegate, UICollectionViewDragDelegate, UICollectionViewDropDelegate>
 
 @property (nonatomic, strong) UICollectionViewDiffableDataSource <MGRMainSection, MGROutlineItem <OutlineContent *>*>*dataSource;
 @property (nonatomic, strong, readonly) NSDiffableDataSourceSectionSnapshot <MGROutlineItem <OutlineContent *>*>*sectionSnapshot; // @dynamic
@@ -33,7 +33,7 @@ static MGRMainSection const mainSection  = @"mainSection";
 @property (nonatomic) CGRect initialDragCellFrame;
 @end
 
-@implementation ViewControllerY2
+@implementation ViewControllerB
 @dynamic sectionSnapshot;
 
 - (void)viewDidLoad {

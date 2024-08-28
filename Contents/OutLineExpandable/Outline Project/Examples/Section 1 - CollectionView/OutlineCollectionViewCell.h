@@ -1,6 +1,6 @@
 //
 //  OutlineItemCell.h
-//  Modern Collection Views
+//  OutlineProject
 //
 //  Created by Kwan Hyun Son on 2021/01/14.
 //
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MGROutlineItemCell : UICollectionViewCell
+@interface OutlineCollectionViewCell : UICollectionViewCell
 
 @property (class, nonatomic, strong, readonly) NSString *reuseIdentifer;
 @property (nonatomic, strong) UILabel *label;

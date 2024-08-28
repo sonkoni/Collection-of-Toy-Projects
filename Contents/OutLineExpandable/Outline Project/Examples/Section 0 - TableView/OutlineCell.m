@@ -1,35 +1,26 @@
 //
-//  OutlineItemCell.m
-//  Modern Collection Views
+//  OutlineCell.m
+//  OutlineProject
 //
-//  Created by Kwan Hyun Son on 2021/01/14.
+//  Created by Kwan Hyun Son on 2021/09/02.
+//  Copyright © 2021 Mulgrim Co. All rights reserved.
 //
 
 @import IosKit;
 
-#import "MGROutlineItemCell.h"
+#import "OutlineCell.h"
 
-@implementation UIColor (Extention)
-
-+ (UIColor *)cornflowerBlue {
-    return [UIColor colorWithDisplayP3Red:100.0 / 255.0 green:149.0 / 255.0 blue:237.0 / 255.0 alpha:1.0];
-}
-
-@end
-
-@interface MGROutlineItemCell ()
+@interface OutlineCell ()
+@property (nonatomic, strong, readwrite) UIImageView *imageView;
 @property (nonatomic, strong, nullable) NSLayoutConstraint *indentContraint;
-@property (nonatomic, assign) CGFloat inset;
+@property (nonatomic, strong) UIColor *cornflowerBlue;
 @end
 
-@implementation MGROutlineItemCell
+@implementation OutlineCell
+@synthesize imageView = _imageView; // 반드시 넣어줘야한다. 재정의에 해당하므로.
 
-+ (NSString *)reuseIdentifer {
-    return @"outline-item-cell-reuse-identifier";
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self commonInit];
     }
@@ -41,8 +32,18 @@
     [self configureChevron];
 }
 
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    [super setHighlighted:highlighted animated:animated];
+    [self configureChevron];
+}
+
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
+    [self configureChevron];
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
     [self configureChevron];
 }
 
@@ -52,11 +53,11 @@
     _label = [UILabel new];
     _containerView = [UIView new];
     _imageView = [UIImageView new];
-    _inset = 10.0f;
-    _indentationLevel = 0;
-    _indentationWidth = 20.0;
     _expanded = NO;
     _group = NO;
+    self.indentationLevel = 0;
+    self.indentationWidth = 20.0;
+    
     
     self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.containerView addSubview:self.imageView];
@@ -70,38 +71,29 @@
     [self.containerView addSubview:self.label];
 
     _indentContraint = [self.containerView.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor
-                                                                        constant:self.inset];
+                                                                        constant:self.indentationLevel * self.indentationWidth];
     self.indentContraint.active = YES;
     
     [self.containerView.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor].active = YES;
     [self.containerView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor].active = YES;
     [self.containerView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor].active = YES;
     
-    [self.imageView.leadingAnchor constraintEqualToAnchor:self.containerView.leadingAnchor constant:10.0].active = YES;
+    [self.imageView.leadingAnchor constraintEqualToAnchor:self.containerView.leadingAnchor constant:15.0].active = YES;
     [self.imageView.heightAnchor constraintEqualToConstant:25.0].active = YES;
     [self.imageView.widthAnchor constraintEqualToConstant:25.0].active = YES;
     [self.imageView.centerYAnchor constraintEqualToAnchor:self.containerView.centerYAnchor].active = YES;
     
-    [self.label.leadingAnchor constraintEqualToAnchor:self.imageView.trailingAnchor constant:10.0].active = YES;
+    [self.label.leadingAnchor constraintEqualToAnchor:self.imageView.trailingAnchor constant:15.0].active = YES;
     [self.label.trailingAnchor constraintEqualToAnchor:self.containerView.trailingAnchor].active = YES;
     [self.label.bottomAnchor constraintEqualToAnchor:self.containerView.bottomAnchor].active = YES;
     [self.label.topAnchor constraintEqualToAnchor:self.containerView.topAnchor ].active = YES;
     
+    _cornflowerBlue = [UIColor colorWithDisplayP3Red:100.0 / 255.0 green:149.0 / 255.0 blue:237.0 / 255.0 alpha:1.0];
     [self configureChevron];
 }
 
 
 #pragma mark - 세터 & 게터
-- (void)setIndentationLevel:(NSInteger)indentLevel {
-    _indentationLevel = indentLevel;
-    self.indentContraint.constant = self.indentationWidth * indentLevel;
-}
-
-- (void)setIndentationWidth:(CGFloat)indentUnit {
-    _indentationWidth = indentUnit;
-    self.indentContraint.constant = indentUnit * self.indentationLevel;
-}
-
 - (void)setExpanded:(BOOL)expanded {
     _expanded = expanded;
     [self configureChevron];
@@ -110,6 +102,16 @@
 - (void)setGroup:(BOOL)group {
     _group = group;
     [self configureChevron];
+}
+
+- (void)setIndentationLevel:(NSInteger)indentLevel {
+    [super setIndentationLevel:indentLevel];
+    self.indentContraint.constant = self.indentationWidth * indentLevel;
+}
+
+- (void)setIndentationWidth:(CGFloat)indentationWidth {
+    [super setIndentationWidth:indentationWidth];
+    self.indentContraint.constant = indentationWidth * self.indentationLevel;
 }
 
 
@@ -137,7 +139,7 @@
         self.imageView.transform = CGAffineTransformIdentity;
     }
 
-    self.imageView.tintColor = highlighted ? [UIColor grayColor] : [UIColor cornflowerBlue];
+    self.imageView.tintColor = highlighted ? [UIColor grayColor] : [self cornflowerBlue];
 }
 
 

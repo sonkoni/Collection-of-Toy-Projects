@@ -19,7 +19,7 @@
     [super viewDidLoad];
     OutlineIndicatorLineView *lineView = [OutlineIndicatorLineView new];
     lineView.frame = CGRectMake(50.0, 350.0, 300, 50);
-//    lineView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.1];
+    // lineView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.1];
     [self.view addSubview:lineView];
 }
 

@@ -102,6 +102,7 @@
 }
 
 #pragma mark - NS_UNAVAILABLE
+
 + (instancetype)new { NSAssert(FALSE, @"+ new 사용금지."); return nil; }
 - (instancetype)init { NSAssert(FALSE, @"- init 사용금지."); return nil; }
 @end

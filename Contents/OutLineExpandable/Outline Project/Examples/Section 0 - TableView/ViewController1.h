@@ -1,8 +1,8 @@
 //
-//  ViewControllerY1.h
+//  ViewController2.h
 //  OutlineProject
 //
-//  Created by Kwan Hyun Son on 2021/08/24.
+//  Created by Kwan Hyun Son on 2021/08/20.
 //  Copyright © 2021 Mulgrim Co. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewControllerY1 : UIViewController
+@interface ViewController1 : UIViewController
 
 @end
 

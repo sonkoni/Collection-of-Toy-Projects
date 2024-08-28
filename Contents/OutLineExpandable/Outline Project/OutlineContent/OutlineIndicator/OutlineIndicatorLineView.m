@@ -89,7 +89,6 @@
 #endif
 }
 
-
 #pragma mark - 세터 & 게터
 - (void)setStrokeColor:(UIColor *)strokeColor {
     _strokeColor = strokeColor;

@@ -1,5 +1,5 @@
 //
-//  MGROutlineCell.h
+//  OutlineCell.h
 //  OutlineProject
 //
 //  Created by Kwan Hyun Son on 2021/09/02.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MGROutlineCell : UITableViewCell
+@interface OutlineCell : UITableViewCell
 
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) UILabel *label;

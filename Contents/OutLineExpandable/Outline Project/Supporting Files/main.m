@@ -1,6 +1,6 @@
 //
 //  main.m
-//  MGRLatex
+//  OutlineProject
 //
 //  Created by Kwan Hyun Son on 2021/07/20.
 //

@@ -1,5 +1,5 @@
 //
-//  ViewControllerY2.h
+//  ViewControllerA.h
 //  OutlineProject
 //
 //  Created by Kwan Hyun Son on 2021/08/24.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewControllerY2 : UIViewController
+@interface ViewControllerA : UIViewController
 
 @end
 

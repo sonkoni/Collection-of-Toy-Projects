@@ -1,6 +1,6 @@
 //
 //  MainTableViewController.m
-//  MGRLatex
+//  OutlineProject
 //
 //  Created by Kwan Hyun Son on 2021/07/20.
 //
@@ -8,13 +8,11 @@
 #import "MainTableViewController.h"
 #import "ItemsForTableView.h"
 #import "Item.h"
-#import "ViewController.h"
-#import "ViewControllerX1.h"
-#import "ViewControllerY1.h"
-#import "ViewControllerY2.h"
+#import "ViewController1.h"
+#import "ViewControllerA.h"
+#import "ViewControllerB.h"
 
 @interface MainTableViewController ()
-
 @end
 
 @implementation MainTableViewController
@@ -25,7 +23,6 @@
     } else {
         self = [super initWithStyle:UITableViewStyleGrouped];
     }
-    
     if(self) {
         self.navigationItem.title = @"Outline Project";
     }
@@ -34,11 +31,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.tableView registerClass:[UITableViewCell class]
-//           forCellReuseIdentifier:@"UITableViewCell"];
 }
 
 #pragma mark - <UITableViewDataSource>
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return ItemsForTableView.sharedItems.allItems.count;
 }
@@ -97,6 +93,7 @@
 }
 
 #pragma mark - <UITableViewDelegate>
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     UIListContentConfiguration *listContentConfiguration = (UIListContentConfiguration *)cell.contentConfiguration;
@@ -104,37 +101,18 @@
     
     if (indexPath.section == 0) {
         if(indexPath.row == 0){
-            viewController = [ViewController new];
-        } 
-        if (@available(iOS 14, *)) {
-            viewController.navigationItem.title = listContentConfiguration.text;
-        } else {
-            viewController.navigationItem.title = cell.detailTextLabel.text;
+            viewController = [ViewController1 new];
+            viewController.navigationItem.title = @"TableView";
         }
     }
     
     if (indexPath.section == 1) {
         if(indexPath.row == 0){
-            viewController = [ViewControllerX1 new];
-        }
-        if (@available(iOS 14, *)) {
-            viewController.navigationItem.title = [NSString stringWithFormat:@"%@ %@", listContentConfiguration.text, listContentConfiguration.secondaryText];
-        } else {
-            viewController.navigationItem.title = [NSString stringWithFormat:@"%@ %@", cell.textLabel.text, cell.detailTextLabel.text];
-        }
-    }
-    
-    if (indexPath.section == 2) {
-        if(indexPath.row == 0){
-            viewController = [ViewControllerY1 new];
+            viewController = [ViewControllerA new];
+            viewController.navigationItem.title = @"CollectionView iOS 13";
         } else if(indexPath.row == 1){
-            viewController = [ViewControllerY2 new];
-        }
-        
-        if (@available(iOS 14, *)) {
-            viewController.navigationItem.title = [NSString stringWithFormat:@"%@ %@", listContentConfiguration.text, listContentConfiguration.secondaryText];
-        } else {
-            viewController.navigationItem.title = [NSString stringWithFormat:@"%@ %@", cell.textLabel.text, cell.detailTextLabel.text];
+            viewController = [ViewControllerB new];
+            viewController.navigationItem.title = @"CollectionView iOS 14";
         }
     }
     
