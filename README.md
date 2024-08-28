@@ -68,8 +68,8 @@
 **[back to top](#contents)** 
 
 ## Tree
-*일반적인 Search 뿐만 아니라 한글 초성검색 및 미완성 문자까지 검색되게하는 알고리즘을 보여주는 프로젝트*
-- [Initial Consonant Search](./Contents/InitialConsonantSearch) - 초성검색, 일반검색, 미완성 문자 검색 샘플 프로젝트
+*Tree 구조를 형성하는 클래스 및 UI(TableView OR CollectionView)*
+- [OutlineItem + (TableView OR CollectionView)](./Contents/OutLineExpandable) - Tree 알고리즘과 UI(Expandable)
 
 **[back to top](#contents)** 
  
