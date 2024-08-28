@@ -64,6 +64,9 @@
 		84454BCE2C7EE5B000674A95 /* 240828a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 240828a2.jpg; sourceTree = "<group>"; };
 		84454BCF2C7EE5E800674A95 /* 240828a3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 240828a3.jpg; sourceTree = "<group>"; };
 		84454BD02C7EEA2E00674A95 /* 240828a4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 240828a4.jpg; sourceTree = "<group>"; };
+		84454BDC2C7EEF9B00674A95 /* 230520c1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 230520c1.gif; sourceTree = "<group>"; };
+		84454BDD2C7EEF9B00674A95 /* 230520c2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 230520c2.gif; sourceTree = "<group>"; };
+		84454BDE2C7EF13900674A95 /* 230520c3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 230520c3.gif; sourceTree = "<group>"; };
 		8455F6CF26D48D6E00E7B6A6 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		8455F6D026D48D6E00E7B6A6 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 		8455F6D226D48D7900E7B6A6 /* ViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
@@ -254,6 +257,9 @@
 				84454BD02C7EEA2E00674A95 /* 240828a4.jpg */,
 				84454BC92C7ECD6400674A95 /* 230520a2.jpg */,
 				84454BC52C7ECD6400674A95 /* 230520b1.jpg */,
+				84454BDC2C7EEF9B00674A95 /* 230520c1.gif */,
+				84454BDD2C7EEF9B00674A95 /* 230520c2.gif */,
+				84454BDE2C7EF13900674A95 /* 230520c3.gif */,
 				84454BC82C7ECD6400674A95 /* Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.19.gif */,
 				84454BC62C7ECD6400674A95 /* Simulator Screen Recording - iPhone 14 - 2023-05-20 at 09.05.53.gif */,
 				84454BC72C7ECD6400674A95 /* Simulator Screen Recording - iPhone 14 Pro - 2023-05-20 at 09.29.19.gif */,
