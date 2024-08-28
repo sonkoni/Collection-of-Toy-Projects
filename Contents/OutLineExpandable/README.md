@@ -80,7 +80,7 @@ _menuItems = @[item0, item1].mutableCopy;
 
 ## Documentation
 <details> 
-<summary>👇🖱️ `SKHOutlineItem.swift` </summary>
+<summary>👇🖱️ SKHOutlineItem.swift </summary>
 <hr>
 
 > <strong>Note:</strong> `MGROutlineItem.h`, `MGROutlineItem.m` 생략
