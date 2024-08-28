@@ -18,7 +18,7 @@
 
 ## Features
 * 계층적 데이터의 구조를 잡아준다
-* 실제로 사용될 컨텐츠는 제네릭으로 감싸는 구조
+* 실제로 사용될 컨텐츠는 **제네릭**으로 감싸는 구조
 * 서브 아이템을 열고 닫을 수 있는 Flag를 지원하여 사용될 UI(TableView 또는 CollectionView)에서 이를 적절히 이용할 수 있다
 * recurrence 기능을 제공하여 일괄적인 데이터 업데이트 가능
 * 특정 아이템에서 자신의 indexPath에 대한 정보 Get 가능
@@ -39,25 +39,42 @@ Sample 1 | Sample 2 | [MTS 프로젝트](https://youtu.be/161FoZYpU8I?si=z89zAGR
 
 ## Usage
 
-> Swift
-```swift
-
-sound = MGOSoundRuler.rulerSound
-let dialControl = MMTDialControl()
-dialControl.normalSoundPlayBlock = sound?.playSoundTickHaptic()
-view.addSubview(dialControl)
-dialControl.addTarget(self, action:#selector(dialValueChanged(_:)), for: .valueChanged)
-
-```
-
 > Objective-C
 ```objective-c
 
-sound = [MGOSoundRuler rulerSound];
-MMTDialControl *dialControl = [MMTDialControl new];
-dialControl.normalSoundPlayBlock = [sound playSoundTickHaptic];
-[self.view addSubview:dialControl];
-[dialControl addTarget:self action:@selector(dialValueChanged:) forControlEvents:UIControlEventValueChanged];
+MGROutlineItem *item0 =
+[MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Compositional Layout"] subitems:@[
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Getting Started"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"List" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Grid" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Inset Items Grid" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Two-Column Grid" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Per-Section Layout"] subitems:@[
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Distinct Sections" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Adaptive Sections" viewControllerClass:classObjc]]]]]],
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Advanced Layouts"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Supplementary Views"] subitems:@[
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Item Badges" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Section Headers/Footers" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Pinnned Section Headers" viewControllerClass:classObjc]]]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Section Background Decoration" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Nested Groups" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Orthogonal Sections"] subitems:@[
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Orthogonal Sections" viewControllerClass:classObjc]],
+            [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Orthogonal Section Behaviors" viewControllerClass:classObjc]]]]]],
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Conference App"] subitems:@[
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Videos" viewControllerClass:classObjc]],
+        [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"News" viewControllerClass:classObjc]]]]
+]];
+    
+MGROutlineItem *item1 =
+[MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Diffable Data Source"] subitems:@[
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Mountains Search" viewControllerClass:classObjc]],
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Settings: Wi-Fi" viewControllerClass:classObjc]],
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"Insertion Sort Visualization" viewControllerClass:classObjc]],
+    [MGROutlineItem outlineWithContentItem:[OutlineContent itemWithTitle:@"UITableView: Editing" viewControllerClass:classObjc]]]];
+    
+_menuItems = @[item0, item1].mutableCopy;
 
 ```
 
