@@ -50,7 +50,7 @@ print(fibonacci(10, memo: &memo))  // 출력: 55
 // 메모이제이션을 사용한 피보나치 수열 계산
 NSInteger fibonacci(NSInteger n, NSMutableDictionary<NSNumber *, NSNumber *> *memo) {
     NSNumber *key = @(n);
-    NSNumber *result = [memo objectForKey:key];
+    NSNumber *result = memo[key];
     if (result) {
         return [result integerValue];
     }
@@ -58,7 +58,7 @@ NSInteger fibonacci(NSInteger n, NSMutableDictionary<NSNumber *, NSNumber *> *me
         return n;
     }
     NSInteger fib = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
-    [memo setObject:@(fib) forKey:key];
+    memo[key] = @(fib);
     return fib;
 }
 
@@ -73,7 +73,7 @@ int main(int argc, const char * argv[]) {
 
 ### 2. 테이블을 사용한 피보나치 수열
 * 테이블을 사용한 방법은 반복문을 통해 부분 문제의 결과를 저장하고 이를 이용해 최종 문제를 해결하는 방법이다.
-* 이 코드는 `table` 배열을 사용하여 각 피보나치 수를 계산하고 저장하여 중복 계산을 방지합니다.
+* 이 코드는 `table` 배열을 사용하여 각 피보나치 수를 계산하고 저장하여 중복 계산을 방지한다.
 
 ```swift
 // 스위프트 샘플코드:
