@@ -1,4 +1,4 @@
-# Dynamic Programming 설명
+# Dynamic Programming(동적 계획법)
 
 ## Dynamic Programming은 다음과 같은 과정을 통해 문제를 해결한다.
 1. 문제 분할: 원래의 문제를 더 작은 부분 문제로 나누어 해결한다.
