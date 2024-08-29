@@ -2,40 +2,40 @@
 
 
 ## A. 모든 개발자 공통 요건
-• 개발을 좋아함
-• 수학을 좋아함
-• 딥러닝에 관심이 많음
-• 협업이 두렵지 않음
-• 책임감이 강함
+- 개발을 좋아함
+- 수학을 좋아함
+- 딥러닝에 관심이 많음
+- 협업이 두렵지 않음
+- 책임감이 강함
 
 ## B. 앱 개발자 공통 요건
-• 앱 개발에 보람을 느낌
-• 1px 어긋난 것이 자꾸 눈에 밟힘
-• 동작이 부드럽지 않으면 고치고 싶음
-• 더 빨리 더 잘 만들 수 없을까 고민함
-• 완벽만큼 완성을 중요하게 생각함
+- 앱 개발에 보람을 느낌
+- 1px 어긋난 것이 자꾸 눈에 밟힘
+- 동작이 부드럽지 않으면 고치고 싶음
+- 더 빨리 더 잘 만들 수 없을까 고민함
+- 완벽만큼 완성을 중요하게 생각함
 
 ## C. 앱 개발자 공통 기술 질문: 5개 이상 잘 대답할 수 있어야 함
-• PNG와 JPG의 차이점은?
-• Dynamic Programming이란?
-• Virtual Memory란?
-• Garbage Collection이란?
-• Cache란?
-• Database Index 추가의 장단점은?
-• 비대칭 암호화란?
-• HDD, SSD, DRAM 각각의 성능은?
-• GIT의 장점은?
+- PNG와 JPG의 차이점은?
+- Dynamic Programming이란?
+- Virtual Memory란?
+- Garbage Collection이란?
+- Cache란?
+- Database Index 추가의 장단점은?
+- 비대칭 암호화란?
+- HDD, SSD, DRAM 각각의 성능은?
+- GIT의 장점은?
 
 ## D. iOS 개발자 기술 질문: 5개 이상 잘 대답할 수 있어야 함
-• Auto Layout의 장단점은?
-• MVC 패턴이란?
-• KVC와 KVO란?
-• Swift의 특징은?
-• Higher Order Function이란?
-• Method Swizzling이란?
-• HTTP/2의 특징은?
-• Memory Leak의 대처방법은?
-• 이미지 리스트의 성능 향상법은?
+- Auto Layout의 장단점은?
+- MVC 패턴이란?
+- KVC와 KVO란?
+- Swift의 특징은?
+- Higher Order Function이란?
+- Method Swizzling이란?
+- HTTP/2의 특징은?
+- Memory Leak의 대처방법은?
+- 이미지 리스트의 성능 향상법은?
 
 
 
