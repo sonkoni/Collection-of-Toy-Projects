@@ -27,12 +27,34 @@
 
    - **예시**: 가로, 세로 모드 전환 시에도 레이아웃이 자연스럽게 조정된다. [자세한 서술 문서](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)
 
-   ```swift
-   NSLayoutConstraint.activate([
-       button.widthAnchor.constraint(equalToConstant: 100),
-       button.heightAnchor.constraint(equalToConstant: 50)
-   ])
-   ```
+    ```swift
+    // 방향전환에 따른 Present/Dismiss
+    var observer: NSObjectProtocol?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        observer = NotificationCenter.default.addObserver(
+            forName: UIDevice.orientationDidChangeNotification,
+            object: nil,
+            queue: OperationQueue.main
+        ) { [weak self] _ in
+
+            guard let self = self
+            else {
+                return
+            }
+
+            if self.presentedViewController == nil,
+               UIDevice.current.orientation.isLandscape {
+                let vc = ViewControllerX()
+                vc.modalPresentationStyle = .fullScreen
+                vc.modalTransitionStyle = .crossDissolve
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+    }
+    ```
    
 방향변화에 따른 Layout 변경 | 방향변화에 따른 Present/Dismiss 
 ---|---
