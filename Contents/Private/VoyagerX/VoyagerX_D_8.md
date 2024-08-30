@@ -56,6 +56,24 @@ let closure: () -> Void = { [weak self] in
 
 - **Xcode Instruments**: Instruments의 Leaks 도구를 사용하여 메모리 누수를 분석하고, 누수가 발생하는 지점을 찾을 수 있다. 아래 이미지는 Instruments의 Leaks 도구 화면 예시이다.
 
+  ```swift
+  // 의도적인 누수코드를 만들어서 테스트해볼 수 있다.
+  
+  class MyClass {
+    var otherClass: MyOtherClass?
+  }
+  
+  class MyOtherClass {
+      var myClass: MyClass?
+  }
+  
+  func makeMemoryLeaks() {
+      let myClass = MyClass()
+      let otherClass = MyOtherClass()
+      myClass.otherClass = otherClass
+      otherClass.myClass = myClass
+  }
+  ```
 <p align="center"><img src="./screenshot/240830a1.jpg" width="1000"></p>
 
 #### 2.5. **메모리 관리 도구 사용**
