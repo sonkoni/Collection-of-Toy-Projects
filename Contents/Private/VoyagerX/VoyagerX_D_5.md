@@ -51,7 +51,7 @@ print(sum) // 15
 
 ### 4. 실제 프로젝트에서 사용했던 함수 예
 
-`도미즈` 프로젝트(명지대학교 기숙사관리 앱)를 진행하면서 사용했던 함수의 예. `Closure`를 반환한다.
+**도미즈** 프로젝트(명지대학교 기숙사관리 앱)를 진행하면서 사용했던 함수의 예. `Closure`를 반환한다.
 
 ```swift
 // typealias NaviBarAppearanceUsecase = (SceneType, UINavigationBar) -> Void
