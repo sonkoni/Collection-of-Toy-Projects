@@ -76,7 +76,7 @@ class ImageCache {
       func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
           for indexPath in indexPaths {
               let imageUrl = imageUrls[indexPath.item]
-              // 미리 이미지를 로드합니다.
+              // 미리 이미지를 로드한다.
               ImageLoader.shared.loadImage(from: imageUrl)
           }
       }
@@ -124,9 +124,8 @@ class LazyLoadingImageView: UIImageView {
 
 대량의 이미지를 처리할 때 메모리 관리가 중요합니다. 다음과 같은 방법으로 메모리 관리를 최적화할 수 있다:
 
-- **자동 참조 카운팅(ARC)**: 메모리 누수를 방지하기 위해 ARC를 적극적으로 활용한다.
 - **메모리 경고 처리**: `didReceiveMemoryWarning()` 메서드를 활용해 메모리 경고가 발생했을 때 캐시를 비우는 등의 작업을 수행한다.
 
 ### 결론
 
-이미지 리스트의 성능을 최적화하는 것은 iOS 애플리케이션의 사용자 경험을 크게 향상시킬 수 있는 중요한 요소이다. 비동기 로딩, 이미지 캐싱, 효율적인 UI 컴포넌트 사용, 이미지 최적화, 그리고 메모리 관리 등을 통해 성능을 극대화할 수 있다. 이러한 기법을 적절히 활용하면, 사용자는 더 빠르고 원활한 인터페이스를 경험하게 될 것이다.
+이미지 리스트의 성능을 최적화하는 것은 iOS 애플리케이션의 사용자 경험을 크게 향상시킬 수 있는 요소이다. 비동기 로딩, 이미지 캐싱, 효율적인 UI 컴포넌트 사용, 이미지 최적화, 그리고 메모리 관리 등을 통해 성능을 극대화할 수 있다.
