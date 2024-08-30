@@ -25,7 +25,7 @@
 ### 3. **[기기 방향에 따른 자동 조정](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)**
    Auto Layout을 사용하면 기기의 방향이 변경될 때 자동으로 레이아웃을 조정할 수 있다. 이는 가로 모드와 세로 모드를 모두 지원하는 앱에서 필수적이다.
 
-   - **예시**: 가로, 세로 모드 전환 시에도 레이아웃이 자연스럽게 조정된다. [자세한 서술](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)
+   - **예시**: 가로, 세로 모드 전환 시에도 레이아웃이 자연스럽게 조정된다. [자세한 서술 문서](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)
 
    ```swift
    NSLayoutConstraint.activate([
@@ -33,6 +33,36 @@
        button.heightAnchor.constraint(equalToConstant: 50)
    ])
    ```
+   
+### 4. **[암묵적 애니메이션 지원](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Animation)**
+   Auto Layout을 사용하면 레이아웃 변경 시 암묵적 애니메이션이 자동으로 적용됩니다. 이는 사용자 경험을 향상시키는 중요한 요소로, 뷰의 위치나 크기 변경이 부드럽게 나타나도록 합니다.
+
+   - **예시**: 아래 코드에서는 버튼의 위치가 변경될 때 부드러운 애니메이션이 자동으로 적용됩니다. [자세한 서술 문서](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Animation)
+
+    ```swift
+    @objc private func switchToggled(_ sender: UISwitch) {
+        sender.isEnabled = false
+        centerYConstraint.isActive = false
+        if sender.isOn == true {
+            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            widthConstraint.constant = 100.0
+        } else {
+            centerYConstraint = targetView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50.0)
+            widthConstraint.constant = 50.0
+        }
+        centerYConstraint.isActive = true
+        
+        let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.4) {
+            self.view.layoutIfNeeded() // 애니메이션 블락 안에서 layoutIfNeeded 메서드를 호출해야한다. 
+        }
+        animator.addCompletion { _ in
+            sender.isEnabled = true
+        }
+        animator.startAnimation()
+    }
+    ```
+
+   이와 같은 암묵적 애니메이션은 사용자가 레이아웃 변화를 자연스럽게 인식할 수 있게 해주며, 별도의 애니메이션 코드를 작성하지 않아도 되어 개발 시간을 단축할 수 있습니다.   
 
 ## 단점
 
