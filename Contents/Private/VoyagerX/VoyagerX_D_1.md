@@ -28,7 +28,9 @@
    - **예시**: 가로, 세로 모드 전환 시에도 레이아웃이 자연스럽게 조정된다. [자세한 서술 문서](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)
 
     ```swift
+    
     // 방향전환에 따른 Present/Dismiss
+    
     var observer: NSObjectProtocol?
 
     override func viewDidLoad() {
@@ -54,6 +56,7 @@
             }
         }
     }
+    
     ```
    
 방향변화에 따른 Layout 변경 | 방향변화에 따른 Present/Dismiss 
