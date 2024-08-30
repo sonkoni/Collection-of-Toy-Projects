@@ -2,9 +2,7 @@
 
 ### 정의
 
-MVC(Model-View-Controller) 패턴은 소프트웨어 디자인 패턴 중 하나로, 애플리케이션의 구조를 세 가지 주요 역할로 나누어 구성한다. 이러한 분리는 애플리케이션의 유지보수성과 확장성을 높이고, 역할별로 코드를 독립적으로 관리할 수 있도록 한다. 
-
-그러나 실제 프로그래밍에서는 MVC 패턴으로 구조를 만들었을 때, View와 Controller의 **강력한 접합**으로 문제가 발생하여 MVC 보다는 **MVVM(Model-View-View Model)** 디자인 패턴(+ Clean Architecture)이 널리 사용된다.
+MVC(Model-View-Controller) 패턴은 소프트웨어 디자인 패턴 중 하나로, 애플리케이션의 구조를 세 가지 주요 역할로 나누어 구성한다. 이러한 분리는 애플리케이션의 유지보수성과 확장성을 높이고, 역할별로 코드를 독립적으로 관리할 수 있도록 한다.<br/>그러나 실제 프로그래밍에서는 MVC 패턴으로 구조를 만들었을 때, View와 Controller의 **강력한 접합**으로 문제가 발생하여 MVC 보다는 **MVVM(Model-View-View Model)** 디자인 패턴(+ Clean Architecture)이 널리 사용된다.
 
 ### 구성 요소
 
