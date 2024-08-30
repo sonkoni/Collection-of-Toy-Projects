@@ -74,9 +74,9 @@ MVC 패턴에서 애플리케이션의 동작 방식은 다음과 같다:
 
 ### MVC의 시각적 표현
 
-아래 다이어그램은 MVC 패턴의 동작 방식을 시각적으로 표현한 것이다:
+아래 다이어그램은 MVC 패턴, MVVM 패턴의 동작 방식을 시각적으로 표현한 것이다:
 
-![MVC 패턴](https://upload.wikimedia.org/wikipedia/commons/a/a0/MVC-Process.svg)
+<p align="center"><img src="./screenshot/240830a3.jpg" width="1000"></p>
 
 ### 샘플 코드
 
