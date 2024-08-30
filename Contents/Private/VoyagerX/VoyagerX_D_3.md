@@ -43,6 +43,49 @@ person.setValue(35, forKey: "age")
 print(person.age) // 출력: 35
 ```
 
+```objective-c
+// Objective-C 에서 KVC 사용 예제
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic) NSInteger age;
+
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age;
+
+@end
+
+@implementation Person
+
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age {
+    self = [super init];
+    if (self) {
+        _name = name;
+        _age = age;
+    }
+    return self;
+}
+
+@end
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // Person 객체 생성
+        Person *person = [[Person alloc] initWithName:@"John Doe" age:30];
+
+        // KVC를 사용하여 프라퍼티에 접근
+        NSString *name = [person valueForKey:@"name"];
+        NSLog(@"%@", name); // 출력: John Doe
+
+        // KVC를 사용하여 프라퍼티 값을 변경
+        [person setValue:@35 forKey:@"age"];
+        NSLog(@"%ld", (long)person.age); // 출력: 35
+    }
+    return 0;
+}
+```
+
 KVC는 특히 딕셔너리와 같이 키-값 쌍으로 데이터를 관리하는 구조와 함께 사용할 때 유용하다. 또한, 유연한 코딩을 가능하게 하여 런타임에 프라퍼티 이름을 동적으로 결정할 수 있다.
 
 ### 2. Key-Value Observing (KVO)
@@ -103,6 +146,89 @@ let observer = Observer(person: person)
 
 // KVO를 통해 age 프라퍼티의 변경을 감지
 person.age = 35 // 출력: 나이 변경: 30 -> 35
+```
+
+```objective-c
+// Objective-C 에서 KVO 사용 예제
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic) NSInteger age;
+
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age;
+
+@end
+
+@implementation Person
+
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age {
+    self = [super init];
+    if (self) {
+        _name = name;
+        _age = age;
+    }
+    return self;
+}
+
+@end
+
+@interface Observer : NSObject
+
+@property (nonatomic, strong) Person *person;
+
+- (instancetype)initWithPerson:(Person *)person;
+
+@end
+
+@implementation Observer
+
+- (instancetype)initWithPerson:(Person *)person {
+    self = [super init];
+    if (self) {
+        _person = person;
+
+        // KVO를 사용하여 'age' 프라퍼티를 관찰
+        [_person addObserver:self
+                  forKeyPath:@"age"
+                     options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld)
+                     context:nil];
+    }
+    return self;
+}
+
+// 관찰된 프라퍼티의 변화 처리
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary<NSKeyValueChangeKey,id> *)change
+                       context:(void *)context {
+    if ([keyPath isEqualToString:@"age"]) {
+        NSNumber *newValue = change[NSKeyValueChangeNewKey];
+        NSNumber *oldValue = change[NSKeyValueChangeOldKey];
+        NSLog(@"나이 변경: %@ -> %@", oldValue, newValue);
+    }
+}
+
+- (void)dealloc {
+    [_person removeObserver:self forKeyPath:@"age"];
+}
+
+@end
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // Person 객체 생성
+        Person *person = [[Person alloc] initWithName:@"John Doe" age:30];
+        
+        // Observer 객체 생성 및 KVO 설정
+        Observer *observer = [[Observer alloc] initWithPerson:person];
+        
+        // KVO를 통해 age 프라퍼티의 변경을 감지
+        person.age = 35; // 출력: 나이 변경: 30 -> 35
+    }
+    return 0;
+}
 ```
 
 ### KVC와 KVO의 활용
