@@ -34,7 +34,7 @@
    ])
    ```
    
-`Swift` |`Objective-C`
+방향변화에 따른 Layout 변경 | 방향변화에 따른 Present/Dismiss 
 ---|---
 <img src="../../AutoLayout_Adaptivity/screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">|<img src="../../AutoLayout_Adaptivity/screenshot/Screen Recording 2023-05-15 at 12.00.52.gif" width="450">
     
