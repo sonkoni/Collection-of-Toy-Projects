@@ -47,7 +47,7 @@ Swift는 빠른 성능을 위해 설계되었다. 주요 성능 관련 특징은
 
 Swift는 현대적인 프로그래밍 언어의 다양한 기능을 제공한다:
 
-- **프로토콜 지향 프로그래밍(Protocol-Oriented Programming)**: Swift는 프로토콜을 통해 다형성을 제공하며, 클래스뿐만 아니라 구조체와 열거형에서도 프로토콜을 사용할 수 있다.
+- **프로토콜 지향 프로그래밍(Protocol-Oriented Programming)**: Swift는 프로토콜을 통해 다형성을 제공하며, 클래스뿐만 아니라 구조체와 열거형에서도 프로토콜을 사용할 수 있다. **Objective-C**에서도 프로토콜이 존재하지만, **클래스에서만 사용가능하고 구현부분을 제공할 수 없고 오직 인터페이스 제공만 가능하다**. 
 
   ```swift
   protocol Drawable {
@@ -64,7 +64,7 @@ Swift는 현대적인 프로그래밍 언어의 다양한 기능을 제공한다
   circle.draw()
   ```
 
-- **확장(Extensions)**: 기존 클래스나 구조체에 새로운 기능을 추가할 수 있다.
+- **Extensions**: 기존 클래스나 구조체에 새로운 기능을 추가할 수 있다. Objective-C에서는 `Category`라고 부른다.
 
   ```swift
   extension Int {
