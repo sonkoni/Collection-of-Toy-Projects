@@ -22,10 +22,10 @@
    label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
    ```
 
-### 3. **기기 방향에 따른 자동 조정**
+### 3. **[기기 방향에 따른 자동 조정](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)**
    Auto Layout을 사용하면 기기의 방향이 변경될 때 자동으로 레이아웃을 조정할 수 있다. 이는 가로 모드와 세로 모드를 모두 지원하는 앱에서 필수적이다.
 
-   - **예시**: 가로, 세로 모드 전환 시에도 레이아웃이 자연스럽게 조정된다.
+   - **예시**: 가로, 세로 모드 전환 시에도 레이아웃이 자연스럽게 조정된다. [자세한 서술](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Adaptivity)
 
    ```swift
    NSLayoutConstraint.activate([
