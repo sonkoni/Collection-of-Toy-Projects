@@ -77,12 +77,6 @@ Swift는 현대적인 프로그래밍 언어의 다양한 기능을 제공한다
   print(number.squared()) // 9
   ```
 
-### 5. **오픈 소스**
-
-Swift는 2015년 오픈 소스로 공개되었으며, GitHub를 통해 누구나 소스 코드를 확인하고, 언어의 발전에 기여할 수 있다. 오픈 소스화된 Swift는 다양한 플랫폼(Windows, Linux 등)에서도 사용할 수 있게 되었다.
-
-![Swift Logo](https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg)
-
 ### 결론
 
 Swift는 안전성, 간결한 문법, 성능, 현대적인 언어 기능을 갖춘 강력한 프로그래밍 언어이다. iOS 및 Apple 생태계 전반에서 애플리케이션을 개발하는 데 최적화되어 있으며, 지속적인 발전을 통해 더욱 강력해지고 있다. Swift를 학습하고 활용하면 보다 안전하고 효율적인 코드를 작성할 수 있으며, Apple 플랫폼에서의 개발 생산성을 극대화할 수 있다.
