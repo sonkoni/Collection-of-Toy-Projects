@@ -118,13 +118,13 @@ override func viewDidLoad() {
    cell.frame = container.bounds
    cell.autoresizingMask = [.flexibleWidth, .flexibleHeight]
    ```
-
+   한편, macOS에서는 `transform` 프라퍼티와 충돌을 일으키는 경우가 발생할 수 있다. iOS는 13 이후부터는 수정됬지만, macOS에서는 `transform` 을 이용할 때, 문제가 발생해서 수동으로 layout을 잡아준 경험이 있다. 
 
 
 ### 3. **복잡한 UI 구현의 어려움**
    Auto Layout은 복잡한 UI를 구현할 때 제약 조건이 복잡해지기 쉽다. 특히 여러 개의 뷰가 서로 상호작용하는 경우 제약 조건 충돌이 발생할 수 있다.
 
-   - **예시**: 여러 뷰가 서로 종속된 제약 조건을 가질 때 충돌 가능성 증가.
+   - **예시**: 여러 뷰가 서로 종속된 제약 조건을 가질 때 충돌 가능성 증가. 이때는 `UILayoutPriority` 조정으로 충돌을 피해야한다.
 
    ```swift
    view1.leadingAnchor.constraint(equalTo: view2.trailingAnchor, constant: 8).isActive = true
