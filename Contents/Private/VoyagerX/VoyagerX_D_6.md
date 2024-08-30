@@ -23,45 +23,77 @@ Method Swizzling은 Objective-C 런타임의 **objc_runtime** 라이브러리의
 
 ## 예제 코드
 
-다음은 `UIViewController`의 `viewWillAppear` 메서드를 Swizzling하여, 뷰가 화면에 나타날 때마다 로그를 출력하는 예제이다.
+### 예제 1
+다음은 Method Swizzling의 기본적인 예시이다. `ViewController` 클래스에서 `methodA`와 `methodB`의 구현을 교환하는 방법을 보여준다.
 
-```swift
-import UIKit
+```objective-c
+#import "ViewController.h"
+#import <objc/runtime.h>
 
-extension UIViewController {
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
-    static let swizzleViewWillAppear: Void = {
-        let originalSelector = #selector(viewWillAppear(_:))
-        let swizzledSelector = #selector(swizzled_viewWillAppear(_:))
-        
-        guard let originalMethod = class_getInstanceMethod(UIViewController.self, originalSelector),
-              let swizzledMethod = class_getInstanceMethod(UIViewController.self, swizzledSelector) else { return }
-        
-        method_exchangeImplementations(originalMethod, swizzledMethod)
-    }()
-    
-    @objc func swizzled_viewWillAppear(_ animated: Bool) {
-        // Swizzled implementation
-        self.swizzled_viewWillAppear(animated)
-        
-        // 추가적인 기능: 로그 출력
-        print("View will appear: \(self)")
-    }
+    Class cls = self.class;
+    Method m1 = class_getInstanceMethod(cls, @selector(methodA));
+    Method m2 = class_getInstanceMethod(cls, @selector(methodB));
+    method_exchangeImplementations(m1, m2);
+
+    [self methodA];
+    // methodB called
 }
+
+- (void)methodA {
+    NSLog(@"methodA called");
+}
+
+- (void)methodB {
+    NSLog(@"methodB called");
+}
+
+@end
 ```
 
-### 사용 방법
+이 코드에서는 `viewDidLoad` 메서드 내에서 `methodA`와 `methodB`의 구현을 교환한다. 그 결과, `[self methodA]` 호출 시 실제로는 `methodB`가 호출된다.
 
-```swift
-override func viewDidLoad() {
-    super.viewDidLoad()
+### 예제 2
+또 다른 예시는 다음과 같다:
+
+```objective-c
+#import "ViewController.h"
+#import <objc/runtime.h>
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
-    // Swizzling을 활성화
-    UIViewController.swizzleViewWillAppear
+    Class cls = self.class;
+    Method m1 = class_getInstanceMethod(cls, @selector(methodA));
+    Method m2 = class_getInstanceMethod(cls, @selector(methodB));
+    method_exchangeImplementations(m1, m2);
+
+    [self methodA];
+    //
+    // methodB called ~ [self methodA]; 는 스왑됬으므로 methodB가 호출된다. 
+    // methodA called
 }
+
+- (void)methodA {
+    NSLog(@"methodA called");
+}
+
+- (void)methodB {
+    NSLog(@"methodB called");
+    [self methodB]; // 이 호출은 methodA를 호출되게한다. 
+}
+
+@end
 ```
 
-위 코드는 `UIViewController`의 `viewWillAppear` 메서드가 호출될 때마다 커스텀 로그가 출력되도록 한다. `swizzled_viewWillAppear` 메서드가 원래 `viewWillAppear` 메서드를 대체하며, 기존의 기능도 유지되도록 `swizzled_viewWillAppear` 내부에서 원래의 `viewWillAppear`를 호출한다.
+이 예시에서는 `methodB`에서 `methodB`를 다시 호출하는 무한 루프(실제 무한루프가 일어나지 않는다)처럼 설정했다. 이로 인해 `methodA` 호출 시 `methodB`가 먼저 호출되고(스왑됬으므로), 그 뒤에 `methodA`가 호출된다. 이 방식은 메서드의 재귀 호출을 통해 추가적인 로직을 테스트할 수 있는 방법을 제공한다.
+
 
 ## Method Swizzling의 장점
 
@@ -76,4 +108,4 @@ override func viewDidLoad() {
 
 ## 결론
 
-Method Swizzling은 매우 강력한 도구이지만, 신중하게 사용해야 한다. 코드의 유연성을 높여줄 수 있지만, 잘못 사용하면 디버깅이 어렵고 유지보수가 힘든 코드가 될 수 있다. Method Swizzling을 사용하기 전에, 다른 대안이 있는지 고려하는 것이 중요하다.
+Method Swizzling은 매우 강력한 도구이지만, 신중하게 사용해야 한다. 코드의 유연성을 높여줄 수 있지만, 잘못 사용하면 디버깅이 어렵고 유지보수가 힘든 코드가 될 수 있다. Method Swizzling을 사용하기 전에, 다른 대안이 있는지 고려하는 것이 중요하다. 샘플프로젝트에서는 사용해본적이 있지만, 실제 출시앱에서는 사용하지 않았다.
