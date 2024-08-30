@@ -13,7 +13,7 @@ Memory leak은 애플리케이션에서 할당된 메모리가 해제되지 않�
 
 #### 2.1. **ARC(Automatic Reference Counting) 활용**
 
-ARC는 Objective-C와 Swift에서 메모리 관리를 자동으로 처리해주는 시스템이다. ARC를 적절히 활용하여 메모리 관리를 수동으로 처리하는 것보다 오류를 줄일 수 있다.
+ARC는 Objective-C와 Swift에서 메모리 관리를 자동으로 처리해주는 시스템이다. ARC를 적절히 활용하여 메모리 관리를 수동(**MRC**)으로 처리하는 것보다 오류를 줄일 수 있다.
 
 #### 2.2. **순환 참조 해결**
 
@@ -22,6 +22,8 @@ ARC는 Objective-C와 Swift에서 메모리 관리를 자동으로 처리해주�
 - **Weak 참조**: 객체가 메모리에서 해제될 때 자동으로 nil로 설정된다.
  
   ```swift
+  // 한쪽을 weak로 설정하면 쌍방참조를 해도 순환 참조가 발생하지 않는다
+  
   class MyClass {
       var otherClass: MyOtherClass?
   }
