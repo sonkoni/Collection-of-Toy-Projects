@@ -2,19 +2,19 @@
 
 ## 개요
 
-Higher-Order Function(고차 함수)은 다른 함수를 인수로 받거나, 결과로 함수를 반환하는 함수를 의미합니다. 이는 함수형 프로그래밍의 핵심 개념 중 하나로, Swift에서 매우 중요한 역할을 합니다. 고차 함수는 코드의 가독성을 높이고, 반복 작업을 줄이며, 재사용 가능한 코드를 작성하는 데 도움을 줍니다.
+Higher-Order Function(고차 함수)은 다른 함수를 인수로 받거나, return 값으로 함수를 반환하는 함수를 의미한다. 이는 함수형 프로그래밍의 핵심 개념 중 하나로, Swift에서 매우 중요한 역할을 한다. Objective-C에서는 Block(Swift의 Closure에 해당)을 인수로 받거나, Block을 반환하는 메서드로 볼 수 있다. 고차 함수는 코드의 가독성을 높이고, 반복 작업을 줄이며, 재사용 가능한 코드를 작성하는 데 도움을 준다.
 
 ### 고차 함수의 특징:
-- **함수를 인수로 받음**: 다른 함수를 인수로 받아서 그 함수의 실행 결과를 기반으로 동작합니다.
-- **함수를 반환함**: 함수를 실행한 결과로 새로운 함수를 반환할 수 있습니다.
+- **함수를 인수로 받음**: 다른 함수를 인수로 받아서 그 함수의 실행 결과를 기반으로 동작한다.
+- **함수를 반환함**: 함수를 실행한 결과로 새로운 함수를 반환할 수 있다.
 
 ## 고차 함수의 활용 예시
 
-Swift에서는 `map`, `filter`, `reduce`와 같은 함수가 대표적인 고차 함수입니다. 이들 함수는 컬렉션 타입의 데이터를 보다 효율적으로 처리할 수 있게 해줍니다.
+Swift에서는 `map`, `filter`, `reduce`와 같은 함수가 대표적인 고차 함수이다. 이들 함수는 컬렉션 타입의 데이터를 보다 효율적으로 처리할 수 있게 해준다.
 
 ### 1. `map` 함수
 
-`map` 함수는 컬렉션의 각 요소에 동일한 변환을 적용하고, 그 결과를 새로운 배열로 반환합니다.
+`map` 함수는 컬렉션의 각 요소에 동일한 변환을 적용하고, 그 결과를 새로운 배열로 반환한다.
 
 ```swift
 let numbers = [1, 2, 3, 4, 5]
@@ -22,13 +22,11 @@ let squaredNumbers = numbers.map { $0 * $0 }
 print(squaredNumbers) // [1, 4, 9, 16, 25]
 ```
 
-위 코드에서 `map` 함수는 각 요소에 대해 제곱을 계산하고, 그 결과를 새로운 배열로 반환합니다.
-
-![map 함수](https://developer.apple.com/documentation/swift/array/map.png)
+위 코드에서 `map` 함수는 각 요소에 대해 제곱을 계산하고, 그 결과를 새로운 배열로 반환한다.
 
 ### 2. `filter` 함수
 
-`filter` 함수는 컬렉션의 각 요소에 대해 조건을 확인한 후, 조건을 만족하는 요소만을 포함하는 새로운 배열을 반환합니다.
+`filter` 함수는 컬렉션의 각 요소에 대해 조건을 확인한 후, 조건을 만족하는 요소만을 포함하는 새로운 배열을 반환한다.
 
 ```swift
 let numbers = [1, 2, 3, 4, 5]
@@ -36,11 +34,11 @@ let evenNumbers = numbers.filter { $0 % 2 == 0 }
 print(evenNumbers) // [2, 4]
 ```
 
-위 코드에서 `filter` 함수는 짝수인 요소만을 필터링하여 반환합니다.
+위 코드에서 `filter` 함수는 짝수인 요소만을 필터링하여 반환한다.
 
 ### 3. `reduce` 함수
 
-`reduce` 함수는 컬렉션의 모든 요소를 하나로 합치는 작업을 수행합니다. 초기값을 설정하고, 각 요소를 순차적으로 결합하여 최종 값을 도출합니다.
+`reduce` 함수는 컬렉션의 모든 요소를 하나로 합치는 작업을 수행한다. 초기값을 설정하고, 각 요소를 순차적으로 결합하여 최종 값을 도출한다.
 
 ```swift
 let numbers = [1, 2, 3, 4, 5]
@@ -48,19 +46,80 @@ let sum = numbers.reduce(0) { $0 + $1 }
 print(sum) // 15
 ```
 
-위 코드에서 `reduce` 함수는 배열의 모든 요소를 더하여 최종 합을 반환합니다.
+위 코드에서 `reduce` 함수는 배열의 모든 요소를 더하여 최종 합을 반환한다.
+
+
+### 4. 실제 프로젝트에서 사용했던 함수 예
+
+`도미즈` 프로젝트(명지대학교 기숙사관리 앱)를 진행하면서 사용했던 함수의 예. `Closure`를 반환한다.
+
+```swift
+// typealias NaviBarAppearanceUsecase = (SceneType, UINavigationBar) -> Void
+
+func naviBarAppearanceUsecase() -> NaviBarAppearanceUsecase {
+    return { (sceneType: SceneType, navigationBar: UINavigationBar) -> Void in
+        
+        if sceneType == .myPage ||
+           sceneType == .request {
+            let appearance = UINavigationBarAppearance()
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = appearance
+            navigationBar.compactAppearance = appearance
+            navigationBar.compactScrollEdgeAppearance = appearance
+            return
+        }
+        
+        
+        let smallFont = UIFont.systemFont(ofSize: 17)
+        let largeFont = UIFont.systemFont(ofSize: 44)
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .systemBackground // 내비게이션 바 자체 색
+        appearance.shadowColor = .clear
+        
+        appearance.titleTextAttributes = [
+            NSAttributedString.Key.font: smallFont,
+            NSAttributedString.Key.foregroundColor: UIColor.tintColor
+        ]
+            
+        appearance.largeTitleTextAttributes = [
+            NSAttributedString.Key.font: largeFont,
+            NSAttributedString.Key.foregroundColor: UIColor.tintColor
+        ]
+        
+        let standardAppearance = appearance.copy()
+        
+        appearance.configureWithTransparentBackground()
+        
+        if sceneType == .main {
+            appearance.shadowColor = .separator
+            standardAppearance.shadowColor = .separator
+            appearance.configureWithOpaqueBackground()
+            standardAppearance.configureWithOpaqueBackground()
+        } else {
+            standardAppearance.backgroundColor = .clear
+            standardAppearance.shadowColor = .separator
+        }
+        
+        navigationBar.standardAppearance = standardAppearance
+        navigationBar.scrollEdgeAppearance = appearance
+        navigationBar.compactAppearance = appearance
+        navigationBar.compactScrollEdgeAppearance = appearance
+    }
+}
+```
 
 ## 고차 함수의 이점
 
 ### 1. **가독성 향상**
-고차 함수는 복잡한 로직을 간결하게 표현할 수 있어 코드의 가독성을 높여줍니다. `for` 루프를 사용한 반복 작업을 줄이고, 간결한 코드로 대체할 수 있습니다.
+고차 함수는 복잡한 로직을 간결하게 표현할 수 있어 코드의 가독성을 높여준다. `for` 루프를 사용한 반복 작업을 줄이고, 간결한 코드로 대체할 수 있다.
 
 ### 2. **재사용성 증대**
-고차 함수는 반복되는 패턴을 함수로 캡슐화하여 재사용 가능하게 만듭니다. 이를 통해 중복 코드를 줄이고, 유지보수성을 높일 수 있습니다.
+고차 함수는 반복되는 패턴을 함수로 캡슐화하여 재사용 가능하게 만듭니다. 이를 통해 중복 코드를 줄이고, 유지보수성을 높일 수 있다.
 
 ### 3. **함수형 프로그래밍 지원**
-고차 함수는 함수형 프로그래밍의 핵심 요소로, Swift에서 함수형 프로그래밍 스타일을 지원합니다. 이를 통해 부작용(side effect)이 없는 순수 함수를 쉽게 작성할 수 있습니다.
+고차 함수는 함수형 프로그래밍의 핵심 요소로, Swift에서 함수형 프로그래밍 스타일을 지원한다. 이를 통해 부작용(side effect)이 없는 순수 함수를 쉽게 작성할 수 있다.
 
 ## 결론
 
-Higher-Order Function은 Swift 프로그래밍에서 필수적인 개념으로, 코드를 더 효율적이고 간결하게 작성할 수 있도록 도와줍니다. Swift의 고차 함수를 이해하고 활용하면 더 나은 코드 품질을 유지할 수 있으며, 복잡한 문제도 쉽게 해결할 수 있습니다.
+Higher-Order Function은 Swift 프로그래밍에서 필수적인 개념으로, 코드를 더 효율적이고 간결하게 작성할 수 있도록 도와준다. Swift의 고차 함수를 이해하고 활용하면 더 나은 코드 품질을 유지할 수 있으며, 복잡한 문제도 쉽게 해결할 수 있다.
