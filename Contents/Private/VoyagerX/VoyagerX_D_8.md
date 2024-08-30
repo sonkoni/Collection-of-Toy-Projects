@@ -64,7 +64,7 @@ let closure: () -> Void = { [weak self] in
   }
   
   class MyOtherClass {
-      var myClass: MyClass?
+      var myClass: MyClass? // weak로 하지 않았기 때문에 쌍방참조 시, 순환참조로 인한 Leak 발생
   }
   
   func makeMemoryLeaks() {
@@ -80,8 +80,8 @@ let closure: () -> Void = { [weak self] in
 
 - **Xcode Memory Graph Debugger**: 메모리 그래프 디버거를 통해 객체 간의 강한 참조 관계를 시각적으로 확인할 수 있다.
 
-  ![Memory Graph Debugger](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/InstrumentsUserGuide/Art/memory_graph_debugger.png)
-
+<p align="center"><img src="./screenshot/240830a2.jpg" width="1000"></p>
+  
 ### 3. 메모리 누수 예방
 
 - **정기적인 코드 리뷰**: 메모리 누수를 방지하기 위해 팀원들과의 정기적인 코드 리뷰를 실시한다.
