@@ -20,15 +20,7 @@ ARC는 Objective-C와 Swift에서 메모리 관리를 자동으로 처리해주�
 순환 참조를 방지하기 위해 `weak`와 `unowned` 참조를 사용한다.
 
 - **Weak 참조**: 객체가 메모리에서 해제될 때 자동으로 nil로 설정된다.
-  
-  ```objective-c
-  @interface MyClass : NSObject
-  @property (nonatomic, weak) MyOtherClass *otherClass;
-  @end
-  ```
-
-- **Unowned 참조**: 객체가 해제되면 접근 시 크래시가 발생하지만, 강한 참조 사이클을 방지할 수 있다.
-  
+ 
   ```swift
   class MyClass {
       var otherClass: MyOtherClass?
