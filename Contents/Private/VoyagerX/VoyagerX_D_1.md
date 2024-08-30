@@ -35,7 +35,7 @@
    ```
    `Swift` |`Objective-C`
     ---|---
-    <img src="../../AutoLayout_Adaptivity/screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">|<img src="./screenshot/Screen Recording 2023-05-15 at 12.00.52.gif" width="450">
+    <img src="../../AutoLayout_Adaptivity/screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13 at 9.00.05.gif" width="450">|<img src="../../AutoLayout_Adaptivity/screenshot/Screen Recording 2023-05-15 at 12.00.52.gif" width="450">
     
    
 ### 4. **[암묵적 애니메이션 지원](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Animation)**
