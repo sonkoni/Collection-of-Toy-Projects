@@ -56,12 +56,13 @@ let closure: () -> Void = { [weak self] in
   ```objective-c
   - (void)dealloc {
       NSLog(@"%@ is being deallocated", self);
+      // ARC 메모리를 관리하므로 release메서드 호출이나, [super dealloc];을 해서는 안된다.
   }
   ```
 
 - **Xcode Instruments**: Instruments의 Leaks 도구를 사용하여 메모리 누수를 분석하고, 누수가 발생하는 지점을 찾을 수 있다. 아래 이미지는 Instruments의 Leaks 도구 화면 예시이다.
 
-  ![Instruments Leaks](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/InstrumentsUserGuide/Art/Leaks_2x.png)
+<p align="center"><img src="./screenshot/240830a1.jpg" width="600"></p>
 
 #### 2.5. **메모리 관리 도구 사용**
 
