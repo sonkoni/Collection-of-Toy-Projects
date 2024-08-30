@@ -95,17 +95,7 @@ override func viewDidLoad() {
 
 ## 단점
 
-### 1. **학습 곡선**
-   Auto Layout은 초기 학습이 다소 어려울 수 있다. 특히 복잡한 레이아웃을 구성할 때 제약 조건이 많아질수록 이해하고 관리하기가 어려워진다. Constraint 충돌이 발생하면 디버깅도 까다로울 수 있다.
-
-   - **예시**: 아래와 같은 복잡한 제약 조건은 디버깅 시 어려움을 겪을 수 있다.
-
-   ```swift
-   button.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-   button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
-   ```
-
-### 2. **런타임 오버헤드**
+### 1. **런타임 오버헤드**
    Auto Layout은 런타임에 제약 조건을 계산하기 때문에, 복잡한 레이아웃이 많아지면 성능에 영향을 줄 수 있다. 성능 최적화가 중요한 앱에서는 코드로 직접 뷰의 프레임을 설정하는 것이 더 나을 수 있다.
 
    - **예시**: 수동으로 프레임을 설정하는 코드와 비교했을 때, Auto Layout은 더 많은 시스템 리소스를 사용한다.
@@ -114,6 +104,22 @@ override func viewDidLoad() {
    // 수동 프레임 설정 예시
    button.frame = CGRect(x: 50, y: 100, width: 200, height: 50)
    ```
+
+### 2. **사용할 수 없는 상황 존재**
+
+   `UITableViewCell` 인스턴스를 간혹 `UITableView` 가 아닌 곳에서 Place Holder View로 사용할 경우에는 Auto Layout은 다음과 같은 에러 메시지를 발생시킨다. 이 에러 메시지는 `UITableViewCell`의 `translatesAutoresizingMaskIntoConstraints` 프라퍼티를 변경하면 안 된다는 경고이다. `UITableView`가 셀의 레이아웃을 자동으로 관리하기 때문에 발생하는 시스템 경고이다.
+   ```
+   Changing the translatesAutoresizingMaskIntoConstraints property of a UITableViewCell that is managed by a UITableView is not supported, and will result in incorrect self-sizing. Cell: <UITableViewCell: 0x10210abc0; frame = (0 0; 320 44); backgroundColor = <UIDynamicCatalogSystemColor: 0x600001743cc0; name = systemRedColor>; layer = <CALayer: 0x60000022dba0>>
+   ```
+
+   - **해결방법**: 다음과 같이 `autoresizingMask`를 이용하면 이를 우회할 수 있다. 
+   ```swift
+   cell.translatesAutoresizingMaskIntoConstraints = true
+   cell.frame = container.bounds
+   cell.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+   ```
+
+
 
 ### 3. **복잡한 UI 구현의 어려움**
    Auto Layout은 복잡한 UI를 구현할 때 제약 조건이 복잡해지기 쉽다. 특히 여러 개의 뷰가 서로 상호작용하는 경우 제약 조건 충돌이 발생할 수 있다.
