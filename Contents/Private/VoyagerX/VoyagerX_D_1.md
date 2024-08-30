@@ -35,7 +35,7 @@
    ```
    `Swift` |`Objective-C`
     ---|---
-    <img src="https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/Contents/AutoLayout_Adaptivity/screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13%20at%209.00.05.gif" width="450">|<img src="./screenshot/Screen Recording 2023-05-15 at 12.00.52.gif" width="450">
+    <img src="https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/Contents/AutoLayout_Adaptivity/screenshot/Simulator_Screen_Recording_iPhone_14_2023-05-13%20at%209.00.05.gif" width="450">|<img src="https://github.com/sonkoni/Collection-of-Toy-Projects/blob/main/Contents/AutoLayout_Adaptivity/screenshot/Screen%20Recording%202023-05-15%20at%2012.00.52.gif" width="450">
    
 ### 4. **[암묵적 애니메이션 지원](https://github.com/sonkoni/Collection-of-Toy-Projects/tree/main/Contents/AutoLayout_Animation)**
    Auto Layout을 사용하면 레이아웃 변경 시 암묵적 애니메이션이 자동으로 적용된다. 이는 사용자 경험을 향상시키는 중요한 요소로, 뷰의 위치나 크기 변경이 부드럽게 나타나도록 한다.
