@@ -127,12 +127,16 @@ override func viewDidLoad() {
    - **예시**: 여러 뷰가 서로 종속된 제약 조건을 가질 때 충돌 가능성 증가. 이때는 `UILayoutPriority` 조정으로 충돌을 피해야한다.
 
    ```swift
-   view1.leadingAnchor.constraint(equalTo: view2.trailingAnchor, constant: 8).isActive = true
-   view2.trailingAnchor.constraint(equalTo: view1.leadingAnchor, constant: -8).isActive = true
+   view1.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+   view1.widthAnchor.constraint(lessThanOrEqualTo: view2.widthAnchor).isActive = true
    ```
    
    - **해결방법**: 다음과 같이 `autoresizingMask`를 이용하면 이를 우회할 수 있다. 
-   ```swift
-   view1.leadingAnchor.constraint(equalTo: view2.trailingAnchor, constant: 8).isActive = true
-   view2.trailingAnchor.constraint(equalTo: view1.leadingAnchor, constant: -8).isActive = true
+   ```swift     
+   let constraint1 = view1.widthAnchor.constraint(equalToConstant: 100.0)
+   let constraint2 = view1.widthAnchor.constraint(lessThanOrEqualTo: view2.widthAnchor)
+   constraint1.priority = .defaultHigh
+   constraint2.priority = .required
+   constraint1.isActive = true
+   constraint2.isActive = true
    ```
