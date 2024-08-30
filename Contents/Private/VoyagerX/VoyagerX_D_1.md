@@ -130,3 +130,9 @@ override func viewDidLoad() {
    view1.leadingAnchor.constraint(equalTo: view2.trailingAnchor, constant: 8).isActive = true
    view2.trailingAnchor.constraint(equalTo: view1.leadingAnchor, constant: -8).isActive = true
    ```
+   
+   - **해결방법**: 다음과 같이 `autoresizingMask`를 이용하면 이를 우회할 수 있다. 
+   ```swift
+   view1.leadingAnchor.constraint(equalTo: view2.trailingAnchor, constant: 8).isActive = true
+   view2.trailingAnchor.constraint(equalTo: view1.leadingAnchor, constant: -8).isActive = true
+   ```
