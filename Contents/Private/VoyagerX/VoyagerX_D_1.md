@@ -131,7 +131,7 @@ override func viewDidLoad() {
    view1.widthAnchor.constraint(lessThanOrEqualTo: view2.widthAnchor).isActive = true
    ```
    
-   - **해결방법**: 다음과 같이 `autoresizingMask`를 이용하면 이를 우회할 수 있다. 
+   - **해결방법**: 다음과 같이 `UILayoutPriority`의 차등을 두어 충돌을 피할 수 있다. 
    ```swift     
    let constraint1 = view1.widthAnchor.constraint(equalToConstant: 100.0)
    let constraint2 = view1.widthAnchor.constraint(lessThanOrEqualTo: view2.widthAnchor)
