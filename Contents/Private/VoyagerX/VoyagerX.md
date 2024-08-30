@@ -30,7 +30,7 @@
 
 - **[Auto Layout의 장단점](./VoyagerX_D_1.md):** Auto Layout은 다양한 화면 크기에서 일관된 UI를 유지할 수 있게 해주지만, 복잡한 레이아웃의 경우 성능 문제가 발생할 수 있습니다.
 - **[MVC 패턴이란](./VoyagerX_D_2.md):** Model-View-Controller 패턴은 데이터와 사용자 인터페이스를 분리하여 유지보수를 용이하게 합니다.
-- **KVC와 KVO란:** KVC는 Key-Value Coding으로 객체의 속성에 접근하는 방법이며, KVO는 Key-Value Observing으로 속성 변경을 관찰하는 메커니즘입니다.
+- **[KVC와 KVO란](./VoyagerX_D_3.md):** KVC는 Key-Value Coding으로 객체의 속성에 접근하는 방법이며, KVO는 Key-Value Observing으로 속성 변경을 관찰하는 메커니즘입니다.
 - **[Swift의 특징은](./VoyagerX_D_4.md):** Swift는 안전성, 성능, 표현력을 모두 고려한 현대적인 언어로, 타입 추론과 옵셔널, 함수형 프로그래밍 요소를 포함하고 있습니다.
 - **[Higher Order Function이란](./VoyagerX_D_5.md):** 함수를 인수로 받거나, 결과로 함수를 반환하는 함수입니다.
 - **[Method Swizzling이란](./VoyagerX_D_6.md):** 런타임에서 메서드의 구현을 동적으로 바꾸는 기술입니다.
